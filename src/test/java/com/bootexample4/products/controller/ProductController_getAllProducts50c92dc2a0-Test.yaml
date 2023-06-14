@@ -1,0 +1,39 @@
+config:
+  target: "https://example.com/api/products"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+
+scenarios:
+  - name: "Successful API request"
+    flow:
+      - get: ""
+        headers:
+          Content-Type: "application/json"
+        expect:
+          - statusCode: 200
+          - hasProperty: "products"
+
+  - name: "API request with empty payload"
+    flow:
+      - post: ""
+        headers:
+          Content-Type: "application/json"
+        json: {}
+        expect:
+          - statusCode: 400
+          - hasProperty: "error"
+          - equals: ["error.message", "Required fields are missing"]
+
+  - name: "API request with edge case"
+    flow:
+      - post: ""
+        headers:
+          Content-Type: "application/json"
+        json:
+          name: "Product with special characters: !@#$%^&*()"
+          description: "This is a test product with special characters and a large description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sapien consequat, egestas purus eget, fermentum felis. Aenean maximus, erat vitae suscipit sagittis, dolor elit venenatis ipsum, non posuere nisl quam eu odio."
+        expect:
+          - statusCode: 201
+          - hasProperty: "product"
+          - matchesRegexp: ["product.name", "^Product with special characters: !@#\\$%\\^&\\*\\(\\)$"]

@@ -1,0 +1,37 @@
+config:
+  target: "http://example.com/api/products"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+
+scenarios:
+  - name: "Successful API request"
+    flow:
+      - get:
+          url: "/{{ $randomNumber(1, 100) }}"
+          headers:
+            Content-Type: "application/json"
+        expect:
+          - statusCode: 200
+          - contentType: "application/json"
+          - hasProperty: "id"
+          - hasProperty: "name"
+          - hasProperty: "price"
+
+  - name: "API request with not found product"
+    flow:
+      - get:
+          url: "/999999999"
+          headers:
+            Content-Type: "application/json"
+        expect:
+          - statusCode: 404
+
+  - name: "API request with edge case"
+    flow:
+      - get:
+          url: "/0"
+          headers:
+            Content-Type: "application/json"
+        expect:
+          - statusCode: 404
