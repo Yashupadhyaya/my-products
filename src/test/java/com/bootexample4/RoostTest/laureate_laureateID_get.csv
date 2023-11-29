@@ -1,0 +1,11 @@
+FirstName, LastName, Email, DateOfBirth, PhoneNumber, ID
+John, Doe, john@gmail.com, 1990-10-10, 1234567890, 1
+Jane, Smith, jane@gmail.com, 1985-05-15, 0987654321, 2
+Robert, Johnson, robert@gmail.com, 1975-12-30, 1029384756, 3
+Emily, Davis, emily@gmail.com, 1982-03-20, 1122334455, 4
+James, Brown, james@gmail.com, 1995-07-25, 5678901234, 5
+Anna, Jones, anna@gmail.com, 1988-01-10, 1357924680, 6
+Christopher, Miller, christopher@gmail.com, 1992-09-15, 2468135790, 7
+Jessica, Wilson, jessica@gmail.com, 1978-11-25, 1593572486, 8
+Michael, Moore, michael@gmail.com, 1980-04-05, 7894561230, 9
+Emma, Taylor, emma@gmail.com, 1998-06-30, 7531598426, 10
