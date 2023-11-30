@@ -1,0 +1,11 @@
+id,category,name,photoUrls,tags,status
+1,Animals,Doggie,http://pic1.doggie.com|http://pic2.doggie.com,tag1|tag2,available
+2,Animals,Fluffy,http://pic1.fluffy.com|http://pic2.fluffy.com,tag3|tag4,pending
+3,Birds,Chirpy,http://pic1.chirpy.com|http://pic2.chirpy.com,tag5|tag6,sold
+4,Animals,Lucky,http://pic1.lucky.com|http://pic2.lucky.com,tag7|tag8,available
+5,Birds,Flyhigh,http://pic1.flyhigh.com|http://pic2.flyhigh.com,tag9|tag10,pending
+6,Animals,Snowy,http://pic1.snowy.com|http://pic2.snowy.com,tag11|tag12,sold
+7,Birds,Singer,http://pic1.singer.com|http://pic2.singer.com,tag13|tag14,available
+8,Animals,Stripe,http://pic1.stripe.com|http://pic2.stripe.com,tag15|tag16,pending
+9,Birds,Tweety,http://pic1.tweety.com|http://pic2.tweety.com,tag17|tag18,sold
+10,Animals,Paws,http://pic1.paws.com|http://pic2.paws.com,tag19|tag20,available

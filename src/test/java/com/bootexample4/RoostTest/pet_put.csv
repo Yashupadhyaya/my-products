@@ -1,0 +1,11 @@
+id,category,name,photoUrls,tags,status
+1,Mammal,Fluffy,https://example.com/fluffy.jpg,friendly,cute,available
+2,Bird,Skyler,https://example.com/skyler.jpg,freedom,peaceful,available
+3,Reptile,Slinky,https://example.com/slinky.jpg,stealthy,calm,pending
+4,Aquatic,Finny,https://example.com/finny.jpg,graceful,silent,sold
+5,Arachnid,Spinner,https://example.com/spinner.jpg,cunning,creative,pending
+6,Mammal,Whiskers,https://example.com/whiskers.jpg,agile,sleek,available
+7,Bird,Chirpy,https://example.com/chirpy.jpg,vocal,cheerful,sold
+8,Reptile,Shellby,https://example.com/shellby.jpg,protective,calm,available
+9,Aquatic,Bubbly,https://example.com/bubbly.jpg,playful,bright,available
+10,Arachnid,Webber,https://example.com/webber.jpg,patient,ingenious,sold
