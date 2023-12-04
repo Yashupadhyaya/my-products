@@ -1,0 +1,11 @@
+koreUserId,botId,userCode,accountId,Authorization,customerId,amount,sourceAccountId,targetAccountId,currency,status,scheduledDate,recurringOptions,example,statusCode
+user_001,bot_001,code_001,acc_001,auth_001,124563,500.00,source_001,target_001,USD,Completed,1616544000000,{"amountType":"Fixed","frequency":{"iterate":"Monthly","duration":{"numberOfTransfers":6}}},"example_001",200
+user_002,bot_002,code_002,acc_002,auth_002,124564,250.00,source_002,target_002,EUR,Pending,1616620400000,{"amountType":"Fixed","frequency":{"iterate":"Weekly","duration":{"numberOfTransfers":4}}},"example_002",202
+user_003,bot_003,code_003,acc_003,auth_003,124565,750.00,source_003,target_003,GBP,Cancelled,1616706800000,{"amountType":"Variable","frequency":{"iterate":"Bi-Weekly","duration":{"numberOfTransfers":5}}},"example_003",404
+user_004,bot_004,code_004,acc_004,auth_004,124566,1500.00,source_004,target_004,JPY,Processing,1616793200000,{"amountType":"Fixed","frequency":{"iterate":"Quarterly","duration":{"numberOfTransfers":2}}},"example_004",503
+user_005,bot_005,code_005,acc_005,auth_005,124567,350.00,source_005,target_005,CAD,Failed,1616879600000,{"amountType":"Fixed","frequency":{"iterate":"Semi-Annually","duration":{"numberOfTransfers":1}}},"example_005",400
+user_006,bot_006,code_006,acc_006,auth_006,124568,1250.00,source_006,target_006,AUD,Succeeded,1616966000000,{"amountType":"Variable","frequency":{"iterate":"Monthly","duration":{"numberOfTransfers":12}}},"example_006",201
+user_007,bot_007,code_007,acc_007,auth_007,124569,675.00,source_007,target_007,CHF,Completed,1617052400000,{"amountType":"Fixed","frequency":{"iterate":"Annually","duration":{"numberOfTransfers":3}}},"example_007",200
+user_008,bot_008,code_008,acc_008,auth_008,124570,980.00,source_008,target_008,SGD,On-Hold,1617138800000,{"amountType":"Variable","frequency":{"iterate":"Weekly","duration":{"numberOfTransfers":8}}},"example_008",403
+user_009,bot_009,code_009,acc_009,auth_009,124571,460.00,source_009,target_009,HKD,Refunded,1617225200000,{"amountType":"Fixed","frequency":{"iterate":"Bi-Weekly","duration":{"numberOfTransfers":6}}},"example_009",202
+user_010,bot_010,code_010,acc_010,auth_010,124572,825.00,source_010,target_010,INR,Settled,1617311600000,{"amountType":"Variable","frequency":{"iterate":"Quarterly","duration":{"numberOfTransfers":4}}},"example_010",200
