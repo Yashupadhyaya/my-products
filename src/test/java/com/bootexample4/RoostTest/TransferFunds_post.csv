@@ -1,0 +1,11 @@
+koreUserId,botId,userCode,accountId,Authorization,customerId,amount,currency,sourceAccountId,targetAccountId,date,description,TransactionType,PaymentType,statusCode
+user1234,bot7890,code5678,acc4321,auth0001,1045301,150,USD,1042346,1042223,2023-01-10,Internal Transfer,1063,Minimum Payment,200
+user2345,bot8901,code6789,acc5432,auth0002,1045302,200,EUR,1042347,1042224,2023-01-11,Payment Received,1063,Standard Payment,200
+user3456,bot9012,code7890,acc6543,auth0003,1045303,250,GBP,1042348,1042225,2023-01-12,Refund Processed,1063,Full Payment,200
+user4567,bot0123,code8901,acc7654,auth0004,1045304,300,CAD,1042349,1042226,2023-01-13,Account Funding,1063,Partial Payment,200
+user5678,bot1234,code9012,acc8765,auth0005,1045305,350,AUD,1042350,1042227,2023-01-14,Service Fee,1063,Minimum Payment,200
+user6789,bot2345,code0123,acc9876,auth0006,1045306,400,USD,1042351,1042228,2023-01-15,Loan Repayment,1063,Standard Payment,200
+user7890,bot3456,code1234,acc0987,auth0007,1045307,450,EUR,1042352,1042229,2023-01-16,Interest Credit,1063,Full Payment,200
+user8901,bot4567,code2345,acc1098,auth0008,1045308,500,GBP,1042353,1042230,2023-01-17,Transfer to Savings,1063,Partial Payment,200
+user9012,bot5678,code3456,acc2109,auth0009,1045309,550,CAD,1042354,1042231,2023-01-18,Payment Correction,1063,Minimum Payment,200
+user0123,bot6789,code4567,acc3210,auth0010,1045310,600,AUD,1042355,1042232,2023-01-19,Direct Deposit,1063,Standard Payment,200
