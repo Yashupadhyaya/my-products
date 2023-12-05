@@ -1,0 +1,11 @@
+UserID,Username,Email,DOB,SignUpDate,LastLogin,Address,City,State,Zip,PhoneNumber
+1,JSmith,jsmith@example.com,1990-03-23,2015-06-11,2021-07-01,123 Main St,Los Angeles,CA,90012,(123)456-7890
+2,ADoe,adoe@example.com,1985-07-05,2016-08-03,2021-07-01,456 Oak Street,San Diego,CA,92103,(234)567-8901
+3,MRodriguez,mrodriguez@example.com,1992-11-15,2017-09-20,2021-07-02,789 Pine Ave,San Francisco,CA,94102,(345)678-9012
+4,JLiu,jliu@example.com,1988-06-20,2015-02-11,2021-07-02,321 Cedar Lane,Sacramento,CA,94203,(456)789-0123
+5,SSmith,ssmith@example.com,1993-12-01,2018-06-19,2021-07-03,654 Elm Drive,Fresno,CA,93702,(567)890-1234
+6,RKumar,rkumar@example.com,1987-01-24,2016-05-22,2021-07-03,987 Spruce Blvd,Fresno,CA,93877,(678)901-2345
+7,MJohnson,mjohnson@example.com,1990-04-07,2019-10-01,2021-07-04,147 Poplar St,Bakersfield,CA,93301,(765)432-1098
+8,ZAli,zali@example.com,1991-05-15,2015-09-15,2021-07-04,258 Myrtle Ave,San Jose,CA,95113,(876)543-2109
+9,HKim,hkim@example.com,1985-08-18,2017-07-02,2021-07-04,369 Alder Ln,Santa Clara,CA,95051,(987)654-3210
+10,JPerez,jperez@example.com,1994-09-09,2016-03-24,2021-07-05,159 Willow Blvd,Palo Alto,CA,94301,(098)765-4321

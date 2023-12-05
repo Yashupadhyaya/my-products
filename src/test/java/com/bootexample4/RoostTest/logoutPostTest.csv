@@ -1,0 +1,11 @@
+UserID,UserName,Email,DOB,RegistrationDate,IsActive
+1,JohnDoe,johndoe@email.com,1980-07-15,2021-01-10,true
+2,JaneSmith,janesmith@email.com,1990-08-21,2021-01-11,true
+3,RobertBrown,robertbrown@email.com,1988-11-30,2021-02-12,true
+4,EmmaWhite,emmawhite@email.com,1995-04-08,2021-03-15,true
+5,JamesGreen,jamesgreen@email.com,1992-06-15,2021-03-20,true
+6,MaryBlack,maryblack@email.com,1985-05-25,2021-04-18,true
+7,WilliamBlue,williamblue@email.com,1982-06-14,2021-05-11,true
+8,ElizabethPink,elizabethpink@email.com,1987-01-20,2021-05-25,true
+9,JosephGray,josephgray@email.com,1994-09-05,2021-07-14,true
+10,SusanYellow,susanyellow@email.com,1991-02-24,2021-08-18,true
