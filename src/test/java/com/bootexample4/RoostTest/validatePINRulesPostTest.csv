@@ -1,0 +1,11 @@
+botId,accountId,Authorization
+bot123,acc001,auth_abc
+bot456,acc002,auth_def
+bot789,acc003,auth_ghi
+bot101,acc004,auth_jkl
+bot102,acc005,auth_mno
+bot103,acc006,auth_pqr
+bot104,acc007,auth_stu
+bot105,acc008,auth_vwx
+bot106,acc009,auth_yz1
+bot107,acc010,auth_234

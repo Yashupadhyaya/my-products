@@ -1,0 +1,11 @@
+koreUserId,botId,accountId,Authorization
+user1,bot123,acc567,auth901
+user2,bot234,acc678,auth012
+user3,bot345,acc789,auth123
+user4,bot456,acc890,auth234
+user5,bot567,acc901,auth345
+user6,bot678,acc012,auth456
+user7,bot789,acc123,auth567
+user8,bot890,acc234,auth678
+user9,bot901,acc345,auth789
+user10,bot012,acc456,auth890
