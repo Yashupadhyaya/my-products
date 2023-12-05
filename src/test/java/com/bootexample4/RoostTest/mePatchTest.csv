@@ -1,0 +1,11 @@
+name,image,settings
+John Doe,data:image/jpeg;base64,OAOFBUOEBOUEVBOEUBVOUEV3,{'theme': 'dark', 'notifications': 'on'}
+Jane Smith,data:image/jpeg;base64,HDHFBHJBDJHBHDJHBHJDBJH,{'theme': 'light', 'notifications': 'off'}
+Robert Johnson,data:image/jpeg;base64,OWHEFIUEHFUEHFIUEHFIE4,{'theme': 'dark', 'notifications': 'on'}
+Billy Bob,data:image/jpeg;base64,KIUBEIUWGFIUEWGFIUWEPIF,{'theme': 'dark', 'notifications': 'off'}
+Sue Johnson,data:image/jpeg;base64,NJEDHFUEHFIUEHFBOEBRF,{'theme': 'light', 'notifications': 'on'}
+Emma Watson,data:image/jpeg;base64,KJEGVJBFIBFUIEFBIEUBEFI,{'theme': 'dark', 'notifications': 'on'}
+Tom Hanks,data:image/jpeg;base64,KJDGVFOUEHFOEBUFOBREFOE,{'theme': 'light', 'notifications': 'off'}
+George Clooney,data:image/jpeg;base64,KIEGFKJEBGKJEBRIBERIBE,{'theme': 'dark', 'notifications': 'on'}
+Julia Roberts,data:image/jpeg;base64,MKDJGVKDJBGVJDFGVDFJGHV,{'theme': 'dark', 'notifications': 'off'}
+Monica Bellucci,data:image/jpeg;base64,MKJDVGJHBGKJHDGVGDJH,{'theme': 'light', 'notifications': 'on'}
