@@ -1,0 +1,11 @@
+koreUserId,botId,userCode,accountId,Authorization
+user1,botA,code1,acc1,authkey1
+user2,botB,code2,acc2,authkey2
+user3,botC,code3,acc3,authkey3
+user4,botD,code4,acc4,authkey4
+user5,botE,code5,acc5,authkey5
+user6,botF,code6,acc6,authkey6
+user7,botG,code7,acc7,authkey7
+user8,botH,code8,acc8,authkey8
+user9,botI,code9,acc9,authkey9
+user10,botJ,code10,acc10,authkey10
