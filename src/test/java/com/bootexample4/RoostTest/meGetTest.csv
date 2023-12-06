@@ -1,0 +1,11 @@
+user_id,name,email,phone,address,city,state,zip,country,last_login,created_at
+1,John Doe,johndoe@example.com,0123456789,123 Main Street,Anytown,CA,91234,USA,2023-03-08 12:34:56,2023-03-07 15:23:17
+2,Jane Smith,janesmith@example.com,0123456789,456 Elm Street,Anytown,CA,91234,USA,2023-03-09 15:45:12,2023-03-08 18:34:29
+3,Michael Jones,michaeljones@example.com,0123456789,789 Oak Street,Anytown,CA,91234,USA,2023-03-10 18:56:23,2023-03-09 21:45:36
+4,Sarah Miller,sarahmiller@example.com,0123456789,1011 Pine Street,Anytown,CA,91234,USA,2023-03-11 22:07:34,2023-03-10 00:56:43
+5,William Johnson,williamjohnson@example.com,0123456789,1213 Willow Street,Anytown,CA,91234,USA,2023-03-12 01:18:45,2023-03-11 04:07:50
+6,Elizabeth Walker,elizabethwalker@example.com,0123456789,1415 Maple Street,Anytown,CA,91234,USA,2023-03-13 04:29:56,2023-03-12 07:18:57
+7,Matthew Brown,matthewbrown@example.com,0123456789,1617 Birch Street,Anytown,CA,91234,USA,2023-03-14 07:41:07,2023-03-13 10:29:04
+8,Emily Green,emilygreen@example.com,0123456789,1819 Cedar Street,Anytown,CA,91234,USA,2023-03-15 10:52:18,2023-03-14 13:39:11
+9,Benjamin White,benjaminwhite@example.com,0123456789,2021 Oak Street,Anytown,CA,91234,USA,2023-03-16 14:03:29,2023-03-15 16:49:18
+10,Abigail Black,abigailblack@example.com,0123456789,2223 Pine Street,Anytown,CA,91234,USA,2023-03-17 17:14:40,2023-03-16 20:00:25
