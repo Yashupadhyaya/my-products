@@ -1,0 +1,11 @@
+id,name,gender,age,height,weight,blood_type,email,phone,address,city,state,country
+433327a5-148f-4376-a571-204a1d685895,John Doe,Male,35,180,80,A+,johndoe@example.com,0123456789,123 Main Street,Anytown,CA,USA
+661d8678-76e2-4206-a792-1a1e18c5b66d,Jane Smith,Female,28,165,60,B-,janesmith@example.com,0123456789,456 Elm Street,Anytown,CA,USA
+8535b01e-47e0-4b36-9152-81f15654f291,Michael Jones,Male,42,175,90,AB+,michaeljones@example.com,0123456789,789 Oak Street,Anytown,CA,USA
+028e9184-4479-492a-a0d1-02d089181a5f,Sarah Miller,Female,30,170,65,O+,sarahmiller@example.com,0123456789,1011 Pine Street,Anytown,CA,USA
+406d11f7-e94a-4e1d-a44b-7a80e6d832c0,William Johnson,Male,38,185,95,A-,williamjohnson@example.com,0123456789,1213 Maple Street,Anytown,CA,USA
+453e6e0a-798d-423e-8564-4030a499f11d,Elizabeth Walker,Female,25,160,55,B+,elizabethwalker@example.com,0123456789,1415 Birch Street,Anytown,CA,USA
+110977e0-5321-4d1d-81b9-e21c7806596d,Matthew Brown,Male,45,190,100,A+,matthewbrown@example.com,0123456789,1617 Cedar Street,Anytown,CA,USA
+f379f28e-7825-4543-b210-0116d0d7312e,Emily Green,Female,32,175,70,O-,emilygreen@example.com,0123456789,1819 Willow Street,Anytown,CA,USA
+67d7648c-e11d-4222-a37f-3d638187d8b4,Benjamin White,Male,22,180,75,B+,benjaminwhite@example.com,0123456789,2021 Oak Street,Anytown,CA,USA
+50c66019-0e14-4964-a584-98d7b22570f6,Jessica Williams,Female,28,165,60,AB-,jessicawilliams@example.com,0123456789,2223 Pine Street,Anytown,CA,USA

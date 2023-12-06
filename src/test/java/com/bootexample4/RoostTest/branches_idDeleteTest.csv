@@ -1,0 +1,11 @@
+id,name,age,country,email,phone,subscription
+234234-234234-234234-234234,John Doe,32,US,johndoe@example.com,+1234567890,premium
+123123-123123-123123-123123,Jane Smith,25,UK,janesmith@example.com,+441234567890,free
+567567-567567-567567-567567,Michael Jones,40,CA,michaeljones@example.com,+19876543210,premium
+890890-890890-890890-890890,Sarah Miller,28,DE,sarahmiller@example.com,+491234567890,free
+345345-345345-345345-345345,William Johnson,35,FR,williamjohnson@example.com,+331234567890,premium
+987987-987987-987987-987987,Elizabeth Walker,22,JP,elizabethwalker@example.com,+811234567890,free
+678678-678678-678678-678678,Matthew Brown,38,IN,matthewbrown@example.com,+911234567890,premium
+456456-456456-456456-456456,Emily Garcia,29,AU,emilygarcia@example.com,+611234567890,free
+789789-789789-789789-789789,Benjamin White,31,BR,benjaminwhite@example.com,+551234567890,premium
+123456-123456-123456-123456,Olivia Harris,24,IT,oliviaharris@example.com,+391234567890,free

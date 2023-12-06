@@ -1,0 +1,11 @@
+initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference
+A,Aaron,Michael,Anderson,1990-03-15,New York City,0123456789,aaron.anderson@example.com,10012,123,A,US,1
+B,Betty,Rose,Bradley,1985-08-22,Chicago,0123456789,betty.bradley@example.com,10013,456,B,US,2
+C,Charles,Edward,Campbell,1978-11-07,Houston,0123456789,charles.campbell@example.com,10014,789,C,US,3
+D,Doris,Marie,Davis,1972-04-29,Los Angeles,0123456789,doris.davis@example.com,10015,1011,D,US,4
+E,Eric,John,Evans,1965-12-31,Philadelphia,0123456789,eric.evans@example.com,10016,1213,E,US,5
+F,Florence,Ann,Foster,1988-06-18,Boston,0123456789,florence.foster@example.com,10017,1415,F,US,6
+G,George,William,Green,1982-01-04,Atlanta,0123456789,george.green@example.com,10018,1617,G,US,7
+H,Helen,Louise,Harris,1975-09-12,Detroit,0123456789,helen.harris@example.com,10019,1819,H,US,8
+I,Ian,Robert,Jackson,1968-03-08,San Francisco,0123456789,ian.jackson@example.com,10020,2021,I,US,9
+J,Jane,Elizabeth,Johnson,1995-07-26,Washington,D.C.,0123456789,jane.johnson@example.com,10021,2223,J,US,10
