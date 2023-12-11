@@ -1,0 +1,11 @@
+koreUserId,botId,accountId,tenantId,Authorization,environment,channel,usecase,statusCode
+user1,bot1,acc1,tenant1,Bearer,dev,webchat,["usecase1","usecase2"],200
+user2,bot2,acc2,tenant2,Bearer,dev,webchat,["usecase3","usecase4"],200
+user3,bot3,acc3,tenant3,Bearer,dev,webchat,["usecase5","usecase6"],200
+user4,bot4,acc4,tenant4,Bearer,dev,webchat,["usecase7","usecase8"],200
+user5,bot5,acc5,tenant5,Bearer,dev,webchat,["usecase9","usecase10"],200
+user6,bot6,acc6,tenant6,Bearer,dev,webchat,["usecase11","usecase12"],200
+user7,bot7,acc7,tenant7,Bearer,dev,webchat,["usecase13","usecase14"],200
+user8,bot8,acc8,tenant8,Bearer,dev,webchat,["usecase15","usecase16"],200
+user9,bot9,acc9,tenant9,Bearer,dev,webchat,["usecase17","usecase18"],200
+user10,bot10,acc10,tenant10,Bearer,dev,webchat,["usecase19","usecase20"],200

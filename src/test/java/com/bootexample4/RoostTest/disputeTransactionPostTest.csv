@@ -1,0 +1,11 @@
+koreUserId,botId,accountId,Authorization,customerId,emailId,transactionsData,statusCode
+100000001,botid1,accountid1,bearer,1045300,John@yahoo.com,[[2023-03-08,200],[2023-03-09,100]],200
+100000002,botid2,accountid2,bearer,1045301,Jane@gmail.com,[[2023-03-10,300],[2023-03-11,400]],200
+100000003,botid3,accountid3,bearer,1045302,Jack@hotmail.com,[[2023-03-12,500],[2023-03-13,600]],200
+100000004,botid4,accountid4,bearer,1045303,Jill@aol.com,[[2023-03-14,700],[2023-03-15,800]],200
+100000005,botid5,accountid5,bearer,1045304,Joe@msn.com,[[2023-03-16,900],[2023-03-17,1000]],200
+100000006,botid6,accountid6,bearer,1045305,Julia@live.com,[[2023-03-18,1100],[2023-03-19,1200]],200
+100000007,botid7,accountid7,bearer,1045306,James@yahoo.com,[[2023-03-20,1300],[2023-03-21,1400]],200
+100000008,botid8,accountid8,bearer,1045307,Jessica@gmail.com,[[2023-03-22,1500],[2023-03-23,1600]],200
+100000009,botid9,accountid9,bearer,1045308,Jason@hotmail.com,[[2023-03-24,1700],[2023-03-25,1800]],200
+100000010,botid10,accountid10,bearer,1045309,Jenny@aol.com,[[2023-03-26,1900],[2023-03-27,2000]],200

@@ -1,0 +1,11 @@
+koreUserId,botId,accountId,Authorization,X-Auth-token,X-CORRELATION-ID,customerId,statusCode
+1000300,botid1,accountid1,Authorization1,X-Auth-token1,1000,1045300,200
+1000301,botid2,accountid2,Authorization2,X-Auth-token2,1001,1045301,200
+1000302,botid3,accountid3,Authorization3,X-Auth-token3,1002,1045302,200
+1000303,botid4,accountid4,Authorization4,X-Auth-token4,1003,1045303,200
+1000304,botid5,accountid5,Authorization5,X-Auth-token5,1004,1045304,200
+1000305,botid6,accountid6,Authorization6,X-Auth-token6,1005,1045305,200
+1000306,botid7,accountid7,Authorization7,X-Auth-token7,1006,1045306,200
+1000307,botid8,accountid8,Authorization8,X-Auth-token8,1007,1045307,200
+1000308,botid9,accountid9,Authorization9,X-Auth-token9,1008,1045308,200
+1000309,botid10,accountid10,Authorization10,X-Auth-token10,1009,1045309,200
