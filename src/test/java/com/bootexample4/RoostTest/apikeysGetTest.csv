@@ -1,0 +1,11 @@
+statusCode,username,email,age,address,joinDate
+200,johnDoe,johnDoe@gmail.com,25,123 Main Street,2020-01-12
+201,janeDoe,janeDoe@gmail.com,30,456 Maple Drive,2019-02-28
+200,johnSmith,johnSmith@gmail.com,35,789 Pine Avenue,2021-05-01
+201,janeSmith,janeSmith@gmail.com,40,321 Oak Crescent,2018-07-14
+200,maryJohnson,maryJohnson@gmail.com,45,654 Elm Street,2017-09-01
+201,johnJohnson,johnJohnson@gmail.com,50,987 Cedar Place,2022-03-01
+200,janeJohnson,janeJohnson@gmail.com,55,147 Birch Avenue,2022-03-31
+201,marySmith,marySmith@gmail.com,60,258 Walnut Crescent,2019-12-05
+200,johnDoe2,johnDoe2@gmail.com,65,369 Aspen Street,2018-04-25
+201,janeDoe2,janeDoe2@gmail.com,70,741 Pine Avenue,2020-06-05
