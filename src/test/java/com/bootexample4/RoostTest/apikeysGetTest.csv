@@ -1,0 +1,11 @@
+userID,username,email,age,country,registration_date
+1,johndoe,johndoe@email.com,32,USA,2021-01-01
+2,janesmith,janesmith@email.com,28,Canada,2021-02-15
+3,robertbrown,robertbrown@email.com,45,UK,2021-03-20
+4,lisawhite,lisawhite@email.com,22,Australia,2021-04-10
+5,michealgreen,michealgreen@email.com,35,Singapore,2021-05-30
+6,sarahblack,sarahblack@email.com,27,India,2021-06-15
+7,brianred,brianred@email.com,40,Ireland,2021-07-22
+8,annablue,annablue@email.com,33,New Zealand,2021-08-01
+9,jamesyellow,jamesyellow@email.com,29,Germany,2021-09-05
+10,susanpurple,susanpurple@email.com,31,France,2021-10-12
