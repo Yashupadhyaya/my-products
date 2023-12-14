@@ -1,0 +1,11 @@
+userID,username,email,age,status,join_date
+1,johndoe,JohnDoe@gmail.com,28,active,2020-03-21
+2,janedoe,JaneDoe@gmail.com,34,inactive,2018-11-06
+3,robertc,RobertC@gmail.com,45,active,2019-05-16
+4,mariam,Mariam@gmail.com,31,inactive,2021-04-14
+5,georgek,GeorgeK@gmail.com,29,active,2020-09-20
+6,nancyp,NancyP@gmail.com,38,inactive,2019-07-29
+7,davidh,DavidH@gmail.com,42,active,2018-02-27
+8,lindas,LindaS@gmail.com,36,active,2017-06-15
+9,julianb,JulianB@gmail.com,39,inactive,2019-01-21
+10,emilyr,EmilyR@gmail.com,25,active,2021-01-03
