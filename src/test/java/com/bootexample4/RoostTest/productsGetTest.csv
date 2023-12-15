@@ -1,0 +1,11 @@
+userID,username,email,age,statusCode,registrationDate
+1,johnsmith,johnsmith@gmail.com,35,200,2020-06-01
+2,maryjones,maryjones@yahoo.com,28,200,2019-09-15
+3,rachelgreen,rachelgreen@hotmail.com,32,200,2021-01-03
+4,chandlerbing,chandlerbing@gmail.com,36,200,2018-08-12
+5,joeypotter,joeypotter@yahoo.com,34,200,2019-02-21
+6,rossgeller,rossgeller@gmail.com,33,200,2020-12-10
+7,monicageller,monicageller@hotmail.com,30,200,2021-04-18
+8,tylerdurden,tylerdurden@gmail.com,29,200,2018-07-23
+9,marlademio,marlademio@yahoo.com,31,200,2019-05-07
+10,oliviajackson,oliviajackson@hotmail.com,27,200,2020-01-25
