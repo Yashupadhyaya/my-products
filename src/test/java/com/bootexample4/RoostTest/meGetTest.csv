@@ -1,0 +1,11 @@
+userID,firstName,lastName,email,age,country,statusCode
+1032,John,Doe,johndoe@gmail.com,34,USA,200
+2854,Sarah,Smith,sarahsmith@hotmail.com,27,Canada,204
+9375,Michael,Johnson,michaelj@yahoo.com,45,UK,404
+7625,Emily,Williams,emilyw@gmail.com,32,Australia,200
+2846,James,Brown,jamesbrown@gmail.com,53,USA,202
+8432,Patricia,Garcia,patriciag@hotmail.com,40,Spain,204
+9726,Robert,Rodriguez,robertr@yahoo.com,29,Mexico,404
+1346,Linda,Martinez,lindam@gmail.com,25,Argentina,200
+6482,David,Gonzalez,davidg@gmail.com,41,USA,203
+1827,Jennifer,Lee,jenniferl@hotmail.com,35,China,204
