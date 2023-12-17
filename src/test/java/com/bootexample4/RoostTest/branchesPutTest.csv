@@ -1,0 +1,11 @@
+cocNumber,cocBranchNumber,city,tradeName,phone,email,statusCode
+12345,1,Seattle,TradeA,2065551234,TradeA@example.com,200
+67890,2,San Francisco,TradeB,4155551234,TradeB@example.com,201
+111213,3,New York,TradeC,2125551234,TradeC@example.com,202
+141516,4,Los Angeles,TradeD,3105551234,TradeD@example.com,203
+171819,5,Chicago,TradeE,3125551234,TradeE@example.com,204
+202122,6,Houston,TradeF,2815551234,TradeF@example.com,205
+232425,7,Phoenix,TradeG,6025551234,TradeG@example.com,206
+262728,8,Philadelphia,TradeH,2155551234,TradeH@example.com,207
+293031,9,San Antonio,TradeI,2105551234,TradeI@example.com,208
+323334,10,Dallas,TradeJ,2145551234,TradeJ@example.com,209

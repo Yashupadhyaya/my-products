@@ -1,0 +1,11 @@
+initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference,statusCode
+JD,Jane,Doe,Smith,1980-04-12,London,0712345678,jane.doe@mail.com,WC2N 5DU,12,A,GB,JD001,200
+AB,Alice,Bob,Peterson,1985-11-3,New York,0823416785,alice.bob@mail.com,10007,56,B,US,AB002,200
+CS,Charlie,Sam,Johnson,1991-05-01,Paris,0927163524,charlie.sam@mail.com,75000,34,C,FR,CS003,200
+DH,David,Hill,Williams,1975-09-15,Berlin,0138471625,david.hill@mail.com,10117,78,D,DE,DH004,200
+EK,Emma,Kate,Brown,1998-01-07,Sydney,0354262817,emma.kate@mail.com,2000,91,E,AU,EK005,200
+FL,Frank,Leo,Sanchez,1982-12-25,Madrid,0235162948,frank.leo@mail.com,28013,20,F,ES,FL006,200
+GM,George,Martin,Murphy,1978-08-20,Tokyo,0617483952,george.martin@mail.com,100-0001,46,G,JP,GM007,200
+HN,Henry,Nicholas,Gonzalez,1989-07-06,Rome,0719328506,henry.nicholas@mail.com,00187,72,H,IT,HN008,200
+IP,Iris,Patrick,Clark,1995-06-02,Beijing,0812456973,iris.patrick@mail.com,100000,38,I,CN,IP009,200
+JK,Jess,Kim,Lee,1992-10-18,Seoul,0238519764,jess.kim@mail.com,03001,65,J,KR,JK010,200

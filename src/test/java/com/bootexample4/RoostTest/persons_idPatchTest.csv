@@ -1,0 +1,11 @@
+id,initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference,statusCode
+12df65as1df2s65df4,DS,David,Steve,Johnson,1992-04-15,Los Angeles,1234567891,david@example.com,90001,1205,A,US,AB123,200
+f412kj6h5j4k21jh56,MM,Mary,Marilyn,Smith,1985-06-20,New York,09876543210,mary@example.com,10001,678,B,US,CD456,200
+123hasd56as1d32fas,TL,Tom,Lee,Anderson,1975-08-10,Chicago,1029384756,tom@example.com,60601,9012,C,US,EF789,200
+jk1h2k3j4h51kj23h45,JH,John,Hulk,Doe,1988-07-02,Dallas,5647382910,john@example.com,75201,3456,D,US,GH012,200
+123asd5f6as1df32as1,RP,Ronald,Paul,McDonald,1972-09-12,Houston,9081726354,ronald@example.com,77001,7890,E,US,IJ345,200
+123fs6ad51f32as6f1,ZK,Zoe,Kate,Anderson,1980-10-22,Phoenix,3216549870,zoe@example.com,85001,123,AZ,US,KL678,200
+12zxc3v4b5n6m7l8k9,WJ,William,Jack,Moore,1965-11-30,Philadelphia,9876543210,william@example.com,19101,456,HTML,US,MN901,200
+1fshj23k456kj7890l,BD,Brian,Danny,Brown,1993-12-15,San Antonio,7418529630,brian@example.com,78201,789,JS,US,OP234,200
+12fdg3hj4k56l7m8n9,GT,Gina,Trent,Miller,1990-01-20,San Diego,9638527410,gina@example.com,92101,012,R,US,QR567,200
+df1gh2jkl3z4xcv5bn,MN,Michael,Nina,Martinez,1985-02-05,Dallas,7894561230,michael@example.com,75201,345,HTML,US,ST890,200
