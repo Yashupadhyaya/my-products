@@ -1,0 +1,11 @@
+email,otp,client,statusCode
+john_doe@gmail.com,123456,iOSApp,200
+jane_doe@yahoo.com,654321,AndroidApp,200
+sam_smith@hotmail.com,789012,WebApp,200
+amy_adams@gmail.com,210987,iOSApp,400
+mike_johnson@yahoo.com,345678,WebApp,200
+emma_watson@hotmail.com,876543,AndroidApp,200
+max_payne@gmail.com,901234,iOSApp,400
+chris_evans@yahoo.com,567890,WebApp,200
+scarlett_johansson@hotmail.com,234567,iOSApp,200
+clark_kent@gmail.com,890123,AndroidApp,400

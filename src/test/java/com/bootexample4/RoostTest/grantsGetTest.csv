@@ -1,0 +1,11 @@
+userID,email,registrationDate,gender,age,location,statusCode
+1,john.doe@example.com,2022-01-01,Male,45,New York,200
+2,mary.jane@example.com,2022-01-02,Female,30,Chicago,200
+3,peter.parker@example.com,2022-01-03,Male,20,Los Angeles,200
+4,tony.stark@example.com,2022-01-04,Male,50,San Francisco,200
+5,steve.rogers@example.com,2022-01-05,Male,100,Washington DC,200
+6,natasha.romanoff@example.com,2022-01-06,Female,35,Houston,200
+7,bruce.banner@example.com,2022-01-07,Male,40,Philadelphia,200
+8,clint.barton@example.com,2022-01-08,Male,45,Phoenix,200
+9,loki.laufeyson@example.com,2022-01-09,Male,1000,Seattle,200
+10,thor.odinson@example.com,2022-01-10,Male,1500,Dallas,200

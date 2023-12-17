@@ -1,0 +1,11 @@
+size,offset,recipient-id,credential-url,statusCode
+16,0,4b7d6c48-eb86-446e-9a7e-e24e28ef909c,https://example.com/credential-1,200
+23,10,470fd1ee-d9a4-4f02-b1ad-ffb10f81e881,https://example.com/credential-2,201
+45,20,3183ab37-8d8e-4b3a-9a9f-c5d439b04352,https://example.com/credential-3,404
+20,30,6573f846-ec53-4a56-881f-d46bb6ee7a81,https://example.com/credential-4,502
+39,40,f031b355-39c9-4e34-8b9c-a3c47561e3f6,https://example.com/credential-5,504
+49,50,f7f595ea-cfd2-4a5e-9b77-c5a8a2a0bb1d,https://example.com/credential-6,403
+32,60,ffa0503f-8f2b-4fc0-988a-391c36a21480,https://example.com/credential-7,200
+42,70,0f7c0fee-e0b4-4a2f-b2b6-7c0feee80b4d,https://example.com/credential-8,503
+25,80,ddb97f05-97f0-5ddb-97f0-5ddb97f05ddb,https://example.com/credential-9,400
+50,90,97f0ddb9-7f05-7f0d-db97-f0ddb97f05db,https://example.com/credential-10,500
