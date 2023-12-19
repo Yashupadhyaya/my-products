@@ -1,0 +1,4 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John,http://example.com/photo1.jpg,1,dog,available,400,Client error responses: Bad Request
+Anna,http://example.com/photo2.jpg,2,cat,sold,404,Client error responses: Not Found
+Lisa,http://example.com/photo3.jpg,3,bird,pending,405,Client error responses: Method Not Allowed
