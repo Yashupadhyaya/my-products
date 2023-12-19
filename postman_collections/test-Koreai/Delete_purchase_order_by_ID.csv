@@ -1,0 +1,9 @@
+orderId,statusCode,scenario
+12345,400,Client error responses: Bad Request
+67890,404,Client error responses: Not Found
+23456,400,Client error responses: Bad Request
+78901,404,Client error responses: Not Found
+34567,400,Client error responses: Bad Request
+89012,404,Client error responses: Not Found
+45678,400,Client error responses: Bad Request
+90123,404,Client error responses: Not Found
