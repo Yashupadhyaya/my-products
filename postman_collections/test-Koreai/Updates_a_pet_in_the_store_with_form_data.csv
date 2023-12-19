@@ -1,0 +1,6 @@
+petId,name,status,statusCode,scenario
+1,Buddy,Active,405,Client error responses: Method Not Allowed
+2,Max,Inactive,405,Client error responses: Method Not Allowed
+3,Molly,Active,405,Client error responses: Method Not Allowed
+4,Bella,Inactive,405,Client error responses: Method Not Allowed
+5,Charlie,Active,405,Client error responses: Method Not Allowed
