@@ -1,0 +1,4 @@
+orderId,statusCode,scenario
+Order123,200,Successful responses: OK
+Order124,400,Client error responses: Bad Request
+Order125,404,Client error responses: Not Found

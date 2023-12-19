@@ -1,0 +1,11 @@
+username,password,statusCode,scenario
+john_doe,johndoe123,200,Successful responses: OK
+jane_doe,janedoe123,200,Successful responses: OK
+sam_smith,samsmith123,200,Successful responses: OK
+emma_watson,emmawatson123,200,Successful responses: OK
+tom_cruise,tomcruise123,200,Successful responses: OK
+david_johnson,davidjohnson123,400,Client error responses: Bad Request
+michael_jackson,michaeljackson123,400,Client error responses: Bad Request
+paul_mccartney,paulmccartney123,400,Client error responses: Bad Request
+ringo_starr,ringostarr123,400,Client error responses: Bad Request
+elvis_presley,elvispresley123,400,Client error responses: Bad Request
