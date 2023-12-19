@@ -1,0 +1,11 @@
+username,statusCode,scenario
+JohnDoe1,400,Client error responses: Bad Request
+JaneDoe2,400,Client error responses: Bad Request
+RobertSmith3,400,Client error responses: Bad Request
+EmilyJones4,400,Client error responses: Bad Request
+MichaelBrown5,400,Client error responses: Bad Request
+TomGreen6,404,Client error responses: Not Found
+SarahWhite7,404,Client error responses: Not Found
+JuliaBlack8,404,Client error responses: Not Found
+DanielBlue9,404,Client error responses: Not Found
+AnnaGray10,404,Client error responses: Not Found

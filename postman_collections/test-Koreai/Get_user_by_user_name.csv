@@ -1,0 +1,11 @@
+username,statusCode,scenario
+user1,200,Successful responses: OK
+user2,400,Client error responses: Bad Request
+user3,404,Client error responses: Not Found
+user4,200,Successful responses: OK
+user5,400,Client error responses: Bad Request
+user6,404,Client error responses: Not Found
+user7,200,Successful responses: OK
+user8,400,Client error responses: Bad Request
+user9,404,Client error responses: Not Found
+user10,200,Successful responses: OK

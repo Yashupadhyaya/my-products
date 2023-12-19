@@ -1,0 +1,5 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+jack101,1,John,Smith,johnsmith@gmail.com,abc123,1234567890,1,400,Client error responses: Bad Request
+tyler202,2,Tyler,Johnson,tylerjohnson@gmail.com,def456,0987654321,1,400,Client error responses: Bad Request
+sara303,3,Sara,Williams,sarawilliams@gmail.com,ghi789,1122334455,0,404,Client error responses: Not Found
+linda404,4,Linda,Brown,lindabrown@gmail.com,jkl012,5566778899,0,404,Client error responses: Not Found

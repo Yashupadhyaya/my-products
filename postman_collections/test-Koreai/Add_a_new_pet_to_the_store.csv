@@ -1,0 +1,6 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John,http://johndoe.com/photo1.jpg,001,friend,active,405,Client error responses: Method Not Allowed
+Jane,http://janedoe.com/photo2.jpg,002,employee,active,405,Client error responses: Method Not Allowed
+Sam,http://samdoe.com/photo3.jpg,003,customer,inactive,405,Client error responses: Method Not Allowed
+Emma,http://emmadmith.com/photo4.jpg,004,manager,active,405,Client error responses: Method Not Allowed
+Bob,http://bobsmith.com/photo5.jpg,005,supplier,inactive,405,Client error responses: Method Not Allowed

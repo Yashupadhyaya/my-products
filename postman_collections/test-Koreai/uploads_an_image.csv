@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+code,-81767669,200,Successful responses: OK
+type,ipsum fugiat cupidatat,200,Successful responses: OK
+message,exercitati,200,Successful responses: OK
+additionalMetadata,{{additionalMetadata}},200,Successful responses: OK
+file,{{file}},200,Successful responses: OK
