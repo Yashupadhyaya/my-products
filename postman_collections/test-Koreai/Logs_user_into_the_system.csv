@@ -1,0 +1,5 @@
+username,password,statusCode,scenario
+user1,pass123,200,Successful responses: OK
+user2,pass456,200,Successful responses: OK
+user1,pass123,400,Client error responses: Bad Request
+user2,pass456,400,Client error responses: Bad Request

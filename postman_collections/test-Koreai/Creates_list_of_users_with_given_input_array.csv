@@ -1,0 +1,6 @@
+id,username,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+1,johnsmith,John,Smith,johnsmith@gmail.com,123456,123456789,active,500,Server error responses: Internal Server Error
+2,alicejones,Alice,Jones,alicejones@gmail.com,abc123,234567890,inactive,500,Server error responses: Internal Server Error
+3,bobjohnson,Bob,Johnson,bobjohnson@gmail.com,456789,987654321,active,500,Server error responses: Internal Server Error
+4,jennymiller,Jenny,Miller,jennymiller@gmail.com,789123,123456987,inactive,500,Server error responses: Internal Server Error
+5,charlesbrown,Charles,Brown,charlesbrown@gmail.com,321456,987123654,active,500,Server error responses: Internal Server Error
