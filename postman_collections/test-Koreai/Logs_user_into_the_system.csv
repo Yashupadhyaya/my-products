@@ -1,0 +1,7 @@
+username,password,statusCode,scenario
+johnDoe,pass123,200,Successful responses: OK
+janeDoe,pass456,400,Client error responses: Bad Request
+admin,adminpass,200,Successful responses: OK
+guesUser,guestpass,400,Client error responses: Bad Request
+michaelC,mc2020,200,Successful responses: OK
+sarajP,sp2021,400,Client error responses: Bad Request

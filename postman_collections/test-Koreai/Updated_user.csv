@@ -1,0 +1,5 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+johnDoe01,1234,John,Doe,johnDoe@gmail.com,password123,1234567890,1,400,Client error responses: Bad Request
+janeDoe02,2345,Jane,Doe,janeDoe@gmail.com,password456,2345678901,2,400,Client error responses: Bad Request
+alexSmith03,3456,Alex,Smith,alexSmith@gmail.com,password789,3456789012,1,404,Client error responses: Not Found
+emmaJohnson04,4567,Emma,Johnson,emmaJohnson@gmail.com,password012,4567890123,2,404,Client error responses: Not Found
