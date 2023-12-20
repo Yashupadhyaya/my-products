@@ -1,0 +1,6 @@
+id,username,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+1,johnDoe,John,Doe,john.doe@gmail.com,password123,1234567890,1,500,Server error responses: Internal Server Error
+2,janeDoe,Jane,Doe,jane.doe@gmail.com,password123,0987654321,1,500,Server error responses: Internal Server Error
+3,michaelSmith,Michael,Smith,michael.smith@gmail.com,password123,2345678901,1,500,Server error responses: Internal Server Error
+4,lisaJohnson,Lisa,Johnson,lisa.johnson@gmail.com,password123,3456789012,1,500,Server error responses: Internal Server Error
+5,jacobBrown,Jacob,Brown,jacob.brown@gmail.com,password123,4567890123,1,500,Server error responses: Internal Server Error
