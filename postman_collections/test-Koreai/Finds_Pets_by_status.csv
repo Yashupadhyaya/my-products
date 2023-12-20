@@ -1,0 +1,7 @@
+status,statusCode,scenario
+placed,200,Successful responses: OK
+approved,200,Successful responses: OK
+delivered,200,Successful responses: OK
+placed,400,Client error responses: Bad Request
+approved,400,Client error responses: Bad Request
+delivered,400,Client error responses: Bad Request
