@@ -1,0 +1,11 @@
+petId,name,status,statusCode,scenario
+1,Lucky,Available,405,Client error responses: Method Not Allowed
+2,Bella,Adopted,405,Client error responses: Method Not Allowed
+3,Charlie,Sold,405,Client error responses: Method Not Allowed
+4,Lucy,Available,405,Client error responses: Method Not Allowed
+5,Max,Adopted,405,Client error responses: Method Not Allowed
+6,Molly,Sold,405,Client error responses: Method Not Allowed
+7,Buddy,Available,405,Client error responses: Method Not Allowed
+8,Daisy,Adopted,405,Client_error responses: Method Not Allowed
+9,Bear,Sold,405,Client error responses: Method Not Allowed
+10,Lola,Available,405,Client error responses: Method Not Allowed
