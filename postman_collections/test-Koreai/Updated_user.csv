@@ -1,0 +1,5 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+testuser1,001,John,Smith,johnsmith@test.com,pass01,1234567890,1,400,Client error responses: Bad Request
+testuser2,002,Jane,Doe,janedoe@test.com,pass02,0987654321,2,400,Client error responses: Bad Request
+testuser3,003,Robert,Brown,robertbrown@test.com,pass03,2345678901,3,404,Client error responses: Not Found
+testuser4,004,Emily,White,emilywhite@test.com,pass04,9876543210,1,404,Client error responses: Not Found
