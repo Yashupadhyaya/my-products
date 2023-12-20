@@ -1,0 +1,6 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John Doe,http://example.com/profile1.jpg,101,Customer,Active,405,Client error responses: Method Not Allowed
+Jane Smith,http://example.com/profile2.jpg,102,Employee,Active,405,Client error responses: Method Not Allowed
+Robert Johnson,http://example.com/profile3.jpg,103,Partner,Inactive,405,Client error responses: Method Not Allowed
+Mike Davis,http://example.com/profile4.jpg,104,Customer,Active,405,Client error responses: Method Not Allowed
+Emma Wilson,http://example.com/profile5.jpg,105,Employee,Inactive,405,Client error responses: Method Not Allowed
