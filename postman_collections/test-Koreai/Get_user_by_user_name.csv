@@ -1,0 +1,4 @@
+username,statusCode,scenario
+john_doe,200,Successful responses: OK
+adam_smith,400,Client error responses: Bad Request
+mary_jones,404,Client error responses: Not Found
