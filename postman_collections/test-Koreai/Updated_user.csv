@@ -1,0 +1,6 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+user1,1,John,Doe,johndoe@email.com,password1,1111111111,active,400,Client error responses: Bad Request
+user2,2,Jane,Doe,janedoe@email.com,password2,2222222222,inactive,404,Client error responses: Not Found
+user3,3,Jim,Smith,jimsmith@email.com,password3,3333333333,active,400,Client error responses: Bad Request
+user4,4,Jill,Smith,jillsmith@email.com,password4,4444444444,inactive,404,Client error responses: Not Found
+user5,5,Joe,Johnson,joejohnson@email.com,password5,5555555555,active,400,Client error responses: Bad Request
