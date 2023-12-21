@@ -1,0 +1,6 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John,http://photos/John,001,tag1,active,405,Client error responses: Method Not Allowed
+Lisa,http://photos/Lisa,002,tag2,inactive,405,Client error responses: Method Not Allowed
+Mark,http://photos/Mark,003,tag3,active,405,Client error responses: Method Not Allowed
+Emily,http://photos/Emily,004,tag4,inactive,405,Client error responses: Method Not Allowed
+Emma,http://photos/Emma,005,tag5,active,405,Client error responses: Method Not Allowed
