@@ -1,0 +1,5 @@
+id,petId,quantity,shipDate,status,complete,statusCode,scenario
+12345,67890,3,2021-09-21,delivered,True,200,Successful responses: OK
+22345,77890,5,2021-09-22,pending,False,200,Successful responses: OK
+32345,87890,2,2021-09-23,shipped,True,400,Client error responses: Bad Request
+42345,97890,1,2021-09-24,delivered,False,400,Client error responses: Bad Request
