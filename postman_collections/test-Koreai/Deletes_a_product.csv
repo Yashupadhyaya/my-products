@@ -1,0 +1,9 @@
+productId,statusCode,scenario
+101,200,Successful responses: OK
+102,200,Successful responses: OK
+103,200,Successful responses: OK
+104,200,Successful responses: OK
+201,404,Client error responses: Not Found
+202,404,Client error responses: Not Found
+203,404,Client error responses: Not Found
+204,404,Client error responses: Not Found
