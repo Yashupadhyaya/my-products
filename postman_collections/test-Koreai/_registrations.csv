@@ -1,0 +1,4 @@
+size,offset,recipient-id,credential-url,statusCode,scenario
+900,0,7f02915b-802a-4c38-8cc2-b0cbf5b7a349,<string>,200,Successful responses: OK
+800,1,urn:uuid:b10534ce-0e0c-5140-1593-39f1d1727273,<string>,400,Client error responses: Bad Request
+700,2,undefined,undefined,401,Client error responses: Unauthorized

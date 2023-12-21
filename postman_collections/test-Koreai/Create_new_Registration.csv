@@ -1,0 +1,4 @@
+id,credentialUrl,startDate,reference,endDate,statusCode,scenario
+a9c81299-d574-2f38-49c9-71dc57406818,<string>,<date>,<string>,<date>,201,Successful responses: Created
+a9c81299-d574-2f38-49c9-71dc57406818,<string>,<date>,<string>,<date>,400,Client error responses: Bad Request
+a9c81299-d574-2f38-49c9-71dc57406818,<string>,<date>,<string>,<date>,401,Client error responses: Unauthorized

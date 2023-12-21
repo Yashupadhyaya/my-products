@@ -1,0 +1,4 @@
+id,tradeName,phone,email,statusCode,scenario
+urn:uuid:2a8d2245-2754-1de5-0699-e8150edf8759,Excepteur dolore qui est,<string>,<email>,200,Successful responses: OK
+urn:uuid:2a8d2245-2754-1de5-0699-e8150edf8759,id aute,<string>,<email>,400,Client error responses: Bad Request
+urn:uuid:2a8d2245-2754-1de5-0699-e8150edf8759,<tradeName>,<phone>,<email>,401,Client error responses: Unauthorized
