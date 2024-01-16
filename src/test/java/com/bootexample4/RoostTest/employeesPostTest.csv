@@ -1,0 +1,11 @@
+id,jobTitle,name,email,statusCode
+d290f1ee-6c54-4b01-90e6-d701748f0851,System Analyst,John Smith,john.smith@acme-corp.com,201
+a290f1ee-6c54-4b01-90e6-d701748f0852,Software Developer,Jane Doe,jane.doe@acme-corp.com,201
+b290f1ee-6c54-4b01-90e6-d701748f0853,Data Scientist,James Bond,james.bond@acme-corp.com,201
+c290f1ee-6c54-4b01-90e6-d701748f0854,Product Manager,Emma Watson,emma.watson@acme-corp.com,201
+e290f1ee-6c54-4b01-90e6-d701748f0855,UX Designer,Robert Downey,robert.downey@acme-corp.com,201
+f290f1ee-6c54-4b01-90e6-d701748f0856,DevOps Engineer,Chris Evans,chris.evans@acme-corp.com,201
+g290f1ee-6c54-4b01-90e6-d701748f0857,QA Tester,Scarlett Johansson,scarlett.johansson@acme-corp.com,201
+h290f1ee-6c54-4b01-90e6-d701748f0858,Network Administrator,Tom Holland,tom.holland@acme-corp.com,201
+i290f1ee-6c54-4b01-90e6-d701748f0859,Business Analyst,Chris Hemsworth,chris.hemsworth@acme-corp.com,201
+j290f1ee-6c54-4b01-90e6-d701748f0860,IT Support Specialist,Mark Ruffalo,mark.ruffalo@acme-corp.com,201
