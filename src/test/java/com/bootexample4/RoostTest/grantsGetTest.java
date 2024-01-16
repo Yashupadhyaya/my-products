@@ -9,6 +9,7 @@ package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
@@ -25,137 +26,73 @@ import org.slf4j.LoggerFactory;
 
 public class grantsGetTest {
 
+  private static final Logger logger = LoggerFactory.getLogger(grantsGetTest.class);
+
+  @BeforeAll
+  public static void setUp() {
+    RestAssured.baseURI = "http://0.0.0.0:4012";
+  }
+
   @Test
   public void grants_get_Test() {
-    RestAssured.baseURI = "http://0.0.0.0:4012";
+    Response response = given()
+        .header("Token", System.getenv("API_KEY"))
+        .when()
+        .get("/grants")
+        .then()
+        .extract().response();
 
-    // Read CSV file
-    try (BufferedReader reader = new BufferedReader(
-        new FileReader("src/test/java/com/bootexample4/RoostTest/grantsGetTest.csv"))) {
-      String headerLine = reader.readLine();
-      String[] headers = headerLine.split(",");
+    switch (response.statusCode()) {
+      case 200:
+        System.out.println("Description: successful operation");
 
-      String line;
-      while ((line = reader.readLine()) != null) {
-        String[] data = line.split(",");
+        MatcherAssert.assertThat("Response total field is of type Integer",
+            response.jsonPath().get("total"), instanceOf(Integer.class));
 
-        // Create a map of header to data
-        Map<String, String> map = new HashMap<>();
-        for (int i = 0; i < headers.length; i++) {
-          map.put(headers[i], data[i]);
-        }
+        List<Map<String, ?>> grants = response.jsonPath().getList("grants");
+        for (int i = 0; i < grants.size(); i++) {
+          String baseJsonPath = "grants[" + i + "]";
+          MatcherAssert.assertThat("Grant ID is a String",
+              response.jsonPath().get(baseJsonPath + ".id"), instanceOf(String.class));
+          MatcherAssert.assertThat("Grant Token is a String",
+              response.jsonPath().get(baseJsonPath + ".token"), instanceOf(String.class));
+          MatcherAssert.assertThat("Created At is a String",
+              response.jsonPath().get(baseJsonPath + ".createdAt"), instanceOf(String.class));
+          MatcherAssert.assertThat("Updated At is a String",
+              response.jsonPath().get(baseJsonPath + ".updatedAt"), instanceOf(String.class));
 
-        Response response = given()
-            .header("Token", System.getenv("API_KEY"))
-            .when()
-            .get("/grants")
-            .then()
-            .extract().response();
-
-        if (response.statusCode() == 200) {
-          System.out.println("Description: successful operation");
-
-          if (response.jsonPath().get("total") != null) {
-            MatcherAssert.assertThat(response.jsonPath().get("total"), instanceOf(Integer.class));
-          }
-
-          if (response.jsonPath().get("grants") != null) {
-            for (int i = 0; i < response.jsonPath().getList("grants").size(); i++) {
-              if (response.jsonPath().get("grants[" + i + "].id") != null) {
-                MatcherAssert.assertThat(response.jsonPath().get("grants[" + i + "].id"), instanceOf(String.class));
-              }
-
-              if (response.jsonPath().get("grants[" + i + "].token") != null) {
-                // MatcherAssert.assertThat(response.jsonPath().getString("grants[" + i +
-                // "].token"), matchesPattern(
-                // "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"));
-
-                MatcherAssert.assertThat(response.jsonPath().get("grants[" + i + "].token"), instanceOf(String.class));
-              }
-
-              if (response.jsonPath().get("grants[" + i + "].createdAt") != null) {
-                MatcherAssert.assertThat(response.jsonPath().get("grants[" + i + "].createdAt"),
-                    instanceOf(String.class));
-              }
-
-              if (response.jsonPath().get("grants[" + i + "].updatedAt") != null) {
-                MatcherAssert.assertThat(response.jsonPath().get("grants[" + i + "].updatedAt"),
-                    instanceOf(String.class));
-              }
-
-              if (response.jsonPath().get("grants[" + i + "].account") != null) {
-                if (response.jsonPath().get("grants[" + i + "].account.id") != null) {
-                  MatcherAssert.assertThat(response.jsonPath().get("grants[" + i + "].account.id"),
-                      instanceOf(String.class));
-                }
-
-                if (response.jsonPath().get("grants[" + i + "].account.name") != null) {
-                  MatcherAssert.assertThat(response.jsonPath().getString("grants[" + i + "].account.name"),
-                      matchesPattern("^[\\p{L} .'-]{1,100}$"));
-
-                  MatcherAssert.assertThat(response.jsonPath().get("grants[" + i + "].account.name"),
-                      instanceOf(String.class));
-                }
-
-                if (response.jsonPath().get("grants[" + i + "].account.image") != null) {
-                  MatcherAssert.assertThat(response.jsonPath().get("grants[" + i + "].account.image"),
-                      instanceOf(String.class));
-                }
-
-                // if (response.jsonPath().get("grants[" + i + "].account.email") != null) {
-                // // MatcherAssert.assertThat(response.jsonPath().getString("grants["+ i
-                // // +"].account.email"),
-                // //
-                // matchesPattern("^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$"));
-
-                // //
-
-                // }
-
-              }
-
-            }
-            MatcherAssert.assertThat(response.jsonPath().getList("grants"), instanceOf(List.class));
-
+          Map<String, ?> account = response.jsonPath().getMap(baseJsonPath + ".account");
+          if (account != null) {
+            MatcherAssert.assertThat("Account ID is a String",
+                account.get("id"), instanceOf(String.class));
+            MatcherAssert.assertThat("Account Name is a String",
+                account.get("name"), instanceOf(String.class));
+            MatcherAssert.assertThat("Account Image is a String",
+                account.get("image"), instanceOf(String.class));
           }
         }
-        if (response.statusCode() == 401) {
-          System.out.println("Description: Authentication Required");
+        MatcherAssert.assertThat("Grants field is a List",
+            grants, instanceOf(List.class));
+        break;
 
-          if (response.jsonPath().get("error") != null) {
-            MatcherAssert.assertThat(response.jsonPath().get("error"), instanceOf(String.class));
-          }
+      case 401:
+        logger.info("Description: Authentication Required");
+        MatcherAssert.assertThat("Error field is a String",
+            response.jsonPath().get("error"), instanceOf(String.class));
+        MatcherAssert.assertThat("Error field matches pattern",
+            response.jsonPath().getString("error"), matchesPattern("^validation/.*$"));
+        MatcherAssert.assertThat("Description field is a String",
+            response.jsonPath().get("description"), instanceOf(String.class));
+        MatcherAssert.assertThat("Value field is a String",
+            response.jsonPath().get("value"), instanceOf(String.class));
+        MatcherAssert.assertThat("Field field is a String",
+            response.jsonPath().get("field"), instanceOf(String.class));
+        MatcherAssert.assertThat("Schema_field field is a String",
+            response.jsonPath().get("schema_field"), instanceOf(String.class));
+        break;
 
-          if (response.jsonPath().get("description") != null) {
-            MatcherAssert.assertThat(response.jsonPath().get("description"), instanceOf(String.class));
-          }
-
-          if (response.jsonPath().get("error") != null) {
-            MatcherAssert.assertThat(response.jsonPath().getString("error"), matchesPattern("^validation/.*$"));
-
-            MatcherAssert.assertThat(response.jsonPath().get("error"), instanceOf(String.class));
-          }
-
-          if (response.jsonPath().get("description") != null) {
-            MatcherAssert.assertThat(response.jsonPath().get("description"), instanceOf(String.class));
-          }
-
-          if (response.jsonPath().get("value") != null) {
-            MatcherAssert.assertThat(response.jsonPath().get("value"), instanceOf(String.class));
-          }
-
-          if (response.jsonPath().get("field") != null) {
-            MatcherAssert.assertThat(response.jsonPath().get("field"), instanceOf(String.class));
-          }
-
-          if (response.jsonPath().get("schema_field") != null) {
-            MatcherAssert.assertThat(response.jsonPath().get("schema_field"), instanceOf(String.class));
-          }
-        }
-
-      }
-    } catch (IOException e) {
-      e.printStackTrace();
+      default:
+        fail("Unexpected status code received: " + response.statusCode());
     }
   }
 }
