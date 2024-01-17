@@ -9521,7 +9521,7 @@
             "200" : {
               "description" : "Success",
               "content" : {
-                "application/json;charset=utf-8" : {
+                "application/json" : {
                   "schema" : {
                     "$ref" : "#/components/schemas/QueryOrderResponse"
                   }
@@ -9531,7 +9531,7 @@
             "400" : {
               "description" : "Bad Request",
               "content" : {
-                "application/json;charset=utf-8" : {
+                "application/json" : {
                   "schema" : {
                     "$ref" : "#/components/schemas/Error"
                   }
@@ -9541,7 +9541,7 @@
             "401" : {
               "description" : "Unauthorized",
               "content" : {
-                "application/json;charset=utf-8" : {
+                "application/json" : {
                   "schema" : {
                     "$ref" : "#/components/schemas/Error"
                   }
@@ -9551,7 +9551,7 @@
             "403" : {
               "description" : "Forbidden",
               "content" : {
-                "application/json;charset=utf-8" : {
+                "application/json" : {
                   "schema" : {
                     "$ref" : "#/components/schemas/Error"
                   }
@@ -9561,7 +9561,7 @@
             "404" : {
               "description" : "Not Found",
               "content" : {
-                "application/json;charset=utf-8" : {
+                "application/json" : {
                   "schema" : {
                     "$ref" : "#/components/schemas/Error"
                   }
@@ -9571,7 +9571,7 @@
             "405" : {
               "description" : "Method Not allowed",
               "content" : {
-                "application/json;charset=utf-8" : {
+                "application/json" : {
                   "schema" : {
                     "$ref" : "#/components/schemas/Error"
                   }
@@ -9581,7 +9581,7 @@
             "409" : {
               "description" : "Conflict",
               "content" : {
-                "application/json;charset=utf-8" : {
+                "application/json" : {
                   "schema" : {
                     "$ref" : "#/components/schemas/Error"
                   }
@@ -9591,7 +9591,7 @@
             "500" : {
               "description" : "Internal Server Error",
               "content" : {
-                "application/json;charset=utf-8" : {
+                "application/json" : {
                   "schema" : {
                     "$ref" : "#/components/schemas/Error"
                   }
@@ -18903,9 +18903,6 @@
               "type" : "string",
               "format" : "date-time",
               "description" : "Order fulfillment start date wished by the requestor. This is used when, for any reason, requestor cannot allow seller to begin to operationally begin the fulfillment before a date."
-            },
-            "serviceManagement" : {
-              "$ref" : "#/components/schemas/ServiceManagementActivateServiceRef"
             }
           }
         },
