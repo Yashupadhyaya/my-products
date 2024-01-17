@@ -1,0 +1,11 @@
+id,X-Trace-Id,channel,username,statusCode
+USR1,XTID123456,web,johndoe,200
+USR2,XTID123457,mobile,janedoe,401
+USR3,XTID123458,api,emilyblunt,404
+USR4,XTID123459,web,michaelbay,403
+USR5,XTID123460,mobile,sarahconnor,200
+USR6,XTID123461,api,jamescameron,409
+USR7,XTID123462,web,tonystark,500
+USR8,XTID123463,mobile,peterparker,400
+USR9,XTID123464,api,brucewayne,200
+USR10,XTID123465,web,dianaprince,405
