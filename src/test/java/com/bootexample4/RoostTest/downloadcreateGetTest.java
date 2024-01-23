@@ -11,10 +11,12 @@ RoostTestHash=f47bc38f0a
 
 // ********RoostGPT********
 package com.bootexample4.RoostTest;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
+
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
 import java.io.BufferedReader;
@@ -31,9 +33,14 @@ import org.slf4j.LoggerFactory;
 
 public class downloadcreateGetTest {
   
+    private String getURL() {
+        // Placeholder for actual URL retrieval logic
+        return "http://example.com"; // Replace with actual URL retrieval
+    }
+
     @Test  
     public void downloadcreateGet_Test() {  
-        RestAssured.baseURI = System.getenv("BASE_URL");  
+        RestAssured.baseURI = getURL();
   
         // Read CSV file  
         try (BufferedReader reader = new BufferedReader(new FileReader("src" + File.separator + "test" + File.separator + "java" + File.separator + "com" + File.separator + "bootexample4" + File.separator + "RoostTest" + File.separator + "download-createGetTest.csv"))) {  
@@ -49,43 +56,48 @@ public class downloadcreateGetTest {
                 for (int i = 0; i < headers.length; i++) {  
                     map.put(headers[i], data[i]);  
                 }  
-                
-  
+
                 Response response = given()
-				.pathParam("X-Trace-Id", map.get("X-Trace-Id") != null ? map.get("X-Trace-Id") : "")
-				.pathParam("channel", map.get("channel") != null ? map.get("channel") : "")
-				.pathParam("fromDate", map.get("fromDate") != null ? map.get("fromDate") : "")
-				.pathParam("toDate", map.get("toDate") != null ? map.get("toDate") : "")
+                .contentType(ContentType.JSON)
+                .pathParam("X-Trace-Id", map.getOrDefault("X-Trace-Id", ""))
+                .pathParam("channel", map.getOrDefault("channel", ""))
+                .pathParam("fromDate", map.getOrDefault("fromDate", ""))
+                .pathParam("toDate", map.getOrDefault("toDate", ""))
                 .when()
                 .get("/order-report/orders/download-create")  
-                .then() 
+                .then()
+                .log().ifValidationFails()
                 .extract().response();    
-         
-                if (response.statusCode() == 201) {
-					System.out.println("Description: Created");
-				}
-if (response.statusCode() == 400) {
-					System.out.println("Description: Bad Request");
-				}
-if (response.statusCode() == 401) {
-					System.out.println("Description: Unauthorized");
-				}
-if (response.statusCode() == 403) {
-					System.out.println("Description: Forbidden");
-				}
-if (response.statusCode() == 404) {
-					System.out.println("Description: Not Found");
-				}
-if (response.statusCode() == 405) {
-					System.out.println("Description: Method Not allowed");
-				}
-if (response.statusCode() == 409) {
-					System.out.println("Description: Conflict");
-				}
-if (response.statusCode() == 500) {
-					System.out.println("Description: Internal Server Error");
-				}
-  
+
+                // Assertions based on status codes
+                switch (response.statusCode()) {
+                    case 201:
+                        System.out.println("Description: Created");
+                        break;
+                    case 400:
+                        System.out.println("Description: Bad Request");
+                        break;
+                    case 401:
+                        System.out.println("Description: Unauthorized");
+                        break;
+                    case 403:
+                        System.out.println("Description: Forbidden");
+                        break;
+                    case 404:
+                        System.out.println("Description: Not Found");
+                        break;
+                    case 405:
+                        System.out.println("Description: Method Not allowed");
+                        break;
+                    case 409:
+                        System.out.println("Description: Conflict");
+                        break;
+                    case 500:
+                        System.out.println("Description: Internal Server Error");
+                        break;
+                    default:
+                        System.out.println("Unhandled status code: " + response.statusCode());
+                }
             }  
         } catch (IOException e) {  
             e.printStackTrace();  
