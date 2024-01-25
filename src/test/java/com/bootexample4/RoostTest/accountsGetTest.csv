@@ -1,0 +1,11 @@
+Consent-ID,withBalance,Content-Type,PSU-ID,statusCode
+CNS12345,false,application/json,PSU78901,200
+CNS12346,true,application/xml,PSU78902,401
+CNS12347,false,text/html,PSU78903,400
+CNS12348,true,application/json,PSU78904,200
+CNS12349,false,text/plain,PSU78905,401
+CNS12350,true,application/xml,PSU78906,200
+CNS12351,false,text/html,PSU78907,400
+CNS12352,true,application/json,PSU78908,401
+CNS12353,false,text/plain,PSU78909,200
+CNS12354,true,application/xml,PSU78910,400
