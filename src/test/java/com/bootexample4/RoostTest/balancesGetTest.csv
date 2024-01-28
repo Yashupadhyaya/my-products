@@ -1,0 +1,11 @@
+account-Id,Consent-ID,Content-Type,PSU-ID,statusCode
+acc123456,cns123456,application/json,psu123456,200
+acc234567,cns234567,application/xml,psu234567,200
+acc345678,cns345678,text/html,psu345678,200
+acc456789,cns456789,text/plain,psu456789,200
+acc567890,cns567890,application/pdf,psu567890,200
+acc678901,cns678901,image/jpeg,psu678901,200
+acc789012,cns789012,video/mp4,psu789012,200
+acc890123,cns890123,audio/mpeg,psu890123,200
+acc901234,cns901234,multipart/form-data,psu901234,200
+acc012345,cns012345,application/vnd.ms-excel,psu012345,200
