@@ -1,0 +1,6 @@
+name,id,description,price,statusCode,scenario
+apple,4,apple,50,200,Successful operation
+banana,123,rotten banana,-10,405,Invalid input
+orange,xyz,fresh orange,100,405,Invalid input
+grape,0,expired grape,30,405,Invalid input
+pear,-1,canned pear,40,405,Invalid input
