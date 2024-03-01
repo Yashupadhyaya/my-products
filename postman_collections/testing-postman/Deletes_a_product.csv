@@ -1,0 +1,11 @@
+productId,statusCode,scenario
+12345,200,Product deleted
+67890,404,Not Found
+23456,201,Product deleted
+78901,202,Product deleted
+34567,300,apple
+89012,400,apple
+45678,500,apple
+90123,600,apple
+56789,700,apple
+01234,800,apple
