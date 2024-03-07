@@ -1,0 +1,11 @@
+id,Authorization,statusCode
+6e8b24f0-ae67-41c2-a353-d42fe96a90a3,Authorized,200
+5dabacf2-8947-4b5e-8f7b-1c8b20a44e1c,Unauthorized,401
+7b8cd4f7-3c15-4c8a-879d-37e40e4e42c2,Authorized,200
+1c7a61c1-5f55-4870-9cbb-d9e4315b3a38,Unauthorized,403
+5d6e8b2f-6a2f-4f5c-9e79-b61414f3d3fd,Unauthorized,401
+9a1d2de5-4351-4050-9848-8a4830b634f6,Authorized,200
+3b7c6e8b-4c47-41e8-9f21-7b1e5a8b34f7,Authorized,200
+9f2b77de-8b7c-4f6e-8f09-6b7146f9f9d1,Unauthorized,404
+2e8b6bdf-3c67-4d60-9f16-8a1d3b9f7a2b,Authorized,200
+0f6d5c7d-8f7b-43e9-8d9c-3b7146f9f9d1,Unauthorized,400
