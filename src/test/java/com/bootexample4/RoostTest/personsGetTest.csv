@@ -1,0 +1,11 @@
+size,offset,name,birth-date,statusCode
+20,0,John Doe,1980-01-01,200
+45,5,Jane Smith,1990-02-02,401
+30,2,Jim Brown,1985-03-03,200
+15,1,Jill White,1975-04-04,400
+50,10,Jack Black,1982-05-05,200
+10,0,Judy Green,1992-06-06,401
+25,3,Joe Blue,1981-07-07,200
+40,4,Jenny Purple,1989-08-08,400
+35,6,Jeff Red,1978-09-09,200
+5,0,Jessica Yellow,1995-10-10,401
