@@ -1,0 +1,11 @@
+commit-hash,email,statusCode
+a1b2c3d,john@example.com,201
+e4f5g6h,mary@example.net,201
+i7j8k9l,paul@sample.com,201
+m1n2o3p,susan@test.org,400
+q4r5s6t,bob@mydomain.com,201
+u7v8w9x,alice@yourdomain.com,400
+y1z2a3b,charlie@hisdomain.com,201
+c4d5e6f,david@herdomain.com,400
+g7h8i9j,emma@ourdomain.com,400
+k1l2m3n,oliver@theirdomain.com,201

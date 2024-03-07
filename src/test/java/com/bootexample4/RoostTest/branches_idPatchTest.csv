@@ -1,0 +1,11 @@
+id,tradeName,phone,email,statusCode
+3d0d7e70-1c4f-4bf2-9c82-b01f83beb399,TradeOne,1234567890,tradeone@example.com,200
+5e9c3063-75ad-4caf-8d85-3a5294710ccd,TradeTwo,2345678910,traderTwo@example.com,400
+7b9f5d34-8e5c-4e73-8385-5bd4f0b0e2ae,TradeThree,3456789120,tradeThree@example.com,401
+9f1d6f67-63b2-4e8b-9b38-7c4b5d9410ea,TradeFour,4567891230,tradeFour@example.com,200
+b13d8f89-47b3-4e9c-8d7a-8e2a6f8410eb,TradeFive,5678912340,tradeFive@example.com,400
+c35f9f0b-5b6c-4d8e-8e7b-9f1a7f8510ec,TradeSix,6789123450,tradeSix@example.com,401
+e57dbf2d-6b9d-4d8f-8f7c-af1b7f8610ed,TradeSeven,7891234560,tradeSeven@example.com,200
+075ecf4f-7ca0-4d90-8e89-bf1c7f8710ee,TradeEight,8912345670,tradeEight@example.com,400
+295fd370-8db1-4da1-9e98-cf1d7f8810ef,TradeNine,9123456780,tradeNine@example.com,401
+4b6fd251-9eb2-4db2-ae97-df1e7f8910f0,TradeTen,1234567891,tradeTen@example.com,200
