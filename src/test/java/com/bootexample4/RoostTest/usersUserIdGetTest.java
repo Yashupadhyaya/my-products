@@ -10,11 +10,12 @@ RoostTestHash=4a01978af3
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
@@ -35,7 +36,7 @@ public class usersUserIdGetTest {
     List<Map<String, String>> envList = new ArrayList<>();
 
 
-    @Before
+    @BeforeEach
     public void setUp() {
       TestdataLoader dataloader = new TestdataLoader();
       envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/users_userIdGetTest.csv");
