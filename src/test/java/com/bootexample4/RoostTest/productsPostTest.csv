@@ -1,0 +1,11 @@
+id,name,description,price,AdditionalCSVvaluInfo,statusCode
+1,apple,delicious apple,20,extra apple info,200
+2,banana,sweet banana,30,extra banana info,200
+3,cherry,tasty cherry,40,extra cherry info,200
+4,dragonfruit,exotic dragonfruit,50,extra dragonfruit info,200
+5,elderberry,healthy elderberry,60,extra elderberry info,200
+6,fig,sweet fig,70,extra fig info,200
+7,grape,juicy grape,80,extra grape info,200
+8,honeydew,refreshing honeydew,90,extra honeydew info,200
+9,iceberg lettuce,crisp iceberg lettuce,100,extra iceberg lettuce info,200
+10,jackfruit,unique jackfruit,110,extra jackfruit info,200

@@ -1,0 +1,11 @@
+productId,AdditionalCSVvaluInfo,statusCode
+123456,Some Additional Info,200
+234567,Some Other Info,404
+345678,More Info,200
+456789,Even More Info,404
+567890,Some Extra Info,200
+678901,Other Extra Info,404
+789012,Additional Extra Info,200
+890123,More Extra Info,404
+901234,Even More Extra Info,200
+102345,Some Additional Extra Info,404
