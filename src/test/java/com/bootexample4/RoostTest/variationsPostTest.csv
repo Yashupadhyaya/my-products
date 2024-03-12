@@ -1,0 +1,11 @@
+image,model,n,response_format,size,user,statusCode
+img1,dall-e-2,1,url,256x256,user-1234,200
+img2,dall-e-2,2,b64_json,512x512,user-1235,200
+img3,dall-e-2,3,url,1024x1024,user-1236,200
+img4,dall-e-2,4,b64_json,256x256,user-1237,200
+img5,dall-e-2,5,url,512x512,user-1238,200
+img6,dall-e-2,6,b64_json,1024x1024,user-1239,200
+img7,dall-e-2,7,url,256x256,user-1240,200
+img8,dall-e-2,8,b64_json,512x512,user-1241,200
+img9,dall-e-2,9,url,1024x1024,user-1242,200
+img10,dall-e-2,10,b64_json,256x256,user-1243,200

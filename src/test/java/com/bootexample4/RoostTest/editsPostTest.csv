@@ -1,0 +1,11 @@
+image,prompt,mask,model,n,size,response_format,user,statusCode
+img_001,A cute baby sea otter wearing a beret,mask_001,dall-e-2,1,1024x1024,url,user-1234,200
+img_002,A sunset over a serene lake,mask_002,dall-e-2,2,512x512,b64_json,user-5678,200
+img_003,A city skyline at night,mask_003,dall-e-2,3,256x256,url,user-9101,200
+img_004,An astronaut floating in space,mask_004,dall-e-2,4,1024x1024,b64_json,user-1121,200
+img_005,A tropical beach with clear blue water,mask_005,dall-e-2,5,512x512,url,user-3141,200
+img_006,A snowy mountain range,mask_006,dall-e-2,6,256x256,b64_json,user-5161,200
+img_007,A lush green forest,mask_007,dall-e-2,7,1024x1024,url,user-7181,200
+img_008,A wild horse galloping in a field,mask_008,dall-e-2,8,512x512,b64_json,user-9201,200
+img_009,A medieval castle on a hill,mask_009,dall-e-2,9,256x256,url,user-1221,200
+img_010,A bustling city street in the rain,mask_010,dall-e-2,10,1024x1024,b64_json,user-3241,200

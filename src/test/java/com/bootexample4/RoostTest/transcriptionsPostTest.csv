@@ -1,0 +1,11 @@
+file,model,language,prompt,response_format,temperature,statusCode
+audio1.bin,whisper-1,English,Hello World,json,0.6,200
+audio2.bin,whisper-2,French,Bonjour,text,0.7,200
+audio3.bin,whisper-3,Spanish,Hola Mundo,srt,0.8,200
+audio4.bin,whisper-4,German,Hallo Welt,verbose_json,0.9,200
+audio5.bin,whisper-1,Italian,Ciao Mondo,vtt,0.5,200
+audio6.bin,whisper-2,Russian,Привет мир,json,0.4,200
+audio7.bin,whisper-3,Chinese,你好世界,text,0.3,200
+audio8.bin,whisper-4,Japanese,こんにちは世界,srt,0.2,200
+audio9.bin,whisper-1,Korean,안녕 세상,verbose_json,0.1,200
+audio10.bin,whisper-2,Arabic,مرحبا بك في العالم,vtt,0.0,200

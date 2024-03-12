@@ -1,0 +1,11 @@
+messages,metadata,statusCode
+['Hello','Good day'],{'sender':'John Doe','receiver':'Jane Doe'},200
+['Hi','How are you'],{'sender':'Jane Doe','receiver':'John Doe'},200
+['Good morning','Have a nice day'],{'sender':'Alice','receiver':'Bob'},200
+['Hey','What's up'],{'sender':'Bob','receiver':'Alice'},200
+['Hi','Nice to meet you'],{'sender':'Charlie','receiver':'David'},200
+['Hello','How do you do'],{'sender':'David','receiver':'Charlie'},200
+['Hi','Good evening'],{'sender':'Eve','receiver':'Frank'},200
+['Hello','Good night'],{'sender':'Frank','receiver':'Eve'},200
+['Hey','See you later'],{'sender':'George','receiver':'Helen'},200
+['Hi','Take care'],{'sender':'Helen','receiver':'George'},200
