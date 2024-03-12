@@ -1,0 +1,11 @@
+X-Trace-Id,channel,username,statusCode
+XTR12345,email,john_doe,200
+XTR23456,web,mary_jane,404
+XTR34567,mobile,rick_grimes,405
+XTR45678,web,mike_ross,500
+XTR56789,email,sarah_connor,403
+XTR67890,mobile,john_wick,400
+XTR78901,web,jane_doe,409
+XTR89012,email,tony_stark,401
+XTR90123,mobile,bruce_wayne,200
+XTR01234,web,clark_kent,404
