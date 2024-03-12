@@ -10,11 +10,12 @@ RoostTestHash=cdd9a88059
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
@@ -35,7 +36,7 @@ public class threadsThreadIdDeleteTest {
     List<Map<String, String>> envList = new ArrayList<>();
 
 
-    @Before
+    @BeforeEach  // Changed from @Before
     public void setUp() {
       TestdataLoader dataloader = new TestdataLoader();
       envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/threads_thread_idDeleteTest.csv");
@@ -69,7 +70,7 @@ public class threadsThreadIdDeleteTest {
       
               if (response.jsonPath().get("object") != null) {  
                 MatcherAssert.assertThat(response.jsonPath().get("object"), instanceOf(String.class));  
-                MatcherAssert.assertThat(response.jsonPath().getString("object"), anyOf(equalTo("thread.deleted")));
+                MatcherAssert.assertThat(response.jsonPath().getString("object"), equalTo("thread.deleted"));  // Changed from anyOf(equalTo("thread.deleted"))
   
           }
 				}

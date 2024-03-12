@@ -10,11 +10,12 @@ RoostTestHash=7a1fdf3895
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
@@ -34,14 +35,13 @@ public class threadsThreadIdGetTest {
 
     List<Map<String, String>> envList = new ArrayList<>();
 
-
-    @Before
+    // Assuming that TestdataLoader class is available in classpath
+    @BeforeEach
     public void setUp() {
       TestdataLoader dataloader = new TestdataLoader();
       envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/threads_thread_idGetTest.csv");
     }
 
-  
     @Test  
     public void threadsThreadIdGet_Test() {
         this.setUp();

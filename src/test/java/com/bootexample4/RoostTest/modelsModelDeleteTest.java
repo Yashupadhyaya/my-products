@@ -10,14 +10,19 @@ RoostTestHash=25f60041aa
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
+
+// import TestdataLoader class if it's not in the same package
+// import com.somepackage.TestdataLoader;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach; // changed from @Before to @BeforeEach from JUnit 5
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*; // changed from org.junit.Assert.* to org.junit.jupiter.api.Assertions.*
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -35,20 +40,20 @@ public class modelsModelDeleteTest {
     List<Map<String, String>> envList = new ArrayList<>();
 
 
-    @Before
+    @BeforeEach // changed from @Before to @BeforeEach from JUnit 5
     public void setUp() {
       TestdataLoader dataloader = new TestdataLoader();
-      envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/models_modelDeleteTest.csv");
+      envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/models_modelDeleteTest.csv"); // ensure the csv file is at this path
     }
 
   
     @Test  
     public void modelsModelDelete_Test() {
-        this.setUp();
+        // removed the manual call to setUp()
         for (Map<String, String> testData : envList) {
           RestAssured.baseURI = "https://api.openai.com/v1";  
   
-                Response response = given()
+          Response response = given()
 				.pathParam("model", testData.get("model") != null ? testData.get("model") : "")
 				.header("api_key", testData.get("api_key"))
                 .when()

@@ -10,11 +10,13 @@ RoostTestHash=318e33cc23
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
@@ -35,8 +37,9 @@ public class messagesMessageIdGetTest {
     List<Map<String, String>> envList = new ArrayList<>();
 
 
-    @Before
+    @BeforeEach   //Changed from @Before to @BeforeEach as we are using Junit 5
     public void setUp() {
+      //Ensure that TestdataLoader class and loadData method are properly defined and imported
       TestdataLoader dataloader = new TestdataLoader();
       envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/messages_message_idGetTest.csv");
     }
@@ -66,6 +69,7 @@ public class messagesMessageIdGetTest {
       
               if (response.jsonPath().get("object") != null) {  
                 MatcherAssert.assertThat(response.jsonPath().get("object"), instanceOf(String.class));  
+                //Ensure that equalTo method is properly imported
                 MatcherAssert.assertThat(response.jsonPath().getString("object"), anyOf(equalTo("thread.message")));
   
           }
@@ -87,6 +91,7 @@ public class messagesMessageIdGetTest {
               if (response.jsonPath().get("content") != null) {      
                 for (int i = 0; i < response.jsonPath().getList("content").size(); i++) {      
                   }    
+                //Ensure that getList method is properly imported and "content" is a List
                 MatcherAssert.assertThat(response.jsonPath().getList("content"), instanceOf(List.class));
   
           }
@@ -102,6 +107,7 @@ public class messagesMessageIdGetTest {
               if (response.jsonPath().get("file_ids") != null) {      
                 for (int i = 0; i < response.jsonPath().getList("file_ids").size(); i++) {      
                   }    
+                //Ensure that getList method is properly imported and "file_ids" is a List
                 MatcherAssert.assertThat(response.jsonPath().getList("file_ids"), instanceOf(List.class));
   
           }

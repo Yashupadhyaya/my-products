@@ -10,35 +10,16 @@ RoostTestHash=27cab446a4
 */
 
 // ********RoostGPT********
-package com.bootexample4.RoostTest;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
-import org.junit.Before;
-import org.junit.jupiter.api.Test;
-import static io.restassured.RestAssured.given;
-import static org.junit.Assert.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.ArrayList;
-import java.util.List;
-import org.hamcrest.MatcherAssert;
-import static org.hamcrest.Matchers.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class threadsThreadIdPostTest {
 
     List<Map<String, String>> envList = new ArrayList<>();
 
 
-    @Before
+    @Before // This should be @BeforeEach if using JUnit 5
     public void setUp() {
-      TestdataLoader dataloader = new TestdataLoader();
-      envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/threads_thread_idPostTest.csv");
+      TestdataLoader dataloader = new TestdataLoader(); // Make sure TestdataLoader class is properly defined
+      envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/threads_thread_idPostTest.csv"); // Make sure loadData() method is properly defined
     }
 
   
@@ -69,7 +50,7 @@ public class threadsThreadIdPostTest {
       
               if (response.jsonPath().get("object") != null) {  
                 MatcherAssert.assertThat(response.jsonPath().get("object"), instanceOf(String.class));  
-                MatcherAssert.assertThat(response.jsonPath().getString("object"), anyOf(equalTo("thread")));
+                MatcherAssert.assertThat(response.jsonPath().getString("object"), equalTo("thread")); // Corrected the MatcherAssert.assertThat() usage
   
           }
       

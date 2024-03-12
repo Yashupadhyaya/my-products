@@ -10,6 +10,7 @@ RoostTestHash=2274df1ce0
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -34,6 +35,13 @@ public class translationsPostTest {
 
     List<Map<String, String>> envList = new ArrayList<>();
 
+    /*
+     * Before running this test, make sure that all the classes and dependencies are properly defined and imported.
+     * The error message is indicating that some classes used in this package are undefined.
+     * Ensure to check the classes jobsFineTuningJobIdGetTest, jobsGetTest, and jobsPostTest.
+     * If those classes are using an undefined class, you need to either define that class or comment out the lines of code that are using it.
+     * Also, make sure all the dependencies are properly added in your pom.xml file if you are using Maven.
+     */
 
     @Before
     public void setUp() {
@@ -49,20 +57,19 @@ public class translationsPostTest {
           RestAssured.baseURI = "https://api.openai.com/v1";  
   
                 Response response = given()
-				.header("api_key", testData.get("api_key"))
+                .header("api_key", testData.get("api_key"))
                 .when()
                 .post("/audio/translations")  
                 .then() 
                 .extract().response();    
          
                 if (response.statusCode() == 200) {
-					System.out.println("Description: OK");
+                    System.out.println("Description: OK");
       
               if (response.jsonPath().get("text") != null) {  
                 MatcherAssert.assertThat(response.jsonPath().get("text"), instanceOf(String.class));  
           }
-				}
-  
+                }  
             }  
     }
 }
