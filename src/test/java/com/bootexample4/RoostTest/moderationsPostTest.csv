@@ -1,0 +1,11 @@
+input,model,statusCode
+input1,text-moderation-latest,200
+input2,text-moderation-latest,200
+input3,text-moderation-stable,200
+input4,text-moderation-latest,200
+input5,text-moderation-stable,200
+input6,text-moderation-latest,200
+input7,text-moderation-stable,200
+input8,text-moderation-latest,200
+input9,text-moderation-stable,200
+input10,text-moderation-latest,200

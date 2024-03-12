@@ -1,0 +1,11 @@
+thread_id,role,content,file_ids,metadata,statusCode
+thd_001,user,Hello World,[file_001, file_002],{"location": "USA", "device": "iPhone"},200
+thd_002,user,Good Morning,[file_003],{"location": "Canada", "device": "Android"},200
+thd_003,user,How are you,[file_004, file_005, file_006],{"location": "UK", "device": "Windows"},200
+thd_004,user,Happy Friday,[file_007],{"location": "Australia", "device": "Mac"},200
+thd_005,user,Thank you,[file_008, file_009],{"location": "India", "device": "iPhone"},200
+thd_006,user,See you soon,[file_010],{"location": "Germany", "device": "Android"},200
+thd_007,user,Take care,[file_011, file_012],{"location": "France", "device": "Windows"},200
+thd_008,user,Good Night,[file_013],{"location": "Italy", "device": "Mac"},200
+thd_009,user,Happy Weekend,[file_014, file_015],{"location": "Spain", "device": "iPhone"},200
+thd_010,user,Welcome to our platform,[file_016],{"location": "Japan", "device": "Android"},200

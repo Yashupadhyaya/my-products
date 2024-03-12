@@ -1,0 +1,11 @@
+messages,model,frequency_penalty,logit_bias,logprobs,top_logprobs,max_tokens,n,presence_penalty,response_format,type,seed,stop,stream,temperature,top_p,tools,tool_choice,user,function_call,functions,statusCode
+[message1,message2],gpt-3.5-turbo,0.5,null,false,2,100,1,0.2,{format},text,123456789,null,false,1.5,0.8,[tool1,tool2],tool1,user-1234,{call},[function1,function2],200
+[message3,message4],gpt-3.5-turbo,0.7,null,true,3,200,2,-0.1,{format},json_object,987654321,null,true,1.2,0.6,[tool3,tool4],tool3,user-5678,{call},[function3,function4],200
+[message5,message6],gpt-3.5-turbo,-0.3,null,false,1,150,3,0.3,{format},text,456123789,null,false,0.9,0.7,[tool5,tool6],tool5,user-9012,{call},[function5,function6],200
+[message7,message8],gpt-3.5-turbo,1.2,null,true,4,250,4,-0.2,{format},json_object,654987321,null,true,0.7,0.5,[tool7,tool8],tool7,user-3456,{call},[function7,function8],200
+[message9,message10],gpt-3.5-turbo,-0.5,null,false,0,300,5,0.4,{format},text,789456123,null,false,0.5,0.4,[tool9,tool10],tool9,user-7890,{call},[function9,function10],200
+[message11,message12],gpt-3.5-turbo,1.5,null,true,5,350,6,-0.3,{format},json_object,321789654,null,true,0.3,0.3,[tool11,tool12],tool11,user-1230,{call},[function11,function12],200
+[message13,message14],gpt-3.5-turbo,-0.7,null,false,3,400,7,0.5,{format},text,147258369,null,false,0.1,0.2,[tool13,tool14],tool13,user-4567,{call},[function13,function14],200
+[message15,message16],gpt-3.5-turbo,1.7,null,true,2,450,8,-0.4,{format},json_object,963852741,null,true,0.8,0.1,[tool15,tool16],tool15,user-8901,{call},[function15,function16],200
+[message17,message18],gpt-3.5-turbo,-0.9,null,false,4,500,9,0.6,{format},text,258369147,null,false,0.6,0.9,[tool17,tool18],tool17,user-2345,{call},[function17,function18],200
+[message19,message20],gpt-3.5-turbo,1.9,null,true,1,550,10,-0.5,{format},json_object,369147258,null,true,0.4,0.7,[tool19,tool20],tool19,user-6789,{call},[function19,function20],200

@@ -1,0 +1,11 @@
+thread_id,assistant_id,model,instructions,additional_instructions,tools,metadata,statusCode
+thd_001,ast_001,mod_001,Follow the steps,Take note of the details,tool1-tool2-tool3,{meta_key1:meta_val1,meta_key2:meta_val2},200
+thd_002,ast_002,mod_002,Complete the process,Check the results,tool4-tool5-tool6,{meta_key3:meta_val3,meta_key4:meta_val4},200
+thd_003,ast_003,mod_003,Review the document,Update if necessary,tool7-tool8-tool9,{meta_key5:meta_val5,meta_key6:meta_val6},200
+thd_004,ast_004,mod_004,Submit the form,Save a copy,tool10-tool11-tool12,{meta_key7:meta_val7,meta_key8:meta_val8},200
+thd_005,ast_005,mod_005,Attend the meeting,Record the minutes,tool13-tool14-tool15,{meta_key9:meta_val9,meta_key10:meta_val10},200
+thd_006,ast_006,mod_006,Prepare the report,Include all data,tool16-tool17-tool18,{meta_key11:meta_val11,meta_key12:meta_val12},200
+thd_007,ast_007,mod_007,Confirm the appointment,Notify all participants,tool19-tool20,{meta_key13:meta_val13,meta_key14:meta_val14},200
+thd_008,ast_008,mod_008,Test the system,Report any issues,tool1-tool2-tool3,{meta_key15:meta_val15,meta_key16:meta_val16},200
+thd_009,ast_009,mod_009,Analyze the data,Provide a summary,tool4-tool5-tool6,{meta_key17:meta_val17,meta_key18:meta_val18},200
+thd_010,ast_010,mod_010,Update the records,Ensure accuracy,tool7-tool8-tool9,{meta_key19:meta_val19,meta_key20:meta_val20},200
