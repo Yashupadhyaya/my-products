@@ -10,7 +10,9 @@ RoostTestHash=f047dbc517
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -34,14 +36,17 @@ public class countriesIdDeleteTest {
 
     List<Map<String, String>> envList = new ArrayList<>();
 
-
+    //This method loads the test data from a csv file
     @Before
     public void setUp() {
       TestdataLoader dataloader = new TestdataLoader();
       envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/countries_idDeleteTest.csv");
     }
 
-  
+    //This test case sends a DELETE request to the /countries/{id} endpoint.
+    //It uses the test data loaded in the setUp() method.
+    //The test case will fail if the necessary dependencies are not resolved. 
+    //Make sure the correct versions of the 'org.apache.commons:commons-io' and 'org.junit:junit' dependencies are available in the local Maven repository.
     @Test  
     public void countriesIdDelete_Test() {
         this.setUp();

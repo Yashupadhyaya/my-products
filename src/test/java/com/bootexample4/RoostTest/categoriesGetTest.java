@@ -10,6 +10,7 @@ RoostTestHash=8b82be555a
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -30,10 +31,12 @@ import static org.hamcrest.Matchers.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// This test case is failing due to missing dependencies: org.apache.commons:commons-io:jar:2.6 and org.junit:junit:jar:4.13.1
+// These dependencies need to be added in the pom.xml file or need to be installed in the local repository
+// Make sure to check the internet connection and maven configuration, also check the repository URLs in the settings.xml file of maven
 public class categoriesGetTest {
 
     List<Map<String, String>> envList = new ArrayList<>();
-
 
     @Before
     public void setUp() {

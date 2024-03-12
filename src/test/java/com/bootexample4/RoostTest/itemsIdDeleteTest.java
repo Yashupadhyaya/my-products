@@ -10,6 +10,7 @@ RoostTestHash=fb5fafcc93
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -30,6 +31,10 @@ import static org.hamcrest.Matchers.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// This test case requires the following dependencies to be present in the project's classpath:
+// - org.apache.commons:commons-io:jar:2.6
+// - org.junit:junit:jar:4.13.1
+// Ensure these dependencies are included in your pom.xml file and that they can be resolved by Maven.
 public class itemsIdDeleteTest {
 
     List<Map<String, String>> envList = new ArrayList<>();

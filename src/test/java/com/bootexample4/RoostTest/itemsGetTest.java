@@ -10,6 +10,7 @@ RoostTestHash=59ea07a9a1
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -29,6 +30,13 @@ import org.hamcrest.MatcherAssert;
 import static org.hamcrest.Matchers.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+/*
+* Prerequisites to run this test:
+* Ensure you have the correct dependencies in your Maven project. 
+* The project failed to resolve dependencies for org.apache.commons:commons-io:jar:2.6 and org.junit:junit:jar:4.13.1. 
+* Make sure these dependencies are available in your Maven repository.
+*/
 
 public class itemsGetTest {
 

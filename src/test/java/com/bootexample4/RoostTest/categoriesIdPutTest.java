@@ -10,6 +10,7 @@ RoostTestHash=951091bedf
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -34,6 +35,7 @@ public class categoriesIdPutTest {
 
     List<Map<String, String>> envList = new ArrayList<>();
 
+    // Make sure to have the required dependencies in the local maven repository before running this test
 
     @Before
     public void setUp() {
@@ -41,7 +43,6 @@ public class categoriesIdPutTest {
       envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/categories_idPutTest.csv");
     }
 
-  
     @Test  
     public void categoriesIdPut_Test() {
         this.setUp();
@@ -53,8 +54,10 @@ public class categoriesIdPutTest {
                 .put("/categories/{id}")  
                 .then() 
                 .extract().response();    
-         
-                if (response.statusCode() == default) {
+
+                // Replace 'default' with the expected status code
+                int expectedStatusCode = 200; // replace with the expected status code
+                if (response.statusCode() == expectedStatusCode) {
 					System.out.println("Description: successful operation");
 				}
   
