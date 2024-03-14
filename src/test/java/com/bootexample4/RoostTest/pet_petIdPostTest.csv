@@ -1,0 +1,11 @@
+petId,name,status,statusCode
+1,Bella,Available,200
+2,Lucy,Adopted,201
+3,Charlie,Available,200
+4,Max,Adopted,201
+5,Lola,Available,200
+6,Rocky,Adopted,201
+7,Jack,Available,200
+8,Daisy,Adopted,201
+9,Duke,Available,200
+10,Maggie,Adopted,201

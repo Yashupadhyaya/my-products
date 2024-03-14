@@ -1,0 +1,11 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode
+theUser1,1,John,Doe,john1@email.com,12345,1234567890,1,successful operation
+theUser2,2,Jane,Doe,jane2@email.com,12345,1234567891,1,successful operation
+theUser3,3,Jim,Smith,jim3@email.com,12345,1234567892,1,successful operation
+theUser4,4,Jill,Johnson,jill4@email.com,12345,1234567893,1,successful operation
+theUser5,5,Jack,Jones,jack5@email.com,12345,1234567894,1,successful operation
+theUser6,6,Jessica,Brown,jessica6@email.com,12345,1234567895,1,successful operation
+theUser7,7,Jeff,Miller,jeff7@email.com,12345,1234567896,1,successful operation
+theUser8,8,Jennifer,Davis,jennifer8@email.com,12345,1234567897,1,successful operation
+theUser9,9,Jeremy,Wilson,jeremy9@email.com,12345,1234567898,1,successful operation
+theUser10,10,Jacob,Moore,jacob10@email.com,12345,1234567899,1,successful operation
