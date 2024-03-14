@@ -1,0 +1,11 @@
+id,name,category,photoUrls,tags,status,statusCode
+1,Dogs,Terrier,https://dogsite.com/terrier.jpg,['pet','dog'],available,200
+2,Cats,Persian,https://catsite.com/persian.jpg,['pet','cat'],pending,200
+3,Birds,Parrot,https://birdsite.com/parrot.jpg,['pet','bird'],sold,200
+4,Rabbits,Lop,https://rabbitsite.com/lop.jpg,['pet','rabbit'],available,200
+5,Fish,Goldfish,https://fishsite.com/goldfish.jpg,['pet','fish'],pending,200
+6,Reptiles,Iguana,https://reptilesite.com/iguana.jpg,['pet','reptile'],sold,200
+7,Dogs,Labrador,https://dogsite.com/labrador.jpg,['pet','dog'],available,200
+8,Cats,Siamese,https://catsite.com/siamese.jpg,['pet','cat'],pending,200
+9,Birds,Canary,https://birdsite.com/canary.jpg,['pet','bird'],sold,200
+10,Rabbits,Dwarf,https://rabbitsite.com/dwarf.jpg,['pet','rabbit'],available,200
