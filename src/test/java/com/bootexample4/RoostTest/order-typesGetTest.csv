@@ -1,0 +1,11 @@
+X-Trace-Id,AdditionalCSVvaluInfo,channel,username,statusCode
+XTR12345,crmadmin,web,john_doe,200
+XTR12346,crmadmin,app,jane_doe,400
+XTR12347,crmadmin,web,mark_smith,401
+XTR12348,crmadmin,app,lisa_jones,403
+XTR12349,crmadmin,web,paul_brown,404
+XTR12350,crmadmin,app,susan_white,405
+XTR12351,crmadmin,web,kevin_green,409
+XTR12352,crmadmin,app,nancy_black,500
+XTR12353,crmadmin,web,steve_gray,200
+XTR12354,crmadmin,app,mary_blue,400
