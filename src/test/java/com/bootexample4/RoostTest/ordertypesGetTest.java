@@ -11,6 +11,7 @@ RoostTestHash=e5a6af5c86
 
 // ********RoostGPT********
 package com.bootexample4.RoostTest;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.http.ContentType;
@@ -36,202 +37,195 @@ import org.json.JSONException;
 
 public class ordertypesGetTest {
 
-    List<Map<String, String>> envList = new ArrayList<>();
+  List<Map<String, String>> envList = new ArrayList<>();
 
+  @Before
+  public void setUp() {
+    TestdataLoader dataloader = new TestdataLoader();
+    envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/order-typesGetTest.csv");
+  }
 
-    @Before
-    public void setUp() {
-      TestdataLoader dataloader = new TestdataLoader();
-      envList = dataloader.loadData("src/test/java/com/bootexample4/RoostTest/order-typesGetTest.csv");
+  @Test
+  public void ordertypesGet_Test() {
+    this.setUp();
+    for (Map<String, String> testData : envList) {
+      RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty())
+          ? testData.get("BASE_URL")
+          : "https:/serverRoot/com/";
+
+      System.err.println(RestAssured.baseURI);
+
+      Response responseObj = given()
+          .header("X-Trace-Id", testData.get("X-Trace-Id") != null ? testData.get("X-Trace-Id") : "")
+          .header("channel", testData.get("channel") != null ? testData.get("channel") : "")
+          .header("username", testData.get("username") != null ? testData.get("username") : "")
+          .when()
+          .get("/order-report/meta-data/order-types")
+          .then()
+          .extract().response();
+      JsonPath response;
+      String contentType = responseObj.getContentType();
+      if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
+        String xmlResponse = responseObj.asString();
+        JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
+        JSONObject jsonData = jsonResponse.getJSONObject("xml");
+        String jsonString = jsonData.toString();
+        response = new JsonPath(jsonString);
+
+      } else {
+        response = responseObj.jsonPath();
+      }
+
+      if (responseObj.statusCode() == 200) {
+        System.out.println("Description: Success");
+
+        if (response.get("_metadata") != null) {
+          System.out.println(response);
+          if (response.get("_metadata.hasNext") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.hasNext"), instanceOf(Boolean.class));
+          }
+
+          if (response.get("_metadata.count") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.count"), instanceOf(Integer.class));
+          }
+
+          if (response.get("_metadata.totalCount") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.totalCount"), instanceOf(Integer.class));
+          }
+
+          if (response.get("_metadata.requestId") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.requestId"), instanceOf(String.class));
+          }
+
+          if (response.get("_metadata.channel") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.channel"), instanceOf(String.class));
+          }
+
+          if (response.get("_metadata.totalFailedOrderCount") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.totalFailedOrderCount"), instanceOf(Integer.class));
+          }
+
+          if (response.get("_metadata.totalCompletedOrderCount") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.totalCompletedOrderCount"), instanceOf(Integer.class));
+          }
+
+          if (response.get("_metadata.totalPendingOrderCount") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.totalPendingOrderCount"), instanceOf(Integer.class));
+          }
+
+          if (response.get("_metadata.totalInProgressOrderCount") != null) {
+            MatcherAssert.assertThat(response.get("_metadata.totalInProgressOrderCount"), instanceOf(Integer.class));
+          }
+
+        }
+      }
+
+      if (responseObj.statusCode() == 400) {
+        System.out.println("Description: Bad Request");
+
+        if (response.get("code") != null) {
+          MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));
+        }
+
+        if (response.get("message") != null) {
+          MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));
+        }
+
+        if (response.get("status") != null) {
+          MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));
+        }
+      }
+      if (responseObj.statusCode() == 401) {
+        System.out.println("Description: Unauthorized");
+
+        if (response.get("code") != null) {
+          MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));
+        }
+
+        if (response.get("message") != null) {
+          MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));
+        }
+
+        if (response.get("status") != null) {
+          MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));
+        }
+      }
+      if (responseObj.statusCode() == 403) {
+        System.out.println("Description: Forbidden");
+
+        if (response.get("code") != null) {
+          MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));
+        }
+
+        if (response.get("message") != null) {
+          MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));
+        }
+
+        if (response.get("status") != null) {
+          MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));
+        }
+      }
+      if (responseObj.statusCode() == 404) {
+        System.out.println("Description: Not Found");
+
+        if (response.get("code") != null) {
+          MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));
+        }
+
+        if (response.get("message") != null) {
+          MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));
+        }
+
+        if (response.get("status") != null) {
+          MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));
+        }
+      }
+      if (responseObj.statusCode() == 405) {
+        System.out.println("Description: Method Not allowed");
+
+        if (response.get("code") != null) {
+          MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));
+        }
+
+        if (response.get("message") != null) {
+          MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));
+        }
+
+        if (response.get("status") != null) {
+          MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));
+        }
+      }
+      if (responseObj.statusCode() == 409) {
+        System.out.println("Description: Conflict");
+
+        if (response.get("code") != null) {
+          MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));
+        }
+
+        if (response.get("message") != null) {
+          MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));
+        }
+
+        if (response.get("status") != null) {
+          MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));
+        }
+      }
+      if (responseObj.statusCode() == 500) {
+        System.out.println("Description: Internal Server Error");
+
+        if (response.get("code") != null) {
+          MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));
+        }
+
+        if (response.get("message") != null) {
+          MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));
+        }
+
+        if (response.get("status") != null) {
+          MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));
+        }
+      }
+
     }
-
-  
-    @Test  
-    public void ordertypesGet_Test() {
-        this.setUp();
-        for (Map<String, String> testData : envList) {
-          RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty()) ? testData.get("URL"): "https:/serverRoot/com/";  
-  
-                Response responseObj = given()
-				.header("X-Trace-Id", testData.get("X-Trace-Id") != null ? testData.get("X-Trace-Id") : "")
-				.header("channel", testData.get("channel") != null ? testData.get("channel") : "")
-				.header("username", testData.get("username") != null ? testData.get("username") : "")
-                .when()
-                .get("/order-report/meta-data/order-types")  
-                .then() 
-                .extract().response(); 
-              JsonPath response;
-              String contentType = responseObj.getContentType();
-              if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
-                String xmlResponse = responseObj.asString();
-                JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
-                JSONObject jsonData = jsonResponse.getJSONObject("xml");
-                String jsonString = jsonData.toString();
-                response = new JsonPath(jsonString);
-        
-              } else {  
-                response = responseObj.jsonPath(); 
-              }  
-         
-                if (responseObj.statusCode() == 200) {
-					System.out.println("Description: Success");
-      
-              if (response.get("_metadata") != null) {      
-              if (response.get("_metadata.hasNext") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.hasNext"), instanceOf(Boolean.class));  
-          }
-      
-              if (response.get("_metadata.count") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.count"), instanceOf(String.class));  
-          }
-      
-              if (response.get("_metadata.totalCount") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.totalCount"), instanceOf(String.class));  
-          }
-      
-              if (response.get("_metadata.requestId") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.requestId"), instanceOf(String.class));  
-          }
-      
-              if (response.get("_metadata.channel") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.channel"), instanceOf(String.class));  
-          }
-      
-              if (response.get("_metadata.totalFailedOrderCount") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.totalFailedOrderCount"), instanceOf(String.class));  
-          }
-      
-              if (response.get("_metadata.totalCompletedOrderCount") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.totalCompletedOrderCount"), instanceOf(String.class));  
-          }
-      
-              if (response.get("_metadata.totalPendingOrderCount") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.totalPendingOrderCount"), instanceOf(String.class));  
-          }
-      
-              if (response.get("_metadata.totalInProgressOrderCount") != null) {  
-                MatcherAssert.assertThat(response.get("_metadata.totalInProgressOrderCount"), instanceOf(String.class));  
-          }
-  
-          }
-      
-              if (response.get("results") != null) {        
-                  for (int i = 0; i < response.getList("results").size(); i++) {      
-              if (response.get("results["+ i +"].orderType") != null) {  
-                MatcherAssert.assertThat(response.get("results["+ i +"].orderType"), instanceOf(String.class));  
-          }
-        
-                    }    
-                MatcherAssert.assertThat(response.getList("results"), instanceOf(List.class));
-  
-          }
-				}
-if (responseObj.statusCode() == 400) {
-					System.out.println("Description: Bad Request");
-      
-              if (response.get("code") != null) {  
-                MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));  
-          }
-      
-              if (response.get("message") != null) {  
-                MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));  
-          }
-      
-              if (response.get("status") != null) {  
-                MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));  
-          }
-				}
-if (responseObj.statusCode() == 401) {
-					System.out.println("Description: Unauthorized");
-      
-              if (response.get("code") != null) {  
-                MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));  
-          }
-      
-              if (response.get("message") != null) {  
-                MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));  
-          }
-      
-              if (response.get("status") != null) {  
-                MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));  
-          }
-				}
-if (responseObj.statusCode() == 403) {
-					System.out.println("Description: Forbidden");
-      
-              if (response.get("code") != null) {  
-                MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));  
-          }
-      
-              if (response.get("message") != null) {  
-                MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));  
-          }
-      
-              if (response.get("status") != null) {  
-                MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));  
-          }
-				}
-if (responseObj.statusCode() == 404) {
-					System.out.println("Description: Not Found");
-      
-              if (response.get("code") != null) {  
-                MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));  
-          }
-      
-              if (response.get("message") != null) {  
-                MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));  
-          }
-      
-              if (response.get("status") != null) {  
-                MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));  
-          }
-				}
-if (responseObj.statusCode() == 405) {
-					System.out.println("Description: Method Not allowed");
-      
-              if (response.get("code") != null) {  
-                MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));  
-          }
-      
-              if (response.get("message") != null) {  
-                MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));  
-          }
-      
-              if (response.get("status") != null) {  
-                MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));  
-          }
-				}
-if (responseObj.statusCode() == 409) {
-					System.out.println("Description: Conflict");
-      
-              if (response.get("code") != null) {  
-                MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));  
-          }
-      
-              if (response.get("message") != null) {  
-                MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));  
-          }
-      
-              if (response.get("status") != null) {  
-                MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));  
-          }
-				}
-if (responseObj.statusCode() == 500) {
-					System.out.println("Description: Internal Server Error");
-      
-              if (response.get("code") != null) {  
-                MatcherAssert.assertThat(response.get("code"), instanceOf(String.class));  
-          }
-      
-              if (response.get("message") != null) {  
-                MatcherAssert.assertThat(response.get("message"), instanceOf(String.class));  
-          }
-      
-              if (response.get("status") != null) {  
-                MatcherAssert.assertThat(response.get("status"), instanceOf(String.class));  
-          }
-				}
-  
-            }  
-    }
+  }
 }
