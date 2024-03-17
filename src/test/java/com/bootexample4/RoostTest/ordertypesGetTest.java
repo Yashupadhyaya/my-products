@@ -118,6 +118,15 @@ public class ordertypesGetTest {
           }
 
         }
+        if (response.get("results") != null) {
+          for (int i = 0; i < response.getList("results").size(); i++) {
+            if (response.get("results[" + i + "].orderType") != null) {
+              MatcherAssert.assertThat(response.get("results[" + i + "].orderType"), instanceOf(String.class));
+            }
+
+          }
+          MatcherAssert.assertThat(response.getList("results"), instanceOf(List.class));
+        }
       }
 
       if (responseObj.statusCode() == 400) {
