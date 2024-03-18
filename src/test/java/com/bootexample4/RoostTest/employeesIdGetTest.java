@@ -11,6 +11,7 @@ RoostTestHash=36bc161fb6
 
 // ********RoostGPT********
 package com.bootexample4.RoostTest;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.http.ContentType;
@@ -37,65 +38,65 @@ import org.json.JSONArray;
 
 public class employeesIdGetTest {
 
-    List<Map<String, String>> envList = new ArrayList<>();
+  List<Map<String, String>> envList = new ArrayList<>();
 
+  @Before
+  public void setUp() {
+    TestdataLoader dataloader = new TestdataLoader();
+    String[] envVarsList = { "id" };
+    envList = dataloader.load("src/test/java/com/bootexample4/RoostTest/employees_idGetTest.csv", envVarsList);
+  }
 
-    @Before
-    public void setUp() {
-      TestdataLoader dataloader = new TestdataLoader();
-      String[] envVarsList = {"id"};
-      envList = dataloader.load("src/test/java/com/bootexample4/RoostTest/employees_idGetTest.csv", envVarsList);
+  @Test
+  public void employeesIdGet_Test() {
+    this.setUp();
+    for (Map<String, String> testData : envList) {
+      RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty())
+          ? testData.get("BASE_URL")
+          : "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1";
+
+      Response responseObj = given()
+          .pathParam("id", testData.get("id") != null ? testData.get("id") : "")
+          .when()
+          .get("/employees/{id}")
+          .then()
+          .extract().response();
+      JsonPath response;
+      String contentType = responseObj.getContentType();
+      if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
+        String xmlResponse = responseObj.asString();
+        JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
+        JSONObject jsonData = jsonResponse.getJSONObject("xml");
+        String jsonString = jsonData.toString();
+        response = new JsonPath(jsonString);
+
+      } else {
+        response = responseObj.jsonPath();
+      }
+
+      if (responseObj.statusCode() == 200) {
+        System.out.println("Description: Successful operation");
+
+        if (response.get("id") != null) {
+          MatcherAssert.assertThat(response.get("id"), instanceOf(String.class));
+        }
+
+        if (response.get("jobTitle") != null) {
+          MatcherAssert.assertThat(response.get("jobTitle"), instanceOf(String.class));
+        }
+
+        if (response.get("name") != null) {
+          MatcherAssert.assertThat(response.get("name"), instanceOf(String.class));
+        }
+
+        if (response.get("email") != null) {
+          MatcherAssert.assertThat(response.get("email"), instanceOf(String.class));
+        }
+      }
+      if (responseObj.statusCode() == 404) {
+        System.out.println("Description: Not found");
+      }
+
     }
-
-  
-    @Test  
-    public void employeesIdGet_Test() {
-        this.setUp();
-        for (Map<String, String> testData : envList) {
-          RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty()) ? testData.get("BASE_URL"): "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1";  
-  
-                Response responseObj = given()
-				.pathParam("id", testData.get("id") != null ? testData.get("id") : "")
-                .when()
-                .get("/employees/{id}")  
-                .then() 
-                .extract().response(); 
-              JsonPath response;
-              String contentType = responseObj.getContentType();
-              if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
-                String xmlResponse = responseObj.asString();
-                JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
-                JSONObject jsonData = jsonResponse.getJSONObject("xml");
-                String jsonString = jsonData.toString();
-                response = new JsonPath(jsonString);
-        
-              } else {  
-                response = responseObj.jsonPath(); 
-              }  
-         
-                if (responseObj.statusCode() == 200) {
-					System.out.println("Description: Successful operation");
-      
-              if (response.get("id") != null) {  
-                MatcherAssert.assertThat(response.get("id"), instanceOf(String.class));  
-          }
-      
-              if (response.get("jobTitle") != null) {  
-                MatcherAssert.assertThat(response.get("jobTitle"), instanceOf(String.class));  
-          }
-      
-              if (response.get("name") != null) {  
-                MatcherAssert.assertThat(response.get("name"), instanceOf(String.class));  
-          }
-      
-              if (response.get("email") != null) {  
-                MatcherAssert.assertThat(response.get("email"), instanceOf(String.class));  
-          }
-				}
-if (responseObj.statusCode() == 404) {
-					System.out.println("Description: Not found");
-				}
-  
-            }  
-    }
+  }
 }

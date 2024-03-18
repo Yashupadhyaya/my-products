@@ -11,6 +11,7 @@ RoostTestHash=b517afeac4
 
 // ********RoostGPT********
 package com.bootexample4.RoostTest;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.http.ContentType;
@@ -37,58 +38,58 @@ import org.json.JSONArray;
 
 public class employeesPostTest {
 
-    List<Map<String, String>> envList = new ArrayList<>();
+  List<Map<String, String>> envList = new ArrayList<>();
 
+  @Before
+  public void setUp() {
+    TestdataLoader dataloader = new TestdataLoader();
+    String[] envVarsList = { "" };
+    envList = dataloader.load("src/test/java/com/bootexample4/RoostTest/employeesPostTest.csv", envVarsList);
+  }
 
-    @Before
-    public void setUp() {
-      TestdataLoader dataloader = new TestdataLoader();
-      String[] envVarsList = {""};
-      envList = dataloader.load("src/test/java/com/bootexample4/RoostTest/employeesPostTest.csv", envVarsList);
+  @Test
+  public void employeesPost_Test() {
+    this.setUp();
+    for (Map<String, String> testData : envList) {
+      RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty())
+          ? testData.get("BASE_URL")
+          : "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1";
+
+      Response responseObj = given()
+          .contentType(ContentType.JSON)
+          .body("{\n" +
+              "  \"id\": \"" + (testData.get("id") != null ? testData.get("id") : "") + "\",\n" +
+              "  \"jobTitle\": \"" + (testData.get("jobTitle") != null ? testData.get("jobTitle") : "") + "\",\n" +
+              "  \"name\": \"" + (testData.get("name") != null ? testData.get("name") : "") + "\",\n" +
+              "  \"email\": \"" + (testData.get("email") != null ? testData.get("email") : "") + "\n" +
+              "}")
+          .when()
+          .post("/employees")
+          .then()
+          .extract().response();
+      JsonPath response;
+      String contentType = responseObj.getContentType();
+      if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
+        String xmlResponse = responseObj.asString();
+        JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
+        JSONObject jsonData = jsonResponse.getJSONObject("xml");
+        String jsonString = jsonData.toString();
+        response = new JsonPath(jsonString);
+
+      } else {
+        response = responseObj.jsonPath();
+      }
+
+      if (responseObj.statusCode() == 201) {
+        System.out.println("Description: employee created");
+      }
+      if (responseObj.statusCode() == 400) {
+        System.out.println("Description: invalid input, object invalid");
+      }
+      if (responseObj.statusCode() == 409) {
+        System.out.println("Description: an existing employee already exists");
+      }
+
     }
-
-  
-    @Test  
-    public void employeesPost_Test() {
-        this.setUp();
-        for (Map<String, String> testData : envList) {
-          RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty()) ? testData.get("BASE_URL"): "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1";  
-  
-                Response responseObj = given()
-				.contentType(ContentType.JSON)
-				.body("{\n"+
-					"  \"id\": \"" + (testData.get("id") != null ? testData.get("id") : "") + "\",\n" +
-					"  \"jobTitle\": \"" + (testData.get("jobTitle") != null ? testData.get("jobTitle") : "") + "\",\n" +
-					"  \"name\": \"" + (testData.get("name") != null ? testData.get("name") : "") + "\",\n" +
-					"  \"email\": \"" + (testData.get("email") != null ? testData.get("email") : "") + "\n" +
- 				"}")
-                .when()
-                .post("/employees")  
-                .then() 
-                .extract().response(); 
-              JsonPath response;
-              String contentType = responseObj.getContentType();
-              if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
-                String xmlResponse = responseObj.asString();
-                JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
-                JSONObject jsonData = jsonResponse.getJSONObject("xml");
-                String jsonString = jsonData.toString();
-                response = new JsonPath(jsonString);
-        
-              } else {  
-                response = responseObj.jsonPath(); 
-              }  
-         
-                if (responseObj.statusCode() == 201) {
-					System.out.println("Description: employee created");
-				}
-if (responseObj.statusCode() == 400) {
-					System.out.println("Description: invalid input, object invalid");
-				}
-if (responseObj.statusCode() == 409) {
-					System.out.println("Description: an existing employee already exists");
-				}
-  
-            }  
-    }
+  }
 }

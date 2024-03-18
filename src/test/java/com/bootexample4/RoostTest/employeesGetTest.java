@@ -11,6 +11,7 @@ RoostTestHash=ec231a756b
 
 // ********RoostGPT********
 package com.bootexample4.RoostTest;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.http.ContentType;
@@ -37,70 +38,72 @@ import org.json.JSONArray;
 
 public class employeesGetTest {
 
-    List<Map<String, String>> envList = new ArrayList<>();
+  List<Map<String, String>> envList = new ArrayList<>();
 
+  @Before
+  public void setUp() {
+    TestdataLoader dataloader = new TestdataLoader();
+    String[] envVarsList = { "" };
+    envList = dataloader.load("src/test/java/com/bootexample4/RoostTest/employeesGetTest.csv", envVarsList);
+  }
 
-    @Before
-    public void setUp() {
-      TestdataLoader dataloader = new TestdataLoader();
-      String[] envVarsList = {""};
-      envList = dataloader.load("src/test/java/com/bootexample4/RoostTest/employeesGetTest.csv", envVarsList);
+  @Test
+  public void employeesGet_Test() {
+    this.setUp();
+    for (Map<String, String> testData : envList) {
+      RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty())
+          ? testData.get("BASE_URL")
+          : "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1";
+
+      Response responseObj = given()
+          .queryParam("searchString", testData.get("searchString") != null ? testData.get("searchString") : "")
+          .when()
+          .get("/employees")
+          .then()
+          .extract().response();
+      JsonPath response;
+      String contentType = responseObj.getContentType();
+      if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
+        String xmlResponse = responseObj.asString();
+        JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
+        JSONObject jsonData = jsonResponse.getJSONObject("xml");
+        String jsonString = jsonData.toString();
+        response = new JsonPath(jsonString);
+
+      } else {
+        response = responseObj.jsonPath();
+      }
+      System.out.println(responseObj.statusCode());
+
+      if (responseObj.statusCode() == 200) {
+        JSONArray respoJsonArray = new JSONArray(responseObj.asString());
+
+        for (int it = 0; it < respoJsonArray.length(); it++) {
+          response = new JsonPath(respoJsonArray.getJSONObject(it).toString());
+
+          if (response.get("id") != null) {
+            System.out.println(respoJsonArray);
+            MatcherAssert.assertThat(response.get("id"), instanceOf(String.class));
+          }
+
+          if (response.get("jobTitle") != null) {
+            MatcherAssert.assertThat(response.get("jobTitle"), instanceOf(String.class));
+          }
+
+          if (response.get("name") != null) {
+            MatcherAssert.assertThat(response.get("name"), instanceOf(String.class));
+          }
+
+          if (response.get("email") != null) {
+            MatcherAssert.assertThat(response.get("email"), instanceOf(String.class));
+          }
+
+        }
+      }
+      if (responseObj.statusCode() == 400) {
+        System.out.println("Description: Bad input");
+      }
+
     }
-
-  
-    @Test  
-    public void employeesGet_Test() {
-        this.setUp();
-        for (Map<String, String> testData : envList) {
-          RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty()) ? testData.get("BASE_URL"): "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1";  
-  
-                Response responseObj = given()
-				.queryParam("searchString", testData.get("searchString") != null ? testData.get("searchString") : "")
-                .when()
-                .get("/employees")  
-                .then() 
-                .extract().response(); 
-              JsonPath response;
-              String contentType = responseObj.getContentType();
-              if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
-                String xmlResponse = responseObj.asString();
-                JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
-                JSONObject jsonData = jsonResponse.getJSONObject("xml");
-                String jsonString = jsonData.toString();
-                response = new JsonPath(jsonString);
-        
-              } else {  
-                response = responseObj.jsonPath(); 
-              }  
-         
-                if (responseObj.statusCode() == 200) {  
-            JSONArray respoJsonArray = new JSONArray(responseObj.asString());  
-  
-            for (int it = 0; it < respoJsonArray.length(); it++) {  
-              response = new JsonPath(respoJsonArray.getJSONObject(it).toString());  
-                    
-              if (response.get("id") != null) {  
-                MatcherAssert.assertThat(response.get("id"), instanceOf(String.class));  
-          }
-      
-              if (response.get("jobTitle") != null) {  
-                MatcherAssert.assertThat(response.get("jobTitle"), instanceOf(String.class));  
-          }
-      
-              if (response.get("name") != null) {  
-                MatcherAssert.assertThat(response.get("name"), instanceOf(String.class));  
-          }
-      
-              if (response.get("email") != null) {  
-                MatcherAssert.assertThat(response.get("email"), instanceOf(String.class));  
-          }
-
-            }  
-          }
-if (responseObj.statusCode() == 400) {
-					System.out.println("Description: Bad input");
-				}
-  
-            }  
-    }
+  }
 }
