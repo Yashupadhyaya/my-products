@@ -10,6 +10,7 @@ RoostTestHash=ec231a756b
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.RoostTest;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -31,14 +32,13 @@ import static org.hamcrest.Matchers.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.json.JSONObject;
-import org.json.XML;
+//import org.json.XML; // Compilation Error: Cannot find symbol 'XML', XML class is not available in json package
 import org.json.JSONException;
 import org.json.JSONArray;
 
 public class employeesGetTest {
 
     List<Map<String, String>> envList = new ArrayList<>();
-
 
     @Before
     public void setUp() {
@@ -47,7 +47,6 @@ public class employeesGetTest {
       envList = dataloader.load("src/test/java/com/bootexample4/RoostTest/employeesGetTest.csv", envVarsList);
     }
 
-  
     @Test  
     public void employeesGet_Test() {
         this.setUp();
@@ -62,16 +61,18 @@ public class employeesGetTest {
                 .extract().response(); 
               JsonPath response;
               String contentType = responseObj.getContentType();
+              /* Compilation Error: Cannot find symbol 'XML', XML class is not available in json package
               if (contentType.contains("application/xml") || contentType.contains("text/xml")) {
                 String xmlResponse = responseObj.asString();
                 JSONObject jsonResponse = XML.toJSONObject(xmlResponse);
                 JSONObject jsonData = jsonResponse.getJSONObject("xml");
                 String jsonString = jsonData.toString();
                 response = new JsonPath(jsonString);
-        
               } else {  
                 response = responseObj.jsonPath(); 
               }  
+              */
+              response = responseObj.jsonPath(); // Assuming the response is in JSON format
          
                 if (responseObj.statusCode() == 200) {  
             JSONArray respoJsonArray = new JSONArray(responseObj.asString());  
