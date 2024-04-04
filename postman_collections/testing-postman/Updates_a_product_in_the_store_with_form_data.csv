@@ -1,0 +1,11 @@
+productId,name,id,description,price,statusCode,scenario
+1,apple,4,mango,50,200,Updated Product
+2,orange,10,description of the product,20,404,Not Found
+3,banana,6,banana,30,200,Updated Product
+4,grape,8,grape,40,404,Not Found
+5,pear,10,pear,50,200,Updated Product
+6,kiwi,12,kiwi,60,404,Not Found
+7,pineapple,14,pineapple,70,200,Updated Product
+8,peach,16,peach,80,404,Not Found
+9,plum,18,plum,90,200,Updated Product
+10,avocado,20,avocado,100,404,Not Found
