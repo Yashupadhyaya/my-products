@@ -1,0 +1,11 @@
+UserId,Username,Email,Age,Country,SignUpDate,IsActive
+1,john34,john34@example.com,23,USA,2020-06-03,true
+2,amanda12,amanda12@example.com,35,Canada,2018-04-23,false
+3,roberts89,roberts89@example.com,40,Australia,2019-12-12,true
+4,sarah01,sarah01@example.com,27,USA,2021-01-23,false
+5,jackson5,jackson5@example.com,32,UK,2017-07-31,true
+6,kate789,kate789@example.com,29,USA,2020-03-25,true
+7,lucas-b,lucas-b@example.com,33,France,2018-05-07,false
+8,rachel_green,rachel_green@gmail.com,36,USA,2019-02-22,true
+9,monica_belluci,monicab@gmail.com,41,Italy,2022-01-12,true
+10,phoebe_b,phoebe_b@example.com,28,Canada,2017-09-05,false
