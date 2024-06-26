@@ -1,0 +1,5 @@
+searchString,statusCode,scenario
+"john.smith@acme-corp.com",200,"Search results matching the filter criteria"
+"john.smith@acme-corp.com",200,"Search results matching the filter criteria"
+"randomString1",400,"Bad input"
+"randomString2",400,"Bad input"
