@@ -1,0 +1,13 @@
+eventId,eventTime,eventType,id,externalId,status,statusChangeReason,statusChangeDate,devices,items,statusCode,scenario
+"Event1","2023-01-30T14:28:12","Add Comment","ID1","EXTID1","In Progress","Reason1","2023-01-30T14:28:12","Device1","Item1",201,"Notified"
+"Event2","2023-01-30T14:28:12","Add Comment","ID2","EXTID2","Assigned","Reason2","2023-01-30T14:28:12","Device2","Item2",400,"Bad Request"
+"Event3","2023-01-30T14:28:12","Add Comment","ID3","EXTID3","Cancelled","Reason3","2023-01-30T14:28:12","Device3","Item3",401,"Unauthorized"
+"Event4","2023-01-30T14:28:12","Add Comment","ID4","EXTID4","In Cancelling","Reason4","2023-01-30T14:28:12","Device4","Item4",403,"Forbidden - Scope Not Permitted"
+"Event5","2023-01-30T14:28:12","Add Comment","ID5","EXTID5","Pending","Reason5","2023-01-30T14:28:12","Device5","Item5",404,"Not Found"
+"Event6","2023-01-30T14:28:12","Add Comment","ID6","EXTID6","Resolved","Reason6","2023-01-30T14:28:12","Device6","Item6",405,"Not Allowed"
+"Event7","2023-01-30T14:28:12","Add Comment","ID7","EXTID7","Closed","Reason7","2023-01-30T14:28:12","Device7","Item7",406,"Bad Request"
+"Event8","2023-01-30T14:28:12","Add Comment","ID8","EXTID8","New","Reason8","2023-01-30T14:28:12","Device8","Item8",412,"Not Acceptable"
+"Event9","2023-01-30T14:28:12","Add Comment","ID9","EXTID9","In Progress","Reason9","2023-01-30T14:28:12","Device9","Item9",429,"Too Many Requests - Exceeded Quota"
+"Event10","2023-01-30T14:28:12","Add Comment","ID10","EXTID10","Assigned","Reason10","2023-01-30T14:28:12","Device10","Item10",500,"Internal Server Error"
+"Event11","2023-01-30T14:28:12","Add Comment","ID11","EXTID11","Cancelled","Reason11","2023-01-30T14:28:12","Device11","Item11",503,"Service Unavailable"
+"Event12","2023-01-30T14:28:12","Add Comment","ID12","EXTID12","In Cancelling","Reason12","2023-01-30T14:28:12","Device12","Item12",504,"Gateway Timeout"

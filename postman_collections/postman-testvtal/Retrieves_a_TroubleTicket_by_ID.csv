@@ -1,0 +1,12 @@
+id,statusCode,scenario
+"INC000000024330",200,"Success"
+"INC000000024330",400,"Bad Request"
+"INC000000024330",401,"Unauthorized"
+"INC000000024330",403,"Forbidden - Scope Not Permitted"
+"INC000000024330",404,"Not Found"
+"INC000000024330",406,"Bad Request"
+"INC000000024330",412,"Not Acceptable"
+"INC000000024330",429,"Too Many Requests - Exceeded Quota"
+"INC000000024330",500,"Internal Server Error"
+"INC000000024330",503,"Service Unavailable"
+"INC000000024330",504,"Gateway Timeout"
