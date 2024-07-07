@@ -1,0 +1,11 @@
+type,subscriberId,statusCode,scenario
+"S","SVTAL001",200,"Success"
+"E","SVTAL002",400,"Bad Request"
+"E","SVTAL003",401,"Unauthorized"
+"E","SVTAL004",403,"Forbidden - Scope Not Permitted"
+"E","SVTAL005",404,"Not Found"
+"E","SVTAL006",406,"Not Acceptable"
+"E","SVTAL007",429,"Too Many Requests - Exceeded Quota"
+"T","SVTAL008",500,"Internal Server Error"
+"T","SVTAL009",503,"Service Unavailable"
+"T","SVTAL010",504,"Gateway Timeout"
