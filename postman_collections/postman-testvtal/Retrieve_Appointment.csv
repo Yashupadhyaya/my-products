@@ -1,0 +1,12 @@
+appointmentId,statusCode,scenario
+"SA-562403",200,"successful operation"
+"invalid",400,"Bad Request"
+"invalid",401,"Unauthorized"
+"invalid",403,"Forbidden - Scope Not Permitted"
+"invalid",404,"Not Found"
+"invalid",406,"Not Acceptable"
+"invalid",412,"Not Acceptable"
+"invalid",429,"Too Many Requests - Exceeded Quota"
+"invalid",500,"Internal Server Error"
+"invalid",503,"Service Unavailable"
+"invalid",504,"Gateway Timeout"
