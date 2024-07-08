@@ -1,0 +1,14 @@
+startDate,endDate,ticketType,category,subCategory,statusCode,scenario
+2023-01-30,2023-02-04,Incidente,Suspeita de Massivo,AGENDAMENTO - FALTA DE SLOT,200,Success
+2023-01-30,2023-02-04,Incidente,Suspeita de Massivo,SUSPEITA DE FALHA MASSIVA DE REDES,200,Success
+2023-01-30,2023-03-02,Incidente,Suspeita de Massivo,MUDANCA DE VELOCIDADE,200,Success
+2023-01-30,2023-01-30,Incidente,Suspeita de Massivo,SUSPEITA DE FALHA MASSIVA DE REDES - EQUIPAMENTOS,400,Bad Request
+2023-01-30,2023-01-30,Incidente,Suspeita de Massivo,SUSPEITA DE FALHA MASSIVA DE REDES,401,Unauthorized
+2023-01-30,2023-01-30,Incidente,Caso pontual,AGENDAMENTO - FALTA DE SLOT,403,Forbidden - Scope Not Permitted
+2023-01-30,2023-01-30,Incidente,Suspeita de Massivo,DIAGNOSTICO,404,Not Found
+2023-01-30,2023-01-30,Incidente,Caso pontual,REJEITE JANELA DE MANUTENCAO,406,Bad Request
+2023-01-30,2023-01-30,ChamadoTecnico,Reparo,RECLAMACAO CLIENTE,412,Not Acceptable
+2023-01-30,2023-01-30,ChamadoTecnico,Reparo,CDO sem potência adequada,429,Too Many Requests - Exceeded Quota
+2023-01-30,2023-01-30,ChamadoTecnico,Reparo,Problema de Navegação,500,Internal Server Error
+2023-01-30,2023-01-30,ChamadoTecnico,Reparo,Falha de associaçao ONT,503,Service Unavailable
+2023-01-30,2023-01-30,ChamadoTecnico,Ativacao,CDO errada,504,Gateway Timeout
