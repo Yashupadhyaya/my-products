@@ -1,0 +1,13 @@
+id,author,text,issueCode,content,mimeType,name,statusCode,scenario
+"24330","João da Silva","Telefone contato: (11) 91234-8765; Clientes Impactados: 350285169, 856472598, 953247125, 854216478, 312547523; Localidade: RJ; Cidade: Rio de Janeiro","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",201,"Notified"
+"24330","João da Silva","Favor verificar o problema. Evidencia em anexo.","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",400,"Bad Request"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",401,"Unauthorized"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",403,"Forbidden - Scope Not Permitted"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",404,"Not Found"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",406,"Bad Request"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",412,"Not Acceptable"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",423,"Locked"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",429,"Too Many Requests - Exceeded Quota"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",500,"Internal Server Error"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",503,"Service Unavailable"
+"24330","Pedro Santos","Solicitação em andamento","TASK000001","VGVzdGUgZW52aW8gZGUgYW5leG8=","image/jpeg","Eviden",504,"Gateway Timeout"
