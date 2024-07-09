@@ -1,0 +1,11 @@
+appointmentId^|^AdditionalCSVvaluInfo^|^appointmentReason^|^appointmentComments^|^RequestBody^|^statusCode
+APPTID123456^|^SA-562403^|^Routine Checkup^|^Appointment for regular health check^|^{ "patientId": "PAT123", "doctorId": "DOC456", "date": "2022-06-30", "time": "10:00 AM" }^|^200
+APPTID123457^|^SA-562403^|^Follow-up Visit^|^Follow-up after surgery^|^{ "patientId": "PAT456", "doctorId": "DOC789", "date": "2022-07-01", "time": "02:00 PM" }^|^200
+APPTID123458^|^SA-562403^|^Dental Cleaning^|^Regular dental cleaning^|^{ "patientId": "PAT789", "doctorId": "DOC123", "date": "2022-06-30", "time": "11:00 AM" }^|^200
+APPTID123459^|^SA-562403^|^Eye Examination^|^Annual eye examination^|^{ "patientId": "PAT321", "doctorId": "DOC654", "date": "2022-07-02", "time": "03:00 PM" }^|^200
+APPTID123460^|^SA-562403^|^Physical Therapy^|^Physical therapy for back pain^|^{ "patientId": "PAT987", "doctorId": "DOC321", "date": "2022-07-05", "time": "09:00 AM" }^|^200
+APPTID123461^|^SA-562403^|^Psychiatry Consultation^|^Consultation for anxiety^|^{ "patientId": "PAT654", "doctorId": "DOC987", "date": "2022-07-06", "time": "01:00 PM" }^|^200
+APPTID123462^|^SA-562403^|^Pregnancy Checkup^|^Regular pregnancy checkup^|^{ "patientId": "PAT345", "doctorId": "DOC567", "date": "2022-07-07", "time": "12:00 PM" }^|^200
+APPTID123463^|^SA-562403^|^Orthopedic Consultation^|^Consultation for knee pain^|^{ "patientId": "PAT567", "doctorId": "DOC234", "date": "2022-07-08", "time": "04:00 PM" }^|^200
+APPTID123464^|^SA-562403^|^Cardiology Consultation^|^Consultation for heart palpitations^|^{ "patientId": "PAT234", "doctorId": "DOC345", "date": "2022-07-09", "time": "02:00 PM" }^|^200
+APPTID123465^|^SA-562403^|^Dermatology Consultation^|^Consultation for skin rash^|^{ "patientId": "PAT432", "doctorId": "DOC678", "date": "2022-07-10", "time": "10:00 AM" }^|^200

@@ -1,0 +1,11 @@
+appointmentId^|^RequestBody^|^statusCode
+AP-123456^|^{"appointment": {"slot": {"id": "SLOT-1"}, "reason": "Regular Checkup"}}^|^200
+AP-123457^|^{"appointment": {"slot": {"id": "SLOT-2"}, "reason": "Emergency"}}^|^200
+AP-123458^|^{"appointment": {"slot": {"id": "SLOT-3"}, "reason": "Follow-up"}}^|^200
+AP-123459^|^{"appointment": {"slot": {"id": "SLOT-4"}, "reason": "Consultation"}}^|^200
+AP-123460^|^{"appointment": {"slot": {"id": "SLOT-5"}, "reason": "Physical Therapy"}}^|^200
+AP-123461^|^{"appointment": {"slot": {"id": "SLOT-6"}, "reason": "Mental Health"}}^|^200
+AP-123462^|^{"appointment": {"slot": {"id": "SLOT-7"}, "reason": "Dental Checkup"}}^|^200
+AP-123463^|^{"appointment": {"slot": {"id": "SLOT-8"}, "reason": "Eye Checkup"}}^|^200
+AP-123464^|^{"appointment": {"slot": {"id": "SLOT-9"}, "reason": "Cardiology"}}^|^200
+AP-123465^|^{"appointment": {"slot": {"id": "SLOT-10"}, "reason": "Orthopedics"}}^|^200

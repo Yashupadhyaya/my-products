@@ -1,0 +1,11 @@
+RequestBody^|^statusCode
+{"appointment": {"slot": {"id": "1234"}, "reason": "Check-up"}}^|^201
+{"appointment": {"slot": {"id": "5678"}, "reason": "Follow-up"}}^|^404
+{"appointment": {"slot": {"id": "9101"}, "reason": "Consultation"}}^|^503
+{"appointment": {"slot": {"id": "1121"}, "reason": "Therapy"}}^|^400
+{"appointment": {"slot": {"id": "3141"}, "reason": "Diagnosis"}}^|^429
+{"appointment": {"slot": {"id": "5161"}, "reason": "Treatment"}}^|^401
+{"appointment": {"slot": {"id": "7181"}, "reason": "Surgery"}}^|^403
+{"appointment": {"slot": {"id": "9202"}, "reason": "Medication"}}^|^412
+{"appointment": {"slot": {"id": "1222"}, "reason": "Prescription"}}^|^423
+{"appointment": {"slot": {"id": "3242"}, "reason": "Inquiry"}}^|^500
