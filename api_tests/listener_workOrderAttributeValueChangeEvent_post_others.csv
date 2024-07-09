@@ -1,0 +1,11 @@
+id^|^name^|^timeOccurred^|^timeZoneOccurred^|^workOrderId^|^lifeCycleStatus^|^associatedDocument^|^businessUnit^|^operationalPriority^|^readyForTechnicalDispatch^|^activityType^|^category
+1^|^John Doe^|^2022-07-08 13:59:40^|^America/Sao_Paulo^|^SA-562403^|^Atribuído^|^VTT001^|^Business Unit 1^|^Sem Prioridade^|^true^|^INSTALAÇÃO BL FIBRA^|^INST
+2^|^Jane Smith^|^2022-07-08 12:08:35^|^America/Sao_Paulo^|^SA-562404^|^Não atribuído^|^VTT002^|^Business Unit 2^|^Alta Prioridade^|^false^|^REPARO BL FIBRA^|^REP
+3^|^Robert Johnson^|^2022-06-03 17:17:48^|^America/Sao_Paulo^|^SA-562405^|^Atribuído^|^VTT003^|^Business Unit 3^|^Baixa Prioridade^|^true^|^MANUTENÇÃO BL FIBRA^|^MAN
+4^|^Michael Brown^|^2022-07-09 14:23:15^|^America/Sao_Paulo^|^SA-562406^|^Não atribuído^|^VTT004^|^Business Unit 4^|^Sem Prioridade^|^false^|^INSTALAÇÃO BL FIBRA^|^INST
+5^|^Linda Davis^|^2022-07-10 15:30:20^|^America/Sao_Paulo^|^SA-562407^|^Atribuído^|^VTT005^|^Business Unit 5^|^Alta Prioridade^|^true^|^REPARO BL FIBRA^|^REP
+6^|^James Miller^|^2022-07-11 16:45:25^|^America/Sao_Paulo^|^SA-562408^|^Não atribuído^|^VTT006^|^Business Unit 6^|^Baixa Prioridade^|^false^|^MANUTENÇÃO BL FIBRA^|^MAN
+7^|^Patricia Wilson^|^2022-07-12 17:50:30^|^America/Sao_Paulo^|^SA-562409^|^Atribuído^|^VTT007^|^Business Unit 7^|^Sem Prioridade^|^true^|^INSTALAÇÃO BL FIBRA^|^INST
+8^|^David Moore^|^2022-07-13 18:55:35^|^America/Sao_Paulo^|^SA-562410^|^Não atribuído^|^VTT008^|^Business Unit 8^|^Alta Prioridade^|^false^|^REPARO BL FIBRA^|^REP
+9^|^Jennifer Taylor^|^2022-07-14 19:59:40^|^America/Sao_Paulo^|^SA-562411^|^Atribuído^|^VTT009^|^Business Unit 9^|^Baixa Prioridade^|^true^|^MANUTENÇÃO BL FIBRA^|^MAN
+10^|^William Anderson^|^2022-07-15 20:05:45^|^America/Sao_Paulo^|^SA-562412^|^Não atribuído^|^VTT010^|^Business Unit 10^|^Sem Prioridade^|^false^|^INSTALAÇÃO BL FIBRA^|^INST

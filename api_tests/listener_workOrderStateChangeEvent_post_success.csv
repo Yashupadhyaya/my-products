@@ -1,0 +1,11 @@
+id^|^name^|^timeOccurred^|^timeZoneOccurred^|^lifeCycleStatus^|^associatedDocument^|^businessUnit^|^operationalPriority^|^readyForTechnicalDispatch
+1^|^John Doe^|^2022-01-01 12:00:00^|^EST^|^Active^|^Doc123^|^Sales^|^High^|^True
+2^|^Jane Doe^|^2022-01-02 13:00:00^|^PST^|^Inactive^|^Doc456^|^Marketing^|^Low^|^False
+3^|^Jim Smith^|^2022-01-03 14:00:00^|^CST^|^Active^|^Doc789^|^Finance^|^Medium^|^True
+4^|^Jill Johnson^|^2022-01-04 15:00:00^|^MST^|^Inactive^|^Doc012^|^HR^|^High^|^False
+5^|^Jack Brown^|^2022-01-05 16:00:00^|^EST^|^Active^|^Doc345^|^Sales^|^Low^|^True
+6^|^Julia Davis^|^2022-01-06 17:00:00^|^PST^|^Inactive^|^Doc678^|^Marketing^|^Medium^|^False
+7^|^Jerry Miller^|^2022-01-07 18:00:00^|^CST^|^Active^|^Doc901^|^Finance^|^High^|^True
+8^|^Jessica Wilson^|^2022-01-08 19:00:00^|^MST^|^Inactive^|^Doc234^|^HR^|^Low^|^False
+9^|^Jeff Moore^|^2022-01-09 20:00:00^|^EST^|^Active^|^Doc567^|^Sales^|^Medium^|^True
+10^|^Jennifer Taylor^|^2022-01-10 21:00:00^|^PST^|^Inactive^|^Doc890^|^Marketing^|^High^|^False

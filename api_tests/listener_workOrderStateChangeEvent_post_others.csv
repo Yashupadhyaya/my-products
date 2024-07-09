@@ -1,0 +1,11 @@
+id^|^name^|^timeOccurred^|^timeZoneOccurred^|^lifeCycleStatus^|^associatedDocument^|^businessUnit^|^operationalPriority^|^readyForTechnicalDispatch
+1^|^John^|^2022-05-07T15:34:00Z^|^PST^|^Active^|^Doc123^|^Sales^|^High^|^true
+2^|^Jane^|^2022-05-08T16:34:00Z^|^EST^|^Inactive^|^Doc456^|^Marketing^|^Low^|^false
+3^|^Doe^|^2022-05-09T17:34:00Z^|^CST^|^Active^|^Doc789^|^HR^|^Medium^|^true
+4^|^Smith^|^2022-05-10T18:34:00Z^|^PST^|^Inactive^|^Doc101^|^Finance^|^High^|^false
+5^|^Brown^|^2022-05-11T19:34:00Z^|^EST^|^Active^|^Doc102^|^Sales^|^Low^|^true
+6^|^Taylor^|^2022-05-12T20:34:00Z^|^CST^|^Inactive^|^Doc103^|^Marketing^|^Medium^|^false
+7^|^Wilson^|^2022-05-13T21:34:00Z^|^PST^|^Active^|^Doc104^|^HR^|^High^|^true
+8^|^Johnson^|^2022-05-14T22:34:00Z^|^EST^|^Inactive^|^Doc105^|^Finance^|^Low^|^false
+9^|^White^|^2022-05-15T23:34:00Z^|^CST^|^Active^|^Doc106^|^Sales^|^Medium^|^true
+10^|^Black^|^2022-05-16T00:34:00Z^|^PST^|^Inactive^|^Doc107^|^Marketing^|^High^|^false
