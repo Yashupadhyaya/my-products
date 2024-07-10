@@ -31,15 +31,15 @@
 Feature: Retrieve Peer Stocks and their Time Series Data
 
 Background:
-  * def alphavantage_get_resolved_URL = karate.properties['ALPHAVANTAGE_GET_RESOLVED_URL'] || 'http://localhost:4010'
-  * def finnhub_URL = karate.properties['FINNHUB_URL'] || 'http://localhost:4010'
-  * def alphavantage_get_resolved_AUTH_TOKEN = karate.properties['ALPHAVANTAGE_GET_RESOLVED_AUTH_TOKEN'] || 'http://localhost:4010'
-  * def finnhub_AUTH_TOKEN = karate.properties['FINNHUB_AUTH_TOKEN'] || 'http://localhost:4010'
+  * def alphavantage_get_resolved_URL = 'https://www.alphavantage.co'
+  * def finnhub_URL = 'https://finnhub.io/api/v1'
+  * def alphavantage_get_resolved_AUTH_TOKEN = '1LEA56BMETM4187W'
+  * def finnhub_AUTH_TOKEN = 'cq6e1uhr01qlbj5011b0cq6e1uhr01qlbj5011bg'
 
 Scenario Outline: Get peers for a given stock symbol and their time series values
   Given url finnhub_URL
   And path '/stock/peers'
-  And params {symbol: 'AAPL', token: '<FINNHUB_API_KEY>'}
+  And params {symbol: 'AAPL', token: <FINNHUB_API_KEY>}
   When method get
   Then status 200
   * def peerSymbols = response
@@ -47,7 +47,7 @@ Scenario Outline: Get peers for a given stock symbol and their time series value
 
   Given url alphavantage_get_resolved_URL
   And path '/query'
-  And params {symbol: 'AAPL', apikey: '<ALPHAVANTAGE_API_KEY>', function: 'TIME_SERIES_DAILY'}
+  And params {symbol: 'AAPL', apikey: <ALPHAVANTAGE_API_KEY>, function: 'TIME_SERIES_DAILY'}
   When method get
   Then status 200
   * def timeSeriesData = response
@@ -55,4 +55,4 @@ Scenario Outline: Get peers for a given stock symbol and their time series value
 
   Examples:
     | FINNHUB_API_KEY          | ALPHAVANTAGE_API_KEY         |
-    | your_finnhub_api_key     | your_alphavantage_api_key     |
+    | 'cq6e1uhr01qlbj5011b0cq6e1uhr01qlbj5011bg'     | '1LEA56BMETM4187W'    |

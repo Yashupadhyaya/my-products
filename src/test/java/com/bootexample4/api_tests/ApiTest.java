@@ -13,10 +13,10 @@
   
         @Test
         void testAll() {
-            String alphavantage_get_resolved_url = System.getenv().getOrDefault("ALPHAVANTAGE_GET_RESOLVED_URL", "http://localhost:4010");
-String finnhub_url = System.getenv().getOrDefault("FINNHUB_URL", "http://localhost:4010");
-String alphavantage_get_resolved_auth_token = System.getenv().getOrDefault("ALPHAVANTAGE_GET_RESOLVED_AUTH_TOKEN", "dummy_ALPHAVANTAGE_GET_RESOLVED_AUTH_TOKEN");
-String finnhub_auth_token = System.getenv().getOrDefault("FINNHUB_AUTH_TOKEN", "dummy_FINNHUB_AUTH_TOKEN");
+            String alphavantage_get_resolved_url = System.getenv().getOrDefault("ALPHAVANTAGE_GET_RESOLVED_URL", "https://www.alphavantage.co");
+String finnhub_url = System.getenv().getOrDefault("FINNHUB_URL", "https://finnhub.io/api/v1");
+String alphavantage_get_resolved_auth_token = System.getenv().getOrDefault("ALPHAVANTAGE_GET_RESOLVED_AUTH_TOKEN", "1LEA56BMETM4187W");
+String finnhub_auth_token = System.getenv().getOrDefault("FINNHUB_AUTH_TOKEN", "cq6e1uhr01qlbj5011b0cq6e1uhr01qlbj5011bg");
             Results results = Runner.path("src/test/java/com/bootexample4/api_tests")
                     .systemProperty("ALPHAVANTAGE_GET_RESOLVED_URL",alphavantage_get_resolved_url)
 .systemProperty("FINNHUB_URL",finnhub_url)
