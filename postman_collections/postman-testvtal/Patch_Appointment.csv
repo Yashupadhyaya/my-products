@@ -1,0 +1,13 @@
+appointmentId,id,reason,statusCode,scenario
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",200,"successful operation"
+12345,"invalid-id","invalid reason data",400,"Bad Request"
+67890,"another-invalid-id","another invalid reason",401,"Unauthorized"
+54321,"yet-another-invalid-id","yet another invalid reason",403,"Forbidden - Scope Not Permitted"
+98765,"invalid-id-again","invalid reason again",404,"Not Found"
+13579,"bad-id","bad reason",406,"Not Acceptable"
+24680,"wrong-id","wrong reason",412,"Not Acceptable"
+11223,"invalid-slot-id","invalid slot reason",423,"Locked"
+44556,"exceed-id","too many requests reason",429,"Too Many Requests - Exceeded Quota"
+77889,"server-error-id","server error reason",500,"Internal Server Error"
+99000,"service-unavailable-id","service unavailable reason",503,"Service Unavailable"
+11112,"gateway-timeout-id","gateway timeout reason",504,"Gateway Timeout"
