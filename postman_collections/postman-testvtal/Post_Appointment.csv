@@ -1,0 +1,13 @@
+id,reason,statusCode,scenario
+"bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",201,"successful operation"
+"invalid-id-1","Invalid Reason",400,"Bad Request"
+"invalid-id-2","Another Invalid Reason",401,"Unauthorized"
+"invalid-id-3","Yet Another Invalid Reason",403,"Forbidden - Scope Not Permitted"
+"invalid-id-4","More Invalid Reason",404,"Not Found"
+"invalid-id-5","Still Another Invalid Reason",406,"Not Acceptable"
+"invalid-id-6","Precondition Invalid",412,"Not Acceptable"
+"invalid-id-7","Locked Reason",423,"Locked"
+"invalid-id-8","Too Many Requests Reason",429,"Too Many Requests - Exceeded Quota"
+"invalid-id-9","Internal Server Error Reason",500,"Internal Server Error"
+"invalid-id-10","Service Unavailable Reason",503,"Service Unavailable"
+"invalid-id-11","Gateway Timeout Reason",504,"Gateway Timeout"
