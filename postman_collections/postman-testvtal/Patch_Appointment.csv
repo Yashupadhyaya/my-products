@@ -1,0 +1,13 @@
+appointmentId,id,reason,statusCode,scenario
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",200,"successful operation"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",400,"Bad Request"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",401,"Unauthorized"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",403,"Forbidden - Scope Not Permitted"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",404,"Not Found"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",406,"Not Acceptable"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",412,"Not Acceptable"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",423,"Locked"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",429,"Too Many Requests - Exceeded Quota"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",500,"Internal Server Error"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",503,"Service Unavailable"
+"InvalidId","bff13821-73c3-42cc-9327-b05c7df5a67f","Bad Data",504,"Gateway Timeout"

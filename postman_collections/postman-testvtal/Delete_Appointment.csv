@@ -1,0 +1,13 @@
+appointmentReason,appointmentComments,appointmentId,statusCode,scenario
+"Agendamento para Instalação de Fibra","All necessary tools are prepared","SA-562403",200,"successful operation"
+"Invalid Reason","Invalid Comments","InvalidId",400,"Bad Request"
+"Invalid Reason","Invalid Comments","InvalidId",401,"Unauthorized"
+"Invalid Reason","Invalid Comments","InvalidId",403,"Forbidden - Scope Not Permitted"
+"Invalid Reason","Invalid Comments","InvalidId",404,"Not Found"
+"Invalid Reason","Invalid Comments","InvalidId",406,"Not Acceptable"
+"Invalid Reason","Invalid Comments","InvalidId",412,"Not Acceptable"
+"Invalid Reason","Invalid Comments","InvalidId",423,"Locked"
+"Invalid Reason","Invalid Comments","InvalidId",429,"Too Many Requests - Exceeded Quota"
+"Invalid Reason","Invalid Comments","InvalidId",500,"Internal Server Error"
+"Invalid Reason","Invalid Comments","InvalidId",503,"Service Unavailable"
+"Invalid Reason","Invalid Comments","InvalidId",504,"Gateway Timeout"
