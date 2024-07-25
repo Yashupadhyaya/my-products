@@ -1,0 +1,13 @@
+id,reason,statusCode,scenario
+"VTAL001","Cliente Diamond",201,"successful operation"
+"invalid_id","Invalid reason",400,"Bad Request"
+"invalid_id","Invalid reason",401,"Unauthorized"
+"invalid_id","Invalid reason",403,"Forbidden - Scope Not Permitted"
+"invalid_id","Invalid reason",404,"Not Found"
+"invalid_id","Invalid reason",406,"Not Acceptable"
+"invalid_id","Invalid reason",412,"Not Acceptable"
+"invalid_id","Invalid reason",423,"Locked"
+"invalid_id","Invalid reason",429,"Too Many Requests - Exceeded Quota"
+"invalid_id","Invalid reason",500,"Internal Server Error"
+"invalid_id","Invalid reason",503,"Service Unavailable"
+"invalid_id","Invalid reason",504,"Gateway Timeout"
