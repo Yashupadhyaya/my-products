@@ -1,0 +1,12 @@
+subscriberId,id,confirmation,statusCode,scenario
+"sub123","id123",true,200,"successful operation"
+"sub124","id124",false,400,"Bad Request"
+"sub125","id125",true,401,"Unauthorized"
+"sub126","id126",false,403,"Forbidden - Scope Not Permitted"
+"sub127","id127",true,404,"Not Found"
+"sub128","id128",false,406,"Not Acceptable"
+"sub129","id129",true,412,"Precondition Failed"
+"sub130","id130",false,429,"Too Many Requests - Exceeded Quota"
+"sub131","id131",true,500,"Internal Server Error"
+"sub132","id132",false,503,"Service Unavailable"
+"sub133","id133",true,504,"Gateway Timeout"
