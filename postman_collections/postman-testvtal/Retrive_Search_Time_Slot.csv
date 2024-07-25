@@ -1,0 +1,12 @@
+addressId,subscriberId,associatedDocument,startDate,finishDate,orderType,addressChangeFlag,productType,priorityFlag,priorityReason,statusCode,scenario
+"1","1","doc1","2021-05-30T08:00:00","2021-05-30T12:00:00","type1","false","product1","true","reason1",200,"success"
+"2","2","doc2","2021-05-30T13:00:00","2021-05-30T18:00:00","type2","true","product2","false","reason2",400,"Bad Request"
+"3","3","doc3","2021-05-31T08:00:00","2021-05-31T12:00:00","type3","false","product3","true","reason3",401,"Unauthorized"
+"4","4","doc4","2021-05-31T13:00:00","2021-05-31T18:00:00","type4","true","product4","false","reason4",403,"Forbidden - Scope Not Permitted"
+"5","5","doc5","2022-01-01T08:00:00","2022-01-01T12:00:00","type5","false","product5","true","reason5",404,"Not Found"
+"6","6","doc6","2022-01-01T13:00:00","2022-01-01T18:00:00","type6","true","product6","false","reason6",406,"Not Acceptable"
+"7","7","doc7","2022-02-01T08:00:00","2022-02-01T12:00:00","type7","false","product7","true","reason7",412,"Precondition Failed"
+"8","8","doc8","2022-02-01T13:00:00","2022-02-01T18:00:00","type8","true","product8","false","reason8",429,"Too Many Requests - Exceeded Quota"
+"9","9","doc9","2022-03-01T08:00:00","2022-03-01T12:00:00","type9","false","product9","true","reason9",500,"Internal Server Error"
+"10","10","doc10","2022-03-01T13:00:00","2022-03-01T18:00:00","type10","true","product10","false","reason10",503,"Service Unavailable"
+"11","11","doc11","2022-04-01T08:00:00","2022-04-01T12:00:00","type11","false","product11","true","reason11",504,"Gateway Timeout"
