@@ -1,0 +1,12 @@
+addressId,subscriberId,associatedDocument,startDate,finishDate,orderType,addressChangeFlag,productType,priorityFlag,priorityReason,statusCode,scenario
+"123","456","789","2021-05-30T08:00:00","2021-05-30T12:00:00","Order1","No","Product1","No","None",200,"success"
+"124","457","790","2021-05-30T13:00:00","2021-05-30T18:00:00","Order2","Yes","Product2","Yes","High",400,"Bad Request"
+"125","458","791","2021-05-31T08:00:00","2021-05-31T12:00:00","Order3","No","Product3","No","None",401,"Unauthorized"
+"126","459","792","2021-05-31T13:00:00","2021-05-31T18:00:00","Order4","Yes","Product4","Yes","Low",403,"Forbidden - Scope Not Permitted"
+"127","460","793","2022-01-01T08:00:00","2022-01-01T12:00:00","Order5","No","Product5","No","None",404,"Not Found"
+"128","461","794","2022-01-01T13:00:00","2022-01-01T18:00:00","Order6","Yes","Product6","Yes","Medium",406,"Not Acceptable"
+"129","462","795","2022-01-02T08:00:00","2022-01-02T12:00:00","Order7","No","Product7","No","None",412,"Precondition Failed"
+"130","463","796","2022-01-02T13:00:00","2022-01-02T18:00:00","Order8","Yes","Product8","Yes","High",429,"Too Many Requests - Exceeded Quota"
+"131","464","797","2022-01-03T08:00:00","2022-01-03T12:00:00","Order9","No","Product9","No","None",500,"Internal Server Error"
+"132","465","798","2022-01-03T13:00:00","2022-01-03T18:00:00","Order10","Yes","Product10","Yes","Low",503,"Service Unavailable"
+"133","466","799","2022-01-04T08:00:00","2022-01-04T12:00:00","Order11","No","Product11","No","None",504,"Gateway Timeout"
