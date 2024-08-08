@@ -1,0 +1,11 @@
+statusCode^|^scenario
+200^|^GET http://127.0.0.1:4010/employees/0c785cea-0aa2-83cb-007d-b3caaf1deef3
+200^|^GET http://127.0.0.1:4010/employees
+200^|^GET http://127.0.0.1:4010/employees
+200^|^GET http://127.0.0.1:4010/employees
+200^|^GET http://127.0.0.1:4010/employees
+404^|^GET http://127.0.0.1:4010/employees/abcd1234-efgh-5678-ijkl-9123mnop4567
+404^|^GET http://127.0.0.1:4010/employees/abcd1234-efgh-5678-ijkl-9123mnop4568
+404^|^GET http://127.0.0.1:4010/employees/abcd1234-efgh-5678-ijkl-9123mnop4569
+404^|^GET http://127.0.0.1:4010/employees/abcd1234-efgh-5678-ijkl-9123mnop4570
+404^|^GET http://127.0.0.1:4010/employees/abcd1234-efgh-5678-ijkl-9123mnop4571
