@@ -1,0 +1,11 @@
+id^|^jobTitle^|^name^|^email^|^statusCode^|^scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851^|^System Analyst^|^John Smith^|^john.smith@acme-corp.com^|^200^|^POST
+2b9f1ee-6c54-4b01-90e6-d701748f0862^|^Software Engineer^|^Jane Doe^|^jane.doe@acme-corp.com^|^200^|^POST
+3c9f1ee-6c54-4b01-90e6-d701748f0873^|^Data Analyst^|^Tom Brown^|^tom.brown@acme-corp.com^|^200^|^POST
+4d9f1ee-6c54-4b01-90e6-d701748f0884^|^Product Manager^|^Sue Green^|^sue.green@acme-corp.com^|^200^|^POST
+5e9f1ee-6c54-4b01-90e6-d701748f0895^|^HR Manager^|^Bob Black^|^bob.black@acme-corp.com^|^200^|^POST
+6f9f1ee-6c54-4b01-90e6-d701748f0906^|^Sales Executive^|^Alice White^|^alice.white@acme-corp.com^|^200^|^POST
+7g9f1ee-6c54-4b01-90e6-d701748f0917^|^Marketing Specialist^|^Charlie Grey^|^charlie.grey@acme-corp.com^|^200^|^POST
+8h9f1ee-6c54-4b01-90e6-d701748f0928^|^Finance Officer^|^Lucy Blue^|^lucy.blue@acme-corp.com^|^200^|^POST
+9i9f1ee-6c54-4b01-90e6-d701748f0939^|^Operations Manager^|^Eve Purple^|^eve.purple@acme-corp.com^|^200^|^POST
+10j9f1ee-6c54-4b01-90e6-d701748f0940^|^CEO^|^Adam Red^|^adam.red@acme-corp.com^|^200^|^POST
