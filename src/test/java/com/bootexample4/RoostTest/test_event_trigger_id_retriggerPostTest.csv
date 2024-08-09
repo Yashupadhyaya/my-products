@@ -1,0 +1,11 @@
+improve_test^|^file_path^|^user_content^|^testscript_endpoint^|^git_pr_url^|^statusCode^|^scenario
+true^|^/home/user/test1,/home/user/test2^|^This is a test content^|^/api/v1/test^|^https://github.com/user/repo/pull/1^|^201^|^Scenario1
+false^|^/home/user/test3,/home/user/test4^|^This is another test content^|^/api/v1/test^|^https://github.com/user/repo/pull/2^|^201^|^Scenario2
+true^|^/home/user/test5,/home/user/test6^|^This is yet another test content^|^/api/v1/test^|^https://github.com/user/repo/pull/3^|^201^|^Scenario3
+false^|^/home/user/test7,/home/user/test8^|^This is some different test content^|^/api/v1/test^|^https://github.com/user/repo/pull/4^|^201^|^Scenario4
+true^|^/home/user/test9,/home/user/test10^|^This is more test content^|^/api/v1/test^|^https://github.com/user/repo/pull/5^|^201^|^Scenario5
+false^|^/home/user/test11,/home/user/test12^|^This is test content again^|^/api/v1/test^|^https://github.com/user/repo/pull/6^|^201^|^Scenario6
+true^|^/home/user/test13,/home/user/test14^|^This is additional test content^|^/api/v1/test^|^https://github.com/user/repo/pull/7^|^201^|^Scenario7
+false^|^/home/user/test15,/home/user/test16^|^This is some more test content^|^/api/v1/test^|^https://github.com/user/repo/pull/8^|^201^|^Scenario8
+true^|^/home/user/test17,/home/user/test18^|^This is final test content^|^/api/v1/test^|^https://github.com/user/repo/pull/9^|^201^|^Scenario9
+false^|^/home/user/test19,/home/user/test20^|^This is the last test content^|^/api/v1/test^|^https://github.com/user/repo/pull/10^|^201^|^Scenario10
