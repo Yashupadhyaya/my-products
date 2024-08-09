@@ -1,0 +1,11 @@
+statusCode^|^scenario
+200^|^User Login
+404^|^Page Not Found
+500^|^Internal Server Error
+201^|^User Registration
+403^|^Unauthorized Access
+204^|^Data Deletion
+400^|^Bad Request
+503^|^Service Unavailable
+301^|^Permanent Redirect
+408^|^Request Timeout
