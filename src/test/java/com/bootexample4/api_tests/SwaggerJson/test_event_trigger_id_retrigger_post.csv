@@ -1,0 +1,3 @@
+trigger_id,improve_test,file_path,user_content,testscript_endpoint,git_pr_url
+"abc123","true","["path1","path2"]","Test content","/api/test","https://github.com/user/repo"
+"def456","false","["path3"]","More content","/api/another","https://github.com/user/repo2"
