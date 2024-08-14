@@ -1,0 +1,3 @@
+trigger_id,target_url,file_path,env_config,arrival_rate,duration,test_framework,status_code,csv_file_path,endpoint
+"test123","https://api.example.com","["path1.js","path2.js"]","[{"file":false,"key":"API_KEY","value":"12345","type":"string","secret":false}]","10","60","jest","200","data/test_data.csv","/api/v1/users"
+"test456","https://api.testexample.com","["test.js"]","[{"file":true,"key":"CONFIG","file_details":{"file_name":"config.json","file_content":"{}"},"type":"object"}]","5","30","mocha","201","data/users.csv","/api/v2/orders"
