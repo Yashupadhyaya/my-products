@@ -1,0 +1,6 @@
+trigger_id,file_choice,file_path,status_code
+"trigger1","option1","/path/to/file1","404"
+"trigger2","option2","/path/to/file2","400"
+"invalid","option1","/path/to/file","400"
+"trigger3","invalid","/path/to/file","400"
+"trigger4","option2","/invalid/path","400"
