@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"e8ddb4a4-5398-4a2c-875f-5b990c0c5016",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.com.bootexample4.api_tests.SwaggerJson.test_event_trigger_id_retrigger_post</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-20 02:31:03 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:35]"><span>[1.1:35]</span> <span>Retrigger event with valid input</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:35]"><span>[1.2:35]</span> <span>Retrigger event with valid input</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:37]"><span>[2:37]</span> <span>Retrigger event with invalid trigger_id</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:64]"><span>[3:64]</span> <span>Retrigger event with missing required fields</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:77]"><span>[4:77]</span> <span>Retrigger event with invalid data types</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:93]"><span>[5:93]</span> <span>Retrigger event without authorization</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_retrigger_post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test RoostGPT Retrigger Endpoint</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:35]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:35]</span>
+                <span class="scenario-name">Retrigger event with valid input</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>8</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:35]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;abc123&#39;, &#39;retrigger&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.21">{
+  &quot;improve_test&quot;: true,
+  &quot;file_path&quot;: [path1&quot;,path2&quot;],
+  &quot;user_content&quot;: &quot;Sample content&quot;,
+  &quot;testscript_endpoint&quot;: &quot;/api/test/script&quot;,
+  &quot;git_pr_url&quot;: &quot;https://github.com/user/repo/pull/1&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.31">14:31:03.620 request:
+1 &gt; POST http://localhost:4010/test/event/abc123/retrigger
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;improve_test&quot;:true,&quot;file_path&quot;:[&quot;path1\&quot;&quot;,&quot;path2\&quot;&quot;],&quot;user_content&quot;:&quot;Sample content&quot;,&quot;testscript_endpoint&quot;:&quot;\/api\/test\/script&quot;,&quot;git_pr_url&quot;:&quot;https:\/\/github.com\/user\/repo\/pull\/1&quot;}
+
+14:31:03.623 response time in milliseconds: 3
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; Content-type: text/plain
+1 &lt; Date: Tue, 20 Aug 2024 09:01:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+1 &lt; Content-Length: 0
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:35]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:35]</span>
+                <span class="scenario-name">Retrigger event with valid input</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:35]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;def456&#39;, &#39;retrigger&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.21">{
+  &quot;improve_test&quot;: false,
+  &quot;file_path&quot;: [path3&quot;],
+  &quot;user_content&quot;: &quot;Test content&quot;,
+  &quot;testscript_endpoint&quot;: &quot;/api/test/another-script&quot;,
+  &quot;git_pr_url&quot;: &quot;https://github.com/user/repo/pull/2&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.31">14:31:03.628 request:
+1 &gt; POST http://localhost:4010/test/event/def456/retrigger
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 185
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;improve_test&quot;:false,&quot;file_path&quot;:[&quot;path3\&quot;&quot;],&quot;user_content&quot;:&quot;Test content&quot;,&quot;testscript_endpoint&quot;:&quot;\/api\/test\/another-script&quot;,&quot;git_pr_url&quot;:&quot;https:\/\/github.com\/user\/repo\/pull\/2&quot;}
+
+14:31:03.633 response time in milliseconds: 4
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; Content-type: text/plain
+1 &lt; Date: Tue, 20 Aug 2024 09:01:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+1 &lt; Content-Length: 0
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:37]</span>
+                <span class="scenario-name">Retrigger event with invalid trigger_id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>7</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:37]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;invalid_id&#39;, &#39;retrigger&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.40">{
+  &quot;improve_test&quot;: true,
+  &quot;file_path&quot;: [&quot;path1&quot;],
+  &quot;user_content&quot;: &quot;Invalid content&quot;,
+  &quot;testscript_endpoint&quot;: &quot;/api/test/script&quot;,
+  &quot;git_pr_url&quot;: &quot;https://github.com/user/repo/pull/3&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50">14:31:03.639 request:
+1 &gt; POST http://localhost:4010/test/event/invalid_id/retrigger
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 177
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;improve_test&quot;:true,&quot;file_path&quot;:[&quot;path1&quot;],&quot;user_content&quot;:&quot;Invalid content&quot;,&quot;testscript_endpoint&quot;:&quot;\/api\/test\/script&quot;,&quot;git_pr_url&quot;:&quot;https:\/\/github.com\/user\/repo\/pull\/3&quot;}
+
+14:31:03.642 response time in milliseconds: 3
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; Content-type: text/plain
+1 &lt; Date: Tue, 20 Aug 2024 09:01:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+1 &lt; Content-Length: 0
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref failed">51</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">14:31:03.643 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_retrigger_post.feature:51
+Then status 404
+status code was: 201, expected: 404, response time in milliseconds: 3, url: http://localhost:4010/test/event/invalid_id/retrigger, response: 
+
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_retrigger_post.feature:51
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref skipped">52</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response contains</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.52">{
+  &quot;code&quot;: 404,
+  &quot;timestamp&quot;: &quot;#string&quot;,
+  &quot;path&quot;: &quot;/test/event/invalid_id/retrigger&quot;,
+  &quot;method&quot;: &quot;POST&quot;,
+  &quot;message&quot;: &quot;Not found&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref skipped">62</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.timestamp == &#39;#regex \\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{3})?Z&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:64]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:64]</span>
+                <span class="scenario-name">Retrigger event with missing required fields</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>8</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:64]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;abc123&#39;, &#39;retrigger&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.67">{
+  &quot;improve_test&quot;: true,
+  &quot;file_path&quot;: [&quot;path1&quot;]
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.74">14:31:03.648 request:
+1 &gt; POST http://localhost:4010/test/event/abc123/retrigger
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 43
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;improve_test&quot;:true,&quot;file_path&quot;:[&quot;path1&quot;]}
+
+14:31:03.653 response time in milliseconds: 5
+1 &lt; 422
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;request&quot;,&quot;body&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;required&quot;,&quot;message&quot;:&quot;Request body must have required property &#39;user_content&#39;&quot;},{&quot;location&quot;:[&quot;request&quot;,&quot;body&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;required&quot;,&quot;message&quot;:&quot;Request body must have required property &#39;testscript_endpoint&#39;&quot;},{&quot;location&quot;:[&quot;request&quot;,&quot;body&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;required&quot;,&quot;message&quot;:&quot;Request body must have required property &#39;git_pr_url&#39;&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 130
+1 &lt; Date: Tue, 20 Aug 2024 09:01:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;code&quot;:404,&quot;timestamp&quot;:&quot;2019-08-24T14:15:22Z&quot;,&quot;path&quot;:&quot;/application/client/git/eaas/trigger&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;message&quot;:&quot;Not found&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref failed">75</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.75">14:31:03.654 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_retrigger_post.feature:75
+Then status 400
+status code was: 422, expected: 400, response time in milliseconds: 5, url: http://localhost:4010/test/event/abc123/retrigger, response: 
+{&quot;code&quot;:404,&quot;timestamp&quot;:&quot;2019-08-24T14:15:22Z&quot;,&quot;path&quot;:&quot;/application/client/git/eaas/trigger&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;message&quot;:&quot;Not found&quot;}
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_retrigger_post.feature:75
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:77]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:77]</span>
+                <span class="scenario-name">Retrigger event with invalid data types</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>7</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:77]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:77]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:77]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:77]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;abc123&#39;, &#39;retrigger&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.80">{
+  &quot;improve_test&quot;: &quot;not_a_boolean&quot;,
+  &quot;file_path&quot;: &quot;not_an_array&quot;,
+  &quot;user_content&quot;: 123,
+  &quot;testscript_endpoint&quot;: true,
+  &quot;git_pr_url&quot;: [&quot;not_a_string&quot;]
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.90">14:31:03.659 request:
+1 &gt; POST http://localhost:4010/test/event/abc123/retrigger
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 135
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;improve_test&quot;:&quot;not_a_boolean&quot;,&quot;file_path&quot;:&quot;not_an_array&quot;,&quot;user_content&quot;:123,&quot;testscript_endpoint&quot;:true,&quot;git_pr_url&quot;:[&quot;not_a_string&quot;]}
+
+14:31:03.664 response time in milliseconds: 5
+1 &lt; 422
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;request&quot;,&quot;body&quot;,&quot;improve_test&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Request body property improve_test must be boolean&quot;},{&quot;location&quot;:[&quot;request&quot;,&quot;body&quot;,&quot;file_path&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Request body property file_path must be array&quot;},{&quot;location&quot;:[&quot;request&quot;,&quot;body&quot;,&quot;user_content&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Request body property user_content must be string&quot;},{&quot;location&quot;:[&quot;request&quot;,&quot;body&quot;,&quot;testscript_endpoint&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Request body property testscript_endpoint must be string&quot;},{&quot;location&quot;:[&quot;request&quot;,&quot;body&quot;,&quot;git_pr_url&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Request body property git_pr_url must be string&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 130
+1 &lt; Date: Tue, 20 Aug 2024 09:01:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;code&quot;:404,&quot;timestamp&quot;:&quot;2019-08-24T14:15:22Z&quot;,&quot;path&quot;:&quot;/application/client/git/eaas/trigger&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;message&quot;:&quot;Not found&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref failed">91</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.91">14:31:03.664 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_retrigger_post.feature:91
+Then status 400
+status code was: 422, expected: 400, response time in milliseconds: 5, url: http://localhost:4010/test/event/abc123/retrigger, response: 
+{&quot;code&quot;:404,&quot;timestamp&quot;:&quot;2019-08-24T14:15:22Z&quot;,&quot;path&quot;:&quot;/application/client/git/eaas/trigger&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;message&quot;:&quot;Not found&quot;}
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_retrigger_post.feature:91
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:93]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:93]</span>
+                <span class="scenario-name">Retrigger event without authorization</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:93]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:93]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:93]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:93]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;abc123&#39;, &#39;retrigger&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.95">{
+  &quot;improve_test&quot;: true,
+  &quot;file_path&quot;: [&quot;path1&quot;],
+  &quot;user_content&quot;: &quot;Test content&quot;,
+  &quot;testscript_endpoint&quot;: &quot;/api/test/script&quot;,
+  &quot;git_pr_url&quot;: &quot;https://github.com/user/repo/pull/1&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.105">14:31:03.668 request:
+1 &gt; POST http://localhost:4010/test/event/abc123/retrigger
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 174
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;improve_test&quot;:true,&quot;file_path&quot;:[&quot;path1&quot;],&quot;user_content&quot;:&quot;Test content&quot;,&quot;testscript_endpoint&quot;:&quot;\/api\/test\/script&quot;,&quot;git_pr_url&quot;:&quot;https:\/\/github.com\/user\/repo\/pull\/1&quot;}
+
+14:31:03.674 response time in milliseconds: 5
+1 &lt; 401
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;request&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:401,&quot;message&quot;:&quot;Invalid security scheme used&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 130
+1 &lt; Date: Tue, 20 Aug 2024 09:01:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;code&quot;:404,&quot;timestamp&quot;:&quot;2019-08-24T14:15:22Z&quot;,&quot;path&quot;:&quot;/application/client/git/eaas/trigger&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;message&quot;:&quot;Not found&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

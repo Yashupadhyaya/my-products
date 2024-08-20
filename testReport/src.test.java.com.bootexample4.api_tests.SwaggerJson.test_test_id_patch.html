@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"e8ddb4a4-5398-4a2c-875f-5b990c0c5016",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.com.bootexample4.api_tests.SwaggerJson.test_test_id_patch</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">5</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-20 02:31:03 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:139]"><span>[1.1:139]</span> <span>Edit test with valid input</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:139]"><span>[1.2:139]</span> <span>Edit test with valid input</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.3:139]"><span>[1.3:139]</span> <span>Edit test with valid input</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:141]"><span>[2:141]</span> <span>Edit test with invalid test_id</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:263]"><span>[3:263]</span> <span>Edit test with missing required fields</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Edit Test API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:139]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:139]</span>
+                <span class="scenario-name">Edit test with valid input</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:139]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/test&#39;, test-123</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.20">14:31:03.195 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:20
+Given path &#39;/test&#39;, test-123
+js failed:
+&gt;&gt;&gt;&gt;
+01: [&#39;/test&#39;, test-123]
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;test&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.21">{
+  &quot;ai_model_info&quot;: {
+    &quot;selected_model&quot;: &quot;openai&quot;,
+    &quot;vertex_model&quot;: {
+      &quot;title&quot;: &quot;Vertex Model&quot;,
+      &quot;key&quot;: &quot;vertex-key&quot;
+    },
+    &quot;open_source_model_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.1&quot;,
+      &quot;model_name&quot;: &quot;open-source-model&quot;
+    },
+    &quot;claude_model&quot;: {
+      &quot;title&quot;: &quot;Claude Model&quot;,
+      &quot;key&quot;: &quot;claude-key&quot;
+    },
+    &quot;star_chat_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.2&quot;,
+      &quot;model_name&quot;: &quot;star-chat-model&quot;
+    },
+    &quot;llama_model_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.3&quot;,
+      &quot;model_name&quot;: &quot;llama-model&quot;
+    },
+    &quot;dbrx_info&quot;: {
+      &quot;dbrx_model_name&quot;: &quot;dbrx-model&quot;
+    },
+    &quot;azure_model_info&quot;: {
+      &quot;azure_openai_key&quot;: &quot;azure-key&quot;,
+      &quot;azure_deployment_name&quot;: &quot;azure-deployment&quot;,
+      &quot;azure_endpoint&quot;: &quot;https://azure-endpoint.com&quot;
+    }
+  },
+  &quot;git_info&quot;: {
+    &quot;type&quot;: {},
+    &quot;source_repo_pr&quot;: true,
+    &quot;selected_path&quot;: &quot;/path/to/repo&quot;,
+    &quot;host_type&quot;: {},
+    &quot;source&quot;: {
+      &quot;access_token&quot;: &quot;source-token&quot;,
+      &quot;selected_branch&quot;: &quot;main&quot;,
+      &quot;repository_type&quot;: {},
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;repo-key&quot;,
+        &quot;title&quot;: &quot;Repo Title&quot;,
+        &quot;id&quot;: &quot;repo-id&quot;,
+        &quot;owner&quot;: &quot;repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;target&quot;: {
+      &quot;access_token&quot;: &quot;target-token&quot;,
+      &quot;selected_branch&quot;: &quot;develop&quot;,
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;target-repo-key&quot;,
+        &quot;title&quot;: &quot;Target Repo Title&quot;,
+        &quot;id&quot;: &quot;target-repo-id&quot;,
+        &quot;owner&quot;: &quot;target-repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;max_depth&quot;: 5
+  },
+  &quot;integration_info&quot;: {
+    &quot;type&quot;: &quot;jira&quot;
+  },
+  &quot;additional_info&quot;: {
+    &quot;language&quot;: &quot;java&quot;,
+    &quot;iterations&quot;: &quot;3&quot;,
+    &quot;test_type&quot;: &quot;unit&quot;,
+    &quot;log_type&quot;: &quot;file&quot;,
+    &quot;log_file&quot;: {
+      &quot;file_name&quot;: &quot;test.log&quot;,
+      &quot;file_path&quot;: &quot;/logs/&quot;,
+      &quot;file_content&quot;: &quot;Log content&quot;
+    },
+    &quot;dependency_versions&quot;: {
+      &quot;java_version&quot;: {
+        &quot;title&quot;: &quot;Java 11&quot;,
+        &quot;key&quot;: &quot;11&quot;
+      }
+    },
+    &quot;apiSpec&quot;: {
+      &quot;type&quot;: &quot;openapi&quot;,
+      &quot;sourceType&quot;: &quot;url&quot;,
+      &quot;url&quot;: [&quot;https://api-spec.com&quot;],
+      &quot;gitpath&quot;: [&quot;/path/to/spec&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;behaviouralTest&quot;: {
+      &quot;type&quot;: &quot;cucumber&quot;,
+      &quot;sourceType&quot;: &quot;git&quot;,
+      &quot;url&quot;: [],
+      &quot;gitpath&quot;: [&quot;/path/to/behavioural&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;env_config&quot;: [
+      {
+        &quot;key&quot;: &quot;ENV_VAR&quot;,
+        &quot;value&quot;: &quot;env_value&quot;,
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;secret&quot;: false
+      }
+    ]
+  },
+  &quot;test_timeout&quot;: 3600,
+  &quot;trigger_events&quot;: [&quot;push&quot;, &quot;pull_request&quot;],
+  &quot;test_framework&quot;: &quot;junit&quot;,
+  &quot;git_type&quot;: &quot;github&quot;,
+  &quot;source_branch&quot;: &quot;feature/new-test&quot;,
+  &quot;git_ops&quot;: true
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.135">
+      <div class="step-ref skipped">135</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.136">
+      <div class="step-ref skipped">136</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:139]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:139]</span>
+                <span class="scenario-name">Edit test with valid input</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:139]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/test&#39;, test-456</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.20">14:31:03.198 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:20
+Given path &#39;/test&#39;, test-456
+js failed:
+&gt;&gt;&gt;&gt;
+01: [&#39;/test&#39;, test-456]
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;test&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.21">{
+  &quot;ai_model_info&quot;: {
+    &quot;selected_model&quot;: &quot;vertexai&quot;,
+    &quot;vertex_model&quot;: {
+      &quot;title&quot;: &quot;Vertex Model&quot;,
+      &quot;key&quot;: &quot;vertex-key&quot;
+    },
+    &quot;open_source_model_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.1&quot;,
+      &quot;model_name&quot;: &quot;open-source-model&quot;
+    },
+    &quot;claude_model&quot;: {
+      &quot;title&quot;: &quot;Claude Model&quot;,
+      &quot;key&quot;: &quot;claude-key&quot;
+    },
+    &quot;star_chat_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.2&quot;,
+      &quot;model_name&quot;: &quot;star-chat-model&quot;
+    },
+    &quot;llama_model_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.3&quot;,
+      &quot;model_name&quot;: &quot;llama-model&quot;
+    },
+    &quot;dbrx_info&quot;: {
+      &quot;dbrx_model_name&quot;: &quot;dbrx-model&quot;
+    },
+    &quot;azure_model_info&quot;: {
+      &quot;azure_openai_key&quot;: &quot;azure-key&quot;,
+      &quot;azure_deployment_name&quot;: &quot;azure-deployment&quot;,
+      &quot;azure_endpoint&quot;: &quot;https://azure-endpoint.com&quot;
+    }
+  },
+  &quot;git_info&quot;: {
+    &quot;type&quot;: {},
+    &quot;source_repo_pr&quot;: true,
+    &quot;selected_path&quot;: &quot;/path/to/repo&quot;,
+    &quot;host_type&quot;: {},
+    &quot;source&quot;: {
+      &quot;access_token&quot;: &quot;source-token&quot;,
+      &quot;selected_branch&quot;: &quot;main&quot;,
+      &quot;repository_type&quot;: {},
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;repo-key&quot;,
+        &quot;title&quot;: &quot;Repo Title&quot;,
+        &quot;id&quot;: &quot;repo-id&quot;,
+        &quot;owner&quot;: &quot;repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;target&quot;: {
+      &quot;access_token&quot;: &quot;target-token&quot;,
+      &quot;selected_branch&quot;: &quot;develop&quot;,
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;target-repo-key&quot;,
+        &quot;title&quot;: &quot;Target Repo Title&quot;,
+        &quot;id&quot;: &quot;target-repo-id&quot;,
+        &quot;owner&quot;: &quot;target-repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;max_depth&quot;: 5
+  },
+  &quot;integration_info&quot;: {
+    &quot;type&quot;: &quot;azure&quot;
+  },
+  &quot;additional_info&quot;: {
+    &quot;language&quot;: &quot;java&quot;,
+    &quot;iterations&quot;: &quot;3&quot;,
+    &quot;test_type&quot;: &quot;functional&quot;,
+    &quot;log_type&quot;: &quot;file&quot;,
+    &quot;log_file&quot;: {
+      &quot;file_name&quot;: &quot;test.log&quot;,
+      &quot;file_path&quot;: &quot;/logs/&quot;,
+      &quot;file_content&quot;: &quot;Log content&quot;
+    },
+    &quot;dependency_versions&quot;: {
+      &quot;java_version&quot;: {
+        &quot;title&quot;: &quot;Java 11&quot;,
+        &quot;key&quot;: &quot;11&quot;
+      }
+    },
+    &quot;apiSpec&quot;: {
+      &quot;type&quot;: &quot;openapi&quot;,
+      &quot;sourceType&quot;: &quot;url&quot;,
+      &quot;url&quot;: [&quot;https://api-spec.com&quot;],
+      &quot;gitpath&quot;: [&quot;/path/to/spec&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;behaviouralTest&quot;: {
+      &quot;type&quot;: &quot;cucumber&quot;,
+      &quot;sourceType&quot;: &quot;git&quot;,
+      &quot;url&quot;: [],
+      &quot;gitpath&quot;: [&quot;/path/to/behavioural&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;env_config&quot;: [
+      {
+        &quot;key&quot;: &quot;ENV_VAR&quot;,
+        &quot;value&quot;: &quot;env_value&quot;,
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;secret&quot;: false
+      }
+    ]
+  },
+  &quot;test_timeout&quot;: 3600,
+  &quot;trigger_events&quot;: [&quot;push&quot;, &quot;pull_request&quot;],
+  &quot;test_framework&quot;: &quot;junit&quot;,
+  &quot;git_type&quot;: &quot;github&quot;,
+  &quot;source_branch&quot;: &quot;feature/new-test&quot;,
+  &quot;git_ops&quot;: true
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.135">
+      <div class="step-ref skipped">135</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.136">
+      <div class="step-ref skipped">136</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:139]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:139]</span>
+                <span class="scenario-name">Edit test with valid input</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:139]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/test&#39;, test-789</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.20">14:31:03.201 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:20
+Given path &#39;/test&#39;, test-789
+js failed:
+&gt;&gt;&gt;&gt;
+01: [&#39;/test&#39;, test-789]
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;test&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.21">{
+  &quot;ai_model_info&quot;: {
+    &quot;selected_model&quot;: &quot;dbrx&quot;,
+    &quot;vertex_model&quot;: {
+      &quot;title&quot;: &quot;Vertex Model&quot;,
+      &quot;key&quot;: &quot;vertex-key&quot;
+    },
+    &quot;open_source_model_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.1&quot;,
+      &quot;model_name&quot;: &quot;open-source-model&quot;
+    },
+    &quot;claude_model&quot;: {
+      &quot;title&quot;: &quot;Claude Model&quot;,
+      &quot;key&quot;: &quot;claude-key&quot;
+    },
+    &quot;star_chat_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.2&quot;,
+      &quot;model_name&quot;: &quot;star-chat-model&quot;
+    },
+    &quot;llama_model_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.3&quot;,
+      &quot;model_name&quot;: &quot;llama-model&quot;
+    },
+    &quot;dbrx_info&quot;: {
+      &quot;dbrx_model_name&quot;: &quot;dbrx-model&quot;
+    },
+    &quot;azure_model_info&quot;: {
+      &quot;azure_openai_key&quot;: &quot;azure-key&quot;,
+      &quot;azure_deployment_name&quot;: &quot;azure-deployment&quot;,
+      &quot;azure_endpoint&quot;: &quot;https://azure-endpoint.com&quot;
+    }
+  },
+  &quot;git_info&quot;: {
+    &quot;type&quot;: {},
+    &quot;source_repo_pr&quot;: true,
+    &quot;selected_path&quot;: &quot;/path/to/repo&quot;,
+    &quot;host_type&quot;: {},
+    &quot;source&quot;: {
+      &quot;access_token&quot;: &quot;source-token&quot;,
+      &quot;selected_branch&quot;: &quot;main&quot;,
+      &quot;repository_type&quot;: {},
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;repo-key&quot;,
+        &quot;title&quot;: &quot;Repo Title&quot;,
+        &quot;id&quot;: &quot;repo-id&quot;,
+        &quot;owner&quot;: &quot;repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;target&quot;: {
+      &quot;access_token&quot;: &quot;target-token&quot;,
+      &quot;selected_branch&quot;: &quot;develop&quot;,
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;target-repo-key&quot;,
+        &quot;title&quot;: &quot;Target Repo Title&quot;,
+        &quot;id&quot;: &quot;target-repo-id&quot;,
+        &quot;owner&quot;: &quot;target-repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;max_depth&quot;: 5
+  },
+  &quot;integration_info&quot;: {
+    &quot;type&quot;: &quot;none&quot;
+  },
+  &quot;additional_info&quot;: {
+    &quot;language&quot;: &quot;java&quot;,
+    &quot;iterations&quot;: &quot;3&quot;,
+    &quot;test_type&quot;: &quot;integration&quot;,
+    &quot;log_type&quot;: &quot;file&quot;,
+    &quot;log_file&quot;: {
+      &quot;file_name&quot;: &quot;test.log&quot;,
+      &quot;file_path&quot;: &quot;/logs/&quot;,
+      &quot;file_content&quot;: &quot;Log content&quot;
+    },
+    &quot;dependency_versions&quot;: {
+      &quot;java_version&quot;: {
+        &quot;title&quot;: &quot;Java 11&quot;,
+        &quot;key&quot;: &quot;11&quot;
+      }
+    },
+    &quot;apiSpec&quot;: {
+      &quot;type&quot;: &quot;openapi&quot;,
+      &quot;sourceType&quot;: &quot;url&quot;,
+      &quot;url&quot;: [&quot;https://api-spec.com&quot;],
+      &quot;gitpath&quot;: [&quot;/path/to/spec&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;behaviouralTest&quot;: {
+      &quot;type&quot;: &quot;cucumber&quot;,
+      &quot;sourceType&quot;: &quot;git&quot;,
+      &quot;url&quot;: [],
+      &quot;gitpath&quot;: [&quot;/path/to/behavioural&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;env_config&quot;: [
+      {
+        &quot;key&quot;: &quot;ENV_VAR&quot;,
+        &quot;value&quot;: &quot;env_value&quot;,
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;secret&quot;: false
+      }
+    ]
+  },
+  &quot;test_timeout&quot;: 3600,
+  &quot;trigger_events&quot;: [&quot;push&quot;, &quot;pull_request&quot;],
+  &quot;test_framework&quot;: &quot;junit&quot;,
+  &quot;git_type&quot;: &quot;github&quot;,
+  &quot;source_branch&quot;: &quot;feature/new-test&quot;,
+  &quot;git_ops&quot;: true
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.135">
+      <div class="step-ref skipped">135</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.136">
+      <div class="step-ref skipped">136</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:141]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:141]</span>
+                <span class="scenario-name">Edit test with invalid test_id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:141]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:141]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:141]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:141]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:141]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.142">
+      <div class="step-ref passed">142</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test&#39;, &#39;invalid-id&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.143">
+      <div class="step-ref passed">143</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.143">{
+  &quot;ai_model_info&quot;: {
+    &quot;selected_model&quot;: &quot;openai&quot;,
+    &quot;vertex_model&quot;: {
+      &quot;title&quot;: &quot;Vertex Model&quot;,
+      &quot;key&quot;: &quot;vertex-key&quot;
+    },
+    &quot;open_source_model_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.1&quot;,
+      &quot;model_name&quot;: &quot;open-source-model&quot;
+    },
+    &quot;claude_model&quot;: {
+      &quot;title&quot;: &quot;Claude Model&quot;,
+      &quot;key&quot;: &quot;claude-key&quot;
+    },
+    &quot;star_chat_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.2&quot;,
+      &quot;model_name&quot;: &quot;star-chat-model&quot;
+    },
+    &quot;llama_model_info&quot;: {
+      &quot;ip&quot;: &quot;192.168.1.3&quot;,
+      &quot;model_name&quot;: &quot;llama-model&quot;
+    },
+    &quot;dbrx_info&quot;: {
+      &quot;dbrx_model_name&quot;: &quot;dbrx-model&quot;
+    },
+    &quot;azure_model_info&quot;: {
+      &quot;azure_openai_key&quot;: &quot;azure-key&quot;,
+      &quot;azure_deployment_name&quot;: &quot;azure-deployment&quot;,
+      &quot;azure_endpoint&quot;: &quot;https://azure-endpoint.com&quot;
+    }
+  },
+  &quot;git_info&quot;: {
+    &quot;type&quot;: {},
+    &quot;source_repo_pr&quot;: true,
+    &quot;selected_path&quot;: &quot;/path/to/repo&quot;,
+    &quot;host_type&quot;: {},
+    &quot;source&quot;: {
+      &quot;access_token&quot;: &quot;source-token&quot;,
+      &quot;selected_branch&quot;: &quot;main&quot;,
+      &quot;repository_type&quot;: {},
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;repo-key&quot;,
+        &quot;title&quot;: &quot;Repo Title&quot;,
+        &quot;id&quot;: &quot;repo-id&quot;,
+        &quot;owner&quot;: &quot;repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;target&quot;: {
+      &quot;access_token&quot;: &quot;target-token&quot;,
+      &quot;selected_branch&quot;: &quot;develop&quot;,
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;target-repo-key&quot;,
+        &quot;title&quot;: &quot;Target Repo Title&quot;,
+        &quot;id&quot;: &quot;target-repo-id&quot;,
+        &quot;owner&quot;: &quot;target-repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;max_depth&quot;: 5
+  },
+  &quot;integration_info&quot;: {
+    &quot;type&quot;: &quot;jira&quot;
+  },
+  &quot;additional_info&quot;: {
+    &quot;language&quot;: &quot;java&quot;,
+    &quot;iterations&quot;: &quot;3&quot;,
+    &quot;test_type&quot;: &quot;unit&quot;,
+    &quot;log_type&quot;: &quot;file&quot;,
+    &quot;log_file&quot;: {
+      &quot;file_name&quot;: &quot;test.log&quot;,
+      &quot;file_path&quot;: &quot;/logs/&quot;,
+      &quot;file_content&quot;: &quot;Log content&quot;
+    },
+    &quot;dependency_versions&quot;: {
+      &quot;java_version&quot;: {
+        &quot;title&quot;: &quot;Java 11&quot;,
+        &quot;key&quot;: &quot;11&quot;
+      }
+    },
+    &quot;apiSpec&quot;: {
+      &quot;type&quot;: &quot;openapi&quot;,
+      &quot;sourceType&quot;: &quot;url&quot;,
+      &quot;url&quot;: [&quot;https://api-spec.com&quot;],
+      &quot;gitpath&quot;: [&quot;/path/to/spec&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;behaviouralTest&quot;: {
+      &quot;type&quot;: &quot;cucumber&quot;,
+      &quot;sourceType&quot;: &quot;git&quot;,
+      &quot;url&quot;: [],
+      &quot;gitpath&quot;: [&quot;/path/to/behavioural&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;env_config&quot;: [
+      {
+        &quot;key&quot;: &quot;ENV_VAR&quot;,
+        &quot;value&quot;: &quot;env_value&quot;,
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;secret&quot;: false
+      }
+    ]
+  },
+  &quot;test_timeout&quot;: 3600,
+  &quot;trigger_events&quot;: [&quot;push&quot;, &quot;pull_request&quot;],
+  &quot;test_framework&quot;: &quot;junit&quot;,
+  &quot;git_type&quot;: &quot;github&quot;,
+  &quot;source_branch&quot;: &quot;feature/new-test&quot;,
+  &quot;git_ops&quot;: true
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.257">
+      <div class="step-ref passed">257</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.257">14:31:03.204 request:
+1 &gt; PUT http://localhost:4010/test/invalid-id
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1867
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ai_model_info&quot;:{&quot;selected_model&quot;:&quot;openai&quot;,&quot;vertex_model&quot;:{&quot;title&quot;:&quot;Vertex Model&quot;,&quot;key&quot;:&quot;vertex-key&quot;},&quot;open_source_model_info&quot;:{&quot;ip&quot;:&quot;192.168.1.1&quot;,&quot;model_name&quot;:&quot;open-source-model&quot;},&quot;claude_model&quot;:{&quot;title&quot;:&quot;Claude Model&quot;,&quot;key&quot;:&quot;claude-key&quot;},&quot;star_chat_info&quot;:{&quot;ip&quot;:&quot;192.168.1.2&quot;,&quot;model_name&quot;:&quot;star-chat-model&quot;},&quot;llama_model_info&quot;:{&quot;ip&quot;:&quot;192.168.1.3&quot;,&quot;model_name&quot;:&quot;llama-model&quot;},&quot;dbrx_info&quot;:{&quot;dbrx_model_name&quot;:&quot;dbrx-model&quot;},&quot;azure_model_info&quot;:{&quot;azure_openai_key&quot;:&quot;azure-key&quot;,&quot;azure_deployment_name&quot;:&quot;azure-deployment&quot;,&quot;azure_endpoint&quot;:&quot;https:\/\/azure-endpoint.com&quot;}},&quot;git_info&quot;:{&quot;type&quot;:{},&quot;source_repo_pr&quot;:true,&quot;selected_path&quot;:&quot;\/path\/to\/repo&quot;,&quot;host_type&quot;:{},&quot;source&quot;:{&quot;access_token&quot;:&quot;source-token&quot;,&quot;selected_branch&quot;:&quot;main&quot;,&quot;repository_type&quot;:{},&quot;selected_repo&quot;:{&quot;key&quot;:&quot;repo-key&quot;,&quot;title&quot;:&quot;Repo Title&quot;,&quot;id&quot;:&quot;repo-id&quot;,&quot;owner&quot;:&quot;repo-owner&quot;,&quot;default_branch&quot;:&quot;main&quot;}},&quot;target&quot;:{&quot;access_token&quot;:&quot;target-token&quot;,&quot;selected_branch&quot;:&quot;develop&quot;,&quot;selected_repo&quot;:{&quot;key&quot;:&quot;target-repo-key&quot;,&quot;title&quot;:&quot;Target Repo Title&quot;,&quot;id&quot;:&quot;target-repo-id&quot;,&quot;owner&quot;:&quot;target-repo-owner&quot;,&quot;default_branch&quot;:&quot;main&quot;}},&quot;max_depth&quot;:5},&quot;integration_info&quot;:{&quot;type&quot;:&quot;jira&quot;},&quot;additional_info&quot;:{&quot;language&quot;:&quot;java&quot;,&quot;iterations&quot;:&quot;3&quot;,&quot;test_type&quot;:&quot;unit&quot;,&quot;log_type&quot;:&quot;file&quot;,&quot;log_file&quot;:{&quot;file_name&quot;:&quot;test.log&quot;,&quot;file_path&quot;:&quot;\/logs\/&quot;,&quot;file_content&quot;:&quot;Log content&quot;},&quot;dependency_versions&quot;:{&quot;java_version&quot;:{&quot;title&quot;:&quot;Java 11&quot;,&quot;key&quot;:&quot;11&quot;}},&quot;apiSpec&quot;:{&quot;type&quot;:&quot;openapi&quot;,&quot;sourceType&quot;:&quot;url&quot;,&quot;url&quot;:[&quot;https:\/\/api-spec.com&quot;],&quot;gitpath&quot;:[&quot;\/path\/to\/spec&quot;],&quot;fileContent&quot;:[]},&quot;behaviouralTest&quot;:{&quot;type&quot;:&quot;cucumber&quot;,&quot;sourceType&quot;:&quot;git&quot;,&quot;url&quot;:[],&quot;gitpath&quot;:[&quot;\/path\/to\/behavioural&quot;],&quot;fileContent&quot;:[]},&quot;env_config&quot;:[{&quot;key&quot;:&quot;ENV_VAR&quot;,&quot;value&quot;:&quot;env_value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;secret&quot;:false}]},&quot;test_timeout&quot;:3600,&quot;trigger_events&quot;:[&quot;push&quot;,&quot;pull_request&quot;],&quot;test_framework&quot;:&quot;junit&quot;,&quot;git_type&quot;:&quot;github&quot;,&quot;source_branch&quot;:&quot;feature\/new-test&quot;,&quot;git_ops&quot;:true}
+
+14:31:03.206 response time in milliseconds: 2
+1 &lt; 405
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; content-type: application/problem+json
+1 &lt; Content-Length: 229
+1 &lt; Date: Tue, 20 Aug 2024 09:01:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/invalid-id has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.258">
+      <div class="step-ref failed">258</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.258">14:31:03.207 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:258
+Then status 404
+status code was: 405, expected: 404, response time in milliseconds: 2, url: http://localhost:4010/test/invalid-id, response: 
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/invalid-id has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:258
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.259">
+      <div class="step-ref skipped">259</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response contains { code: 404, message: &#39;Not found&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.260">
+      <div class="step-ref skipped">260</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.path == &#39;/test/invalid-id&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.261">
+      <div class="step-ref skipped">261</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.method == &#39;PUT&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:263]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:263]</span>
+                <span class="scenario-name">Edit test with missing required fields</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:263]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:263]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:263]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:263]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:263]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.264">
+      <div class="step-ref passed">264</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test&#39;, &#39;test-123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.265">
+      <div class="step-ref passed">265</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.265">{
+  &quot;ai_model_info&quot;: {
+    &quot;selected_model&quot;: &quot;openai&quot;
+  },
+  &quot;git_info&quot;: {
+    &quot;type&quot;: {},
+    &quot;source_repo_pr&quot;: true,
+    &quot;selected_path&quot;: &quot;/path/to/repo&quot;,
+    &quot;host_type&quot;: {},
+    &quot;source&quot;: {
+      &quot;access_token&quot;: &quot;source-token&quot;,
+      &quot;selected_branch&quot;: &quot;main&quot;,
+      &quot;repository_type&quot;: {},
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;repo-key&quot;,
+        &quot;title&quot;: &quot;Repo Title&quot;,
+        &quot;id&quot;: &quot;repo-id&quot;,
+        &quot;owner&quot;: &quot;repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;target&quot;: {
+      &quot;access_token&quot;: &quot;target-token&quot;,
+      &quot;selected_branch&quot;: &quot;develop&quot;,
+      &quot;selected_repo&quot;: {
+        &quot;key&quot;: &quot;target-repo-key&quot;,
+        &quot;title&quot;: &quot;Target Repo Title&quot;,
+        &quot;id&quot;: &quot;target-repo-id&quot;,
+        &quot;owner&quot;: &quot;target-repo-owner&quot;,
+        &quot;default_branch&quot;: &quot;main&quot;
+      }
+    },
+    &quot;max_depth&quot;: 5
+  },
+  &quot;integration_info&quot;: {
+    &quot;type&quot;: &quot;jira&quot;
+  },
+  &quot;additional_info&quot;: {
+    &quot;language&quot;: &quot;java&quot;,
+    &quot;iterations&quot;: &quot;3&quot;,
+    &quot;test_type&quot;: &quot;unit&quot;,
+    &quot;log_type&quot;: &quot;file&quot;,
+    &quot;log_file&quot;: {
+      &quot;file_name&quot;: &quot;test.log&quot;,
+      &quot;file_path&quot;: &quot;/logs/&quot;,
+      &quot;file_content&quot;: &quot;Log content&quot;
+    },
+    &quot;dependency_versions&quot;: {
+      &quot;java_version&quot;: {
+        &quot;title&quot;: &quot;Java 11&quot;,
+        &quot;key&quot;: &quot;11&quot;
+      }
+    },
+    &quot;apiSpec&quot;: {
+      &quot;type&quot;: &quot;openapi&quot;,
+      &quot;sourceType&quot;: &quot;url&quot;,
+      &quot;url&quot;: [&quot;https://api-spec.com&quot;],
+      &quot;gitpath&quot;: [&quot;/path/to/spec&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;behaviouralTest&quot;: {
+      &quot;type&quot;: &quot;cucumber&quot;,
+      &quot;sourceType&quot;: &quot;git&quot;,
+      &quot;url&quot;: [],
+      &quot;gitpath&quot;: [&quot;/path/to/behavioural&quot;],
+      &quot;fileContent&quot;: []
+    },
+    &quot;env_config&quot;: [
+      {
+        &quot;key&quot;: &quot;ENV_VAR&quot;,
+        &quot;value&quot;: &quot;env_value&quot;,
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;secret&quot;: false
+      }
+    ]
+  },
+  &quot;test_timeout&quot;: 3600,
+  &quot;trigger_events&quot;: [&quot;push&quot;, &quot;pull_request&quot;],
+  &quot;test_framework&quot;: &quot;junit&quot;,
+  &quot;git_type&quot;: &quot;github&quot;,
+  &quot;source_branch&quot;: &quot;feature/new-test&quot;,
+  &quot;git_ops&quot;: true
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.351">
+      <div class="step-ref passed">351</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.351">14:31:03.210 request:
+1 &gt; PUT http://localhost:4010/test/test-123
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1346
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ai_model_info&quot;:{&quot;selected_model&quot;:&quot;openai&quot;},&quot;git_info&quot;:{&quot;type&quot;:{},&quot;source_repo_pr&quot;:true,&quot;selected_path&quot;:&quot;\/path\/to\/repo&quot;,&quot;host_type&quot;:{},&quot;source&quot;:{&quot;access_token&quot;:&quot;source-token&quot;,&quot;selected_branch&quot;:&quot;main&quot;,&quot;repository_type&quot;:{},&quot;selected_repo&quot;:{&quot;key&quot;:&quot;repo-key&quot;,&quot;title&quot;:&quot;Repo Title&quot;,&quot;id&quot;:&quot;repo-id&quot;,&quot;owner&quot;:&quot;repo-owner&quot;,&quot;default_branch&quot;:&quot;main&quot;}},&quot;target&quot;:{&quot;access_token&quot;:&quot;target-token&quot;,&quot;selected_branch&quot;:&quot;develop&quot;,&quot;selected_repo&quot;:{&quot;key&quot;:&quot;target-repo-key&quot;,&quot;title&quot;:&quot;Target Repo Title&quot;,&quot;id&quot;:&quot;target-repo-id&quot;,&quot;owner&quot;:&quot;target-repo-owner&quot;,&quot;default_branch&quot;:&quot;main&quot;}},&quot;max_depth&quot;:5},&quot;integration_info&quot;:{&quot;type&quot;:&quot;jira&quot;},&quot;additional_info&quot;:{&quot;language&quot;:&quot;java&quot;,&quot;iterations&quot;:&quot;3&quot;,&quot;test_type&quot;:&quot;unit&quot;,&quot;log_type&quot;:&quot;file&quot;,&quot;log_file&quot;:{&quot;file_name&quot;:&quot;test.log&quot;,&quot;file_path&quot;:&quot;\/logs\/&quot;,&quot;file_content&quot;:&quot;Log content&quot;},&quot;dependency_versions&quot;:{&quot;java_version&quot;:{&quot;title&quot;:&quot;Java 11&quot;,&quot;key&quot;:&quot;11&quot;}},&quot;apiSpec&quot;:{&quot;type&quot;:&quot;openapi&quot;,&quot;sourceType&quot;:&quot;url&quot;,&quot;url&quot;:[&quot;https:\/\/api-spec.com&quot;],&quot;gitpath&quot;:[&quot;\/path\/to\/spec&quot;],&quot;fileContent&quot;:[]},&quot;behaviouralTest&quot;:{&quot;type&quot;:&quot;cucumber&quot;,&quot;sourceType&quot;:&quot;git&quot;,&quot;url&quot;:[],&quot;gitpath&quot;:[&quot;\/path\/to\/behavioural&quot;],&quot;fileContent&quot;:[]},&quot;env_config&quot;:[{&quot;key&quot;:&quot;ENV_VAR&quot;,&quot;value&quot;:&quot;env_value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;secret&quot;:false}]},&quot;test_timeout&quot;:3600,&quot;trigger_events&quot;:[&quot;push&quot;,&quot;pull_request&quot;],&quot;test_framework&quot;:&quot;junit&quot;,&quot;git_type&quot;:&quot;github&quot;,&quot;source_branch&quot;:&quot;feature\/new-test&quot;,&quot;git_ops&quot;:true}
+
+14:31:03.212 response time in milliseconds: 2
+1 &lt; 405
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; content-type: application/problem+json
+1 &lt; Content-Length: 227
+1 &lt; Date: Tue, 20 Aug 2024 09:01:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/test-123 has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.352">
+      <div class="step-ref failed">352</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.352">14:31:03.213 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:352
+Then status 400
+status code was: 405, expected: 400, response time in milliseconds: 2, url: http://localhost:4010/test/test-123, response: 
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/test-123 has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_test_id_patch.feature:352
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.353">
+      <div class="step-ref skipped">353</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response contains { message: &#39;#regex .*required.*&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"e8ddb4a4-5398-4a2c-875f-5b990c0c5016",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.com.bootexample4.api_tests.SwaggerJson.test_event_trigger_id_patch</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">5</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-08-20 02:31:02 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:36]"><span>[1.1:36]</span> <span>Edit Trigger Event Successfully</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:36]"><span>[1.2:36]</span> <span>Edit Trigger Event Successfully</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:38]"><span>[2:38]</span> <span>Edit Trigger Event with Invalid Request</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:59]"><span>[3:59]</span> <span>Edit Trigger Event for Non-existent ID</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:80]"><span>[4:80]</span> <span>Edit Trigger Event without Authorization</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test GPT Controller - Edit Trigger Event</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:36]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:36]</span>
+                <span class="scenario-name">Edit Trigger Event Successfully</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>11</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:36]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, abc123</span>
+      </div>
+    </div>
+    <div class="time-cell failed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.19">14:31:01.944 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:19
+Given path &#39;/test/event&#39;, abc123
+js failed:
+&gt;&gt;&gt;&gt;
+01: [&#39;/test/event&#39;, abc123]
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;abc123&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref skipped">20</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.21">{
+  &quot;status&quot;: success,
+  &quot;status_details&quot;: Completed,
+  &quot;completion_time&quot;: 2023-05-15T10:30:00Z,
+  &quot;modification_time&quot;: 2023-05-15T10:35:00Z,
+  &quot;test_endpoints&quot;: /api/v1/test,
+  &quot;test_report&quot;: All tests passed
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:36]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:36]</span>
+                <span class="scenario-name">Edit Trigger Event Successfully</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:36]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, def456</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.19">14:31:01.949 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:19
+Given path &#39;/test/event&#39;, def456
+js failed:
+&gt;&gt;&gt;&gt;
+01: [&#39;/test/event&#39;, def456]
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;def456&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref skipped">20</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.21">{
+  &quot;status&quot;: failed,
+  &quot;status_details&quot;: Error occurred,
+  &quot;completion_time&quot;: 2023-05-16T14:45:00Z,
+  &quot;modification_time&quot;: 2023-05-16T14:50:00Z,
+  &quot;test_endpoints&quot;: /api/v2/test,
+  &quot;test_report&quot;: Some tests failed
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:38]</span>
+                <span class="scenario-name">Edit Trigger Event with Invalid Request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>48</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;invalid_id&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.41">{
+  &quot;status&quot;: &quot;unknown&quot;,
+  &quot;status_details&quot;: &quot;Invalid status&quot;,
+  &quot;completion_time&quot;: &quot;invalid_time&quot;,
+  &quot;modification_time&quot;: &quot;invalid_time&quot;,
+  &quot;test_endpoints&quot;: 123,
+  &quot;test_report&quot;: null
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">45</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.52">14:31:01.991 request:
+1 &gt; PUT http://localhost:4010/test/event/invalid_id
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 162
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;status&quot;:&quot;unknown&quot;,&quot;status_details&quot;:&quot;Invalid status&quot;,&quot;completion_time&quot;:&quot;invalid_time&quot;,&quot;modification_time&quot;:&quot;invalid_time&quot;,&quot;test_endpoints&quot;:123,&quot;test_report&quot;:null}
+
+14:31:01.999 response time in milliseconds: 8
+1 &lt; 405
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; content-type: application/problem+json
+1 &lt; Content-Length: 235
+1 &lt; Date: Tue, 20 Aug 2024 09:01:01 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/event/invalid_id has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref failed">53</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">14:31:02.000 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:53
+Then status 400
+status code was: 405, expected: 400, response time in milliseconds: 8, url: http://localhost:4010/test/event/invalid_id, response: 
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/event/invalid_id has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:53
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref skipped">54</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response contains { code: 400, message: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.timestamp == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.path == &#39;/test/event/invalid_id&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref skipped">57</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.method == &#39;PUT&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:59]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:59]</span>
+                <span class="scenario-name">Edit Trigger Event for Non-existent ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>15</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:59]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:59]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:59]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:59]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;non_existent_id&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.62">{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;status_details&quot;: &quot;Completed&quot;,
+  &quot;completion_time&quot;: &quot;2023-05-17T09:00:00Z&quot;,
+  &quot;modification_time&quot;: &quot;2023-05-17T09:05:00Z&quot;,
+  &quot;test_endpoints&quot;: &quot;/api/v3/test&quot;,
+  &quot;test_report&quot;: &quot;All tests passed&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.73">14:31:02.006 request:
+1 &gt; PUT http://localhost:4010/test/event/non_existent_id
+1 &gt; Authorization: Bearer dummy_AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 201
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;status&quot;:&quot;success&quot;,&quot;status_details&quot;:&quot;Completed&quot;,&quot;completion_time&quot;:&quot;2023-05-17T09:00:00Z&quot;,&quot;modification_time&quot;:&quot;2023-05-17T09:05:00Z&quot;,&quot;test_endpoints&quot;:&quot;\/api\/v3\/test&quot;,&quot;test_report&quot;:&quot;All tests passed&quot;}
+
+14:31:02.018 response time in milliseconds: 12
+1 &lt; 405
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; content-type: application/problem+json
+1 &lt; Content-Length: 240
+1 &lt; Date: Tue, 20 Aug 2024 09:01:02 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/event/non_existent_id has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref failed">74</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.74">14:31:02.018 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:74
+Then status 404
+status code was: 405, expected: 404, response time in milliseconds: 12, url: http://localhost:4010/test/event/non_existent_id, response: 
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/event/non_existent_id has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:74
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref skipped">75</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response contains { code: 404, message: &#39;Not found&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref skipped">76</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.timestamp == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref skipped">77</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.path == &#39;/test/event/non_existent_id&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref skipped">78</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.method == &#39;PUT&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:80]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:80]</span>
+                <span class="scenario-name">Edit Trigger Event without Authorization</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>6</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:80]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:80]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:80]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:80]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/test/event&#39;, &#39;abc123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.82">{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;status_details&quot;: &quot;Completed&quot;,
+  &quot;completion_time&quot;: &quot;2023-05-18T11:00:00Z&quot;,
+  &quot;modification_time&quot;: &quot;2023-05-18T11:05:00Z&quot;,
+  &quot;test_endpoints&quot;: &quot;/api/v4/test&quot;,
+  &quot;test_report&quot;: &quot;All tests passed&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.93">14:31:02.023 request:
+1 &gt; PUT http://localhost:4010/test/event/abc123
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 201
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;status&quot;:&quot;success&quot;,&quot;status_details&quot;:&quot;Completed&quot;,&quot;completion_time&quot;:&quot;2023-05-18T11:00:00Z&quot;,&quot;modification_time&quot;:&quot;2023-05-18T11:05:00Z&quot;,&quot;test_endpoints&quot;:&quot;\/api\/v4\/test&quot;,&quot;test_report&quot;:&quot;All tests passed&quot;}
+
+14:31:02.027 response time in milliseconds: 3
+1 &lt; 405
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; content-type: application/problem+json
+1 &lt; Content-Length: 231
+1 &lt; Date: Tue, 20 Aug 2024 09:01:02 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/event/abc123 has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref failed">94</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.94">14:31:02.028 src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:94
+Then status 401
+status code was: 405, expected: 401, response time in milliseconds: 3, url: http://localhost:4010/test/event/abc123, response: 
+{&quot;type&quot;:&quot;https://stoplight.io/prism/errors#NO_METHOD_MATCHED_ERROR&quot;,&quot;title&quot;:&quot;Route resolved, but no method matched&quot;,&quot;status&quot;:405,&quot;detail&quot;:&quot;The route /test/event/abc123 has been matched, but it does not have \&quot;put\&quot; method defined&quot;}
+src/test/java/com/bootexample4/api_tests/SwaggerJson/test_event_trigger_id_patch.feature:94
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref skipped">95</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response contains { code: 401, message: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref skipped">96</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.timestamp == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref skipped">97</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.path == &#39;/test/event/abc123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref skipped">98</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.method == &#39;PUT&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
