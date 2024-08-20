@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[1:18]","start":1724136996687,"end":1724136997481,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[1:18] 12:26:36.687-12:26:37.481 Create a Test App","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[2:99]","start":1724136997493,"end":1724136997531,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[2:99] 12:26:37.493-12:26:37.531 Get all tests"},{"id":3,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[3:108]","start":1724136997537,"end":1724136997551,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[3:108] 12:26:37.537-12:26:37.551 Get one test"},{"id":4,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[4:113]","start":1724136997556,"end":1724136997680,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[4:113] 12:26:37.556-12:26:37.680 Update a test","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[5:196]","start":1724136997685,"end":1724136997696,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[5:196] 12:26:37.685-12:26:37.696 Delete a test"},{"id":6,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[6:201]","start":1724136997701,"end":1724136997709,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[6:201] 12:26:37.701-12:26:37.709 Trigger a test"},{"id":7,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[7:206]","start":1724136997716,"end":1724136997730,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[7:206] 12:26:37.716-12:26:37.730 Get test events"},{"id":8,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[8:213]","start":1724136997736,"end":1724136997746,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[8:213] 12:26:37.736-12:26:37.746 Get one test event"},{"id":9,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[9:218]","start":1724136997750,"end":1724136997761,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[9:218] 12:26:37.750-12:26:37.761 Update test event"},{"id":10,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[10:234]","start":1724136997767,"end":1724136997777,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[10:234] 12:26:37.767-12:26:37.777 Retrigger test event"},{"id":11,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[11:249]","start":1724136997781,"end":1724136997789,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[11:249] 12:26:37.781-12:26:37.789 Abort test event"},{"id":12,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[12:254]","start":1724136997793,"end":1724136997800,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[12:254] 12:26:37.793-12:26:37.800 Get test event logs"},{"id":13,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[13:259]","start":1724136997805,"end":1724136997812,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[13:259] 12:26:37.805-12:26:37.812 Execute test"},{"id":14,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[14:271]","start":1724136997816,"end":1724136997832,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[14:271] 12:26:37.816-12:26:37.832 Get test execution report"},{"id":15,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[15:278]","start":1724136997837,"end":1724136997843,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[15:278] 12:26:37.837-12:26:37.843 Get test execution file status"},{"id":16,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[16:284]","start":1724136997848,"end":1724136997853,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/SwaggerJson\/test_post[16:284] 12:26:37.848-12:26:37.853 Abort test execution"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
