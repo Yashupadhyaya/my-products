@@ -1,0 +1,4 @@
+birthDate,initials,lastName,firstName,middleName,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference,statusCode,scenario
+2005-03-25,AB,Smith,John,Doe,New York,1234567890,johnsmith@example.com,10001,123,A,US,REF123,201,successful operation
+2001-05-30,XY,Brown,Jane,Lee,California,0987654321,janebrown@example.com,90001,456,B,US,REF456,400,Bad Request
+1990-10-15,CD,Johnson,Robert,James,Texas,1122334455,robertjohnson@example.com,75001,789,C,US,REF789,401,Authentication Required

@@ -1,0 +1,11 @@
+coc-number,coc-branch-number,trade-name,size,offset,statusCode,scenario
+"14851088","934973925311","consectetur eius","medium","0","200","successful operation"
+"07118941","632501748513","enim dolore","large","1","400","Bad Request"
+"random","random","random","small","2","401","Authentication Required"
+"random","random","random","medium","3","200","successful operation"
+"random","random","random","large","4","400","Bad Request"
+"random","random","random","small","5","401","Authentication Required"
+"random","random","random","medium","6","200","successful operation"
+"random","random","random","large","7","400","Bad Request"
+"random","random","random","small","8","401","Authentication Required"
+"random","random","random","medium","9","200","successful operation"

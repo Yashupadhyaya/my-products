@@ -1,0 +1,7 @@
+id,credentialUrl,startDate,reference,endDate,statusCode,scenario
+urn:uuid:1b95bb53-7d36-b45b-1430-6694e2cfb9bd,http://example.com,2000-08-23,Example Reference,2002-04-23,201,Successful
+urn:uuid:2b95bb53-7d36-b45b-1430-6694e2cfb9bd,http://example2.com,2001-08-23,Example Reference 2,2003-04-23,400,Bad Request
+urn:uuid:3b95bb53-7d36-b45b-1430-6694e2cfb9bd,http://example3.com,2002-08-23,Example Reference 3,2004-04-23,401,Authentication Required
+urn:uuid:4b95bb53-7d36-b45b-1430-6694e2cfb9bd,http://example4.com,2003-08-23,Example Reference 4,2005-04-23,201,Successful
+urn:uuid:5b95bb53-7d36-b45b-1430-6694e2cfb9bd,http://example5.com,2004-08-23,Example Reference 5,2006-04-23,400,Bad Request
+urn:uuid:6b95bb53-7d36-b45b-1430-6694e2cfb9bd,http://example6.com,2005-08-23,Example Reference 6,2007-04-23,401,Authentication Required
