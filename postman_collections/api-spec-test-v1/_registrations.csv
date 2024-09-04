@@ -1,0 +1,7 @@
+size,offset,recipient-id,credential-url,statusCode,scenario
+1024,0,"urn:uuid:99acfeff-8d15-77a3-91c5-4701276f5abd","<string>",200,"successful operation"
+2048,0,"41073fc8-bb95-f6f5-c567-beff7bc5b0d7","<string>",200,"successful operation"
+1024,0,"random-id-1234","invalid-url",400,"Bad Request"
+2048,0,"random-id-5678","invalid-url",400,"Bad Request"
+1024,0,"random-id-9876","invalid-url",401,"Authentication Required"
+2048,0,"random-id-5432","invalid-url",401,"Authentication Required"

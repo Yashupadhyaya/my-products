@@ -1,0 +1,4 @@
+id,initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference,statusCode,scenario
+b80a2df1-b6cc-e247-49a3-a90b431b8590,"ABC","John","Doe","Smith","2002-06-26","USA","1234567890","johnsmith@email.com","12345","12A","B","US","Ref1234",200,"successful operation"
+b80a2df1-b6cc-e247-49a3-a90b431b8591,"XYZ","Jane","Doe","Smith","2002-07-26","USA","0987654321","janesmith@email.com","54321","21B","A","US","Ref5678",400,"Bad Request"
+b80a2df1-b6cc-e247-49a3-a90b431b8592,"RST","Robert","Doe","Smith","2002-08-26","USA","1122334455","robertsmith@email.com","67890","34C","D","US","Ref9101",401,"Authentication Required"

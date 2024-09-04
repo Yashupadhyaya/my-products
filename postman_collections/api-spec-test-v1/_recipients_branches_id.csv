@@ -1,0 +1,7 @@
+id,tradeName,phone,email,statusCode,scenario
+urn:uuid:f2987e31-de87-1230-e31e-91fa459a6416,"cupidatat dolore ipsum sunt dolor","1234567890","test@email.com",200,successful operation
+urn:uuid:a3948e31-de87-1230-e31e-91fa459a6417,"Duis","0987654321","test2@email.com",400,Bad Request
+urn:uuid:b4958e31-de87-1230-e31e-91fa459a6418,"some trade name","1122334455","test3@email.com",401,Authentication Required
+urn:uuid:c5968e31-de87-1230-e31e-91fa459a6419,"another trade name","5566778899","test4@email.com",200,successful operation
+urn:uuid:d6978e31-de87-1230-e31e-91fa459a6420,"yet another trade name","9988776655","test5@email.com",400,Bad Request
+urn:uuid:e7988e31-de87-1230-e31e-91fa459a6421,"final trade name","4433221100","test6@email.com",401,Authentication Required

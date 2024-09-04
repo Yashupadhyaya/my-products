@@ -1,0 +1,13 @@
+appointmentId,id,reason,statusCode,scenario
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",200,"successful operation"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",400,"Bad Request"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",401,"Unauthorized"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",403,"Forbidden - Scope Not Permitted"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",404,"Not Found"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",406,"Not Acceptable"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",412,"Not Acceptable"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",423,"Locked"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",429,"Too Many Requests - Exceeded Quota"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",500,"Internal Server Error"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",503,"Service Unavailable"
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",504,"Gateway Timeout"

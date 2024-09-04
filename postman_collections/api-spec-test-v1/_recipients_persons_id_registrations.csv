@@ -1,0 +1,7 @@
+credential-url,size,offset,id,statusCode,scenario
+"https://example.com/1",1024,0,"urn:uuid:00e27e14-83bc-e487-d8b8-7e4808978ae7",200,"successful operation"
+"https://example.com/2",2048,512,"urn:uuid:9eba4822-8b86-5260-0046-9619811fb919",200,"successful operation"
+"https://example.com/3",4096,1024,"urn:uuid:random-uuid-1",400,"Bad Request"
+"https://example.com/4",8192,2048,"urn:uuid:random-uuid-2",400,"Bad Request"
+"https://example.com/5",16384,4096,"urn:uuid:random-uuid-3",401,"Authentication Required"
+"https://example.com/6",32768,8192,"urn:uuid:random-uuid-4",401,"Authentication Required"
