@@ -1,0 +1,12 @@
+addressId,subscriberId,associatedDocument,startDate,finishDate,orderType,addressChangeFlag,productType,priorityFlag,priorityReason,statusCode,scenario
+"8c2c93c7-4621-4830-b384-0d12bb33eedf","sub123","doc456","2021-05-30T08:00:00","2021-05-30T12:00:00","orderA","true","productX","false","none",200,"success"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderB","false","productY","true","high_priority",400,"Bad Request"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderC","true","productZ","false","low_priority",401,"Unauthorized"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderD","false","productW","true","medium_priority",403,"Forbidden - Scope Not Permitted"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderE","true","productV","false","none",404,"Not Found"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderF","false","productU","true","high_priority",406,"Not Acceptable"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderG","true","productT","false","low_priority",412,"Not Acceptable"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderH","false","productS","true","medium_priority",429,"Too Many Requests - Exceeded Quota"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderI","true","productR","false","none",500,"Internal Server Error"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderJ","false","productQ","true","high_priority",503,"Service Unavailable"
+"invalid_id","sub123","doc456","invalid_date","invalid_date","orderK","true","productP","false","low_priority",504,"Gateway Timeout"
