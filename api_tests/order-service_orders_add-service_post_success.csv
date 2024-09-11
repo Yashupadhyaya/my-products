@@ -1,0 +1,11 @@
+channel^|^X-Trace-Id^|^username^|^entityId
+web^|^123456789abcdefg^|^john_doe^|^001
+app^|^abcdefg123456789^|^jane_doe^|^002
+web^|^789abcdefg123456^|^sam_smith^|^003
+app^|^456789abcdefg123^|^emma_jones^|^004
+web^|^123abcdefg456789^|^michael_brown^|^005
+app^|^789123abcdefg456^|^sarah_johnson^|^006
+web^|^456123789abcdefg^|^david_williams^|^007
+app^|^abcdefg789123456^|^linda_miller^|^008
+web^|^123abcdefg789456^|^robert_smith^|^009
+app^|^456abcdefg123789^|^patricia_wilson^|^010
