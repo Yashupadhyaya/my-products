@@ -1,0 +1,11 @@
+channel^|^AdditionalCSVvaluInfo^|^X-Trace-Id^|^username^|^entityId^|^RequestBody^|^statusCode
+Web^|^100^|^XTR1234^|^john_doe^|^EID56789^|^{"key":"value"}^|^201
+Mobile^|^100^|^XTR1235^|^jane_doe^|^EID56790^|^{"key":"value"}^|^400
+Web^|^100^|^XTR1236^|^mike_smith^|^EID56791^|^{"key":"value"}^|^401
+Mobile^|^100^|^XTR1237^|^sarah_jones^|^EID56792^|^{"key":"value"}^|^403
+Web^|^100^|^XTR1238^|^paul_brown^|^EID56793^|^{"key":"value"}^|^405
+Mobile^|^100^|^XTR1239^|^lisa_white^|^EID56794^|^{"key":"value"}^|^409
+Web^|^100^|^XTR1240^|^mark_green^|^EID56795^|^{"key":"value"}^|^422
+Mobile^|^100^|^XTR1241^|^amy_black^|^EID56796^|^{"key":"value"}^|^500
+Web^|^100^|^XTR1242^|^steve_gray^|^EID56797^|^{"key":"value"}^|^201
+Mobile^|^100^|^XTR1243^|^emma_blue^|^EID56798^|^{"key":"value"}^|^400
