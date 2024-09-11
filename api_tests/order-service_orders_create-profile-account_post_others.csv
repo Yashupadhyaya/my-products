@@ -1,0 +1,11 @@
+channel^|^X-Trace-Id^|^userid^|^username^|^entityId
+web^|^483920^|^user1^|^JohnDoe^|^entity5
+mobile^|^984372^|^user2^|^JaneDoe^|^entity3
+web^|^984372^|^user3^|^BabyYoda^|^entity6
+email^|^483920^|^user4^|^MickeyMouse^|^entity1
+mobile^|^483920^|^user5^|^DonaldDuck^|^entity2
+web^|^984372^|^user6^|^MinnieMouse^|^entity4
+email^|^483920^|^user7^|^DarthVader^|^entity7
+mobile^|^984372^|^user8^|^LukeSkywalker^|^entity8
+web^|^483920^|^user9^|^Chewbacca^|^entity9
+email^|^984372^|^user10^|^Yoda^|^entity10

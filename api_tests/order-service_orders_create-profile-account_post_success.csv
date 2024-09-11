@@ -1,0 +1,11 @@
+channel^|^X-Trace-Id^|^userid^|^username^|^entityId
+Web^|^XTR123456^|^U1001^|^JohnDoe^|^E10001
+App^|^XTR123457^|^U1002^|^JaneSmith^|^E10002
+Mobile^|^XTR123458^|^U1003^|^RobertBrown^|^E10003
+Web^|^XTR123459^|^U1004^|^EmilyClark^|^E10004
+App^|^XTR123460^|^U1005^|^MichaelJohnson^|^E10005
+Mobile^|^XTR123461^|^U1006^|^SarahMiller^|^E10006
+Web^|^XTR123462^|^U1007^|^WilliamDavis^|^E10007
+App^|^XTR123463^|^U1008^|^JessicaTaylor^|^E10008
+Mobile^|^XTR123464^|^U1009^|^ThomasAnderson^|^E10009
+Web^|^XTR123465^|^U1010^|^JenniferThomas^|^E10010

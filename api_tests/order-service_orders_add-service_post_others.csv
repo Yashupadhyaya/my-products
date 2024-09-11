@@ -1,0 +1,11 @@
+channel^|^X-Trace-Id^|^username^|^entityId
+email^|^123-abc-456-def^|^johndoe^|^entity001
+sms^|^789-ghi-012-jkl^|^janedoe^|^entity002
+email^|^345-mno-678-pqr^|^richardroe^|^entity003
+push^|^901-stu-234-vwx^|^emilyeliot^|^entity004
+email^|^567-yza-890-bcd^|^michaelmiller^|^entity005
+sms^|^234-efg-567-hij^|^sarahsmith^|^
+push^|^678-klm-901-nop^|^^|^entity007
+email^|^890-qrs-123-tuv^|^williamwatt^|^entity008
+sms^|^012-wxy-345-zab^|^zoezimmerman^|^entity009
+push^|^345-cde-678-fgh^|^robertriley^|^entity010

@@ -1,0 +1,11 @@
+channel^|^X-Trace-Id^|^username
+website^|^abc123^|^john_doe
+mobile_app^|^def456^|^jane_doe
+website^|^ghi789^|^bob_smith
+mobile_app^|^jkl012^|^alice_jones
+website^|^mno345^|^charlie_brown
+mobile_app^|^pqr678^|^lucy_van_pelt
+website^|^stu901^|^linus_van_pelt
+mobile_app^|^vwx234^|^sally_brown
+website^|^yz1234^|^peppermint_patty
+mobile_app^|^567abc^|^marcie
