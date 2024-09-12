@@ -1,0 +1,9 @@
+methodType,channel,X-Trace-Id,username,statusCode
+"post","test","12345","admin","201"
+"post","test","12345","admin","400"
+"post","test","12345","admin","401"
+"post","test","12345","admin","403"
+"post","test","12345","admin","405"
+"post","test","12345","admin","409"
+"post","test","12345","admin","422"
+"post","test","12345","admin","500"
