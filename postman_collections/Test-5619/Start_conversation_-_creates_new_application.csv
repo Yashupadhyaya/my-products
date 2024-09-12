@@ -1,0 +1,7 @@
+form-type,statusCode,scenario
+"customer_onboarding",200,"Successful Evaluation"
+"credit_application",200,"Successful Evaluation"
+"random_string_1",400,"Bad Request Response"
+"random_string_2",400,"Bad Request Response"
+"random_string_3",500,"Internal Server Error Response"
+"random_string_4",500,"Internal Server Error Response"
