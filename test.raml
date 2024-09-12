@@ -1,32 +1,23 @@
 #%RAML 1.0
-title: Mobile Order API
-baseUri: http://localhost:8081/api
-version: 1.0
+title: Hello world # required title
 
-uses:
-  assets: assets.lib.raml
-
-annotationTypes:
-  monitoringInterval:
-    type: integer
-
-/orders:
-  displayName: Orders
-  get:
-    is: [ assets.paging ]
-    (monitoringInterval): 30
-    description: Lists all orders of a specific user
-    queryParameters:
-      userId:
-        type: string
-        description: use to query all orders of a user
-  post:
-  /{orderId}:
-    get:
-      responses:
-        200:
-          body:
-            application/json:
-              type: assets.Order
-            application/xml:
-              type: !include schemas/order.xsd
+/helloworld: # optional resource
+  get: # HTTP method declaration
+    responses: # declare a response
+      200: # HTTP status code
+        body: # declare content of response
+          application/json: # media type
+            type: | # structural definition of a response (schema or type)
+              {
+                "title": "Hello world Response",
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            example: | # example of how a response looks
+              {
+                "message": "Hello world"
+              }
