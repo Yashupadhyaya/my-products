@@ -1,0 +1,11 @@
+id,username,firstName,lastName,email,password,phone,userStatus
+1,jdoe,John,Doe,jdoe@example.com,s3cretpa55word,555-303-1234,1
+2,jsmith,John,Smith,jsmith@example.com,p@ssword123,555-303-1235,0
+3,rstevens,Rachel,Stevens,rstevens@example.com,123pass,555-303-1236,1
+4,dmiller,Daniel,Miller,dmiller@example.com,safePass,555-303-1237,0
+5,pjohnson,Paul,Johnson,pjohnson@example.com,n3wp@ss,555-303-1238,1
+6,mwilliams,Michael,Williams,mwilliams@example.com,pa$$wrd,555-303-1239,0
+7,ajones,Amy,Jones,ajones@example.com,s3cretpa55,555-303-1240,1
+8,jbrown,James,Brown,jbrown@example.com,abcd1234,555-303-1241,0
+9,ljohnson,Linda,Johnson,ljohnson@example.com,pa55word,555-303-1242,1
+10,cwilliams,Charlotte,Williams,cwilliams@example.com,safe4now,555-303-1243,0

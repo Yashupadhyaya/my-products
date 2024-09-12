@@ -1,0 +1,11 @@
+username,id,username,firstName,lastName,email,password,phone,userStatus
+jkim1,48632,jkim1,John,Kim,jkim1@email.com,d3S7rWP3,1234567892,1
+asmith2,37219,asmith2,Amy,Smith,asmith2@email.com,Yt8s7DP3,1234567893,0
+brivera3,95264,brivera3,Bob,Rivera,brivera3@email.com,hR49JD7y,1234567894,1
+sgreen4,63281,sgreen4,Sarah,Green,sgreen4@email.com,J1Ty2P0b,1234567895,0
+tmorgan5,39273,tmorgan5,Tom,Morgan,tmorgan5@email.com,1XdY9RtO,1234567896,1
+fwhite6,81754,fwhite6,Fred,White,fwhite6@email.com,O8Vx3KLn,1234567897,0
+hmartinez7,48270,hmartinez7,Helen,Martinez,hmartinez7@email.com,e9Lq1BZ4,1234567898,1
+jallen8,35843,jallen8,Julie,Allen,jallen8@email.com,9ZLp0TrE,1234567899,0
+rturner9,47026,rturner9,Rick,Turner,rturner9@email.com,8X0s9CQt,1234567800,1
+ewatson10,15682,ewatson10,Eric,Watson,ewatson10@email.com,5R6s7J0p,1234567801,0
