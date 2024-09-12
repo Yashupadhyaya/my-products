@@ -1,0 +1,11 @@
+form-type^|^AdditionalCSVvaluInfo^|^form-instance-id^|^Authorization^|^X-HSBC-Request-Correlation-Id^|^RequestBody^|^statusCode
+form1^|^customer_onboarding^|^instance1^|^Authorization1^|^83a37bff-b5a3-43b6-8628-7afb2565dbe7^|^{"key1": "value1", "key2": "value2"}^|^200
+form2^|^credit_application^|^instance2^|^Authorization2^|^f6c3e737-b8b7-4a2e-8dba-9e1a7b34c3ee^|^{"key1": "value3", "key2": "value4"}^|^400
+form3^|^customer_onboarding^|^instance3^|^Authorization3^|^33b5e8ff-a3f2-41b0-98af-6f946a2dd840^|^{"key1": "value5", "key2": "value6"}^|^200
+form4^|^credit_application^|^instance4^|^Authorization4^|^c7a4e7bf-b3a3-43b6-8628-7afb2565dbe7^|^{"key1": "value7", "key2": "value8"}^|^500
+form5^|^customer_onboarding^|^instance5^|^Authorization5^|^83a37bff-b5a3-43b6-8628-7afb2565dbe7^|^{"key1": "value9", "key2": "value10"}^|^400
+form6^|^credit_application^|^instance6^|^Authorization6^|^f6c3e737-b8b7-4a2e-8dba-9e1a7b34c3ee^|^{"key1": "value11", "key2": "value12"}^|^200
+form7^|^customer_onboarding^|^instance7^|^Authorization7^|^33b5e8ff-a3f2-41b0-98af-6f946a2dd840^|^{"key1": "value13", "key2": "value14"}^|^500
+form8^|^credit_application^|^instance8^|^Authorization8^|^c7a4e7bf-b3a3-43b6-8628-7afb2565dbe7^|^{"key1": "value15", "key2": "value16"}^|^400
+form9^|^customer_onboarding^|^instance9^|^Authorization9^|^83a37bff-b5a3-43b6-8628-7afb2565dbe7^|^{"key1": "value17", "key2": "value18"}^|^200
+form10^|^credit_application^|^instance10^|^Authorization10^|^f6c3e737-b8b7-4a2e-8dba-9e1a7b34c3ee^|^{"key1": "value19", "key2": "value20"}^|^500

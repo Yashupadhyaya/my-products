@@ -1,0 +1,11 @@
+file-id^|^AdditionalCSVvaluInfo^|^Authorization^|^X-HSBC-Request-Correlation-Id^|^RequestBody^|^statusCode
+file-1234^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer abc123^|^83a37bff-b5a3-43b6-8628-7afb2565dbe7^|^{"action": "login", "username": "user1", "password": "pass1"}^|^200
+file-2345^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer def456^|^b3a37bff-b5a3-43b6-8628-7afb2565dbe8^|^{"action": "login", "username": "user2", "password": "pass2"}^|^400
+file-3456^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer ghi789^|^c3a37bff-b5a3-43b6-8628-7afb2565dbe9^|^{"action": "login", "username": "user3", "password": "pass3"}^|^404
+file-4567^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer jkl012^|^d3a37bff-b5a3-43b6-8628-7afb2565dbe0^|^{"action": "login", "username": "user4", "password": "pass4"}^|^500
+file-5678^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer mno345^|^e3a37bff-b5a3-43b6-8628-7afb2565dbe1^|^{"action": "login", "username": "user5", "password": "pass5"}^|^200
+file-6789^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer pqr678^|^f3a37bff-b5a3-43b6-8628-7afb2565dbe2^|^{"action": "login", "username": "user6", "password": "pass6"}^|^400
+file-7890^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer stu901^|^g3a37bff-b5a3-43b6-8628-7afb2565dbe3^|^{"action": "login", "username": "user7", "password": "pass7"}^|^404
+file-8901^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer vwx234^|^h3a37bff-b5a3-43b6-8628-7afb2565dbe4^|^{"action": "login", "username": "user8", "password": "pass8"}^|^500
+file-9012^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer yza567^|^i3a37bff-b5a3-43b6-8628-7afb2565dbe5^|^{"action": "login", "username": "user9", "password": "pass9"}^|^200
+file-0123^|^{"fileID": {"value": "ns-1847349-fd16d4cf138743dd.js"}}^|^Bearer bcd890^|^j3a37bff-b5a3-43b6-8628-7afb2565dbe6^|^{"action": "login", "username": "user10", "password": "pass10"}^|^400
