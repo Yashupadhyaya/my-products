@@ -1,0 +1,683 @@
+{
+  "item": [
+    {
+      "id": "287037ea-e10d-42f8-9742-83ad9561029c",
+      "name": "products",
+      "item": [
+        {
+          "id": "64bd97b3-97b9-4f5d-8c92-c1dbe5557dbf",
+          "name": "Get All Products",
+          "request": {
+            "name": "Get All Products",
+            "description": {
+              "content": "It gives you all products",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "products"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d5b178a2-70ee-433f-809c-44f29bb660e5",
+              "name": "Successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"apple\",\n    \"description\": \"apple\",\n    \"price\": 50\n  },\n  {\n    \"id\": 2,\n    \"name\": \"1\",\n    \"description\": \"apple\",\n    \"price\": 50\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "let responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    responseData = xml2Json(responseBody);\n} else{\n    responseData = pm.response.json();\n}\n\nif (pm.variables.get(\"statusCode\")) {\n  pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\nif (pm.response.code == 200){\n    pm.test(\"Successful operation\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"OK\");\n      const fields = ['id', 'name', 'description', 'price'];\n      const types = ['number', 'string', 'string', 'number'];\n      \n      fields.forEach((field, index) => {\n        if(Array.isArray(responseData)) {\n          pm.test(`Response has the ${field} field`,function(){ \n            if(pm.expect(responseData[0]).to.have.nested.property(field)){\n              if(pm.expect(_.get(responseData[0], field)).to.exist){\n                pm.expect(typeof _.get(responseData[0], field)).to.equal(types[index]);\n              }\n            }\n          })\n        } else {\n          pm.test(`Response has the ${field} field`,function(){\n            if(pm.expect(responseData).to.have.nested.property(field)){\n              if(pm.expect(_.get(responseData, field)).to.exist){\n                pm.expect(typeof _.get(responseData, field)).to.equal(types[index]);\n              }\n            }\n          })\n        }\n      });\n    });\n}\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "97b849f1-3c75-493d-a601-8ac85dc92a48",
+          "name": "Add a new product to the store",
+          "request": {
+            "name": "Add a new product to the store",
+            "description": {
+              "content": "Add a new product to the store",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "products"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\",\n    \"description\": \"{{description}}\",\n    \"price\": \"{{price}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "1df4dbe9-d70c-48d1-86fe-cb1d5821a380",
+              "name": "Successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"{{name}}\",\n    \"description\": \"{{description}}\",\n    \"price\": \"{{price}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 4,\n  \"name\": \"apple\",\n  \"description\": \"apple\",\n  \"price\": 50\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fb7a6ede-015b-4835-a1d8-fab2711cd3a2",
+              "name": "Invalid input",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"{{name}}\",\n    \"description\": \"{{description}}\",\n    \"price\": \"{{price}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test testing-postman using AI Type Open AI and AI Model gpt-4\n\n\nTest generated for /products for http method type post in postman framework\n\n*/\n\n// ********RoostGPT********\n\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    responseData = xml2Json(responseBody);\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n  pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Successful operation\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"OK\");\n          if(Array.isArray(responseData)) {\n            pm.test('Response has the `id` field',function(){ \n                if(pm.expect(responseData[0]).to.have.nested.property(`id`)){\n                  if(pm.expect(_.get(responseData[0], `id`, 200)).to.exist){\n                    pm.expect(typeof _.get(responseData[0], `id`, 200)).to.equal(\"number\");\n                  }\n                }\n\n            })\n          } else {\n            pm.test('Response has the `id` field',function(){\n              if(pm.expect(responseData).to.have.nested.property(`id`)){\n                if(pm.expect(_.get(responseData, `id`, 200)).to.exist){\n                  pm.expect(typeof _.get(responseData, `id`, 200)).to.equal(\"number\");\n                }\n              }\n\n            })\n          }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `name` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`name`)){\n          if(pm.expect(_.get(responseData[0], `name`, 200)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `name`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `name` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`name`)){\n          if(pm.expect(_.get(pm.response.json(), `name`, 200)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `name`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `description` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`description`)){\n          if(pm.expect(_.get(responseData[0], `description`, 200)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `description`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `description` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`description`)){\n          if(pm.expect(_.get(pm.response.json(), `description`, 200)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `description`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n\n          if(Array.isArray(responseData)) {\n            pm.test('Response has the `price` field',function(){ \n                if(pm.expect(responseData[0]).to.have.nested.property(`price`)){\n                  if(pm.expect(_.get(responseData[0], `price`, 200)).to.exist){\n                    pm.expect(typeof _.get(responseData[0], `price`, 200)).to.equal(\"number\");\n                  }\n                }\n\n            })\n          } else {\n            pm.test('Response has the `price` field',function(){\n              if(pm.expect(responseData).to.have.nested.property(`price`)){\n                if(pm.expect(_.get(responseData, `price`, 200)).to.exist){\n                  pm.expect(typeof _.get(responseData, `price`, 200)).to.equal(\"number\");\n                }\n              }\n\n            })\n          }\n});\n}\n\nif (pm.response.code == 405){\n    pm.test(\"Invalid input\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Method Not Allowed\");});\n}\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1e06adf6-ac79-4d93-8cd9-4d13d56a5187",
+          "name": "{productId}",
+          "item": [
+            {
+              "id": "54eba552-5b7a-4bf2-9cc4-4330d2ebfe1f",
+              "name": "Find product by ID",
+              "request": {
+                "name": "Find product by ID",
+                "description": {
+                  "content": "Returns a single product",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "products",
+                    ":productId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{productId}}",
+                      "key": "productId",
+                      "description": "(Required) ID of product to return"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "5cc2ca32-2d52-44b1-b283-8628e9e7fa69",
+                  "name": "successful operation",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "products",
+                        ":productId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{productId}}",
+                          "key": "productId",
+                          "description": "(Required) ID of product to return"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"id\": 4,\n  \"name\": \"1\",\n  \"description\": \"banana\",\n  \"price\": 50\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "c9949929-54b5-42b8-b766-066fe2a24e8b",
+                  "name": "Product not found",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "products",
+                        ":productId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{productId}}",
+                          "key": "productId",
+                          "description": "(Required) ID of product to return"
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test testing-postman using AI Type Open AI and AI Model gpt-4\n\n\nTest generated for /products/:productId for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    responseData = xml2Json(responseBody);\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n  pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"successful operation\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"OK\");\n          if(Array.isArray(responseData)) {\n            pm.test('Response has the `id` field',function(){ \n                if(pm.expect(responseData[0]).to.have.nested.property(`id`)){\n                  if(pm.expect(_.get(responseData[0], `id`, 200)).to.exist){\n                    pm.expect(typeof _.get(responseData[0], `id`, 200)).to.equal(\"number\");\n                  }\n                }\n\n            })\n          } else {\n            pm.test('Response has the `id` field',function(){\n              if(pm.expect(responseData).to.have.nested.property(`id`)){\n                if(pm.expect(_.get(responseData, `id`, 200)).to.exist){\n                  pm.expect(typeof _.get(responseData, `id`, 200)).to.equal(\"number\");\n                }\n              }\n\n            })\n          }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `name` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`name`)){\n          if(pm.expect(_.get(responseData[0], `name`, 200)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `name`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `name` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`name`)){\n          if(pm.expect(_.get(pm.response.json(), `name`, 200)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `name`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `description` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`description`)){\n          if(pm.expect(_.get(responseData[0], `description`, 200)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `description`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `description` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`description`)){\n          if(pm.expect(_.get(pm.response.json(), `description`, 200)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `description`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n\n          if(Array.isArray(responseData)) {\n            pm.test('Response has the `price` field',function(){ \n                if(pm.expect(responseData[0]).to.have.nested.property(`price`)){\n                  if(pm.expect(_.get(responseData[0], `price`, 200)).to.exist){\n                    pm.expect(typeof _.get(responseData[0], `price`, 200)).to.equal(\"number\");\n                  }\n                }\n\n            })\n          } else {\n            pm.test('Response has the `price` field',function(){\n              if(pm.expect(responseData).to.have.nested.property(`price`)){\n                if(pm.expect(_.get(responseData, `price`, 200)).to.exist){\n                  pm.expect(typeof _.get(responseData, `price`, 200)).to.equal(\"number\");\n                }\n              }\n\n            })\n          }\n});\n}\n\nif (pm.response.code == 404){\n    pm.test(\"Product not found\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Not Found\");});\n}\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            {
+              "id": "f735c135-d881-4f66-8b79-a1348defe28f",
+              "name": "Updates a product in the store with form data",
+              "request": {
+                "name": "Updates a product in the store with form data",
+                "description": {
+                  "content": "",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "products",
+                    ":productId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{productId}}",
+                      "key": "productId",
+                      "description": "(Required) ID of product that needs to be updated"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "auth": null,
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\",\n    \"description\": \"{{description}}\",\n    \"price\": \"{{price}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "response": [
+                {
+                  "id": "ea2ba2da-b990-47f6-ac7b-91824b54f3a7",
+                  "name": "Updated Product",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "products",
+                        ":productId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{productId}}",
+                          "key": "productId",
+                          "description": "(Required) ID of product that needs to be updated"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "PUT",
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"name\": \"{{name}}\",\n    \"description\": \"{{description}}\",\n    \"price\": \"{{price}}\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"id\": 4,\n  \"name\": \"1\",\n  \"description\": \"mango\",\n  \"price\": 50\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "c0754ff5-43ad-4793-90c1-91e258722951",
+                  "name": "Not Found",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "products",
+                        ":productId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{productId}}",
+                          "key": "productId",
+                          "description": "(Required) ID of product that needs to be updated"
+                        }
+                      ]
+                    },
+                    "method": "PUT",
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"name\": \"{{name}}\",\n    \"description\": \"{{description}}\",\n    \"price\": \"{{price}}\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    }
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test testing-postman using AI Type Open AI and AI Model gpt-4\n\n\nTest generated for /products/:productId for http method type put in postman framework\n\n*/\n\n// ********RoostGPT********\n\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    responseData = xml2Json(responseBody);\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n  pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Updated Product\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"OK\");\n          if(Array.isArray(responseData)) {\n            pm.test('Response has the `id` field',function(){ \n                if(pm.expect(responseData[0]).to.have.nested.property(`id`)){\n                  if(pm.expect(_.get(responseData[0], `id`, 200)).to.exist){\n                    pm.expect(typeof _.get(responseData[0], `id`, 200)).to.equal(\"number\");\n                  }\n                }\n\n            })\n          } else {\n            pm.test('Response has the `id` field',function(){\n              if(pm.expect(responseData).to.have.nested.property(`id`)){\n                if(pm.expect(_.get(responseData, `id`, 200)).to.exist){\n                  pm.expect(typeof _.get(responseData, `id`, 200)).to.equal(\"number\");\n                }\n              }\n\n            })\n          }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `name` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`name`)){\n          if(pm.expect(_.get(responseData[0], `name`, 200)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `name`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `name` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`name`)){\n          if(pm.expect(_.get(pm.response.json(), `name`, 200)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `name`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `description` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`description`)){\n          if(pm.expect(_.get(responseData[0], `description`, 200)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `description`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `description` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`description`)){\n          if(pm.expect(_.get(pm.response.json(), `description`, 200)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `description`, 200)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n\n          if(Array.isArray(responseData)) {\n            pm.test('Response has the `price` field',function(){ \n                if(pm.expect(responseData[0]).to.have.nested.property(`price`)){\n                  if(pm.expect(_.get(responseData[0], `price`, 200)).to.exist){\n                    pm.expect(typeof _.get(responseData[0], `price`, 200)).to.equal(\"number\");\n                  }\n                }\n\n            })\n          } else {\n            pm.test('Response has the `price` field',function(){\n              if(pm.expect(responseData).to.have.nested.property(`price`)){\n                if(pm.expect(_.get(responseData, `price`, 200)).to.exist){\n                  pm.expect(typeof _.get(responseData, `price`, 200)).to.equal(\"number\");\n                }\n              }\n\n            })\n          }\n});\n}\n\nif (pm.response.code == 404){\n    pm.test(\"Not Found\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Not Found\");});\n}\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            {
+              "id": "deea1d04-5914-4af5-89fd-95bfd08a8031",
+              "name": "Deletes a product",
+              "request": {
+                "name": "Deletes a product",
+                "description": {
+                  "content": "delete a product",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "products",
+                    ":productId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{productId}}",
+                      "key": "productId",
+                      "description": "(Required) Product id to delete"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "f3a3d914-956a-4fea-b905-e12ca851fef8",
+                  "name": "Product deleted",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "products",
+                        ":productId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{productId}}",
+                          "key": "productId",
+                          "description": "(Required) Product id to delete"
+                        }
+                      ]
+                    },
+                    "method": "DELETE",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                },
+                {
+                  "id": "31c53166-bded-4410-ac37-cf2f09ef93ba",
+                  "name": "Not Found",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "products",
+                        ":productId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{productId}}",
+                          "key": "productId",
+                          "description": "(Required) Product id to delete"
+                        }
+                      ]
+                    },
+                    "method": "DELETE",
+                    "body": {}
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test testing-postman using AI Type Open AI and AI Model gpt-4\n\n\nTest generated for /products/:productId for http method type delete in postman framework\n\n*/\n\n// ********RoostGPT********\n\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    responseData = xml2Json(responseBody);\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n  pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Product deleted\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"OK\");});\n}\n\nif (pm.response.code == 404){\n    pm.test(\"Not Found\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Not Found\");});\n}\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            }
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://52.66.106.18:8080/api",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "aef33ffa-acc3-4ce0-8058-1c38e13d58d6",
+    "name": "Swagger My-Products - OpenAPI 3.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "This page is for my products api spec",
+      "type": "text/plain"
+    }
+  }
+}
