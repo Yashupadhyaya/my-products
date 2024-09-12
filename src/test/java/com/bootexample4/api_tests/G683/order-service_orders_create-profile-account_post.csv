@@ -1,0 +1,9 @@
+channel,xTraceId,userId,username,entityId,statusCode,responseBody
+"test","1234","abc","john","123","201","{ "orderId": '#string', "requestId": '#string' }"
+"test","1234","abc","john","123","400","{ "description": 'Bad Request' }"
+"test","1234","abc","john","123","401","{ "description": 'Unauthorized' }"
+"test","1234","abc","john","123","403","{ "description": 'Forbidden' }"
+"test","1234","abc","john","123","405","{ "description": 'Method Not allowed' }"
+"test","1234","abc","john","123","409","{ "description": 'Conflict' }"
+"test","1234","abc","john","123","422","{ "description": 'Unprocessable Entity' }"
+"test","1234","abc","john","123","500","{ "description": 'Internal Server Error' }"
