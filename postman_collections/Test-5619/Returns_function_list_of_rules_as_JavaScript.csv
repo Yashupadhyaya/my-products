@@ -1,0 +1,5 @@
+file-id,statusCode,scenario
+"123abc",200,"Returns function list of rules as JavaScript"
+"456def",400,"Bad Request Response"
+"789ghi",404,"File Not Found"
+"012jkl",500,"Internal Server Error Response"
