@@ -1,0 +1,4 @@
+form-type,form-instance-id,statusCode,scenario
+"customer_onboarding","d72b7d9b-ccd9-4f98-8fb8-dbb3067effc3",200,"Successful Evaluation"
+"credit_application","1d9294e7-20ea-4c34-9a89-c18a47254e8e",400,"Bad Request Response"
+"customer_onboarding","d72b7d9b-ccd9-4f98-8fb8-dbb3067effc3",500,"Internal Server Error Response"
