@@ -1,0 +1,3 @@
+username,statusCode,scenario
+swaggerDataInfo,400,Client error responses: Bad Request
+swaggerDataInfo,404,Client error responses: Not Found
