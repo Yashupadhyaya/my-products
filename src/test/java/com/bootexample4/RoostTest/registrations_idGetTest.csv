@@ -1,0 +1,11 @@
+id,email,first_name,last_name,gender,ip_address,phone_number,birthdate,salary,title,department,manager_id
+31c7e3a0-853f-42c4-9593-29861881a129,username@example.com,John,Doe,Male,192.168.1.1,0123456789,1980-01-01,100000,Software Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a130,username@example.com,Jane,Doe,Female,192.168.1.2,0123456789,1985-01-01,120000,Senior Software Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a131,username@example.com,Michael,Jones,Male,192.168.1.3,0123456789,1990-01-01,140000,Lead Software Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a132,username@example.com,Sarah,Miller,Female,192.168.1.4,0123456789,1995-01-01,160000,Principal Software Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a133,username@example.com,William,Johnson,Male,192.168.1.5,0123456789,2000-01-01,180000,Staff Software Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a134,username@example.com,Elizabeth,Walker,Female,192.168.1.6,0123456789,2005-01-01,200000,Senior Staff Software Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a135,username@example.com,James,Anderson,Male,192.168.1.7,0123456789,2010-01-01,220000,Principal Staff Software Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a136,username@example.com,Jessica,Thomas,Female,192.168.1.8,0123456789,2015-01-01,240000,Distinguished Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a137,username@example.com,Robert,Brown,Male,192.168.1.9,0123456789,2020-01-01,260000,Senior Distinguished Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
+31c7e3a0-853f-42c4-9593-29861881a138,username@example.com,Linda,Green,Female,192.168.1.10,0123456789,2025-01-01,280000,Principal Distinguished Engineer,Engineering,12345678-90ab-cdef-1234-567890abcdef
