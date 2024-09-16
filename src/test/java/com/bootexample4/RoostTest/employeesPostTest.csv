@@ -1,0 +1,11 @@
+id,jobTitle,name,email,statusCode
+d290f1ee-6c54-4b01-90e6-d701748f0851,Software Developer,John Doe,john.doe@example.com,201
+e935762b-ff9e-4a33-95c3-f10a8bb3eac1,Data Analyst,Jane Smith,jane.smith@example.com,201
+5f22f1d4-8eca-4156-9acf-0d4f2f6564b3,Project Manager,Alice Johnson,alice.johnson@example.com,201
+a3bf90e7-11b2-4f3c-9c5a-2a1f1233f637,Graphic Designer,Bob Brown,bob.brown@example.com,201
+7c8b8a6a-0d58-470d-92b3-c5d330b70557,System Administrator,Lisa White,lisa.white@example.com,201
+9d35b2ec-102b-4f7c-b9d5-2d8a4b0aee29,Network Architect,Carlos Garcia,carlos.garcia@example.com,201
+c4e67b2e-563e-4c74-9cff-c289d7527b58,Quality Assurance Analyst,Karen Martinez,karen.martinez@example.com,201
+f1d4a412-8d6b-48f4-81a4-8d37eef6e7b9,IT Consultant,James Wilson,james.wilson@example.com,201
+32f36859-b1e9-4c65-b3e2-df3c504c1922,UX Designer,Emma Taylor,emma.taylor@example.com,201
+80b8f3cf-76ef-4a26-85a6-2f58d1c3aed3,Cybersecurity Specialist,Ethan Brown,ethan.brown@example.com,201
