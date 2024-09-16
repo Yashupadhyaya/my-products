@@ -1,0 +1,6 @@
+petId,statusCode,scenario
+001,400,Client error responses: Bad Request
+002,400,Client error responses: Bad Request
+003,400,Client error responses: Bad Request
+004,400,Client error responses: Bad Request
+005,400,Client error responses: Bad Request
