@@ -1,0 +1,11 @@
+UserID,Username,Email,Age,Gender,DateOfBirth,Location
+1,johnsmith,jsmith@gmail.com,25,M,1996-02-15,New York
+2,janedoe,jdoe@example.com,30,F,1991-04-26,California
+3,bobmiller,bmiller@yahoo.com,45,M,1976-12-01,Texas
+4,alicejohnson,ajohnson@hotmail.com,23,F,1998-07-01,Florida
+5,jacksparrow,jsparrow@aol.com,35,M,1986-10-30,Ohio
+6,sarahconnor,sconnor@icloud.com,32,F,1989-02-03,Illinois
+7,peterparker,pparker@msn.com,21,M,2000-08-10,Wisconsin
+8,marymagdalene,mmagdalene@outlook.com,28,F,1993-12-24,Arizona
+9,tomhanks,thanks@live.com,64,M,1956-08-15,New Jersey
+10,jenniferlopez,jlopez@mail.com,52,F,1969-07-24,Colorado

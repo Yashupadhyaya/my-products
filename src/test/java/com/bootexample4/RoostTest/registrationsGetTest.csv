@@ -1,0 +1,11 @@
+size,offset,recipient-id,credential-url
+20,0,550e8400-e29b-41d4-a716-446655440000,http://www.example.com/credential/1
+35,1,550e8400-e29b-41d4-a716-446655440001,http://www.example.com/credential/2
+45,2,550e8400-e29b-41d4-a716-446655440002,http://www.example.com/credential/3
+32,0,550e8400-e29b-41d4-a716-446655440003,http://www.example.com/credential/4
+50,1,550e8400-e29b-41d4-a716-446655440004,http://www.example.com/credential/5
+41,0,550e8400-e29b-41d4-a716-446655440005,http://www.example.com/credential/6
+28,0,550e8400-e29b-41d4-a716-446655440006,http://www.example.com/credential/7
+16,1,550e8400-e29b-41d4-a716-446655440007,http://www.example.com/credential/8
+22,2,550e8400-e29b-41d4-a716-446655440008,http://www.example.com/credential/9
+14,0,550e8400-e29b-41d4-a716-446655440009,http://www.example.com/credential/10
