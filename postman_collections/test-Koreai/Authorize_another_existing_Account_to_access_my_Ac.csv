@@ -1,0 +1,4 @@
+email,statusCode,scenario
+<email>,201,Successful responses: Created
+<email>,400,Client error responses: Bad Request
+<email>,401,Client error responses: Unauthorized

@@ -1,0 +1,6 @@
+kvkNummer,vestigingsnummer,handelsnaam,statusCode,scenario
+1,123456,See kvk OAS specs,200,Successful responses: OK
+2,789012,See kvk OAS specs,200,Successful responses: OK
+3,345678,See kvk OAS specs,200,Successful responses: OK
+4,901234,See kvk OAS specs,200,Successful responses: OK
+5,567890,See kvk OAS specs,200,Successful responses: OK

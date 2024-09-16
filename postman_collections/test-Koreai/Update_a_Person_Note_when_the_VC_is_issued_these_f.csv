@@ -1,0 +1,4 @@
+id,initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference,statusCode,scenario
+urn:uuid:35025db5-565b-b5e7-7f16-526a456ee48f,initials1,firstName1,middleName1,lastName1,date1,birthPlace1,phone1,email1,postalCode1,houseNumber1,postfix1,countryCode1,reference1,200,Successful responses: OK
+urn:uuid:35025db5-565b-b5e7-7f16-526a456ee48f,initials2,firstName2,middleName2,lastName2,date2,birthPlace2,phone2,email2,postalCode2,houseNumber2,postfix2,countryCode2,reference2,400,Client error responses: Bad Request
+urn:uuid:35025db5-565b-b5e7-7f16-526a456ee48f,initials3,firstName3,middleName3,lastName3,date3,birthPlace3,phone3,email3,postalCode3,houseNumber3,postfix3,countryCode3,reference3,401,Client error responses: Unauthorized

@@ -1,0 +1,4 @@
+credential-url,size,offset,id,statusCode,scenario
+K9_:/Ch|BM1lB=#,78,0,93641e6d-10fd-015b-d8a2-0930d881e45f,200,Successful responses: OK
+0:/w^?u{6t;,78,0,urn:uuid:0c432a29-246e-5497-c66a-00d47266111e,400,Client error responses: Bad Request
+,,401,Client error responses: Unauthorized
