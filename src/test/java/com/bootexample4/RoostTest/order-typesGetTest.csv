@@ -1,0 +1,11 @@
+X-Trace-Id,channel,username,statusCode
+8b72aef1c,web,alicejones,200
+b9a2f3e4d,mobile,bobsmith,404
+5c1a3b2e5,api,carolwhite,403
+6d4e5f6a7,web,davebrown,401
+7e9f1a2b8,mobile,evagreen,200
+a3b4c5d6e,api,frankgrey,409
+c2d3e4f5g,web,gracehall,500
+d1e2f3g4h,mobile,harryking,400
+e4f5a6b7c,api,irenelee,405
+f6a7b8c9d,web,jackma,202
