@@ -1,0 +1,3 @@
+name,id,description,price,statusCode,scenario
+apple,4,apple,50,200,Successful operation
+apple,10,apple,20,405,Invalid input
