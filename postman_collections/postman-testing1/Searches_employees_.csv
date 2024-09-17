@@ -1,0 +1,5 @@
+searchString,statusCode,scenario
+john.smith@acme-corp.com,200,Search results matching the filter criteria
+john.smith@acme-corp.com,200,Search results matching the filter criteria
+randomValue,400,Bad input
+randomValue,400,Bad input
