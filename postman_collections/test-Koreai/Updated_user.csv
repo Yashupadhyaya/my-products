@@ -1,0 +1,9 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+johndoe1,1,John,Doe,john.doe1@gmail.com,123456,+1234567890,Active,400,Client error responses: Bad Request
+janedoe1,2,Jane,Doe,jane.doe1@gmail.com,123456,+1234567891,Active,400,Client error responses: Bad Request
+johndoe2,3,John,Doe,john.doe2@gmail.com,123456,+1234567892,Active,404,Client error responses: Not Found
+janedoe2,4,Jane,Doe,jane.doe2@gmail.com,123456,+1234567893,Active,404,Client error responses: Not Found
+johndoe3,5,John,Doe,john.doe3@gmail.com,123456,+1234567894,Active,400,Client error responses: Bad Request
+janedoe3,6,Jane,Doe,jane.doe3@gmail.com,123456,+1234567895,Active,400,Client error responses: Bad Request
+johndoe4,7,John,Doe,john.doe4@gmail.com,123456,+1234567896,Active,404,Client error responses: Not Found
+janedoe4,8,Jane,Doe,jane.doe4@gmail.com,123456,+1234567897,Active,404,Client error responses: Not Found
