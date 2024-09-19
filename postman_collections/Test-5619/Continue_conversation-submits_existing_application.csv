@@ -1,0 +1,4 @@
+form-type,form-instance-id,type,status,currentViewId,nextViewId,statusCode,scenario
+"customer_onboarding","12345","string","string","string","string",200,"Successful Evaluation"
+"credit_application","67890","string","string","string","string",400,"Bad Request Response"
+"customer_onboarding","11223","string","string","string","string",500,"Internal Server Error Response"
