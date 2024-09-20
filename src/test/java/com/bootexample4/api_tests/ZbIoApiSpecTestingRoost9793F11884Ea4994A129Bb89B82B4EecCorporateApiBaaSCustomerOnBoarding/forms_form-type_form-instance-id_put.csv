@@ -1,0 +1,4 @@
+form-type,form-instance-id,type,status,currentViewId,nextViewId,links,parentId,statusCode
+"type1","instance1","A","OK","view1","view2","{}","parent1","200"
+"type2","instance2","B","FAIL","view3","view4","{}","parent2","400"
+"type3","instance3","C","OK","view5","view6","{}","parent3","500"

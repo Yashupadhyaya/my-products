@@ -1,0 +1,6 @@
+form_type,form_instance_id,expected_status_code,expected_response_body
+"customer_onboarding","instance1","200","<response_body_200>"
+"credit_application","instance2","200","<response_body_200>"
+"invalid_form_type","instance3","400","<response_body_400>"
+"customer_onboarding","invalid_instance","400","<response_body_400>"
+"credit_application","invalid_instance","500","<response_body_500>"
