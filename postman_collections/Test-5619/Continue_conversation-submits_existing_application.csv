@@ -1,0 +1,7 @@
+form-type,form-instance-id,type,status,currentViewId,nextViewId,statusCode,scenario
+"customer_onboarding"^|"1"^|"problem-details/types/client-id-missing"^|"400"^|"view1"^|"view2"^|200^|"Successful Evaluation"
+"credit_application"^|"2"^|"problem-details/types/internal-server-error"^|"500"^|"view3"^|"view4"^|400^|"Bad Request Response"
+"customer_onboarding"^|"3"^|"problem-details/types/client-id-missing"^|"400"^|"view5"^|"view6"^|500^|"Internal Server Error Response"
+"credit_application"^|"4"^|"problem-details/types/internal-server-error"^|"500"^|"view7"^|"view8"^|200^|"Successful Evaluation"
+"customer_onboarding"^|"5"^|"problem-details/types/client-id-missing"^|"400"^|"view9"^|"view10"^|400^|"Bad Request Response"
+"credit_application"^|"6"^|"problem-details/types/internal-server-error"^|"500"^|"view11"^|"view12"^|500^|"Internal Server Error Response"
