@@ -1,0 +1,6 @@
+searchString,statusCode,scenario
+"search1",200,"[\n  {\n    \"email\": \"john.smith@acme-corp.com\",\n    \"jobTitle\": \"System Analyst\",\n    \"name\": \"John Smith\",\n    \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n  },\n  {\n    \"email\": \"john.smith@acme-corp.com\",\n    \"jobTitle\": \"System Analyst\",\n    \"name\": \"John Smith\",\n    \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n  }\n]"
+"search2",201,"[\n  {\n    \"email\": \"john.smith@acme-corp.com\",\n    \"jobTitle\": \"System Analyst\",\n    \"name\": \"John Smith\",\n    \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n  },\n  {\n    \"email\": \"john.smith@acme-corp.com\",\n    \"jobTitle\": \"System Analyst\",\n    \"name\": \"John Smith\",\n    \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n  }\n]"
+"search3",300,"randomValue1"
+"search4",400,"randomValue2"
+"search5",500,"randomValue3"
