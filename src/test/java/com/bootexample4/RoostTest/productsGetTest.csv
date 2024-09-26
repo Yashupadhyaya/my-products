@@ -1,0 +1,11 @@
+UserID,UserName,Email,Age,RegistrationDate,StatusCode
+12345,John Doe,johndoe@example.com,32,2020-01-01,200
+23456,Jane Smith,janesmith@example.com,28,2019-12-01,201
+34567,Robert Johnson,rjohnson@example.com,42,2018-07-01,202
+45678,Patricia Williams,pwilliams@example.com,37,2020-05-01,203
+56789,Michael Brown,mbrown@example.com,30,2021-01-01,204
+67890,Linda Miller,lmiller@example.com,45,2019-10-01,205
+78901,David Davis,ddavis@example.com,48,2020-12-01,206
+89012,Susan Garcia,sgarcia@example.com,35,2018-10-01,207
+90123,James Rodriguez,jrodriguez@example.com,28,2019-06-01,208
+01234,Jennifer Wilson,jwilson@example.com,40,2020-04-01,209
