@@ -1,0 +1,11 @@
+X-Trace-Id,channel,orderId,customerName,profileId,accountId,serviceId,state,offset,limit,showOrderStatusCount,username,statusCode
+b3d113ef,web,ORD10234,John Doe,PRF67890,ACC54321,SVC11223,active,0,50,true,johndoe,200
+f4e224fg,mobile,ORD10235,Jane Smith,PRF67891,ACC54322,SVC11224,inactive,10,30,false,janesmith,200
+a5f335gh,api,ORD10236,Emily Johnson,PRF67892,ACC54323,SVC11225,pending,20,20,true,emilyj,403
+c6g446ij,email,ORD10237,Michael Brown,PRF67893,ACC54324,SVC11226,complete,5,15,false,michaelb,200
+d7h557kl,phone,ORD10238,Sarah Davis,PRF67894,ACC54325,SVC11227,cancelled,25,25,true,sarahd,404
+e8i668lm,social,ORD10239,William Garcia,PRF67895,ACC54326,SVC11228,processing,15,10,false,williamg,200
+f9j779mn,web,ORD10240,Barbara Wilson,PRF67896,ACC54327,SVC11229,shipped,30,40,true,barbaraw,200
+gak880no,mobile,ORD10241,James Martinez,PRF67897,ACC54328,SVC11230,returned,50,5,false,jamesm,500
+hbl991pq,api,ORD10242,Patricia Anderson,PRF67898,ACC54329,SVC11231,active,40,60,true,patriciaa,200
+icm002qr,email,ORD10243,Robert Thomas,PRF67899,ACC54330,SVC11232,inactive,35,45,false,robertt,401
