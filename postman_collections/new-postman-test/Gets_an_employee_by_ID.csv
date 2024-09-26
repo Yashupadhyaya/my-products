@@ -1,0 +1,44 @@
+CSV_HEADERS:
+apiName,apiMethod,apiEndpoint,statusCode,scenario,payload
+
+STATUS_CODES_RESPONSE_CLASSES:
+200: Success
+201: Created
+204: No Content
+400: Bad Request
+401: Unauthorized
+403: Forbidden
+404: Not Found
+500: Internal Server Error
+503: Service Unavailable
+
+HELPER_DATA:
+apiName: ["User API", "Order API", "Product API"]
+apiMethod: ["GET", "POST", "PUT", "DELETE"]
+apiEndpoint: ["/users", "/orders", "/products"]
+payload: [{"id": 1, "name": "John", "email": "john@example.com"}, {"id": 2, "name": "Jane", "email": "jane@example.com"}]
+
+SWAGGER_DATA:
+apiName: "User API"
+apiMethod: "GET"
+apiEndpoint: "/users"
+payload: {"id": 1, "name": "John", "email": "john@example.com"}
+
+SAMPLE_API_LOGS:
+apiName: "Order API"
+apiMethod: "POST"
+apiEndpoint: "/orders"
+statusCode: 201
+scenario: "Created"
+payload: {"id": 1, "productName": "Laptop", "quantity": 1}
+
+CSV DATA:
+User API,GET,/users,200,Success,{"id": 1, "name": "John", "email": "john@example.com"}
+Order API,POST,/orders,201,Created,{"id": 1, "productName": "Laptop", "quantity": 1}
+Product API,PUT,/products,204,No Content,{"id": 2, "name": "Jane", "email": "jane@example.com"}
+User API,DELETE,/users,400,Bad Request,{"id": 3, "name": "Invalid User", "email": "invalid@example.com"}
+Order API,GET,/orders,401,Unauthorized,{"id": 4, "productName": "Invalid Product", "quantity": 0}
+Product API,POST,/products,403,Forbidden,{"id": 5, "name": "Restricted User", "email": "restricted@example.com"}
+User API,PUT,/users,404,Not Found,{"id": 6, "name": "Nonexistent User", "email": "nonexistent@example.com"}
+Order API,DELETE,/orders,500,Internal Server Error,{"id": 7, "productName": "Faulty Product", "quantity": -1}
+Product API,GET,/products,503,Service Unavailable,{"id": 8, "name": "Unavailable User", "email": "unavailable@example.com"}
