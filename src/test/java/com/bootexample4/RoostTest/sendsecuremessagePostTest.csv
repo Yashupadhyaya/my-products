@@ -1,0 +1,11 @@
+authType,firstName,lastName,email,phoneNumber,topic,message,availableTime,chatHistory,cif
+OAuth,John,Doe,johndoe@gmail.com,1234567890,Software,Hello there!,2022-10-20T10:30:00Z,Hello! How can I help you?,123456
+JWT,Jane,Doe,janedoe@gmail.com,0987654321,Hardware,Need assistance!,2022-10-21T11:30:00Z,Hi! What seems to be the problem?,234567
+SAML,James,Smith,jamessmith@gmail.com,1122334455,Networking,Connection issues,2022-10-22T12:30:00Z,Hey! Let's troubleshoot this.,345678
+OAuth,Jessica,Johnson,jessicajohnson@gmail.com,2233445566,Software,App not working,2022-10-23T13:30:00Z,Hello! Let's resolve this.,456789
+JWT,Robert,Brown,robertbrown@gmail.com,3344556677,Hardware,Laptop not starting,2022-10-24T14:30:00Z,Hi! We'll sort this out.,567890
+SAML,Emily,Davis,emilydavis@gmail.com,4455667788,Networking,Slow internet,2022-10-25T15:30:00Z,Hey! Let's speed things up.,678901
+OAuth,Michael,Miller,michaelmiller@gmail.com,5566778899,Software,Update issues,2022-10-26T16:30:00Z,Hello! Let's get you updated.,789012
+JWT,Sarah,Moore,sarahmoore@gmail.com,6677889900,Hardware,Printer not working,2022-10-27T17:30:00Z,Hi! We'll get your printer running.,890123
+SAML,David,Taylor,davidtaylor@gmail.com,7788990011,Networking,Can't connect to VPN,2022-10-28T18:30:00Z,Hey! We'll connect you soon.,901234
+OAuth,Emma,Anderson,emmaanderson@gmail.com,8899001122,Software,Error messages,2022-10-29T19:30:00Z,Hello! Let's troubleshoot this.,012345
