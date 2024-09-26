@@ -1,0 +1,5 @@
+username,id,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+JohnDoe1,1,John,Doe,johndoe1@example.com,pass123,111-111-1111,Active,400,Client error responses: Bad Request
+SarahSmith2,2,Sarah,Smith,sarahsmith2@example.com,pass456,222-222-2222,Active,400,Client error responses: Bad Request
+LukeBrown3,3,Luke,Brown,lukebrown3@example.com,pass789,333-333-3333,Inactive,404,Client error responses: Not Found
+EmilyTaylor4,4,Emily,Taylor,emilytaylor4@example.com,pass321,444-444-4444,Inactive,404,Client error responses: Not Found
