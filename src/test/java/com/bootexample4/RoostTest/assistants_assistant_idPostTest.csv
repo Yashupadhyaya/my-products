@@ -1,0 +1,11 @@
+assistant_id,model,name,description,instructions,tools,file_ids,metadata,statusCode
+ASST123,Model1,John Doe,Description for John,Instructions for John,Tool1|Tool2|Tool3,File1|File2|File3,{'key1':'value1', 'key2':'value2'},200
+ASST124,Model2,Jane Doe,Description for Jane,Instructions for Jane,Tool4|Tool5|Tool6,File4|File5|File6,{'key3':'value3', 'key4':'value4'},200
+ASST125,Model3,Jim Doe,Description for Jim,Instructions for Jim,Tool7|Tool8|Tool9,File7|File8|File9,{'key5':'value5', 'key6':'value6'},200
+ASST126,Model4,Jill Doe,Description for Jill,Instructions for Jill,Tool10|Tool11|Tool12,File10|File11|File12,{'key7':'value7', 'key8':'value8'},200
+ASST127,Model5,Jack Doe,Description for Jack,Instructions for Jack,Tool13|Tool14|Tool15,File13|File14|File15,{'key9':'value9', 'key10':'value10'},200
+ASST128,Model6,Judy Doe,Description for Judy,Instructions for Judy,Tool16|Tool17|Tool18,File16|File17|File18,{'key11':'value11', 'key12':'value12'},200
+ASST129,Model7,Joe Doe,Description for Joe,Instructions for Joe,Tool19|Tool20|Tool21,File19|File20|File21,{'key13':'value13', 'key14':'value14'},200
+ASST130,Model8,Joy Doe,Description for Joy,Instructions for Joy,Tool22|Tool23|Tool24,File22|File23|File24,{'key15':'value15', 'key16':'value16'},200
+ASST131,Model9,Jerry Doe,Description for Jerry,Instructions for Jerry,Tool25|Tool26|Tool27,File25|File26|File27,{'key17':'value17', 'key18':'value18'},200
+ASST132,Model10,Jessica Doe,Description for Jessica,Instructions for Jessica,Tool28|Tool29|Tool30,File28|File29|File30,{'key19':'value19', 'key20':'value20'},200

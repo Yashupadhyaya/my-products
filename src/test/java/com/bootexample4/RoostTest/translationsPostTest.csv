@@ -1,0 +1,11 @@
+file,model,prompt,response_format,temperature,statusCode
+binary1,whisper-1,What is your name?,json,0.8,200
+binary2,whisper-2,What is your age?,json,0.7,200
+binary3,whisper-1,What is your location?,json,0.6,200
+binary4,whisper-2,What is your job?,json,0.5,200
+binary5,whisper-1,What is your hobby?,json,0.4,200
+binary6,whisper-2,What is your favorite food?,json,0.3,200
+binary7,whisper-1,What is your favorite color?,json,0.2,200
+binary8,whisper-2,What is your favorite movie?,json,0.1,200
+binary9,whisper-1,What is your favorite book?,json,0.9,200
+binary10,whisper-2,What is your favorite song?,json,0.8,200
