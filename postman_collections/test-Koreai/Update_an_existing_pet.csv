@@ -1,0 +1,4 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John,www.johnpic.com,1,tag1,available,400,Client error responses: Bad Request
+Doe,www.doepic.com,2,tag2,pending,404,Client error responses: Not Found
+Jane,www.janepic.com,3,tag3,sold,405,Client error responses: Method Not Allowed
