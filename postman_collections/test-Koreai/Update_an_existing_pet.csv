@@ -1,0 +1,4 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John Doe,https://example.com/profile.jpg,12345,tag1 tag2,approved,400,Client error responses: Bad Request
+Jane Doe,https://example.com/profile2.jpg,12346,tag3 tag4,placed,404,Client error responses: Not Found
+Alex Smith,https://example.com/profile3.jpg,12347,tag5 tag6,delivered,405,Client error responses: Method Not Allowed
