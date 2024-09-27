@@ -1,0 +1,6 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John,http://photourl.com/1,001,tag1,active,405,Client error responses: Method Not Allowed
+Mike,http://photourl.com/2,002,tag2,inactive,405,Client error responses: Method Not Allowed
+Emma,http://photourl.com/3,003,tag3,active,405,Client error responses: Method Not Allowed
+Oliver,http://photourl.com/4,004,tag4,inactive,405,Client error responses: Method Not Allowed
+Sophia,http://photourl.com/5,005,tag5,active,405,Client error responses: Method Not Allowed

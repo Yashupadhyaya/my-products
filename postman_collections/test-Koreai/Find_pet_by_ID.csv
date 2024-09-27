@@ -1,0 +1,4 @@
+petId,statusCode,scenario
+doggie,200,Successful responses: OK
+doggie,400,Client error responses: Bad Request
+doggie,404,Client error responses: Not Found
