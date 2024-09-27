@@ -1,0 +1,67 @@
+config:
+  target: "https://example.com"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+
+scenarios:
+  - name: "Successful API request"
+    flow:
+      - put:
+          url: "/products/{{ $randomNumber(1, 100) }}"
+          json:
+            name: "Test Product"
+            description: "This is a test product"
+            price: 9.99
+          headers:
+            Content-Type: "application/json"
+          capture:
+            - json: "$"
+              as: "response"
+      - think: 1
+      - log: "Response: {{ response }}"
+      - assert:
+          - statusCode: 200
+          - hasProperty: "name"
+          - hasProperty: "description"
+          - hasProperty: "price"
+
+  - name: "API request with validation failure"
+    flow:
+      - put:
+          url: "/products/{{ $randomNumber(1, 100) }}"
+          json:
+            description: "This is a test product without name"
+            price: 9.99
+          headers:
+            Content-Type: "application/json"
+          capture:
+            - json: "$"
+              as: "response"
+      - think: 1
+      - log: "Response: {{ response }}"
+      - assert:
+          - statusCode: 400
+          - hasProperty: "error"
+
+  - name: "API request with edge case"
+    flow:
+      - put:
+          url: "/products/{{ $randomNumber(1, 100) }}"
+          json:
+            name: "Test Product with special characters @#&!"
+            description: "This is a test product with a very long description. This description is intended to test the edge case of having a large amount of text in the description field. It should still be able to handle this input and return an appropriate response."
+            price: 9999.99
+          headers:
+            Content-Type: "application/json"
+          capture:
+            - json: "$"
+              as: "response"
+      - think: 1
+      - log: "Response: {{ response }}"
+      - assert:
+          - statusCode:
+              - in: [200, 201]
+          - hasProperty: "name"
+          - hasProperty: "description"
+          - hasProperty: "price"
