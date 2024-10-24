@@ -1,0 +1,10 @@
+email,jobTitle,name,id,statusCode,scenario
+john.smith@acme-corp.com,System Analyst,John Smith,d290f1ee-6c54-4b01-90e6-d701748f0851,201,employee created
+abc@xyz.com,Software Developer,Jane Doe,a123f1ee-6c54-4b01-90e6-d701748f0852,400,invalid input, object invalid
+mike.jones@acme-corp.com,System Analyst,Mike Jones,d290f1ee-6c54-4b01-90e6-d701748f0853,409,an existing employee already exists
+emily.clark@acme-corp.com,System Analyst,Emily Clark,d290f1ee-6c54-4b01-90e6-d701748f0854,201,employee created
+xyz@abc.com,Software Developer,John Doe,a123f1ee-6c54-4b01-90e6-d701748f0855,400,invalid input, object invalid
+jack.jones@acme-corp.com,System Analyst,Jack Jones,d290f1ee-6c54-4b01-90e6-d701748f0856,409,an existing employee already exists
+sarah.smith@acme-corp.com,System Analyst,Sarah Smith,d290f1ee-6c54-4b01-90e6-d701748f0857,201,employee created
+pqr@stu.com,Software Developer,Jane Smith,a123f1ee-6c54-4b01-90e6-d701748f0858,400,invalid input, object invalid
+kate.jones@acme-corp.com,System Analyst,Kate Jones,d290f1ee-6c54-4b01-90e6-d701748f0859,409,an existing employee already exists
