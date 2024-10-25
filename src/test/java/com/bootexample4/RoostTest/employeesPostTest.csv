@@ -1,0 +1,11 @@
+RequestBody^|^statusCode
+{"id": "3e7c7881-633a-4c99-857c-1b1739e547b6", "jobTitle": "Software Engineer", "name": "John Doe", "email": "johndoe@example.com"}^|^201
+{"id": "b6f674ea-36ea-410b-8b06-6b63c5f60e27", "jobTitle": "Data Analyst", "name": "Jane Doe", "email": "janedoe@example.com"}^|^201
+{"id": "a9f1e2f9-02ca-4f8c-8492-1cf3d75e492a", "jobTitle": "Product Manager", "name": "Robert Smith", "email": "robertsmith@example.com"}^|^400
+{"id": "9a5d5d64-ffe1-420b-8d2b-0e2c8f8a8a3a", "jobTitle": "UX Designer", "name": "Emma Johnson", "email": "emmajohnson@example.com"}^|^201
+{"id": "d6f4b5c2-b0b6-4efd-9e8b-6828b8a8a8d2", "jobTitle": "Frontend Developer", "name": "Oliver Brown", "email": "oliverbrown@example.com"}^|^409
+{"id": "c2c4b2b1-1b1a-1a19-9c9b-8b8a8a8a8a8d", "jobTitle": "Backend Developer", "name": "Sophia Davis", "email": "sophiadavis@example.com"}^|^201
+{"id": "e1d1c1b1-a1a1-9a9a-8b8b-7c7c7c7c7c7d", "jobTitle": "DevOps Engineer", "name": "Lucas Miller", "email": "lucasmiller@example.com"}^|^400
+{"id": "f1e1d1c1-b1a1-9a9a-8b8b-6c6c6c6c6c6d", "jobTitle": "QA Tester", "name": "Harper Wilson", "email": "harperwilson@example.com"}^|^409
+{"id": "e9d8c7b6-a5a4-9a9a-8b8b-5c5c5c5c5c5d", "jobTitle": "Database Administrator", "name": "Ethan Moore", "email": "ethanmoore@example.com"}^|^201
+{"id": "f8e7d6c5-b4a3-9a9a-8b8b-4c4c4c4c4c4d", "jobTitle": "Network Engineer", "name": "Ava Taylor", "email": "avataylor@example.com"}^|^400
