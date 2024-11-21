@@ -1,0 +1,11 @@
+Consent-ID,withBalance,Content-Type,PSU-ID,statusCode
+c47b3b00-5c48-4a8d-89d1-1b5a362f72f8,true,application/json,PSU1001,200
+d5a2c5a3-9c62-4b8d-bec9-2a5d1b1c5f2e,false,text/plain,PSU1002,401
+a3f5b094-b5b4-4f2a-9c6a-bff4d5a1c7e1,true,application/xml,PSU1003,200
+f9d4c5ab-1c5d-4e9e-8a9d-37fd5a1d9f2e,false,application/json,PSU1004,400
+e8c5b2a7-1c9d-4a6e-8b9e-2a7d7b1c3f2e,true,text/html,PSU1005,200
+b7f5d4a1-7c9d-4e6e-9b8e-3a2d5b1c4f2e,false,text/plain,PSU1006,401
+c8d5a3b4-6c8d-4e7e-89d2-1b4a372f72f9,true,application/xml,PSU1007,200
+d6a4c4a2-8c63-4b7d-aec8-2b5e1b1c5f3e,false,application/json,PSU1008,400
+a4f6b195-b6b5-4f3a-8c7a-cff5d5a2c8e1,true,text/html,PSU1009,200
+f8d3c4ab-2c6d-4f8e-7a9d-47fd6a2d8f3e,false,text/plain,PSU1010,401
