@@ -1,0 +1,5 @@
+trigger_id,status_code
+"trigger1","404"
+"trigger2","500"
+"invalid","404"
+"error","500"
