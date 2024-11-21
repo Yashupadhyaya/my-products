@@ -1,0 +1,11 @@
+koreUserId,botId,accountId,Authorization,X-Auth-token,X-CORRELATION-ID,customerId,email,alternatePhoneNumber,isAlternateMobileNumber,phone,isPrimaryMobileNumber,location,statusCode
+u123456,b123456,a123456,Auth123,xAuthToken123,1001,1045300,john.doe@example.com,9876543210,true,1234567890,true,New York,200
+u234567,b234567,a234567,Auth456,xAuthToken456,1002,1045301,jane.smith@example.com,9876543211,false,1234567891,true,Los Angeles,200
+u345678,b345678,a345678,Auth789,xAuthToken789,1003,1045302,mike.jones@example.com,9876543212,true,1234567892,false,Chicago,200
+u456789,b456789,a456789,Auth012,xAuthToken012,1004,1045303,emma.johnson@example.com,9876543213,false,1234567893,true,Houston,200
+u567890,b567890,a567890,Auth345,xAuthToken345,1005,1045304,william.brown@example.com,9876543214,true,1234567894,false,Phoenix,200
+u678901,b678901,a678901,Auth678,xAuthToken678,1006,1045305,olivia.davis@example.com,9876543215,false,1234567895,true,Philadelphia,200
+u789012,b789012,a789012,Auth901,xAuthToken901,1007,1045306,noah.miller@example.com,9876543216,true,1234567896,false,San Antonio,200
+u890123,b890123,a890123,Auth234,xAuthToken234,1008,1045307,ava.wilson@example.com,9876543217,false,1234567897,true,Dallas,200
+u901234,b901234,a901234,Auth567,xAuthToken567,1009,1045308,mason.moore@example.com,9876543218,true,1234567898,false,San Diego,200
+u012345,b012345,a012345,Auth890,xAuthToken890,1010,1045309,sophia.taylor@example.com,9876543219,false,1234567899,true,San Jose,200
