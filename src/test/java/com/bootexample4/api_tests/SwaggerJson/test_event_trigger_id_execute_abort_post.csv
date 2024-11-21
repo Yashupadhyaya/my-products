@@ -1,0 +1,5 @@
+trigger_id,status_code
+"abc123","404"
+"xyz789","400"
+"invalid","404"
+"","400"
