@@ -1,0 +1,11 @@
+message^|^statusCode^|^scenario
+Hello world^|^200^|^Test1
+Welcome user^|^200^|^Test2
+Login successful^|^200^|^Test3
+Registration complete^|^200^|^Test4
+Password reset^|^200^|^Test5
+Account activated^|^200^|^Test6
+Session expired^|^200^|^Test7
+Subscription renewed^|^200^|^Test8
+Email sent^|^200^|^Test9
+Profile updated^|^200^|^Test10
