@@ -1,0 +1,13 @@
+appointmentReason,appointmentComments,appointmentId,statusCode,scenario
+"Agendamento para Instalação de Fibra","Installation scheduled at customer request","SA-562403",200,"successful operation"
+"Invalid Reason","Invalid comment for bad request","0",400,"Bad Request"
+"Unauthorized Reason","Unauthorized access attempt","-1",401,"Unauthorized"
+"Forbidden Reason","Access denied due to scope","-2",403,"Forbidden - Scope Not Permitted"
+"Not Found Reason","Resource does not exist","-3",404,"Not Found"
+"Not Acceptable Reason","Request is not acceptable","-4",406,"Not Acceptable"
+"Precondition Failed Reason","Precondition failed","-5",412,"Not Acceptable"
+"Locked Reason","Resource is locked","-6",423,"Locked"
+"Quota Exceeded Reason","Too many requests made","-7",429,"Too Many Requests - Exceeded Quota"
+"Server Error Reason","Internal server error occurred","-8",500,"Internal Server Error"
+"Service Unavailable Reason","Service is currently unavailable","-9",503,"Service Unavailable"
+"Gateway Timeout Reason","Gateway timed out","-10",504,"Gateway Timeout"
