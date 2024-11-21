@@ -1,0 +1,11 @@
+"ProductID,ProductName,ProductDescription,ProductPrice,ProductCategory,ProductQuantity
+001,Apple iPhone 12,The latest model of iPhone,999,Electronics,100
+002,Samsung Galaxy S21,High performance Android phone,899,Electronics,150
+003,Dell XPS 13,A powerful laptop for all your needs,1199,Computers,75
+004,Instant Pot Duo,7-in-1 Electric Pressure Cooker,89,Kitchen Appliances,200
+005,Kindle Paperwhite,Now Waterproof with more than 2x the Storage,129.99,Electronics,120
+006,Levi's Men's 501 Original Fit Jeans,Classic straight-fit jeans,59.50,Clothing,300
+007,The Alchemist, A novel by Paulo Coelho,11.99,Books,500
+008,Nike Revolution 5, Men's Running Shoe,65,Sports & Outdoors,250
+009,Fitbit Charge 4, Fitness and Activity Tracker,129.95,Health & Fitness,180
+010,Canon EOS M50, Mirrorless Vlogging Camera,649,Photography,85"
