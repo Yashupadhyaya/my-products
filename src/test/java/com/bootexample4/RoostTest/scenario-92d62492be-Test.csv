@@ -1,0 +1,4 @@
+METHOD^|^URL^|^REQ_HEADERS^|^REQ_BODY^|^RESPONSE_CODE^|^RESPONSE_BODY
+POST^|^http://0.0.0.0:4012/accounts^|^{"commit-hash":"928d28d"}^|^{"email":"test@example.com"}^|^201^|^{"api-version":"1.0.0","commit-hash":"928d28d"}
+POST^|^http://0.0.0.0:4012/authorizations^|^{"Token":"apiKey"}^|^{"email":"test@example.com"}^|^201^|^{"id":"uuid","name":"test","email":"test@example.com","createdAt":"2021-09-30T11:35:00Z","updatedAt":"2021-09-30T11:35:00Z","api-version":"1.0.0","location":"http://0.0.0.0:4012/authorizations/uuid"}
+GET^|^http://0.0.0.0:4012/authorizations^|^{"Token":"apiKey"}^|^{}^|^200^|^{"total":1,"authorizations":[{"id":"uuid","name":"test","email":"test@example.com","createdAt":"2021-09-30T11:35:00Z","updatedAt":"2021-09-30T11:35:00Z"}],"api-version":"1.0.0"}
