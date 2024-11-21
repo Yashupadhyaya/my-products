@@ -1,0 +1,11 @@
+UserID,FirstName,LastName,Email,PhoneNumber,BirthDate,SignUpDate,LastLoginDate
+1,John,Doe,johndoe@example.com,1234567890,1980-02-15,2020-05-01,2021-10-15
+2,Jane,Doe,janedoe@example.com,0987654321,1982-05-20,2019-08-12,2021-10-16
+3,James,Smith,jamessmith@example.com,1112223334,1975-10-10,2018-07-02,2021-10-17
+4,Jenny,Johnson,jennyjohnson@example.com,2244668800,1985-06-06,2021-08-07,2021-10-18
+5,Jack,Jackson,jackjackson@example.com,5566778899,1988-03-25,2020-01-02,2021-10-19
+6,Jill,Jacobson,jilljacobson@example.com,9988776655,1979-09-28,2019-11-15,2021-10-20
+7,Joe,Jefferson,joejefferson@example.com,1122334455,1981-04-09,2018-04-22,2021-10-21
+8,Jessica,Jenson,jessicajenson@example.com,6677889900,1987-07-17,2020-02-10,2021-10-22
+9,Jacob,Jacobs,jacobjacobs@example.com,2211334455,1978-11-15,2019-12-20,2021-10-23
+10,Jasmine,Jones,jasminejones@example.com,7766554433,1986-08-20,2021-01-10,2021-10-24
