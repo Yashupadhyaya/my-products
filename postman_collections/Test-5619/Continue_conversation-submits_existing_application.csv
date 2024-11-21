@@ -1,0 +1,4 @@
+form-type,form-instance-id,type,status,currentViewId,nextViewId,statusCode,scenario
+"customer_onboarding","123","new","active","view1","view2",200,"Successful Evaluation"
+"credit_application","456","existing","inactive","view3","view4",400,"Bad Request Response"
+"customer_onboarding","789","new","active","view5","view6",500,"Internal Server Error Response"

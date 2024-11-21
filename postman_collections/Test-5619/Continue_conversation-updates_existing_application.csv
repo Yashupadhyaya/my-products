@@ -1,0 +1,11 @@
+form-type,form-instance-id,type,status,currentViewId,nextViewId,statusCode,scenario
+"customer_onboarding","1","string","active","view1","view2",200,"Successful Evaluation"
+"credit_application","2","string","inactive","view2","view3",400,"Bad Request Response"
+"customer_onboarding","3","string","active","view3","view4",500,"Internal Server Error Response"
+"credit_application","4","string","inactive","view4","view5",200,"Successful Evaluation"
+"customer_onboarding","5","string","active","view5","view6",400,"Bad Request Response"
+"credit_application","6","string","inactive","view6","view7",500,"Internal Server Error Response"
+"customer_onboarding","7","string","active","view7","view8",200,"Successful Evaluation"
+"credit_application","8","string","inactive","view8","view9",400,"Bad Request Response"
+"customer_onboarding","9","string","active","view9","view10",500,"Internal Server Error Response"
+"credit_application","10","string","inactive","view10","view11",200,"Successful Evaluation"
