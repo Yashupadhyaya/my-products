@@ -1,0 +1,11 @@
+username,email,age,gender,join_date,location,statusCode
+johnDoe,johnDoe@gmail.com,25,Male,2022-08-28,Los Angeles,200
+janedoe,janedoe@gmail.com,32,Female,2022-09-12,New York,202
+alexsmith,alexsmith@gmail.com,30,Male,2021-06-10,San Francisco,200
+lisabrown,lisabrown@gmail.com,28,Female,2020-03-14,Chicago,202
+ryanjones,ryanjones@gmail.com,35,Male,2022-05-25,Boston,200
+ericking,ericking@gmail.com,40,Male,2019-04-17,Houston,202
+emilyjohnson,emilyjohnson@gmail.com,34,Female,2020-07-20,Seattle,200
+brianlee,brianlee@gmail.com,29,Male,2019-08-15,San Diego,202
+rebeccataylor,rebeccataylor@gmail.com,38,Female,2021-02-28,Denver,200
+michellethomas,michellethomas@gmail.com,33,Female,2020-11-19,Austin,202
