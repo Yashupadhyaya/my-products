@@ -1,0 +1,11 @@
+Authorization,authType,firstName,lastName,email,phoneNumber,topic,message,availableTime,chatHistory,cif,statusCode
+Authorized,Authorized,James,William,James@gmail.com,9787643445,Routing and Account Number,Unable to find my routing number.,nighttime,<html formatted message sent as string>,1045310,Active
+Authorized,Authorized,Emma,Watson,Emma@gmail.com,9787643446,Credit Card,Can I increase my credit limit?,afternoon,<html formatted message sent as string>,1045311,Active
+Authorized,Authorized,Olivia,Smith,Olivia@gmail.com,9787643447,Debit Card,Where can I find my card number?,morning,<html formatted message sent as string>,1045312,Active
+Authorized,Authorized,Noah,Brown,Noah@gmail.com,9787643448,Loan,How do I apply for a loan?,morning,<html formatted message sent as string>,1045313,Active
+Authorized,Authorized,Isabella,Garcia,Isabella@gmail.com,9787643449,Investment,What are the investment options available?,afternoon,<html formatted message sent as string>,1045314,Active
+Authorized,Authorized,Sophia,Jones,Sophia@gmail.com,9787643450,Savings Account,How can I open a savings account?,nighttime,<html formatted message sent as string>,1045315,Active
+Authorized,Authorized,Liam,Miller,Liam@gmail.com,9787643451,Checking Account,What is the minimum balance requirement?,afternoon,<html formatted message sent as string>,1045316,Active
+Authorized,Authorized,Ava,Davis,Ava@gmail.com,9787643452,Wire Transfer,Can I send money internationally?,nighttime,<html formatted message sent as string>,1045317,Active
+Authorized,Authorized,William,Johnson,William@gmail.com,9787643453,Online Banking,How do I set up online banking?,morning,<html formatted message sent as string>,1045318,Active
+Authorized,Authorized,Mia,Wilson,Mia@gmail.com,9787643454,Mobile Banking,How do I download the mobile banking app?,afternoon,<html formatted message sent as string>,1045319,Active
