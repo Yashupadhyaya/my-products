@@ -1,0 +1,11 @@
+userId,userName,email,age,gender,registrationDate,statusCode
+1,Jacob,jacob@email.com,34,Male,2012-04-23,200
+2,Emily,emily@email.com,30,Female,2015-03-20,200
+3,Michael,michael@email.com,22,Male,2018-10-12,200
+4,Emma,emma@email.com,28,Female,2013-11-09,200
+5,Joshua,joshua@email.com,40,Male,2010-01-15,200
+6,Sophia,sophia@email.com,35,Female,2012-07-01,200
+7,Matthew,matthew@email.com,24,Male,2019-06-16,200
+8,Olivia,olivia@email.com,31,Female,2014-09-30,200
+9,Andrew,andrew@email.com,27,Male,2013-03-21,200
+10,Isabella,isabella@email.com,29,Female,2015-12-05,200
