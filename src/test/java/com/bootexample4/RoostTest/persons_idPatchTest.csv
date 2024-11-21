@@ -1,0 +1,11 @@
+initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference
+J,John,M,Doe,1980-01-01,New York City,0123456789,username@example.com,10010,123,A,US,1
+M,Mary,P,Smith,1985-03-15,Los Angeles,0123456789,username@example.com,90001,456,B,US,2
+T,Tom,H,Jones,1990-07-22,Chicago,0123456789,username@example.com,60601,789,C,US,3
+E,Emily,S,Brown,1995-11-04,Houston,0123456789,username@example.com,77001,1011,D,US,4
+W,William,D,Green,2000-02-19,Phoenix,0123456789,username@example.com,85001,1213,E,US,5
+A,Amanda,J,White,2005-05-26,Philadelphia,0123456789,username@example.com,19101,1415,F,US,6
+B,Benjamin,K,Black,2010-08-11,San Antonio,0123456789,username@example.com,78201,1617,G,US,7
+C,Chloe,L,Gray,2015-11-18,San Diego,0123456789,username@example.com,92101,1819,H,US,8
+D,Daniel,M,Red,2020-02-25,Dallas,0123456789,username@example.com,75201,2021,I,US,9
+F,Frank,N,Blue,2025-05-09,San Jose,0123456789,username@example.com,95101,2223,J,US,10
