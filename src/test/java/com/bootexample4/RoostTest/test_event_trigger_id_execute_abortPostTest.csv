@@ -1,0 +1,11 @@
+statusCode^|^scenario
+200^|^Scenario1
+404^|^Scenario2
+500^|^Scenario3
+403^|^Scenario4
+401^|^Scenario5
+302^|^Scenario6
+201^|^Scenario7
+204^|^Scenario8
+400^|^Scenario9
+503^|^Scenario10
