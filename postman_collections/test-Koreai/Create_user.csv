@@ -1,0 +1,6 @@
+id,username,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+1,johnDoe,John,Doe,johnDoe@email.com,johnDoe123,123456789,Active,500,Internal Server Error
+2,janeDoe,Jane,Doe,janeDoe@email.com,janeDoe123,987654321,Active,500,Internal Server Error
+3,alexSmith,Alex,Smith,alexSmith@email.com,alexSmith123,111222333,Inactive,500,Internal Server Error
+4,emmaJohnson,Emma,Johnson,emmaJohnson@email.com,emmaJohnson123,444555666,Active,500,Internal Server Error
+5,jackBrown,Jack,Brown,jackBrown@email.com,jackBrown123,777888999,Inactive,500,Internal Server Error
