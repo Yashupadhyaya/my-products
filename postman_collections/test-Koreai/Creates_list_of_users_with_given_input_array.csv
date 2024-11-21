@@ -1,0 +1,11 @@
+id,username,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+1,alex12,Alex,Smith,alexsmith@gmail.com,Pass@123,1234567890,active,500,Server error responses: Internal Server Error
+2,john34,John,Mason,johnmason@gmail.com,Word#456,9876543210,inactive,500,Server error responses: Internal Server Error
+3,mary56,Mary,Johnson,maryjohnson@gmail.com,123Abc##,5432167890,suspended,500,Server error responses: Internal Server Error
+4,steve897,Steve,Clark,steveclark@gmail.com,Pass!336,7890654321,active,500,Server error responses: Internal Server Error
+5,lucy09,Lucy,Doe,lucydoe@gmail.com,MyPass#12,8796304521,inactive,500,Server error responses: Internal Server Error
+6,james54,James,Brown,jamesbrown@gmail.com,Book2&56,6751240893,active,500,Server error responses: Internal Server Error
+7,sarah23,Sarah,Jackson,sarahjackson@gmail.com,Love#349,3691782450,suspended,500,Server error responses: Internal Server Error
+8,will67,Will,Turner,willturner@gmail.com,Pass4*78,1230968574,active,500,Server error responses: Internal Server Error
+9,emma89,Emma,Miller,emmamiller@gmail.com,Abc#567,9078563412,inactive,500,Server error responses: Internal Server Error
+10,sam987,Sam,Moore,sammoore@gmail.com,567Bcd!!,6543278901,suspended,500,Server error responses: Internal Server Error
