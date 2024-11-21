@@ -1,0 +1,5 @@
+cocNumber,cocBranchNumber,city,tradeName,phone,email,statusCode,scenario
+"12345678"^|"123456789012"^|"New York"^|"TradeName1"^|"1234567890"^|"email1@test.com",200,"successful operation, existing branch returned"
+"23456789"^|"234567890123"^|"Los Angeles"^|"TradeName2"^|"2345678901"^|"email2@test.com",201,"successful operation, branch created"
+"34567890"^|"345678901234"^|"Chicago"^|"TradeName3"^|"3456789012"^|"email3@test.com",400,"Bad Request"
+"45678901"^|"456789012345"^|"Houston"^|"TradeName4"^|"4567890123"^|"email4@test.com",401,"Authentication Required"
