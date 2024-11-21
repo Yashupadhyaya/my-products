@@ -1,0 +1,3 @@
+client,email,otp,statusCode,scenario
+client1,email1,otp1,201,Successful responses: Created
+client2,email2,otp2,400,Client error responses: Bad Request

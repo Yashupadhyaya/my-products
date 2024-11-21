@@ -1,0 +1,4 @@
+id,statusCode,scenario
+1,200,Successful responses: OK
+2,400,Client error responses: Bad Request
+3,401,Client error responses: Unauthorized

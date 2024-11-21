@@ -1,0 +1,5 @@
+credential-url,size,offset,id,statusCode,scenario
+<string>,0,0,urn:uuid:30b05962-2d78-0f31-1a9c-eadf0493892b,200,Successful responses: OK
+<string>,0,0,dab35b93-0709-96bf-fcba-720d82b1cba9,200,Successful responses: OK
+error/code,0,0,,400,Client error responses: Bad Request
+error/code,0,0,,401,Client error responses: Unauthorized
