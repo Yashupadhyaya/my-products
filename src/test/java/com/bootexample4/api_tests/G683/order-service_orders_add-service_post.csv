@@ -1,0 +1,9 @@
+channel,X-Trace-Id,username,entityId,status_code
+"channel1","trace1","user1","entity1","201"
+"channel2","trace2","user2","entity2","400"
+"channel3","trace3","user3","entity3","401"
+"channel4","trace4","user4","entity4","403"
+"channel5","trace5","user5","entity5","405"
+"channel6","trace6","user6","entity6","409"
+"channel7","trace7","user7","entity7","422"
+"channel8","trace8","user8","entity8","500"
