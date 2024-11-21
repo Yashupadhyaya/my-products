@@ -1,0 +1,5 @@
+trigger_id,file_path,status_code
+"trigger1","/path/to/file1.txt","404"
+"trigger2","/path/to/file2.json","500"
+"invalid","/nonexistent/file","404"
+"error","/error/file.txt","500"
