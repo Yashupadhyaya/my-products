@@ -1,0 +1,6 @@
+form-type,form-instance-id,type,status,currentViewId,nextViewId,statusCode,scenario
+"customer_onboarding","1","string","400","view1","view2",400,"Bad Request Response"
+"credit_application","2","string","200","view3","view4",200,"Successful Evaluation"
+"customer_onboarding","3","string","500","view5","view6",500,"Internal Server Error Response"
+"credit_application","4","string","400","view7","view8",400,"Bad Request Response"
+"customer_onboarding","5","string","200","view9","view10",200,"Successful Evaluation"
