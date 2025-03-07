@@ -1,0 +1,11 @@
+id,statusCode,scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851,200,Successful operation
+a390f1ee-6c54-4b01-90e6-d701748f0852,404,Not found
+b490f1ee-6c54-4b01-90e6-d701748f0853,200,Successful operation
+c590f1ee-6c54-4b01-90e6-d701748f0854,404,Not found
+d690f1ee-6c54-4b01-90e6-d701748f0855,200,Successful operation
+e790f1ee-6c54-4b01-90e6-d701748f0856,404,Not found
+f890f1ee-6c54-4b01-90e6-d701748f0857,200,Successful operation
+g990f1ee-6c54-4b01-90e6-d701748f0858,404,Not found
+h100f1ee-6c54-4b01-90e6-d701748f0859,200,Successful operation
+i110f1ee-6c54-4b01-90e6-d701748f0860,404,Not found
