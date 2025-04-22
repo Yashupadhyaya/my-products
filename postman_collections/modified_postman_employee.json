@@ -1,0 +1,460 @@
+{
+  "item": [
+    {
+      "id": "e97593db-4f90-47fb-b0a0-e31c961a8a60",
+      "name": "employees",
+      "item": [
+        {
+          "id": "b196ece7-1d1c-48d8-b545-d0bf5075267d",
+          "name": "Searches employees.",
+          "request": {
+            "name": "Searches employees.",
+            "description": {
+              "content": "By passing in the appropriate options you can apply filters to your search operationId: getEmployees\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "employees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "searchString",
+                  "value": "{{searchString}}",
+                  "description": "Pass an optional search string for the look up"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a6133cab-609f-406b-b15a-ac6844c5f2f6",
+              "name": "Search results matching the filter criteria",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "searchString",
+                      "value": "{{searchString}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"email\": \"john.smith@acme-corp.com\",\n    \"jobTitle\": \"System Analyst\",\n    \"name\": \"John Smith\",\n    \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n  },\n  {\n    \"email\": \"john.smith@acme-corp.com\",\n    \"jobTitle\": \"System Analyst\",\n    \"name\": \"John Smith\",\n    \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f06f9a12-887d-49ea-8ede-ca3effc6b141",
+              "name": "Bad input",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "searchString",
+                      "value": "{{searchString}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// ------------existing_test_case------------\n\n// Assume we're using a simple calculator software for this example\n\nconst {Calculator} = require('./Calculator'); // path might be different\n\n// existing test case\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n});\n\n// ------------import_details------------\n\n// Imports go here\n// In this case, we imported the Calculator class\n\n// ------------source_code------------\n\n// Assume the Calculator class looks something like this:\n\nclass Calculator {\n   add(a, b) {\n      return a + b;\n   }\n   subtract(a, b) {\n      return a - b;\n   }\n   // ..other methods go here\n}\n\nmodule.exports = { Calculator };\n\n// ------------updated_test_case------------\n\n// Now, adding a new test case for subtract method in the calculator\n// Considering the existing test case for add method, we will follow the same structure.\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n\n   // an updated test case for subtract method\n   test('test subtract method', () => {\n      const calc = new Calculator();\n      expect(calc.subtract(5, 3)).toBe(2);\n   });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b904d600-c12f-49e3-a855-dc755a04c0ad",
+          "name": "adds an employee",
+          "request": {
+            "name": "adds an employee",
+            "description": {
+              "content": "Adds an employee to the system",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "employees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"{{email}}\",\n    \"jobTitle\": \"{{jobTitle}}\",\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "a5246ac5-5bfc-4139-96e8-8fa8449ae5f1",
+              "name": "employee created",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"{{email}}\",\n    \"jobTitle\": \"{{jobTitle}}\",\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "243a4f69-c045-4abd-b208-68b5e7eb7309",
+              "name": "invalid input, object invalid",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"{{email}}\",\n    \"jobTitle\": \"{{jobTitle}}\",\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "4e125617-fc05-4206-893b-f3e2edfc4592",
+              "name": "an existing employee already exists",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"{{email}}\",\n    \"jobTitle\": \"{{jobTitle}}\",\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// ------------existing_test_case------------\n\n// Assume we're using a simple calculator software for this example\n\nconst {Calculator} = require('./Calculator'); // path might be different\n\n// existing test case\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n});\n\n// ------------import_details------------\n\n// Imports go here\n// In this case, we imported the Calculator class\n\n// ------------source_code------------\n\n// Assume the Calculator class looks something like this:\n\nclass Calculator {\n   add(a, b) {\n      return a + b;\n   }\n   subtract(a, b) {\n      return a - b;\n   }\n   // ..other methods go here\n}\n\nmodule.exports = { Calculator };\n\n// ------------updated_test_case------------\n\n// Now, adding a new test case for subtract method in the calculator\n// Considering the existing test case for add method, we will follow the same structure.\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n\n   // an updated test case for subtract method\n   test('test subtract method', () => {\n      const calc = new Calculator();\n      expect(calc.subtract(5, 3)).toBe(2);\n   });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "73d8e768-e481-42d8-b14d-2d772883a7ce",
+          "name": "Gets an employee by ID.",
+          "request": {
+            "name": "Gets an employee by ID.",
+            "description": {
+              "content": "Retrieves an employee by the associated ID\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "employees",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "{{id}}",
+                  "key": "id",
+                  "description": "(Required) Employee ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bc35bb48-995b-4ced-adee-71ec16a0d1a3",
+              "name": "Successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{id}}",
+                      "key": "id",
+                      "description": "(Required) Employee ID"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"email\": \"john.smith@acme-corp.com\",\n  \"jobTitle\": \"System Analyst\",\n  \"name\": \"John Smith\",\n  \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "899af44c-d1c5-4210-9194-0aa286644ba3",
+              "name": "Not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{id}}",
+                      "key": "id",
+                      "description": "(Required) Employee ID"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// ------------existing_test_case------------\n\n// Assume we're using a simple calculator software for this example\n\nconst {Calculator} = require('./Calculator'); // path might be different\n\n// existing test case\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n});\n\n// ------------import_details------------\n\n// Imports go here\n// In this case, we imported the Calculator class\n\n// ------------source_code------------\n\n// Assume the Calculator class looks something like this:\n\nclass Calculator {\n   add(a, b) {\n      return a + b;\n   }\n   subtract(a, b) {\n      return a - b;\n   }\n   // ..other methods go here\n}\n\nmodule.exports = { Calculator };\n\n// ------------updated_test_case------------\n\n// Now, adding a new test case for subtract method in the calculator\n// Considering the existing test case for add method, we will follow the same structure.\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n\n   // an updated test case for subtract method\n   test('test subtract method', () => {\n      const calc = new Calculator();\n      expect(calc.subtract(5, 3)).toBe(2);\n   });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "07f293b6-7b5a-4e25-ac0b-12986527d728",
+    "name": "Employee Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
