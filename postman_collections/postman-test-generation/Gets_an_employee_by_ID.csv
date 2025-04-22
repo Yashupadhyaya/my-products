@@ -1,0 +1,6 @@
+id,statusCode,scenario
+"d290f1ee-6c54-4b01-90e6-d701748f0851",200,"Successful operation"
+"d529f2ee-9b77-4a82-9e8b-e792e83e4bf3",404,"Not found"
+"d662f3ee-7c88-4d42-9d8c-f963e93c5cf4",200,"Successful operation"
+"d795f4ee-5d99-4c63-9d8d-g094e95d6df5",404,"Not found"
+"d926f5ee-4ba9-4b82-9d8e-h195e96e7ef6",200,"Successful operation"
