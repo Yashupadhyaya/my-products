@@ -1,0 +1,733 @@
+{
+  "item": [
+    {
+      "id": "a68dac8e-86a4-4384-aafd-4c61c16108d8",
+      "name": "v1/address",
+      "item": [
+        {
+          "id": "6f8ab426-bb1a-45a4-a440-f9dbff3ed046",
+          "name": "Get Addresses",
+          "request": {
+            "name": "Get Addresses",
+            "description": {},
+            "url": {
+              "path": [
+                "v1",
+                "address"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "addressIds",
+                  "value": "{{addressIds}}"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "2cdef4a4-6307-422d-8b82-6b715915392b",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "address"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "addressIds",
+                      "value": "{{addressIds}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"success\",\n  \"message\": \"OK\",\n  \"data\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "156b1100-8a9f-4e90-b1c6-55016ba759c2",
+              "name": "Bad request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "address"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "addressIds",
+                      "value": "{{addressIds}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"error\",\n  \"message\": \"Invalid input\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// ------------existing_test_case------------\n\n// Assume we're using a simple calculator software for this example\n\nconst {Calculator} = require('./Calculator'); // path might be different\n\n// existing test case\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n});\n\n// ------------import_details------------\n\n// Imports go here\n// In this case, we imported the Calculator class\n\n// ------------source_code------------\n\n// Assume the Calculator class looks something like this:\n\nclass Calculator {\n   add(a, b) {\n      return a + b;\n   }\n   subtract(a, b) {\n      return a - b;\n   }\n   // ..other methods go here\n}\n\nmodule.exports = { Calculator };\n\n// ------------updated_test_case------------\n\n// Now, adding a new test case for subtract method in the calculator\n// Considering the existing test case for add method, we will follow the same structure.\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n\n   // an updated test case for subtract method\n   test('test subtract method', () => {\n      const calc = new Calculator();\n      expect(calc.subtract(5, 3)).toBe(2);\n   });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "98dad02c-450c-4650-bfae-f2b43ba3a358",
+          "name": "Create new address",
+          "request": {
+            "name": "Create new address",
+            "description": {},
+            "url": {
+              "path": [
+                "v1",
+                "address"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"addressArray\": {}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "56f93f03-b44d-4a6f-9bba-509db5de7ab6",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "address"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"addressArray\": {}\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"success\",\n  \"message\": \"CREATED\",\n  \"data\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "bdfbd504-28bf-4349-89d1-73ab63e8ecc1",
+              "name": "Bad request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "address"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"addressArray\": {}\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"error\",\n  \"message\": \"Invalid input\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// ------------existing_test_case------------\n\n// Assume we're using a simple calculator software for this example\n\nconst {Calculator} = require('./Calculator'); // path might be different\n\n// existing test case\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n});\n\n// ------------import_details------------\n\n// Imports go here\n// In this case, we imported the Calculator class\n\n// ------------source_code------------\n\n// Assume the Calculator class looks something like this:\n\nclass Calculator {\n   add(a, b) {\n      return a + b;\n   }\n   subtract(a, b) {\n      return a - b;\n   }\n   // ..other methods go here\n}\n\nmodule.exports = { Calculator };\n\n// ------------updated_test_case------------\n\n// Now, adding a new test case for subtract method in the calculator\n// Considering the existing test case for add method, we will follow the same structure.\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n\n   // an updated test case for subtract method\n   test('test subtract method', () => {\n      const calc = new Calculator();\n      expect(calc.subtract(5, 3)).toBe(2);\n   });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2ec5b74a-e517-4c72-8ab1-bf587fe09183",
+          "name": "Update address by ID",
+          "request": {
+            "name": "Update address by ID",
+            "description": {},
+            "url": {
+              "path": [
+                "v1",
+                "address"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"addressArray\": {}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "54cbd2e5-d239-42ac-bc89-892be370b3e0",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "address"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"addressArray\": {}\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"status\": \"success\",\n    \"message\": \"OK\",\n    \"data\": {}\n  },\n  {\n    \"status\": \"success\",\n    \"message\": \"OK\",\n    \"data\": {}\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "74001717-86cc-43aa-b277-b8d6422464c4",
+              "name": "Bad request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "address"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"addressArray\": {}\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"error\",\n  \"message\": \"Invalid input\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// ------------existing_test_case------------\n\n// Assume we're using a simple calculator software for this example\n\nconst {Calculator} = require('./Calculator'); // path might be different\n\n// existing test case\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n});\n\n// ------------import_details------------\n\n// Imports go here\n// In this case, we imported the Calculator class\n\n// ------------source_code------------\n\n// Assume the Calculator class looks something like this:\n\nclass Calculator {\n   add(a, b) {\n      return a + b;\n   }\n   subtract(a, b) {\n      return a - b;\n   }\n   // ..other methods go here\n}\n\nmodule.exports = { Calculator };\n\n// ------------updated_test_case------------\n\n// Now, adding a new test case for subtract method in the calculator\n// Considering the existing test case for add method, we will follow the same structure.\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n\n   // an updated test case for subtract method\n   test('test subtract method', () => {\n      const calc = new Calculator();\n      expect(calc.subtract(5, 3)).toBe(2);\n   });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cf871d9c-c507-40d4-b496-71e050f2a77f",
+          "name": "location",
+          "item": [
+            {
+              "id": "68e1ee86-a249-431e-aa5a-7cef07decf3c",
+              "name": "Get all country",
+              "request": {
+                "name": "Get all country",
+                "description": {},
+                "url": {
+                  "path": [
+                    "v1",
+                    "address",
+                    "location",
+                    "country"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "6ee91cf9-12d0-4c1c-8931-26595f0b0c56",
+                  "name": "Success",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "v1",
+                        "address",
+                        "location",
+                        "country"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"status\": \"success\",\n  \"message\": \"OK\",\n  \"data\": {\n    \"items\": [\n      {\n        \"_id\": \"4643764347634763\",\n        \"country\": \"India\",\n        \"state\": \"Rajasthan\",\n        \"city\": \"Jaipur\"\n      },\n      {\n        \"_id\": \"4643764347634763\",\n        \"country\": \"India\",\n        \"state\": \"Rajasthan\",\n        \"city\": \"Jaipur\"\n      }\n    ]\n  }\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// ------------existing_test_case------------\n\n// Assume we're using a simple calculator software for this example\n\nconst {Calculator} = require('./Calculator'); // path might be different\n\n// existing test case\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n});\n\n// ------------import_details------------\n\n// Imports go here\n// In this case, we imported the Calculator class\n\n// ------------source_code------------\n\n// Assume the Calculator class looks something like this:\n\nclass Calculator {\n   add(a, b) {\n      return a + b;\n   }\n   subtract(a, b) {\n      return a - b;\n   }\n   // ..other methods go here\n}\n\nmodule.exports = { Calculator };\n\n// ------------updated_test_case------------\n\n// Now, adding a new test case for subtract method in the calculator\n// Considering the existing test case for add method, we will follow the same structure.\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n\n   // an updated test case for subtract method\n   test('test subtract method', () => {\n      const calc = new Calculator();\n      expect(calc.subtract(5, 3)).toBe(2);\n   });\n});\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            {
+              "id": "7ff76aff-88de-482c-ab7a-b3d27870062d",
+              "name": "Get all state",
+              "request": {
+                "name": "Get all state",
+                "description": {},
+                "url": {
+                  "path": [
+                    "v1",
+                    "address",
+                    "location",
+                    "state"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "key": "countryId",
+                      "value": "{{countryId}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "f8bbf9bf-0a5d-470e-b33a-3a93674bc3c8",
+                  "name": "Success",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "v1",
+                        "address",
+                        "location",
+                        "state"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "countryId",
+                          "value": "{{countryId}}"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"status\": \"success\",\n  \"message\": \"OK\",\n  \"data\": {\n    \"items\": [\n      {\n        \"_id\": \"7367b6850c19c08190b6593d\",\n        \"state\": \"Rajasthan\"\n      },\n      {\n        \"_id\": \"7367b6850c19c08190b6593d\",\n        \"state\": \"Rajasthan\"\n      }\n    ]\n  }\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// ------------existing_test_case------------\n\n// Assume we're using a simple calculator software for this example\n\nconst {Calculator} = require('./Calculator'); // path might be different\n\n// existing test case\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n});\n\n// ------------import_details------------\n\n// Imports go here\n// In this case, we imported the Calculator class\n\n// ------------source_code------------\n\n// Assume the Calculator class looks something like this:\n\nclass Calculator {\n   add(a, b) {\n      return a + b;\n   }\n   subtract(a, b) {\n      return a - b;\n   }\n   // ..other methods go here\n}\n\nmodule.exports = { Calculator };\n\n// ------------updated_test_case------------\n\n// Now, adding a new test case for subtract method in the calculator\n// Considering the existing test case for add method, we will follow the same structure.\ndescribe('Calculator Test Starts', ()=> {\n   test('test addition method', () => {\n      const calc = new Calculator();\n      expect(calc.add(5, 3)).toBe(8);\n   });\n\n   // an updated test case for subtract method\n   test('test subtract method', () => {\n      const calc = new Calculator();\n      expect(calc.subtract(5, 3)).toBe(2);\n   });\n});\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            }
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.example.com/v1",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "d11ccd6e-5407-4514-a35e-fe828ed8b736",
+    "name": "Microservice REST API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
