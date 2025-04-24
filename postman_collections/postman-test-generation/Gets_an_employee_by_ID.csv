@@ -1,0 +1,11 @@
+id,statusCode,scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851,200,Successful operation
+a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6,404,Not found
+a4b3c2d1-e6f5-g8h7-i0j9-k8l7m6n5o4p3,404,Not found
+e9d8f7g6-h5i4-j3k2-l1m0-n9o8p7q6r5s4,200,Successful operation
+t3u2v1w0-x9y8-z7a6-b5c4-d3e2f1g0h9i8,404,Not found
+j7k6l5m4-n3o2-p1q0-r9s8-t7u6v5w4x3y2,200,Successful operation
+z1a2b3c4-d5e6-f7g8-h9i0-j1k2l3m4n5o6,404,Not found
+p5q4r3s2-t1u0-v9w8-x7y6-z5a4b3c2d1e0,200,Successful operation
+f9g8h7i6-j5k4-l3m2-n1o0-p9q8r7s6t5u4,404,Not found
+v3w2x1y0-z9a8-b7c6-d5e4-f3g2h1i0j9k8,200,Successful operation
