@@ -1,0 +1,6 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+"sampleProject-1","Main API Call","API Call description","GET","Linked API call","Linked API call description","POST",200,Success
+"sampleProject-2","Main API Call","API Call description","PUT","Linked API call","Linked API call description","GET",200,Success
+"sampleProject-3","Main API Call","API Call description","POST","Linked API call","Linked API call description","PATCH",401,"Unauthorized"
+"sampleProject-4","Main API Call","API Call description","PATCH","Linked API call","Linked API call description","PUT",401,"Unauthorized"
+"sampleProject-5","Main API Call","API Call description","DELETE","Linked API call","Linked API call description","DELETE",200,Success

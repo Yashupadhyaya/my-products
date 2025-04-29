@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+"TR123",20,"PR456","data_file1.json","application/json",300,200,"Success"
+"TR124",40,"PR789","data_file2.pdf","application/pdf",500,400,"Invalid parameters."
+"TR125",60,"PR101","data_file3.xml","application/xml",700,401,"Unauthorized."
+"TR126",80,"PR102","data_file4.txt","text/plain",900,404,"Not Found."
+"TR127",100,"PR103","data_file5.jpg","image/jpeg",350,200,"Success"
+"TR128",120,"PR104","data_file6.gif","image/gif",550,400,"Invalid parameters."
+"TR129",140,"PR105","data_file7.csv","text/csv",750,401,"Unauthorized."
+"TR130",160,"PR106","data_file8.bmp","image/bmp",950,404,"Not Found."

@@ -1,0 +1,9 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+"TR1","PK1","file1","application/json",1502,200,"Success"
+"TR2","PK2","file2","text/plain",2301,400,"Invalid parameters"
+"TR3","PK3","file3","application/xml",2001,401,"Unauthorized"
+"TR4","PK4","file4","application/pdf",3000,404,"Not Found"
+"TR5","PK5","file5","text/html",2550,200,"Success"
+"TR6","PK6","file6","image/png",3250,400,"Invalid parameters"
+"TR7","PK7","file7","video/mp4",4500,401,"Unauthorized"
+"TR8","PK8","file8","audio/mp3",3500,404,"Not Found"

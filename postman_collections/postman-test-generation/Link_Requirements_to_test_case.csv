@@ -1,0 +1,7 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"KEY-1"^|"PROJ-1"^|"ISSUE-1"^|"REQUIREMENT-1"^|200^|"Success"
+"KEY-2"^|"PROJ-2"^|"ISSUE-2"^|"REQUIREMENT-2"^|200^|"Success"
+"KEY-3"^|"PROJ-3"^|"ISSUE-3"^|"REQUIREMENT-Extra3"^|401^|"Unauthorized"
+"KEY-4"^|"PROJ-4"^|"ISSUE-4"^|"REQUIREMENT-Extra4"^|401^|"Unauthorized"
+"KEY-Random5"^|"PROJ-Random5"^|"ISSUE-Random5"^|"REQUIREMENT-Random5"^|401^|"Unauthorized"
+"KEY-Random6"^|"PROJ-Random6"^|"ISSUE-Random6"^|"REQUIREMENT-Random6"^|401^|"Unauthorized"
