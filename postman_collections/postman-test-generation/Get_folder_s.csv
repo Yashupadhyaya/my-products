@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1"^|"75962a71-55bf-4995-a236-d19c546ccea6"^|2^|0^|"TE"^|200^|"Successfully get folder(s)."
+"Folder inside another folder"^|"e9a141e1-2fc8-48a8-87c2-c704e47e2596"^|2^|0^|"TE"^|200^|"Successfully get folder(s)."
+"abc123"^|"xyz456"^|4^|2^|"PK"^|400^|"Invalid parameters"
+"def456"^|"uvw789"^|3^|1^|"PK1"^|401^|"Unauthorized"
+"ghi789"^|"rst012"^|5^|3^|"PK2"^|404^|"Not Found"

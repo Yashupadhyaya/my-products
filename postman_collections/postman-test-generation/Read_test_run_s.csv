@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","CycleName","1.0.0","ec6c4eb3-8b27-4af2-ad1e-71abe3bbd290","items","DE-1",200,"Successful responses: OK"
+5,1,"UN-KN-2","CycleTest","2.1.0","hj57c4eb3-8b27-4af2-ad5r-71abe3bsja12","values","UN-1",400,"Invalid parameters"
+3,0,"DE-TR-3","CycleName3","3.0.0","df2fgheb3-7y12-4af5-vbn5-31abe3ghop9i","items","DE-3",401,"Unauthorized"
+4,2,"GH-BC-4","CycleTest4","4.0.0","km57eb3-4hhy-9uio-ponm-lop12cvbnm98","types","GH-4",404,"Not Found"

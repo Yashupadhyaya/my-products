@@ -1,0 +1,13 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+"TR123","PK567","image.jpg","image/jpeg",5242880,200,"Success"
+"TR124","PK568","video.mp4","video/mp4",10485760,200,"Success"
+"TR125","PK569","document.pdf","application/pdf",30720,200,"Success"
+"TR126","PK570","audio.mp3","audio/mpeg",5120,400,"Invalid parameters"
+"TR127","PK571","file.txt","text/plain",10240,400,"Invalid parameters"
+"TR128","PK572","presentation.ppt","application/vnd.ms-powerpoint",20480,400,"Invalid parameters"
+"TR129","PK573","spreadsheet.xls","application/vnd.ms-excel",40960,401,"Unauthorized"
+"TR130","PK574","sourcecode.java","text/x-java-source",81920,401,"Unauthorized"
+"TR131","PK575","database.bak","application/x-msdownload",163840,401,"Unauthorized"
+"TR132","PK576","archive.zip","application/zip",327680,404,"Not Found"
+"TR133","PK577","executable.exe","application/x-msdownload",655360,404,"Not Found"
+"TR134","PK578","markup.html","text/html",1280,404,"Not Found"
