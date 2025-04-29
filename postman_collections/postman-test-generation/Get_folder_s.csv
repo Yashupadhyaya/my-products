@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+Folder 1,b130bfbc-bb00-4675-a57f-ef08c4a8d2cc,2,0,TE,200,Successfully get folder(s).
+Folder inside another folder,31e65317-acdc-45b4-a72f-38af8e741d92,2,0,TE,200,Successfully get folder(s).
+Folder 3,random-invalid-parentId,invalid-limit,invalid-offset,invalid-project-key,400,Invalid parameters.
+Folder 4,another-random-invalid-parentId,invalid-limit,invalid-offset,invalid-project-key,401,Unauthorized.
+Folder 5,random-invalid-parentId-again,invalid-limit,invalid-offset,invalid-project-key,404,Not Found.

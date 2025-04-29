@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,Folder 1,f2f909b0-0db6-4806-9bc4-5c5a03f62eef,200,Successfully created folder(s).
+TE,Folder inside another folder,1d9de6b4-8f75-407e-9bb8-54ccf747e595,200,Successfully created folder(s).
+PR2,Invalid Folder,123abcd-456efg,400,Invalid parameters.
+PR3,NoNameFolder,noID,401,Unauthorized.
+PR4,NotFoundFolder,notExistID,404,Not Found.

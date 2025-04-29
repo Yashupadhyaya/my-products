@@ -1,0 +1,11 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+tr-123,p-abc,file1,application/json,55,200,Success
+tr-456,p-def,file2,application/json,75,400,Invalid parameters
+tr-789,p-ghi,file3,application/json,35,401,Unauthorized
+tr-321,p-jkl,file4,application/json,90,404,Not Found
+tr-654,p-mno,file5,application/json,60,200,Success
+tr-987,p-pqr,file6,application/json,80,400,Invalid parameters
+tr-213,p-stu,file7,application/json,50,401,Unauthorized
+tr-546,p-vwx,file8,application/json,85,404,Not Found
+tr-879,p-yza,file9,application/json,45,200,Success
+tr-312,p-bcd,file10,application/json,95,400,Invalid parameters

@@ -1,0 +1,13 @@
+attachmentId,project-key,statusCode,scenario
+342566,PRJ102,400,"Invalid parameters."
+435678,PRJ405,401,"Unauthorized."
+579234,PRJ307,404,"Not Found."
+986534,PRJ908,400,"Invalid parameters."
+123456,PRJ501,401,"Unauthorized."
+654123,PRJ205,404,"Not Found."
+849355,PRJ311,400,"Invalid parameters."
+736283,PRJ123,401,"Unauthorized."
+976232,PRJ441,404,"Not Found."
+291021,PRJ672,400,"Invalid parameters."
+879266,PRJ292,401,"Unauthorized."
+506233,PRJ541,404,"Not Found."

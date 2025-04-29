@@ -1,0 +1,5 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle","1.0.0","John D",100,10,"PROJ101",200,"Successful responses: OK"
+"My Second Cycle","UNVERSIONED","Emma L",200,20,"PROJ102",400,"Invalid parameters"
+"Random APi","11.0.0","Adam S",300,30,"PROJ103",401,"Unauthorized"
+"My Third Cycle","UNVERSIONED","Samuel R",400,40,"PROJ104",404,"Not Found"

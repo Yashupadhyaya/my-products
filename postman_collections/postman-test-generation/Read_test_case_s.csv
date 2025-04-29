@@ -1,0 +1,5 @@
+jiraFields,ttmFields,limit,nextPageToken,project-key,statusCode,scenario
+"{\"id\": \"f0f8d6f6-5ced-46b0-911d-ce31af3bfaf5\",\"key\": \"TE-1\",\"project\": \"TE\",\"testType\": \"Manual\",\"fields\": {\"summary\": \"Test 1 status\",\"description\": \"Test 1 description\",\"status\": \"Backlog\",\"priority\": \"High\",\"labels\": [\"My Label\"]},\"customFields\": [{\"key\": \"customField_10001\",\"name\": \"A custom field\",\"value\": \"Some value\"}]","{\"precondition\": \"A precondition\",\"steps\": [{\"testCaseKey\": \"TE-2\",\"testCaseId\": \"10000\"},{\"description\": \"Login\",\"expectedResult\": \"Login should work\"},{\"description\": \"Logout\",\"expectedResult\": \"Logout should work\"}]",1,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",TE,200,Successfully retrieved test cases information.
+"{\"message\": \"bad data\"}","{}",999,"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",OP,400,Invalid parameters.
+"{\"message\": \"unauthorized\"}","{}",999,"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",PE,401,Unauthorized.
+"{\"message\": \"not found\"}","{}",999,"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",KE,404,Not Found.
