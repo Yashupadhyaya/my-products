@@ -1,0 +1,11 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+"1.0.0","CycleName","DE-TR-1","TestSuite1","Login",200,"Successful responses: OK"
+"2.0.1","CycleName2","DE-TR-2","TestSuite2","Logout",400,"Invalid parameters"
+"3.0.0","CycleName3","DE-TR-3","TestSuite3","Register",401,"Unauthorized"
+"4.0.1","CycleName4","DE-TR-4","TestSuite4","Update Profile",404,"Not Found"
+"5.0.0","CycleName5","DE-TR-5","TestSuite5","Delete Account",200,"Successful responses: OK"
+"1.1.0","CycleName6","DE-TR-6","TestSuite6","Add to Cart",400,"Invalid parameters"
+"2.2.0","CycleName7","DE-TR-7","TestSuite7","Remove from Cart",401,"Unauthorized"
+"3.3.0","CycleName8","DE-TR-8","TestSuite8","Checkout",404,"Not Found"
+"4.4.0","CycleName9","DE-TR-9","TestSuite9","Order History",200,"Successful responses: OK"
+"5.0.5","CycleName10","DE-TR-10","TestSuite10","Track Order",400,"Invalid parameters"

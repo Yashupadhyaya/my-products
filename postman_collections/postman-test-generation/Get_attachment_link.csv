@@ -1,0 +1,11 @@
+attachmentId,project-key,statusCode,scenario
+1,PROJECT-1,400,"Invalid parameters."
+2,PROJECT-2,401,"Unauthorized."
+3,PROJECT-3,404,"Not Found."
+4,PROJECT-4,400,"Invalid parameters."
+5,PROJECT-5,401,"Unauthorized."
+6,PROJECT-6,404,"Not Found."
+7,PROJECT-7,400,"Invalid parameters."
+8,PROJECT-8,401,"Unauthorized."
+9,PROJECT-9,404,"Not Found."
+10,PROJECT-10,400,"Invalid parameters."

@@ -1,0 +1,6 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+Project-A,API payload 1,Creation of first API,Task,Link to API 1,Main API for project,Story,200,Success
+Project-B,API payload 2,Creation of second API,Task,Link to API 2,Backup API for project,Story,200,Success
+Random-X,Failed API,API failure,Bug,Link to failed API,Unexpected failure detected,Bug,401,Unauthorized
+Project-C,API payload 3,API for testing,Task,Link to API 3,Testing API,Story,200,Success 
+Project-D,API payload 4,Production API,Task,Link to API 4,Final API for project,Story,401,Unauthorized
