@@ -1,0 +1,5 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+"TR-14253",2,"PJK-8942","File1.txt","text/plain",1322,200,"Success"
+"TR-13925",3,"PJK-8658","Invalid.jpg","image/jpeg",9999,400,"Invalid parameters."
+"TR-10204",5,"PJK-7432","Unauthorized.png","image/png",7845,401,"Unauthorized."
+"TR-11369",1,"PJK-8078","NotFound.pdf","application/pdf",6589,404,"Not Found."

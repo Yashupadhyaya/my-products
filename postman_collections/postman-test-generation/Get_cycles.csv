@@ -1,0 +1,9 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle"^|"1.0.0"^|"John Doe"^|100^|1^|"proj-123"^|200^|"Successful responses: OK"
+"My Second Cycle"^|"UNVERSIONED"^|"Jane Doe"^|200^|2^|"proj-456"^|400^|"Invalid parameters"
+"My Third Cycle"^|"UNVERSIONED"^|"Robert Smith"^|300^|3^|"proj-789"^|401^|"Unauthorized"
+"Invalid Name"^|"4.5.6"^|"Invalid Assignee"^|400^|4^|"Invalid Proj-Key"^|404^|"Not Found"
+"ExtraName1"^|"2.0.0"^|"ExtraAssignee1"^|500^|5^|"extra-proj1"^|200^|"Successful responses: OK"
+"ExtraName2"^|"3.0.0"^|"ExtraAssignee2"^|600^|6^|"extra-proj2"^|400^|"Invalid parameters"
+"ExtraName3"^|"4.0.0"^|"ExtraAssignee3"^|700^|7^|"extra-proj3"^|401^|"Unauthorized"
+"Invalid ExtraName"^|"5.0.0"^|"Invalid ExtraAssignee"^|800^|8^|"Invalid ExtraProj-Key"^|404^|"Not Found"
