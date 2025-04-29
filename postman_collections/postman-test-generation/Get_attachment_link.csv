@@ -1,0 +1,10 @@
+attachmentId,project-key,statusCode,scenario
+ATTH34,ProjectA,400,"Invalid parameters."
+ATTY45,ProjectB,401,"Unauthorized."
+ATTH01,ProjectC,404,"Not Found."
+ATKY23,ProjectD,400,"Invalid parameters."
+ATTZ56,ProjectE,401,"Unauthorized."
+ATTV67,ProjectF,404,"Not Found."
+ATBX90,ProjectG,400,"Invalid parameters."
+ATCY03,ProjectH,401,"Unauthorized."
+ATD21,ProjectI,404,"Not Found."

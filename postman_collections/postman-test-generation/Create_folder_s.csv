@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder 1",6f6c5e81-fd4c-429c-b29d-d967a57f699c,200,Successfully created folder(s).
+TE,"Folder inside another folder",1025001e-b96e-49ea-ab63-bd33794ec0ff,200,Successfully created folder(s).
+XY,"invalid_folder",abc1234def,400,Invalid parameters.
+YX,"unauthorized_folder",xyz5678,401,Unauthorized.
+ZX,"not_present_folder",klm9211,404,Not Found.
