@@ -1,0 +1,5 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,"project1","Folder","a75c5ab3-e491-4516-b8fc-2958cc4f36fc","http://example.com/api1",5,202,"The job to create the test cases was successfully scheduled."
+2,"project2","Folder inside parent folder","d713f5f6-d564-4885-8197-971a9a74b5a2","http://example.com/api2",10,400,"Invalid parameters"
+3,"project3","Folder","f592f092-7e8d-493e-9018-b558d66c6327","http://example.com/api3",8,401,"Unauthorized"
+4,"project4","Folder inside parent folder","3e7acfb1-fc3a-4f50-9bfa-fe8907a169f0","http://example.com/api4",7,404,"Not Found"

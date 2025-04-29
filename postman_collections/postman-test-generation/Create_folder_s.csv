@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,Folder 1,None,200,Successfully created folder(s).
+TE,Folder inside another folder,None,200,Successfully created folder(s).
+AB,Random Folder,d713f5f6-d564-4885-8197-971a8a74b1s2,400,Invalid parameters.
+AB,Random Folder,d713f5f6-d564-4885-8197-971a8a74b1s2,401,Unauthorized.
+AB,Random Folder,d713f5f6-d564-4885-8197-971a8a74b1s2,404,Not Found.

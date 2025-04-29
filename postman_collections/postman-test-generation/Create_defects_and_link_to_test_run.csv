@@ -1,0 +1,9 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,"TRK-1","PK-1","Summary 1","Description 1","IssueType 1","1.Summary 1","1.Description 1","1.IssueType 1",200,"Success"
+2,"TRK-2","PK-2","Summary 2","Description 2","IssueType 2","1.Summary 2","1.Description 2","1.IssueType 2",200,"Success"
+3,"TRK-3","PK-3","Summary 3","Description 3","IssueType 3","1.Summary 3","1.Description 3","1.IssueType 3",401,"Unauthorized"
+4,"TRK-4","PK-4","Summary 4","Description 4","IssueType 4","1.Summary 4","1.Description 4","1.IssueType 4",401,"Unauthorized"
+5,"TRK-5","PK-5","Summary 5","Description 5","IssueType 5","1.Summary 5","1.Description 5","1.IssueType 5",200,"Success"
+6,"TRK-6","PK-6","Summary 6","Description 6","IssueType 6","1.Summary 6","1.Description 6","1.IssueType 6",401,"Unauthorized"
+7,"TRK-7","PK-7","Summary 7","Description 7","IssueType 7","1.Summary 7","1.Description 7","1.IssueType 7",200,"Success"
+8,"TRK-8","PK-8","Summary 8","Description 8","IssueType 8","1.Summary 8","1.Description 8","1.IssueType 8",401,"Unauthorized"
