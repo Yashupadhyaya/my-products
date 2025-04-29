@@ -1,0 +1,7 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle"^|"1.0.0"^|"John"^|"10"^|"0"^|"ABC123"^|200^|"Successful responses: OK"
+"My Second Cycle"^|"UNVERSIONED"^|"Adam"^|"20"^|"10"^|"DEF456"^|200^|"Successful responses: OK"
+"My Third Cycle"^|"UNVERSIONED"^|"Eve"^|"30"^|"20"^|"GHI789"^|200^|"Successful responses: OK"
+"RandomCycle1"^|"0.0.0"^|"RandomAssignee1"^|"100"^|"90"^|"XYZ123"^|400^|"Invalid parameters"
+"RandomCycle2"^|"0.0.0"^|"RandomAssignee2"^|"110"^|"100"^|"JKL456"^|401^|"Unauthorized"
+"RandomCycle3"^|"0.0.0"^|"RandomAssignee3"^|"120"^|"110"^|"MNO789"^|404^|"Not Found"
