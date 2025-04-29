@@ -1,0 +1,11 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+TR1,PROJ1,file1,text/plain,2000,200,Success
+TR2,PROJ2,file2,application/json,1500,400,Invalid parameters
+TR3,PROJ3,file3,text/html,3000,401,Unauthorized
+TR4,PROJ4,file4,application/pdf,2500,404,Not Found
+TR5,PROJ5,file5,image/png,3500,200,Success
+TR6,PROJ6,file6,application/xml,1800,400,Invalid parameters
+TR7,PROJ7,file7,text/csv,4000,401,Unauthorized
+TR8,PROJ8,file8,text/css,4500,404,Not Found
+TR9,PROJ9,file9,image/jpeg,1300,200,Success
+TR10,PROJ10,file10,application/javascript,5000,400,Invalid parameters

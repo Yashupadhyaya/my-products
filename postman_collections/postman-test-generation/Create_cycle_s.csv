@@ -1,0 +1,6 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+API23,"My Cycle",ABCD1234,",",","1.0.0","My Second Cycle",",2025-04-28T08:19:28.6987362Z,2025-04-29T08:19:28.698736Z,","UNVERSIONED",200,"Successful responses: OK"
+API56,Invalid,XYZ7890,",",",Unrecognized,Invalid,",Invalid,Invalid,",Invalid,400,"Invalid parameters"
+API89,Invalid,LMP456,",",",Unrecognized,Invalid,",Invalid,Invalid,",Invalid,401,Unauthorized
+API12,Invalid,QRS234,",",",Unrecognized,Invalid,",Invalid,Invalid,",Invalid,404,"Not Found"
+API34,"My Third Cycle",",",",[\n      {\n        \"schemeName\": \"Environments\",\n        \"allowedValueName\": \"Development\"\n      },\n      {\n        \"schemeName\": \"Builds\",\n        \"value\": \"1.9.9\"\n      }\n],"UNVERSIONED","Folder inside parent folder",",Invalid,Invalid,",Invalid,200,"Successful responses: OK"
