@@ -1,0 +1,7 @@
+attachmentId,project-key,statusCode,scenario
+de4e8dd3-dfcb-4ef1-adb5-aee9e06117fc,"Project Alpha",400,"Invalid parameters"
+a3d4f567-93cb-45e1-9075-ae1e0a6171dc,"Project Beta",401,"Unauthorized"
+b2ff853c-1ac9-4901-9ab1-01a6a63e07d0,"Project Gamma",404,"Not Found"
+91af689d-6b5c-4f18-8d3e-2e1e0a6174de,"Project Delta",400,"Invalid parameters"
+c2bf653c-1bc9-7901-3ab1-01a6a03e27d1,"Project Epsilon",401,"Unauthorized"
+f3ff753c-4ac9-6901-5ab1-56a6a63e97d3,"Project Zeta",404,"Not Found"

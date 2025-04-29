@@ -1,0 +1,5 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"project1","v1.0","Cycle 1","/Folder1/Subfolder1",false,["run1", "run2"],200,"Successful responses: OK"
+"project2","v2.0","Cycle 2","/Folder2/Subfolder2",true,["run3", "run4"],400,"Invalid parameters"
+"project3","v3.0","Cycle 3","/Folder3/Subfolder3",true,["run5", "run6"],401,"Unauthorized"
+"project4","v4.0","Cycle 4","/Folder4/Subfolder4",false,["run7", "run8"],404,"Not Found"

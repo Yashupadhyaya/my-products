@@ -1,0 +1,5 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+"Key-1","Requirement Linked","A requirement with key Key-1 is linked","Success","Folder created","A new folder has been created","Success",200,"Success"
+"Key-2","Requirement not Linked","A requirement with key Key-2 is not linked","Failure","Folder creation failed","Unable to create a new folder inside parent folder","Failure",401,"Unauthorized"
+"Key-3","Random data","Random data without any linking relation","Unknown","Not applicable","No folders created, random transaction","Unknown",404,"Not Found"
+"Key-4","Invalid operation","Attempted an unauthorized operation with key Key-4","Failure","Folder creation error","Attempted creation of folder inside an inaccessible parent folder","Failure",403,"Forbidden"

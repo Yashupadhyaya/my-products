@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+'XYZ123',1,'Project1','file1.json','application/json',500,200,'Success'
+'ABC456',2,'Project2','file2.xml','application/xml',1000,400,'Invalid parameters'
+'DEF789',3,'Project3','file3.csv','text/csv',750,401,'Unauthorized'
+'GHI012',4,'Project4','file4.txt','text/plain',250,404,'Not Found'
+'JKL345',5,'Project5','file5.pdf','application/pdf',1250,200,'Success'
+'MNO678',6,'Project6','file6.docx','application/vnd.openxmlformats-officedocument.wordprocessingml.document',1500,400,'Invalid parameters'
+'PQR901',7,'Project7','file7.jpeg','image/jpeg',1750,401,'Unauthorized'
+'STU234',8,'Project8','file8.mp3','audio/mpeg',2000,404,'Not Found'

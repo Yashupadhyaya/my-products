@@ -1,0 +1,13 @@
+jiraFields,ttmFields,limit,nextPageToken,project-key,statusCode,scenario
+randomData1,randomData2,10,randomToken1,ProjectX,200,Successfully retrieved test cases information.
+randomData3,randomData4,20,randomToken2,ProjectY,200,Successfully retrieved test cases information.
+randomData5,randomData6,30,randomToken3,ProjectZ,200,Successfully retrieved test cases information.
+invalidData1,invalidData2,invalidLimit,invalidToken1,InvalidProject,400,Invalid parameters.
+invalidData3,invalidData4,invalidLimit,invalidToken2,InvalidProject,400,Invalid parameters.
+invalidData5,invalidData6,invalidLimit,invalidToken3,InvalidProject,400,Invalid parameters.
+unauthorizedData1,unauthorizedData2,unauthorizedLimit,unauthorizedToken1,UnauthorizedProject,401,Unauthorized.
+unauthorizedData3,unauthorizedData4,unauthorizedLimit,unauthorizedToken2,UnauthorizedProject,401,Unauthorized.
+unauthorizedData5,unauthorizedData6,unauthorizedLimit,unauthorizedToken3,UnauthorizedProject,401,Unauthorized.
+notFoundData1,notFoundData2,notFoundLimit,notFoundToken1,NotFoundProject,404,Not Found.
+notFoundData3,notFoundData4,notFoundLimit,notFoundToken2,NotFoundProject,404,Not Found.
+notFoundData5,notFoundData6,notFoundLimit,notFoundToken3,NotFoundProject,404,Not Found.
