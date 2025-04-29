@@ -1,0 +1,6 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle","1.0.0","John Doe",100,10,"Proj_123",200,"Successful responses: OK"
+"My Second Cycle","UNVERSIONED","Sam Smith",200,20,"Proj_456",400,"Invalid parameters"
+"My Third Cycle","UNVERSIONED","Amy Adams",300,30,"Proj_789",401,"Unauthorized"
+"Invalid Cycle","1.1.1","Invalid User",400,40,"Invalid_Proj",404,"Not Found"
+"Random Cycle","2.0.0","Random User",500,50,"Random_Proj",200,"Successful responses: OK"

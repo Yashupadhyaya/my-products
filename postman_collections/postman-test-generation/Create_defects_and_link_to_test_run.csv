@@ -1,0 +1,5 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,"test1","proj1","summary1","description1","issueType1","summary2","description2","issueType2",200,Success
+2,"test2","proj2","summary3","description3","issueType3","summary4","description4","issueType4",200,Success
+3,"test3","proj3","summary5","description5","issueType5","summary6","description6","issueType6",401,Unauthorized
+4,"test4","proj4","summary7","description7","issueType7","summary8","description8","issueType8",401,Unauthorized

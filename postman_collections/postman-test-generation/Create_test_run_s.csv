@@ -1,0 +1,7 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"project1"^|"version1"^|"cycle1"^|"path/to/folder1"^|true^|"[""run1"",""run2""]"^|200^|"Successful responses: OK"
+"project2"^|"version2"^|"cycle2"^|"path/to/folder2"^|false^|"[""run3"",""run4""]"^|200^|"Successful responses: OK"
+"randomproject"^|"randomversion"^|"randomcycle"^|"randompath"^|false^|"[""randomrun1"",""randomrun2""]"^|400^|"Invalid parameters"
+"randomproject2"^|"randomversion2"^|"randomcycle2"^|"randompath2"^|true^|"[""randomrun3"",""randomrun4""]"^|400^|"Invalid parameters"
+"unauthorizedproject"^|"unauthorizedversion"^|"unauthorizedcycle"^|"unauthorizedpath"^|false^|"[""unauthorizedrun""]"^|401^|"Unauthorized"
+"notfoundproject"^|"notfoundversion"^|"notfoundcycle"^|"notfoundpath"^|true^|"[""notfoundrun""]"^|404^|"Not Found"
