@@ -1,0 +1,5 @@
+CSVHeader,CSVHeader
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,"RUN-123","PROJ-1","Test API 1","Testing API for success response","Task","Create Folders","Create two folders in the system","Sub-task",200,"Success"
+2,"RUN-456","PROJ-2","Test API 2","Testing API for unauthorized access","Task","Create Sub-Folders","Create two sub-folders in the system","Sub-task",401,"Unauthorized"
+3,"RUN-789","PROJ-3","Test API 3","Testing API for random response","Task","Create Directories","Create two directories in the system","Sub-task",500,"Failure"

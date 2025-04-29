@@ -1,0 +1,5 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+ABC123,"My Cycle",John,2022-01-01T07:21:25.1837478Z,2022-01-02T07:21:25.1837475Z,"{\"schemeName\": \"Environments\",\"allowedValueName\": \"Development\"}","1.0.0","My Second Cycle",Doe,2025-04-28T07:21:25.1837478Z,2025-04-29T07:21:25.1837475Z,"{\"schemeName\": \"Builds\",\"value\": \"1.9.9\"}","UNVERSIONED",200,OK
+XYZ123,Random,Invalid,99-99-9999,99-99-9999,InvalidField,NoExist,InvalidName,None,99-99-9999,99-99-9999,InvalidValue,NoExist,400,"Invalid parameters"
+XYZ123,Random,None,99-99-9999,99-99-9999,InvalidField,NoExist,InvalidName,None,99-99-9999,99-99-9999,InvalidValue,NoExist,401,Unauthorized
+XYZ123,Random,None,99-99-9999,99-99-9999,InvalidField,NoExist,InvalidName,None,99-99-9999,99-99-9999,InvalidValue,NoExist,404,"Not Found"

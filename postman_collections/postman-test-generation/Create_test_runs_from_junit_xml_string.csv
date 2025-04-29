@@ -1,0 +1,5 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,DE-1,Login,200,Successful responses: OK
+0.0.0,InvalidCycle,NoKey,TestNA,InvalidData,400,Invalid parameters
+0.0.0,NotAuthorizedCycle,NoKey,TestNA,UnAuthorizedData,401,Unauthorized
+0.0.0,NotFoundCycle,NoKey,TestNA,NotFound,404,Not Found
