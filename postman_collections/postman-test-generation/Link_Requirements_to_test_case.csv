@@ -1,0 +1,9 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"1a2b3c4d","project1","Key-3","Key-1",200,"Success"
+"1a2b3c4e","project2","Key-5","Key-2",200,"Success"
+"1a2b3c4f","project3","Key-7","Key-1",200,"Success"
+"1a2b3c4g","project4","Key-9","Key-2",200,"Success"
+"1a2b3c4h","project1","Key-3","Key-1",401,"Unauthorized"
+"1a2b3c4i","project2","Key-5","Key-2",401,"Unauthorized"
+"1a2b3c4j","project3","Key-7","Key-1",401,"Unauthorized"
+"1a2b3c4k","project4","Key-9","Key-2",401,"Unauthorized"

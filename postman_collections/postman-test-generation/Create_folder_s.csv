@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder 1",null,200,"Successfully created folder(s)."
+TE,"Folder inside another folder","ef505fd1-b16e-484f-92b9-92b549e5c946",200,"Successfully created folder(s)."
+"XR3","Test Folder","5cd8fb20-8650-4141-8faf-8b690025bcb7",400,"Invalid parameters."
+"OPQ5","Example Folder","c17b9f98-a6fd-492b-a11c-4650d7d32491",401,"Unauthorized."
+"BA7","Check Folder","aac5336a-d4cd-4879-a9f8-4d3030ad44f1",404,"Not Found."

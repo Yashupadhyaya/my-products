@@ -1,0 +1,4 @@
+attachmentId,project-key,statusCode,scenario
+d1792e8d-621c-4c1f-b243-9d828d3fbcf9,"Folder",400,"Invalid parameters"
+5e2b6c7a-63b9-4f98-a2ed-c23158a83b64,"Folder inside parent folder",401,"Unauthorized"
+dbfd1c25-d6c3-4f5a-ab04-4d9a1c344f3d,"Folder",404,"Not Found"

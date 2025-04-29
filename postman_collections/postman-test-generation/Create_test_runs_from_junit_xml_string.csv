@@ -1,0 +1,11 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,TestSuite1,Login,200,Successful responses: OK
+1.0.0,CycleName,DE-TR-1,TestSuite2,Folder,400,Invalid parameters
+1.0.0,CycleName,DE-TR-1,TestSuite3,Folder inside parent folder,401,Unauthorized
+1.0.0,CycleName,DE-TR-1,TestSuite4,"bad data",404,Not Found
+1.0.0,CycleName,DE-TR-1,TestSuite5,"unauthorized",200,Successful responses: OK
+1.0.0,CycleName,DE-TR-1,TestSuite6,"not found",400,Invalid parameters
+1.0.0,CycleName,DE-TR-1,TestSuite7,Login,401,Unauthorized
+1.0.0,CycleName,DE-TR-1,TestSuite8,Folder,404,Not Found
+1.0.0,CycleName,DE-TR-1,TestSuite9,"bad data",200,Successful responses: OK
+1.0.0,CycleName,DE-TR-1,TestSuite10,"unauthorized",400,Invalid parameters
