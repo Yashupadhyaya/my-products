@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder",",200,"Successfully created folder(s)."
+TE,"Folder inside parent folder","63ebd752-0144-441e-a2c8-4acbdce647ce",200,"Successfully created folder(s)."
+PE,"Invalid Folder",",400,"Invalid parameters".
+BE,"Unauthorized Folder",",401,"Unauthorized".
+DE,"NotFound Folder",",404,"Not Found".
