@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1","9209c193-6b62-49d2-8072-96545c031186",2,0,"TE",200,"Successfully get folder(s)."
+"Folder inside another folder","9726ff48-4ed3-4672-91d2-1970aae0385c",2,0,"TE",200,"Successfully get folder(s)."
+"Invalid Folder","1283j223-492d-j892-8823-38ddc7618d92",3,1,"XYZ",400,"Invalid parameters."
+"Unauthorized Folder","un9kda3a-3hkd-j892-yr23-qnmdc7618d92",0,5,"ABC",401,"Unauthorized."
+"Not Found Folder","nf3ska5a-8nbd-j892-lo23-zbdnc7618d92",1,2,"XYZ",404,"Not Found."
