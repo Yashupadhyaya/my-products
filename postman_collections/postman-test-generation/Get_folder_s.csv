@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+Folder 1,056fae12-bdfb-4547-9d8f-c4ec993154c5,2,0,TE,200,Successfully get folder(s).
+Folder inside another folder,ccbb0110-b885-42a0-b0c6-d046adf3208e,2,0,TE,200,Successfully get folder(s).
+Invalid Folder,O03hfdi34-898x-x342-a9e8-43qrex5821,5,0,XYZ,400,Invalid parameters.
+Non-Existent,P03hfdu24-2432-g732-v909-lqreq58212,10,5,NTE,401,Unauthorized.
+Folder not found,L28gdpu14-631d-y122-q999-nereq58218,3,1,LTE,404,Not Found.

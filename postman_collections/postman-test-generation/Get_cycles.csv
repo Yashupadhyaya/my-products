@@ -1,0 +1,7 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle"^|"1.0.0"^|"Jerry"^|"100"^|"0"^|"Test-API-1"^|"200"^|"Successful responses: OK"
+"My Second Cycle"^|"UNVERSIONED"^|"Tom"^|"100"^|"10"^|"Test-API-2"^|"200"^|"Successful responses: OK"
+"Some Random Cycle"^|"3.0.0"^|"Spike"^|"50"^|"10"^|"Test-API-3"^|"400"^|"Invalid parameters."
+"My Third Cycle"^|"UNVERSIONED"^|"Butch"^|"200"^|"20"^|"Test-API-4"^|"401"^|"Unauthorized"
+"NoName Cycle"^|"2.0.0"^|"Nibbles"^|"100"^|"50"^|"Test-API-5"^|"404"^|"Not Found"
+"Random Cycle"^|"4.1.1"^|"Jerry"^|"50"^|"0"^|"Test-API-6"^|"400"^|"Invalid parameters."
