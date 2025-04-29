@@ -1,0 +1,7 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,"TestRun-1","Project-1","Summary 1","Description 1","Issue Type 1","Summary 1.1","Description 1.1","Issue Type 1.1",200,"Success"
+2,"TestRun-2","Project-2","Summary 2","Description 2","Issue Type 2","Summary 2.1","Description 2.1","Issue Type 2.1",200,"Success"
+3,"TestRun-3","Project-3","Summary 3","Description 3","Issue Type 3","Summary 3.1","Description 3.1","Issue Type 3.1",401,"Unauthorized"
+4,"TestRun-4","Project-4","Summary 4","Description 4","Issue Type 4","Summary 4.1","Description 4.1","Issue Type 4.1",401,"Unauthorized"
+5,"TestRun-5","Project-5","Random Summary","Random Description","Randomissue Type","Random Summary 1.1","Random Description 1.1","Random Issue Type 1.1",300,"Failure"
+6,"TestRun-6","Project-6","Random Summary 2","Random Description 2","Random Issue Type 2","Random Summary 2.2","Random Description 2.2","Random Issue Type 2.2",301,"Failure"

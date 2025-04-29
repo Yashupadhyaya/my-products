@@ -1,0 +1,5 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+"run1",1,"proj123","file1.txt","text/plain",2000,200,"Success"
+"run2",2,"proj456","file2.jpg","image/jpeg",3000,400,"Invalid parameters."
+"run3",3,"proj789","file3.pdf","application/pdf",4000,401,"Unauthorized."
+"run4",4,"proj012","file4.doc","application/msword",5000,404,"Not Found."

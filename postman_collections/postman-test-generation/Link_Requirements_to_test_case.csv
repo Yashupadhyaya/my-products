@@ -1,0 +1,7 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"abc123"^|"proj-1"^|"IV-321"^|"Key-1"^|200^|"Success"
+"def456"^|"proj-2"^|"IV-654"^|"Key-2"^|200^|"Success"
+"ghi789"^|"proj-3"^|"IV-987"^|"Key-1"^|401^|"Unauthorized"
+"jkl012"^|"proj-4"^|"IV-210"^|"Key-2"^|401^|"Unauthorized"
+"mno345"^|"proj-5"^|"IV-543"^|"Key-1"^|200^|"Success"
+"pqr678"^|"proj-6"^|"IV-876"^|"Key-2"^|401^|"Unauthorized"
