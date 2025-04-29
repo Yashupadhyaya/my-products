@@ -1,0 +1,9 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+abc1,proj1,file1.txt,text/plain,1024,200,Success
+abc2,proj2,file2.jpg,image/jpeg,2048,400,Invalid parameters
+abc3,proj3,file3.pdf,application/pdf,4096,401,Unauthorized
+abc4,proj4,file4.mp4,video/mp4,8192,404,Not Found
+abc5,proj5,file5.doc,application/msword,16384,200,Success
+abc6,proj6,file6.xls,application/vnd.ms-excel,32768,400,Invalid parameters
+abc7,proj7,file7.zip,application/zip,65536,401,Unauthorized
+abc8,proj8,file8.gif,image/gif,131072,404,Not Found

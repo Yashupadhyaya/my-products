@@ -1,0 +1,5 @@
+stepIndex,test-run-key,project-key,issueKey,1.issueKey,statusCode,scenario
+1,"TR-123","PRJ-456","Key-1","Key-2",200,"Success"
+2,"TR-789","PRJ-012","Key-3","Key-4",200,"Success"
+3,"TR-345","PRJ-678","Key-5","Key-6",401,"Unauthorized"
+4,"TR-901","PRJ-234","Key-7","Key-8",401,"Unauthorized"

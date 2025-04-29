@@ -1,0 +1,5 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+"abcdef-1234-5678",1,"proj123","file1.png","image/png",5000,200,"Success"
+"xyz-9876-5432",2,"proj567","file2.jpg","image/jpg",4000,400,"Invalid parameters"
+"uvw-2468-1357",3,"proj789","file3.gif","image/gif",6000,401,"Unauthorized"
+"ijk-8642-9753",4,"proj321","file4.pdf","application/pdf",7000,404,"Not Found"

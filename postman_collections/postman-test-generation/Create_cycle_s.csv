@@ -1,0 +1,6 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+abc123,"My Cycle",John Doe,not applicable,not applicable,not applicable,"1.0.0","My Second Cycle",Jane Doe,"2025-04-28T07:36:31.4177666Z","2025-04-29T07:36:31.4177663Z",not applicable,UNVERSIONED,200,Successful responses: OK
+def456,My Invalid Cycle,Invalid Assignee,not a date,not a date,invalid fields,versionless,Invalid Sub Cycle,Invalid Assignee,not a date,not a date,invalid fields,versionless,400,Invalid parameters
+ghi789,My Unauthorized Cycle,Unauthorized User,not a date,not a date,invalid fields,versionless,Unauthorized Sub Cycle,Unauthorized Assignee,not a date,not a date,invalid fields,versionless,401,Unauthorized
+jkl012,Cycle Not Found,Assignee Not Found,not a date,not a date,invalid fields,versionless,Sub Cycle Not Found,Assignee Not Found,not a date,not a date,invalid fields,versionless,404,Not Found
+mno345,"My Third Cycle",Assigned User,"2025-04-29T07:36:31.4177666Z","2025-04-30T07:36:31.4177663Z","Environments": "Development", "Builds" : "1.9.9",UNVERSIONED,"My Fourth Cycle",Assigned User,"2025-04-30T07:36:31.4177666Z","2025-05-01T07:36:31.4177663Z","Environments": "Development", "Builds" : "1.9.9","1.0.1",200,Successful responses: OK
