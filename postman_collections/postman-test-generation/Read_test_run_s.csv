@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"TRICENTIS","CycleName","1.0.0","DE-TR-1","https://api.ttm4j.tricentis.com/","DE-1",200,"Successful responses: OK"
+15,3,"PROJECTX","CycleX","2.0.0","X-PR-3","https://api.example.com/","X-2",400,"Invalid parameters"
+50,9,"PROJECTY","CycleY","3.0.0","Y-PR-4","https://api.test.com/","Y-3",401,"Unauthorized"
+100,20,"PROJECTZ","CycleZ","4.0.0","Z-PR-5","https://api.demo.com/","Z-4",404,"Not Found"
