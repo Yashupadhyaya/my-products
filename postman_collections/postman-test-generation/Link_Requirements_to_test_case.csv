@@ -1,0 +1,7 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"Key-1","Proj-1","Issue-1","1.IssueKey-1",200,"Success"
+"Key-2","Proj-2","Issue-2","1.IssueKey-2",200,"Success"
+"Key-3","Proj-3","Issue-3","1.IssueKey-3",200,"Success"
+"Key-4","Proj-4","Issue-4","1.IssueKey-4",401,"Unauthorized"
+"Key-5","Proj-5","Issue-5","1.IssueKey-5",401,"Unauthorized"
+"Key-6","Proj-6","Issue-6","1.IssueKey-6",401,"Unauthorized"

@@ -1,0 +1,5 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+"run1",1,"proj1","file1.json","application/json",2000,200,"Success"
+"run2",2,"proj2","file2.json","application/json",2500,400,"Invalid parameters."
+"run3",3,"proj3","file3.json","application/json",3000,401,"Unauthorized."
+"run4",4,"proj4","file4.json","application/json",3500,404,"Not Found."

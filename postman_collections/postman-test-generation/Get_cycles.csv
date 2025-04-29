@@ -1,0 +1,7 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle"^|"1.0.0"^|"John Doe"^|100^|0^|"Project1"^|200^|"Successful responses: OK"
+"My Second Cycle"^|"UNVERSIONED"^|"Jane Smith"^|100^|50^|"Project2"^|200^|"Successful responses: OK"
+"My Third Cycle"^|"UNVERSIONED"^|"David Warner"^|100^|100^|"Project3"^|200^|"Successful responses: OK"
+"Cycle404"^|"0.0.0"^|"Monty Python"^|200^|150^|"Project404"^|400^|"Invalid parameters"
+"Cycle401"^|"Unknown"^|"Uknown User"^|200^|200^|"Project401"^|401^|"Unauthorized"
+"CycleNotFound"^|"None"^|"Ghost User"^|200^|250^|"ProjectNF"^|404^|"Not Found"
