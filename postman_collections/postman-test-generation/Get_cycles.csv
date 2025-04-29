@@ -1,0 +1,10 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle"^|"1.0.0"^|"John Doe"^|"100"^|"0"^|"ProjectA"^|"200"^|"Successful responses: OK"
+"My Second Cycle"^|"UNVERSIONED"^|"Jane Doe"^|"100"^|"10"^|"ProjectB"^|"200"^|"Successful responses: OK"
+"My Third Cycle"^|"UNVERSIONED"^|"Robert Smith"^|"100"^|"20"^|"ProjectC"^|"200"^|"Successful responses: OK"
+"Invalid name"^|"Invalid version"^|"John Doe"^|"Invalid limit"^|"0"^|"ProjectA"^|"400"^|"Invalid parameters"
+"My Cycle"^|"1.0.0"^|"John Doe"^|"100"^|"0"^|"Invalid project-key"^|"401"^|"Unauthorized"
+"Invalid name"^|"1.0.0"^|"John Doe"^|"100"^|"0"^|"ProjectA"^|"404"^|"Not Found"
+"My Cycle"^|"Invalid version"^|"John Doe"^|"100"^|"0"^|"ProjectA"^|"400"^|"Invalid parameters"
+"My Cycle"^|"1.0.0"^|"Invalid assignee"^|"100"^|"0"^|"ProjectA"^|"401"^|"Unauthorized"
+"Invalid name"^|"Invalid version"^|"Invalid assignee"^|"Invalid limit"^|"0"^|"ProjectA"^|"404"^|"Not Found"
