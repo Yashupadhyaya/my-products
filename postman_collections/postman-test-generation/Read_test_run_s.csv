@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"ab87d1dd-6ca7-4b5b-b0fa-a1cb39b2daa1","fb6be305-af3a-4aef-ba35-2d444b2fec0b","d36a76cc-ba59-438b-92a3-184d91c14b03","DE-TR-1","https://api.ttm4j.tricentis.com/","DE-1",200,"Successful responses: OK"
+45,13,"4a5d5c19-9s85-4e4a-a4f0-5b82bb4676f0","a5b7d825-boulder-5b5b-a5fa-b2d39b3daa1","e24a78dc-u859-4h8b-9a2g-1t4c91c14b11","BW-UT-6","https://api.ttm4j.tricentis.com/","BW-2",400,"Invalid parameters"
+23,9,"cd5ef2cf-3s64-3c2a-b6f0-3f98be4676d1","fe4e7265-skyscraper-2d3d-7k7a-e3w5-dmnhgtr254d","k24e71dc-v950-7h8x-0a1x-i2k918c14b17","GH-YH-5","https://api.ttm4j.tricentis.com/","GH-3",401,"Unauthorized"
+34,11,"de5sd2cz-4f54-9z1a-e6t0-4d98se4676e2","sdc7265-panther-2e3e-7j7a-l3k5-dpomgtr274d","l21e74d1-k950-4h8x-0n1x-o2o912c14b18","OP-OP-8","https://api.ttm4j.tricentis.com/","OP-4",404,"Not Found"

@@ -1,0 +1,5 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,Login,Tricentis,200,"Successful responses: OK"
+1.0.1,CycleName1,DE-TR-2,Login1,Tricentis1,400,"Invalid parameters"
+1.0.2,CycleName2,DE-TR-3,Login2,Tricentis2,401,Unauthorized
+1.0.3,CycleName3,DE-TR-4,Login3,Tricentis3,404,"Not Found"
