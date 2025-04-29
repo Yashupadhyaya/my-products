@@ -1,0 +1,5 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+"adj1s-jia37-kaj3n","taskify","README.md","text/markdown",300,200,Success
+"bvs56-nks84-hgaapl","timerun","Test.docx","application/vnd.openxmlformats-officedocument.wordprocessingml.document",4000,400,"Invalid parameters."
+"cnh4f-qar89-apf3m","pipeline","report.pdf","application/pdf",5000,401,"Unauthorized."
+"gfe8g-qok45-dmf9n","protracker","thumbnail.jpg","image/jpeg",2000,404,"Not Found."
