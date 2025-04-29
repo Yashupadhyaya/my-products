@@ -1,0 +1,11 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,Login,"Functional",200,Successful responses: OK
+0.9.8,CycleTest,AE-TR-2,Signout,"Security",400,Invalid parameters
+1.1.2,CycleDevelopment,RE-TR-3,Signup,"Performance",401,Unauthorized
+2.0.0,CycleProduction,ME-TR-4,Settings,"Usability",404,Not Found
+1.5.0,CycleQA,TE-TR-5,Profile,"Compatibility",200,Successful responses: OK
+1.2.4,CycleName,DE-TR-1,Dashboard,"Reliability",400,Invalid parameters
+0.9.9,CycleTest,AE-TR-2,Inbox,"Efficiency",401,Unauthorized
+1.6.0,CycleDevelopment,RE-TR-3,Notifications,"Maintainability",404,Not Found
+3.0.0,CycleProduction,ME-TR-4,Messages,"Portability",200,Successful responses: OK
+1.0.1,CycleQA,TE-TR-5,Logout,"Installability",400,Invalid parameters

@@ -1,0 +1,9 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"Project1","v1.0","Cycle1","/Folder1",true,["TestRun1", "TestRun2"],200,"Successful responses: OK"
+"Project2","v2.0","Cycle2","/Folder2",false,["TestRun3", "TestRun4"],400,"Invalid parameters"
+"Project3","v3.0","Cycle3","/Folder3",true,["TestRun5", "TestRun6"],401,"Unauthorized"
+"Project4","v4.0","Cycle4","/Folder4",false,["TestRun7", "TestRun8"],404,"Not Found"
+"Project5","v5.0","Cycle5","/Folder5",true,["TestRun9", "TestRun10"],200,"Successful responses: OK"
+"Project6","v6.0","Cycle6","/Folder6",false,["TestRun11", "TestRun12"],400,"Invalid parameters"
+"Project7","v7.0","Cycle7","/Folder7",true,["TestRun13", "TestRun14"],401,"Unauthorized"
+"Project8","v8.0","Cycle8","/Folder8",false,["TestRun15", "TestRun16"],404,"Not Found"

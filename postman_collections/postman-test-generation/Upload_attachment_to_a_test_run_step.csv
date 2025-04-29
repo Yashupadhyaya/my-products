@@ -1,0 +1,7 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+TRK1,1,PRJ1^|"JSON_RESPONSE_1","application/json",1000,200^|"Success"
+TRK2,2,PRJ2^|"TEXT_ERROR_1","text/plain",500,400^|"Invalid parameters"
+TRK3,3,PRJ3^|"UNAUTH_RESPONSE_1","application/json",400,401^|"Unauthorized"
+TRK4,4,PRJ4^|"NOTFOUND_ERROR_1","text/plain",300,404^|"Not Found"
+TRK5,5,PRJ5^|"RANDOM_ERROR_1","text/plain",1200,504^|"Gateway Timeout"
+TRK6,6,PRJ6^|"JSON_RESPONSE_2","application/json",1500,200^|"Success"
