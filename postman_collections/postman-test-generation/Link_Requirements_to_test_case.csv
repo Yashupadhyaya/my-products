@@ -1,0 +1,11 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"1234","proj-1","ISSUE-001","ISSUE-002",200,"Success"
+"5678","proj-2","ISSUE-003","ISSUE-004",200,"Success"
+"9101","proj-3","ISSUE-005","ISSUE-006",401,"Unauthorized"
+"1213","proj-4","ISSUE-007","ISSUE-008",401,"Unauthorized"
+"1415","proj-5","ISSUE-009","ISSUE-010",200,"Success"
+"1617","proj-6","ISSUE-011","ISSUE-012",200,"Success"
+"1819","proj-7","ISSUE-013","ISSUE-014",401,"Unauthorized"
+"2021","proj-8","ISSUE-015","ISSUE-016",401,"Unauthorized"
+"2223","proj-9","ISSUE-017","ISSUE-018",200,"Success"
+"2425","proj-10","ISSUE-019","ISSUE-020",200,"Success"

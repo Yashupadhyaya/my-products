@@ -1,0 +1,6 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,TRK-01,PROJ-01,Test case 1,This is a test case,Bug,Sub test case 1,This sub test case is associated,Bug,200,Success
+2,TRK-02,PROJ-02,Test case 2,This is another test case,Bug,Sub test case 2,This sub test case is associated,Bug,200,Success
+3,TRK-03,PROJ-03,Test case 3,This is yet another test case,Bug,Sub test case 3,This sub test case is associated,Bug,401,Unauthorized
+4,TRK-04,PROJ-04,Test case 4,This is still another test case,Bug,Sub test case 4,This sub test case is associated,Bug,401,Unauthorized
+5,TRK-05,PROJ-05,Test case 5,This is the last test case,Bug,Sub test case 5,This sub test case is associated,Bug,200,Success

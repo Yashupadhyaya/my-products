@@ -1,0 +1,6 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle"^|"1.0.0"^|"John Doe"^|"20"^|"0"^|"PROJ-100"^|"200"^|"Successful responses: OK"
+"My Second Cycle"^|"1.1.1"^|"Mary Smith"^|"15"^|"5"^|"PROJ-101"^|"400"^|"Invalid parameters"
+"My Third Cycle"^|"UNVERSIONED"^|"Henry White"^|"10"^|"10"^|"PROJ-102"^|"401"^|"Unauthorized"
+"API Test"^|"2.0.0"^|"Emma Johnson"^|"25"^|"0"^|"PROJ-103"^|"404"^|"Not Found"
+"API Cycle Version"^|"UNRELEASED"^|"Alexander Lee"^|"30"^|"10"^|"PROJ-104"^|"200"^|"Successful responses: OK"

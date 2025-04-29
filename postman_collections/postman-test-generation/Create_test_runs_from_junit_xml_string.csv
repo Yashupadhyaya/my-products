@@ -1,0 +1,5 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+"1.0.0","CycleName","DE-TR-1","Functional","Login",200,"Successful responses: OK"
+"2.0.0","CycleName2","DE-TR-2","Regression","Logout",400,"Invalid parameters"
+"3.0.0","CycleName3","DE-TR-3","Performance","Register",401,"Unauthorized"
+"4.0.0","CycleName4","DE-TR-4","Security","Forgot Password",404,"Not Found"
