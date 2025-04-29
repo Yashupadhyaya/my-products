@@ -1,0 +1,9 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"string1","sample_project1","Key-1","Key-2",200,"Success"
+"string2","sample_project2","Key-3","Key-4",200,"Success"
+"string3","sample_project3","Key-5","Key-6",401,"Unauthorized"
+"string4","sample_project4","Key-7","Key-8",401,"Unauthorized"
+"string5","sample_project5","Key-9","Key-10",200,"Success"
+"string6","sample_project6","Key-11","Key-12",200,"Success"
+"string7","sample_project7","Key-13","Key-14",401,"Unauthorized"
+"string8","sample_project8","Key-15","Key-16",401,"Unauthorized"

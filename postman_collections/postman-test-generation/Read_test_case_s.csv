@@ -1,0 +1,5 @@
+jiraFields,ttmFields,limit,nextPageToken,project-key,statusCode,scenario
+"{\n\"id\": \"368434bb-5087-45be-8c2f-92f3c206afd6\",\n\"key\": \"TE-1\",\n\"project\": \"TE\",\n\"testType\": \"Manual\",\n\"fields\": {\n\"summary\": \"Test 1 status\",\n\"description\": \"Test 1 description\",\n\"status\": \"Backlog\",\n\"priority\": \"High\",\n\"labels\": [\n\"My Label\"\n]}}","{\n\"precondition\": \"A precondition\",\n\"steps\": [\n{\"testCaseKey\": \"TE-2\",\n\"testCaseId\": \"10000\"},{\n\"description\": \"Login\",\n\"expectedResult\": \"Login should work\"},{\n\"description\": \"Logout\",\n\"expectedResult\": \"Logout should work\"}]} ",1,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","TE",200,"Successfully retrieved test cases information."
+"{\n\"message\": \"bad data\"}","{\"type\": \"object\"}",1,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","TE",400,"Invalid parameters."
+"{\n\"message\": \"unauthorized\"}","{\"type\": \"object\"}",1,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","TE",401,"Unauthorized."
+"{\n\"message\": \"not found\"}","{\"type\": \"object\"}",1,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","TE",404,"Not Found."

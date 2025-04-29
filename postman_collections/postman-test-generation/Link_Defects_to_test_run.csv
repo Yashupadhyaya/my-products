@@ -1,0 +1,11 @@
+stepIndex,test-run-key,project-key,issueKey,1.issueKey,statusCode,scenario
+1,Tst-Run-1,Proj-Key-1,Key-1,Key-2,200,Success
+2,Tst-Run-2,Proj-Key-2,Key-1,Key-2,401,Unauthorized
+3,Tst-Run-3,Proj-Key-3,Key-1,Key-2,200,Success
+4,Tst-Run-4,Proj-Key-4,Key-1,Key-2,401,Unauthorized
+5,Tst-Run-5,Proj-Key-5,Key-1,Key-2,200,Success
+6,Tst-Run-6,Proj-Key-6,Key-1,Key-2,401,Unauthorized
+7,Tst-Run-7,Proj-Key-7,Key-1,Key-2,200,Success
+8,Tst-Run-8,Proj-Key-8,Key-1,Key-2,401,Unauthorized
+9,Tst-Run-9,Proj-Key-9,Key-1,Key-2,200,Success
+10,Tst-Run-10,Proj-Key-10,Key-1,Key-2,401,Unauthorized
