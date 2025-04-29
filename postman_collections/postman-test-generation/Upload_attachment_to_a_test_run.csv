@@ -1,0 +1,9 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+'123-test-run','ABC123Proj','file1.json','application/json',1024,200,'Success'
+'456-test-run','DEF456Proj','file2.xml','application/xml',2048,400,'Invalid parameters'
+'789-test-run','GHI789Proj','file3.txt','text/plain',3072,401,'Unauthorized'
+'321-test-run','JKL321Proj','file4.csv','text/csv',4096,404,'Not Found'
+'654-test-run','MNO654Proj','file5.html','text/html',5120,200,'Success'
+'987-test-run','PQR987Proj','file6.pdf','application/pdf',6144,400,'Invalid parameters'
+'135-test-run','STU135Proj','file7.doc','application/msword',7168,401,'Unauthorized'
+'246-test-run','VWX246Proj','file8.jpg','image/jpeg',8192,404,'Not Found'
