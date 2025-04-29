@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,Folder, ,200,Successfully created folder(s).
+TE,Folder inside parent folder,20e9ce60-1b49-41b9-9ee7-f1c955a55ae5,200,Successfully created folder(s).
+ZZ,InvalidFolder, ,400,Invalid parameters.
+XX,Unauthorized Folder,21dsr761-2c59-51c0-8rt7-h1b965a55bt7,401,Unauthorized.
+YY,Missed Folder,31eagle61-3d60-61d1-9ru8-i2c985b66iu8,404,Not Found.
