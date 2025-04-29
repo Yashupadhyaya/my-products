@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1",null,2,0,"TE",200,"Successfully get folder(s)."
+"Folder inside another folder","e8f3344a-d828-481a-baa9-2dda88b68a2e",2,0,"TE",200,"Successfully get folder(s)."
+"Bad Folder",null,5,null,"FAILPROJ",400,"Invalid parameters."
+"Private Folder",null,null,null,"PRIVATE",401,"Unauthorized."
+"NonExistent Folder","abc12345-1234-1234-1234-abcde12345fgh",null,null,"NOTFOUND",404,"Not Found."
