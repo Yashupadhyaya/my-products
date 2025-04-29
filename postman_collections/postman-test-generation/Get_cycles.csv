@@ -1,0 +1,6 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+My Cycle,1.0.0,John,100,0,proj123,200,Successful responses: OK
+My Second Cycle,Unversioned,Jane,200,10,proj456,400,"Invalid parameters"
+My Third Cycle,Unversioned,Tom,300,20,proj789,401,Unauthorized
+Cycle Four,2.0.0,Sarah,400,30,proj321,404,"Not Found"
+Cycle Five,1.1.1,Mike,500,40,proj654,403,"Invalid parameters"

@@ -1,0 +1,11 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,login suite,Login,200,"Successful responses: OK"
+1.0.1,CycleTwo,DE-TR-2,registration suite,Register,400,"Invalid parameters"
+2.0.0,CycleThree,DE-TR-3,profile suite,Profile,401,Unauthorized
+1.5.0,CycleFour,DE-TR-4,checkout suite,Checkout,404,"Not Found"
+3.0.0,CycleFive,DE-TR-5,payment suite,Payment,200,"Successful responses: OK"
+1.2.0,CycleSix,DE-TR-6,settings suite,Settings,400,"Invalid parameters"
+2.1.0,CycleSeven,DE-TR-7,friend suite,Friend,401,Unauthorized
+3.5.0,CycleEight,DE-TR-8,chat suite,Chat,404,"Not Found"
+4.0.0,CycleNine,DE-TR-9,feedback suite,Feedback,200,"Successful responses: OK"
+2.3.0,CycleTen,DE-TR-10,help suite,Help,400,"Invalid parameters"

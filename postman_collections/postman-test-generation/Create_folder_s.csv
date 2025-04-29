@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder 1",93ddf447-98fe-450f-b86e-3cd612514056,200,Successfully created folder(s).
+TE,"Folder inside another folder",bc7dd1c8-51ef-4b0c-a6dc-5bd16b7728e9,200,Successfully created folder(s).
+XY,"Invalid Folder",a98yz774-ghl3-78gj-56cx-9bf778y434x,400,Invalid parameters.
+QR,"Not Existing Folder",novalidID,401,Unauthorized.
+JP,"Empty Folder",00000000-0000-0000-0000-000000000000,404,Not Found.

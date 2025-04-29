@@ -1,0 +1,11 @@
+stepIndex,test-run-key,project-key,issueKey,1.issueKey,statusCode,scenario
+1,TRK-120,PK-348,Key-1,Key-1,200,Success
+2,TRK-121,PK-349,Key-2,Key-2,200,Success
+3,TRK-122,PK-350,Key-3,Key-1,401,Unauthorized
+4,TRK-123,PK-351,Key-4,Key-2,401,Unauthorized
+5,TRK-124,PK-352,Key-5,Key-1,200,Success
+6,TRK-125,PK-353,Key-6,Key-2,401,Unauthorized
+7,TRK-126,PK-354,Key-7,Key-1,200,Success
+8,TRK-127,PK-355,Key-8,Key-2,401,Unauthorized
+9,TRK-128,PK-356,Key-9,Key-1,200,Success
+10,TRK-129,PK-357,Key-10,Key-2,401,Unauthorized

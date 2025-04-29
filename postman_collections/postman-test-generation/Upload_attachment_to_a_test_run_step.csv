@@ -1,0 +1,5 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+TR-001,1,PR-001,fileA.jpg,image/jpeg,2500,200,"Success"
+TR-002,2,PR-002,fileB.png,image/png,3000,400,"Invalid parameters."
+TR-003,3,PR-003,fileC.pdf,application/pdf,5000,401,"Unauthorized."
+TR-004,4,PR-004,fileD.docx,application/msword,3500,404,"Not Found."
