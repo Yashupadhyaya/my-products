@@ -1,0 +1,7 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,"TRK-1234","PROJ-5678","Test summary 1","Test description 1","Issue type 1","1. summary 1","1. description 1","1. issue type 1",200,Success
+2,"TRK-1235","PROJ-5679","Test summary 2","Test description 2","Issue type 2","1. summary 2","1. description 2","1. issue type 2",200,Success
+3,"TRK-1236","PROJ-5680","Test summary 3","Test description 3","Issue type 3","1. summary 3","1. description 3","1. issue type 3",401,Unauthorized
+4,"TRK-1237","PROJ-5681","Test summary 4","Test description 4","Issue type 4","1. summary 4","1. description 4","1. issue type 4",401,Unauthorized
+5,"TRK-1238","PROJ-5682","Test summary 5","Test description 5","Issue type 5","1. summary 5","1. description 5","1. issue type 5",200,Success
+6,"TRK-1239","PROJ-5683","Test summary 6","Test description 6","Issue type 6","1. summary 6","1. description 6","1. issue type 6",401,Unauthorized

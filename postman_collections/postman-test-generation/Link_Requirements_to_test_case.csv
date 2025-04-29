@@ -1,0 +1,7 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"957AC8E4-367A-4311-9034-DE7A9724845E"^|"Proj-1"^|"ID-200"^|"Parent-ID-100"^|200,"Success"
+"087F64A3-0693-4CAF-82D2-7FAC04A69A31"^|"Proj-2"^|"ID-401"^|"Parent-ID-301"^|401,"Unauthorized"
+"3EC128AB-14E5-448B-9C4F-5E561CAB266A"^|"Proj-3"^|"ID-205"^|"Parent-ID-150"^|205,"Success"
+"735982A4-4234-431B-BE21-637E3FA3BC4D"^|"Proj-4"^|"ID-401"^|"Parent-ID-350"^|401,"Unauthorized"
+"42F98254-3D6B-429A-BA2B-9C0DFCA3BD41"^|"Proj-5"^|"ID-250"^|"Parent-ID-200"^|250,"Success"
+"2FA168D6-2C3F-495F-AA9C-86EA387D426A"^|"Proj-6"^|"ID-401"^|"Parent-ID-360"^|401,"Unauthorized"

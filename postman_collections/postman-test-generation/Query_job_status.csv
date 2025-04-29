@@ -1,0 +1,5 @@
+job-id,project-key,statusCode,scenario
+b9a3229e-53c5-4b16-b6fc-a24ad03a0417,"API-Test-1",200,Successfully retrieved the test creation job status.
+"Sampler"-150,"API-Test-2",400,Invalid parameters
+"Sampler"-151,"API-Test-3",401,"Unauthorized"
+"Sampler"-152,"API-Test-4",404,"Not Found"

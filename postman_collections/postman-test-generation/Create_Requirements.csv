@@ -1,0 +1,5 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+Project-1,"Task: Create new folders","Create two folders- One standalone and one inside parent folder",task,"Folder creation","Standalone Folder has been created",sub-task,200,Success
+Project-2,"Task: Unauthorized Access","Unauthorized attempt to create folders',task,"Folder creation failure","Unauthorized attempt to create standalone folder",sub-task,401,Unauthorized.
+Project-3,"Task: Create new folders","Create two folders- One standalone and one inside parent folder",task,"Folder creation","Folder created inside parent folder",sub-task,200,Success
+Project-4,"Task: Unauthorized Access","Unauthorized attempt to create folders',task,"Folder creation failure","Unauthorized attempt to create folder inside parent",sub-task,401,Unauthorized.

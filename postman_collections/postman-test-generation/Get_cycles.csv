@@ -1,0 +1,7 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle"^|"1.0.0"^|"John Doe"^|"50"^|"1"^|"ABC-123"^|"200"^|"Successful responses: OK"
+"My Second Cycle"^|"UNVERSIONED"^|"Jane Doe"^|"50"^|"2"^|"XYZ-987"^|"200"^|"Successful responses: OK"
+"My Third Cycle"^|"UNVERSIONED"^|"Richard Roe"^|"50"^|"3"^|"LMN-456"^|"200"^|"Successful responses: OK"
+"Cycle Unknown"^|"2.2.2"^|"Zoe Smith"^|"30"^|"10"^|"PQR-789"^|"400"^|"Invalid parameters"
+"Cycle Not Found"^|"1.1.0"^|"Moe Aldoe"^|"40"^|"0"^|"STU-111"^|"401"^|"Unauthorized"
+"Invalid Cycle"^|"0.1.0"^|"Doyle O'Doyle"^|"100"^|"5"^|"VWX-222"^|"404"^|"Not Found"
