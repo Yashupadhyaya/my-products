@@ -1,0 +1,9 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+"1.0.0","CycleName","DE-TR-1","TestSuite1","Login",200,"Successful responses: OK"
+"1.0.1","Cycle2","DE-TR-2","TestSuite2","Logout",400,"Invalid parameters"
+"1.0.2","Cycle3","DE-TR-3","TestSuite3","Register",401,"Unauthorized"
+"1.0.3","Cycle4","DE-TR-4","TestSuite4","Profile",404,"Not Found"
+"1.0.4","Cycle5","DE-TR-5","TestSuite5","Messaging",200,"Successful responses: OK"
+"1.0.5","Cycle6","DE-TR-6","TestSuite6","Updates",400,"Invalid parameters"
+"1.0.6","Cycle7","DE-TR-7","TestSuite7","Notifications",401,"Unauthorized"
+"1.0.7","Cycle8","DE-TR-8","TestSuite8","Settings",404,"Not Found"

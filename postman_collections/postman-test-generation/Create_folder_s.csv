@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder 1","",200,"Successfully created folder(s)."
+TE,"Folder inside another folder","",200,"Successfully created folder(s)."
+QW,"InvalidFolder",pf658,400,"Invalid parameters"
+RF,"unauthorizedFolder",kl987,401,"Unauthorized"
+AS,"NotFoundFolder",gh963,404,"Not Found"
