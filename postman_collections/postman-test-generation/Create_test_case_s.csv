@@ -1,0 +1,9 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,proj-001,folderA,id123,https://api.example.com/callback,34,202,The job to create the test cases was successfully scheduled.
+2,proj-002,folderB,id456,https://api2.example.com/callback,27,400,Invalid parameters.
+3,proj-003,folderC,id789,https://api3.example.com/callback,50,401,Unauthorized.
+4,proj-004,folderD,id012,https://api4.example.com/callback,22,404,Not Found.
+5,proj-005,folderE,id345,https://api5.example.com/callback,45,202,The job to create the test cases was successfully scheduled.
+6,proj-006,folderF,id678,https://api6.example.com/callback,15,400,Invalid parameters.
+7,proj-007,folderG,id910,https://api7.example.com/callback,60,401,Unauthorized.
+8,proj-008,folderH,id234,https://api8.example.com/callback,40,404,Not Found.

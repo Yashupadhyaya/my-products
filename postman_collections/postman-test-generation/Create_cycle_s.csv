@@ -1,0 +1,6 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+XYZ123,"My Cycle",John Doe,N/A,N/A,N/A,"1.0.0","My Second Cycle",Jane Doe,"2025-04-28T08:57:05.4117007Z","2025-04-29T08:57:05.4117004Z",N/A,"UNVERSIONED",200,Successful responses: OK
+ABC123,"Test Cycle",Alex Smith,N/A,N/A,N/A,"2.0.0","Test Second Cycle",Emily Johnson,"2025-05-10T12:00:00.0000000Z","2025-05-11T12:00:00.0000000Z",N/A,"UNVERSIONED",400,"Invalid parameters"
+DEF456,"Development Cycle",David Brown,N/A,N/A,N/A,"3.0.0","Development Second Cycle",Emma Davis,"2025-06-15T14:30:15.0000007Z","2025-06-16T14:30:15.0000004Z",N/A,"UNVERSIONED",401,Unauthorized
+GHI789,"Build Cycle",Oliver Mitchell,N/A,N/A,N/A,"1.9.9","Build Second Cycle",Ava Jackson,"2025-07-20T11:45:25.4117007Z","2025-07-21T11:45:25.4117004Z",N/A,"UNVERSIONED",404,"Not Found"
+ADI101112,"My Invalid Cycle",Random Person,N/A,N/A,N/A,"0.0.0","My Invalid Second Cycle",Error Person,"0000-00-00T00:00:00.0000000Z","0000-00-00T00:00:00.0000000Z",N/A,"UNVALID",400,"Invalid parameters"

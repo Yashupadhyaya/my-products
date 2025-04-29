@@ -1,0 +1,11 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+Project1,1.0,Cycle1,/Project1/Folder1,Yes,10,200,"Successful responses: OK"
+Project2,1.1,Cycle2,/Project2/Folder2,No,20,400,"Invalid parameters"
+Project3,2.0,Cycle3,/Project3/Folder3,Yes,15,401,"Unauthorized"
+Project4,2.1,Cycle4,/Project4/Folder4,No,12,404,"Not Found"
+Project5,3.0,Cycle5,/Project5/Folder5,Yes,18,200,"Successful responses: OK"
+Project6,3.1,Cycle6,/Project6/Folder6,No,22,400,"Invalid parameters"
+Project7,4.0,Cycle7,/Project7/Folder7,Yes,17,401,"Unauthorized"
+Project8,4.1,Cycle8,/Project8/Folder8,No,14,404,"Not Found"
+Project9,5.0,Cycle9,/Project9/Folder9,Yes,21,200,"Successful responses: OK"
+Project10,5.1,Cycle10,/Project10/Folder10,No,19,400,"Invalid parameters"

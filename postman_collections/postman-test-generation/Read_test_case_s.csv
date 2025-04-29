@@ -1,0 +1,5 @@
+jiraFields,ttmFields,limit,nextPageToken,project-key,statusCode,scenario
+"summary", "description", "status", "priority", "labels","precondition", "steps",1,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","TE-1",200,"Successfully retrieved test cases information."
+"someField", "anotherField", "invalidField", "testField", "extraField","unknownPrecondition", "randomSteps",100,"xyz123abcdef","AB-2",400,"Invalid parameters."
+"anonymousField", "mysteriousField", "hiddenField", "strangeField", "bizarreField","noPrecondition", "noSteps",10,"abcd1234efgh","AN-3",401,"Unauthorized."
+"missingField", "absentField", "vanishedField", "goneField", "faintedField","nullPrecondition", "nullSteps",1000,"1234wxyzabcd","MS-4",404,"Not Found."
