@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+TR001,1,PRJ001,attachment1,image/jpg,15KB,200,Success
+TR002,2,PRJ002,attachment2,application/pdf,7MB,200,Success
+TR003,3,PRJ003,response1,application/json,2KB,400,Invalid parameters
+TR004,4,PRJ004,response2,application/json,3KB,400,Invalid parameters
+TR005,5,PRJ005,attachment3,image/png,10MB,401,Unauthorized
+TR006,6,PRJ006,attachment4,image/gif,12KB,401,Unauthorized
+TR007,7,PRJ007,response3,text/html,1MB,404,Not Found
+TR008,8,PRJ008,response4,text/css,500KB,404,Not Found

@@ -1,0 +1,9 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,proj-123,Folder1,fd01,http://callback.com/1,test-case-1,202,The job to create the test cases was successfully scheduled.
+2,proj-234,Folder2,fd02,http://callback.com/2,test-case-2,400,"Invalid parameters.
+3,proj-345,Folder3,fd03,http://callback.com/3,test-case-3,401,"Unauthorized".
+4,proj-456,Folder4,fd04,http://callback.com/4,test-case-4,404,"Not Found".
+5,proj-567,Folder5,fd05,http://callback.com/5,test-case-5,202,The job to create the test cases was successfully scheduled. 
+6,proj-678,Folder6,fd06,http://callback.com/6,test-case-6,400,"Invalid parameters.
+7,proj-789,Folder7,fd07,http://callback.com/7,test-case-7,401,"Unauthorized".
+8,proj-890,Folder8,fd08,http://callback.com/8,test-case-8,404,"Not Found".

@@ -1,0 +1,10 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+TR123,PK567,file1.jpg,image/jpeg,3000,200,Success
+TR124,PK568,file2.jpg,image/jpeg,3500,200,Success
+TR125,PK569,file3.jpg,image/jpeg,4000,200,Success
+TR126,PK570,invalid_file.mp4,video/mp4,5000,400,Invalid parameters
+TR127,PK571,unauthorized.docx,application/msword,2500,401,Unauthorized
+TR128,PK572,not_found.pdf,application/pdf,6000,404,Not Found
+TR129,PK573,invalid_file2.jpg,image/jpeg,3200,400,Invalid parameters
+TR130,PK574,unauthorized2.docx,application/msword,2600,401,Unauthorized
+TR131,PK575,not_found2.pdf,application/pdf,6100,404,Not Found

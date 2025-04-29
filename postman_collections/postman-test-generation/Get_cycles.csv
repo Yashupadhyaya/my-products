@@ -1,0 +1,9 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle","1.0.0","john_doe",10,20,"PRJ-API-10",200,"Successful responses: OK"
+"My API","1.2.3","jane_doe",15,30,"PRJ-API-11",400,"Invalid parameters"
+"My Data Cycle","1.3.4","smith",5,10,"PRJ-API-12",401,"Unauthorized"
+"Test Cycle","1.5.6","rover",12,24,"PRJ-API-13",404,"Not Found"
+"My Second Cycle","UNVERSIONED","lucy",8,16,"PRJ-API-14",200,"Successful responses: OK"
+"Primary API","2.1.0","sam",20,40,"PRJ-API-15",400,"Invalid parameters"
+"My Third Cycle","UNVERSIONED","lily",25,50,"PRJ-API-16",401,"Unauthorized"
+"Alpha Cycle","3.1.0","mike",7,14,"PRJ-API-17",404,"Not Found"
