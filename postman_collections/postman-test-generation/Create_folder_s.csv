@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,Folder,b2ff853c-1ac9-4901-9ab1-01a6a63e07d0,200,Successfully created folder(s).
+TE,Folder inside parent folder,b2ff853c-1ac9-4901-9ab1-01a6a63e07d0,200,Successfully created folder(s).
+abcd,Invalid Name,xyz123,400,Invalid parameters
+efgh,Invalid Name,bcd234,401,Unauthorized
+ijkl,Invalid Name,cde345,404,Not Found

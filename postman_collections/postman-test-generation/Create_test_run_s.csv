@@ -1,0 +1,5 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"DE-TR-1"^|"1.0.0"^|"CycleName"^|"Folder"^|True^|[]^|200^|"Successful responses: OK"
+"DE-TR-32"^|"0.9.9"^|"CycleTwo"^|"Folder inside parent folder"^|False^|[]^|400^|"Invalid parameters"
+"DE-TR-45"^|"2.1.5"^|"CycleThree"^|"Folder"^|True^|[]^|401^|"Unauthorized"
+"DE-TR-67"^|"0.0.1"^|"CycleFour"^|"Folder inside parent folder"^|False^|[]^|404^|"Not Found"

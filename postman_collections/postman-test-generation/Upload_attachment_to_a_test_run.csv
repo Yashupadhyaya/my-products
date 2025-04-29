@@ -1,0 +1,5 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+"TR123","PR123","file1.txt","text/plain",123456,200,"Success"
+"TR124","PR124","file2.jpg","image/jpeg",234567,400,"Invalid parameters"
+"TR125","PR125","file3.png","image/png",345678,401,"Unauthorized"
+"TR126","PR126","file4.pdf","application/pdf",456789,404,"Not Found"

@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1",null,2,0^|"TE",200^|"Successfully get folder(s)."
+"Folder inside another folder","ae225ebd-0d09-4a28-ae73-0a3f4705e84a",2,0^|"TE",200^|"Successfully get folder(s)."
+"1241gjfdj21","12adaj213",2,0^|"abc",400^|"Invalid parameters"
+"gfdj112fdgj2","adfja1123",5,1^|"xyz",401^|"Unauthorized"
+"fdagfdadfgfd","314rfa123",10,2^|"efg",404^|"Not Found"
