@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,Folder,1ebf31f6-0e79-4095-a73c-db79b70db2b7,200,Successfully created folder(s).
+TE,Folder inside parent folder,1ebf31f6-0e79-4095-a73c-db79b70db2b7,200,Successfully created folder(s).
+abc,xyz,123abc,400,Invalid parameters
+pqr,mno,456def,401,Unauthorized
+klm,nop,789ghi,404,Not Found
