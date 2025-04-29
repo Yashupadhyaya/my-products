@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1","NA",2,0,"TE",200,"Successfully get folder(s)."
+"Folder inside another folder","226fa9f2-1d5f-45e8-8460-0464e17b1eea",2,0,"TE",200,"Successfully get folder(s)."
+"Random Folder","NA",2,0,"EF",400,"Invalid parameters."
+"Another Random Folder","NA",2,0,"GH",401,"Unauthorized."
+"Non-existent Folder","Non-existent Parent",2,0,"IJ",404,"Not Found."
