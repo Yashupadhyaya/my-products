@@ -1,0 +1,7 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+Key-1,"Summary of API 1","Description of API 1",error,"Summary of linked API 1","Description of linked API 1",issue,200,Success
+Key-2,"Summary of API 2","Description of API 2",warning,"Summary of linked API 2","Description of linked API 2",issue,200,Success
+Key-3,"Summary of API 3","Description of API 3",issue,"Summary of not linked API 3","Description of not linked API 3",error,401,"Unauthorized"
+Key-4,"Summary of API 4","Description of API 4",warning,"Summary of not linked API 4","Description of not linked API 4",error,401,"Unauthorized"
+Key-5,"Summary of API 5","Description of API 5",issue,"Summary of linked API 5","Description of linked API 5",warning,200,Success
+Key-6,"Summary of API 6","Description of API 6",error,"Summary of not linked API 6","Description of not linked API 6",warning,401,"Unauthorized"

@@ -1,0 +1,11 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,Login^|"TestName1",200,"Successful responses: OK"
+1.0.1,CycleName,DE-TR-2,Registration^|"TestName2",400,"Invalid parameters"
+2.0.0,CycleName,DE-TR-3,Checkout^|"TestName3",401,Unauthorized
+2.0.1,CycleName,DE-TR-4,Payment^|"TestName4",404,"Not Found"
+3.0.0,CycleName,DE-TR-5,ProfileUpdate^|"TestName5",200,"Successful responses: OK"
+3.0.1,CycleName,DE-TR-6,PasswordReset^|"TestName6",400,"Invalid parameters"
+4.0.0,CycleName,DE-TR-7,ProductAdd^|"TestName7",401,Unauthorized
+4.0.1,CycleName,DE-TR-8,ProductDelete^|"TestName8",404,"Not Found"
+5.0.0,CycleName,DE-TR-9,CommentAdd^|"TestName9",200,"Successful responses: OK"
+5.0.1,CycleName,DE-TR-10,CommentDelete^|"TestName10",400,"Invalid parameters"

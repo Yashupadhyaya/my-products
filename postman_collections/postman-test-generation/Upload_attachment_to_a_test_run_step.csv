@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+trk123,1,pk123,file1,image/jpeg,200KB,200,Success
+trk456,2,pk789,file2,text/plain,150KB,400,"Invalid parameters."
+trk789,3,pk456,file3,application/json,100KB,401,"Unauthorized."
+trk321,4,pk654,file4,image/png,250KB,404,"Not Found."
+trk654,5,pk321,file5,text/csv,300KB,200,Success
+trk987,6,pk987,file6,application/pdf,350KB,400,"Invalid parameters."
+trk654,7,pk012,file7,image/gif,400KB,401,"Unauthorized."
+trk012,8,pk345,file8,text/html,450KB,404,"Not Found."

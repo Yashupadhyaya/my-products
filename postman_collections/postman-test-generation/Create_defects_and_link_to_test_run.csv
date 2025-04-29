@@ -1,0 +1,6 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,TR-001,PRJ-001,"Summary of API 1","Description of API 1","issue type of API 1","Summary of Response 1","Description of response 1","issue type of response 1",200,Success
+2,TR-002,PRJ-002,"Summary of API 2","Description of API 2","issue type of API 2","Summary of Response 2","Description of response 2","issue type of response 2",200,Success
+3,TR-003,PRJ-003,"Summary of API 3","Description of API 3","issue type of API 3","Summary of Random Response","Description of random response","issue type of random response",401,Unauthorized
+4,TR-004,PRJ-004,"Summary of API 4","Description of API 4","issue type of API 4","Summary of Random Response","Description of random response","issue type of random response",401,Unauthorized
+5,TR-005,PRJ-005,"Summary of API 5","Description of API 5","issue type of API 5","Summary of Response 5","Description of response 5","issue type of response 5",200,Success
