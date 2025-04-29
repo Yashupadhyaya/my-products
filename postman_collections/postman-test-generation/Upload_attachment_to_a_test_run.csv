@@ -1,0 +1,5 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+"TR123","PR456","file.pdf","application/pdf",1000,200,"Success"
+"TR456","PR789","invalid.xls","application/excel",2100,400,"Invalid parameters"
+"TR789","PR012","unauthorized.docx","application/docx",1200,401,"Unauthorized"
+"TR012","PR234","notFound.gif","image/gif",2300,404,"Not Found"

@@ -1,0 +1,5 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+"Project-A","API payload details","Project A API details","Document","Third party API response","Third party response details","Document",200,"Success"
+"Project-B","API payload values","Specific API details of Project B","Document","Response from server","Server response details for API call","Document",200,"Success"
+"Project-C","API response data","Details of API responses for Project C","Document","API call result","Details about the result of the API call","Document",401,"Unauthorized"
+"Project-D","Server response details","Details of server responses for Project D","Document","Server acknowledgement","Details about server's acknowledgement after API call","Document",401,"Unauthorized"
