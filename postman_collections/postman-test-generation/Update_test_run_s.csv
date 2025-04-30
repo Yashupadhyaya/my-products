@@ -1,0 +1,4 @@
+test-run-key,project-key,testCategory,assignee,executedBy,plannedStartDate,plannedEndDate,priority,status,cycleId,folderPath,components,labels,fields,steps,name,id,content,result,statusCode,scenario
+TR-01,PR-401,User,John,Mike,8/1/2021,8/15/2021,High,Active,CY-123,/Home/Project/,Component-1,User, Test,Fields-xyz,10,Name-abc,ID-804,Message Content,Failed,400,"Invalid parameters"
+TR-02,PR-402,Admin,Amy,Emma,8/16/2021,8/31/2021,Medium,Inactive,CY-234,/Home/Admin/,Component-2,Admin, Test,Fields-abc,15,Name-def,ID-805,Message Content,Failed,401,Unauthorized
+TR-03,PR-403,Guest,Oliver,Jacob,9/1/2021,9/15/2021,Low,Active,CY-345,/Home/Guest/,Component-3,Guest, Test,Fields-gif,12,Name-ghi,ID-806,Message Content,Failed,404,"Not Found"

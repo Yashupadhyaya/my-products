@@ -1,0 +1,5 @@
+folderId,project-key,name,parentId,statusCode,scenario
+8bc2886a-454f-4cd0-93e9-2c6b51bb2fd2,TE,"Folder 1",0,200,"Successfully updated folder."
+randomId1,TA,"Folder 2",1,400,"Invalid parameters."
+randomId2,TB,"Folder 3",2,401,"Unauthorized."
+randomId3,TC,"Folder 4",3,404,"Not Found."
