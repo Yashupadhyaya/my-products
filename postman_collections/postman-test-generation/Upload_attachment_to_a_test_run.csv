@@ -1,0 +1,6 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+TRN123456,PK98765,sampleFile1.png,image/png,500,200,Success
+TRN234567,PK87654,sampleFile2.jpg,image/jpg,700,400,Invalid parameters
+TRN345678,PK76543,sampleFile3.gif,image/gif,600,401,Unauthorized
+TRN456789,PK65432,sampleFile4.pdf,application/pdf,800,404,Not Found
+TRN567890,PK54321,sampleFile5.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document,900,200,Success
