@@ -1,0 +1,11 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+DE-TR-1,1.0.0,CycleName,/TestFolder/ApiTests,yes,5,200,"Successful responses: OK"
+UP-TR-2,1.2.5,TestCycle,/SampleFolder/ApiRun,no,10,200,"Successful responses: OK"
+XY-TR-3,2.1.3,Cycle3,/Folder3/Api3,yes,8,400,"Invalid parameters"
+AB-TR-4,4.0.0,TestCycle4,/TestFolder4/ApiTest4,no,6,401,Unauthorized
+LM-TR-5,3.2.1,TestRun5,/FolderPath5/Api5,yes,9,404,"Not Found"
+OP-TR-6,2.5.1,Cycle6,/TestFolder6/Api6,yes,7,200,"Successful responses: OK"
+QR-TR-7,1.1.1,TestRun7,/FolderPath7/Api7,no,12,400,"Invalid parameters"
+ST-TR-8,1.0.0,Cycle8,/TestFolder8/Api8,yes,10,401,Unauthorized
+UV-TR-9,2.2.2,TestCycle9,/SampleFolder9/ApiRun9,no,10,404,"Not Found"
+WX-TR-10,3.3.3,Cycle10,/Folder10/Api10,yes,8,200,"Successful responses: OK"
