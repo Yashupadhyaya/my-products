@@ -1,0 +1,9 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,Login,Login Test,200,Successful responses: OK
+2.0.0,Cycle2,DE-TR-2,Registration,Registration Test,400,Invalid parameters
+3.0.0,Cycle3,DE-TR-3,Checkout,Checkout Test,401,Unauthorized
+4.0.0,Cycle4,DE-TR-4,Payment,Payment Test,404,Not Found
+1.0.1,CycleName,DE-TR-1,Logout,Logout Test,200,Successful responses: OK
+2.0.1,Cycle2,DE-TR-2,ProfileUpdate,Profile Update Test,400,Invalid parameters
+3.0.1,Cycle3,DE-TR-3,ItemAdd,Item Add Test,401,Unauthorized
+4.0.1,Cycle4,DE-TR-4,ItemRemove,Item Remove Test,404,Not Found
