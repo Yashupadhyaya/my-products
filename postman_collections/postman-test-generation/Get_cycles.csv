@@ -1,0 +1,13 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle"^|"1.0.0"^|"John Doe"^|20^|0^|"PROJ-001"^|200^|"Successful responses: OK"
+"Invalid Cycle"^|"1.9.0"^|"Jane Doe"^|0^|0^|"PROJ-002"^|400^|"Invalid parameters"
+"Unauthorized Access"^|"2.0.1"^|"Tom Smith"^|-1^|50^|"PROJ-003"^|401^|"Unauthorized"
+"Missing Cycle"^|"3.1.0"^|"Emily Johnson"^|10^|-1^|"PROJ-404"^|404^|"Not Found"
+"My Second Cycle"^|"UNVERSIONED"^|"David Taylor"^|5^|0^|"PROJ-005"^|200^|"Successful responses: OK"
+"Invalid Cycle Two"^|"1.0.3"^|"Nicole Brown"^|0^|0^|"PROJ-006"^|400^|"Invalid parameters"
+"Unauthorized Access Two"^|"2.2.1"^|"Ronald Green"^|-1^|50^|"PROJ-007"^|401^|"Unauthorized"
+"Missing Cycle Two"^|"3.3.0"^|"Rebecca White"^|10^|-1^|"PROJ-404"^|404^|"Not Found"
+"My Third Cycle"^|"UNVERSIONED"^|"Samuel Harris"^|10^|2^|"PROJ-009"^|200^|"Successful responses: OK"
+"Invalid Cycle Three"^|"2.0.5"^|"Amanda Wilson"^|0^|0^|"PROJ-010"^|400^|"Invalid parameters"
+"Unauthorized Access Three"^|"3.3.1"^|"Andrew Thompson"^|-1^|50^|"PROJ-011"^|401^|"Unauthorized"
+"Missing Cycle Three"^|"4.1.0"^|"Hannah Martinez"^|10^|-1^|"PROJ-404"^|404^|"Not Found"
