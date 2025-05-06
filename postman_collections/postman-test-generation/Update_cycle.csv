@@ -1,0 +1,5 @@
+cycleId,project-key,name,assignee,plannedStartDate,plannedEndDate,fields,statusCode,scenario
+1,PROJ001,"My Third Cycle",John,"2025-04-28T07:21:25.185426Z","2025-04-29T07:21:25.1854258Z","{\"schemeName\": \"Environments\", \"allowedValueName\": \"Development\"},{\"schemeName\": \"Builds\", \"value\": \"1.9.9\"}",200,Successful responses: OK
+2,PROJ002,"Test Cycle",Doe,"2025-03-28T07:21:25.1854232Z","2025-03-30T07:21:25.1854258Z","{\"schemeName\": \"Environments\", \"allowedValueName\": \"Test\"},{\"schemeName\": \"Builds\", \"value\": \"2.0.1\"}",400,"Invalid parameters"
+3,PROJ003,"Release Cycle",Smith,"2025-05-28T07:21:25.1854265Z","2025-05-30T07:21:25.1854258Z","{\"schemeName\": \"Environments\", \"allowedValueName\": \"Production\"},{\"schemeName\": \"Builds\", \"value\": \"3.0.2\"}",401,Unauthorized
+4,PROJ004,"Deployment Cycle",Johnson,"2025-06-28T07:21:25.1854261Z","2025-06-30T07:21:25.1854258Z","{\"schemeName\": \"Environments\", \"allowedValueName\": \"Staging\"},{\"schemeName\": \"Builds\", \"value\": \"4.0.3\"}",404,"Not Found"
