@@ -1,0 +1,7 @@
+CSV Conetent:
+
+key,project-key,description,priority,summary,labels,precondition,steps,folder,folderId,statusCode,scenario
+1234,PROJ-001,"Test 1 description","High","Test 1 status","MyLabel","A precondition","Login, Logout","parent folder/child folder","81408a7b-5c9a-4862-873d-bcd2452c370a",200,"Updated test case."
+5678,PROJ-002,"Lorem Ipsum","Low","Fake data","RandomLabel","A fake condition","Step1, Step2","fake folder/child folder","dfa1234d-9fgh-1234-5678-bcd2452c370a",400,"Invalid parameters."
+9012,PROJ-003,"Description irrelevant","Medium","Invalid data","NoLabel","No precondition","Test1, Test2","Nonexistent folder/child folder","81508b7b-9b9a-5862-873d-dfa1523c380b",401,"Unauthorized."
+3456,PROJ-004,"Data not available","Critical","Not relevant","Null","No precondition","Test3, Test4","Absent folder/child folder","81608c7b-7c9a-6962-863d-efg3452c390c",404,"Not Found."
