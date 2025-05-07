@@ -1,0 +1,9 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+TR1234,PROJ5678,file1.json,application/json,200KB,200,Success
+TR1235,PROJ5679,file2.pdf,application/pdf,500KB,400,"Invalid parameters"
+TR1236,PROJ5680,file3.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,1MB,401,"Unauthorized"
+TR1237,PROJ5681,file4.txt,text/plain,50KB,404,"Not Found"
+TR1238,PROJ5682,file5.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document,2MB,200,Success
+TR1239,PROJ5683,file6.jpg,image/jpeg,500KB,400,"Invalid parameters"
+TR1240,PROJ5684,file7.png,image/png,1MB,401,"Unauthorized"
+TR1241,PROJ5685,file8.gif,image/gif,100KB,404,"Not Found"
