@@ -1,0 +1,11 @@
+keys,limit,offset,statusCode,scenario
+"PK",1,0,200,"Successful responses: OK"
+"JG56",2,10,400,"Invalid parameters"
+"KL78",3,20,401,"Unauthorized"
+"TR90",4,30,404,"Not Found"
+"HJ21",5,40,400,"Invalid parameters"
+"PL43",6,50,401,"Unauthorized"
+"AB65",7,60,200,"Successful responses: OK"
+"MN89",8,70,404,"Not Found"
+"OP74",9,80,400,"Invalid parameters"
+"LK30",10,90,200,"Successful responses: OK"
