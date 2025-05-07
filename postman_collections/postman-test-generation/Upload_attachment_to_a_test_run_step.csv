@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+test001,1,proj123,response1.json,application/json,2MB,200,Success
+test002,2,proj456,response2.json,application/json,3MB,400,Invalid parameters.
+test003,3,proj789,response3.json,application/json,4MB,401,Unauthorized.
+test004,4,proj101,response4.json,application/json,5MB,404,Not Found.
+test005,5,proj212,response5.json,application/json,6MB,200,Success
+test006,6,proj313,response6.json,application/json,7MB,400,Invalid parameters.
+test007,7,proj414,response7.json,application/json,8MB,401,Unauthorized.
+test008,8,proj515,response8.json,application/json,9MB,404,Not Found.

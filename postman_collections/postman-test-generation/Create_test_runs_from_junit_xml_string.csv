@@ -1,0 +1,11 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,Login TestSuite,Login,200,Successful responses: OK
+2.0.0,TestCycle,TR-DE-2,Registration TestSuite,Register,400,Invalid parameters
+1.0.3,CycleThree,DE-TR-3,Profile TestSuite,AccountDetails,401,Unauthorized
+2.5.0,CycleFour,TR-DE-4,Transaction TestSuite,Transfer,404,Not Found
+1.2.0,TestCycleFive,DE-TR-5,Report TestSuite,GenerateReport,200,Successful responses: OK
+1.5.0,CycleSix,TR-DE-6,Feedback TestSuite,SubmitFeedback,400,Invalid parameters
+2.0.1,CycleSeven,DE-TR-7,Setting TestSuite,UpdateProfile,401,Unauthorized
+3.0.0,TestCycleEight,TR-DE-8,Notification TestSuite,NotificationSettings,404,Not Found
+2.1.0,CycleNine,DE-TR-9,Billing TestSuite,UpdateBilling,200,Successful responses: OK
+2.9.0,CycleTen,TR-DE-10,Authentication TestSuite,TwoFactorAuth,400,Invalid parameters

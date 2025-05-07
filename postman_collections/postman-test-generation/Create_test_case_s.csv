@@ -1,0 +1,11 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,proj-123,FolderA,f1,https://api.callback.com/test1,15,202,"The job to create the test cases was successfully scheduled"
+2,proj-456,FolderB,f2,https://api.callback.com/test2,22,400,"Invalid parameters"
+3,proj-789,FolderC,f3,https://api.callback.com/test3,37,401,"Unauthorized"
+4,proj-012,FolderD,f4,https://api.callback.com/test4,50,404,"Not Found"
+5,proj-345,FolderE,f5,https://api.callback.com/test5,65,202,"The job to create the test cases was successfully scheduled"
+6,proj-678,FolderF,f6,https://api.callback.com/test6,80,400,"Invalid parameters"
+7,proj-901,FolderG,f7,https://api.callback.com/test7,95,401,"Unauthorized"
+8,proj-234,FolderH,f8,https://api.callback.com/test8,110,404,"Not Found"
+9,proj-567,FolderI,f9,https://api.callback.com/test9,125,202,"The job to create the test cases was successfully scheduled"
+10,proj-890,FolderJ,f10,https://api.callback.com/test10,140,400,"Invalid parameters"
