@@ -1,0 +1,11 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,TRK-456,PROJ-123,"Create Issue","Create a new issue",Task,"Sub-task 1","Support Ticket: Key-1",Sub-task,200,Success
+2,TRK-457,PROJ-124,"Update Issue","Update existing issue",Bug,"Sub-task 2","Support Ticket: Key-2",Sub-task,200,Success
+3,TRK-458,PROJ-125,"Delete Issue","Delete an unrequired issue",Story,"Sub-task 3","Support Ticket: Key-1",Sub-task,401,"Unauthorized"
+4,TRK-459,PROJ-126,"View Issue","Read an existing issue",Task,"Sub-task 4","Support Ticket: Key-2",Sub-task,401,"Unauthorized"
+5,TRK-460,PROJ-127,"Assign Issue","Assign the issue to a user",Epic,"Sub-task 5","Support Ticket: Key-1",Sub-task,200,Success
+6,TRK-461,PROJ-128,"Unassign Issue","Unassign the issue from a user",Story,"Sub-task 6","Support Ticket: Key-2",Sub-task,401,"Unauthorized"
+7,TRK-462,PROJ-129,"Comment on Issue","Add a comment to the issue",Bug,"Sub-task 7","Support Ticket: Key-1",Sub-task,200,Success
+8,TRK-463,PROJ-130,"Close Issue","Close an existing issue",Task,"Sub-task 8","Support Ticket: Key-2",Sub-task,401,"Unauthorized"
+9,TRK-464,PROJ-131,"Reopen Issue","Reopen a closed issue",Bug,"Sub-task 9","Support Ticket: Key-1",Sub-task,200,Success
+10,TRK-465,PROJ-132,"Migrate Issue","Transfer an issue to a different project",Epic,"Sub-task 10","Support Ticket: Key-2",Sub-task,401,"Unauthorized"

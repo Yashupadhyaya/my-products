@@ -1,0 +1,11 @@
+id,project-key,statusCode,scenario
+1,Prj1,200,Success
+2,Prj2,400,Invalid parameters
+3,Prj3,401,Unauthorized
+4,Prj4,404,Not Found
+5,Prj5,200,Success
+6,Prj6,400,Invalid parameters
+7,Prj7,401,Unauthorized
+8,Prj8,404,Not Found
+9,Prj9,200,Success
+10,Prj10,400,Invalid parameters

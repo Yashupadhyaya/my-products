@@ -1,0 +1,5 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+API-3322,API Testing,John Doe,2021-12-01,2021-12-31,Priority: High,1.0,Update API,Jane Doe,2022-01-01,2022-01-31,Priority: Medium,1.1,200,Successful responses: OK
+API-4658,API Development,Robert Smith,2022-02-01,2022-02-28,Priority: Medium,1.1,Fix API,Alice Johnson,2022-03-01,2022-03-31,Priority: Low,1.2,400,"Invalid parameters"
+API-5701,API Documentation,William Johnson,2022-04-01,2022-04-30,Priority: Medium,1.2,Test API,Elizabeth Taylor,2022-05-01,2022-05-31,Priority: Medium,1.3,401,Unauthorized
+API-6872,API Security,James Brown,2022-06-01,2022-06-30,Priority: High,1.3,Optimize API,Richard Nixon,2022-07-01,2022-07-31,Priority: High,1.4,404,"Not Found"
