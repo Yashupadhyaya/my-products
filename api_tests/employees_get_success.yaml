@@ -9,7 +9,7 @@
 
 # ********RoostGPT********
 config:
-  target: "{{ $processEnvironment.wcvjwcvwcw_API_HOST }}"
+  target: "http://127.0.0.1:4010"
   plugins:
     expect: {}
   payloads:
@@ -23,7 +23,7 @@ config:
       delimiter: "^|^"
   environments:
     local:
-      target: "{{ $processEnvironment.wcvjwcvwcw_API_HOST }}"
+      target: "http://127.0.0.1:4010"
       AUTH_TOKEN: "{{$processEnvironment.wcvjwcvwcw_AUTH_TOKEN}}"
 
 scenarios:
