@@ -1,0 +1,11 @@
+id^|^username^|^firstName^|^lastName^|^email^|^password^|^phone^|^userStatus
+1^|^user1^|^John^|^Doe^|^johndoe@example.com^|^P@ssw0rd^|^123-456-7890^|^1
+2^|^user2^|^Jane^|^Doe^|^janedoe@example.com^|^P@ssw0rd^|^123-456-7891^|^0
+3^|^user3^|^123^|^Smith^|^janesmith@example.com^|^P@ssw0rd^|^123-456-7892^|^1
+4^|^user4^|^James^|^Brown^|^jamesbrown@example.com^|^P@ssw0rd^|^123-456-7893^|^0
+5^|^user5^|^Robert^|^Johnson^|^johnson#example.com^|^P@ssw0rd^|^No_phone^|^1
+6^|^user6^|^65^|^Jack^|^jack65@example.com^|^P@ssw0rd^|^123-456-7895^|^0
+7^|^user7^|^Tom^|^Jerry^|^tomjerry@example.com^|^12345^|^123-456-7896^|^1
+8^|^user8^|^Mary^|^Goldman^|^marygoldman@example.com^|^P@ssw0rd^|^123-456-7897^|^0
+9^|^user9^|^George^|^Morgan^|^georgemorgan@example.com^|^P@ssw0rd^|^123-456-7898^|^1
+10^|^user10^|^Jill^|^Taylor^|^jilltaylor@example.com^|^P@ssw0rd^|^123-456-7899^|^0
