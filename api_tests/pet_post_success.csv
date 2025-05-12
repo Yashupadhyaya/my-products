@@ -1,0 +1,11 @@
+id^|^category.id^|^category.name^|^name^|^photoUrls^|^tags.id^|^tags.name^|^status
+1^|^100^|^Mammals^|^Max^|^https://maxphotos.com/1.jpg^|^200^|^playful^|^available
+2^|^101^|^Birds^|^Tweety^|^https://tweetyphotos.com/1.jpg^|^201^|^friendly^|^pending
+3^|^102^|^Reptiles^|^Spike^|^https://spikephotos.com/1.jpg^|^202^|^aggressive^|^sold
+4^|^103^|^Mammals^|^Buddy^|^https://buddyphotos.com/1.jpg^|^203^|^lovable^|^available
+5^|^104^|^Fish^|^Bubbles^|^https://bubblesphotos.com/1.jpg^|^204^|^quiet^|^available
+6^|^105^|^Birds^|^Chirpy^|^https://chirpyphotos.com/1.jpg^|^205^|^noisy^|^sold
+7^|^106^|^Mammals^|^Sophie^|^https://sophiephotos.com/1.jpg^|^206^|^affectionate^|^pending
+8^|^107^|^Reptiles^|^Slinky^|^https://slinkyphotos.com/1.jpg^|^207^|^independent^|^sold
+9^|^108^|^Birds^|^Flappy^|^https://flappyphotos.com/1.jpg^|^208^|^energetic^|^available
+10^|^109^|^Mammals^|^Bella^|^https://bellaphotos.com/1.jpg^|^209^|^friendly^|^pending

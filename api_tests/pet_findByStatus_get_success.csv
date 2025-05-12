@@ -1,0 +1,11 @@
+id^|^category.id^|^category.name^|^name^|^photoUrls^|^tags.id^|^tags.name^|^status
+1^|^112^|^Dogs^|^Tommy^|^www.dogphotos.com/tommy^|^1122^|^small^|^available
+2^|^113^|^Cats^|^Snowball^|^www.catphotos.com/snowball^|^1133^|^fluffy^|^pending
+3^|^114^|^Birds^|^Tweety^|^www.birdphotos.com/tweety^|^1144^|^yellow^|^sold
+4^|^115^|^Fish^|^Goldie^|^www.fishphotos.com/goldie^|^1155^|^gold^|^available
+5^|^116^|^Dogs^|^Benny^|^www.dogphotos.com/benny^|^1166^|^big^|^pending
+6^|^117^|^Cats^|^Whiskers^|^www.catphotos.com/whiskers^|^1177^|^white^|^sold
+7^|^118^|^Birds^|^Sky^|^www.birdphotos.com/sky^|^1188^|^blue^|^available
+8^|^119^|^Fish^|^Fin^|^www.fishphotos.com/fin^|^1199^|^silver^|^pending
+9^|^120^|^Dogs^|^Jack^|^www.dogphotos.com/jack^|^1200^|^black^|^sold
+10^|^121^|^Cats^|^Furball^|^www.catphotos.com/furball^|^1211^|^gray^|^available

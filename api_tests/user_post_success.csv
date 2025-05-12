@@ -1,0 +1,11 @@
+id^|^username^|^firstName^|^lastName^|^email^|^password^|^phone^|^userStatus
+1^|^johnDoe123^|^John^|^Doe^|^johndoe123@gmail.com^|^pass1234^|^1234567890^|^0
+2^|^janeDoe456^|^Jane^|^Doe^|^janedoe456@yahoo.com^|^Doe4567^|^0987654321^|^1
+3^|^sarahSmith789^|^Sarah^|^Smith^|^sarahsmith789@hotmail.com^|^smith789!^|^1122334455^|^0
+4^|^robertBrown321^|^Robert^|^Brown^|^robertbrown321@aol.com^|^brown321#^|^5544332211^|^1
+5^|^michaelJohnson654^|^Michael^|^Johnson^|^mjohnson654@icloud.com^|^johnson654$^|^6655443322^|^0
+6^|^jenniferWilson987^|^Jennifer^|^Wilson^|^jwilson987@msn.com^|^wilson987^|^7766554433^|^1
+7^|^williamWhite210^|^William^|^White^|^Whitewill210@google.com^|^whitewill210@^|^9988776655^|^0
+8^|^lindaJones741^|^Linda^|^Jones^|^lindajones741@yahoo.com^|^jones741^|^1209384756^|^1
+9^|^jamesMiller852^|^James^|^Miller^|^jamesmiller852@outlook.com^|^miller852^|^5647382910^|^0
+10^|^patriciaTaylor963^|^Patricia^|^Taylor^|^ptaylor963@aol.com^|^taylor963^|^9081726354^|^1

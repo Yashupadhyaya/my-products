@@ -1,0 +1,11 @@
+id^|^category_id^|^category_name^|^name^|^photoUrls^|^tags_id^|^tags_name^|^status
+1^|^100^|^Domestic^|^fluffy^|^https://petstore.com/fluffy.jpg^|^201^|^provider^|^available
+2^|^101^|^Wild^|^jungle^|^https://petstore.com/jungle.jpg^|^202^|^rescuer^|^pending
+3^|^102^|^Birds^|^Sky^|^https://petstore.com/sky.jpg^|^203^|^owner^|^sold
+4^|^103^|^Reptiles^|^Slither^|^https://petstore.com/slither.jpg^|^204^|^adopter^|^available
+5^|^104^|^Aquatic^|^Bubbles^|^https://petstore.com/bubbles.jpg^|^205^|^caregiver^|^pending
+6^|^105^|^Rodents^|^Squeak^|^https://petstore.com/squeak.jpg^|^206^|^sponsor^|^sold
+7^|^106^|^Big Cats^|^Roar^|^https://petstore.com/roar.jpg^|^207^|^foster^|^available
+8^|^107^|^Canines^|^Bark^|^https://petstore.com/bark.jpg^|^208^|^trainer^|^pending
+9^|^108^|^Avians^|^Chirp^|^https://petstore.com/chirp.jpg^|^209^|^vet^|^sold
+10^|^109^|^Equines^|^Neigh^|^https://petstore.com/neigh.jpg^|^210^|^breeder^|^available
