@@ -1,0 +1,6 @@
+petId,additionalMetadata,statusCode,scenario
+12345,"{\n  \"code\": 34590871,\n  \"type\": \"aute consequat Excepteur ullamco\",\n  \"message\": \"consequat minim veniam aliquip\"\n}",200,successful operation
+67890,"{\n  \"code\": 123456,\n  \"type\": \"enim reprehenderit ex est\",\n  \"message\": \"ad sint elit proident\"\n}",201,successful operation
+11223,"{\n  \"code\": 76329219,\n  \"type\": \"quis cupidatat pariatur eiusmod\",\n  \"message\": \"ullamco nulla id mollit\"\n}",299,successful operation
+44556,"{\n  \"code\": 33465656,\n  \"type\": \"cillum excepteur nulla anim\",\n  \"message\": \"aliqua cupidatat et laboris\"\n}",200,successful operation
+99887,"{\n  \"code\": 60506056,\n  \"type\": \"laboris labore ut ipsum\",\n  \"message\": \"do velit aliquip tempor\"\n}",202,successful operation
