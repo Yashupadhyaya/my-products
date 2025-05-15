@@ -1,0 +1,7 @@
+username,password,statusCode,scenario
+john,pass123,200,"successful operation"
+doe,pass456,400,"Invalid username/password supplied"
+anna,pass789,200,"successful operation"
+mike,pass321,400,"Invalid username/password supplied"
+emma,pass654,200,"successful operation"
+liam,pass987,400,"Invalid username/password supplied"
