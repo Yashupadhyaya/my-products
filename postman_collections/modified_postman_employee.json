@@ -1,0 +1,460 @@
+{
+  "item": [
+    {
+      "id": "d0571bdd-bf7b-4d52-bba9-7f2c956cefc6",
+      "name": "employees",
+      "item": [
+        {
+          "id": "5479cd34-61c5-47ca-8c67-4274e165dfed",
+          "name": "Searches employees.",
+          "request": {
+            "name": "Searches employees.",
+            "description": {
+              "content": "By passing in the appropriate options you can apply filters to your search operationId: getEmployees\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "employees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "searchString",
+                  "value": "{{searchString}}",
+                  "description": "Pass an optional search string for the look up"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "96aaa595-c099-4b74-b654-249346d8406e",
+              "name": "Search results matching the filter criteria",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "searchString",
+                      "value": "{{searchString}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"email\": \"john.smith@acme-corp.com\",\n    \"jobTitle\": \"System Analyst\",\n    \"name\": \"John Smith\",\n    \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n  },\n  {\n    \"email\": \"john.smith@acme-corp.com\",\n    \"jobTitle\": \"System Analyst\",\n    \"name\": \"John Smith\",\n    \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "adc0cc3a-b5d4-45c0-83ee-ca1cbffe7cbe",
+              "name": "Bad input",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "searchString",
+                      "value": "{{searchString}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2ceae334-6cb0-40b3-8fc6-0818dd697566",
+          "name": "adds an employee",
+          "request": {
+            "name": "adds an employee",
+            "description": {
+              "content": "Adds an employee to the system",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "employees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"{{email}}\",\n    \"jobTitle\": \"{{jobTitle}}\",\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "a5d44f8f-2053-4800-9997-d6c73e0d84f8",
+              "name": "employee created",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"{{email}}\",\n    \"jobTitle\": \"{{jobTitle}}\",\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "44ab1117-a212-418a-b0a2-13dbea90a2ab",
+              "name": "invalid input, object invalid",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"{{email}}\",\n    \"jobTitle\": \"{{jobTitle}}\",\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "e7643eff-f34c-4c9f-ad7c-607d5e15a03b",
+              "name": "an existing employee already exists",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"{{email}}\",\n    \"jobTitle\": \"{{jobTitle}}\",\n    \"name\": \"{{name}}\",\n    \"id\": \"{{id}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cc201691-4a88-4c86-8028-79a934384e6d",
+          "name": "Gets an employee by ID.",
+          "request": {
+            "name": "Gets an employee by ID.",
+            "description": {
+              "content": "Retrieves an employee by the associated ID\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "employees",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "{{id}}",
+                  "key": "id",
+                  "description": "(Required) Employee ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "60e9e302-86d5-439a-8064-5055df18e8fc",
+              "name": "Successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{id}}",
+                      "key": "id",
+                      "description": "(Required) Employee ID"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"email\": \"john.smith@acme-corp.com\",\n  \"jobTitle\": \"System Analyst\",\n  \"name\": \"John Smith\",\n  \"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7fa5bee1-6ba9-4c0b-b31b-e5865cefb0d1",
+              "name": "Not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{id}}",
+                      "key": "id",
+                      "description": "(Required) Employee ID"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "30a95200-ad0e-48b2-8551-237d1f69099c",
+    "name": "Employee Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
