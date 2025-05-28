@@ -1,0 +1,11 @@
+baseUrl,id,statusCode,scenario
+http://api.example.com,123e4567-e89b-12d3-a456-426614174000,200,Successful operation
+http://api.example.com,123e4567-e89b-12d3-a456-426614174001,200,Successful operation
+http://api.example.com,123e4567-e89b-12d3-a456-426614174002,404,Not found
+http://api.example.com,123e4567-e89b-12d3-a456-426614174003,404,Not found
+http://api.example.com,123e4567-e89b-12d3-a456-426614174004,200,Successful operation
+http://api.example.com,123e4567-e89b-12d3-a456-426614174005,404,Not found
+http://api.example.com,123e4567-e89b-12d3-a456-426614174006,200,Successful operation
+http://api.example.com,123e4567-e89b-12d3-a456-426614174007,404,Not found
+http://api.example.com,123e4567-e89b-12d3-a456-426614174008,200,Successful operation
+http://api.example.com,123e4567-e89b-12d3-a456-426614174009,404,Not found
