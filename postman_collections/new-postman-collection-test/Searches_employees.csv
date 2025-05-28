@@ -1,0 +1,7 @@
+baseUrl,searchString,statusCode,scenario
+https://api.example.com/users,"name:\"John\"",200,Search results matching the filter criteria
+https://api.example.com/posts,"title:\"Hello World\"",200,Search results matching the filter criteria
+https://api.example.com/comments,"body:\"Lorem ipsum\"",200,Search results matching the filter criteria
+https://api.example.com/users,"email:\"invalidemail\"",400,Bad input
+https://api.example.com/posts,"title:\"\"",400,Bad input
+https://api.example.com/comments,"id:\"123invalid\"",400,Bad input

@@ -1,0 +1,8 @@
+baseUrl,email,jobTitle,name,id,statusCode,scenario
+www.apiTest.com,"john.doe@test.com","Software Developer","John Doe",123,201,"employee created"
+www.apiTest.com,"jane.doe@test.com","UI/UX Designer","Jane Doe",456,201,"employee created"
+www.apiTest.com,"bob.doe@test.com","Data Scientist","Bob Doe",789,201,"employee created"
+www.testingApi.com,"wrong.email","Tester","NullValue",0,400,"invalid input, object invalid"
+www.testingApi.com,"notfoundemail@test.com","Not a Job","Invalid Name",000,400,"invalid input, object invalid"
+www.apiPush.com,"exists@test.com","Existing Position","Already Exists",999,409,"an existing employee already exists"
+www.apiPush.com,"duplicate@test.com","Duplicate Job","Duplicate Name",111,409,"an existing employee already exists"
