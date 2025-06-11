@@ -1,0 +1,11 @@
+id^|^app-identifier^|^customer-secret-key^|^RequestBody^|^statusCode
+1^|^f7d1a5b48011e5671a93792e8532ba12388c43adb1ed95336475bf473a5f^|^21546580645c21b8a3529680f935f715b6c683ad9087b1efd2e9d41181ab^|^{"action":"createUser","data":{"name":"Alice","email":"alice@example.com","age":25}}^|^200
+2^|^a45d2b40845e5342d2028475822da45578f32acdb9bd853364f3df479e2a^|^33546584625c21b8a1235680f435f715b6c6821db8976bdfd2a9df51181be^|^{"action":"updateUser","data":{"id":101,"email":"bob.upd@example.com"}}^|^200
+3^|^645fb1402b465372912794d8122da45288e32bdb2ed873364f4bf441e7d6^|^44536580645c29b8a3529682f765a715b5b6838db8974bdfd7e9d77181cc^|^{"action":"deleteUser","data":{"id":102}}^|^200
+4^|^d452fb47831e5672d63194d8622da15378f92cdb2ed75336485bf479e1c2^|^55546580645c28b8a3529630f975a175b5b6829db8947bdfd9e9d51181ab^|^{"action":"fetchUser","data":{"id":103}}^|^200
+5^|^e84d2b1487a1f5672c94794d8122e24558f32ddb2ad85336475cf979e8d1^|^66546580645b39b8a3529634f665f715b7b6849db8973bdfd1e9d21181ab^|^{"action":"createUser","data":{"name":"Charlie","email":"charlie@example.com","age":30}}^|^200
+6^|^f15d2b80845f55329163794d8732ca45588f42adb2fd85336475bf479e3e^|^77546580645c61b8a6529680f745b715b6b6846db8957bdfd2e9d61181eb^|^{"action":"updateUser","data":{"id":104,"email":"eve.upd@example.com"}}^|^200
+7^|^a46d3a40835f5671c118794d8822ab45388f32bdb2bd85736475bf479e8c^|^88546580645c71b8a3529783f665c715b8b6834db8974bdfd4e9d49181db^|^{"action":"deleteUser","data":{"id":105}}^|^200
+8^|^b75d2b44875e5782e94794d8822da45178f82adb2bd85393485bf471e9a6^|^99546580645c11b8a2529686f945d715b5b6843db8947bdfd8e9d58181ca^|^{"action":"fetchUser","data":{"id":106}}^|^200
+9^|^c84d1a40845f1671d21794d85222ab85588f92adb2ed75396475bf879e2b^|^10536580645c31b8a3529635f725a715b6b6832db8973bdfd0e9d45181ea^|^{"action":"createUser","data":{"name":"Dave","email":"dave@example.com","age":28}}^|^200
+10^|^d56c2b40845d8672f31794d8622ab55678f52adb2ed95336475bf571e8d^|^11526580622c51b8a4529680f865d715b7b6823db8944bdfd3e9d62181ba^|^{"action":"updateUser","data":{"id":107,"email":"frank.upd@example.com"}}^|^200

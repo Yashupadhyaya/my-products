@@ -1,0 +1,11 @@
+id^|^app-identifier^|^customer-secret-key^|^RequestBody^|^statusCode^|^bearer
+1^|^a3bde54f7c8e9d12345fc67b89da67c3e24f1b2a47d8c0e54f71^|^fbc9345d6e37a925894c6789abcf712bdf67e128fc3e459d79a^|^{"name":"ProductA","code":"AA123","currencies":["USD","EUR","GBP"],"default_currency":"USD","is_active":1}^|^200^|^
+2^|^b4f3d46e8a12cd78902fa56c34db9832e45cd19b38e7624a98fd5^|^ca6d28f5e79b345d1029ef713c4a896fb932cd5ea7934b81f69^|^{"name":"ProductB","code":"BB456","currencies":["CAD","AUD"],"default_currency":"CAD","is_active":1}^|^200^|^
+3^|^d5c8b2a374e91fc879b4e5a23cd6f70319af4d72e93c25a67f84^|^ed93b425b8c6da279f45c8139a67fb02c4d81a59b273fdeb846^|^{"name":"ProductC","code":"CC789","currencies":["INR","JPY"],"default_currency":"INR","is_active":1}^|^200^|^
+4^|^e2a5b1c738d9f0234c67ed58b09a43da6f297c8af814e5b93d72^|^f62d7c83e45b7aa3498c5d09fb34cd25a67e9cf12b873ace5f28^|^{"name":"ProductD","code":"DD321","currencies":["CNY","KRW"],"default_currency":"CNY","is_active":0}^|^200^|^
+5^|^c8a1f27d6b53498219ec34a67fb097d2e5b4ea3df5c78629f1a3^|^ab17f25c64e8cd39a59b23467d8c96fb23a79ec12e4d5fa8b937^|^{"name":"ProductE","code":"EE654","currencies":["NZD","ZAR","HKD"],"default_currency":"NZD","is_active":1}^|^200^|^
+6^|^f4b92d789a23c5d67ea34fb127c08db293a47e956cf812af5e9^|^bd72c9e31f46ab58d903e579812c67fb23ade9fa45c8e7b5432^|^{"name":"ProductF","code":"FF987","currencies":["BRL","MXN"],"default_currency":"BRL","is_active":1}^|^200^|^
+7^|^a23b57f68d9c4e5c12a97dfb234809ea56f14d72c98b3ab5e47^|^fa67b128c9d3e45ab98c072d59e4c671f23bd589aec93fa47d26^|^{"name":"ProductG","code":"GG123","currencies":["SGD","THB"],"default_currency":"SGD","is_active":0}^|^200^|^
+8^|^b17d6c9238fb54ea09c34a67db23af197e5f4b8ce47cf25a93d^|^cd89a34e245f67b128fb5c9e03dae79c3ab72fa57e421cf986d5^|^{"name":"ProductH","code":"HH456","currencies":["MYR","IDR"],"default_currency":"MYR","is_active":1}^|^200^|^
+9^|^fb7d34a65c2a91c89e47db08eaf2345b2c93718fb56e4da79c3^|^e789c24ab35fd6fa128903d59cf647b13e29b4a578dac9f2356^|^{"name":"ProductI","code":"II789","currencies":["CHF","SEK"],"default_currency":"CHF","is_active":0}^|^200^|^
+10^|^c6d92371af4b58ea45d1289039cf23a7bcd985fd67ab47c92e5^|^ab59c47d6e28fa903d13c5b2384cf67b9e9da25fb73ea985d24^|^{"name":"ProductJ","code":"JJ321","currencies":["DKK","NOK"],"default_currency":"DKK","is_active":1}^|^200^|^
