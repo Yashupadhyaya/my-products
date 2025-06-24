@@ -1,0 +1,52 @@
+[
+  {
+    "customerId": 1045300,
+    "sourceAccountId": "1042345",
+    "amount": "1000.50",
+    "currency": "USD",
+    "image.frontImage": "front_image_001.jpg",
+    "image.backImage": "back_image_001.jpg",
+    "statusCode": 200,
+    "scenario": "Deposit success"
+  },
+  {
+    "customerId": 0,
+    "sourceAccountId": "invalid_account",
+    "amount": "-500",
+    "currency": "INVALID",
+    "image.frontImage": "invalid_front_image.jpg",
+    "image.backImage": "invalid_back_image.jpg",
+    "statusCode": 401,
+    "scenario": "Error: Authorisation failed."
+  },
+  {
+    "customerId": 9999999,
+    "sourceAccountId": "test_account_002",
+    "amount": "99999.99",
+    "currency": "XYZ",
+    "image.frontImage": "test_front_img.jpg",
+    "image.backImage": "test_back_img.jpg",
+    "statusCode": 404,
+    "scenario": "Error: Not Found"
+  },
+  {
+    "customerId": 1234567,
+    "sourceAccountId": "12345ABC",
+    "amount": "1234.00",
+    "currency": "EUR",
+    "image.frontImage": "valid_front_image.jpg",
+    "image.backImage": "valid_back_image.jpg",
+    "statusCode": 200,
+    "scenario": "Deposit success"
+  },
+  {
+    "customerId": -1,
+    "sourceAccountId": "",
+    "amount": "INVALID",
+    "currency": "",
+    "image.frontImage": "",
+    "image.backImage": "nonexistent_back_image.jpg",
+    "statusCode": 401,
+    "scenario": "Error: Authorisation failed."
+  }
+]
