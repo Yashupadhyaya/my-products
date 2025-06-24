@@ -1,0 +1,233 @@
+{
+  "item": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "name": "GetTransactions",
+      "request": {
+        "name": "GetTransactions",
+        "description": {
+          "content": "Fetch transactions information",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "GetTransactions"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "disabled": false,
+            "key": "koreUserId",
+            "value": "{{koreUserId}}",
+            "description": ""
+          },
+          {
+            "disabled": false,
+            "description": "(Required) ",
+            "key": "botId",
+            "value": "{{botId}}"
+          },
+          {
+            "disabled": false,
+            "description": "(Required) ",
+            "key": "accountId",
+            "value": "{{accountId}}"
+          },
+          {
+            "disabled": false,
+            "key": "X-Auth-token",
+            "value": "{{X-Auth-token}}",
+            "description": ""
+          },
+          {
+            "disabled": false,
+            "key": "X-CORRELATION-ID",
+            "value": "{{X-CORRELATION-ID}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"accountNumber\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"customerId\": \"<string>\",\n  \"numOfTransactions\": \"<number>\",\n  \"status\": \"<string>\",\n  \"startDate\": \"<date>\",\n  \"endDate\": \"<date>\",\n  \"sort\": {\n    \"type\": \"<string>\",\n    \"value\": \"<string>\"\n  },\n  \"transactionAmount\": {\n    \"amount1\": \"<number>\",\n    \"amount\": {},\n    \"currency\": \"<string>\"\n  },\n  \"category\": [\n    {\n      \"codeType\": \"<string>\",\n      \"value\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"source\": \"<string>\"\n    },\n    {\n      \"codeType\": \"<string>\",\n      \"value\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"source\": \"<string>\"\n    }\n  ],\n  \"debitOrCredit\": \"<string>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "name": "successful operation",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "GetTransactions"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "koreUserId",
+                "value": "{{koreUserId}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "botId",
+                "value": "{{botId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "accountId",
+                "value": "{{accountId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "X-Auth-token",
+                "value": "{{X-Auth-token}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-CORRELATION-ID",
+                "value": "{{X-CORRELATION-ID}}",
+                "description": ""
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"accountNumber\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"customerId\": \"<string>\",\n  \"numOfTransactions\": \"<number>\",\n  \"status\": \"<string>\",\n  \"startDate\": \"<date>\",\n  \"endDate\": \"<date>\",\n  \"sort\": {\n    \"type\": \"<string>\",\n    \"value\": \"<string>\"\n  },\n  \"transactionAmount\": {\n    \"amount1\": \"<number>\",\n    \"amount\": {},\n    \"currency\": \"<string>\"\n  },\n  \"category\": [\n    {\n      \"codeType\": \"<string>\",\n      \"value\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"source\": \"<string>\"\n    },\n    {\n      \"codeType\": \"<string>\",\n      \"value\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"source\": \"<string>\"\n    }\n  ],\n  \"debitOrCredit\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "[\n  {\n    \"customerId\": 27631347.98347293,\n    \"transactionId\": -14004642.670515507,\n    \"accountNumber\": \"Lorem\",\n    \"timestamp\": -44285296.312407255,\n    \"amount\": 18280646.893173322,\n    \"currency\": \"sit aliquip Excepteur\",\n    \"debitOrCredit\": \"ad cillum elit aliqua\",\n    \"description\": \"culpa eu\",\n    \"paymentMode\": \"ut velit Duis\",\n    \"DBANames\": \"ullamco deserunt co\",\n    \"status\": \"quis labor\",\n    \"closingBalance\": 52260288.89480519,\n    \"transacitonType\": \"deserunt\",\n    \"ACHCode\": \"sint elit\",\n    \"MCCCode\": \"consequat tempor nulla Duis\",\n    \"SICCode\": \"Duis dolore\",\n    \"name\": \"et esse in elit\",\n    \"address\": \"ad deserunt sed\",\n    \"street\": \"mollit dolor sit adipisicing\",\n    \"city\": \"velit\",\n    \"state\": \"cupidatat magna Lorem\",\n    \"zip\": \"deserunt\",\n    \"country\": \"in aliqua\",\n    \"phoneNumber\": -46207762.17173914,\n    \"metaInfo\": [\n      {\n        \"name\": \"string\",\n        \"value\": \"string\"\n      },\n      {\n        \"name\": \"string\",\n        \"value\": \"string\"\n      }\n    ]\n  },\n  {\n    \"customerId\": 88134860.02850533,\n    \"transactionId\": -79428671.25852439,\n    \"accountNumber\": \"quis\",\n    \"timestamp\": 82599876.11430976,\n    \"amount\": -59439955.84905528,\n    \"currency\": \"in sunt reprehenderit\",\n    \"debitOrCredit\": \"Excepteur\",\n    \"description\": \"cupidatat officia nostrud\",\n    \"paymentMode\": \"culpa et ex qui\",\n    \"DBANames\": \"aliqua Excepteur est\",\n    \"status\": \"cillum nulla irure fugiat\",\n    \"closingBalance\": 19282993.28082946,\n    \"transacitonType\": \"elit nostrud\",\n    \"ACHCode\": \"quis proident tempor sit ut\",\n    \"MCCCode\": \"sunt nisi sed\",\n    \"SICCode\": \"consequat u\",\n    \"name\": \"cillum aliqua\",\n    \"address\": \"aliquip \",\n    \"street\": \"anim ullamco quis\",\n    \"city\": \"reprehenderit velit eiusmod tempor\",\n    \"state\": \"ea deserunt \",\n    \"zip\": \"irure ullamco v\",\n    \"country\": \"sunt\",\n    \"phoneNumber\": 27373700.043884203,\n    \"metaInfo\": [\n      {\n        \"name\": \"string\",\n        \"value\": \"string\"\n      },\n      {\n        \"name\": \"string\",\n        \"value\": \"string\"\n      }\n    ]\n  }\n]",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-testplan using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for GetTransactions for http method type post in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n         console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\nif (pm.response.code == 200){\n    pm.test(\"successful operation\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n          responseData.forEach((responseData) => {\n\n        pm.test('Response has the `customerId` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`customerId`)){\n                if(pm.expect(ld.get(pm.response.json(), `customerId`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `customerId`, null)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `transactionId` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`transactionId`)){\n                if(pm.expect(ld.get(pm.response.json(), `transactionId`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `transactionId`, null)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `accountNumber` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`accountNumber`)){\n                if(pm.expect(ld.get(pm.response.json(), `accountNumber`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `accountNumber`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `timestamp` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`timestamp`)){\n                if(pm.expect(ld.get(pm.response.json(), `timestamp`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `timestamp`, null)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `amount` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`amount`)){\n                if(pm.expect(ld.get(pm.response.json(), `amount`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `amount`, null)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `currency` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`currency`)){\n                if(pm.expect(ld.get(pm.response.json(), `currency`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `currency`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `debitOrCredit` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`debitOrCredit`)){\n                if(pm.expect(ld.get(pm.response.json(), `debitOrCredit`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `debitOrCredit`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `description` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`description`)){\n                if(pm.expect(ld.get(pm.response.json(), `description`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `description`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `paymentMode` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`paymentMode`)){\n                if(pm.expect(ld.get(pm.response.json(), `paymentMode`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `paymentMode`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `DBANames` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`DBANames`)){\n                if(pm.expect(ld.get(pm.response.json(), `DBANames`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `DBANames`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `status` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`status`)){\n                if(pm.expect(ld.get(pm.response.json(), `status`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `status`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `closingBalance` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`closingBalance`)){\n                if(pm.expect(ld.get(pm.response.json(), `closingBalance`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `closingBalance`, null)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `transacitonType` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`transacitonType`)){\n                if(pm.expect(ld.get(pm.response.json(), `transacitonType`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `transacitonType`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `ACHCode` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`ACHCode`)){\n                if(pm.expect(ld.get(pm.response.json(), `ACHCode`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `ACHCode`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `MCCCode` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`MCCCode`)){\n                if(pm.expect(ld.get(pm.response.json(), `MCCCode`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `MCCCode`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `SICCode` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`SICCode`)){\n                if(pm.expect(ld.get(pm.response.json(), `SICCode`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `SICCode`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `name` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`name`)){\n                if(pm.expect(ld.get(pm.response.json(), `name`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `name`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `address` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`address`)){\n                if(pm.expect(ld.get(pm.response.json(), `address`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `address`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `street` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`street`)){\n                if(pm.expect(ld.get(pm.response.json(), `street`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `street`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `city` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`city`)){\n                if(pm.expect(ld.get(pm.response.json(), `city`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `city`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `state` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`state`)){\n                if(pm.expect(ld.get(pm.response.json(), `state`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `state`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `zip` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`zip`)){\n                if(pm.expect(ld.get(pm.response.json(), `zip`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `zip`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `country` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`country`)){\n                if(pm.expect(ld.get(pm.response.json(), `country`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `country`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `phoneNumber` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`phoneNumber`)){\n                if(pm.expect(ld.get(pm.response.json(), `phoneNumber`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `phoneNumber`, null)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `metaInfo` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`metaInfo`)){\n                if(pm.expect(ld.get(pm.response.json(), `metaInfo`)).to.exist){\n                  pm.expect(Array.isArray(ld.get(pm.response.json(), `metaInfo`))).to.equal(true);\n                }\n\n            }\n\n        })\n\n        pm.test(`Each object in the metaInfo field has all the required fields`,function(){\n            pm.expect(pm.response.json()).to.have.nested.property(`metaInfo`);\n            let metaInfoArray = ld.get(pm.response.json(), `metaInfo`, \"\");\n            for (let metaInfo_it = 0; metaInfo_it < metaInfoArray.length; metaInfo_it++) {\n                let iterator = metaInfo_it;\n                \t\n        pm.test(`${iterator} element of array 'metaInfo[${metaInfo_it}].name' has 'name' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `metaInfo[${metaInfo_it}].name`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`metaInfo[${metaInfo_it}].name`, null)).to.equal(\"string\");\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'metaInfo[${metaInfo_it}].value' has 'value' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `metaInfo[${metaInfo_it}].value`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`metaInfo[${metaInfo_it}].value`, null)).to.equal(\"string\");\n            }\n        })\n\n\n            }\n\n        })\n\n          });\n\n    });\n\n}\n"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://localhost:8080/smt",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "ead94fcb-3f43-427b-88ae-10c7aa2df8a8",
+    "name": "BankAssist Core Banking Specification",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "BankAssist Core Banking Specification",
+      "type": "text/plain"
+    }
+  }
+}
