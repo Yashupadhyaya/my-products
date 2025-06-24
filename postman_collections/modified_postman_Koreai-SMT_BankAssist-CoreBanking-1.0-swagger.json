@@ -1,0 +1,693 @@
+{
+  "item": [
+    {
+      "name": "deposit",
+      "request": {
+        "name": "deposit",
+        "description": {
+          "content": "Make a check deposit on a user's account",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "deposit"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "disabled": false,
+            "key": "koreUserId",
+            "value": "{{koreUserId}}",
+            "description": ""
+          },
+          {
+            "disabled": false,
+            "description": "(Required) ",
+            "key": "botId",
+            "value": "{{botId}}"
+          },
+          {
+            "disabled": false,
+            "description": "(Required) ",
+            "key": "accountId",
+            "value": "{{accountId}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"customerId\": {{customerId_*number}},\n    \"sourceAccountId\": {{sourceAccountId_*string}},\n    \"amount\": {{amount_*string}},\n    \"currency\": {{currency_*string}},\n    \"image\": {\n        \"frontImage\": {{image.frontImage_*string}},\n        \"backImage\": {{image.backImage_*string}}\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "name": "Deposit success",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "deposit"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "koreUserId",
+                "value": "{{koreUserId}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "botId",
+                "value": "{{botId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "accountId",
+                "value": "{{accountId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customerId\": {{customerId_*number}},\n    \"sourceAccountId\": {{sourceAccountId_*number}},\n    \"amount\": {{amount_*number}},\n    \"currency\": {{currency_*string}},\n    \"image\": {\n        \"frontImage\": {{image.frontImage_*string}},\n        \"backImage\": {{image.backImage_*string}}\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        },
+        {
+          "name": "Error: Authorisation failed.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "deposit"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "koreUserId",
+                "value": "{{koreUserId}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "botId",
+                "value": "{{botId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "accountId",
+                "value": "{{accountId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customerId\": {{customerId_*number}},\n    \"sourceAccountId\": {{sourceAccountId_*number}},\n    \"amount\": {{amount_*number}},\n    \"currency\": {{currency_*string}},\n    \"image\": {\n        \"frontImage\": {{image.frontImage_*string}},\n        \"backImage\": {{image.backImage_*string}}\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Unauthorized",
+          "code": 401,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"err\": {\n    \"message\": \"ullamco voluptate aliquip ut magna\"\n  }\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        },
+        {
+          "name": "Error: Not Found",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "deposit"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "koreUserId",
+                "value": "{{koreUserId}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "botId",
+                "value": "{{botId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "accountId",
+                "value": "{{accountId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customerId\": {{customerId_*number}},\n    \"sourceAccountId\": {{sourceAccountId_*number}},\n    \"amount\": {{amount_*number}},\n    \"currency\": {{currency_*string}},\n    \"image\": {\n        \"frontImage\": {{image.frontImage_*string}},\n        \"backImage\": {{image.backImage_*string}}\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"err\": {\n    \"message\": \"ullamco voluptate aliquip ut magna\"\n  }\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-testplan using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for deposit for http method type post in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n         console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\nif (pm.response.code == 200){\n    pm.test(\"Deposit success\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n    });\n\n}\n\nif (pm.response.code == 401){\n    pm.test(\"Error: Authorisation failed.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n        pm.test('Response has the `err` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`err`)){\n                if(pm.expect(ld.get(pm.response.json(), `err`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `err`, null)).to.equal(\"object\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `err.message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`err.message`)){\n                if(pm.expect(ld.get(pm.response.json(), `err.message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `err.message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 404){\n    pm.test(\"Error: Not Found\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n        pm.test('Response has the `err` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`err`)){\n                if(pm.expect(ld.get(pm.response.json(), `err`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `err`, null)).to.equal(\"object\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `err.message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`err.message`)){\n                if(pm.expect(ld.get(pm.response.json(), `err.message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `err.message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    null,
+    {
+      "name": "UpdateAccountInfo",
+      "request": {
+        "name": "UpdateAccountInfo",
+        "description": {
+          "content": "Update customer account details",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "UpdateAccountInfo"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "disabled": false,
+            "key": "koreUserId",
+            "value": "{{koreUserId}}",
+            "description": ""
+          },
+          {
+            "disabled": false,
+            "description": "(Required) ",
+            "key": "botId",
+            "value": "{{botId}}"
+          },
+          {
+            "disabled": false,
+            "description": "(Required) ",
+            "key": "accountId",
+            "value": "{{accountId}}"
+          },
+          {
+            "disabled": false,
+            "key": "X-Auth-token",
+            "value": "{{X-Auth-token}}",
+            "description": ""
+          },
+          {
+            "disabled": false,
+            "key": "X-CORRELATION-ID",
+            "value": "{{X-CORRELATION-ID}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "PUT",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"accountNumber\": {{accountNumber_*string}},\n    \"customerId\": {{customerId_*number}},\n    \"email\": {{email_*string}},\n    \"alternatePhoneNumber\": {{alternatePhoneNumber_*number}},\n    \"isAlternateMobileNumber\": {{isAlternateMobileNumber_*boolean}},\n    \"phone\": {{phone_*number}},\n    \"isPrimaryMobileNumber\": {{isPrimaryMobileNumber_*boolean}},\n    \"location\": {{location_*string}},\n    \"isStatement\": {{isStatement_*boolean}}\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "name": "successful operation",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "UpdateAccountInfo"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "koreUserId",
+                "value": "{{koreUserId}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "botId",
+                "value": "{{botId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "accountId",
+                "value": "{{accountId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "X-Auth-token",
+                "value": "{{X-Auth-token}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-CORRELATION-ID",
+                "value": "{{X-CORRELATION-ID}}",
+                "description": ""
+              }
+            ],
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"accountNumber\": {{accountNumber_*number}},\n    \"customerId\": {{customerId_*number}},\n    \"email\": {{email_*string}},\n    \"alternatePhoneNumber\": {{alternatePhoneNumber_*number}},\n    \"isAlternateMobileNumber\": {{isAlternateMobileNumber_*boolean}},\n    \"phone\": {{phone_*number}},\n    \"isPrimaryMobileNumber\": {{isPrimaryMobileNumber_*boolean}},\n    \"location\": {{location_*string}},\n    \"isStatement\": {{isStatement_*boolean}}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        },
+        {
+          "name": "Error: Authorisation failed.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "UpdateAccountInfo"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "koreUserId",
+                "value": "{{koreUserId}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "botId",
+                "value": "{{botId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "accountId",
+                "value": "{{accountId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "X-Auth-token",
+                "value": "{{X-Auth-token}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-CORRELATION-ID",
+                "value": "{{X-CORRELATION-ID}}",
+                "description": ""
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"accountNumber\": {{accountNumber_*number}},\n    \"customerId\": {{customerId_*number}},\n    \"email\": {{email_*string}},\n    \"alternatePhoneNumber\": {{alternatePhoneNumber_*number}},\n    \"isAlternateMobileNumber\": {{isAlternateMobileNumber_*boolean}},\n    \"phone\": {{phone_*number}},\n    \"isPrimaryMobileNumber\": {{isPrimaryMobileNumber_*boolean}},\n    \"location\": {{location_*string}},\n    \"isStatement\": {{isStatement_*boolean}}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Unauthorized",
+          "code": 401,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"err\": {\n    \"message\": \"ullamco voluptate aliquip ut magna\"\n  }\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        },
+        {
+          "name": "Error: Not Found",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "UpdateAccountInfo"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "koreUserId",
+                "value": "{{koreUserId}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "botId",
+                "value": "{{botId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "accountId",
+                "value": "{{accountId}}"
+              },
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "Authorization",
+                "value": "{{Authorization}}"
+              },
+              {
+                "disabled": false,
+                "key": "X-Auth-token",
+                "value": "{{X-Auth-token}}",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-CORRELATION-ID",
+                "value": "{{X-CORRELATION-ID}}",
+                "description": ""
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"accountNumber\": {{accountNumber_*number}},\n    \"customerId\": {{customerId_*number}},\n    \"email\": {{email_*string}},\n    \"alternatePhoneNumber\": {{alternatePhoneNumber_*number}},\n    \"isAlternateMobileNumber\": {{isAlternateMobileNumber_*boolean}},\n    \"phone\": {{phone_*number}},\n    \"isPrimaryMobileNumber\": {{isPrimaryMobileNumber_*boolean}},\n    \"location\": {{location_*string}},\n    \"isStatement\": {{isStatement_*boolean}}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"err\": {\n    \"message\": \"ullamco voluptate aliquip ut magna\"\n  }\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-testplan using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for UpdateAccountInfo for http method type put in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n         console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\nif (pm.response.code == 200){\n    pm.test(\"successful operation\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n    });\n\n}\n\nif (pm.response.code == 401){\n    pm.test(\"Error: Authorisation failed.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n        pm.test('Response has the `err` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`err`)){\n                if(pm.expect(ld.get(pm.response.json(), `err`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `err`, null)).to.equal(\"object\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `err.message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`err.message`)){\n                if(pm.expect(ld.get(pm.response.json(), `err.message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `err.message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 404){\n    pm.test(\"Error: Not Found\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n        pm.test('Response has the `err` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`err`)){\n                if(pm.expect(ld.get(pm.response.json(), `err`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `err`, null)).to.equal(\"object\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `err.message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`err.message`)){\n                if(pm.expect(ld.get(pm.response.json(), `err.message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `err.message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://localhost:8080/smt",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "f2ab62b8-7a6f-4400-aec0-c9b20a520d1a",
+    "name": "BankAssist Core Banking Specification",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "BankAssist Core Banking Specification",
+      "type": "text/plain"
+    }
+  }
+}
