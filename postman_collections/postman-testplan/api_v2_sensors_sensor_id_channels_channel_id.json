@@ -1,0 +1,32 @@
+[
+  {
+    "sensor_id": "sensor_12345",
+    "channel_id": "channel_67890",
+    "statusCode": 200,
+    "scenario": "Detailed information for a single channel/input for a single Sensor"
+  },
+  {
+    "sensor_id": "sensor_abcdef",
+    "channel_id": "channel_ghijk",
+    "statusCode": 200,
+    "scenario": "Detailed information for a single channel/input for a single Sensor"
+  },
+  {
+    "sensor_id": "sensor_invalid!",
+    "channel_id": "channel_invalid#",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sensor_id": "sensor_xyz123",
+    "channel_id": "channel_pqr456",
+    "statusCode": 200,
+    "scenario": "Detailed information for a single channel/input for a single Sensor"
+  },
+  {
+    "sensor_id": "!sensor_error",
+    "channel_id": "?channel_error",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  }
+]

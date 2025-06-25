@@ -1,0 +1,52 @@
+[
+  {
+    "sort": "asc",
+    "page": "1",
+    "per": "20",
+    "name": "AccessPoint1",
+    "serial_number": 12345,
+    "ip_address": "192.168.0.1",
+    "statusCode": 200,
+    "scenario": "All Access Points within the system"
+  },
+  {
+    "sort": "desc",
+    "page": "2",
+    "per": "15",
+    "name": "AccessPoint2",
+    "serial_number": 67890,
+    "ip_address": "192.168.1.1",
+    "statusCode": 200,
+    "scenario": "All Access Points within the system"
+  },
+  {
+    "sort": "random",
+    "page": "100",
+    "per": "abc",
+    "name": "InvalidPoint",
+    "serial_number": -54321,
+    "ip_address": "999.999.999.999",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sort": "",
+    "page": "xyz",
+    "per": "NaN",
+    "name": "!@#InvalidName",
+    "serial_number": 0,
+    "ip_address": "256.256.256.256",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sort": "alphabetical",
+    "page": "5",
+    "per": "30",
+    "name": "AccessPoint5",
+    "serial_number": 99887,
+    "ip_address": "172.16.0.5",
+    "statusCode": 200,
+    "scenario": "All Access Points within the system"
+  }
+]

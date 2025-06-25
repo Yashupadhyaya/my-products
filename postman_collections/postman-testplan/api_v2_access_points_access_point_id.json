@@ -1,0 +1,22 @@
+[
+  {
+    "access_point_id": "AP123456",
+    "statusCode": 200,
+    "scenario": "Detailed information for a single Access Point"
+  },
+  {
+    "access_point_id": "AP789012",
+    "statusCode": 200,
+    "scenario": "Detailed information for a single Access Point"
+  },
+  {
+    "access_point_id": "INVALID_AP_1",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "access_point_id": "UNKNOWN_AP_456",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  }
+]
