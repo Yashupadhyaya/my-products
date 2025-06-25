@@ -1,0 +1,27 @@
+[
+  {
+    "asset_id": 12345,
+    "statusCode": 200,
+    "scenario": "Detailed information for a single Asset"
+  },
+  {
+    "asset_id": 67890,
+    "statusCode": 200,
+    "scenario": "Detailed information for a single Asset"
+  },
+  {
+    "asset_id": 0,
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "asset_id": "invalid_id",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "asset_id": 99999,
+    "statusCode": 200,
+    "scenario": "Detailed information for a single Asset"
+  }
+]

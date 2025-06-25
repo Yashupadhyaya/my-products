@@ -1,0 +1,42 @@
+[
+  {
+    "start": "2023-10-01T08:30:00Z",
+    "end": "2023-10-01T09:30:00Z",
+    "sensor_id": "sensor_001",
+    "channel_id": "channel_A1",
+    "statusCode": 200,
+    "scenario": "Readings for a single channel/input for a single Sensor"
+  },
+  {
+    "start": "2023-10-02T14:00:00Z",
+    "end": "2023-10-02T15:00:00Z",
+    "sensor_id": "sensor_002",
+    "channel_id": "channel_B1",
+    "statusCode": 200,
+    "scenario": "Readings for a single channel/input for a single Sensor"
+  },
+  {
+    "start": "invalid_date",
+    "end": "invalid_date",
+    "sensor_id": "unknown_sensor",
+    "channel_id": "unknown_channel",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "start": "2023-09-25T10:20:00Z",
+    "end": "2023-09-25T10:40:00Z",
+    "sensor_id": "sensor_003",
+    "channel_id": "channel_C2",
+    "statusCode": 200,
+    "scenario": "Readings for a single channel/input for a single Sensor"
+  },
+  {
+    "start": "random_string",
+    "end": "random_string",
+    "sensor_id": "invalid_sensor_id",
+    "channel_id": "invalid_channel_id",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  }
+]

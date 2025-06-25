@@ -1,0 +1,27 @@
+[
+  {
+    "asset_id": "123456",
+    "statusCode": 200,
+    "scenario": "Available channels/inputs for a single Asset"
+  },
+  {
+    "asset_id": "789101",
+    "statusCode": 200,
+    "scenario": "Available channels/inputs for a single Asset"
+  },
+  {
+    "asset_id": "INVALID_ASSET_ID",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "asset_id": "",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "asset_id": "!@#INVALID*ID",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  }
+]

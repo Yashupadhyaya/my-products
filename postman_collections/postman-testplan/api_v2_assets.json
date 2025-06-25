@@ -1,0 +1,52 @@
+[
+  {
+    "sort": "name:asc",
+    "page": "1",
+    "per": "10",
+    "name": "asset1",
+    "tag": "categoryA",
+    "state": "active",
+    "statusCode": 200,
+    "scenario": "All Assets in the system with an Active or Distabled status"
+  },
+  {
+    "sort": "date:desc",
+    "page": "2",
+    "per": "5",
+    "name": "asset_test_invalid",
+    "tag": "unknownCategory",
+    "state": "invalidState",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sort": "status:asc",
+    "page": "3",
+    "per": "15",
+    "name": "asset3",
+    "tag": "categoryB",
+    "state": "disabled",
+    "statusCode": 200,
+    "scenario": "All Assets in the system with an Active or Distabled status"
+  },
+  {
+    "sort": "id:desc",
+    "page": "0",
+    "per": "0",
+    "name": "null_asset",
+    "tag": "!invalidTag",
+    "state": "missingData",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sort": "type:asc",
+    "page": "4",
+    "per": "20",
+    "name": "asset4",
+    "tag": "categoryC",
+    "state": "active",
+    "statusCode": 200,
+    "scenario": "All Assets in the system with an Active or Distabled status"
+  }
+]
