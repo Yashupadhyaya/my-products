@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[1:18]","start":1752134624529,"end":1752134625382,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[1:18] 08:03:44.529-08:03:45.382 Validate Search Employees API with no query parameters","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[2.1:41]","start":1752134625387,"end":1752134626122,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[2.1:41] 08:03:45.387-08:03:46.122 Validate Search Employees API with search string query parameter","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[2.2:42]","start":1752134626129,"end":1752134626901,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[2.2:42] 08:03:46.129-08:03:46.901 Validate Search Employees API with search string query parameter","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[2.3:43]","start":1752134626906,"end":1752134627615,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[2.3:43] 08:03:46.906-08:03:47.615 Validate Search Employees API with search string query parameter","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[3:45]","start":1752134627620,"end":1752134628446,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_get[3:45] 08:03:47.620-08:03:48.446 Validate Search Employees API with invalid query parameter","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_id_get[1.1:28]","start":1752134622294,"end":1752134622311,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_id_get[1.1:28] 08:03:42.294-08:03:42.311 Retrieve employee by valid ID","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_id_get[1.2:28]","start":1752134622317,"end":1752134623573,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_id_get[1.2:28] 08:03:42.317-08:03:43.573 Retrieve employee by valid ID"},{"id":8,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_id_get[2:30]","start":1752134623578,"end":1752134624347,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_id_get[2:30] 08:03:43.578-08:03:44.347 Retrieve employee with non-existing ID","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_post[1.1:33]","start":1752134620948,"end":1752134621342,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_post[1.1:33] 08:03:40.948-08:03:41.342 Add Employee with valid data","className":"failed"},{"id":10,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_post[1.2:33]","start":1752134621361,"end":1752134621369,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_post[1.2:33] 08:03:41.361-08:03:41.369 Add Employee with valid data","className":"failed"},{"id":11,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_post[2:35]","start":1752134621378,"end":1752134621383,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_post[2:35] 08:03:41.378-08:03:41.383 Add Employee with missing required fields","className":"failed"},{"id":12,"group":1,"content":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_post[3.1:69]","start":1752134621394,"end":1752134621399,"title":"src\/test\/java\/com\/bootexample4\/api_tests\/Employee\/employees_post[3.1:69] 08:03:41.394-08:03:41.399 Add Employee with existing employee details","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
