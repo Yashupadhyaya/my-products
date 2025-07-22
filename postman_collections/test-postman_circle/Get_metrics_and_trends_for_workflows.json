@@ -1,0 +1,42 @@
+[
+  {
+    "all-branches": "main",
+    "branch": "release-v1.0",
+    "project-slug": "organization/project-name",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "develop",
+    "branch": "feature/jira-123",
+    "project-slug": "org/project-slug",
+    "workflow-name": "deploy-production",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "test",
+    "branch": "hotfix-v2.1",
+    "project-slug": "team/repo-name",
+    "workflow-name": "integration-tests",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "invalid_branch",
+    "branch": "unknown_branch",
+    "project-slug": "###invalid-project",
+    "workflow-name": "invalid_workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "all-branches": "no-branch",
+    "branch": "-invalid-branch",
+    "project-slug": "**error-project**",
+    "workflow-name": "error-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
