@@ -1,0 +1,42 @@
+[
+  {
+    "all-branches": "main, develop, feature",
+    "branch": "main",
+    "project-slug": "my-org/project-xyz",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "release, bugfix",
+    "branch": "develop",
+    "project-slug": "org-x/repo-alpha",
+    "workflow-name": "deploy-and-monitor",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "all-branches": "hotfix, staging",
+    "branch": "feature",
+    "project-slug": "team-y/project-beta",
+    "workflow-name": "integration-tests",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "experimental, testing",
+    "branch": "release",
+    "project-slug": "my-workspace/project-gamma",
+    "workflow-name": "security-scan",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "all-branches": "master, archived",
+    "branch": "hotfix",
+    "project-slug": "business-z/app-delta",
+    "workflow-name": "performance-check",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  }
+]
