@@ -1,0 +1,32 @@
+[
+  {
+    "env-var-name": "APP_CONFIG_VAR_1",
+    "context-id": "a1f34054-4c27-4f1f-9460-d3e5b3c91eff",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  },
+  {
+    "env-var-name": "APP_CONFIG_VAR_INVALID",
+    "context-id": "123_invalid_uuid_format",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "env-var-name": "USER_AUTH_TOKEN",
+    "context-id": "d5c99f48-93f3-45a2-9463-e3ab8f4df598",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  },
+  {
+    "env-var-name": "INVALID_ENV_VAR",
+    "context-id": "invalid_uuid_format_4567",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "env-var-name": "PAYMENT_GATEWAY_KEY",
+    "context-id": "e4a75320-2d60-4cfd-92b7-775aebfa8a45",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  }
+]
