@@ -1,0 +1,32 @@
+[
+  {
+    "env-var-name": "prod-env-var",
+    "context-id": "58c08f5e-bc1d-46c6-ace7-9c5e99e4b4f2",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  },
+  {
+    "env-var-name": "dev-env-var",
+    "context-id": "d9fba074-37b3-4f54-a12c-8239918b0d1d",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  },
+  {
+    "env-var-name": "test-env-var",
+    "context-id": "c98cb524-4b76-467e-9d2b-50570b0fbfc3",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "env-var-name": "qa-env-var",
+    "context-id": "invalid-uuid-format",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "env-var-name": "stage-env-var",
+    "context-id": "1d142ff7-9f44-4759-b0fe-41175ad83b34",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  }
+]
