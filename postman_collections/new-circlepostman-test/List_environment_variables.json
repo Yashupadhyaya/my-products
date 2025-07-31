@@ -1,0 +1,32 @@
+[
+  {
+    "page-token": "abc123",
+    "context-id": "d51c1f3e-9adc-47f7-b0f7-e71795e354b7",
+    "statusCode": 200,
+    "scenario": "A paginated list of environment variables"
+  },
+  {
+    "page-token": "xyz789",
+    "context-id": "9a87db1e-fb0b-493b-ad0c-5e2c8f039dd3",
+    "statusCode": 200,
+    "scenario": "A paginated list of environment variables"
+  },
+  {
+    "page-token": "",
+    "context-id": "invalid-uuid",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "page-token": "invalid-token",
+    "context-id": "00000000-0000-0000-0000-000000000000",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "page-token": "pagetoken_456",
+    "context-id": "26bf213e-29d6-4d6b-9ae3-373b2682a5e0",
+    "statusCode": 200,
+    "scenario": "A paginated list of environment variables"
+  }
+]
