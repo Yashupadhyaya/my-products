@@ -1,0 +1,4 @@
+project_slug,reporting_window,branches,workflow_names,auth_type
+"gh/CircleCI-Public/api-preview-docs","last-90-days","['main']","['build-and-test']","* def authToken = karate.properties['Circle-Token']"
+"gh/CircleCI-Public/api-preview-docs","last-30-days","['main', 'feature']","['build', 'test-and-deploy']","* def username = karate.properties['API_AUTH_USERNAME']; * def password = karate.properties['API2_AUTH_PASSWORD']"
+"gh/CircleCI-Public/api-preview-docs","last-7-days","['main', 'feature', 'dev']","['build', 'test', 'deploy']","* def authToken = karate.properties['circle-token']; And param circle-token = authToken"
