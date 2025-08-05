@@ -1,0 +1,27 @@
+[
+  {
+    "hostname": "072-229-028-185.res.spectrum.com",
+    "statusCode": 200,
+    "scenario": "200 OK – Hostname"
+  },
+  {
+    "hostname": "invalid-host-123",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "hostname": "192.168.test.local",
+    "statusCode": 401,
+    "scenario": "Unauthorized Access"
+  },
+  {
+    "hostname": "abc_xyz.invalid_domain",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "hostname": "072-229-028-185.res.spectrum.com",
+    "statusCode": 201,
+    "scenario": "200 OK – Hostname"
+  }
+]
