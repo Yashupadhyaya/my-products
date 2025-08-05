@@ -1,0 +1,27 @@
+[
+  {
+    "hostname": "072-229-028-185.res.spectrum.com",
+    "statusCode": 200,
+    "scenario": "200 OK – Hostname"
+  },
+  {
+    "hostname": "invalid_hostname$#123",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "hostname": "host_test_name.res.example.com",
+    "statusCode": 200,
+    "scenario": "200 OK – Hostname"
+  },
+  {
+    "hostname": "host_invalid_characters!@",
+    "statusCode": 403,
+    "scenario": "Forbidden Request"
+  },
+  {
+    "hostname": "correct_host.mysite.com",
+    "statusCode": 200,
+    "scenario": "200 OK – Hostname"
+  }
+]
