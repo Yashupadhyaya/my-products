@@ -1,0 +1,27 @@
+[
+  {
+    "hostname": "160.39.144.19",
+    "statusCode": 200,
+    "scenario": "200 OK – Hostname"
+  },
+  {
+    "hostname": "test.invalid_host$%^",
+    "statusCode": 400,
+    "scenario": "400 Bad Request – Invalid Hostname"
+  },
+  {
+    "hostname": "example.invalid",
+    "statusCode": 500,
+    "scenario": "500 Internal Server Error – Host Lookup Failed"
+  },
+  {
+    "hostname": "localhost",
+    "statusCode": 403,
+    "scenario": "403 Forbidden – Unauthorized Host"
+  },
+  {
+    "hostname": "192.168.1.1",
+    "statusCode": 200,
+    "scenario": "200 OK – Hostname"
+  }
+]
