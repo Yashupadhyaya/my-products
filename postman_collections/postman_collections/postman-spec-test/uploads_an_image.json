@@ -1,0 +1,32 @@
+[
+  {
+    "petId": "-11168302",
+    "additionalMetadata": "Ut ipsum id culpa ad",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "petId": "invalidPetId_123",
+    "additionalMetadata": "",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "petId": "specialCharPetId#$%",
+    "additionalMetadata": "Data with invalid encoding",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  },
+  {
+    "petId": "-28394712",
+    "additionalMetadata": "Metadata describing pet details",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "petId": "0000_PetID_Unexpected",
+    "additionalMetadata": "Exceeds metadata limit",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  }
+]
