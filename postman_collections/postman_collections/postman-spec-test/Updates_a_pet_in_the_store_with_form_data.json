@@ -1,0 +1,37 @@
+[
+  {
+    "petId": "-11168302",
+    "name": "mollit voluptate nostrud",
+    "status": "est o",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "petId": "A1245PET-ID",
+    "name": "Maximus the Great",
+    "status": "pending",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "petId": "B6789PET-ID",
+    "name": "Buddy",
+    "status": "sold",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "petId": "-99999999",
+    "name": "Bella Sweetpaw",
+    "status": "available",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  },
+  {
+    "petId": "C5432PET-ERROR",
+    "name": "Invalid@Name!1234",
+    "status": "invalid_status",
+    "statusCode": 405,
+    "scenario": "Invalid input"
+  }
+]
