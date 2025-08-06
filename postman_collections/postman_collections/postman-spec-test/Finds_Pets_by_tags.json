@@ -1,0 +1,27 @@
+[
+  {
+    "tags": "pet,animal,furry",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "tags": "dog,canine,playful",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "tags": "invalid_tag_123",
+    "statusCode": 400,
+    "scenario": "Invalid tag value"
+  },
+  {
+    "tags": "incorrect!value@tag",
+    "statusCode": 400,
+    "scenario": "Invalid tag value"
+  },
+  {
+    "tags": "cat,kitten,adorable",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]
