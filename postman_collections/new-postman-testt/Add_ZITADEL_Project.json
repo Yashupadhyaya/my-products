@@ -1,0 +1,52 @@
+[
+  {
+    "your_zitadel_domain": "example.zitadel.com",
+    "name_*string": "TestProjectAlpha",
+    "projectRoleAssertion_*boolean": true,
+    "projectRoleCheck_*boolean": true,
+    "hasProjectCheck_*boolean": true,
+    "privateLabelingSetting_*string": "CustomLabelAlpha",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "your_zitadel_domain": "invalid_domain",
+    "name_*string": "",
+    "projectRoleAssertion_*boolean": null,
+    "projectRoleCheck_*boolean": null,
+    "hasProjectCheck_*boolean": null,
+    "privateLabelingSetting_*string": "",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "your_zitadel_domain": "testdomain.zitadel.org",
+    "name_*string": "BetaProjectTest",
+    "projectRoleAssertion_*boolean": false,
+    "projectRoleCheck_*boolean": false,
+    "hasProjectCheck_*boolean": true,
+    "privateLabelingSetting_*string": "BannerBeta",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "your_zitadel_domain": "production.zitadel.io",
+    "name_*string": "GammaProduction",
+    "projectRoleAssertion_*boolean": true,
+    "projectRoleCheck_*boolean": true,
+    "hasProjectCheck_*boolean": false,
+    "privateLabelingSetting_*string": "GammaCustom",
+    "statusCode": 201,
+    "scenario": "Created"
+  },
+  {
+    "your_zitadel_domain": "invalid..domain",
+    "name_*string": "InvalidName###",
+    "projectRoleAssertion_*boolean": "not_a_boolean",
+    "projectRoleCheck_*boolean": "not_a_boolean",
+    "hasProjectCheck_*boolean": "wrong_value",
+    "privateLabelingSetting_*string": "123InvalidLabel",
+    "statusCode": 422,
+    "scenario": "Unprocessable Entity"
+  }
+]
