@@ -1,0 +1,42 @@
+[
+  {
+    "your_zitadel_domain": "zitadel.example.com",
+    "project_id": "12345",
+    "name_string": "Project Alpha",
+    "authMethodType_string": "OAuth2",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "your_zitadel_domain": "zitadel.invalid_domain",
+    "project_id": "abcde",
+    "name_string": "",
+    "authMethodType_string": "invalidMethod",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "your_zitadel_domain": "zitadel.org",
+    "project_id": "67890",
+    "name_string": "Project Beta",
+    "authMethodType_string": "APIKey",
+    "statusCode": 201,
+    "scenario": "Resource Created"
+  },
+  {
+    "your_zitadel_domain": "zitadel.fake_domain",
+    "project_id": "!@#$%",
+    "name_string": null,
+    "authMethodType_string": "unknownMethod",
+    "statusCode": 403,
+    "scenario": "Forbidden"
+  },
+  {
+    "your_zitadel_domain": "zitadel.test.com",
+    "project_id": "13579",
+    "name_string": "Project Gamma",
+    "authMethodType_string": "BasicAuth",
+    "statusCode": 200,
+    "scenario": "Success"
+  }
+]
