@@ -1,0 +1,32 @@
+[
+  {
+    "petId": "-11168302",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "petId": "invalid_pet_id",
+    "statusCode": 400,
+    "scenario": "Invalid ID supplied"
+  },
+  {
+    "petId": "-99999999",
+    "statusCode": 404,
+    "scenario": "Pet not found"
+  },
+  {
+    "petId": "-12345678",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "petId": "random_string_value_123",
+    "statusCode": 400,
+    "scenario": "Invalid ID supplied"
+  },
+  {
+    "petId": "-987654321",
+    "statusCode": 404,
+    "scenario": "Pet not found"
+  }
+]
