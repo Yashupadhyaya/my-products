@@ -1,0 +1,32 @@
+[
+  {
+    "env-var-name": "APP_CONFIG_PATH",
+    "context-id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  },
+  {
+    "env-var-name": "DATABASE_URL",
+    "context-id": "9b2c1d1e-8f3a-4c4d-9f2e-1e5b2d4c3a1f",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  },
+  {
+    "env-var-name": "INVALID VAR NAME!",
+    "context-id": "not-a-uuid",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "env-var-name": "",
+    "context-id": "12345",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "env-var-name": "REDIS_HOST",
+    "context-id": "7e6a1b2c-4d3f-11ec-81d3-0242ac130003",
+    "statusCode": 200,
+    "scenario": "A confirmation message"
+  }
+]
