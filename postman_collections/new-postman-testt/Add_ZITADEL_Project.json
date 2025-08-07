@@ -1,0 +1,52 @@
+[
+  {
+    "your_zitadel_domain": "example.zitadel.com",
+    "name_string": "TestName1",
+    "projectRoleAssertion_boolean": true,
+    "projectRoleCheck_boolean": false,
+    "hasProjectCheck_boolean": true,
+    "privateLabelingSetting_string": "DefaultLabel",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "your_zitadel_domain": "",
+    "name_string": "",
+    "projectRoleAssertion_boolean": false,
+    "projectRoleCheck_boolean": false,
+    "hasProjectCheck_boolean": false,
+    "privateLabelingSetting_string": "InvalidLabel123",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "your_zitadel_domain": "testdomain.com",
+    "name_string": "TestName2",
+    "projectRoleAssertion_boolean": false,
+    "projectRoleCheck_boolean": true,
+    "hasProjectCheck_boolean": false,
+    "privateLabelingSetting_string": "CustomLabel",
+    "statusCode": 201,
+    "scenario": "Created"
+  },
+  {
+    "your_zitadel_domain": "invalid.domain",
+    "name_string": "Name_With_Error!",
+    "projectRoleAssertion_boolean": "not_a_boolean",
+    "projectRoleCheck_boolean": true,
+    "hasProjectCheck_boolean": "error_value",
+    "privateLabelingSetting_string": "",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "your_zitadel_domain": "mydomain.test",
+    "name_string": "AnotherValidName",
+    "projectRoleAssertion_boolean": true,
+    "projectRoleCheck_boolean": true,
+    "hasProjectCheck_boolean": true,
+    "privateLabelingSetting_string": "FinalLabel",
+    "statusCode": 200,
+    "scenario": "Success"
+  }
+]

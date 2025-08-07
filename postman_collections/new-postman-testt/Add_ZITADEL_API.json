@@ -1,0 +1,42 @@
+[
+  {
+    "your_zitadel_domain": "api.zitadel.com",
+    "project_id": "proj12345",
+    "name_*string": "MainProject",
+    "authMethodType_*string": "OAuth2",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "your_zitadel_domain": "test.zitadel.io",
+    "project_id": "proj67890",
+    "name_*string": "SecondaryProject",
+    "authMethodType_*string": "JWT",
+    "statusCode": 201,
+    "scenario": "Created"
+  },
+  {
+    "your_zitadel_domain": "invalid-domain",
+    "project_id": "proj#####",
+    "name_*string": "",
+    "authMethodType_*string": "InvalidMethod",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "your_zitadel_domain": "example.zitadel.net",
+    "project_id": "proj123!@#",
+    "name_*string": "ProjectWithInvalidID",
+    "authMethodType_*string": "123",
+    "statusCode": 403,
+    "scenario": "Forbidden"
+  },
+  {
+    "your_zitadel_domain": "incorrect.zitadel.site",
+    "project_id": "proj_00000",
+    "name_*string": "TestProjectInvalid",
+    "authMethodType_*string": "",
+    "statusCode": 404,
+    "scenario": "Not Found"
+  }
+]

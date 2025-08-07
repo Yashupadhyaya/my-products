@@ -1,0 +1,27 @@
+[
+  {
+    "your_zitadel_domain": "example.zitadel.cloud",
+    "statusCode": 200,
+    "scenario": "Success"
+  },
+  {
+    "your_zitadel_domain": "test.zitadel.cloud",
+    "statusCode": 201,
+    "scenario": "Created"
+  },
+  {
+    "your_zitadel_domain": "invalid_domain",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "your_zitadel_domain": "invaliddomain.com",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "your_zitadel_domain": "deactivated.zitadel.cloud",
+    "statusCode": 403,
+    "scenario": "Forbidden"
+  }
+]
