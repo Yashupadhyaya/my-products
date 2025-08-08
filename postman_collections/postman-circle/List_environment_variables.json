@@ -1,0 +1,32 @@
+[
+  {
+    "page-token": "pg_12345abcde",
+    "context-id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "statusCode": 200,
+    "scenario": "A paginated list of environment variables"
+  },
+  {
+    "page-token": "pg_67890fghij",
+    "context-id": "1e2d3c4b-5a6f-7e8d-9c0b-1a2b3c4d5e6f",
+    "statusCode": 200,
+    "scenario": "A paginated list of environment variables"
+  },
+  {
+    "page-token": "pg_xyz_invalid",
+    "context-id": "invalid-uuid-value",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "page-token": "pg_!@#$$%",
+    "context-id": "123456",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "page-token": "pg_test_token_001",
+    "context-id": "9b2c1a34-8d7f-4e6b-9f1a-2b3c4d5e6f7a",
+    "statusCode": 200,
+    "scenario": "A paginated list of environment variables"
+  }
+]
