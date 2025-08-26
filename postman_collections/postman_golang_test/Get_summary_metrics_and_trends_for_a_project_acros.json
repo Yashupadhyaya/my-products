@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-Q3",
+    "project-slug": "project-alpha",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2022-Q4",
+    "project-slug": "project-beta",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid_window",
+    "project-slug": "unknown-project",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2021-Q1",
+    "project-slug": "project-gamma",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "random&text",
+    "project-slug": "fake-project-data",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
