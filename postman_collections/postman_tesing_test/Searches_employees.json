@@ -1,0 +1,27 @@
+[
+  {
+    "searchString": "example@example.com",
+    "statusCode": 200,
+    "scenario": "Search results matching the filter criteria"
+  },
+  {
+    "searchString": "engineer@company.com",
+    "statusCode": 200,
+    "scenario": "Search results matching the filter criteria"
+  },
+  {
+    "searchString": "incorrectemail@",
+    "statusCode": 400,
+    "scenario": "Bad input"
+  },
+  {
+    "searchString": "name!123",
+    "statusCode": 400,
+    "scenario": "Bad input"
+  },
+  {
+    "searchString": "job@unknown.com",
+    "statusCode": 200,
+    "scenario": "Search results matching the filter criteria"
+  }
+]
