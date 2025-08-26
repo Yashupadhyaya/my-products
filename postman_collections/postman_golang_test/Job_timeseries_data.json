@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "main",
+    "granularity": "daily",
+    "start-date": "2023-10-01",
+    "end-date": "2023-10-31",
+    "project-slug": "example-project",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "feature_branch_test",
+    "granularity": "weekly",
+    "start-date": "invalid_date",
+    "end-date": "not_a_date",
+    "project-slug": "missing-project-slug",
+    "workflow-name": "invalid-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "release/v1.2",
+    "granularity": "hourly",
+    "start-date": "2023-09-15",
+    "end-date": "2023-09-16",
+    "project-slug": "my-awesome-project",
+    "workflow-name": "deploy-workflow",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "invalid_branch_test",
+    "granularity": "nonexistent_granularity",
+    "start-date": "2022-13-01",
+    "end-date": "2022-45-67",
+    "project-slug": "not-a-valid-slug",
+    "workflow-name": "missing-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "hotfix/criticalIssue",
+    "granularity": "monthly",
+    "start-date": "2023-01-01",
+    "end-date": "2023-01-31",
+    "project-slug": "urgent-fix-project",
+    "workflow-name": "critical_patch_workflow",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  }
+]

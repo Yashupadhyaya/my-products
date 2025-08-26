@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-11-01T00:00:00Z",
+    "project-slug": "team-alpha/sample-project",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2023-10-15T12:00:00Z",
+    "project-slug": "dev-team/project-x",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid-date-format",
+    "project-slug": "%%%invalid_slug%%%$",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "20230515T120000Z",
+    "project-slug": "!@#$Invalid",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-09-30T14:30:00Z",
+    "project-slug": "qa-team/demo-app",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  }
+]

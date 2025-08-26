@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-09-01 to 2023-09-30",
+    "org-slug": "tech-organization",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "2023-08-01 to 2023-08-31",
+    "org-slug": "data-science-hub",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "",
+    "org-slug": "",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "Invalid-Window",
+    "org-slug": "org_slug_invalid_characters!",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-10",
+    "org-slug": "example-org",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  }
+]
