@@ -1,0 +1,32 @@
+[
+  {
+    "username": "john_doe",
+    "password": "Password123!",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "username": "jane_smith",
+    "password": "SecurePass@456",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  },
+  {
+    "username": "invalid_user_!@",
+    "password": "NoMatch?",
+    "statusCode": 400,
+    "scenario": "Invalid username/password supplied"
+  },
+  {
+    "username": "test_user!999",
+    "password": "WeakPassword@!",
+    "statusCode": 400,
+    "scenario": "Invalid username/password supplied"
+  },
+  {
+    "username": "alice_wonderland",
+    "password": "Complex#Pass990",
+    "statusCode": 200,
+    "scenario": "successful operation"
+  }
+]
