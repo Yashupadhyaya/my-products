@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-10-01T00:00:00Z",
+    "project-slug": "sample-project-123",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2023-09-01T00:00:00Z",
+    "project-slug": "example-project-456",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid-date-format",
+    "project-slug": "invalid_project_slug",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-08-15T12:00:00Z",
+    "project-slug": "analytics-tool-789",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2023-99-99T99:99:99Z",
+    "project-slug": "!@invalidslug",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
