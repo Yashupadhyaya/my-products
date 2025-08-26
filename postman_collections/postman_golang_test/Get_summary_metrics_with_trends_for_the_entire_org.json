@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-09-01 to 2023-09-30",
+    "org-slug": "org-alpha",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "2023-Q3-summary",
+    "org-slug": "org-beta",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "invalid-date-range",
+    "org-slug": "!@#$%^&*()_+",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2022-12",
+    "org-slug": "org-gamma",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "",
+    "org-slug": "invalid_slug_test_@123",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]

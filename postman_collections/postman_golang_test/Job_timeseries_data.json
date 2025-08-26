@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "main",
+    "granularity": "daily",
+    "start-date": "2023-10-01",
+    "end-date": "2023-10-07",
+    "project-slug": "org/repo",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "feature/update-ui",
+    "granularity": "weekly",
+    "start-date": "2023-09-01",
+    "end-date": "2023-09-30",
+    "project-slug": "org/ui-update",
+    "workflow-name": "integration-tests",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "",
+    "granularity": "invalid_type",
+    "start-date": "invalid-date",
+    "end-date": "invalid-date",
+    "project-slug": "invalid/project",
+    "workflow-name": "unknown-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "bugfix/issue-123",
+    "granularity": "hourly",
+    "start-date": "2023-10-15",
+    "end-date": "2023-10-15",
+    "project-slug": "org/bugfix",
+    "workflow-name": "code-tests",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "release/v2.0",
+    "granularity": "!invalid_string!",
+    "start-date": "not-a-date",
+    "end-date": "not-a-date",
+    "project-slug": "project_slug_is_invalid",
+    "workflow-name": "invalid_workflow_name",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
