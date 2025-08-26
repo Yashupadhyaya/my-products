@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "monthly",
+    "project-slug": "team-alpha/app-backend",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "quarterly",
+    "project-slug": "team-beta/web-frontend",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "weekly",
+    "project-slug": "team-delta/api-microservice",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "!invalid_window",
+    "project-slug": "",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "unknown",
+    "project-slug": "123!@invalid_slug",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
