@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "main",
+    "granularity": "daily",
+    "start-date": "2023-10-01",
+    "end-date": "2023-10-15",
+    "project-slug": "my-org/my-project",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "feature-x",
+    "granularity": "weekly",
+    "start-date": "2023-09-01",
+    "end-date": "2023-09-30",
+    "project-slug": "my-org/feature-x-project",
+    "workflow-name": "deploy-workflow",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "invalid-branch!",
+    "granularity": "",
+    "start-date": "2023-31-99",
+    "end-date": "not-a-date",
+    "project-slug": "$$/@@invalid-slug",
+    "workflow-name": "!#!workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "hotfix-issue123",
+    "granularity": "hourly",
+    "start-date": "2023-10-14T00:00:00Z",
+    "end-date": "2023-10-14T23:59:59Z",
+    "project-slug": "hotfixes/hotfix-123",
+    "workflow-name": "run-tests",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "random_branch_123",
+    "granularity": "yearly",
+    "start-date": "invalid-date",
+    "end-date": "some-value",
+    "project-slug": "123_invalid_slug",
+    "workflow-name": "invalid_workflow_name_!",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
