@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "main",
+    "granularity": "daily",
+    "start-date": "2023-01-01",
+    "end-date": "2023-01-31",
+    "project-slug": "org-name/repo-name",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "develop",
+    "granularity": "hourly",
+    "start-date": "invalid-date",
+    "end-date": "future-date",
+    "project-slug": "org-name|repo-name",
+    "workflow-name": "@build+test",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "feature/add-caching",
+    "granularity": "monthly",
+    "start-date": "2023-06-01",
+    "end-date": "2023-06-30",
+    "project-slug": "org-name/repo-name-feature",
+    "workflow-name": "deploy",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "test/invalid",
+    "granularity": "random",
+    "start-date": "unknown",
+    "end-date": "12345",
+    "project-slug": "?invalid-slug",
+    "workflow-name": "<workflow!>",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "hotfix/urgent-fix",
+    "granularity": "weekly",
+    "start-date": "2023-02-01",
+    "end-date": "2023-02-07",
+    "project-slug": "org-name/repo-name-hotfix",
+    "workflow-name": "test-and-deploy",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  }
+]
