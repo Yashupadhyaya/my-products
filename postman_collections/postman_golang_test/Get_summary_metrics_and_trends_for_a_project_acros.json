@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-10-01T00:00:00Z/2023-10-31T23:59:59Z",
+    "project-slug": "project-alpha",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2023-09-01T00:00:00Z/2023-09-30T23:59:59Z",
+    "project-slug": "project-beta",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-08-01T00:00:00Z/2023-08-31T23:59:59Z",
+    "project-slug": "project-gamma",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid-date-format",
+    "project-slug": 12345,
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-07-01T00:00:00Z/2023-07-31T23:59:59Z",
+    "project-slug": "project-delta",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  }
+]

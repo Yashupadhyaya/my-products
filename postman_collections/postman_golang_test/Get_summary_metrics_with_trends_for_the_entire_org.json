@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-10-01T00:00:00Z/2023-10-31T23:59:59Z",
+    "org-slug": "technology-company",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "2023-09-01T00:00:00Z/2023-09-30T23:59:59Z",
+    "org-slug": "design-firm",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "invalid-date-range",
+    "org-slug": "",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "random-text",
+    "org-slug": "invalid slug with spaces",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-11-01T00:00:00Z/2023-11-15T23:59:59Z",
+    "org-slug": "startup-labs",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  }
+]
