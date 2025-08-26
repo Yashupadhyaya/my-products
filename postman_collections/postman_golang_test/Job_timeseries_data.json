@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "main",
+    "granularity": "daily",
+    "start-date": "2023-10-01",
+    "end-date": "2023-10-31",
+    "project-slug": "my-org/my-project",
+    "workflow-name": "build-and-deploy",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "feature/test",
+    "granularity": "weekly",
+    "start-date": "2023-09-01",
+    "end-date": "2023-09-30",
+    "project-slug": "my-org/awesome-project",
+    "workflow-name": "test-and-release",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "dev@main",
+    "granularity": "hourly",
+    "start-date": "invalid-date",
+    "end-date": "2023-99-99",
+    "project-slug": "",
+    "workflow-name": null,
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "#special$branch",
+    "granularity": "invalid",
+    "start-date": "09/45/0000",
+    "end-date": "2023-13-45",
+    "project-slug": "invalid#project#!",
+    "workflow-name": "release<script>",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "integration",
+    "granularity": "hourly",
+    "start-date": "2023-10-15",
+    "end-date": "2023-10-16",
+    "project-slug": "team-alpha/api-project",
+    "workflow-name": "build-release",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  }
+]
