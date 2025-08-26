@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-10-01T00:00:00Z/2023-10-31T23:59:59Z",
+    "project-slug": "acme-web-app",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2023-11-01T00:00:00Z/2023-11-30T23:59:59Z",
+    "project-slug": "backend-service-api",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid-date",
+    "project-slug": "unknown_project",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-09-01T00:00:00Z/2023-09-30T23:59:59Z",
+    "project-slug": "mobile-app-v2",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "<invalid_value>",
+    "project-slug": null,
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
