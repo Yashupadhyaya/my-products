@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "main",
+    "granularity": "daily",
+    "start-date": "2023-01-01",
+    "end-date": "2023-12-31",
+    "project-slug": "organization/project",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "feature/new-ui",
+    "granularity": "weekly",
+    "start-date": "2023-06-01",
+    "end-date": "2023-06-07",
+    "project-slug": "organization/feature-project",
+    "workflow-name": "deploy-and-verify",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "dev",
+    "granularity": "monthly",
+    "start-date": "INVALID_DATE",
+    "end-date": "INVALID_DATE",
+    "project-slug": "invalid_project_slug",
+    "workflow-name": "test-invalid-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "bugfix/hotfix",
+    "granularity": "hourly",
+    "start-date": "2023-09-15T12:00:00Z",
+    "end-date": "2023-09-15T13:00:00Z",
+    "project-slug": "organization/bugfix",
+    "workflow-name": "hotfix-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "random_branch",
+    "granularity": "nonsense",
+    "start-date": "XYZ",
+    "end-date": "MISSING_DATE",
+    "project-slug": "@#$INVALID_SLUG",
+    "workflow-name": "unknown-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
