@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "develop",
+    "granularity": "daily",
+    "start-date": "2023-01-01",
+    "end-date": "2023-01-31",
+    "project-slug": "example/project1",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "invalid_branch_name_123",
+    "granularity": "invalid_granularity_format",
+    "start-date": "invalid-date",
+    "end-date": "invalid-date",
+    "project-slug": "example_project_slug_invalid_chars",
+    "workflow-name": "workflow_with*invalid_characters",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "feature/user-auth",
+    "granularity": "weekly",
+    "start-date": "2023-06-01",
+    "end-date": "2023-06-07",
+    "project-slug": "example/project2",
+    "workflow-name": "deploy-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "123_invalid_branch_format",
+    "granularity": "hourly",
+    "start-date": "-2023-001",
+    "end-date": "99999-invalid",
+    "project-slug": "slug-with_spaces",
+    "workflow-name": "another&invalid_workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "hotfix/payment-bug",
+    "granularity": "monthly",
+    "start-date": "2022-12-01",
+    "end-date": "2022-12-31",
+    "project-slug": "example/project3",
+    "workflow-name": "integration-tests",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  }
+]

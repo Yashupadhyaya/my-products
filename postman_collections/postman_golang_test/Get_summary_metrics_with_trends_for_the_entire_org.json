@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-10-01 to 2023-10-31",
+    "org-slug": "organization-tech",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "2023-09-01 to 2023-09-30",
+    "org-slug": "enterprise-data-systems",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "invalid-date-range",
+    "org-slug": "!@#invalid-org",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2024-01-01 to 2024-01-31",
+    "org-slug": "team-alpha-slug",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "31/02/2023",
+    "org-slug": "nonexistent-org123",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
