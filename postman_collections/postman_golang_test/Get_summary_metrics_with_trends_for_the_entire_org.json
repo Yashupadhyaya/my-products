@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-Q1",
+    "org-slug": "tech-corp",
+    "statusCode": 200,
+    "scenario": "Summary metrics with trends for an entire org and its projects."
+  },
+  {
+    "reporting-window": "2023-Q1_invalid",
+    "org-slug": "invalid-corp-slug!",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-Q2",
+    "org-slug": "finance-group",
+    "statusCode": 200,
+    "scenario": "Summary metrics with trends for an entire org and its projects."
+  },
+  {
+    "reporting-window": "future-window%%",
+    "org-slug": "!random_slug",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-Q3",
+    "org-slug": "retail-sector",
+    "statusCode": 200,
+    "scenario": "Summary metrics with trends for an entire org and its projects."
+  }
+]
