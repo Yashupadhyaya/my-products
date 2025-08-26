@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "last_30_days",
+    "project-slug": "team-alpha/project-x",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "last_week",
+    "project-slug": "organization-123/project-y",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid_interval",
+    "project-slug": "invalid/project_slug_example",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "last_90_days",
+    "project-slug": "company-beta/project-z",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "past_year",
+    "project-slug": "bad-slug-example",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
