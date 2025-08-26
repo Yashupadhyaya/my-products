@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-01",
+    "project-slug": "example-project-slug",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "Q4-2023",
+    "project-slug": "test-slug-1234",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2024-12",
+    "project-slug": "monthly_report_project",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "INVALID_WINDOW",
+    "project-slug": "INVALID_SLUG",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2025-06",
+    "project-slug": "next-gen-builds",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  }
+]
