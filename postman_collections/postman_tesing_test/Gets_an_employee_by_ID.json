@@ -1,0 +1,27 @@
+[
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "id": "a85a4b96-3c84-45d2-a51f-8f67a2c3c9a1",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "id": "f4e8aa34-c5bc-4da6-b29c-78dd1c6b5e68",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "id": "invalid-id-1234",
+    "statusCode": 404,
+    "scenario": "Not found"
+  },
+  {
+    "id": "1234-invalid-id-format",
+    "statusCode": 404,
+    "scenario": "Not found"
+  }
+]
