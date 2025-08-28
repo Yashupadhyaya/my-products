@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "main",
+    "granularity": "daily",
+    "start-date": "2023-01-01",
+    "end-date": "2023-01-07",
+    "project-slug": "team/project-alpha",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "feature/new-feature",
+    "granularity": "hourly",
+    "start-date": "2023-02-01",
+    "end-date": "2023-02-05",
+    "project-slug": "team/project-beta",
+    "workflow-name": "deploy-to-production",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "development",
+    "granularity": "weekly",
+    "start-date": "2022-12-01",
+    "end-date": "2022-12-31",
+    "project-slug": "org/project-gamma",
+    "workflow-name": "build-stage-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "hotfix/urgent-patch",
+    "granularity": "yearly",
+    "start-date": "2023-03-01",
+    "end-date": "2023-03-15",
+    "project-slug": "org/project-delta",
+    "workflow-name": "ci-cd-pipeline",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "release/v2.0",
+    "granularity": "monthly",
+    "start-date": "2022-11-01",
+    "end-date": "2022-11-30",
+    "project-slug": "team/project-epsilon",
+    "workflow-name": "automated-testing",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  }
+]
