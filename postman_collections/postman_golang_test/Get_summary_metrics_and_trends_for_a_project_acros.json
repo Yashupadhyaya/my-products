@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-10-01T00:00:00Z",
+    "project-slug": "team-alpha/project1",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "yearly-summary",
+    "project-slug": "org-beta/final-project",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid-date-format",
+    "project-slug": "invalid/project@slug#",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "past-30-days",
+    "project-slug": "team-gamma/software-suite",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "bad-window!",
+    "project-slug": "test/project%invalid",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]

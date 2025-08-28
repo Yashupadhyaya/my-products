@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "feature/login-enhancements",
+    "granularity": "daily",
+    "start-date": "2023-01-01",
+    "end-date": "2023-12-31",
+    "project-slug": "example-project-123",
+    "workflow-name": "CI-CD-pipeline",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "test/invalid-syntax",
+    "granularity": "hourly",
+    "start-date": "invalid-date",
+    "end-date": "2023-02-30",
+    "project-slug": "invalid_project_slug",
+    "workflow-name": "",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "hotfix/security-patch",
+    "granularity": "monthly",
+    "start-date": "2023-06-01",
+    "end-date": "2023-06-30",
+    "project-slug": "secure-project",
+    "workflow-name": "security-checks",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "incorrect\\branch\\name",
+    "granularity": "yearly",
+    "start-date": "9999-99-99",
+    "end-date": "",
+    "project-slug": "malformed-slug_!@#",
+    "workflow-name": "build-test-deploy123",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "release/v1.0",
+    "granularity": "weekly",
+    "start-date": "2023-08-01",
+    "end-date": "2023-08-07",
+    "project-slug": "release-project-v1",
+    "workflow-name": "release-management",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  }
+]
