@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "last-30-days",
+    "project-slug": "sample-project-123",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "last-7-days",
+    "project-slug": "example-project-456",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid-date-range",
+    "project-slug": "!@#invalid-slug",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "last-24-hours",
+    "project-slug": "test-project-789",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "-1-days",
+    "project-slug": "098-project-invalid",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
