@@ -1,0 +1,263 @@
+openapi: 3.0.0
+info:
+  title: Mobile Banking App for Bank Leumi API
+  version: 1.0.0
+  description: API for the Mobile Banking App of Bank Leumi
+servers:
+  - url: https://api.bankleumi.com
+    description: Production server
+
+paths:
+  /login:
+    post:
+      summary: User Login with Valid Credentials
+      description: Endpoint for user login with valid credentials.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                idNumber:
+                  type: string
+                  example: "123456789"
+                otp:
+                  type: string
+                  example: "123456"
+      responses:
+        '200':
+          description: Successful login
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid credentials"
+  /account-details:
+    get:
+      summary: View Account Details
+      description: Endpoint to view account details.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful retrieval of account details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  balance:
+                    type: number
+                    example: 1000.50
+                  transactions:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        date:
+                          type: string
+                          format: date
+                          example: "2023-10-01"
+                        type:
+                          type: string
+                          example: "debit"
+                        amount:
+                          type: number
+                          example: 50.25
+                  accountNumber:
+                    type: string
+                    example: "123456789"
+                  branchId:
+                    type: string
+                    example: "001"
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Access denied"
+  /transfer:
+    post:
+      summary: Transfer Funds
+      description: Endpoint to transfer funds.
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                toAccount:
+                  type: string
+                  example: "987654321"
+                amount:
+                  type: number
+                  example: 100.00
+                scheduledDate:
+                  type: string
+                  format: date
+                  example: "2023-10-15"
+      responses:
+        '200':
+          description: Successful transfer
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Transfer successful"
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid transfer details"
+  /credit-card:
+    get:
+      summary: View Credit Card Details
+      description: Endpoint to view credit card details.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful retrieval of credit card details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  availableBalance:
+                    type: number
+                    example: 5000.00
+                  futureCharges:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        date:
+                          type: string
+                          format: date
+                          example: "2023-10-10"
+                        amount:
+                          type: number
+                          example: 150.00
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Access denied"
+  /loan:
+    post:
+      summary: Request Loan
+      description: Endpoint to request a loan.
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: number
+                  example: 5000.00
+                term:
+                  type: integer
+                  example: 12
+      responses:
+        '200':
+          description: Successful loan request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Loan request submitted"
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid loan details"
+  /customer-service:
+    post:
+      summary: Create Customer Service Ticket
+      description: Endpoint to create a customer service ticket.
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  example: "Need assistance with my account"
+      responses:
+        '200':
+          description: Successful ticket creation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ticketId:
+                    type: string
+                    example: "TICKET12345"
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid ticket details"
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

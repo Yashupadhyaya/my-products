@@ -1,0 +1,254 @@
+{
+  "scenarios": [
+    {
+      "type": "functional",
+      "title": "User Login with Valid Credentials",
+      "description": "Verify successful login with valid ID number and OTP.",
+      "testId": "TC-001",
+      "testDescription": "A user provides a valid ID number and receives an OTP via SMS to log in.",
+      "prerequisites": "User account must exist in the database and SMS service must be functional.",
+      "stepsToPerform": "1. Launch the mobile banking app.\n2. Enter valid ID number.\n3. Receive OTP via SMS.\n4. Enter the OTP.\n5. Click 'Login' button.",
+      "expectedResult": "User is redirected to the dashboard and a success message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "User Login with Biometric Authentication",
+      "description": "Verify successful login using biometric authentication.",
+      "testId": "TC-002",
+      "testDescription": "A user logs in using fingerprint or FaceID.",
+      "prerequisites": "User account must exist in the database and biometric authentication must be enabled.",
+      "stepsToPerform": "1. Launch the mobile banking app.\n2. Place fingerprint or FaceID on the sensor.\n3. Click 'Login' button.",
+      "expectedResult": "User is redirected to the dashboard and a success message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "User Login with Invalid Credentials",
+      "description": "Verify login failure with invalid ID number and OTP.",
+      "testId": "TC-003",
+      "testDescription": "A user provides an invalid ID number and incorrect OTP to log in.",
+      "prerequisites": "User account must exist in the database.",
+      "stepsToPerform": "1. Launch the mobile banking app.\n2. Enter invalid ID number.\n3. Receive OTP via SMS.\n4. Enter incorrect OTP.\n5. Click 'Login' button.",
+      "expectedResult": "User receives an error message and is not logged in."
+    },
+    {
+      "type": "functional",
+      "title": "Account Balance View",
+      "description": "Verify the display of account balance.",
+      "testId": "TC-004",
+      "testDescription": "A user views the general balance of their account.",
+      "prerequisites": "User must be logged in.",
+      "stepsToPerform": "1. Navigate to the 'Account Details' section.\n2. Verify the displayed balance.",
+      "expectedResult": "The correct account balance is displayed."
+    },
+    {
+      "type": "functional",
+      "title": "Transaction History View",
+      "description": "Verify the display of transaction history.",
+      "testId": "TC-005",
+      "testDescription": "A user views their transaction history for the last 90 days.",
+      "prerequisites": "User must be logged in and have transaction history.",
+      "stepsToPerform": "1. Navigate to the 'Transaction History' section.\n2. Verify the displayed transactions.",
+      "expectedResult": "The correct transaction history for the last 90 days is displayed."
+    },
+    {
+      "type": "functional",
+      "title": "Filter Transaction History",
+      "description": "Verify filtering of transaction history by date and type.",
+      "testId": "TC-006",
+      "testDescription": "A user filters their transaction history by date and transaction type.",
+      "prerequisites": "User must be logged in and have transaction history.",
+      "stepsToPerform": "1. Navigate to the 'Transaction History' section.\n2. Apply filters by date and transaction type.\n3. Verify the filtered transactions.",
+      "expectedResult": "The transaction history is correctly filtered and displayed."
+    },
+    {
+      "type": "functional",
+      "title": "Internal Fund Transfer",
+      "description": "Verify successful internal fund transfer.",
+      "testId": "TC-007",
+      "testDescription": "A user transfers funds to another account within the same bank.",
+      "prerequisites": "User must be logged in and have sufficient balance.",
+      "stepsToPerform": "1. Navigate to the 'Fund Transfer' section.\n2. Select 'Internal Transfer'.\n3. Enter recipient's account number.\n4. Enter transfer amount.\n5. Confirm the transfer.",
+      "expectedResult": "The transfer is successful and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "External Fund Transfer",
+      "description": "Verify successful external fund transfer.",
+      "testId": "TC-008",
+      "testDescription": "A user transfers funds to an account in another bank.",
+      "prerequisites": "User must be logged in and have sufficient balance.",
+      "stepsToPerform": "1. Navigate to the 'Fund Transfer' section.\n2. Select 'External Transfer'.\n3. Enter recipient's bank details.\n4. Enter transfer amount.\n5. Confirm the transfer.",
+      "expectedResult": "The transfer is successful and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "Save Beneficiary",
+      "description": "Verify saving a new beneficiary.",
+      "testId": "TC-009",
+      "testDescription": "A user saves a new beneficiary after confirming via SMS.",
+      "prerequisites": "User must be logged in.",
+      "stepsToPerform": "1. Navigate to the 'Fund Transfer' section.\n2. Enter new beneficiary details.\n3. Confirm via SMS.\n4. Save the beneficiary.",
+      "expectedResult": "The beneficiary is saved and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "Schedule Future Transfer",
+      "description": "Verify scheduling a future fund transfer.",
+      "testId": "TC-010",
+      "testDescription": "A user schedules a fund transfer for a future date.",
+      "prerequisites": "User must be logged in and have sufficient balance.",
+      "stepsToPerform": "1. Navigate to the 'Fund Transfer' section.\n2. Enter transfer details.\n3. Select a future date for the transfer.\n4. Confirm the transfer.",
+      "expectedResult": "The transfer is scheduled and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "Credit Card Balance View",
+      "description": "Verify the display of credit card balance.",
+      "testId": "TC-011",
+      "testDescription": "A user views the available balance on their credit card.",
+      "prerequisites": "User must be logged in and have a credit card.",
+      "stepsToPerform": "1. Navigate to the 'Credit Card' section.\n2. Verify the displayed balance.",
+      "expectedResult": "The correct credit card balance is displayed."
+    },
+    {
+      "type": "functional",
+      "title": "Future Charges View",
+      "description": "Verify the display of future charges on the credit card.",
+      "testId": "TC-012",
+      "testDescription": "A user views the future charges on their credit card.",
+      "prerequisites": "User must be logged in and have a credit card.",
+      "stepsToPerform": "1. Navigate to the 'Credit Card' section.\n2. Verify the displayed future charges.",
+      "expectedResult": "The correct future charges are displayed."
+    },
+    {
+      "type": "functional",
+      "title": "Temporary Card Block",
+      "description": "Verify temporary block of the credit card.",
+      "testId": "TC-013",
+      "testDescription": "A user temporarily blocks their credit card.",
+      "prerequisites": "User must be logged in and have a credit card.",
+      "stepsToPerform": "1. Navigate to the 'Credit Card' section.\n2. Select 'Temporary Block'.\n3. Confirm the block.",
+      "expectedResult": "The credit card is temporarily blocked and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "Permanent Card Block",
+      "description": "Verify permanent block of the credit card.",
+      "testId": "TC-014",
+      "testDescription": "A user permanently blocks their credit card.",
+      "prerequisites": "User must be logged in and have a credit card.",
+      "stepsToPerform": "1. Navigate to the 'Credit Card' section.\n2. Select 'Permanent Block'.\n3. Confirm the block.",
+      "expectedResult": "The credit card is permanently blocked and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "New Card Request",
+      "description": "Verify request for a new credit card.",
+      "testId": "TC-015",
+      "testDescription": "A user requests a new credit card.",
+      "prerequisites": "User must be logged in.",
+      "stepsToPerform": "1. Navigate to the 'Credit Card' section.\n2. Select 'Request New Card'.\n3. Confirm the request.",
+      "expectedResult": "The new card request is submitted and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "Loan Simulation",
+      "description": "Verify loan simulation for monthly repayment.",
+      "testId": "TC-016",
+      "testDescription": "A user simulates a loan to view monthly repayment.",
+      "prerequisites": "User must be logged in.",
+      "stepsToPerform": "1. Navigate to the 'Loan' section.\n2. Enter loan amount and duration.\n3. View the simulation results.",
+      "expectedResult": "The correct monthly repayment is displayed."
+    },
+    {
+      "type": "functional",
+      "title": "Loan Request",
+      "description": "Verify digital loan request submission.",
+      "testId": "TC-017",
+      "testDescription": "A user submits a digital loan request for review and approval.",
+      "prerequisites": "User must be logged in.",
+      "stepsToPerform": "1. Navigate to the 'Loan' section.\n2. Enter loan details.\n3. Submit the request.\n4. Confirm the submission.",
+      "expectedResult": "The loan request is submitted and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "Loan Status View",
+      "description": "Verify the display of active and pending loan statuses.",
+      "testId": "TC-018",
+      "testDescription": "A user views the status of active and pending loans.",
+      "prerequisites": "User must be logged in and have active or pending loans.",
+      "stepsToPerform": "1. Navigate to the 'Loan' section.\n2. Verify the displayed loan statuses.",
+      "expectedResult": "The correct loan statuses are displayed."
+    },
+    {
+      "type": "functional",
+      "title": "Customer Support Ticket",
+      "description": "Verify opening a customer support ticket.",
+      "testId": "TC-019",
+      "testDescription": "A user opens a support ticket for a representative.",
+      "prerequisites": "User must be logged in.",
+      "stepsToPerform": "1. Navigate to the 'Customer Support' section.\n2. Select 'Open Ticket'.\n3. Enter ticket details.\n4. Submit the ticket.",
+      "expectedResult": "The support ticket is opened and a confirmation message is shown."
+    },
+    {
+      "type": "functional",
+      "title": "Customer Support Response",
+      "description": "Verify receiving responses and history of support tickets.",
+      "testId": "TC-020",
+      "testDescription": "A user views responses and history of their support tickets.",
+      "prerequisites": "User must be logged in and have support tickets.",
+      "stepsToPerform": "1. Navigate to the 'Customer Support' section.\n2. Verify the displayed responses and history.",
+      "expectedResult": "The correct responses and history are displayed."
+    },
+    {
+      "type": "functional",
+      "title": "Customer Support Contact Link",
+      "description": "Verify the link to create a phone or chat contact.",
+      "testId": "TC-021",
+      "testDescription": "A user accesses the link to create a phone or chat contact.",
+      "prerequisites": "User must be logged in.",
+      "stepsToPerform": "1. Navigate to the 'Customer Support' section.\n2. Select 'Contact Us'.\n3. Verify the displayed contact options.",
+      "expectedResult": "The correct contact options are displayed."
+    },
+    {
+      "type": "non-functional",
+      "title": "System Availability",
+      "description": "Verify the system availability meets the required threshold.",
+      "testId": "TC-022",
+      "testDescription": "Ensure the system is available at least 99.5% of the time.",
+      "prerequisites": "System must be deployed and accessible.",
+      "stepsToPerform": "1. Monitor system uptime over a period.\n2. Calculate the availability percentage.",
+      "expectedResult": "The system availability is at least 99.5%."
+    },
+    {
+      "type": "non-functional",
+      "title": "System Performance",
+      "description": "Verify the system responds within the required time frame.",
+      "testId": "TC-023",
+      "testDescription": "Ensure the system responds to all actions within 2 seconds.",
+      "prerequisites": "System must be deployed and accessible.",
+      "stepsToPerform": "1. Perform various actions in the system.\n2. Measure the response time for each action.",
+      "expectedResult": "The response time for all actions is within 2 seconds."
+    },
+    {
+      "type": "non-functional",
+      "title": "Data Security",
+      "description": "Verify the system maintains high data security.",
+      "testId": "TC-024",
+      "testDescription": "Ensure the system uses SSL and encryption for data security.",
+      "prerequisites": "System must be deployed and accessible.",
+      "stepsToPerform": "1. Review system security protocols.\n2. Verify SSL and encryption are in place.",
+      "expectedResult": "The system uses SSL and encryption for data security."
+    },
+    {
+      "type": "non-functional",
+      "title": "Language Support",
+      "description": "Verify the system supports the required languages.",
+      "testId": "TC-025",
+      "testDescription": "Ensure the system supports Hebrew and English.",
+      "prerequisites": "System must be deployed and accessible.",
+      "stepsToPerform": "1. Access the system in different languages.\n2. Verify the language support.",
+      "expectedResult": "The system supports Hebrew and English."
+    }
+  ]
+}
