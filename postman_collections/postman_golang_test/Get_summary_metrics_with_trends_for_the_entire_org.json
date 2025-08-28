@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-01-01 to 2023-12-31",
+    "org-slug": "example-organization",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "2022-06-01 to 2022-12-31",
+    "org-slug": "test-org-xyz",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "not a date range",
+    "org-slug": "invalid_org_slug!",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2020-01-01 to 2020-12-31",
+    "org-slug": "production-organization",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "invalid_format_date",
+    "org-slug": "slug@wrong*chars",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
