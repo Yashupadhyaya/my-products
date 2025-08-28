@@ -1,0 +1,1011 @@
+{
+  "item": [
+    {
+      "name": "context",
+      "item": [
+        null,
+        null,
+        {
+          "name": "{context-id}",
+          "item": [
+            null,
+            null,
+            {
+              "name": "environment-variable",
+              "item": [
+                null,
+                {
+                  "name": "{env-var-name}",
+                  "item": [
+                    null,
+                    null
+                  ],
+                  "event": []
+                }
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        },
+        {
+          "name": "{context_id}/restrictions",
+          "item": [
+            null,
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "name": "insights",
+      "item": [
+        {
+          "name": "Get summary metrics and trends for a project across it's workflows and branches",
+          "request": {
+            "name": "Get summary metrics and trends for a project across it's workflows and branches",
+            "description": {
+              "content": "Get summary metrics and trends for a project at workflow and branch level.\n             Workflow runs going back at most 90 days are included in the aggregation window.\n             Trends are only supported upto last 30 days.\n             Please note that Insights is not a financial reporting tool and should not be used for precise credit reporting.  Credit reporting from Insights does not use the same source of truth as the billing information that is found in the Plan Overview page in the CircleCI UI, nor does the underlying data have the same data accuracy guarantees as the billing information in the CircleCI UI.  This may lead to discrepancies between credits reported from Insights and the billing information in the Plan Overview page of the CircleCI UI.  For precise credit reporting, always use the Plan Overview page in the CircleCI UI.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "insights",
+                "pages",
+                ":project-slug",
+                "summary"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "reporting-window",
+                  "value": "{{reporting-window}}",
+                  "description": "The time window used to calculate summary metrics. If not provided, defaults to last-90-days"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "{{project-slug}}",
+                  "key": "project-slug",
+                  "description": "(Required) Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped. For projects that use GitLab or GitHub App, use `circleci` as the `vcs-slug`, replace `org-name` with the organization ID (found in Organization Settings), and replace `repo-name` with the project ID (found in Project Settings)."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "name": "Aggregated summary metrics and trends by workflow and branches",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "insights",
+                    "pages",
+                    ":project-slug",
+                    "summary"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "reporting-window",
+                      "value": "{{reporting-window}}"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{project-slug}}",
+                      "key": "project-slug",
+                      "description": "(Required) Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped. For projects that use GitLab or GitHub App, use `circleci` as the `vcs-slug`, replace `org-name` with the organization ID (found in Organization Settings), and replace `repo-name` with the project ID (found in Project Settings)."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Circle-Token",
+                    "value": "{{Circle-Token}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"org_id\": {},\n  \"project_id\": {},\n  \"project_data\": {\n    \"metrics\": {\n      \"total_runs\": 20297299,\n      \"total_duration_secs\": 1160537,\n      \"total_credits_used\": 33720391,\n      \"success_rate\": -65893572.31396709,\n      \"throughput\": 8200891.251083359\n    },\n    \"trends\": {\n      \"total_runs\": 44874937.51920074,\n      \"total_duration_secs\": -19133943.271811396,\n      \"total_credits_used\": -76876174.24670456,\n      \"success_rate\": 82439386.46599558,\n      \"throughput\": -58217734.598005235\n    }\n  },\n  \"project_workflow_data\": [\n    {\n      \"workflow_name\": \"build-and-test\",\n      \"metrics\": {\n        \"total_credits_used\": 41264359,\n        \"p95_duration_secs\": 55023957.27954969,\n        \"total_runs\": 82783051,\n        \"success_rate\": -52967175.92195854\n      },\n      \"trends\": {\n        \"total_credits_used\": -45867290.192758635,\n        \"p95_duration_secs\": 47620817.83000064,\n        \"total_runs\": -27746255.830169097,\n        \"success_rate\": 38626682.208333105\n      }\n    },\n    {\n      \"workflow_name\": \"build-and-test\",\n      \"metrics\": {\n        \"total_credits_used\": 18387870,\n        \"p95_duration_secs\": -28781953.91924292,\n        \"total_runs\": 98489714,\n        \"success_rate\": -73471987.58776852\n      },\n      \"trends\": {\n        \"total_credits_used\": -19825213.61760661,\n        \"p95_duration_secs\": -36684102.515722826,\n        \"total_runs\": -2341035.332667604,\n        \"success_rate\": 31437858.90842831\n      }\n    }\n  ],\n  \"project_workflow_branch_data\": [\n    {\n      \"workflow_name\": \"build-and-test\",\n      \"branch\": \"main\",\n      \"metrics\": {\n        \"total_credits_used\": 9418528,\n        \"p95_duration_secs\": -31256058.930645153,\n        \"total_runs\": 32561979,\n        \"success_rate\": 12557548.108961478\n      },\n      \"trends\": {\n        \"total_credits_used\": 94634157.11905694,\n        \"p95_duration_secs\": -17637020.69557689,\n        \"total_runs\": -92764388.81522551,\n        \"success_rate\": -84694489.71258138\n      }\n    },\n    {\n      \"workflow_name\": \"build-and-test\",\n      \"branch\": \"main\",\n      \"metrics\": {\n        \"total_credits_used\": 56429257,\n        \"p95_duration_secs\": -70657273.77956188,\n        \"total_runs\": 53765653,\n        \"success_rate\": 52140828.08553666\n      },\n      \"trends\": {\n        \"total_credits_used\": -48113104.64523042,\n        \"p95_duration_secs\": -75210137.87936673,\n        \"total_runs\": -28737122.68440464,\n        \"success_rate\": 42852235.209035814\n      }\n    }\n  ],\n  \"all_branches\": [\n    \"main\",\n    \"main\"\n  ],\n  \"all_workflows\": [\n    \"build-and-test\",\n    \"build-and-test\"\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "name": "Error response.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "insights",
+                    "pages",
+                    ":project-slug",
+                    "summary"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "reporting-window",
+                      "value": "{{reporting-window}}"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{project-slug}}",
+                      "key": "project-slug",
+                      "description": "(Required) Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped. For projects that use GitLab or GitHub App, use `circleci` as the `vcs-slug`, replace `org-name` with the organization ID (found in Organization Settings), and replace `repo-name` with the project ID (found in Project Settings)."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Circle-Token",
+                    "value": "{{Circle-Token}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"message\": \"qui irure veniam culpa\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman_golang_test using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for insights/pages/{project-slug}/summary?reporting-window={{reporting-window}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n         console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n      try {\n            responseData = pm.response.json();\n      } catch (error) {\n            console.log(\"Error parsing response:\", error.message);\n      }\n}\nif (pm.variables.get(\"statusCode\")) {\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\nif (pm.response.code == 200){\n    pm.test(\"Aggregated summary metrics and trends by workflow and branches\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n        pm.test(\"Response has Content-Type header\", function () {\n            try {\n                pm.response.to.have.header(\"Content-Type\");\n            } catch (error) {\n                console.error('Error checking Content-Type header:', error.message);\n            }\n        });\n        pm.test(\"Content-Type is application/json\", function () {\n            try {\n                pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\n            } catch (error) {\n                console.error('Error validating JSON Content-Type:', error.message);\n            }\n        });\n        pm.test(\"Response object structure validation\", function () {\n            try {\n                if (responseData !== null && responseData !== undefined) {\n        pm.test('Response has the `org_id` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`org_id`)) {\n                    const value = ld.get(jsonResponse, `org_id`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"object\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking object field org_id:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_id` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`project_id`)) {\n                    const value = ld.get(jsonResponse, `project_id`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"object\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking object field project_id:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`project_data`)) {\n                    const value = ld.get(jsonResponse, `project_data`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"object\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking object field project_data:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.metrics` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`project_data.metrics`)) {\n                    const value = ld.get(jsonResponse, `project_data.metrics`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"object\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking object field project_data.metrics:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.metrics.total_runs` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.metrics.total_runs`)) {\n                    const value = ld.get(responseData, `project_data.metrics.total_runs`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.metrics.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.metrics.total_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.metrics.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(40594598);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_data.metrics.total_runs:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.metrics.total_duration_secs` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.metrics.total_duration_secs`)) {\n                    const value = ld.get(responseData, `project_data.metrics.total_duration_secs`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.metrics.total_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.metrics.total_duration_secs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.metrics.total_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(2321074);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_data.metrics.total_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.metrics.total_credits_used` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.metrics.total_credits_used`)) {\n                    const value = ld.get(responseData, `project_data.metrics.total_credits_used`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.metrics.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.metrics.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(67440782);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_data.metrics.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.metrics.success_rate` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.metrics.success_rate`)) {\n                    const value = ld.get(responseData, `project_data.metrics.success_rate`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.metrics.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.metrics.success_rate minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.metrics.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-131787144.62793417);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_data.metrics.success_rate:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.metrics.throughput` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.metrics.throughput`)) {\n                    const value = ld.get(responseData, `project_data.metrics.throughput`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.metrics.throughput:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.metrics.throughput maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.metrics.throughput`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(16401782.502166718);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_data.metrics.throughput:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.trends` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`project_data.trends`)) {\n                    const value = ld.get(jsonResponse, `project_data.trends`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"object\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking object field project_data.trends:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.trends.total_runs` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.trends.total_runs`)) {\n                    const value = ld.get(responseData, `project_data.trends.total_runs`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.trends.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.trends.total_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.trends.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(89749875.03840148);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_data.trends.total_runs:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.trends.total_duration_secs` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.trends.total_duration_secs`)) {\n                    const value = ld.get(responseData, `project_data.trends.total_duration_secs`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.trends.total_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.trends.total_duration_secs minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.trends.total_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-38267886.54362279);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_data.trends.total_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.trends.total_credits_used` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.trends.total_credits_used`)) {\n                    const value = ld.get(responseData, `project_data.trends.total_credits_used`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.trends.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.trends.total_credits_used minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.trends.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-153752348.49340913);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_data.trends.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.trends.success_rate` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.trends.success_rate`)) {\n                    const value = ld.get(responseData, `project_data.trends.success_rate`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.trends.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.trends.success_rate maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.trends.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(164878772.93199116);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_data.trends.success_rate:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_data.trends.throughput` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`project_data.trends.throughput`)) {\n                    const value = ld.get(responseData, `project_data.trends.throughput`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field project_data.trends.throughput:\", error.message);\n            }\n        })\n  \n        pm.test('project_data.trends.throughput minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_data.trends.throughput`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-116435469.19601047);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_data.trends.throughput:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_workflow_data` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`project_workflow_data`)) {\n                    const value = ld.get(jsonResponse, `project_workflow_data`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(Array.isArray(value)).to.equal(true);\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking array field project_workflow_data:\", error.message);\n            }\n        })\n  \n        pm.test(`project_workflow_data length to be atmost '100'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_data`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.most(100);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxItems for project_workflow_data:\", error.message);\n            }\n        })\n  \n        pm.test(`project_workflow_data length to be atleast '100'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_data`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minItems for project_workflow_data:\", error.message);\n            }\n        })\n\n        pm.test(`Each object in the project_workflow_data field has all the required fields`,function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`project_workflow_data`)) {\n                    let project_workflow_dataArray = ld.get(jsonResponse, `project_workflow_data`, []);\n                    if (Array.isArray(project_workflow_dataArray)) {\n                        for (let project_workflow_data_it = 0; project_workflow_data_it < project_workflow_dataArray.length; project_workflow_data_it++) {\n                            let iterator = project_workflow_data_it;\n                            if (project_workflow_dataArray[project_workflow_data_it] !== null && project_workflow_dataArray[project_workflow_data_it] !== undefined) {\n                                \n        pm.test(`${iterator} element of array 'project_workflow_data[${project_workflow_data_it}].workflow_name' has 'workflow_name' as 'string'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].workflow_name`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"string\");\n                }\n            } catch (error) {\n                console.log(\"Error checking string type for project_workflow_data[${project_workflow_data_it}].workflow_name:\", error.message);\n            }\n        })\n\n  \n        pm.test(`project_workflow_data[${project_workflow_data_it}].workflow_name length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].workflow_name`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for project_workflow_data[${project_workflow_data_it}].workflow_name:\", error.message);\n            }\n        })\n  \n        pm.test(`project_workflow_data[${project_workflow_data_it}].workflow_name length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].workflow_name`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for project_workflow_data[${project_workflow_data_it}].workflow_name:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_data[${project_workflow_data_it}].metrics' has 'metrics' as 'object'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].metrics`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"object\");\n                }\n            } catch (error) {\n                console.log(\"Error checking object type for project_workflow_data[${project_workflow_data_it}].metrics:\", error.message);\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'project_workflow_dataArray' has 'total_credits_used' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_data[${project_workflow_data_it}].metrics.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_data[${project_workflow_data_it}].metrics.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(82528718);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_data[${project_workflow_data_it}].metrics.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_dataArray' has 'p95_duration_secs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].metrics.p95_duration_secs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_data[${project_workflow_data_it}].metrics.p95_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_data[${project_workflow_data_it}].metrics.p95_duration_secs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].metrics.p95_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(110047914.55909938);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_data[${project_workflow_data_it}].metrics.p95_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_dataArray' has 'total_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].metrics.total_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_data[${project_workflow_data_it}].metrics.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_data[${project_workflow_data_it}].metrics.total_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].metrics.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(165566102);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_data[${project_workflow_data_it}].metrics.total_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_dataArray' has 'success_rate' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].metrics.success_rate`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_data[${project_workflow_data_it}].metrics.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_data[${project_workflow_data_it}].metrics.success_rate minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].metrics.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-105934351.84391709);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_workflow_data[${project_workflow_data_it}].metrics.success_rate:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_data[${project_workflow_data_it}].trends' has 'trends' as 'object'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].trends`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"object\");\n                }\n            } catch (error) {\n                console.log(\"Error checking object type for project_workflow_data[${project_workflow_data_it}].trends:\", error.message);\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'project_workflow_dataArray' has 'total_credits_used' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].trends.total_credits_used`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_data[${project_workflow_data_it}].trends.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_data[${project_workflow_data_it}].trends.total_credits_used minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].trends.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-91734580.38551727);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_workflow_data[${project_workflow_data_it}].trends.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_dataArray' has 'p95_duration_secs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].trends.p95_duration_secs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_data[${project_workflow_data_it}].trends.p95_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_data[${project_workflow_data_it}].trends.p95_duration_secs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].trends.p95_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(95241635.66000128);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_data[${project_workflow_data_it}].trends.p95_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_dataArray' has 'total_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].trends.total_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_data[${project_workflow_data_it}].trends.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_data[${project_workflow_data_it}].trends.total_runs minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].trends.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-55492511.66033819);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_workflow_data[${project_workflow_data_it}].trends.total_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_dataArray' has 'success_rate' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_data[${project_workflow_data_it}].trends.success_rate`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_data[${project_workflow_data_it}].trends.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_data[${project_workflow_data_it}].trends.success_rate maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_data[${project_workflow_data_it}].trends.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(77253364.41666621);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_data[${project_workflow_data_it}].trends.success_rate:\", error.message);\n            }\n        })\n\n                            }\n                        }\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error validating array objects for project_workflow_data:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `project_workflow_branch_data` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`project_workflow_branch_data`)) {\n                    const value = ld.get(jsonResponse, `project_workflow_branch_data`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(Array.isArray(value)).to.equal(true);\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking array field project_workflow_branch_data:\", error.message);\n            }\n        })\n  \n        pm.test(`project_workflow_branch_data length to be atmost '100'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.most(100);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxItems for project_workflow_branch_data:\", error.message);\n            }\n        })\n  \n        pm.test(`project_workflow_branch_data length to be atleast '100'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minItems for project_workflow_branch_data:\", error.message);\n            }\n        })\n\n        pm.test(`Each object in the project_workflow_branch_data field has all the required fields`,function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`project_workflow_branch_data`)) {\n                    let project_workflow_branch_dataArray = ld.get(jsonResponse, `project_workflow_branch_data`, []);\n                    if (Array.isArray(project_workflow_branch_dataArray)) {\n                        for (let project_workflow_branch_data_it = 0; project_workflow_branch_data_it < project_workflow_branch_dataArray.length; project_workflow_branch_data_it++) {\n                            let iterator = project_workflow_branch_data_it;\n                            if (project_workflow_branch_dataArray[project_workflow_branch_data_it] !== null && project_workflow_branch_dataArray[project_workflow_branch_data_it] !== undefined) {\n                                \n        pm.test(`${iterator} element of array 'project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name' has 'workflow_name' as 'string'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"string\");\n                }\n            } catch (error) {\n                console.log(\"Error checking string type for project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name:\", error.message);\n            }\n        })\n\n  \n        pm.test(`project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name:\", error.message);\n            }\n        })\n  \n        pm.test(`project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for project_workflow_branch_data[${project_workflow_branch_data_it}].workflow_name:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_data[${project_workflow_branch_data_it}].branch' has 'branch' as 'string'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].branch`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"string\");\n                }\n            } catch (error) {\n                console.log(\"Error checking string type for project_workflow_branch_data[${project_workflow_branch_data_it}].branch:\", error.message);\n            }\n        })\n\n  \n        pm.test(`project_workflow_branch_data[${project_workflow_branch_data_it}].branch length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].branch`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for project_workflow_branch_data[${project_workflow_branch_data_it}].branch:\", error.message);\n            }\n        })\n  \n        pm.test(`project_workflow_branch_data[${project_workflow_branch_data_it}].branch length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].branch`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for project_workflow_branch_data[${project_workflow_branch_data_it}].branch:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_data[${project_workflow_branch_data_it}].metrics' has 'metrics' as 'object'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"object\");\n                }\n            } catch (error) {\n                console.log(\"Error checking object type for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics:\", error.message);\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_dataArray' has 'total_credits_used' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(18837056);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_dataArray' has 'p95_duration_secs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.p95_duration_secs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.p95_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.p95_duration_secs minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.p95_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-62512117.861290306);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.p95_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_dataArray' has 'total_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(65123958);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.total_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_dataArray' has 'success_rate' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.success_rate`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.success_rate maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(25115096.217922956);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_branch_data[${project_workflow_branch_data_it}].metrics.success_rate:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_data[${project_workflow_branch_data_it}].trends' has 'trends' as 'object'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].trends`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"object\");\n                }\n            } catch (error) {\n                console.log(\"Error checking object type for project_workflow_branch_data[${project_workflow_branch_data_it}].trends:\", error.message);\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_dataArray' has 'total_credits_used' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_credits_used`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(189268314.23811388);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_dataArray' has 'p95_duration_secs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].trends.p95_duration_secs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_branch_data[${project_workflow_branch_data_it}].trends.p95_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_branch_data[${project_workflow_branch_data_it}].trends.p95_duration_secs minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].trends.p95_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-35274041.39115378);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_workflow_branch_data[${project_workflow_branch_data_it}].trends.p95_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_dataArray' has 'total_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_runs minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-185528777.63045102);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_workflow_branch_data[${project_workflow_branch_data_it}].trends.total_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'project_workflow_branch_dataArray' has 'success_rate' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `project_workflow_branch_data[${project_workflow_branch_data_it}].trends.success_rate`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for project_workflow_branch_data[${project_workflow_branch_data_it}].trends.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('project_workflow_branch_data[${project_workflow_branch_data_it}].trends.success_rate minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `project_workflow_branch_data[${project_workflow_branch_data_it}].trends.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-169388979.42516276);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for project_workflow_branch_data[${project_workflow_branch_data_it}].trends.success_rate:\", error.message);\n            }\n        })\n\n                            }\n                        }\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error validating array objects for project_workflow_branch_data:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `all_branches` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`all_branches`)) {\n                    const value = ld.get(jsonResponse, `all_branches`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(Array.isArray(value)).to.equal(true);\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking array field all_branches:\", error.message);\n            }\n        })\n  \n        pm.test(`all_branches length to be atmost '100'`,function(){\n            try {\n                const value = ld.get(responseData, `all_branches`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.most(100);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxItems for all_branches:\", error.message);\n            }\n        })\n  \n        pm.test(`all_branches length to be atleast '100'`,function(){\n            try {\n                const value = ld.get(responseData, `all_branches`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minItems for all_branches:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `all_workflows` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`all_workflows`)) {\n                    const value = ld.get(jsonResponse, `all_workflows`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(Array.isArray(value)).to.equal(true);\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking array field all_workflows:\", error.message);\n            }\n        })\n  \n        pm.test(`all_workflows length to be atmost '100'`,function(){\n            try {\n                const value = ld.get(responseData, `all_workflows`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.most(100);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxItems for all_workflows:\", error.message);\n            }\n        })\n  \n        pm.test(`all_workflows length to be atleast '100'`,function(){\n            try {\n                const value = ld.get(responseData, `all_workflows`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minItems for all_workflows:\", error.message);\n            }\n        })\n\n                }\n            } catch (error) {\n                console.error('Error validating object structure:', error.message);\n            }\n        });\n    });\n\n}\n\nif (pm.response.code == 500){\n    pm.test(\"Error response.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Internal Server Error\");\n        pm.test(\"Response has Content-Type header\", function () {\n            try {\n                pm.response.to.have.header(\"Content-Type\");\n            } catch (error) {\n                console.error('Error checking Content-Type header:', error.message);\n            }\n        });\n        pm.test(\"Content-Type is application/json\", function () {\n            try {\n                pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\n            } catch (error) {\n                console.error('Error validating JSON Content-Type:', error.message);\n            }\n        });\n        pm.test(\"Response object structure validation\", function () {\n            try {\n                if (responseData !== null && responseData !== undefined) {\n        pm.test('Response has the `message` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`message`)) {\n                    const value = ld.get(jsonResponse, `message`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"string\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking string field message:\", error.message);\n            }\n        })\n  \n        pm.test(`message length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `message`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for message:\", error.message);\n            }\n        })\n  \n        pm.test(`message length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `message`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for message:\", error.message);\n            }\n        })\n\n                }\n            } catch (error) {\n                console.error('Error validating object structure:', error.message);\n            }\n        });\n    });\n\n}\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "name": "Job timeseries data",
+          "request": {
+            "name": "Job timeseries data",
+            "description": {
+              "content": "Get timeseries data for all jobs within a workflow. Hourly granularity data is only retained for 48 hours while daily granularity data is retained for 90 days.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "insights",
+                "time-series",
+                ":project-slug",
+                "workflows",
+                ":workflow-name",
+                "jobs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "branch",
+                  "value": "{{branch}}",
+                  "description": "The name of a vcs branch. If not passed we will scope the API call to the default branch."
+                },
+                {
+                  "disabled": false,
+                  "key": "granularity",
+                  "value": "{{granularity}}",
+                  "description": "The granularity for which to query timeseries data."
+                },
+                {
+                  "disabled": false,
+                  "key": "start-date",
+                  "value": "{{start-date}}",
+                  "description": "Include only executions that started at or after this date. This must be specified if an end-date is provided."
+                },
+                {
+                  "disabled": false,
+                  "key": "end-date",
+                  "value": "{{end-date}}",
+                  "description": "Include only executions that started before this date. This date can be at most 90 days after the start-date."
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "{{project-slug}}",
+                  "key": "project-slug",
+                  "description": "(Required) Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped. For projects that use GitLab or GitHub App, use `circleci` as the `vcs-slug`, replace `org-name` with the organization ID (found in Organization Settings), and replace `repo-name` with the project ID (found in Project Settings)."
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "{{workflow-name}}",
+                  "key": "workflow-name",
+                  "description": "(Required) The name of the workflow."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "name": "An array of timeseries data, one entry per job.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "insights",
+                    "time-series",
+                    ":project-slug",
+                    "workflows",
+                    ":workflow-name",
+                    "jobs"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "branch",
+                      "value": "{{branch}}"
+                    },
+                    {
+                      "key": "granularity",
+                      "value": "{{granularity}}"
+                    },
+                    {
+                      "key": "start-date",
+                      "value": "{{start-date}}"
+                    },
+                    {
+                      "key": "end-date",
+                      "value": "{{end-date}}"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{project-slug}}",
+                      "key": "project-slug",
+                      "description": "(Required) Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped. For projects that use GitLab or GitHub App, use `circleci` as the `vcs-slug`, replace `org-name` with the organization ID (found in Organization Settings), and replace `repo-name` with the project ID (found in Project Settings)."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{workflow-name}}",
+                      "key": "workflow-name",
+                      "description": "(Required) The name of the workflow."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Circle-Token",
+                    "value": "{{Circle-Token}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"next_page_token\": \"sint esse Ut\",\n  \"items\": [\n    {\n      \"name\": \"build-and-test\",\n      \"min_started_at\": \"1986-08-16T11:11:17.850Z\",\n      \"max_ended_at\": \"2012-06-28T15:25:06.583Z\",\n      \"timestamp\": \"1979-11-19T01:12:58.703Z\",\n      \"metrics\": {\n        \"total_runs\": 58812826,\n        \"failed_runs\": 37604003,\n        \"successful_runs\": 42317449,\n        \"throughput\": 50228776.164034754,\n        \"median_credits_used\": 75230559,\n        \"total_credits_used\": 92569543,\n        \"duration_metrics\": {\n          \"min\": 39480721,\n          \"median\": 14427210,\n          \"max\": 90381897,\n          \"p95\": 33855245,\n          \"total\": 46297344\n        }\n      }\n    },\n    {\n      \"name\": \"build-and-test\",\n      \"min_started_at\": \"2021-02-20T04:48:16.260Z\",\n      \"max_ended_at\": \"2015-06-05T19:44:05.764Z\",\n      \"timestamp\": \"1964-07-16T07:43:21.099Z\",\n      \"metrics\": {\n        \"total_runs\": 79806573,\n        \"failed_runs\": 38648594,\n        \"successful_runs\": 5516718,\n        \"throughput\": -26656638.416749567,\n        \"median_credits_used\": 2074831,\n        \"total_credits_used\": 14444684,\n        \"duration_metrics\": {\n          \"min\": 94101924,\n          \"median\": 97159529,\n          \"max\": 8663911,\n          \"p95\": 81336625,\n          \"total\": 27544750\n        }\n      }\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "name": "Error response.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "insights",
+                    "time-series",
+                    ":project-slug",
+                    "workflows",
+                    ":workflow-name",
+                    "jobs"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "branch",
+                      "value": "{{branch}}"
+                    },
+                    {
+                      "key": "granularity",
+                      "value": "{{granularity}}"
+                    },
+                    {
+                      "key": "start-date",
+                      "value": "{{start-date}}"
+                    },
+                    {
+                      "key": "end-date",
+                      "value": "{{end-date}}"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{project-slug}}",
+                      "key": "project-slug",
+                      "description": "(Required) Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped. For projects that use GitLab or GitHub App, use `circleci` as the `vcs-slug`, replace `org-name` with the organization ID (found in Organization Settings), and replace `repo-name` with the project ID (found in Project Settings)."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{workflow-name}}",
+                      "key": "workflow-name",
+                      "description": "(Required) The name of the workflow."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Circle-Token",
+                    "value": "{{Circle-Token}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"message\": \"qui irure veniam culpa\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman_golang_test using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for insights/time-series/{project-slug}/workflows/{workflow-name}/jobs?branch={{branch}}&granularity={{granularity}}&start-date={{start-date}}&end-date={{end-date}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n         console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n      try {\n            responseData = pm.response.json();\n      } catch (error) {\n            console.log(\"Error parsing response:\", error.message);\n      }\n}\nif (pm.variables.get(\"statusCode\")) {\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\nif (pm.response.code == 200){\n    pm.test(\"An array of timeseries data, one entry per job.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n        pm.test(\"Response has Content-Type header\", function () {\n            try {\n                pm.response.to.have.header(\"Content-Type\");\n            } catch (error) {\n                console.error('Error checking Content-Type header:', error.message);\n            }\n        });\n        pm.test(\"Content-Type is application/json\", function () {\n            try {\n                pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\n            } catch (error) {\n                console.error('Error validating JSON Content-Type:', error.message);\n            }\n        });\n        pm.test(\"Response object structure validation\", function () {\n            try {\n                if (responseData !== null && responseData !== undefined) {\n        pm.test('Response has the `next_page_token` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`next_page_token`)) {\n                    const value = ld.get(jsonResponse, `next_page_token`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"string\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking string field next_page_token:\", error.message);\n            }\n        })\n  \n        pm.test(`next_page_token length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `next_page_token`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for next_page_token:\", error.message);\n            }\n        })\n  \n        pm.test(`next_page_token length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `next_page_token`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for next_page_token:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `items` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`items`)) {\n                    const value = ld.get(jsonResponse, `items`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(Array.isArray(value)).to.equal(true);\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking array field items:\", error.message);\n            }\n        })\n  \n        pm.test(`items length to be atmost '100'`,function(){\n            try {\n                const value = ld.get(responseData, `items`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.most(100);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxItems for items:\", error.message);\n            }\n        })\n  \n        pm.test(`items length to be atleast '100'`,function(){\n            try {\n                const value = ld.get(responseData, `items`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minItems for items:\", error.message);\n            }\n        })\n\n        pm.test(`Each object in the items field has all the required fields`,function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`items`)) {\n                    let itemsArray = ld.get(jsonResponse, `items`, []);\n                    if (Array.isArray(itemsArray)) {\n                        for (let items_it = 0; items_it < itemsArray.length; items_it++) {\n                            let iterator = items_it;\n                            if (itemsArray[items_it] !== null && itemsArray[items_it] !== undefined) {\n                                \n        pm.test(`${iterator} element of array 'items[${items_it}].name' has 'name' as 'string'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].name`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"string\");\n                }\n            } catch (error) {\n                console.log(\"Error checking string type for items[${items_it}].name:\", error.message);\n            }\n        })\n\n  \n        pm.test(`items[${items_it}].name length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].name`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for items[${items_it}].name:\", error.message);\n            }\n        })\n  \n        pm.test(`items[${items_it}].name length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].name`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for items[${items_it}].name:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].min_started_at' has 'min_started_at' as 'string'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].min_started_at`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"string\");\n                }\n            } catch (error) {\n                console.log(\"Error checking string type for items[${items_it}].min_started_at:\", error.message);\n            }\n        })\n\n  \n        pm.test(`items[${items_it}].min_started_at length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].min_started_at`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for items[${items_it}].min_started_at:\", error.message);\n            }\n        })\n  \n        pm.test(`items[${items_it}].min_started_at length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].min_started_at`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for items[${items_it}].min_started_at:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].min_started_at format to be date-time',function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].min_started_at`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n                }\n            } catch (error) {\n                console.log(\"Error checking date-time format for items[${items_it}].min_started_at:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].max_ended_at' has 'max_ended_at' as 'string'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].max_ended_at`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"string\");\n                }\n            } catch (error) {\n                console.log(\"Error checking string type for items[${items_it}].max_ended_at:\", error.message);\n            }\n        })\n\n  \n        pm.test(`items[${items_it}].max_ended_at length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].max_ended_at`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for items[${items_it}].max_ended_at:\", error.message);\n            }\n        })\n  \n        pm.test(`items[${items_it}].max_ended_at length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].max_ended_at`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for items[${items_it}].max_ended_at:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].max_ended_at format to be date-time',function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].max_ended_at`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n                }\n            } catch (error) {\n                console.log(\"Error checking date-time format for items[${items_it}].max_ended_at:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].timestamp' has 'timestamp' as 'string'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].timestamp`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"string\");\n                }\n            } catch (error) {\n                console.log(\"Error checking string type for items[${items_it}].timestamp:\", error.message);\n            }\n        })\n\n  \n        pm.test(`items[${items_it}].timestamp length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].timestamp`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for items[${items_it}].timestamp:\", error.message);\n            }\n        })\n  \n        pm.test(`items[${items_it}].timestamp length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].timestamp`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for items[${items_it}].timestamp:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].timestamp format to be date-time',function(){\n            try {\n                const value = ld.get(responseData, `items[${items_it}].timestamp`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n                }\n            } catch (error) {\n                console.log(\"Error checking date-time format for items[${items_it}].timestamp:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].metrics' has 'metrics' as 'object'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"object\");\n                }\n            } catch (error) {\n                console.log(\"Error checking object type for items[${items_it}].metrics:\", error.message);\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'total_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.total_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.total_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(117625652);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.total_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'failed_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.failed_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.failed_runs:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.failed_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.failed_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(75208006);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.failed_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'successful_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.successful_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.successful_runs:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.successful_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.successful_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(84634898);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.successful_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'throughput' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.throughput`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.throughput:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.throughput maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.throughput`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(100457552.32806951);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.throughput:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'median_credits_used' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.median_credits_used`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.median_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.median_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.median_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(150461118);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.median_credits_used:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'total_credits_used' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(185139086);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].metrics.duration_metrics' has 'duration_metrics' as 'object'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.duration_metrics`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"object\");\n                }\n            } catch (error) {\n                console.log(\"Error checking object type for items[${items_it}].metrics.duration_metrics:\", error.message);\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'min' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.duration_metrics.min`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.duration_metrics.min:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.duration_metrics.min maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.duration_metrics.min`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(78961442);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.duration_metrics.min:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'median' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.duration_metrics.median`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.duration_metrics.median:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.duration_metrics.median maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.duration_metrics.median`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(28854420);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.duration_metrics.median:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'max' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.duration_metrics.max`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.duration_metrics.max:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.duration_metrics.max maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.duration_metrics.max`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(180763794);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.duration_metrics.max:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'p95' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.duration_metrics.p95`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.duration_metrics.p95:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.duration_metrics.p95 maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.duration_metrics.p95`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(67710490);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.duration_metrics.p95:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'itemsArray' has 'total' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `items[${items_it}].metrics.duration_metrics.total`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for items[${items_it}].metrics.duration_metrics.total:\", error.message);\n            }\n        })\n  \n        pm.test('items[${items_it}].metrics.duration_metrics.total maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `items[${items_it}].metrics.duration_metrics.total`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(92594688);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for items[${items_it}].metrics.duration_metrics.total:\", error.message);\n            }\n        })\n\n                            }\n                        }\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error validating array objects for items:\", error.message);\n            }\n        })\n\n                }\n            } catch (error) {\n                console.error('Error validating object structure:', error.message);\n            }\n        });\n    });\n\n}\n\nif (pm.response.code == 500){\n    pm.test(\"Error response.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Internal Server Error\");\n        pm.test(\"Response has Content-Type header\", function () {\n            try {\n                pm.response.to.have.header(\"Content-Type\");\n            } catch (error) {\n                console.error('Error checking Content-Type header:', error.message);\n            }\n        });\n        pm.test(\"Content-Type is application/json\", function () {\n            try {\n                pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\n            } catch (error) {\n                console.error('Error validating JSON Content-Type:', error.message);\n            }\n        });\n        pm.test(\"Response object structure validation\", function () {\n            try {\n                if (responseData !== null && responseData !== undefined) {\n        pm.test('Response has the `message` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`message`)) {\n                    const value = ld.get(jsonResponse, `message`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"string\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking string field message:\", error.message);\n            }\n        })\n  \n        pm.test(`message length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `message`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for message:\", error.message);\n            }\n        })\n  \n        pm.test(`message length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `message`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for message:\", error.message);\n            }\n        })\n\n                }\n            } catch (error) {\n                console.error('Error validating object structure:', error.message);\n            }\n        });\n    });\n\n}\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "name": "Get summary metrics with trends for the entire org, and for each project.",
+          "request": {
+            "name": "Get summary metrics with trends for the entire org, and for each project.",
+            "description": {
+              "content": "Gets aggregated summary metrics with trends for the entire org.\n              Also gets aggregated metrics and trends for each project belonging to the org.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "insights",
+                ":org-slug",
+                "summary"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "reporting-window",
+                  "value": "{{reporting-window}}",
+                  "description": "The time window used to calculate summary metrics. If not provided, defaults to last-90-days"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "{{org-slug}}",
+                  "key": "org-slug",
+                  "description": "(Required) Org slug in the form `vcs-slug/org-name`. The `/` characters may be URL-escaped."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "name": "summary metrics with trends for an entire org and it's projects.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "insights",
+                    ":org-slug",
+                    "summary"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "reporting-window",
+                      "value": "{{reporting-window}}"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{org-slug}}",
+                      "key": "org-slug",
+                      "description": "(Required) Org slug in the form `vcs-slug/org-name`. The `/` characters may be URL-escaped."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Circle-Token",
+                    "value": "{{Circle-Token}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"org_data\": {\n    \"metrics\": {\n      \"total_runs\": 55072014,\n      \"total_duration_secs\": 79130359,\n      \"total_credits_used\": 21885597,\n      \"success_rate\": 640991.7797110826,\n      \"throughput\": -31795031.524930328\n    },\n    \"trends\": {\n      \"total_runs\": 54516649.47935429,\n      \"total_duration_secs\": 22835623.15633501,\n      \"total_credits_used\": 8586087.373935536,\n      \"success_rate\": -18758146.657990336,\n      \"throughput\": 81149426.40745583\n    }\n  },\n  \"org_project_data\": [\n    {\n      \"project_name\": \"api-preview-docs\",\n      \"metrics\": {\n        \"total_credits_used\": 23269932,\n        \"total_duration_secs\": 89901813,\n        \"total_runs\": 40213017,\n        \"success_rate\": 13722612.758608311\n      },\n      \"trends\": {\n        \"total_credits_used\": 91345110.73730308,\n        \"total_duration_secs\": -48159521.82114667,\n        \"total_runs\": -73219336.85011795,\n        \"success_rate\": 16063895.725924969\n      }\n    },\n    {\n      \"project_name\": \"api-preview-docs\",\n      \"metrics\": {\n        \"total_credits_used\": 28129952,\n        \"total_duration_secs\": 75671838,\n        \"total_runs\": 61446196,\n        \"success_rate\": -53430545.92719345\n      },\n      \"trends\": {\n        \"total_credits_used\": 48618987.617488414,\n        \"total_duration_secs\": 59416570.009445965,\n        \"total_runs\": -10910833.574917778,\n        \"success_rate\": 7598993.666367799\n      }\n    }\n  ],\n  \"all_projects\": [\n    \"aute commodo pariatur\",\n    \"sunt in aute\"\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "name": "Error response.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "insights",
+                    ":org-slug",
+                    "summary"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "reporting-window",
+                      "value": "{{reporting-window}}"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{org-slug}}",
+                      "key": "org-slug",
+                      "description": "(Required) Org slug in the form `vcs-slug/org-name`. The `/` characters may be URL-escaped."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Circle-Token",
+                    "value": "{{Circle-Token}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"message\": \"qui irure veniam culpa\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman_golang_test using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for insights/{org-slug}/summary?reporting-window={{reporting-window}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n         console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n      try {\n            responseData = pm.response.json();\n      } catch (error) {\n            console.log(\"Error parsing response:\", error.message);\n      }\n}\nif (pm.variables.get(\"statusCode\")) {\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\nif (pm.response.code == 200){\n    pm.test(\"summary metrics with trends for an entire org and it's projects.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n        pm.test(\"Response has Content-Type header\", function () {\n            try {\n                pm.response.to.have.header(\"Content-Type\");\n            } catch (error) {\n                console.error('Error checking Content-Type header:', error.message);\n            }\n        });\n        pm.test(\"Content-Type is application/json\", function () {\n            try {\n                pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\n            } catch (error) {\n                console.error('Error validating JSON Content-Type:', error.message);\n            }\n        });\n        pm.test(\"Response object structure validation\", function () {\n            try {\n                if (responseData !== null && responseData !== undefined) {\n        pm.test('Response has the `org_data` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`org_data`)) {\n                    const value = ld.get(jsonResponse, `org_data`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"object\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking object field org_data:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.metrics` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`org_data.metrics`)) {\n                    const value = ld.get(jsonResponse, `org_data.metrics`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"object\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking object field org_data.metrics:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.metrics.total_runs` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.metrics.total_runs`)) {\n                    const value = ld.get(responseData, `org_data.metrics.total_runs`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.metrics.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.metrics.total_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.metrics.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(110144028);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_data.metrics.total_runs:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.metrics.total_duration_secs` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.metrics.total_duration_secs`)) {\n                    const value = ld.get(responseData, `org_data.metrics.total_duration_secs`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.metrics.total_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.metrics.total_duration_secs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.metrics.total_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(158260718);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_data.metrics.total_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.metrics.total_credits_used` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.metrics.total_credits_used`)) {\n                    const value = ld.get(responseData, `org_data.metrics.total_credits_used`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.metrics.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.metrics.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(43771194);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_data.metrics.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.metrics.success_rate` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.metrics.success_rate`)) {\n                    const value = ld.get(responseData, `org_data.metrics.success_rate`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.metrics.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.metrics.success_rate maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.metrics.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(1281983.5594221652);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_data.metrics.success_rate:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.metrics.throughput` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.metrics.throughput`)) {\n                    const value = ld.get(responseData, `org_data.metrics.throughput`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.metrics.throughput:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.metrics.throughput minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.metrics.throughput`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-63590063.049860656);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for org_data.metrics.throughput:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.trends` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`org_data.trends`)) {\n                    const value = ld.get(jsonResponse, `org_data.trends`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"object\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking object field org_data.trends:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.trends.total_runs` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.trends.total_runs`)) {\n                    const value = ld.get(responseData, `org_data.trends.total_runs`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.trends.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.trends.total_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.trends.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(109033298.95870858);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_data.trends.total_runs:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.trends.total_duration_secs` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.trends.total_duration_secs`)) {\n                    const value = ld.get(responseData, `org_data.trends.total_duration_secs`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.trends.total_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.trends.total_duration_secs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.trends.total_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(45671246.31267002);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_data.trends.total_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.trends.total_credits_used` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.trends.total_credits_used`)) {\n                    const value = ld.get(responseData, `org_data.trends.total_credits_used`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.trends.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.trends.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.trends.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(17172174.74787107);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_data.trends.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.trends.success_rate` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.trends.success_rate`)) {\n                    const value = ld.get(responseData, `org_data.trends.success_rate`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.trends.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.trends.success_rate minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.trends.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-37516293.31598067);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for org_data.trends.success_rate:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_data.trends.throughput` field',function(){\n            try {\n                if (responseData && pm.expect(responseData).to.have.nested.property(`org_data.trends.throughput`)) {\n                    const value = ld.get(responseData, `org_data.trends.throughput`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"number\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking number field org_data.trends.throughput:\", error.message);\n            }\n        })\n  \n        pm.test('org_data.trends.throughput maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_data.trends.throughput`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(162298852.81491166);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_data.trends.throughput:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `org_project_data` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`org_project_data`)) {\n                    const value = ld.get(jsonResponse, `org_project_data`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(Array.isArray(value)).to.equal(true);\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking array field org_project_data:\", error.message);\n            }\n        })\n  \n        pm.test(`org_project_data length to be atmost '100'`,function(){\n            try {\n                const value = ld.get(responseData, `org_project_data`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.most(100);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxItems for org_project_data:\", error.message);\n            }\n        })\n  \n        pm.test(`org_project_data length to be atleast '100'`,function(){\n            try {\n                const value = ld.get(responseData, `org_project_data`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minItems for org_project_data:\", error.message);\n            }\n        })\n\n        pm.test(`Each object in the org_project_data field has all the required fields`,function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`org_project_data`)) {\n                    let org_project_dataArray = ld.get(jsonResponse, `org_project_data`, []);\n                    if (Array.isArray(org_project_dataArray)) {\n                        for (let org_project_data_it = 0; org_project_data_it < org_project_dataArray.length; org_project_data_it++) {\n                            let iterator = org_project_data_it;\n                            if (org_project_dataArray[org_project_data_it] !== null && org_project_dataArray[org_project_data_it] !== undefined) {\n                                \n        pm.test(`${iterator} element of array 'org_project_data[${org_project_data_it}].project_name' has 'project_name' as 'string'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].project_name`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"string\");\n                }\n            } catch (error) {\n                console.log(\"Error checking string type for org_project_data[${org_project_data_it}].project_name:\", error.message);\n            }\n        })\n\n  \n        pm.test(`org_project_data[${org_project_data_it}].project_name length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].project_name`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for org_project_data[${org_project_data_it}].project_name:\", error.message);\n            }\n        })\n  \n        pm.test(`org_project_data[${org_project_data_it}].project_name length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].project_name`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for org_project_data[${org_project_data_it}].project_name:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'org_project_data[${org_project_data_it}].metrics' has 'metrics' as 'object'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].metrics`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"object\");\n                }\n            } catch (error) {\n                console.log(\"Error checking object type for org_project_data[${org_project_data_it}].metrics:\", error.message);\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'org_project_dataArray' has 'total_credits_used' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for org_project_data[${org_project_data_it}].metrics.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('org_project_data[${org_project_data_it}].metrics.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].metrics.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(46539864);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_project_data[${org_project_data_it}].metrics.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'org_project_dataArray' has 'total_duration_secs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].metrics.total_duration_secs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for org_project_data[${org_project_data_it}].metrics.total_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('org_project_data[${org_project_data_it}].metrics.total_duration_secs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].metrics.total_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(179803626);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_project_data[${org_project_data_it}].metrics.total_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'org_project_dataArray' has 'total_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].metrics.total_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for org_project_data[${org_project_data_it}].metrics.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('org_project_data[${org_project_data_it}].metrics.total_runs maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].metrics.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(80426034);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_project_data[${org_project_data_it}].metrics.total_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'org_project_dataArray' has 'success_rate' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].metrics.success_rate`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for org_project_data[${org_project_data_it}].metrics.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('org_project_data[${org_project_data_it}].metrics.success_rate maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].metrics.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(27445225.517216623);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_project_data[${org_project_data_it}].metrics.success_rate:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'org_project_data[${org_project_data_it}].trends' has 'trends' as 'object'`, function(){ \n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].trends`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"object\");\n                }\n            } catch (error) {\n                console.log(\"Error checking object type for org_project_data[${org_project_data_it}].trends:\", error.message);\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'org_project_dataArray' has 'total_credits_used' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].trends.total_credits_used`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for org_project_data[${org_project_data_it}].trends.total_credits_used:\", error.message);\n            }\n        })\n  \n        pm.test('org_project_data[${org_project_data_it}].trends.total_credits_used maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].trends.total_credits_used`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(182690221.47460616);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_project_data[${org_project_data_it}].trends.total_credits_used:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'org_project_dataArray' has 'total_duration_secs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].trends.total_duration_secs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for org_project_data[${org_project_data_it}].trends.total_duration_secs:\", error.message);\n            }\n        })\n  \n        pm.test('org_project_data[${org_project_data_it}].trends.total_duration_secs minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].trends.total_duration_secs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-96319043.64229333);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for org_project_data[${org_project_data_it}].trends.total_duration_secs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'org_project_dataArray' has 'total_runs' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].trends.total_runs`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for org_project_data[${org_project_data_it}].trends.total_runs:\", error.message);\n            }\n        })\n  \n        pm.test('org_project_data[${org_project_data_it}].trends.total_runs minimum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].trends.total_runs`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.least(-146438673.7002359);\n                }\n            } catch (error) {\n                console.log(\"Error checking minimum for org_project_data[${org_project_data_it}].trends.total_runs:\", error.message);\n            }\n        })\n\n        pm.test(`${iterator} element of array 'org_project_dataArray' has 'success_rate' as number`, function(){ \n            try {\n                const value = ld.get(responseData, `org_project_data[${org_project_data_it}].trends.success_rate`, null);\n                if (value !== null && value !== undefined) {\n                    pm.expect(typeof value).to.equal(\"number\");\n                }\n            } catch (error) {\n                console.log(\"Error checking number type for org_project_data[${org_project_data_it}].trends.success_rate:\", error.message);\n            }\n        })\n  \n        pm.test('org_project_data[${org_project_data_it}].trends.success_rate maximum value validation', function(){\n            try {\n                const value = ld.get(pm.response.json(), `org_project_data[${org_project_data_it}].trends.success_rate`, null);\n                if (value !== null && value !== undefined && typeof value === 'number') {\n                    pm.expect(value).to.be.at.most(32127791.451849937);\n                }\n            } catch (error) {\n                console.log(\"Error checking maximum for org_project_data[${org_project_data_it}].trends.success_rate:\", error.message);\n            }\n        })\n\n                            }\n                        }\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error validating array objects for org_project_data:\", error.message);\n            }\n        })\n\n        pm.test('Response has the `all_projects` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`all_projects`)) {\n                    const value = ld.get(jsonResponse, `all_projects`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(Array.isArray(value)).to.equal(true);\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking array field all_projects:\", error.message);\n            }\n        })\n  \n        pm.test(`all_projects length to be atmost '100'`,function(){\n            try {\n                const value = ld.get(responseData, `all_projects`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.most(100);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxItems for all_projects:\", error.message);\n            }\n        })\n  \n        pm.test(`all_projects length to be atleast '100'`,function(){\n            try {\n                const value = ld.get(responseData, `all_projects`, null);\n                if (value !== null && value !== undefined && Array.isArray(value)) {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minItems for all_projects:\", error.message);\n            }\n        })\n\n                }\n            } catch (error) {\n                console.error('Error validating object structure:', error.message);\n            }\n        });\n    });\n\n}\n\nif (pm.response.code == 500){\n    pm.test(\"Error response.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Internal Server Error\");\n        pm.test(\"Response has Content-Type header\", function () {\n            try {\n                pm.response.to.have.header(\"Content-Type\");\n            } catch (error) {\n                console.error('Error checking Content-Type header:', error.message);\n            }\n        });\n        pm.test(\"Content-Type is application/json\", function () {\n            try {\n                pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\n            } catch (error) {\n                console.error('Error validating JSON Content-Type:', error.message);\n            }\n        });\n        pm.test(\"Response object structure validation\", function () {\n            try {\n                if (responseData !== null && responseData !== undefined) {\n        pm.test('Response has the `message` field',function(){\n            try {\n                const jsonResponse = pm.response.json();\n                if (jsonResponse && pm.expect(jsonResponse).to.have.nested.property(`message`)) {\n                    const value = ld.get(jsonResponse, `message`, null);\n                    if (value !== null && value !== undefined) {\n                        pm.expect(typeof value).to.equal(\"string\");\n                    }\n                }\n            } catch (error) {\n                console.log(\"Error checking string field message:\", error.message);\n            }\n        })\n  \n        pm.test(`message length to be atmost '1000'`,function(){\n            try {\n                const value = ld.get(responseData, `message`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.most(1000);\n                }\n            } catch (error) {\n                console.log(\"Error checking maxLength for message:\", error.message);\n            }\n        })\n  \n        pm.test(`message length to be alteast '0'`,function(){\n            try {\n                const value = ld.get(responseData, `message`, null);\n                if (value !== null && value !== undefined && typeof value === 'string') {\n                    pm.expect(value.length).to.be.at.least(0);\n                }\n            } catch (error) {\n                console.log(\"Error checking minLength for message:\", error.message);\n            }\n        })\n\n                }\n            } catch (error) {\n                console.error('Error validating object structure:', error.message);\n            }\n        });\n    });\n\n}\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "name": "{project-slug}",
+          "item": [
+            null,
+            null,
+            {
+              "name": "workflows",
+              "item": [
+                null,
+                {
+                  "name": "{workflow-name}",
+                  "item": [
+                    null,
+                    null,
+                    null,
+                    null
+                  ],
+                  "event": []
+                }
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    null,
+    {
+      "name": "me",
+      "item": [
+        null,
+        null
+      ],
+      "event": []
+    },
+    {
+      "name": "organization",
+      "item": [
+        null,
+        {
+          "name": "{org-slug-or-id}",
+          "item": [
+            null,
+            null,
+            {
+              "name": "url-orb-allow-list",
+              "item": [
+                null,
+                null,
+                null
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "name": "pipeline",
+      "item": [
+        null,
+        null,
+        {
+          "name": "{pipeline-id}",
+          "item": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "name": "project",
+      "item": [
+        {
+          "name": "{project-slug}",
+          "item": [
+            null,
+            null,
+            {
+              "name": "checkout-key",
+              "item": [
+                null,
+                null,
+                {
+                  "name": "{fingerprint}",
+                  "item": [
+                    null,
+                    null
+                  ],
+                  "event": []
+                }
+              ],
+              "event": []
+            },
+            {
+              "name": "envvar",
+              "item": [
+                null,
+                null,
+                {
+                  "name": "{name}",
+                  "item": [
+                    null,
+                    null
+                  ],
+                  "event": []
+                }
+              ],
+              "event": []
+            },
+            {
+              "name": "job/{job-number}",
+              "item": [
+                null,
+                null
+              ],
+              "event": []
+            },
+            {
+              "name": "pipeline",
+              "item": [
+                null,
+                null,
+                null,
+                null
+              ],
+              "event": []
+            },
+            {
+              "name": "schedule",
+              "item": [
+                null,
+                null
+              ],
+              "event": []
+            },
+            {
+              "name": "{job-number}",
+              "item": [
+                null,
+                null
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        },
+        {
+          "name": "{provider}/{organization}/{project}",
+          "item": [
+            null,
+            {
+              "name": "settings",
+              "item": [
+                null,
+                null
+              ],
+              "event": []
+            },
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "name": "schedule/{schedule-id}",
+      "item": [
+        null,
+        null,
+        null
+      ],
+      "event": []
+    },
+    null,
+    {
+      "name": "webhook",
+      "item": [
+        null,
+        null,
+        {
+          "name": "{webhook-id}",
+          "item": [
+            null,
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "name": "workflow/{id}",
+      "item": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "event": []
+    },
+    {
+      "name": "org/{orgID}",
+      "item": [
+        {
+          "name": "oidc-custom-claims",
+          "item": [
+            null,
+            null,
+            null
+          ],
+          "event": []
+        },
+        {
+          "name": "project/{projectID}/oidc-custom-claims",
+          "item": [
+            null,
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "name": "owner/{ownerID}/context/{context}",
+      "item": [
+        {
+          "name": "decision",
+          "item": [
+            null,
+            null,
+            {
+              "name": "settings",
+              "item": [
+                null,
+                null
+              ],
+              "event": []
+            },
+            {
+              "name": "{decisionID}",
+              "item": [
+                null,
+                null
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        },
+        {
+          "name": "policy-bundle",
+          "item": [
+            null,
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "name": "organizations/{org_id}/usage_export_job",
+      "item": [
+        null,
+        null
+      ],
+      "event": []
+    },
+    {
+      "name": "projects/{project_id}",
+      "item": [
+        {
+          "name": "pipeline-definitions",
+          "item": [
+            null,
+            null,
+            {
+              "name": "{pipeline_definition_id}",
+              "item": [
+                null,
+                null,
+                null,
+                {
+                  "name": "triggers",
+                  "item": [
+                    null,
+                    null
+                  ],
+                  "event": []
+                }
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        },
+        {
+          "name": "triggers/{trigger_id}",
+          "item": [
+            null,
+            null,
+            null
+          ],
+          "event": []
+        },
+        null
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://circleci.com/api/v2",
+      "key": "baseUrl"
+    },
+    {
+      "type": "number",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Circle-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "6b1f3214-3724-4693-a95c-387afcfc9372",
+    "name": "CircleCI API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "This describes the resources that make up the CircleCI API v2.",
+      "type": "text/plain"
+    }
+  }
+}

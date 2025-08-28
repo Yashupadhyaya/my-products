@@ -1,0 +1,52 @@
+[
+  {
+    "branch": "main",
+    "granularity": "daily",
+    "start-date": "2023-01-01",
+    "end-date": "2023-01-31",
+    "project-slug": "example/project-slug",
+    "workflow-name": "build-and-test",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "feature-branch",
+    "granularity": "weekly",
+    "start-date": "2022-12-01",
+    "end-date": "2022-12-31",
+    "project-slug": "another/project-slug",
+    "workflow-name": "deploy-pipeline",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "invalid!branch",
+    "granularity": "!invalid-granularity-2023",
+    "start-date": "not-a-date",
+    "end-date": "2023-13-01",
+    "project-slug": "wrong/project-slug@@",
+    "workflow-name": "unknown-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "branch": "release",
+    "granularity": "hourly",
+    "start-date": "2023-02-01T08:00:00Z",
+    "end-date": "2023-02-01T20:00:00Z",
+    "project-slug": "release/project-x",
+    "workflow-name": "test-workflow",
+    "statusCode": 200,
+    "scenario": "An array of timeseries data, one entry per job."
+  },
+  {
+    "branch": "invalidBranch123",
+    "granularity": "123456",
+    "start-date": "2023-99-88",
+    "end-date": "not_a_valid_date",
+    "project-slug": "invalid/slug**",
+    "workflow-name": "unknown!workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
