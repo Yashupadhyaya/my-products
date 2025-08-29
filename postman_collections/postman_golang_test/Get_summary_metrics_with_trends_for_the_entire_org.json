@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "last-30-days",
+    "org-slug": "acme-corp",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "last-7-days",
+    "org-slug": "tech-company",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  },
+  {
+    "reporting-window": "year-to-date",
+    "org-slug": "global-inc",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "invalid-window",
+    "org-slug": "@not-a-valid-slug!",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "last-quarter",
+    "org-slug": "enterprise-solutions",
+    "statusCode": 200,
+    "scenario": "summary metrics with trends for an entire org and it's projects."
+  }
+]
