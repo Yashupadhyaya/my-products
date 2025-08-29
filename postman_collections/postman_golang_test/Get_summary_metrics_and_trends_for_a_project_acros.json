@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-10-01 to 2023-10-31",
+    "project-slug": "project-metrics-analysis",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2023-09-01 to 2023-09-30",
+    "project-slug": "workflow-performance-trends",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "02/30/2023",
+    "project-slug": "invalid/project@slug$",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "-01-2023",
+    "project-slug": "#missing-slug-data#",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "2023-08-01 to 2023-08-31",
+    "project-slug": "aggregated-insights-project",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  }
+]
