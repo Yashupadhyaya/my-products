@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "last-7-days",
+    "project-slug": "team-alpha/project-health-check",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "last-30-days",
+    "project-slug": "org-beta/performance-metrics",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "next-7-days",
+    "project-slug": "invalid/project-12345",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "custom-range",
+    "project-slug": "unknown-project-slug###",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "ytd",
+    "project-slug": "org-gamma/project-detailed-report",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  }
+]
