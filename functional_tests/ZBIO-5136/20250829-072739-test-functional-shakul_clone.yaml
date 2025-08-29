@@ -1,0 +1,113 @@
+openapi: 3.0.0
+info:
+  title: אפליקציית מובייל – בנק ירושלים
+  description: אפיון מפורט של אפליקציית מובייל בנק ירושלים
+  version: 1.1
+servers:
+  - url: ${API_BASE_URL}
+    description: המיישם היסודי של ה-API
+paths:
+  /credit-cards/{cardId}/balance:
+    get:
+      summary: אימות יתרה לא שולמה
+      parameters:
+        - name: cardId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: קוד התגובה צריך להיות 200
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  balance:
+                    type: number
+                    example: 1234.56
+  /credit-cards/{cardId}/payment-date:
+    get:
+      summary: אימות תאריך התשלום
+      parameters:
+        - name: cardId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: קוד התגובה צריך להיות 200
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  paymentDate:
+                    type: string
+                    format: date
+                    example: "2023-12-01"
+  /credit-cards/{cardId}/payment-reminder:
+    get:
+      summary: אימות קריאת תשלום לאחר תאריך התשלום
+      parameters:
+        - name: cardId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: קוד התגובה צריך להיות 200
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reminder:
+                    type: string
+                    example: "תזכורת תשלום"
+  /credit-cards/{cardId}/collect-payment:
+    post:
+      summary: אימות תהליך איסוף תשלום בכרטיס
+      parameters:
+        - name: cardId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: number
+                  example: 100
+                currency:
+                  type: string
+                  example: "ILS"
+      responses:
+        '200':
+          description: קוד התגובה צריך להיות 200
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    example: "123456789"
+                  newBalance:
+                    type: number
+                    example: 1134.56
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: ${AUTH_HEADER}
+security:
+  - ApiKeyAuth: []
