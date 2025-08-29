@@ -1,0 +1,32 @@
+[
+  {
+    "reporting-window": "2023-Q1",
+    "project-slug": "example-project-123",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "last-week",
+    "project-slug": "analytics-toolkit",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "2022-Q4",
+    "project-slug": "codebase-analysis-xyz",
+    "statusCode": 200,
+    "scenario": "Aggregated summary metrics and trends by workflow and branches"
+  },
+  {
+    "reporting-window": "invalid-window",
+    "project-slug": "unknown-project-slug",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "reporting-window": "out-of-range-date",
+    "project-slug": "slug123#!",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
