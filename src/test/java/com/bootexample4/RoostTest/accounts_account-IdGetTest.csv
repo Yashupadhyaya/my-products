@@ -1,0 +1,11 @@
+account-Id,Consent-ID,withBalance,Content-Type,PSU-ID,statusCode
+acc12345,cst98765,false,application/json,psu78901,200
+acc12346,cst98766,true,application/xml,psu78902,200
+acc12347,cst98767,false,text/html,psu78903,200
+acc12348,cst98768,true,text/plain,psu78904,200
+acc12349,cst98769,false,application/pdf,psu78905,200
+acc12350,cst98770,true,application/vnd.ms-excel,psu78906,200
+acc12351,cst98771,false,application/zip,psu78907,200
+acc12352,cst98772,true,text/csv,psu78908,200
+acc12353,cst98773,false,text/css,psu78909,200
+acc12354,cst98774,true,text/javascript,psu78910,200
