@@ -1,0 +1,14 @@
+countryId,statusCode,scenario
+IND,200,Success
+US,404,Failed
+AUS,200,Success
+GER,300,Failed
+BRA,500,Failed
+JPN,200,Success
+FRA,400,Failed
+ITA,200,Success
+RUS,504,Failed
+CHN,200,Success
+ZAF,302,Failed
+CAN,200,Success
+MEX,500,Failed

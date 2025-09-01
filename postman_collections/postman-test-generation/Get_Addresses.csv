@@ -1,0 +1,11 @@
+addressIds,statusCode,scenario
+"ad1",200,"Success"
+"ad2",200,"Success"
+"ad3",200,"Success"
+"ad4",200,"Success"
+"ad5",200,"Success"
+"ad6",400,"Bad request"
+"ad7",400,"Bad request"
+"ad8",400,"Bad request"
+"ad9",400,"Bad request"
+"ad10",400,"Bad request"
