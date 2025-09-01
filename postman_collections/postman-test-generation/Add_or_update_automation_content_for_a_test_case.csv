@@ -1,0 +1,9 @@
+confirmation,key,project-key,name,externalId,content,statusCode,scenario
+Yes,A123BC,XYZPK,AccessAPI,EXT456,"{\n \"message\": \"bad data\"\n}",200,Updated automation content for test case.
+Yes,B789DE,RSTPK,DataAPI,EXT567,"{\n \"message\": \"bad data\"\n}",200,Updated automation content for test case.
+No,X123YZ,UVWPk,RetrieveAPI,EXT678,randomData789,400,Invalid parameters.
+No,Z987XY,MLNPk,CreateAPI,EXT789,randomData456,400,Invalid parameters.
+Unconfirmed,C456EF,QWRPK,DeleteAPI,EXT890,"{\n \"message\": \"unauthorized\"\n}",401,Unauthorized.
+Unconfirmed,D321GH,TYUPk,SearchAPI,EXT901,"{\n \"message\": \"unauthorized\"\n}",401,Unauthorized.
+Failed,E654IJ,IOPPK,ViewAPI,EXT012,randomData123,404,Not Found.
+Failed,F987KL,ASDPK,UpdateAPI,EXT234,randomData234,404,Not Found.

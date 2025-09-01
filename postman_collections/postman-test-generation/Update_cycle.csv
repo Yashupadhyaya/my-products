@@ -1,0 +1,5 @@
+cycleId,project-key,name,assignee,plannedStartDate,plannedEndDate,fields,statusCode,scenario
+1,PROJX,"My First Cycle",John,2025-04-28T07:21:25.185426Z,2025-04-29T07:21:25.1854258Z,"Environments:Development, Builds:1.9.9",200,Successful responses: OK
+2,PROJB,"My Second Cycle",Andrew,2026-05-20T08:33:34.5678234Z,2026-05-22T08:33:34.5678423Z,"Environments:Test, Builds:2.0.1",400,Invalid parameters
+3,PROJY,"My Third Cycle",Emma,2024-03-18T06:20:29.123455Z,2024-03-19T06:20:29.123449Z,"Environments:Staging, Builds:2.1.0",401,Unauthorized
+4,PROJC,"My Fourth Cycle",Oliver,2027-06-30T10:44:45.7897524Z,2027-07-01T10:44:45.7897519Z,"Environments:Production, Builds:2.2.2",404,Not Found.
