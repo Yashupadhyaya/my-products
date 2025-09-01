@@ -1,0 +1,11 @@
+RequestBody^|^statusCode
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d25", "jobTitle": "Software Developer", "name": "John Doe", "email": "john.doe@example.com"}^|^201
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d26", "jobTitle": "Data Scientist", "name": "Jane Doe", "email": "jane.doe@example.com"}^|^400
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d27", "jobTitle": "Product Manager", "name": "James Smith", "email": "james.smith@example.com"}^|^409
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d28", "jobTitle": "UX Designer", "name": "Sarah Johnson", "email": "sarah.johnson@example.com"}^|^201
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d29", "jobTitle": "QA Engineer", "name": "Robert Williams", "email": "robert.williams@example.com"}^|^400
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d30", "jobTitle": "DevOps Engineer", "name": "Michael Brown", "email": "michael.brown@example.com"}^|^409
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d31", "jobTitle": "Systems Analyst", "name": "Linda Davis", "email": "linda.davis@example.com"}^|^201
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d32", "jobTitle": "Network Engineer", "name": "Patricia Miller", "email": "patricia.miller@example.com"}^|^400
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d33", "jobTitle": "Database Administrator", "name": "David Wilson", "email": "david.wilson@example.com"}^|^409
+{"id": "3e7c7881-633a-44b5-bdc3-d63968cb4d34", "jobTitle": "Web Developer", "name": "Jennifer Moore", "email": "jennifer.moore@example.com"}^|^201
