@@ -1,0 +1,6 @@
+id,statusCode,scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851,200,"{\"email\": \"john.smith@acme-corp.com\",\"jobTitle\": \"System Analyst\",\"name\": \"John Smith\",\"id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\"}"
+c290f1ee-6c54-4b01-90e6-d701748f0852,404,"{\"email\": \"\",\"jobTitle\": \"\",\"name\": \"\",\"id\": \"c290f1ee-6c54-4b01-90e6-d701748f0852\"}"
+b290f1ee-6c54-4b01-90e6-d701748f0853,500,"{\"email\": \"\",\"jobTitle\": \"\",\"name\": \"\",\"id\": \"b290f1ee-6c54-4b01-90e6-d701748f0853\"}"
+a290f1ee-6c54-4b01-90e6-d701748f0854,201,"{\"email\": \"john.smith@acme-corp.com\",\"jobTitle\": \"System Analyst\",\"name\": \"John Smith\",\"id\": \"a290f1ee-6c54-4b01-90e6-d701748f0854\"}"
+9220f1ee-6c54-4b01-90e6-d701748f0855,401,"{\"email\": \"\",\"jobTitle\": \"\",\"name\": \"\",\"id\": \"9220f1ee-6c54-4b01-90e6-d701748f0855\"}"
