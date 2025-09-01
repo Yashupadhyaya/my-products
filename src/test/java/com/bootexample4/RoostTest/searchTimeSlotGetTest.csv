@@ -1,0 +1,11 @@
+addressId^|^subscriberId^|^associatedDocument^|^startDate^|^finishDate^|^orderType^|^addressChangeFlag^|^priorityFlag^|^priorityReason^|^RequestBody^|^statusCode
+17713^|^VTAL001^|^VTT001^|^2021-05-21T13:00:00^|^2021-06-04T13:00:00^|^Instalacao^|^true^|^false^|^Cliente Diamond^|^{"key1":"value1","key2":"value2"}^|^200
+17714^|^VTAL002^|^VTT002^|^2021-05-22T13:00:00^|^2021-06-05T13:00:00^|^Retirada^|^false^|^true^|^Cliente Platinum^|^{"key1":"value3","key2":"value4"}^|^400
+17715^|^VTAL003^|^VTT003^|^2021-05-23T13:00:00^|^2021-06-06T13:00:00^|^RemanejamentoPonto^|^true^|^false^|^Cliente Gold^|^{"key1":"value5","key2":"value6"}^|^401
+17716^|^VTAL004^|^VTT004^|^2021-05-24T13:00:00^|^2021-06-07T13:00:00^|^ChamadoTecnico^|^false^|^true^|^Cliente Silver^|^{"key1":"value7","key2":"value8"}^|^403
+17717^|^VTAL005^|^VTT005^|^2021-05-25T13:00:00^|^2021-06-08T13:00:00^|^Instalacao^|^true^|^false^|^Cliente Bronze^|^{"key1":"value9","key2":"value10"}^|^404
+17718^|^VTAL006^|^VTT006^|^2021-05-26T13:00:00^|^2021-06-09T13:00:00^|^Retirada^|^false^|^true^|^Cliente Diamond^|^{"key1":"value11","key2":"value12"}^|^406
+17719^|^VTAL007^|^VTT007^|^2021-05-27T13:00:00^|^2021-06-10T13:00:00^|^RemanejamentoPonto^|^true^|^false^|^Cliente Platinum^|^{"key1":"value13","key2":"value14"}^|^412
+17720^|^VTAL008^|^VTT008^|^2021-05-28T13:00:00^|^2021-06-11T13:00:00^|^ChamadoTecnico^|^false^|^true^|^Cliente Gold^|^{"key1":"value15","key2":"value16"}^|^429
+17721^|^VTAL009^|^VTT009^|^2021-05-29T13:00:00^|^2021-06-12T13:00:00^|^Instalacao^|^true^|^false^|^Cliente Silver^|^{"key1":"value17","key2":"value18"}^|^500
+17722^|^VTAL010^|^VTT010^|^2021-05-30T13:00:00^|^2021-06-13T13:00:00^|^Retirada^|^false^|^true^|^Cliente Bronze^|^{"key1":"value19","key2":"value20"}^|^503
