@@ -1,0 +1,5 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+XYZ123,"My Cycle",John,",",","1.0.0","My Second Cycle",Jane,"2025-04-28T07:21:25.1837478Z","2025-04-29T07:21:25.1837475Z",",UNVERSIONED,200,"Successful responses: OK"
+ABC456,"My Third Cycle",Jim,",",{"schemeName": "Environments", "allowedValueName": "Development"},{"schemeName": "Builds", "value": "1.9.9"},UNVERSIONED,"Folder",Doe,",",",",400,"Invalid parameters"
+DEF789,"Folder inside parent folder",InvalidUser,",","7267214e-b753-4522-995f-db0cb83f93d7",TestVersion,"My Cycle",John,",",","1.0.0",401,Unauthorized 
+JKL012,InvalidName,Paul,",",TestField,NotAvailable,"My Second Cycle",Jane,",",",UNVERSIONED,404,"Not Found"
