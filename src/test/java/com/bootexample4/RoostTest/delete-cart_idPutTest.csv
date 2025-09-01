@@ -1,0 +1,11 @@
+id,Authorization,statusCode
+3b9d6b6d-8fac-4277-9059-5b4b78d78d70,Auth001,200
+6e2f3a2f-5a3a-4b3b-8a3a-9b3c2c2c2c2c,Auth002,401
+2a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d,Auth003,403
+8b7c6a5d-4e3f-2c1d-0a9f-7e8d6b5c4a3b,Auth004,404
+9a0b1c2d-3e4f-5a6b-7c8d-2a4b5c6d7e8f,Auth005,400
+0a9f8e7d-6b5c-4a3b-2c1d-3e4f5a6b7c8d,Auth006,200
+7c8d6b5a-4a3b-2c1d-0a9f-8e7d6c5b4e3f,Auth007,401
+6b5c4a3b-2c1d-0a9f-8e7d-6c5b4e3f2c1d,Auth008,403
+5a6b7c8d-4e3f-2c1d-0a9f-8e7d6c5b4a3b,Auth009,404
+4a3b2c1d-0a9f-8e7d-6c5b-4e3f2c1d0a9f,Auth010,400
