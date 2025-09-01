@@ -1,0 +1,4 @@
+trigger_id,file_choice,file_path
+"trigger1","choice1","/path/to/file1"
+"trigger2","choice2","/path/to/file2"
+"trigger3","choice3","/path/to/file3"

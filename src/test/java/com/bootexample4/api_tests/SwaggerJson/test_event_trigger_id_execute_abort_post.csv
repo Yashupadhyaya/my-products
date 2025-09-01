@@ -1,0 +1,5 @@
+trigger_id,status_code,error_message
+"abc123","404","Not found"
+"xyz789","400","Bad request"
+"invalid","404","Not found"
+"","400","Bad request"

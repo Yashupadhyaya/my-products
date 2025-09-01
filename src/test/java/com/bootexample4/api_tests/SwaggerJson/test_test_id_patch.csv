@@ -1,0 +1,4 @@
+test_id,selected_model,integration_type,test_type
+"test1","openai","jira","unit"
+"test2","vertexai","azure","functional"
+"test3","dbrx","none","integration"
