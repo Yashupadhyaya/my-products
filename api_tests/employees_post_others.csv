@@ -1,0 +1,11 @@
+email^|^jobTitle^|^name^|^statusCode^|^scenario
+john.doe@acme-corp.com^|^Software Engineer^|^John Doe^|^200^|^Login
+jane.doe@acme-corp.com^|^Project Manager^|^Jane Doe^|^404^|^Logout
+michael.scott@dundermifflin.com^|^Regional Manager^|^Michael Scott^|^500^|^Profile Update
+dwight.schrute@dundermifflin.com^|^Assistant to the Regional Manager^|^Dwight Schrute^|^200^|^Password Reset
+jim.halpert@dundermifflin.com^|^Sales Representative^|^Jim Halpert^|^302^|^Account Deletion
+pam.beesly@dundermifflin.com^|^Receptionist^|^Pam Beesly^|^200^|^Profile Creation
+kevin.malone@dundermifflin.com^|^Accountant^|^Kevin Malone^|^400^|^Password Change
+oscar.martinez@dundermifflin.com^|^Accountant^|^Oscar Martinez^|^200^|^Logout
+angela.martin@dundermifflin.com^|^Accountant^|^Angela Martin^|^404^|^Login
+stanley.hudson@dundermifflin.com^|^Sales Representative^|^Stanley Hudson^|^500^|^Account Activation
