@@ -1,0 +1,11 @@
+koreUserId,botId,userCode,accountId,Authorization,customerId,status,statusCode
+u1,b1,uc1,a1,at1,1045304,Pending,P
+u2,b2,uc2,a2,at2,1045305,Active,A
+u3,b3,uc3,a3,at3,1045306,Suspended,S
+u4,b4,uc4,a4,at4,1045307,Inactive,I
+u5,b5,uc5,a5,at5,1045308,Blocked,B
+u6,b6,uc6,a6,at6,1045309,Terminated,T
+u7,b7,uc7,a7,at7,1045310,Archived,AR
+u8,b8,uc8,a8,at8,1045311,Deleted,D
+u9,b9,uc9,a9,at9,1045312,Expired,E
+u10,b10,uc10,a10,at10,1045313,Cancelled,C

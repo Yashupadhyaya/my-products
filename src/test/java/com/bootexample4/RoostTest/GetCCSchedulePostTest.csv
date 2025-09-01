@@ -1,0 +1,11 @@
+koreUserId,botId,accountId,Authorization,customerId,status,statusCode
+1234567890,abc123,xyz456,Bearer 123,1045300,Pending,123
+9876543210,def456,ghi789,Bearer 456,1045301,Active,200
+1122334455,jkl012,mno345,Bearer 789,1045302,Inactive,404
+2233445566,qrs678,tuv901,Bearer 101,1045303,Suspended,403
+3344556677,vwx234,yzx567,Bearer 102,1045304,Terminated,500
+4455667788,abc789,def012,Bearer 103,1045305,Archived,201
+5566778899,ghi123,jkl456,Bearer 104,1045306,Deleted,401
+6677889900,mno789,qrs012,Bearer 105,1045307,Blacklisted,400
+7788990011,tuv345,vwx678,Bearer 106,1045308,Flagged,503
+8899001122,yzx901,abc234,Bearer 107,1045309,Quarantined,429

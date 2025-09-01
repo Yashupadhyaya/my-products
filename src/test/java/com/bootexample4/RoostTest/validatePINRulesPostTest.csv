@@ -1,0 +1,11 @@
+botId,accountId,Authorization,sourcePin,statusCode
+bot932,acc734,Bearer token1,5043,200
+bot523,acc352,Bearer token2,1934,200
+bot832,acc543,Bearer token3,1923,200
+bot423,acc123,Bearer token4,3043,200
+bot623,acc452,Bearer token5,7043,200
+bot723,acc234,Bearer token6,1043,200
+bot223,acc654,Bearer token7,8043,200
+bot123,acc876,Bearer token8,2043,200
+bot323,acc987,Bearer token9,6043,200
+bot023,acc098,Bearer token10,4043,200
