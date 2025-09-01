@@ -1,0 +1,11 @@
+id^|^jobTitle^|^name^|^email^|^statusCode^|^scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851^|^System Analyst^|^John Smith^|^john.smith@acme-corp.com^|^500^|^System Failure
+a29df1ae-6a84-4b04-80f6-d601738f1642^|^Software Engineer^|^Jane Doe^|^jane.doe@acme-corp.com^|^404^|^Page not found
+b38eg1bf-7b94-4c05-90g6-e712816f2743^|^Project Manager^|^Robert Johnson^|^robert.johnson@acme-corp.com^|^200^|^Success
+c49fh2cg-8c04-5d06-91h7-f823916h3844^|^Data Analyst^|^Emily Davis^|^emily.davis@acme-corp.com^|^403^|^Access Denied
+d50ij2dh-9d05-5e07-92i8-g934927i4925^|^Network Administrator^|^Michael Miller^|^michael.miller@acme-corp.com^|^^^|^Empty Field
+e61jk3ei-0e06-5f08-93j9-h045938j5026^|^Database Administrator^|^Jessica Taylor^|^jessica.taylor@acme-corp.com^|^400^|^Bad Request
+f72kl4fj-1f07-6g09-94k0-i156949k6127^|^Security Specialist^|^Joshua Anderson^|^joshua.anderson@acme-corp.com^|^201^|^Resource Created
+g83lm5gk-2g08-7h10-95l1-j26795al7228^|^QA Specialist^|^Sophia Martinez^|^sophia.martinez@acme-corp.com^|^302^|^Redirection
+h94mn6hl-3h09-8i11-96m2-k37896bm8329^|^Web Developer^|^James White^|^james.white@acme-corp.com^|^402^|^Payment Required
+i05no7im-4i00-9j12-97n3-l48997cn9430^|^UX/UI Designer^|^Elizabeth Thomas^|^elizabeth.thomas@acme-corp.com^|^301^|^Moved Permanently
