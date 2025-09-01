@@ -1,0 +1,4 @@
+orderId,statusCode,scenario
+1234,200,Successful responses: OK
+5678,400,Client error responses: Bad Request
+9012,404,Client error responses: Not Found

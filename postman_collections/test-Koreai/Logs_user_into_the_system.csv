@@ -1,0 +1,11 @@
+username,password,statusCode,scenario
+johndoe,doepassword,200,Successful responses: OK
+admin,adminpassword,200,Successful responses: OK
+user,userpassword,200,Successful responses: OK
+smith,smithpassword,200,Successful responses: OK
+david,davidpassword,200,Successful responses: OK
+michael,michaelpassword,400,Client error responses: Bad Request
+rachel,rachelpassword,400,Client error responses: Bad Request
+lily,lilypassword,400,Client error responses: Bad Request
+emma,emmapassword,400,Client error responses: Bad Request
+noah,noahpassword,400,Client error responses: Bad Request
