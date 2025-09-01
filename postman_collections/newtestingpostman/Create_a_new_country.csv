@@ -1,0 +1,11 @@
+name_*string,code_*string,currencies_0_*string,currencies_1_*string,default_currency_*string,is_active_*integer,statusCode,scenario
+India,IND,INR,USD,INR,1,201,Country created successfully
+United States,USA,USD,EUR,USD,1,201,Country created successfully
+Germany,DEU,EUR,USD,EUR,1,201,Country created successfully
+Japan,JPN,JPY,USD,JPY,1,201,Country created successfully
+Australia,AUS,AUD,USD,AUD,1,201,Country created successfully
+Mexico,MEX,MXN,USD,MXN,1,201,Country created successfully
+Brazil,BRA,BRL,USD,BRL,1,201,Country created successfully
+Canada,CAN,CAD,USD,CAD,1,201,Country created successfully
+South Korea,KOR,KRW,USD,KRW,1,201,Country created successfully
+United Kingdom,GBR,GBP,USD,GBP,1,201,Country created successfully

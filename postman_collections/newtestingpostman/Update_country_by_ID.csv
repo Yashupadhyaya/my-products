@@ -1,0 +1,11 @@
+id,name_*string,code_*string,currencies_0_*string,currencies_1_*string,default_currency_*string,is_active_*integer,statusCode,scenario
+101,INDIA,IND,INR,USD,INR,1,200,Country updated successfully
+202,USA,USA,USD,CAD,USD,1,200,Country updated successfully
+303,CANADA,CAN,CAD,USD,CAD,1,200,Country updated successfully
+404,AUSTRALIA,AUS,AUD,NZD,AUD,1,200,Country updated successfully
+505,GERMANY,DEU,EUR,USD,EUR,1,200,Country updated successfully
+606,FRANCE,FRA,EUR,GBP,EUR,1,200,Country updated successfully
+707,JAPAN,JPN,JPY,USD,JPY,1,200,Country updated successfully
+808,SOUTH AFRICA,ZAF,ZAR,USD,ZAR,1,200,Country updated successfully
+909,BRAZIL,BRA,BRL,USD,BRL,1,200,Country updated successfully
+1010,ARGENTINA,ARG,ARS,USD,ARS,1,200,Country updated successfully
