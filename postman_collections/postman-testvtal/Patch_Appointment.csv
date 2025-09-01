@@ -1,0 +1,13 @@
+appointmentId,id,reason,statusCode,scenario
+"SA-562403","bff13821-73c3-42cc-9327-b05c7df5a67f","Agendamento para Instalação de Fibra",200,"successful operation"
+"InvalidID","InvalidID","InvalidReason",400,"Bad Request"
+"InvalidID","InvalidID","InvalidReason",401,"Unauthorized"
+"InvalidID","InvalidID","InvalidReason",403,"Forbidden - Scope Not Permitted"
+"InvalidID","InvalidID","InvalidReason",404,"Not Found"
+"InvalidID","InvalidID","InvalidReason",406,"Not Acceptable"
+"InvalidID","InvalidID","InvalidReason",412,"Not Acceptable"
+"InvalidID","InvalidID","InvalidReason",423,"Locked"
+"InvalidID","InvalidID","InvalidReason",429,"Too Many Requests - Exceeded Quota"
+"InvalidID","InvalidID","InvalidReason",500,"Internal Server Error"
+"InvalidID","InvalidID","InvalidReason",503,"Service Unavailable"
+"InvalidID","InvalidID","InvalidReason",504,"Gateway Timeout"

@@ -1,0 +1,12 @@
+subscriberId,id,confirmation,statusCode,scenario
+"12345","bff13821-73c3-42cc-9327-b05c7df5a67f",true,200,"successful operation"
+"12346","invalid-id",false,400,"Bad Request"
+"12347","invalid-id",false,401,"Unauthorized"
+"12348","invalid-id",false,403,"Forbidden - Scope Not Permitted"
+"12349","invalid-id",false,404,"Not Found"
+"12350","invalid-id",false,406,"Not Acceptable"
+"12351","invalid-id",false,412,"Not Acceptable"
+"12352","invalid-id",false,429,"Too Many Requests - Exceeded Quota"
+"12353","invalid-id",false,500,"Internal Server Error"
+"12354","invalid-id",false,503,"Service Unavailable"
+"12355","invalid-id",false,504,"Gateway Timeout"
