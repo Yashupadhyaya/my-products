@@ -1,0 +1,5 @@
+jiraFields,ttmFields,limit,nextPageToken,project-key,statusCode,scenario
+"summary":"Test 1 status","description":"Test 1 description","status":"Backlog","priority":"High"^|"A precondition","Login","Logout",1,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","TE",200,Successfully retrieved test cases information.
+"summary":"Random value","description":"Random value","status":"Random value","priority":"Random value","Random value","Random value","Random value",500,"ytttyyyyyyyyyyyyyyxxxxxx","DT",400,"Invalid parameters"
+"summary":"Random value","description":"Random value","status":"Random value","priority":"Random value"^|"Random","Random","Random",300,"asssaaaaaaeeeeeeesssssssss","TX",401,"Unauthorized"
+"summary":"Random value","description":"Random value","status":"Random value","priority":"Random","Random","Random","Random",400,"erttttttttttyuuuuuuuuuuuuuuii","UX",404,"Not Found"
