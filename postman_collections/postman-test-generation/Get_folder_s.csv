@@ -1,0 +1,9 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1","NA",2,0,"TE",200,"Successfully get folder(s)."
+"Folder inside another folder","80a62da9-9016-488d-a7d5-166dcba9b3c0",2,0,"TE",200,"Successfully get folder(s)."
+"Invalid Folder","inqa89da-19za7-897d-a765-166dcoj9b6x5",3,1,"TN",400,"Invalid parameters."
+"Wrong Parent","70a63ja9-9817-457d-c7s4-163dcba8c7l0",5,2,"TS",400,"Invalid parameters."
+"Fake apis","80a62da9-9016-488d-a7d5-166dcba9b3c1",0,0,"FI",401,"Unauthorized."
+"Unrecognized requests","90t62ha8-9908-444e-b7t6-992dcta9b3o1",5,2,"UN",401,"Unauthorized."
+"Folder 503","NA",0,0,"FB",404,"Not Found."
+"Inside Folder 505","80a51fa8-1291-788d-a8g5-177xyba9g4d0",5,2,"NF",404,"Not Found."
