@@ -1,0 +1,7 @@
+orderId, statusCode, scenario
+1234, 400, Client error responses: Bad Request
+5678, 400, Client error responses: Bad Request
+91011, 404, Client error responses: Not Found
+121314, 404, Client error responses: Not Found
+151617, 400, Client error responses: Bad Request
+181920, 404, Client error responses: Not Found
