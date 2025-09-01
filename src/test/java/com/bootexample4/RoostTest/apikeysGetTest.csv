@@ -1,0 +1,11 @@
+UserID,FirstName,LastName,Email,DateOfBirth,Phone
+1,John,Doe,johndoe@gmail.com,1980-05-22,1234567890
+2,Jane,Doe,janedoe@gmail.com,1985-06-10,0987654321
+3,Mark,Smith,marksmith@gmail.com,1990-07-15,1472583690
+4,Lucy,Brown,lucybrown@gmail.com,1995-02-12,9632587410
+5,Tom,Green,tomgreen@gmail.com,2000-11-21,3571598462
+6,Anna,White,annawhite@gmail.com,1965-08-24,7896541230
+7,Bob,Black,bobblack@gmail.com,1970-09-30,4561237890
+8,Alice,Gray,alicegray@gmail.com,1975-04-20,3216549870
+9,Steve,Yellow,steveyellow@gmail.com,1982-12-05,1593574862
+10,Emma,Red,emmared@gmail.com,1998-01-31,8529637410
