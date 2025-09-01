@@ -1,0 +1,6 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","bf20314d-6c17-4c96-b251-9168d84dbca1","57c4db9f-a4ad-48cb-ac1c-490c10405510","218708f2-b109-4740-a0bb-eae35034ffaa",true,"DE-1",200,"Successful responses: OK"
+5,1,"RS-ST-1","fa20914d-7c59-4c99-b251-9187d86dbca2","68c4da9f-a5ad-49cc-bc1c-495c10505620","317708f2-b119-4750-a0bb-eaf35035fdcb",false,"RS-2",200,"Successful responses: OK"
+10,3,"bad data","cc20414c-7c15-4c92-b251-9127d85dbca3","75c4db9f-a4ad-48cc-bc1c-497c10505630","422708f2-b129-4760-a0bb-ead35036ffee",false,"bad-3",400,"Invalid parameters"
+20,7,"unauthorized","db20514d-6c13-4c93-b251-9116d84dbca4","80c4db9f-a4ad-48cd-bc1c-497c10505640","527808f2-b139-4770-a0bb-ebe35037ffgg",false,"unauthorized-4",401,"Unauthorized"
+1,2,"not found","ee20614d-6c11-4c94-b251-9126d84dbca5","84c4db9f-a4ad-48ce-ac1c-496c10505650","622708f2-b144-4780-a0bb-ecf35038hhii",true,"not-5",404,"Not Found"
