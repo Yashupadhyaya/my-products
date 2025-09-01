@@ -1,0 +1,3 @@
+trigger_id,target_url,file_path,env_config,arrival_rate,duration,test_framework,status_code,csv_file_path,endpoint
+"test123","http://example.com","['file1', 'file2']","[{"file":false,"key":"KEY1","value":"VALUE1","type":"string","secret":false}]","1","1","framework1","200","/path/to/csv","/api/v1/test"
+"test456","https://test.com","['file3']","[{"file":true,"key":"KEY2","value":"VALUE2","file_details":{"file_name":"test.txt","file_content":"content"},"type":"file"}]","5","10","framework2","201","/another/csv","/api/v2/test"
