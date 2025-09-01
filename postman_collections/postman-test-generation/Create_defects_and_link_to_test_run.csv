@@ -1,0 +1,5 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,"TR-1","PJ-1","Create folder","Creation of main folder","Task","Summary 1","Description 1","Sub-task",200,"Success"
+2,"TR-2","PJ-2","Create sub-folder","Creation of sub-folder inside main folder","Task","Summary 2","Description 2","Sub-task",200,"Success"
+3,"TR-3","PJ-3","Update folder","Update on main folder","Bug","Summary 3","Description 3","Sub-task",401,"Unauthorized"
+4,"TR-4","PJ-4","Delete folder","Deletion of sub-folder inside main folder","Bug","Summary 4","Description 4","Sub-task",401,"Unauthorized"
