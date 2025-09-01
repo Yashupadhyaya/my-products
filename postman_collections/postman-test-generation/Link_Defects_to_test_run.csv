@@ -1,0 +1,5 @@
+stepIndex,test-run-key,project-key,issueKey,1.issueKey,statusCode,scenario
+1,"Test-Run-1","Project-A","Key-1","Key-2",200,"Success"
+2,"Test-Run-2","Project-B","Key-1","Key-2",200,"Success"
+3,"Test-Run-3","Project-C","Key-1","Key-2",401,"Unauthorized"
+4,"Test-Run-4","Project-D","Key-1","Key-2",401,"Unauthorized"

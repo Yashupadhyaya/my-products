@@ -1,0 +1,11 @@
+id,project-key,statusCode,scenario
+"abc123"^|"project1"^|200^|"Success"
+"def456"^|"project2"^|400^|"Invalid parameters"
+"ghi789"^|"project3"^|401^|"Unauthorized"
+"jkl012"^|"project4"^|404^|"Not Found"
+"lmn345"^|"project5"^|200^|"Success"
+"nop678"^|"project6"^|400^|"Invalid parameters"
+"pqr901"^|"project7"^|401^|"Unauthorized"
+"stu234"^|"project8"^|404^|"Not Found"
+"vwx567"^|"project9"^|200^|"Success"
+"yzA890"^|"project10"^|400^|"Invalid parameters"

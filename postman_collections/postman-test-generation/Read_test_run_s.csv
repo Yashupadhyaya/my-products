@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","CycleName","1.0.0","1d52398e-56aa-4ed3-aad5-5ef6e9017ff5","true","DE-1",200,"Successful responses: OK"
+15,5,"BG-JH-3","CycleResult","2.0.1","7f300b64-27c4-4dbe-9a16-763a536bb5d3","false","BG-2",400,"Invalid parameters"
+12,3,"GR-CV-4","CycleCode","3.0.2","9bc9e883-bb75-4b6d-b92d-789a3761d70c","true","GR-3",401,"Unauthorized"
+20,10,"LK-KT-2","CycleDemo","4.0.3","2a34b78e-d3f3-4f9e-b7dd-955dd260bccf","false","LK-4",404,"Not Found"

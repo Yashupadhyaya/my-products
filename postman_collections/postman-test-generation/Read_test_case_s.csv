@@ -1,0 +1,5 @@
+jiraFields,ttmFields,limit,nextPageToken,project-key,statusCode,scenario
+"summary": "Test 1 status","description": "Test 1 description","precondition": "A precondition","steps": ["testCaseKey": "TE-2","testCaseId": "10000"],1,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","TE",200,Successfully retrieved test cases information.
+"summary":"value1", "description":"value2","precondition":"value1", "steps":["value1","value2"],50,"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy","EE",400,Invalid parameters.
+"summary":"value3", "description":"value4","precondition":"value3", "steps":["value3","value4"],25,"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz","VV",401,Unauthorized.
+"summary":"value5", "description":"value6","precondition":"value5", "steps":["value5","value6"],10,"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","OO",404,Not Found.

@@ -1,0 +1,7 @@
+folderId,project-key,name,parentId,statusCode,scenario
+8bc2886a-454f-4cd0-93e9-2c6b51bb2fd2,TE^|\"Folder 1\"^|\"NULL\",200,Successfully updated folder.
+7267214e-b753-4522-995f-db0cb83f93d7,AB^|\"Invalid Folder\"^|\"NULL\",400^|\"Invalid parameters\".
+df4c4baf-56c4-432c-8ed2-b33fbbfee276,CD^|\"Unauthorized Folder\"^|\"NULL\",401^|\"Unauthorized\".
+d2d6e052-f49b-4918-9de2-45ec1ed890db,EF^|\"Not Found Folder\"^|\"NULL\",404^|\"Not Found\".
+8bc2886a-454f-4cd0-93e9-2c6b51bb2fd2,TE^|\"Folder\"^|\"NULL\",201,Successfully updated folder.
+7267214e-b753-4522-995f-db0cb83f93d7,TE^|\"Folder inside parent folder\",\"7267214e-b753-4522-995f-db0cb83f93d7\",201,Successfully updated folder.

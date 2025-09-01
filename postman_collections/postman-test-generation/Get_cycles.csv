@@ -1,0 +1,7 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle","1.0.0","John Doe",50,0,"proj-1",200,"Successful responses: OK"
+"My Second Cycle","UNVERSIONED","Jane Doe",50,50,"proj-2",200,"Successful responses: OK"
+"My Third Cycle","UNVERSIONED","Simon Rex",50,100,"proj-3",200,"Successful responses: OK"
+"Invalid Cycle","1.0.0","Dorothy Day",100,200,"proj-4",400,"Invalid parameters"
+"Not Exist Cycle","UNVERSIONED","Wallace Stevens",200,250,"proj-5",404,"Not Found"
+"Unauthorized Cycle","1.0.1","Helen Keller",150,300,"proj-6",401,"Unauthorized"

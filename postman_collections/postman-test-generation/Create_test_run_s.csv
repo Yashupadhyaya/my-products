@@ -1,0 +1,5 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"DE-TR-1"^|"1.0.0"^|"CycleName"^|"Folder"^|true^|["user name filled"]^|200^|"Successful responses: OK"
+"ABC-XY-2"^|"2.5.3"^|"TestCycle"^|"Folder inside parent folder"^|false^|["bad data"]^|400^|"Invalid parameters"
+"XYZ-LM-3"^|"3.2.1"^|"Cycle3"^|"Folder3"^|true^|["unauthorized"]^|401^|"Unauthorized"
+"GHI-RS-4"^|"4.7.8"^|"Cycle4"^|"FolderInside"^|false^|["not found"]^|404^|"Not Found"

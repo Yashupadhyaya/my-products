@@ -1,0 +1,5 @@
+cycleId,project-key,name,assignee,plannedStartDate,plannedEndDate,fields,statusCode,scenario
+abc-123,project1,"My Third Cycle",user1,2025-04-28T07:21:25.185426Z,2025-04-29T07:21:25.1854258Z,"{\"schemeName\": \"Environments\", \"allowedValueName\":\"Development\"},{\"schemeName\": \"Builds\", \"value\": \"1.9.9\"}",200,Successful responses: OK
+def-456,project2,"Invalid Name",user2,2025-12-31T11:59:59.000Z,2025-12-31T11:59:59.000Z,"{\"schemeName\": \"Environments\", \"allowedValueName\":\"Testing\"},{\"schemeName\": \"Builds\", \"value\": \"0.0.0\"}",400,"Invalid parameters"
+ghi-789,project3,"Another Name",user3,2026-01-01T00:00:00.001Z,2026-01-01T00:00:00.001Z,"{\"schemeName\": \"Environments\", \"allowedValueName\":\"Release\"},{\"schemeName\": \"Builds\", \"value\": \"2.0.0\"}",401,Unauthorized
+jkl-012,project4,"Not Found Name",user4,2026-02-29T23:59:59.999Z,2026-02-29T23:59:59.999Z,"{\"schemeName\": \"Environments\", \"allowedValueName\":\"Not Found\"},{\"schemeName\": \"Builds\", \"value\": \"2.0.0\"}",404,"Not Found"

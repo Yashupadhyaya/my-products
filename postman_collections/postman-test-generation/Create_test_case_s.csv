@@ -1,0 +1,5 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,"ProjectA","Folder","72836f14-b351-4532-981f-cb0db82f93c7","http://example.com","Test1",202,"The job to create the test cases was successfully scheduled."
+2,"ProjectB","Folder inside parent folder","7267214e-b753-4522-995f-db0cb83f93d7","http://example.com","Test2",400,"Invalid parameters."
+3,"ProjectC","Folder","73056f15-b359-4537-281f-db0db92f94c8","http://example.com","Test3",401,"Unauthorized."
+4,"ProjectD","Folder inside parent folder","7267214e-b753-4522-995f-db0cb83f93d7","http://example.com","Test4",404,"Not Found."

@@ -1,0 +1,5 @@
+key,project-key,description,priority,summary,labels,precondition,steps,folder,folderId,statusCode,scenario
+API_Test1,Project1,Test 1 description,High,Test 1 status,MyLabel,A precondition,Login, Logout,parent folder/child folder,81408a7b-5c9a-4862-873d-bcd2452c370a,200,Updated test case.
+API_Test2,Project2,bad data,Low,Error^,No precondition,Error,invalid/folder,b7534370-air4-house6-f93d7,400,Invalid parameters.
+API_Test3,Project3,unauthorized,Medium,Unauthorized,MyLabel2,A precondition,Failure attempt,noaccess/folder,5c9a7267-b6b1-hair2-995f-db0cb83f93d7,401,Unauthorized.
+API_Test4,Project4,not found,Low,404 Error,LabelNotFound,No precondition,Error,nonexistent/folder,dog48cat04-b9a-digest-9a4862,404,Not Found.

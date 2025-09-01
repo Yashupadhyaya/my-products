@@ -1,0 +1,6 @@
+confirmation,key,project-key,name,externalId,content,statusCode,scenario
+Confirmed,A12B,proj-123,"Jack's Test",ex-001,"{\n  \"message\": \"bad data\"\n}",200,Updated automation content for test case.
+Failed,Z89X,proj-456,"Invalid name\",ex-002,"{\n  \"message\": \"unauthorized\"\n}",400,Invalid parameters.
+Failed,V76M,proj-789,"Unauthorized name",ex-003,"{\n  \"message\": \"not found\"\n}",401,Unauthorized
+Failed,Q45R,proj-012,NotFound,ex-004,"{\n  \"message\": \"not found\"\n}",404,Not Found
+Confirmed,M23V,proj-345,"Successful Test",ex-005,"{\n  \"message\": \"bad data\"\n}",200,Updated automation content for test case.
