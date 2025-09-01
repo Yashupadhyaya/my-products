@@ -1,0 +1,7 @@
+key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+api-1,proj-1,"Payload details","Linked and not linked requirements","information","Sample API log for success","{\n  \"notLinkedRequirement\": [\n    \"Key-2\"\n  ],\n  \"linkedRequirement\": [\n    \"Key-1\"\n  ]\n}","data",200,Success
+api-2,proj-1,"Payload Error Details","Invalid data for linked and not linked requirements","Error","Sample API log for unauthorized error","Invalid SWAGGER_DATA","Unauthorized",401,"Unauthorized Access."
+api-3,proj-1,"Payload details","Linked and not linked requirements","information","Sample API log for success","{\n  \"notLinkedRequirement\": [\n    \"Key-2\"\n  ],\n  \"linkedRequirement\": [\n    \"Key-1\"\n  ]\n}","data",200,Success
+api-4,proj-1,"Payload Error Details","Invalid data for linked and not linked requirements","Error","Sample API log for unauthorized error","Invalid SWAGGER_DATA","Unauthorized",401,"Unauthorized Access."
+api-5,proj-1,"Payload details","Linked and not linked requirements","information","Sample API log for success","{\n  \"notLinkedRequirement\": [\n    \"Key-2\"\n  ],\n  \"linkedRequirement\": [\n    \"Key-1\"\n  ]\n}","data",200,Success
+api-6,proj-1,"Payload Error Details","Invalid data for linked and not linked requirements","Error","Sample API log for unauthorized error","Invalid SWAGGER_DATA","Unauthorized",401,"Unauthorized Access."

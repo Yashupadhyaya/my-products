@@ -1,0 +1,13 @@
+name,version,assignee,limit,offset,project-key,statusCode,scenario
+"My Cycle","1.0.0","John Doe",100,0,"PROJ-123",200,"Successful responses: OK"
+"My Cycle","1.0.0","John Doe",100,0,"PROJ-123",400,"Invalid parameters"
+"My Cycle","1.0.0","John Doe",100,0,"PROJ-123",401,"Unauthorized"
+"My Cycle","1.0.0","John Doe",100,0,"PROJ-123",404,"Not Found"
+"My Second Cycle","UNVERSIONED","Jane Doe",500,0,"PROJ-456",200,"Successful responses: OK"
+"My Second Cycle","UNVERSIONED","Jane Doe",500,0,"PROJ-456",400,"Invalid parameters"
+"My Second Cycle","UNVERSIONED","Jane Doe",500,0,"PROJ-456",401,"Unauthorized"
+"My Second Cycle","UNVERSIONED","Jane Doe",500,0,"PROJ-456",404,"Not Found"
+"My Third Cycle","UNVERSIONED","Jack Doe",1000,0,"PROJ-789",200,"Successful responses: OK"
+"My Third Cycle","UNVERSIONED","Jack Doe",1000,0,"PROJ-789",400,"Invalid parameters"
+"My Third Cycle","UNVERSIONED","Jack Doe",1000,0,"PROJ-789",401,"Unauthorized"
+"My Third Cycle","UNVERSIONED","Jack Doe",1000,0,"PROJ-789",404,"Not Found"
