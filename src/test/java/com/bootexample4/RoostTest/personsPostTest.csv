@@ -1,0 +1,11 @@
+initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference,statusCode
+JH,John,Harold,Smith,1980-05-10,Los Angeles,1234567890,johnsmith@email.com,90001,123,A,US,REF1234,201
+MK,Mary,Kate,Johnson,1985-03-15,New York,0987654321,maryjohnson@email.com,10001,456,B,US,REF5678,201
+RT,Richard,Thomas,Brown,1975-11-20,Chicago,1122334455,richardbrown@email.com,60616,789,C,US,REF9012,201
+PL,Paul,Lee,Miller,1990-07-30,Houston,2233445566,paulmiller@email.com,77001,012,D,US,REF3456,201
+JT,Jane,Taylor,Davis,1988-02-25,Phoenix,3344556677,janedavis@email.com,85001,345,E,US,REF7890,201
+GR,George,Robert,Martinez,1978-09-05,Philadelphia,4455667788,georgemartinez@email.com,19104,678,F,US,REF1235,201
+LS,Linda,Susan,Anderson,1982-12-15,San Antonio,5566778899,lindaanderson@email.com,78201,901,G,US,REF5679,201
+WP,William,Peter,Thomas,1986-06-10,San Diego,6677889900,williamthomas@email.com,92101,234,H,US,REF9013,201
+EL,Elizabeth,Lisa,Jackson,1979-01-20,Dallas,7788990011,elizabethjackson@email.com,75201,567,I,US,REF3457,201
+CM,Charles,Michael,White,1992-08-30,San Jose,8899001122,charleswhite@email.com,95101,890,J,US,REF7891,201
