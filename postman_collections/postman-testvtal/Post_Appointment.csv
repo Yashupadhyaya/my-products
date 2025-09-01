@@ -1,0 +1,13 @@
+id,reason,statusCode,scenario
+"1","Successful operation",201,"successful operation"
+"2","Bad request",400,"Bad Request"
+"3","Unauthorized access",401,"Unauthorized"
+"4","Forbidden action",403,"Forbidden - Scope Not Permitted"
+"5","Resource not found",404,"Not Found"
+"6","Unacceptable request",406,"Not Acceptable"
+"7","Precondition failed",412,"Not Acceptable"
+"8","Resource locked",423,"Locked"
+"9","Quota exceeded",429,"Too Many Requests - Exceeded Quota"
+"10","Server error",500,"Internal Server Error"
+"11","Service unavailable",503,"Service Unavailable"
+"12","Gateway timeout",504,"Gateway Timeout"
