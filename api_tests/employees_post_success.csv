@@ -1,0 +1,11 @@
+id^|^jobTitle^|^name^|^email^|^statusCode^|^scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851^|^System Analyst^|^John Smith^|^john.smith@acme-corp.com^|^200^|^Scenario 1
+86d96ae4-6e11-468c-b98a-da8da957cae3^|^Software Developer^|^Jane Doe^|^jane.doe@xyz-company.com^|^200^|^Scenario 2
+ba5cd1e5-0605-4acf-a12c-7206a0cc8d12^|^Database Administrator^|^Alice Williams^|^alice.williams@pqr-tech.com^|^200^|^Scenario 3
+8919f093-6c79-4a7e-8952-c85967eafb42^|^Data Scientist^|^Bob Johnson^|^bob.johnson@lmn-startup.com^|^200^|^Scenario 4
+438b6e4a-efa6-4e41-9842-608765cfeeca^|^Network Engineer^|^Charlie Brown^|^charlie.brown@abc-soft.com^|^200^|^Scenario 5
+7f6c45a1-aba6-4a88-aa19-2b9205539853^|^IT Manager^|^Emily Davis^|^emily.davis@def-inc.com^|^200^|^Scenario 6
+10e626d1-0f49-404b-97e8-a618ae0648f2^|^Product Manager^|^Fred Miller^|^fred.miller@ghi-edu.com^|^200^|^Scenario 7
+db3b29cf-83f6-4923-bdbf-6e496f1c9b79^|^QA Engineer^|^Grace Wilson^|^grace.wilson@jkl-llc.com^|^200^|^Scenario 8
+c0f919a3-4f46-4c09-a496-3f63a1ed789b^|^Project Lead^|^Harry Moore^|^harry.moore@mno-org.com^|^200^|^Scenario 9
+f574d9f1-df8d-4567-8b8e-8bd0bfa46512^|^UX Designer^|^Iris Gomez^|^iris.gomez@fgh-agency.com^|^200^|^Scenario 10
