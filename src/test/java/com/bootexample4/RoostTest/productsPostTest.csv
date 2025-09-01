@@ -1,0 +1,11 @@
+id,name,description,price,statusCode
+1,Apple,This is a juicy apple,100,200
+2,Orange,This is a sweet orange,80,200
+3,Banana,This is a ripe banana,50,200
+4,Pear,This is a crunchy pear,70,200
+5,Watermelon,This is a refreshing watermelon,200,200
+6,Cherry,These are sweet cherries,120,200
+7,Pineapple,This is a tangy pineapple,150,200
+8,Grape,These are juicy grapes,90,200
+9,Strawberry,These are sweet strawberries,110,200
+10,Raspberry,These are tart raspberries,130,200
