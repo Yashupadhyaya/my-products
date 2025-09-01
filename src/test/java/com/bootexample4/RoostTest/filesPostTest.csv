@@ -1,0 +1,11 @@
+assistant_id,file_id,statusCode
+file-abc123,file-xyz456,200
+file-def456,file-qwe123,200
+file-ghi789,file-asd456,200
+file-jkl012,file-zxc789,200
+file-mno345,file-ert012,200
+file-pqr678,file-yui345,200
+file-stu901,file-ghj678,200
+file-vwx234,file-jkl901,200
+file-yza567,file-mnb234,200
+file-bcd890,file-vbn567,200

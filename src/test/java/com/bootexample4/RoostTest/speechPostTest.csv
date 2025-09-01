@@ -1,0 +1,11 @@
+model,input,voice,response_format,speed,statusCode
+Model1,Hello World,alloy,mp3,1,200
+Model2,Good Morning,echo,opus,1.5,200
+Model3,How are you?,fable,aac,0.75,200
+Model4,Nice to meet you,onyx,flac,1.25,200
+Model5,See you later,nova,mp3,2,200
+Model6,Thank you,shimmer,opus,0.5,200
+Model7,Welcome back,alloy,aac,1.75,200
+Model8,Happy Birthday,echo,flac,2.5,200
+Model9,Congratulations,fable,mp3,3,200
+Model10,Goodnight,onyx,opus,0.6,200

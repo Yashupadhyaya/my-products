@@ -1,0 +1,11 @@
+model,training_file,hyperparameters,batch_size,learning_rate_multiplier,n_epochs,suffix,validation_file,statusCode
+gpt-3.5-turbo,file-abc123,{'lr': 0.01, 'momentum': 0.9},auto,auto,auto,_01,file-def456,200
+gpt-3.5-turbo,file-abc124,{'lr': 0.02, 'momentum': 0.8},auto,auto,auto,_02,file-def457,200
+gpt-3.5-turbo,file-abc125,{'lr': 0.03, 'momentum': 0.7},auto,auto,auto,_03,file-def458,200
+gpt-3.5-turbo,file-abc126,{'lr': 0.04, 'momentum': 0.6},auto,auto,auto,_04,file-def459,200
+gpt-3.5-turbo,file-abc127,{'lr': 0.05, 'momentum': 0.5},auto,auto,auto,_05,file-def460,200
+gpt-3.5-turbo,file-abc128,{'lr': 0.06, 'momentum': 0.4},auto,auto,auto,_06,file-def461,200
+gpt-3.5-turbo,file-abc129,{'lr': 0.07, 'momentum': 0.3},auto,auto,auto,_07,file-def462,200
+gpt-3.5-turbo,file-abc130,{'lr': 0.08, 'momentum': 0.2},auto,auto,auto,_08,file-def463,200
+gpt-3.5-turbo,file-abc131,{'lr': 0.09, 'momentum': 0.1},auto,auto,auto,_09,file-def464,200
+gpt-3.5-turbo,file-abc132,{'lr': 0.10, 'momentum': 0.0},auto,auto,auto,_10,file-def465,200

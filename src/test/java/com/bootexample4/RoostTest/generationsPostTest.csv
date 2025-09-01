@@ -1,0 +1,11 @@
+prompt,model,n,quality,response_format,size,style,user,statusCode
+A cute baby sea otter,dall-e-3,1,standard,url,1024x1024,vivid,user-1234,200
+An adorable kitten,dall-e-2,2,hd,b64_json,512x512,natural,user-5678,200
+A majestic mountain,dall-e-3,3,standard,url,1792x1024,vivid,user-9012,200
+A peaceful beach sunset,dall-e-2,4,hd,b64_json,256x256,natural,user-3456,200
+A bustling cityscape,dall-e-3,5,standard,url,1024x1792,vivid,user-7890,200
+A serene forest,dall-e-2,6,hd,b64_json,1024x1024,natural,user-1123,200
+A beautiful flower,dall-e-3,7,standard,url,512x512,vivid,user-4456,200
+A tranquil waterfall,dall-e-2,8,hd,b64_json,1792x1024,natural,user-7789,200
+A stunning galaxy,dall-e-3,9,standard,url,1024x1792,vivid,user-9901,200
+A lively coral reef,dall-e-2,10,hd,b64_json,1024x1024,natural,user-2233,200

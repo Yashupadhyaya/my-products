@@ -1,0 +1,11 @@
+input,model,encoding_format,dimensions,user,statusCode
+The quick brown fox jumped over the lazy dog,text-embedding-3-small,float,2,user-1234,200
+Hello world,text-embedding-2-large,base64,3,user-5678,200
+I love machine learning,text-embedding-1-medium,float,1,user-9101,200
+Data is the new oil,text-embedding-3-small,base64,4,user-1121,200
+Artificial Intelligence is the future,text-embedding-2-large,float,2,user-3141,200
+Big data is a big deal,text-embedding-1-medium,base64,3,user-5161,200
+Deep learning is a subset of machine learning,text-embedding-3-small,float,1,user-7181,200
+Neural networks are fascinating,text-embedding-2-large,base64,4,user-9201,200
+Python is a popular language for data science,text-embedding-1-medium,float,2,user-1221,200
+Computer vision is an exciting field,text-embedding-3-small,base64,3,user-3241,200
