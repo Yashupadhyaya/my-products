@@ -1,0 +1,6 @@
+petId,name,status,statusCode,scenario
+1,Mittens,placed,405,Client error responses: Method Not Allowed
+2,Whiskers,approved,405,Client error responses: Method Not Allowed
+3,Rusty,delivered,405,Client error responses: Method Not Allowed
+4,Coco,approved,405,Client error responses: Method Not Allowed
+5,Simba,delivered,405,Client error responses: Method Not Allowed

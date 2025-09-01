@@ -1,0 +1,10 @@
+username,statusCode,scenario
+john_doe,200,Successful responses: OK
+jane_doe,200,Successful responses: OK
+mike_smith,200,Successful responses: OK
+peter_parker,400,Client error responses: Bad Request
+mary_jane,400,Client error responses: Bad Request
+tony_stark,400,Client error responses: Bad Request
+steve_rogers,404,Client error responses: Not Found
+natasha_romanoff,404,Client error responses: Not Found
+bruce_banner,404,Client error responses: Not Found
