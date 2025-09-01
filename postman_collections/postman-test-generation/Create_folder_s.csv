@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,Folder,995f7d1a-9455-489a-be38-e870c664ddd8,200,Successfully created folder(s).
+TE,Folder inside parent folder,995f7d1a-9455-489a-be38-e870c664ddd8,200,Successfully created folder(s).
+XY,invalidFolder,123,400,Invalid parameters.
+ZY,validFolder,null,401,Unauthorized.
+AB,testFolder,12345,404,Not Found.

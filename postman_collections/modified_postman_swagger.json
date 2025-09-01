@@ -1,0 +1,887 @@
+{
+  "item": [
+    {
+      "id": "3b4eaf87-bfc8-4116-9a01-e1a8f1dfe45b",
+      "name": "v1",
+      "item": [
+        {
+          "id": "6347162f-fdfa-4475-83c3-e04f03dbe8ae",
+          "name": "projects",
+          "item": [
+            null,
+            {
+              "id": "97731a9d-5b0c-40ec-9beb-6180395d7f40",
+              "name": "{project-key}",
+              "item": [
+                {
+                  "id": "148a245c-1e60-45c8-9ce4-8556f6066953",
+                  "name": "folders",
+                  "item": [
+                    {
+                      "id": "61800ac7-617f-4f23-b1f8-3b29a369abb4",
+                      "name": "Get folder(s).",
+                      "request": {
+                        "name": "Get folder(s).",
+                        "description": {
+                          "content": "## Get folders.\r\n            \r\n#### Query parameters to filter by:\r\n            \r\n* **name** : _(optional)_: The folder name.\r\n* **parentId** _(optional)_: The ID of the parent folder where the new folder should be located. (If not provided, only root folders will return).",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "folders"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "key": "name",
+                              "value": "{{name}}",
+                              "description": "name."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "parentId",
+                              "value": "{{parentId}}",
+                              "description": "parentId."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "limit",
+                              "value": "{{limit}}",
+                              "description": "Numeric value that determines that maximum N results will be returned"
+                            },
+                            {
+                              "disabled": false,
+                              "key": "offset",
+                              "value": "{{offset}}",
+                              "description": "Numeric value that determines that the result list will start from result #N (zero based)"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "auth": {
+                          "type": "apikey",
+                          "apikey": [
+                            {
+                              "key": "key",
+                              "value": "Authorization"
+                            },
+                            {
+                              "key": "value",
+                              "value": "{{apiKey}}"
+                            },
+                            {
+                              "key": "in",
+                              "value": "header"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "8e082215-7629-4b36-94b4-343c353899fd",
+                          "name": "Successfully get folder(s).",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"offset\": 0,\n  \"limit\": 2,\n  \"totalCount\": 2,\n  \"items\": [\n    {\n      \"id\": \"226fa9f2-1d5f-45e8-8460-0464e17b1eea\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T12:31:32.3666049Z\",\n      \"updated\": \"2025-04-29T12:31:32.366605Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder 1\"\n    },\n    {\n      \"id\": \"2eb27de2-7d28-4176-b575-1d829a204dc2\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T12:31:32.3666082Z\",\n      \"updated\": \"2025-04-29T12:31:32.3666083Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder inside another folder\"\n    }\n  ]\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "40a24cf0-5c81-404e-bfa0-7dbe9c6c9a35",
+                          "name": "`Invalid parameters`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"bad data\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "722fa567-af52-4dfa-a1bb-f4357ce4d309",
+                          "name": "`Unauthorized`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"unauthorized\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "421d10c0-ab6e-4aad-9b2b-42c9d7258a1f",
+                          "name": "`Not Found`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"not found\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [
+                        {
+                          "listen": "test",
+                          "script": {
+                            "exec": [
+                              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for /v1/projects/:project-key/folders?name=<string>&parentId=<uuid>&limit=10&offset=0 for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Successfully get folder(s).\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `offset` field',function(){\n            pm.expect(responseData.offset).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `limit` field',function(){\n            pm.expect(responseData.limit).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `totalCount` field',function(){\n            pm.expect(responseData.totalCount).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `items` field',function(){\n            pm.expect(responseData.items).to.exist.and.to.be.a(\"object\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n"
+                            ],
+                            "type": "text/javascript"
+                          }
+                        }
+                      ],
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      }
+                    },
+                    {
+                      "id": "e691f703-516c-4363-a723-475295fe34cd",
+                      "name": "Create folder(s).",
+                      "request": {
+                        "name": "Create folder(s).",
+                        "description": {
+                          "content": "## Create new folders. The body contains a list of folders to create.\r\n            \r\n#### Body fields:\r\n            \r\n* **name** : The folder name.\r\n* **parentId** _(optional)_ : The ID of the parent folder where the new folder should be located.",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "folders"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "POST",
+                        "auth": {
+                          "type": "apikey",
+                          "apikey": [
+                            {
+                              "key": "key",
+                              "value": "Authorization"
+                            },
+                            {
+                              "key": "value",
+                              "value": "{{apiKey}}"
+                            },
+                            {
+                              "key": "in",
+                              "value": "header"
+                            }
+                          ]
+                        },
+                        "body": {
+                          "mode": "raw",
+                          "raw": "[\n    {\n        \"name\": \"{{name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "8495b914-3eda-4ebb-accb-7fe496c2712f",
+                          "name": "Successfully created folder(s).",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "[\n    {\n        \"name\": \"{{name}}\"\n    },\n    {\n        \"name\": \"{{1.name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"offset\": 0,\n  \"limit\": 2,\n  \"totalCount\": 2,\n  \"items\": [\n    {\n      \"id\": \"bfa89ad4-30e4-42f9-a12c-f906c7e82150\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T12:31:32.3722701Z\",\n      \"updated\": \"2025-04-29T12:31:32.3722702Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder 1\"\n    },\n    {\n      \"id\": \"8deed32b-c97e-4590-8932-f2c0bc453785\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T12:31:32.3722729Z\",\n      \"updated\": \"2025-04-29T12:31:32.372273Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder inside another folder\"\n    }\n  ]\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "ba11e15f-4a2a-4a88-92b9-915e64c40f40",
+                          "name": "`Invalid parameters`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "[\n    {\n        \"name\": \"{{name}}\"\n    },\n    {\n        \"name\": \"{{1.name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"bad data\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "36d7202a-86a8-4976-812a-6404142a36ac",
+                          "name": "`Unauthorized`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "[\n    {\n        \"name\": \"{{name}}\"\n    },\n    {\n        \"name\": \"{{1.name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"unauthorized\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "59247a43-9b89-40ed-b857-0d33a853cb37",
+                          "name": "`Not Found`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "[\n    {\n        \"name\": \"{{name}}\"\n    },\n    {\n        \"name\": \"{{1.name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"not found\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [
+                        {
+                          "listen": "test",
+                          "script": {
+                            "exec": [
+                              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for /v1/projects/:project-key/folders for http method type post in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Successfully created folder(s).\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n        pm.test('Response has the `offset` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`offset`)){\n                if(pm.expect(ld.get(responseData, `offset`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `offset`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `limit` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`limit`)){\n                if(pm.expect(ld.get(responseData, `limit`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `limit`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `totalCount` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`totalCount`)){\n                if(pm.expect(ld.get(responseData, `totalCount`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `totalCount`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `items` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`items`)){\n                if(pm.expect(ld.get(pm.response.json(), `items`)).to.exist){\n                  pm.expect(Array.isArray(ld.get(pm.response.json(), `items`))).to.equal(true);\n                }\n\n            }\n\n        })\n\n        pm.test(`Each object in the items field has all the required fields`,function(){\n            pm.expect(pm.response.json()).to.have.nested.property(`items`);\n            let itemsArray = ld.get(pm.response.json(), `items`, \"\");\n            for (let items_it = 0; items_it < itemsArray.length; items_it++) {\n                let iterator = items_it;\n                \t\n        pm.test(`${iterator} element of array 'items[${items_it}].name' has 'name' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `items[${items_it}].name`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`items[${items_it}].name`, null)).to.equal(\"string\");\n            }\n        })\n\n  \n        pm.test('items[${items_it}].name length to be alteast `1`',function(){\n            pm.expect(ld.get(responseData, \"items[${items_it}].name\", \"\").length).to.be.at.least(1);\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].parentId' has 'parentId' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `items[${items_it}].parentId`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`items[${items_it}].parentId`, null)).to.equal(\"string\");\n            }\n        })\n\n\n        pm.test('items[${items_it}].parentId format to be uuid',function(){  \n            pm.expect(ld.get(responseData, \"items[${items_it}].parentId\", \"\")).to.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].id' has 'id' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `items[${items_it}].id`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`items[${items_it}].id`, null)).to.equal(\"string\");\n            }\n        })\n\n\n        pm.test('items[${items_it}].id format to be uuid',function(){  \n            pm.expect(ld.get(responseData, \"items[${items_it}].id\", \"\")).to.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].projectKey' has 'projectKey' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `items[${items_it}].projectKey`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`items[${items_it}].projectKey`, null)).to.equal(\"string\");\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'items[${items_it}].created' has 'created' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `items[${items_it}].created`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`items[${items_it}].created`, null)).to.equal(\"string\");\n            }\n        })\n\n  \n        pm.test('items[${items_it}].created format to be date-time',function(){\n            pm.expect(ld.get(responseData, \"items[${items_it}].created\", \"\")).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].updated' has 'updated' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `items[${items_it}].updated`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`items[${items_it}].updated`, null)).to.equal(\"string\");\n            }\n        })\n\n  \n        pm.test('items[${items_it}].updated format to be date-time',function(){\n            pm.expect(ld.get(responseData, \"items[${items_it}].updated\", \"\")).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n        })\n\n        pm.test(`${iterator} element of array 'items[${items_it}].createdBy' has 'createdBy' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `items[${items_it}].createdBy`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`items[${items_it}].createdBy`, null)).to.equal(\"string\");\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'items[${items_it}].updatedBy' has 'updatedBy' as 'string'`,function(){ \n            if(pm.expect(ld.get(pm.response.json(), `items[${items_it}].updatedBy`, null)).to.exist){\n              pm.expect(typeof ld.get(pm.response.json(),`items[${items_it}].updatedBy`, null)).to.equal(\"string\");\n            }\n        })\n\n\n        pm.test(`${iterator} element of array 'itemsArray'has 'index' as number`,function(){ \n            if(pm.expect(ld.get(responseData, `items[${items_it}].index`, 200)).to.exist){\n              pm.expect(typeof ld.get(responseData,`items[${items_it}].index`, 200)).to.equal(\"number\");\n            }\n      \n        })\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `title` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`title`)){\n                if(pm.expect(ld.get(pm.response.json(), `title`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `title`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `status` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`status`)){\n                if(pm.expect(ld.get(responseData, `status`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `status`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `detail` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`detail`)){\n                if(pm.expect(ld.get(pm.response.json(), `detail`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `detail`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `instance` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`instance`)){\n                if(pm.expect(ld.get(pm.response.json(), `instance`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `instance`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `title` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`title`)){\n                if(pm.expect(ld.get(pm.response.json(), `title`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `title`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `status` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`status`)){\n                if(pm.expect(ld.get(responseData, `status`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `status`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `detail` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`detail`)){\n                if(pm.expect(ld.get(pm.response.json(), `detail`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `detail`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `instance` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`instance`)){\n                if(pm.expect(ld.get(pm.response.json(), `instance`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `instance`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `title` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`title`)){\n                if(pm.expect(ld.get(pm.response.json(), `title`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `title`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `status` field',function(){\n            if(pm.expect(responseData).to.have.nested.property(`status`)){\n                if(pm.expect(ld.get(responseData, `status`, 200)).to.exist){\n                  pm.expect(typeof ld.get(responseData, `status`, 200)).to.equal(\"number\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `detail` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`detail`)){\n                if(pm.expect(ld.get(pm.response.json(), `detail`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `detail`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `instance` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`instance`)){\n                if(pm.expect(ld.get(pm.response.json(), `instance`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `instance`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n"
+                            ],
+                            "type": "text/javascript"
+                          }
+                        }
+                      ],
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      }
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "9be15246-c225-4a23-a646-6fcc762ac78d",
+                  "name": "test-cases",
+                  "item": [
+                    null,
+                    null,
+                    null,
+                    {
+                      "id": "80eaea6d-fa91-4a71-9648-eb0a5d532a8b",
+                      "name": "{key}",
+                      "item": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                      ],
+                      "event": []
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                null,
+                {
+                  "id": "e2097635-d683-40af-8dc1-f0c453b6a8e7",
+                  "name": "test-runs",
+                  "item": [
+                    null,
+                    {
+                      "id": "13bad047-51a2-4bd5-bf64-ccad64f08785",
+                      "name": "{test-run-key}",
+                      "item": [
+                        null,
+                        null,
+                        {
+                          "id": "c1bbc1bc-fe2d-441e-93e4-b9c82ae72e0e",
+                          "name": "attachments",
+                          "item": [
+                            null,
+                            null
+                          ],
+                          "event": []
+                        },
+                        null,
+                        {
+                          "id": "b8cf8c6d-5314-452a-a3b0-a258031499d8",
+                          "name": "defects",
+                          "item": [
+                            null,
+                            null
+                          ],
+                          "event": []
+                        }
+                      ],
+                      "event": []
+                    },
+                    {
+                      "id": "560cb431-ebac-4f30-92b3-37c59f668b5b",
+                      "name": "attachments",
+                      "item": [
+                        null,
+                        null
+                      ],
+                      "event": []
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "3b2fee5c-0488-4fe9-99c5-0128bebe9b65",
+                  "name": "cycles",
+                  "item": [
+                    null,
+                    null,
+                    null
+                  ],
+                  "event": []
+                },
+                null
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        },
+        {
+          "id": "7dbde9f4-ff7d-4020-a47e-dd14cfd79819",
+          "name": "test-cases/search",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        },
+        null,
+        {
+          "id": "dc8ea50e-8c20-4c1a-8936-442e4088e99a",
+          "name": "test-runs/scheme/{schemeName}/allowed-values",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.ttm4j.tricentis.com",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "feddef63-47c9-4de0-97d5-3120938ddd8c",
+    "name": "TTM for Jira",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Tricentis Test Management for Jira",
+      "type": "text/plain"
+    }
+  }
+}
