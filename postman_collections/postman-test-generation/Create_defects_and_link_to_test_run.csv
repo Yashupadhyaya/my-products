@@ -1,0 +1,5 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,TR-101,PJK-01,"Test: Login API","Check if login API works correctly",Bug,"API logs not matching Swagger data","Mismatch in the fields of API log when compared to Swagger Data",Bug,200,Success
+2,TR-102,PJK-01,"Test: Register API","Check if Register API works correctly",Bug,"Swagger API calls not captured in logs","API calls from Swagger data are not seen in Logs data",Bug,200,Success
+3,TR-103,PJK-01,"Test: Forgot Password API","Check if Forgot Password API works correctly",Bug,"No data returned from API","API returns no data on a valid request",Bug,401,"Unauthorized"
+4,TR-104,PJK-01,"Test: User Profile API","Check if User Profile API works correctly",Bug,"Invalid API Key in response","Response contains an Invalid API Key",Bug,401,"Unauthorized"

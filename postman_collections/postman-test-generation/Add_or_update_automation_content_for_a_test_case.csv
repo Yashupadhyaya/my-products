@@ -1,0 +1,9 @@
+confirmation,key,project-key,name,externalId,content,statusCode,scenario
+Yes,api1_key,proj001,API1,EXT001,"{\n  \"message\": \"bad data\"\n}",200,Updated automation content for test case.
+Yes,api2_key,proj002,API2,EXT002,"{\n  \"message\": \"random text\"\n}",400,Invalid parameters.
+No,api3_key,proj003,API3,EXT003,"{\n  \"message\": \"random\"\n}",401,Unauthorized.
+Yes,api4_key,proj004,API4,EXT004,"{\n  \"message\": \"not found\"\n}",404,Not Found.
+No,api5_key,proj005,API5,EXT005,"{\n  \"message\": \"bad input\"\n}",200,Updated automation content for test case.
+Yes,api6_key,proj006,API6,EXT006,"{\n  \"message\": \"unauthorized\"\n}",400,Invalid parameters.
+No,api7_key,proj007,API7,EXT007,"{\n  \"message\": \"invalid data\"\n}",401,Unauthorized.
+Yes,api8_key,proj008,API8,EXT008,"{\n  \"message\": \"not found\"\n}",404,Not Found.

@@ -1,0 +1,4 @@
+test-run-key,project-key,testCategory,assignee,executedBy,plannedStartDate,plannedEndDate,priority,status,cycleId,folderPath,components,labels,fields,steps,name,id,content,result,statusCode,scenario
+Key_1,Proj_1,Category_X,John_Smith,Jane_Doe,2022-04-01,2022-04-30,high,completed,cycle_001,/root/test1,component_1,label_1,field_1,step_1,name_1,id_001,"{\n\"message\": \"invalid data\"\n}",Fail,400,"Invalid parameters".
+Key_2,Proj_2,Category_Y,Bob_Johnson,Alice_Smith,2022-05-01,2022-05-30,medium,inprogress,cycle_002,/root/test2,component_2,label_2,field_2,step_2,name_2,id_002,"{\n\"message\": \"unauthorized\"\n}",Fail,401,Unauthorized.
+Key_3,Proj_3,Category_Z,Charlie_Williams,Eve_Jones,2022-06-01,2022-06-30,low,notstarted,cycle_003,/root/test3,component_3,label_3,field_3,step_3,name_3,id_003,"{\n\"message\": \"not found\"\n}",Fail,404,"Not Found".

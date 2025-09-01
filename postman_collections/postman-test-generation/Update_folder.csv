@@ -1,0 +1,5 @@
+folderId,project-key,name,parentId,statusCode,scenario
+8bc2886a-454f-4cd0-93e9-2c6b51bb2fd2,TE,Folder 1,",200,Successfully updated folder.
+b6ab77fd-3a4b-4598-a0d8-1a1543570d72,GE,Folder 2,8bc2886a-454f-4cd0-93e9-2c6b51bb2fd2,400,Invalid parameters.
+94f230bc-c310-4518-aee2-5a9247f8b7f4,BE,Folder 3,b6ab77fd-3a4b-4598-a0d8-1a1543570d72,401,Unauthorized.
+6fd79c9c-6b30-4434-a473-16c6396ac8e0,FE,Folder 4,94f230bc-c310-4518-aee2-5a9247f8b7f4,404,Not Found.

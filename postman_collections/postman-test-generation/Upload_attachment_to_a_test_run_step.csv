@@ -1,0 +1,5 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+TEST123,1,PRO123,file1.json,application/json,1024,200,Success
+TEST124,2,PRO124,file2.json,application/json,1024,400,"Invalid parameters."
+TEST125,3,PRO125,file3.json,application/json,1024,401,"Unauthorized."
+TEST126,4,PRO126,file4.json,application/json,1024,404,"Not Found."

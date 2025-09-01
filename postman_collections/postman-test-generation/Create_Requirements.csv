@@ -1,0 +1,5 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+ABC-123,"API success payload","Not linked to requirement",task,"API success payload","Linked to requirement",task,200,Success
+XYZ-456,"Data extraction task","Requires client validation",story,"Data update task","Successfully updated data",story,200,Success
+PQR-789,"Data fetching task","No data related to key found",bug,"API failure payload","Requires more information to proceed",bug,401,Unauthorized.
+LMN-321,"Server response task","Server did not respond within the expected time",story,"API delay task","Delayed response from server",story,401,Unauthorized.
