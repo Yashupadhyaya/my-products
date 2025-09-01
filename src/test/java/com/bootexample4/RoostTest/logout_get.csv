@@ -1,0 +1,12 @@
+User ID, Name, Email ID, Phone Number, Subscription Date, Subscription Status
+
+1234, John Doe, johndoe@email.com, 1234567890, 05-01-2020, Active
+2345, Jane Doe, janedoe@email.com, 0987654321, 06-02-2021, Inactive
+3456, Bob Johnson, bob.johnson@email.com, 5432109876, 04-05-2019, Active
+4567, Alice Smith, alice.smith@email.com, 5678901234, 08-11-2020, Inactive
+5678, Charlie Brown, charlie.brown@email.com, 2345678901, 01-04-2020, Active
+6789, Dianne White, dianne.white@email.com, 7654321098, 05-03-2021, Inactive
+7890, Edwin Green, edwin.green@email.com, 3210987654, 07-06-2019, Active
+8901, Felicia Blue, felicia.blue@email.com, 1987654320, 09-08-2020, Inactive
+9012, George Black, george.black@email.com, 5432109876, 03-05-2019, Active
+0123, Holly Yellow, holly.yellow@email.com, 5678901234, 11-10-2020, Inactive

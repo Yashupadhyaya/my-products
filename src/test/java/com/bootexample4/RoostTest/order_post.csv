@@ -1,0 +1,11 @@
+id,petId,quantity,shipDate,status,complete
+1,1001,3,2020-09-05,approved,true
+2,1002,5,2020-08-10,delivered,false
+3,1003,7,2020-07-03,placed,true
+4,1004,2,2020-10-15,approved,false
+5,1005,1,2020-12-04,delivered,true
+6,1006,4,2020-06-22,placed,false
+7,1007,6,2020-05-12,approved,true
+8,1008,9,2020-04-02,delivered,false
+9,1009,8,2020-03-27,placed,true
+10,1010,10,2020-02-20,approved,false
