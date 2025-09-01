@@ -1,0 +1,6 @@
+id,username,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+1,johnDoe,john,doe,johndoe@email.com,pass123,55555555,1,500,Server error responses: Internal Server Error
+2,janeDoe,jane,doe,janedoe@email.com,pass456,44444444,0,500,Server error responses: Internal Server Error
+3,jackSmith,jack,smith,jacksmith@email.com,pass789,33333333,1,500,Server error responses: Internal Server Error
+4,emmaBrown,emma,brown,emmabrown@email.com,pass321,22222222,0,500,Server error responses: Internal Server Error
+5,lucyGreen,lucy,green,lucygreen@email.com,pass654,11111111,1,500,Server error responses: Internal Server Error
