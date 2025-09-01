@@ -1,0 +1,11 @@
+id^|^jobTitle^|^name^|^email^|^statusCode^|^scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851^|^Software Engineer^|^John Doe^|^john.doe@example.com^|^201^|^Scenario1
+2d5f1ee-d290-6c54-4b01-90e6-701748f0851^|^Data Analyst^|^Jane Smith^|^jane.smith@example.com^|^400^|^Scenario2
+3d6f2ee-d291-6c55-4b02-90e7-701849f0952^|^Project Manager^|^Bob Johnson^|^bob.johnson@example.com^|^409^|^Scenario3
+4d7f3ee-d292-6c56-4b03-90e8-70194af01053^|^HR Specialist^|^Alice Williams^|^alice.williams@example.com^|^201^|^Scenario4
+5d8f4ee-d293-6c57-4b04-90e9-701a5bf02054^|^Marketing Manager^|^David Brown^|^david.brown@example.com^|^400^|^Scenario5
+6d9f5ee-d294-6c58-4b05-90ea-701b6cf03055^|^Sales Representative^|^Emily Jones^|^emily.jones@example.com^|^409^|^Scenario6
+7da06ee-d295-6c59-4b06-90eb-701c7df04056^|^Financial Analyst^|^Michael Miller^|^michael.miller@example.com^|^201^|^Scenario7
+8db07ee-d296-6c60-4b07-90ec-701d8ef05057^|^Operations Manager^|^Sarah Davis^|^sarah.davis@example.com^|^400^|^Scenario8
+9dc08ee-d297-6c61-4b08-90ed-701e9ff06058^|^IT Specialist^|^Andrew Garcia^|^andrew.garcia@example.com^|^409^|^Scenario9
+adc09ee-d298-6c62-4b09-90ee-701fa0f07059^|^Customer Service Rep^|^Emma Wilson^|^emma.wilson@example.com^|^201^|^Scenario10
