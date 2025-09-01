@@ -1,0 +1,36 @@
+{
+  "item": [
+    {
+      "id": "c441ad39-5423-4d96-b843-2533268492be",
+      "name": "employees",
+      "item": [
+        null,
+        null,
+        null
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://virtserver.swaggerhub.com/061REB413/employee-service/0.1",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "686882a3-ec5f-4857-9a5b-ecb17bf9e1b9",
+    "name": "Employee Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
