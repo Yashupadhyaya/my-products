@@ -1,0 +1,11 @@
+form-type^|^form-instance-id^|^Authorization^|^X-HSBC-Request-Correlation-Id
+Type1^|^ID1^|^Auth1^|^CorrId1
+Type2^|^ID2^|^Auth2^|^CorrId2
+Type3^|^ID3^|^Auth3^|^CorrId3
+Type4^|^ID4^|^Auth4^|^CorrId4
+Type5^|^ID5^|^Auth5^|^CorrId5
+Type6^|^ID6^|^Auth6^|^CorrId6
+Type7^|^ID7^|^Auth7^|^CorrId7
+Type8^|^ID8^|^Auth8^|^CorrId8
+Type9^|^ID9^|^Auth9^|^CorrId9
+Type10^|^ID10^|^Auth10^|^CorrId10

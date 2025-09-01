@@ -1,0 +1,11 @@
+form-type^|^form-instance-id^|^Authorization^|^X-HSBC-Request-Correlation-Id
+Type1^|^ID1234^|^Bearer 123456^|^CORR-ID-1111
+Type2^|^ID5678^|^Bearer 789012^|^CORR-ID-2222
+Type3^|^ID91011^|^None^|^CORR-ID-3333
+Type4^|^ID121314^|^Bearer 345678^|^CORR-ID-4444
+Type5^|^ID151617^|^Bearer 901234^|^CORR-ID-5555
+Type6^|^ID181920^|^None^|^CORR-ID-6666
+Type7^|^ID212223^|^Bearer 567890^|^CORR-ID-7777
+Type8^|^ID242526^|^Bearer 123456^|^CORR-ID-8888
+Type9^|^ID272829^|^None^|^CORR-ID-9999
+Type10^|^ID303132^|^Bearer 789012^|^CORR-ID-1010
