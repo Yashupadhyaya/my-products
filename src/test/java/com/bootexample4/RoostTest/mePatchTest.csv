@@ -1,0 +1,11 @@
+name,image,settings,statusCode
+John Doe,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"dark","notifications":false},200
+Jane Smith,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"light","notifications":true},200
+Alex Johnson,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"dark","notifications":true},200
+Maria Garcia,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"light","notifications":false},200
+James Wilson,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"dark","notifications":true},401
+Patricia Miller,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"light","notifications":false},400
+Robert Davis,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"dark","notifications":true},200
+Linda Taylor,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"light","notifications":true},200
+Michael Brown,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"dark","notifications":false},401
+Barbara Wilson,data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD,{"theme":"light","notifications":true},400
