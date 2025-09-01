@@ -1,0 +1,2169 @@
+{
+  "item": [
+    {
+      "id": "d4b693de-c043-44d9-91a1-0fed0331b7cf",
+      "name": "pet",
+      "item": [
+        {
+          "id": "a1de9252-63c2-496b-baea-f04f3fbbd1f8",
+          "name": "Add a new pet to the store",
+          "request": {
+            "name": "Add a new pet to the store",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "pet"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "oauth2",
+              "oauth2": [
+                {
+                  "key": "scope",
+                  "value": "read:pets write:pets"
+                },
+                {
+                  "key": "authUrl",
+                  "value": "https://petstore.swagger.io/oauth/authorize"
+                },
+                {
+                  "key": "grant_type",
+                  "value": "implicit"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"{{name}}\",\n    \"photoUrls\": [\n        \"{{photoUrls}}\"\n    ],\n    \"id\": \"{{id}}\",\n    \"category\": {\n        \"id\": \"{{category.id}}\",\n        \"name\": \"{{category.name}}\"\n    },\n    \"tags\": [\n        \"{{tags}}\"\n    ],\n    \"status\": \"{{status}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "91b39e99-ce3f-408d-b0cf-0bba5bc0087b",
+              "name": "Invalid input",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pet"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        null,
+        {
+          "id": "1a54f078-2acc-4135-a348-4a909a8fa779",
+          "name": "{petId}",
+          "item": [
+            {
+              "id": "abaa5941-8151-407d-a785-29ab2bcdf19c",
+              "name": "Find pet by ID",
+              "request": {
+                "name": "Find pet by ID",
+                "description": {
+                  "content": "Returns a single pet",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "pet",
+                    ":petId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{petId}}",
+                      "key": "petId",
+                      "description": "(Required) ID of pet to return"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "auth": {
+                  "type": "apikey",
+                  "apikey": [
+                    {
+                      "key": "key",
+                      "value": "api_key"
+                    },
+                    {
+                      "key": "value",
+                      "value": "{{apiKey}}"
+                    },
+                    {
+                      "key": "in",
+                      "value": "header"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "1ad1c813-c407-4f92-85a2-b103a1587aaa",
+                  "name": "successful operation",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "pet",
+                        ":petId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{petId}}",
+                          "key": "petId",
+                          "description": "(Required) ID of pet to return"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: apikey",
+                          "type": "text/plain"
+                        },
+                        "key": "api_key",
+                        "value": "{{api_key}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"id\": \"<long>\",\n  \"category\": {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\"\n  },\n  \"tags\": [\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    }\n  ],\n  \"status\": \"<string>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "2c36dd04-c6ab-499a-ab43-8d46d20b7b9a",
+                  "name": "Invalid ID supplied",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "pet",
+                        ":petId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{petId}}",
+                          "key": "petId",
+                          "description": "(Required) ID of pet to return"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: apikey",
+                          "type": "text/plain"
+                        },
+                        "key": "api_key",
+                        "value": "{{api_key}}"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                },
+                {
+                  "id": "b78bb15a-e4f5-4af9-adbf-30a18a4e31ad",
+                  "name": "Pet not found",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "pet",
+                        ":petId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{petId}}",
+                          "key": "petId",
+                          "description": "(Required) ID of pet to return"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: apikey",
+                          "type": "text/plain"
+                        },
+                        "key": "api_key",
+                        "value": "{{api_key}}"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            {
+              "id": "d8bf26cb-974a-4ef1-81ec-c3cc4f609ca0",
+              "name": "Updates a pet in the store with form data",
+              "request": {
+                "name": "Updates a pet in the store with form data",
+                "description": {
+                  "content": "",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "pet",
+                    ":petId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{petId}}",
+                      "key": "petId",
+                      "description": "(Required) ID of pet that needs to be updated"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "method": "POST",
+                "auth": {
+                  "type": "oauth2",
+                  "oauth2": [
+                    {
+                      "key": "scope",
+                      "value": "read:pets write:pets"
+                    },
+                    {
+                      "key": "authUrl",
+                      "value": "https://petstore.swagger.io/oauth/authorize"
+                    },
+                    {
+                      "key": "grant_type",
+                      "value": "implicit"
+                    }
+                  ]
+                },
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "name",
+                      "value": "{{name}}",
+                      "description": "Updated name of the pet"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "status",
+                      "value": "{{status}}",
+                      "description": "Updated status of the pet"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "ff053794-cbdc-41c4-bf43-a9b90347626f",
+                  "name": "Invalid input",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "pet",
+                        ":petId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{petId}}",
+                          "key": "petId",
+                          "description": "(Required) ID of pet that needs to be updated"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: oauth2",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      }
+                    ],
+                    "method": "POST",
+                    "body": {
+                      "mode": "urlencoded",
+                      "urlencoded": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "Updated name of the pet",
+                            "type": "text/plain"
+                          },
+                          "key": "name",
+                          "value": "{{name}}"
+                        },
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "Updated status of the pet",
+                            "type": "text/plain"
+                          },
+                          "key": "status",
+                          "value": "{{status}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Method Not Allowed",
+                  "code": 405,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            null,
+            {
+              "id": "c5ffc9c3-74d9-4b2e-b8b8-b1828530f19a",
+              "name": "uploads an image",
+              "request": {
+                "name": "uploads an image",
+                "description": {
+                  "content": "",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "pet",
+                    ":petId",
+                    "uploadImage"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{petId}}",
+                      "key": "petId",
+                      "description": "(Required) ID of pet to update"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "multipart/form-data"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "auth": {
+                  "type": "oauth2",
+                  "oauth2": [
+                    {
+                      "key": "scope",
+                      "value": "read:pets write:pets"
+                    },
+                    {
+                      "key": "authUrl",
+                      "value": "https://petstore.swagger.io/oauth/authorize"
+                    },
+                    {
+                      "key": "grant_type",
+                      "value": "implicit"
+                    }
+                  ]
+                },
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "additionalMetadata",
+                      "value": "{{additionalMetadata}}",
+                      "type": "text",
+                      "description": "Additional data to pass to server"
+                    },
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "description": "file to upload"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "9ea1ebfd-0669-4547-b0f6-61046dff19ce",
+                  "name": "successful operation",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "pet",
+                        ":petId",
+                        "uploadImage"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{petId}}",
+                          "key": "petId",
+                          "description": "(Required) ID of pet to update"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: oauth2",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "POST",
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "description": {
+                            "content": "Additional data to pass to server",
+                            "type": "text/plain"
+                          },
+                          "key": "additionalMetadata",
+                          "value": "{{additionalMetadata}}",
+                          "type": "text"
+                        },
+                        {
+                          "description": {
+                            "content": "file to upload",
+                            "type": "text/plain"
+                          },
+                          "key": "file",
+                          "value": "{{file}}",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"code\": 34590871,\n  \"type\": \"aute consequat Excepteur ullamco\",\n  \"message\": \"consequat minim veniam aliquip\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            }
+          ],
+          "event": []
+        },
+        {
+          "id": "4831fdfd-bcb9-46da-ba7b-36a2d69b41f6",
+          "name": "Finds Pets by status",
+          "request": {
+            "name": "Finds Pets by status",
+            "description": {
+              "content": "Multiple status values can be provided with comma separated strings",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "pet",
+                "findByStatus"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "{{status}}",
+                  "description": "(Required) Status values that need to be considered for filter"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "{{status}}",
+                  "description": "(Required) Status values that need to be considered for filter"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "oauth2",
+              "oauth2": [
+                {
+                  "key": "scope",
+                  "value": "read:pets write:pets"
+                },
+                {
+                  "key": "authUrl",
+                  "value": "https://petstore.swagger.io/oauth/authorize"
+                },
+                {
+                  "key": "grant_type",
+                  "value": "implicit"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "d846cb3d-c4df-4b7a-bc97-522610483040",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pet",
+                    "findByStatus"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "{{status}}"
+                    },
+                    {
+                      "key": "status",
+                      "value": "{{status}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"id\": \"<long>\",\n    \"category\": {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    \"tags\": [\n      {\n        \"id\": \"<long>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<long>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"status\": \"<string>\"\n  },\n  {\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"id\": \"<long>\",\n    \"category\": {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    \"tags\": [\n      {\n        \"id\": \"<long>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<long>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"status\": \"<string>\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "070ed979-a745-459f-8c6d-d6914d7fcaf0",
+              "name": "Invalid status value",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pet",
+                    "findByStatus"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "{{status}}"
+                    },
+                    {
+                      "key": "status",
+                      "value": "{{status}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7943808a-4730-42c9-88f9-a275315d048c",
+          "name": "Finds Pets by tags",
+          "request": {
+            "name": "Finds Pets by tags",
+            "description": {
+              "content": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "pet",
+                "findByTags"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "tags",
+                  "value": "{{tags}}",
+                  "description": "(Required) Tags to filter by"
+                },
+                {
+                  "disabled": false,
+                  "key": "tags",
+                  "value": "{{tags}}",
+                  "description": "(Required) Tags to filter by"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "oauth2",
+              "oauth2": [
+                {
+                  "key": "scope",
+                  "value": "read:pets write:pets"
+                },
+                {
+                  "key": "authUrl",
+                  "value": "https://petstore.swagger.io/oauth/authorize"
+                },
+                {
+                  "key": "grant_type",
+                  "value": "implicit"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "501ec1c5-387a-4446-bea1-62dbd6f981f2",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pet",
+                    "findByTags"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "tags",
+                      "value": "{{tags}}"
+                    },
+                    {
+                      "key": "tags",
+                      "value": "{{tags}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"id\": \"<long>\",\n    \"category\": {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    \"tags\": [\n      {\n        \"id\": \"<long>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<long>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"status\": \"<string>\"\n  },\n  {\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"id\": \"<long>\",\n    \"category\": {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    \"tags\": [\n      {\n        \"id\": \"<long>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<long>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"status\": \"<string>\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "40f5164d-7b23-4114-8ee9-08fff8ca1211",
+              "name": "Invalid tag value",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pet",
+                    "findByTags"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "tags",
+                      "value": "{{tags}}"
+                    },
+                    {
+                      "key": "tags",
+                      "value": "{{tags}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "{{Authorization}}"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "30172a55-bfce-42f7-9cd5-ecc74a1dbf07",
+      "name": "store",
+      "item": [
+        {
+          "id": "86f58ef7-8439-4b05-a683-8149eca342c4",
+          "name": "Returns pet inventories by status",
+          "request": {
+            "name": "Returns pet inventories by status",
+            "description": {
+              "content": "Returns a map of status codes to quantities",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "store",
+                "inventory"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "key",
+                  "value": "api_key"
+                },
+                {
+                  "key": "value",
+                  "value": "{{apiKey}}"
+                },
+                {
+                  "key": "in",
+                  "value": "header"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "d054f7ce-0795-4e7a-94ec-c68110a542f2",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "store",
+                    "inventory"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "api_key",
+                    "value": "{{api_key}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"est_6b\": -57348275\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2b39c227-7e42-447b-ac3e-692260cdb0a4",
+          "name": "order",
+          "item": [
+            {
+              "id": "6ba96041-1b5b-4480-af51-6036a665f3dd",
+              "name": "Place an order for a pet",
+              "request": {
+                "name": "Place an order for a pet",
+                "description": {
+                  "content": "",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "store",
+                    "order"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"id\": \"{{id}}\",\n    \"petId\": \"{{petId}}\",\n    \"quantity\": \"{{quantity}}\",\n    \"shipDate\": \"{{shipDate}}\",\n    \"status\": \"{{status}}\",\n    \"complete\": \"{{complete}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "response": [
+                {
+                  "id": "3f50d4a6-90be-491a-80e0-4da5fa2c341b",
+                  "name": "successful operation",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "store",
+                        "order"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "POST",
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"id\": \"{{id}}\",\n    \"petId\": \"{{petId}}\",\n    \"quantity\": \"{{quantity}}\",\n    \"shipDate\": \"{{shipDate}}\",\n    \"status\": \"{{status}}\",\n    \"complete\": \"{{complete}}\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"id\": \"<long>\",\n  \"petId\": \"<long>\",\n  \"quantity\": \"<integer>\",\n  \"shipDate\": \"<dateTime>\",\n  \"status\": \"<string>\",\n  \"complete\": \"<boolean>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "dcbe0312-44ab-426d-9917-4a80c07c68e0",
+                  "name": "Invalid Order",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "store",
+                        "order"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": []
+                    },
+                    "method": "POST",
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"id\": \"{{id}}\",\n    \"petId\": \"{{petId}}\",\n    \"quantity\": \"{{quantity}}\",\n    \"shipDate\": \"{{shipDate}}\",\n    \"status\": \"{{status}}\",\n    \"complete\": \"{{complete}}\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            {
+              "id": "d226381e-865b-4510-9a78-ecbbde066ae8",
+              "name": "{orderId}",
+              "item": [
+                {
+                  "id": "b0e11a3c-3e07-47d9-bf88-bdb18846c8e7",
+                  "name": "Find purchase order by ID",
+                  "request": {
+                    "name": "Find purchase order by ID",
+                    "description": {
+                      "content": "For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions",
+                      "type": "text/plain"
+                    },
+                    "url": {
+                      "path": [
+                        "store",
+                        "order",
+                        ":orderId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{orderId}}",
+                          "key": "orderId",
+                          "description": "(Required) ID of pet that needs to be fetched"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "bad5c2d8-2986-4cec-ad6d-b82553f83c46",
+                      "name": "successful operation",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "store",
+                            "order",
+                            ":orderId"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{orderId}}",
+                              "key": "orderId",
+                              "description": "(Required) ID of pet that needs to be fetched"
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "body": "{\n  \"id\": \"<long>\",\n  \"petId\": \"<long>\",\n  \"quantity\": \"<integer>\",\n  \"shipDate\": \"<dateTime>\",\n  \"status\": \"<string>\",\n  \"complete\": \"<boolean>\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "071193d3-86da-407c-aaf0-c1ec3633b894",
+                      "name": "Invalid ID supplied",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "store",
+                            "order",
+                            ":orderId"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{orderId}}",
+                              "key": "orderId",
+                              "description": "(Required) ID of pet that needs to be fetched"
+                            }
+                          ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "text/plain"
+                        }
+                      ],
+                      "body": "",
+                      "cookie": [],
+                      "_postman_previewlanguage": "text"
+                    },
+                    {
+                      "id": "2c737adf-661e-48ca-b426-e403e7ebeb0f",
+                      "name": "Order not found",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "store",
+                            "order",
+                            ":orderId"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{orderId}}",
+                              "key": "orderId",
+                              "description": "(Required) ID of pet that needs to be fetched"
+                            }
+                          ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "text/plain"
+                        }
+                      ],
+                      "body": "",
+                      "cookie": [],
+                      "_postman_previewlanguage": "text"
+                    }
+                  ],
+                  "event": [
+                    {
+                      "listen": "test",
+                      "script": {
+                        "exec": [
+                          "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                        ],
+                        "type": "text/javascript"
+                      }
+                    }
+                  ],
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  }
+                },
+                null
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "bae0f3e2-7499-47f8-972b-3a791c2d28a2",
+      "name": "user",
+      "item": [
+        {
+          "id": "f36777ff-b122-407f-aa18-446c23ef688e",
+          "name": "Create user",
+          "request": {
+            "name": "Create user",
+            "description": {
+              "content": "This can only be done by the logged in user.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "user"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"id\": \"{{id}}\",\n    \"username\": \"{{username}}\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"{{lastName}}\",\n    \"email\": \"{{email}}\",\n    \"password\": \"{{password}}\",\n    \"phone\": \"{{phone}}\",\n    \"userStatus\": \"{{userStatus}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "6d7408f0-80a0-465c-832f-1b029eed0d09",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "user"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"id\": \"{{id}}\",\n    \"username\": \"{{username}}\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"{{lastName}}\",\n    \"email\": \"{{email}}\",\n    \"password\": \"{{password}}\",\n    \"phone\": \"{{phone}}\",\n    \"userStatus\": \"{{userStatus}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9ade0cd7-fe7a-47ca-b7b5-6bdeff4eeefc",
+          "name": "Creates list of users with given input array",
+          "request": {
+            "name": "Creates list of users with given input array",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "user",
+                "createWithList"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "[\n    {\n        \"id\": \"{{id}}\",\n        \"username\": \"{{username}}\",\n        \"firstName\": \"{{firstName}}\",\n        \"lastName\": \"{{lastName}}\",\n        \"email\": \"{{email}}\",\n        \"password\": \"{{password}}\",\n        \"phone\": \"{{phone}}\",\n        \"userStatus\": \"{{userStatus}}\"\n    },\n    {\n        \"id\": \"{{1.id}}\",\n        \"username\": \"{{1.username}}\",\n        \"firstName\": \"{{1.firstName}}\",\n        \"lastName\": \"{{1.lastName}}\",\n        \"email\": \"{{1.email}}\",\n        \"password\": \"{{1.password}}\",\n        \"phone\": \"{{1.phone}}\",\n        \"userStatus\": \"{{1.userStatus}}\"\n    }\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "40e04738-5c82-4bb1-bbcf-58f37cb579cf",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "user",
+                    "createWithList"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "01f7d98d-f05e-42e0-a3e6-bd3a140c06d1",
+          "name": "{username}",
+          "item": [
+            {
+              "id": "8ab68b70-16bd-45e9-8fe0-e5d143910c92",
+              "name": "Get user by user name",
+              "request": {
+                "name": "Get user by user name",
+                "description": {
+                  "content": "",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "user",
+                    ":username"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{username}}",
+                      "key": "username",
+                      "description": "(Required) The name that needs to be fetched. Use user1 for testing. "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "aa7362dc-b3d5-4611-851e-cbeccbf1b3d7",
+                  "name": "successful operation",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "user",
+                        ":username"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{username}}",
+                          "key": "username",
+                          "description": "(Required) The name that needs to be fetched. Use user1 for testing. "
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"id\": \"<long>\",\n  \"username\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"userStatus\": \"<integer>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "da77ca51-b997-4356-b661-7d8417ec0d64",
+                  "name": "Invalid username supplied",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "user",
+                        ":username"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{username}}",
+                          "key": "username",
+                          "description": "(Required) The name that needs to be fetched. Use user1 for testing. "
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                },
+                {
+                  "id": "498b0809-e3b8-40be-be74-984ba2fdcfd8",
+                  "name": "User not found",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "user",
+                        ":username"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{username}}",
+                          "key": "username",
+                          "description": "(Required) The name that needs to be fetched. Use user1 for testing. "
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "body": "",
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            null,
+            null
+          ],
+          "event": []
+        },
+        {
+          "id": "90ee6f51-2c62-4e9e-add2-0ba9c217540e",
+          "name": "Logs user into the system",
+          "request": {
+            "name": "Logs user into the system",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "user",
+                "login"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "username",
+                  "value": "{{username}}",
+                  "description": "(Required) The user name for login"
+                },
+                {
+                  "disabled": false,
+                  "key": "password",
+                  "value": "{{password}}",
+                  "description": "(Required) The password for login in clear text"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4a0466f8-5e4c-406d-b8d4-255a382814d3",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "user",
+                    "login"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "username",
+                      "value": "{{username}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{password}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "date in UTC when token expires",
+                  "key": "X-Expires-After",
+                  "value": "{{X-Expires-After}}"
+                },
+                {
+                  "disabled": false,
+                  "description": "calls per hour allowed by the user",
+                  "key": "X-Rate-Limit",
+                  "value": "{{X-Rate-Limit}}"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"dolor consequat\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7d6ab41e-b986-472d-ae5a-0c751189938a",
+              "name": "Invalid username/password supplied",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "user",
+                    "login"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "username",
+                      "value": "{{username}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{password}}"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "591a5d20-818a-421e-85b0-d050cb0d3f55",
+          "name": "Logs out current logged in user session",
+          "request": {
+            "name": "Logs out current logged in user session",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "user",
+                "logout"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b460e45c-c66e-420a-a7ce-269ec34dab87",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "user",
+                    "logout"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3ea0e06d-ffe3-4020-87ce-2b6adc4b8542",
+          "name": "Creates list of users with given input array",
+          "request": {
+            "name": "Creates list of users with given input array",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "user",
+                "createWithArray"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "[\n    {\n        \"id\": \"{{id}}\",\n        \"username\": \"{{username}}\",\n        \"firstName\": \"{{firstName}}\",\n        \"lastName\": \"{{lastName}}\",\n        \"email\": \"{{email}}\",\n        \"password\": \"{{password}}\",\n        \"phone\": \"{{phone}}\",\n        \"userStatus\": \"{{userStatus}}\"\n    },\n    {\n        \"id\": \"{{1.id}}\",\n        \"username\": \"{{1.username}}\",\n        \"firstName\": \"{{1.firstName}}\",\n        \"lastName\": \"{{1.lastName}}\",\n        \"email\": \"{{1.email}}\",\n        \"password\": \"{{1.password}}\",\n        \"phone\": \"{{1.phone}}\",\n        \"userStatus\": \"{{1.userStatus}}\"\n    }\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "eddac342-ba9e-4675-a931-e8effed172e6",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "user",
+                    "createWithArray"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://petstore.swagger.io/v2",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "ab24fda4-81ac-438a-ad84-4cb956b2d039",
+    "name": "Swagger Petstore",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.\n\nContact Support:\n Email: apiteam@swagger.io",
+      "type": "text/plain"
+    }
+  }
+}
