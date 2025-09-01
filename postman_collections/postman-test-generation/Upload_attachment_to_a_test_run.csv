@@ -1,0 +1,5 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+ABCD1234,PROJ001,file1.json,application/json,50KB,200,Success
+PQRS5678,PROJ002,file2.txt,text/plain,30KB,400,Invalid parameters.
+JKLM9012,PROJ003,file3.xml,application/xml,45KB,401,Unauthorized.
+EFGH3456,PROJ004,file4.csv,text/csv,35KB,404,Not Found.

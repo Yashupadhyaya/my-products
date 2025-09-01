@@ -1,0 +1,11 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,PRJ123,Folder1,FID2345,http://callbackurl1.com,10,202,The job to create the test cases was successfully scheduled.
+2,PRJ124,Folder2,FID2346,http://callbackurl2.com,11,400,Invalid parameters
+3,PRJ125,Folder3,FID2347,http://callbackurl3.com,12,401,Unauthorized
+4,PRJ126,Folder4,FID2348,http://callbackurl4.com,13,404,Not Found
+5,PRJ127,Folder5,FID2349,http://callbackurl5.com,14,202,The job to create the test cases was successfully scheduled.
+6,PRJ128,Folder6,FID2350,http://callbackurl6.com,15,400,Invalid parameters
+7,PRJ129,Folder7,FID2351,http://callbackurl7.com,16,401,Unauthorized
+8,PRJ130,Folder8,FID2352,http://callbackurl8.com,17,404,Not Found
+9,PRJ131,Folder9,FID2353,http://callbackurl9.com,18,202,The job to create the test cases was successfully scheduled.
+10,PRJ132,Folder10,FID2354,http://callbackurl10.com,19,400,Invalid parameters

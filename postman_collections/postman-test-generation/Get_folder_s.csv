@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+Folder 1,52537f1c-03f4-40dd-9294-f620059d77d6,2,0,TE,200,Successfully get folder(s).
+Folder inside another folder,0c6a0705-39ab-4454-b256-4b5dd569eab4,2,0,TE,200,Successfully get folder(s).
+InvalidFolder,randomparentId123,5,0,XY,400,Invalid parameters.
+Folder 3,randomparentId456,0,0,GF,401,Unauthorized.
+Folder 4,randomparentId789,0,0,LO,404,Not Found.

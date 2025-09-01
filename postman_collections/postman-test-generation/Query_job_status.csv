@@ -1,0 +1,11 @@
+job-id,project-key,statusCode,scenario
+j1,pk1,200,Successfully retrieved the test creation job status.
+j2,pk2,400,Invalid parameters
+j3,pk3,401,Unauthorized
+j4,pk4,404,Not Found
+j5,pk5,200,Successfully retrieved the test creation job status.
+j6,pk6,400,Invalid parameters
+j7,pk7,401,Unauthorized
+j8,pk8,404,Not Found
+j9,pk9,200,Successfully retrieved the test creation job status.
+j10,pk10,400,Invalid parameters

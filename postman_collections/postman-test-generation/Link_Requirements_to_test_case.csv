@@ -1,0 +1,11 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+1,proj-1,Issue-101,Issue-102,200,Success
+2,proj-2,Issue-102,Issue-103,200,Success
+3,proj-3,Issue-103,Issue-104,200,Success
+4,proj-4,Issue-104,Issue-105,200,Success
+5,proj-5,Issue-105,Issue-106,200,Success
+6,proj-6,Issue-106,Issue-107,401,Unauthorized
+7,proj-7,Issue-107,Issue-108,401,Unauthorized
+8,proj-8,Issue-108,Issue-109,401,Unauthorized
+9,proj-9,Issue-109,Issue-110,401,Unauthorized
+10,proj-10,Issue-110,Issue-111,401,Unauthorized

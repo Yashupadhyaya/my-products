@@ -1,0 +1,9 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+DE-TR-1,1.0.0,CycleName,/path/to/folder,True,5,200,"Successful responses: OK"
+AL-TR-2,2.1.0,CycleTwo,/path/new/folder,False,10,400,"Invalid parameters"
+XY-TR-4,0.9.8,CycleThree,/path/test/folder,True,3,401,"Unauthorized"
+GH-TR-3,3.0.1,CycleFour,/folder/path,False,7,404,"Not Found"
+RT-TR-5,1.1.0,CycleFive,/folder/test/path,True,4,200,"Successful responses: OK"
+OP-TR-7,1.1.1,CycleSix,/test/path/folder,False,9,400,"Invalid parameters"
+KL-TR-6,2.0.1,CycleSeven,/path/to/new,True,6,401,"Unauthorized"
+NM-TR-7,2.9.0,CycleEight,/path/to/test,False,12,404,"Not Found"

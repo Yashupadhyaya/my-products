@@ -1,0 +1,5 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+XYZProject,"My Cycle", "John Doe",2022-06-01T00:00:00.000Z,2022-06-30T00:00:00.000Z, ["Builds","Environments"],"1.0.0", "My Second Cycle", "Jane Doe",2025-04-28T07:21:25.1837478Z,2025-04-29T07:21:25.1837475Z, ["Deployment","Testing"],"UNVERSIONED",200,"Successful responses: OK"
+ABCProject,"Invalid Cycle", "NULL",2023-00-00T00:00:00.000Z,NULL, ["InvalidField"],"0.0.0", "Invalid Cycle 2", "NULL",2030-00-00T00:00:00.000Z,2030-00-00T00:00:00.000Z, ["InvalidField2"],"0.0.0",400,"Invalid parameters".
+MNOProject,"Unauthorized Cycle",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,401,"Unauthorized".
+PQRProject,"Not Found",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,404,"Not Found".
