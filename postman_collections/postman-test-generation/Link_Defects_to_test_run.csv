@@ -1,0 +1,7 @@
+stepIndex,test-run-key,project-key,issueKey,1.issueKey,statusCode,scenario
+1,TR-123,PK-456,Key-1,ISS-10001,200,Success
+2,TR-234,PK-567,Key-2,ISS-10002,200,Success
+3,TR-345,Random-String,Random-Value,ISS-XXXXX,401,Unauthorized
+4,TR-456,Random-String,Random-Value,Random-Value,401,Unauthorized
+
+NOTE: 'Random-Value' and 'Random-String' represents a randomized value complying with the respective data type in the specified swaggerDataInfo where the statusCode is not in the 200-299 range.

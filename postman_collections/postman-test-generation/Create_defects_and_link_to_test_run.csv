@@ -1,0 +1,6 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,"Test-Run-1","Proj-1","API Test Summary 1","API Test Description 1","bug","Issue Summary 1","Issue Description 1","Improvement",200,"Success"
+2,"Test-Run-2","Proj-2","API Test Summary 2","API Test Description 2","task","Issue Summary 2","Issue Description 2","New Feature",401,"Unauthorized"
+3,"Random-1","Random-Proj-1","Random Test Summary 1","Random Test Description 1","story","Random Issue 1","Random Description 1","Bug",404,"Not Found"
+4,"Test-Run-3","Proj-3","API Test Summary 3","API Test Description 3","epic","Issue Summary 3","Issue Description 3","Task",200,"Success"
+5,"Random-2","Random-Proj-2","Random Test Summary 2","Random Test Description 2","issue","Random Issue 2","Random Description 2","Story",500,"Server Error"

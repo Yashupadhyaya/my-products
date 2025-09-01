@@ -1,0 +1,5 @@
+jiraFields,ttmFields,limit,nextPageToken,project-key,statusCode,scenario
+summary,description,status,Backlog,priority,High,labels,My Label,precondition,A precondition,steps,testCaseKey,TE-2,testCaseId,10000,description,Login,expectedResult,Login should work,description,Logout,expectedResult,Logout should work,1,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,TE,200,Successfully retrieved test cases information.
+nm,tp,lhl,agv,cp,wpk,lnm,Knp Label,ak,25c,nnn,gt, 2,tnmshdf6uemmdfkfjd,fdindfd5,TJ,400,Invalid parameters.
+12t,bf678,5d,s0,high,lnov,xyh,My Labelx,j9n,kdn,effort,testCaseKey,TE-8,testCaseId,5706,description,jo1n,expectedResult,join not working,description,lo6,hx,logout failed,5,lp33ghbfvl6bh3hc1f7fnklb1f6u7,TI,401,Unauthorized.
+jj899,bv345,stat,none,tt,qo,lnm,Knp nv,ak,bbb,hd,ded,testCaseKey,TL-5,testCaseId,199936,description,LD,expectedResult,LD should work,description,LG,expectedResult,LG should work,3,yyyy33333hggghh,TL,404,Not Found.

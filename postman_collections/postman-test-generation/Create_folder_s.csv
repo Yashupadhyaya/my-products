@@ -1,0 +1,9 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder 1",",200,"Successfully created folder(s)."
+TE,"Folder inside another folder","5316a727-1aa2-4f8c-a785-443c62dcbdd7",200,"Successfully created folder(s)."
+random-key,"Invalid folder",",400,"Invalid parameters"
+random-key,"Invalid folder inside parent folder","invalid-parentId",400,"Invalid parameters"
+random-key,"Unauthorized folder",",401,"Unauthorized"
+random-key,"Unauthorized folder inside parent folder","unauthorized-parentId",401,"Unauthorized"
+random-key,"Not found folder",",404,"Not Found"
+random-key,"Not found folder inside parent folder","notfound-parentId",404,"Not Found"

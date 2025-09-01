@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","a158b632-7667-4c02-a8a7-a606071da443","1.0.0","082d0d00-bb45-4343-ba27-2e5a4360ea3f","items","DE-1",200,"Successful responses: OK"
+5,10,"AB-DC-2","b128a432-8765-4c01-a9b6-b707078da542","2.0.0","192e0e02-cb46-4344-ba28-3f5b4390ea4f","none","AB-1",400,"Invalid parameters."
+3,15,"FG-HI-3","c198b533-9867-4c03-a8b8-c707079eb543","3.0.0","292f0f03-db47-4345-ba29-4f5c4310eb5g","summary","FG-1",401,"Unauthorized"
+4,20,"JK-LM-4","d168b634-6969-4c04-a9c9-d7070710e544","4.0.0","392g1g04-eb48-4346-ba30-5f5d4321fb6h","details","JK-1",404,"Not Found."

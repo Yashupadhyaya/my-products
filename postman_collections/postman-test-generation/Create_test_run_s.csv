@@ -1,0 +1,10 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"Project-1","1.0.1","Cycle1","/home/user/documents",true,["Test1", "Test2"],200,"Successful responses: OK"
+"Project-2","1.2.3","Cycle2","/home/user/documents",false,["Test3", "Test4"],200,"Successful responses: OK"
+"Project-3","3.0.1","Cycle3","/home/user/documents",true,["Test5", "Test6"],200,"Successful responses: OK"
+"Project-1","2.0.4","Cycle1","/home/user/documents",false,["Test7", "Test8"],400,"Invalid parameters"
+"Project-2","1.5.3","Cycle2","/home/user/documents",true,["Test9", "Test10"],401,"Unauthorized"
+"Project-3","3.3.1","Cycle3","/home/user/documents",false,["Test11", "Test12"],404,"Not Found" 
+"Project-1","2.5.6","Cycle1","/home/user/documents",true,["Test13", "Test14"],400,"Invalid parameters"
+"Project-2","1.7.8","Cycle2","/home/user/documents",false,["Test15", "Test16"],401,"Unauthorized"
+"Project-3","3.6.1","Cycle3","/home/user/documents",true,["Test17", "Test18"],404,"Not Found"

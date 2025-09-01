@@ -1,0 +1,3 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+swaggerDataInfo,Generate CSV content,Use helper data,data,Create folders,Create two folders,folder,200,Success
+swaggerDataInfo,Generate CSV content,Use random values,data,Create folders,Create two folders, one inside parent,folder,401,Unauthorized.
