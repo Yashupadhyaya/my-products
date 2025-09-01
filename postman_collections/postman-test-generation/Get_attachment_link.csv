@@ -1,0 +1,11 @@
+attachmentId,project-key,statusCode,scenario
+f4e35ee1-d41a-4a17-9043-b87e57a64508,project1,400,Invalid parameters.
+eea28f99-dddd-4e2f-9c3e-ea4aa6d07a29,project2,401,Unauthorized.
+ec326765-a8d5-4bd9-89a2-931ebf86c557,project3,404,Not Found.
+8218a901-980a-4b40-8898-e9b44fcda3a9,project4,400,Invalid parameters.
+dda31877-8112-40b6-acc5-fd75f9d10ea4,project5,401,Unauthorized.
+8efa5d00-6a8d-4327-b1bb-b4c69f6c7a36,project6,404,Not Found.
+f5d3daa8-3c2d-4df6-b939-d256d2352729,project7,400,Invalid parameters.
+ade65eed-aaba-4d98-aec8-16e41a40a32e,project8,401,Unauthorized.
+4a59b718-9ee5-4f8f-b349-8d3db22973bd,project9,404,Not Found.
+ffb95c94-4060-4cfe-955d-8cf815d0ae76,project10,400,Invalid parameters.

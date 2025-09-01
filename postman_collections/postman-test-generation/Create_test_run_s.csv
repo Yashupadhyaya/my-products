@@ -1,0 +1,11 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"proj1","1.0","Cycle1","root/Folder1",true,"[\"run1\",\"run2\"]",200,"Successful responses: OK"
+"proj2","1.1","Cycle2","root/Folder2",false,"[\"run3\",\"run4\"]",400,"Invalid parameters"
+"proj3","1.2","Cycle3","root/Folder3",true,"[\"run5\",\"run6\"]",401,"Unauthorized"
+"proj4","1.3","Cycle4","root/Folder4",false,"[\"run7\",\"run8\"]",404,"Not Found"
+"proj5","1.4","Cycle5","root/Folder5",true,"[\"run9\",\"run10\"]",200,"Successful responses: OK"
+"proj6","1.5","Cycle6","root/Folder6",false,"[\"run11\",\"run12\"]",400,"Invalid parameters"
+"proj7","1.6","Cycle7","root/Folder7",true,"[\"run13\",\"run14\"]",401,"Unauthorized"
+"proj8","1.7","Cycle8","root/Folder8",false,"[\"run15\",\"run16\"]",404,"Not Found"
+"proj9","1.8","Cycle9","root/Folder9",true,"[\"run17\",\"run18\"]",200,"Successful responses: OK"
+"proj10","1.9","Cycle10","root/Folder10",false,"[\"run19\",\"run20\"]",400,"Invalid parameters"

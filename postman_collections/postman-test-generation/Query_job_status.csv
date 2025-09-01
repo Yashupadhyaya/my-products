@@ -1,0 +1,5 @@
+job-id,project-key,statusCode,scenario
+92b45612-c789-483c-b6c6-8a84123a53a2,Folder,200,Successfully retrieved the test creation job status.
+d713f5f6-d564-4885-8197-971a9a74b5a2,Folder inside parent folder,400,Invalid parameters.
+42173f86-fb09-4958-9287-0274c876b6c2,Folder,401,Unauthorized.
+5aef35ad-9de6-4f93-bdb6-6c35a76fdabc,Folder inside parent folder,404,Not Found.

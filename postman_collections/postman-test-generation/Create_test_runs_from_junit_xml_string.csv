@@ -1,0 +1,5 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,2290ce68-87be-43e1-9ff1-bb790c251c81,Login,200,Successful responses: OK
+1.0.0,CycleName,MU-TR-2,5490cse68-67be-46f1-2hh1-bd790c241c90,Logout,400,Invalid parameters
+2.1.0,TestCycle,DE-TR-3,8890abc68-88gh-76r5-agr1-ww890c231r90,Registration,401,Unauthorized
+2.1.0,TestCycle,DE-TR-4,s990xyz68-oipl-98y6-bgtr-oiu56c721oiu,Account Settings,404,Not Found

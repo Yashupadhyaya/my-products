@@ -1,0 +1,6 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+ABC,Proj-1,Issue-100,Issue-200,200,Success
+XYZ,Proj-2,Issue-101,Issue-201,200,Success
+VWX,Proj-3,Issue-102,Issue-202,401,Unauthorized
+MNO,Proj-4,Issue-103,Issue-203,200,Success
+PQR,Proj-5,Issue-104,Issue-204,401,Unauthorized.
