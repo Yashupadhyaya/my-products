@@ -1,0 +1,10 @@
+limit,offset,test-run-key,project-key,statusCode,scenario
+30,0^|"56ty3vn"^|"980knhh"^|400^|"Invalid parameters."
+10,5^|"773gtv8"^|"vfhh308"^|401^|"Unauthorized."
+50,10^|"88ms37z"^|"42hh293"^|404^|"Not Found."
+20,3^|"91xp45r"^|"ngh98y2"^|400^|"Invalid parameters."
+40,2^|"23wx901"^|"56gt4z9"^|401^|"Unauthorized."
+50,5^|"48xs247"^|"123hgz999"^|404^|"Not Found."
+10,0^|"69avz8p"^|"fgx32d7"^|400^|"Invalid parameters."
+30,15^|"06ty279"^|"327bc1a"^|401^|"Unauthorized."
+40,0^|"27fg47c"^|"nvgh51z"^|404^|"Not Found."
