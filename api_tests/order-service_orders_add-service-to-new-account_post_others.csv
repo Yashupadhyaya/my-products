@@ -1,0 +1,11 @@
+channel^|^X-Trace-Id^|^username
+web^|^1234ABCD^|^john_doe
+mobile^|^5678EFGH^|^jane_doe
+email^|^90AB1CDE^|^mike_smith
+web^|^2345BCDE^|^emily_jones
+email^|^6789FGHI^|^robert_brown
+mobile^|^ABCD1234^|^linda_white
+web^|^EFGH5678^|^james_green
+email^|^1CDE90AB^|^susan_thompson
+mobile^|^BCDE2345^|^patrick_wilson
+web^|^FGHI6789^|^jennifer_taylor
