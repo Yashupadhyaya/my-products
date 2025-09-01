@@ -1,0 +1,27 @@
+[
+  {
+    "output": "<?xml version=\"1.0\"?>\n<batch>\n    <result index=\"0\">\n        <ip>72.229.28.185</ip>\n        <type>ipv4</type>\n        <continent_code>NA</continent_code>\n        <continent_name>North America</continent_name>\n        <country_code>US</country_code>\n        <country_name>United States</country_name>\n        <region_code>NY</region_code>\n        <region_name>New York</region_name>\n        <city>Manhattan</city>\n        <zip>10020</zip>\n        <latitude>40.7589111328125</latitude>\n        <longitude>-73.97901916503906</longitude>\n        <location>\n            <geoname_id>5125771</geoname_id>\n            <capital>Washington D.C.</capital>\n            <languages>\n                <code>en</code>\n                <name>English</name>\n                <native>English</native>\n            </languages>\n            <country_flag>https://assets.ipstack.com/flags/us.svg</country_flag>\n            <country_flag_emoji>&#x1F1FA;&#x1F1F8;</country_flag_emoji>\n            <country_flag_emoji_unicode>U+1</location>\n    </result>\n</batch>",
+    "statusCode": 200,
+    "scenario": "200 OK – XML Output"
+  },
+  {
+    "output": "<?xml version=\"1.0\"?><batch><result index=\"0\"><ip>256.256.256.256</ip><type>invalid_type</type><continent_code>unknown</continent_code><continent_name>Invalid</continent_name><country_code>XX</country_code><country_name>Invalid Land</country_name><region_code>ZY</region_code><region_name>Invalid Region</region_name><city>Invalid City</city><zip>00000</zip><latitude>999.999</latitude><longitude>999.999</longitude></result></batch>",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "output": "<?xml version=\"1.0\"?><batch><result index=\"0\"><ip>192.0.2.0</ip><type>ipv4</type><continent_code>EU</continent_code><continent_name>Europe</continent_name><country_code>FR</country_code><country_name>France</country_name><region_code>IDF</region_code><region_name>Île-de-France</region_name><city>Paris</city><zip>75008</zip><latitude>48.8566</latitude><longitude>2.3522</longitude></result></batch>",
+    "statusCode": 200,
+    "scenario": "200 OK – XML Output"
+  },
+  {
+    "output": "<?xml version=\"1.0\"?><batch><result index=\"0\"><ip>999.999.999.999</ip><type>invalid_ipv4</type><continent_code>XX</continent_code><continent_name>Unknown</continent_name><country_code>YY</country_code><country_name>Invalid Country</country_name><region_code>ZZ</region_code><region_name>Unknown Region</region_name><city>Unknown City</city><zip>99999</zip><latitude>-999.999</latitude><longitude>-999.999</longitude></result></batch>",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "output": "<?xml version=\"1.0\"?><batch><result index=\"0\"><ip>203.0.113.0</ip><type>ipv4</type><continent_code>OC</continent_code><continent_name>Oceania</continent_name><country_code>AU</country_code><country_name>Australia</country_name><region_code>NSW</region_code><region_name>New South Wales</region_name><city>Sydney</city><zip>2000</zip><latitude>-33.8688</latitude><longitude>151.2093</longitude></result></batch>",
+    "statusCode": 200,
+    "scenario": "200 OK – XML Output"
+  }
+]

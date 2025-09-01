@@ -1,0 +1,27 @@
+[
+  {
+    "hostname": "160.39.144.19",
+    "statusCode": 200,
+    "scenario": "200 OK – Hostname"
+  },
+  {
+    "hostname": "invalid_host!@#$%^&*",
+    "statusCode": 400,
+    "scenario": "Bad Request"
+  },
+  {
+    "hostname": "192.168.256.123",
+    "statusCode": 500,
+    "scenario": "Internal Server Error"
+  },
+  {
+    "hostname": "test-host-name.com",
+    "statusCode": 403,
+    "scenario": "Forbidden"
+  },
+  {
+    "hostname": "example-host-123",
+    "statusCode": 200,
+    "scenario": "200 OK – Hostname"
+  }
+]
