@@ -1,0 +1,7 @@
+baseUrl,email,jobTitle,name,id,statusCode,scenario
+https://api.website.com,"john.doe@website.com","Software Developer","John Doe",12345,201,"employee created"
+https://api.website.com,"jane.doe@website.com","Project Manager","Jane Doe",12346,201,"employee created"
+https://api.website.com,"invalid.email","Invalid Job","Invalid Name",00000,400,"invalid input, object invalid"
+https://api.website.com,"invalid.email","Invalid Job","Invalid Name",00001,400,"invalid input, object invalid"
+https://api.website.com,"existing.employee@website.com","Existing Job","Existing Employee",12347,409,"an existing employee already exists"
+https://api.website.com,"existing.employee2@website.com","Existing Job","Existing Employee",12348,409,"an existing employee already exists"
