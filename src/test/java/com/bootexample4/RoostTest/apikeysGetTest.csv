@@ -1,0 +1,11 @@
+userID,userName,userEmail,userAge,userCity,joinDate
+001,JohnDoe,johndoe@gmail.com,32,NewYork,2020-11-15
+002,JaneDoe,janedoe@gmail.com,29,LosAngeles,2019-07-27
+003,RobertSmith,robertsmith@gmail.com,45,Chicago,2020-03-12
+004,LisaJohnson,lisajohnson@gmail.com,38,Phoenix,2018-06-09
+005,JamesBrown,jamesbrown@gmail.com,41,Houston,2017-02-20
+006,MaryDavis,marydavis@gmail.com,37,Philadelphia,2019-03-30
+007,MichaelMiller,michaelmiller@gmail.com,34,SanAntonio,2020-08-18
+008,LindaWilson,lindawilson@gmail.com,36,Dallas,2019-11-26
+009,DavidAnderson,davidanderson@gmail.com,40,SanDiego,2020-07-14
+010,SusanTaylor,susantaylor@gmail.com,35,Austin,2018-04-21
