@@ -1,0 +1,42 @@
+[
+  {
+    "all-branches": "main",
+    "branch": "feature/new-design",
+    "project-slug": "my-org/my-project",
+    "workflow-name": "build-and-deploy",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "develop",
+    "branch": "bugfix/issue-123",
+    "project-slug": "another-org/another-project",
+    "workflow-name": "test-suite",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "release",
+    "branch": "hotfix/urgent-update",
+    "project-slug": "test-org/sample-project",
+    "workflow-name": "performance-tests",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "!invalid_branch",
+    "branch": "",
+    "project-slug": "invalid/project!slug",
+    "workflow-name": "random-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "all-branches": "%%%",
+    "branch": "wrong_branch@123",
+    "project-slug": "wrong-slug-project",
+    "workflow-name": "unknown_workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  }
+]
