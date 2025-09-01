@@ -1,0 +1,7 @@
+id,petId,quantity,shipDate,status,complete,statusCode,scenario
+1234,5678,2,2022-02-01,placed,true,200,Successful responses: OK
+2345,6789,1,2022-02-02,approved,false,400,Client error responses: Bad Request
+3456,7890,3,2022-02-03,delivered,true,200,Successful responses: OK
+4567,8901,4,2022-02-04,placed,false,400,Client error responses: Bad Request
+5678,9012,5,2022-02-05,approved,true,200,Successful responses: OK
+6789,0123,6,2022-02-06,delivered,false,400,Client error responses: Bad Request

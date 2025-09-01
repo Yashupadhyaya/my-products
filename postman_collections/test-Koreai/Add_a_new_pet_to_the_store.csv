@@ -1,0 +1,6 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+Max,http://photoUrls.com/1,1,dog,approved,405,Client error responses: Method Not Allowed
+Ruby,http://photoUrls.com/2,2,cat,delivered,405,Client error responses: Method Not Allowed
+Oscar,http://photoUrls.com/3,3,bird,placed,405,Client error responses: Method Not Allowed
+Coco,http://photoUrls.com/4,4,fish,approved,405,Client error responses: Method Not Allowed
+Milo,http://photoUrls.com/5,5,horse,delivered,405,Client error responses: Method Not Allowed
