@@ -1,0 +1,5 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,"project1","Folder","a1d1af17-07f8-4ef1-af27-0532e56de2c7","www.callbackUrl.com","test1",202,"The job to create the test cases was successfully scheduled."
+2,"project2","Folder inside parent folder","0d87868a-0613-4a96-8bee-297e8008292b","www.callbackUrl2.com","test2",400,"Invalid parameters."
+3,"project3","Folder","b2c3a410-077e-42e1-ac0c-07e1e2b6e27e","www.callbackUrl3.com","test3",401,"Unauthorized."
+4,"project4","Folder inside parent folder","0d87868a-0613-4a96-8bee-297e8008292b","www.callbackUrl4.com","test4",404,"Not Found."

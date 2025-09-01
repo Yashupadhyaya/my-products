@@ -1,0 +1,9 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1","f3ece1c7-8d03-44ac-adca-a2be761f36dd",2,0,"TE",200,"Successfully get folder(s)."
+"Folder inside another folder","2df568c4-f028-4271-92fe-9630a40d73b2",2,0,"TE",200,"Successfully get folder(s)."
+"Random Folder1","612rty1c7-8d00-44zx-adca-a2be761b378r",5,2,"AB",400,"Invalid parameters"
+"Random Folder2","2rb568v1-f028-4200-9x3w-9630amnh73g1",1,3,"CD",400,"Invalid parameters"
+"Random Folder3","f3ece1c7-qw01-4gfg-adca-a2be761b378r",6,2,"EF",401,"Unauthorized"
+"Random Folder4","2df568c4-f028-42dd-92fe-9630a40c8j37",3,2,"GH",401,"Unauthorized"
+"Random Folder5","f3r5e1c7-8d03-4kfc-adca-a2be761b378r",10,0,"IJ",404,"Not Found"
+"Random Folder6","2df568c4-vd09-4jyr-92fe-9630a40m78b2",4,1,"KL",404,"Not Found"

@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","CycleName","1.0.0","6424a6b5-410f-460f-81ca-efa2520043eb",false,"DE-1",200,"Successful responses: OK"
+5,2,"TR-UI-2","CycleTest","2.0.0","6b524a65-410f-460f-85ca-efa7342325ef",false,"TR-2",400,"Invalid parameters"
+6,3,"SE-UI-3","CycleThree","3.0.0","7b524a65-416f-450f-85ca-efb7342321pd",false,"SE-3",401,"Unauthorized"
+3,1,"XY-ZL-4","CycleFour","4.0.0","8b524a65-411f-460f-81ca-ffb7342323fg",false,"XY-4",404,"Not Found"

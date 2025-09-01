@@ -1,0 +1,6 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"PRJ1","1.0.0","Cycle1","Folder1",true,["Run1","Run2"],200,"Successful responses: OK"
+"PRJ2","2.0.0","Cycle2","Folder2",false,["Run3","Run4"],400,"Invalid parameters"
+"PRJ3","3.0.0","Cycle3","Folder3",true,["Run5","Run6"],401,"Unauthorized"
+"PRJ4","4.0.0","Cycle4","Folder4",false,["Run7","Run8"],404,"Not Found"
+"PRJ5","5.0.0","Cycle5","Folder5",true,["Run9","Run10"],200,"Successful responses: OK"

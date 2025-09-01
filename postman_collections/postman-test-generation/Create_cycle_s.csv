@@ -1,0 +1,5 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+key1,My Cycle,John,2022-04-28T07:26:27.7775729Z,2022-04-29T07:26:27.7775727Z,"^\"Environments^\",^\"Development\"",1.0.0,My Second Cycle,Doe,2025-04-28T07:26:27.7775729Z,2025-04-29T07:26:27.7775727Z,"^\"Builds^\",^\"1.9.9\"",UNVERSIONED,200,Successful responses: OK
+key2,My Third Cycle,Alex,"^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"",Folder,"^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"",400,Invalid parameters.
+key3,"^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"",Folder inside parent folder,"^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"",401,Unauthorized
+key4,"^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"","^\"N/A\"",404,Not Found.

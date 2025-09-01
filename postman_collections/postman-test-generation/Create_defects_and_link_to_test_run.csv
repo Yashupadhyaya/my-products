@@ -1,0 +1,3 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,"TR001","PK1","Create folders","This API creates folders","Task","Create two folders","This API creates two folders","Task",200,Success
+2,"TR002","PK2","Invalid key creation","This API creates invalid task with wrong key details","Task","Create two folders with invalid keys","This scenario creates two folders with invalid keys","Task",401,Unauthorized
