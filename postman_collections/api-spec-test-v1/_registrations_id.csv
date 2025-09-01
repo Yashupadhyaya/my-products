@@ -1,0 +1,11 @@
+id,reference,revoked,suspendedUntil,endDate,statusCode,scenario
+urn:uuid:8cae309a-d7b6-3150-0f40-37fa16c1e1c1,"reference1",false,"2022-08-06","2023-08-06",200,successful operation
+urn:uuid:9cae309a-d7b6-3150-0f40-37fa16c1e1c2,"reference2",true,"2021-07-06","2022-07-06",400,Bad Request
+urn:uuid:10cae309a-d7b6-3150-0f40-37fa16c1e1c3,"reference3",false,"2020-06-06","2021-06-06",401,Authentication Required
+urn:uuid:11cae309a-d7b6-3150-0f40-37fa16c1e1c4,"reference4",true,"2019-05-06","2020-05-06",200,successful operation
+urn:uuid:12cae309a-d7b6-3150-0f40-37fa16c1e1c5,"reference5",false,"2018-04-06","2019-04-06",400,Bad Request
+urn:uuid:13cae309a-d7b6-3150-0f40-37fa16c1e1c6,"reference6",true,"2017-03-06","2018-03-06",401,Authentication Required
+urn:uuid:14cae309a-d7b6-3150-0f40-37fa16c1e1c7,"reference7",false,"2016-02-06","2017-02-06",200,successful operation
+urn:uuid:15cae309a-d7b6-3150-0f40-37fa16c1e1c8,"reference8",true,"2015-01-06","2016-01-06",400,Bad Request
+urn:uuid:16cae309a-d7b6-3150-0f40-37fa16c1e1c9,"reference9",false,"2014-12-06","2015-12-06",401,Authentication Required
+urn:uuid:17cae309a-d7b6-3150-0f40-37fa16c1e1c10,"reference10",true,"2013-11-06","2014-11-06",200,successful operation

@@ -1,0 +1,12 @@
+subscriberId,id,confirmation,statusCode,scenario
+1,123456,True,200,successful operation
+2,789012,False,400,Bad Request
+3,345678,True,401,Unauthorized
+4,901234,False,403,Forbidden - Scope Not Permitted
+5,567890,True,404,Not Found
+6,234567,False,406,Not Acceptable
+7,890123,True,412,Precondition Failed
+8,678901,False,429,Too Many Requests - Exceeded Quota
+9,345789,True,500,Internal Server Error
+10,012345,False,503,Service Unavailable
+11,789012,True,504,Gateway Timeout

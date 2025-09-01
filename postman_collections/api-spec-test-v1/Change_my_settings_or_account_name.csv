@@ -1,0 +1,4 @@
+name,image,laborum4,dolord,magna_7,statusCode,scenario
+"' '. 'p{p}p}.{p'-p{-L''L..{-p}L{-' {pL.'L}p- -ppL.","https://cdn.credentialregiater.com/2571c54e-2cde-4434-83f2-c329f74adc27.png","Ut nisi cillum","Descriptive Error Message","error/code",200,"successful operation"
+"random_string","data:image/jpeg;base64,<random_value>","random_string","random_string","random_string",400,"Bad Request"
+"random_string","data:image/jpeg;base64,<random_value>","random_string","random_string","random_string",401,"Authentication Required"

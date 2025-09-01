@@ -1,0 +1,12 @@
+addressId,subscriberId,associatedDocument,startDate,finishDate,orderType,addressChangeFlag,productType,priorityFlag,priorityReason,statusCode,scenario
+1,123,doc1,2021-05-30T08:00:00,2021-05-30T12:00:00,type1,yes,product1,yes,reason1,200,"success"
+2,456,doc2,2021-05-31T08:00:00,2021-05-31T12:00:00,type2,no,product2,no,reason2,400,"Bad Request"
+3,789,doc3,2022-01-01T08:00:00,2022-01-01T12:00:00,type3,yes,product3,yes,reason3,401,"Unauthorized"
+4,321,doc4,2022-02-01T08:00:00,2022-02-01T12:00:00,type4,no,product4,no,reason4,403,"Forbidden - Scope Not Permitted"
+5,654,doc5,2022-03-01T08:00:00,2022-03-01T12:00:00,type5,yes,product5,yes,reason5,404,"Not Found"
+6,987,doc6,2022-04-01T08:00:00,2022-04-01T12:00:00,type6,no,product6,no,reason6,406,"Not Acceptable"
+7,147,doc7,2022-05-01T08:00:00,2022-05-01T12:00:00,type7,yes,product7,yes,reason7,412,"Precondition Failed"
+8,258,doc8,2022-06-01T08:00:00,2022-06-01T12:00:00,type8,no,product8,no,reason8,429,"Too Many Requests - Exceeded Quota"
+9,369,doc9,2022-07-01T08:00:00,2022-07-01T12:00:00,type9,yes,product9,yes,reason9,500,"Internal Server Error"
+10,963,doc10,2022-08-01T08:00:00,2022-08-01T12:00:00,type10,no,product10,no,reason10,503,"Service Unavailable"
+11,852,doc11,2022-09-01T08:00:00,2022-09-01T12:00:00,type11,yes,product11,yes,reason11,504,"Gateway Timeout"

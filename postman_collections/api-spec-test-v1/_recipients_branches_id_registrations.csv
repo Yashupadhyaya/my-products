@@ -1,0 +1,5 @@
+credential-url,size,offset,id,statusCode,scenario
+"BBqnu3FtT:)m,xJVk@l{",123,1,"ea8bc642-9808-8a70-3631-05d8d4f59769",200,"successful operation"
+"96myC4oK:/xakz",456,2,"1ef2add4-8baf-441b-c9da-6afc9668873e",200,"successful operation"
+"randomUrl1",789,3,"randomId1",400,"Bad Request"
+"randomUrl2",321,4,"randomId2",401,"Authentication Required"
