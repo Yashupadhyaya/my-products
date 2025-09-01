@@ -1,0 +1,374 @@
+openapi: 3.0.0
+info:
+  title: אפליקציית מובייל בנק ירושלים
+  description: אפיון מפורט של אפליקציית המובייל של בנק ירושלים
+  version: 1.1
+servers:
+  - url: '${BASE_URL}'
+    description: URL הבסיס של האפליקציה
+
+paths:
+  /login:
+    post:
+      summary: כניסה לאפליקציה באמצעות מספר זהות וקוד סודי
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  example: "123456789"
+                password:
+                  type: string
+                  example: "1234"
+      responses:
+        '200':
+          description: כניסה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    example: "token123"
+        '401':
+          description: כניסה נכשלת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Account locked"
+
+  /biometric-login:
+    post:
+      summary: כניסה לאפליקציה באמצעות זיהוי ביומטרי
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                biometricData:
+                  type: string
+                  example: "biometricData"
+      responses:
+        '200':
+          description: כניסה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    example: "token123"
+
+  /accounts/balance:
+    get:
+      summary: הצגת יתרה כללית לכל חשבון
+      responses:
+        '200':
+          description: הצגת יתרה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total_balance:
+                    type: number
+                    example: 1000.50
+
+  /transactions:
+    get:
+      summary: הצגת פירוט עסקאות 90 יום אחורה
+      parameters:
+        - in: query
+          name: days
+          schema:
+            type: integer
+            example: 90
+          required: true
+          description: מספר הימים לאחור
+      responses:
+        '200':
+          description: הצגת פירוט עסקאות מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transaction_details:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        date:
+                          type: string
+                          example: "2023-10-01"
+                        type:
+                          type: string
+                          example: "transfer"
+                        amount:
+                          type: number
+                          example: 50.00
+
+  /credit-cards/balance:
+    get:
+      summary: הצגת יתרה לניצול
+      responses:
+        '200':
+          description: הצגת יתרה לניצול מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  available_balance:
+                    type: number
+                    example: 500.00
+
+  /credit-cards/block:
+    post:
+      summary: חסימת כרטיס זמנית או קבועה
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                cardId:
+                  type: string
+                  example: "123456789"
+                blockType:
+                  type: string
+                  example: "temporary"
+      responses:
+        '200':
+          description: חסימת כרטיס מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Card blocked"
+
+  /credit-cards/request-new:
+    post:
+      summary: בקשה להנפקת כרטיס חדש
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                cardType:
+                  type: string
+                  example: "credit"
+      responses:
+        '200':
+          description: בקשה להנפקת כרטיס מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "New card request submitted"
+
+  /loans/simulation:
+    post:
+      summary: סימולציה להחזר חודשי לפי סכום ופריסה
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: number
+                  example: 10000
+                installments:
+                  type: integer
+                  example: 12
+      responses:
+        '200':
+          description: סימולציה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  monthly_payment:
+                    type: number
+                    example: 850.00
+
+  /loans/request:
+    post:
+      summary: בקשה דיגיטלית לבדיקה ואישור
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: number
+                  example: 10000
+                installments:
+                  type: integer
+                  example: 12
+      responses:
+        '200':
+          description: בקשה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Loan request submitted"
+
+  /loans/status:
+    get:
+      summary: צפייה בסטטוס של הלוואות פעילות ובקשות
+      responses:
+        '200':
+          description: הצגת סטטוס מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  loan_status:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        loan_id:
+                          type: string
+                          example: "loan123"
+                        status:
+                          type: string
+                          example: "approved"
+
+  /support/new-ticket:
+    post:
+      summary: פתיחת פנייה לנציג
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                subject:
+                  type: string
+                  example: "Support request"
+                details:
+                  type: string
+                  example: "Need assistance with my account"
+      responses:
+        '200':
+          description: פנייה נוצרה בהצלחה
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Ticket created"
+
+  /support/tickets:
+    get:
+      summary: קבלת תשובות והיסטוריית פניות
+      responses:
+        '200':
+          description: הצגת היסטוריית פניות מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ticket_history:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        ticket_id:
+                          type: string
+                          example: "ticket123"
+                        subject:
+                          type: string
+                          example: "Support request"
+                        status:
+                          type: string
+                          example: "open"
+
+  /health:
+    get:
+      summary: זמינות מערכת
+      responses:
+        '200':
+          description: מערכת זמינה
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "System is available"
+
+  /performance:
+    get:
+      summary: ביצועים
+      responses:
+        '200':
+          description: ביצועים תקינים
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Response time within 2 seconds"
+
+  /languages:
+    get:
+      summary: תמיכה בשפות
+      responses:
+        '200':
+          description: הצגת שפות נתמכות
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Supported languages: Hebrew, English"
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: '${AUTH_HEADER}'

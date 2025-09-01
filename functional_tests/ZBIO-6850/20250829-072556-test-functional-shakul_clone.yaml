@@ -1,0 +1,431 @@
+openapi: 3.0.0
+info:
+  title: אפליקציית מובייל בנק ירושלים
+  description: אפיון מפורט של אפליקציית מובייל בנק ירושלים
+  version: 1.1
+servers:
+  - url: '${BASE_URL}'
+    description: אדרס הבסיסי של ה-API
+paths:
+  /login:
+    post:
+      summary: כניסה לאפליקציה באמצעות מספר זהות וקוד סודי
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                secretCode:
+                  type: string
+      responses:
+        '200':
+          description: כניסה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: כניסה מוצלחת
+        '401':
+          description: ניסיונות כושלים
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: ניסיונות כושלים
+
+  /biometric-login:
+    post:
+      summary: כניסה לאפליקציה באמצעות זיהוי ביומטרי
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                biometricData:
+                  type: string
+      responses:
+        '200':
+          description: כניסה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: כניסה מוצלחת
+
+  /account-details:
+    get:
+      summary: צפייה בפרטי חשבון
+      responses:
+        '200':
+          description: פרטי חשבון
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  balance:
+                    type: number
+                    example: 1000
+                  transactions:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        date:
+                          type: string
+                        type:
+                          type: string
+                        amount:
+                          type: number
+                  accountNumber:
+                    type: string
+                  branchId:
+                    type: string
+
+  /transfer:
+    post:
+      summary: העברות כספים לחשבון פנימי
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                toAccount:
+                  type: string
+                amount:
+                  type: number
+      responses:
+        '200':
+          description: העברה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: העברה מוצלחת
+
+  /external-transfer:
+    post:
+      summary: העברות כספים לחשבון חיצוני
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                toAccount:
+                  type: string
+                amount:
+                  type: number
+      responses:
+        '200':
+          description: העברה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: העברה מוצלחת
+
+  /add-beneficiary:
+    post:
+      summary: הוספת מוטב חדש
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                beneficiaryDetails:
+                  type: string
+                smsCode:
+                  type: string
+      responses:
+        '200':
+          description: הוספת מוטב מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: הוספת מוטב מוצלחת
+
+  /save-beneficiary:
+    post:
+      summary: שמירת מוטב
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                beneficiaryDetails:
+                  type: string
+      responses:
+        '200':
+          description: שמירת מוטב מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: שמירת מוטב מוצלחת
+
+  /schedule-transfer:
+    post:
+      summary: תזמון העברה לתאריך עתידי
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                toAccount:
+                  type: string
+                amount:
+                  type: number
+                futureDate:
+                  type: string
+      responses:
+        '200':
+          description: תזמון העברה מוצלח
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: תזמון העברה מוצלח
+
+  /block-card:
+    post:
+      summary: חסימת כרטיס זמנית
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                cardNumber:
+                  type: string
+      responses:
+        '200':
+          description: חסימת כרטיס זמנית מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: חסימת כרטיס זמנית מוצלחת
+
+  /request-new-card:
+    post:
+      summary: בקשה להנפקת כרטיס חדש
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                requestDetails:
+                  type: string
+      responses:
+        '200':
+          description: בקשה להנפקת כרטיס חדש מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: בקשה להנפקת כרטיס חדש מוצלחת
+
+  /loan-simulation:
+    post:
+      summary: סימולציה להחזר חודשי
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                loanAmount:
+                  type: number
+                installments:
+                  type: number
+      responses:
+        '200':
+          description: סימולציה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: סימולציה מוצלחת
+
+  /digital-loan-request:
+    post:
+      summary: בקשה דיגיטלית לבדיקה ואישור
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                requestDetails:
+                  type: string
+      responses:
+        '200':
+          description: בקשה דיגיטלית מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: בקשה דיגיטלית מוצלחת
+
+  /open-ticket:
+    post:
+      summary: פתיחת פנייה לנציג
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ticketDetails:
+                  type: string
+      responses:
+        '200':
+          description: פתיחת פנייה מוצלחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: פתיחת פנייה מוצלחת
+
+  /ticket-history:
+    get:
+      summary: קבלת תשובות והיסטוריית פניות
+      responses:
+        '200':
+          description: תשובות והיסטוריית פניות
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ticketHistory:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        date:
+                          type: string
+                        response:
+                          type: string
+
+  /security-info:
+    get:
+      summary: אבטחת מידע
+      responses:
+        '200':
+          description: אבטחת מידע מובטחת
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: אבטחת מידע מובטחת
+
+  /system-availability:
+    get:
+      summary: זמינות מערכת
+      responses:
+        '200':
+          description: זמינות מערכת לפחות 99.5%
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: זמינות מערכת לפחות 99.5%
+
+  /performance-metrics:
+    get:
+      summary: ביצועים
+      responses:
+        '200':
+          description: תגובה לכל פעולה עד 2 שניות
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: תגובה לכל פעולה עד 2 שניות
+
+  /language-support:
+    get:
+      summary: תמיכה בשפות
+      responses:
+        '200':
+          description: תמיכה בשפות עברית ואנגלית
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: תמיכה בשפות עברית ואנגלית
