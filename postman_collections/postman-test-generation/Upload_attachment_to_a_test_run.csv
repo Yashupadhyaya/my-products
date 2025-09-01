@@ -1,0 +1,5 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+"run-123","proj-123","file1.txt","text/plain",1024,200,"Success"
+"run-456","proj-456","document1.docx","application/vnd.openxmlformats-officedocument.wordprocessingml.document",2048,400,"Invalid parameters"
+"run-789","proj-789","application.jpg","image/jpeg",10240,401,"Unauthorized"
+"run-890","proj-890","datasheet.pdf","application/pdf",5120,404,"Not Found"

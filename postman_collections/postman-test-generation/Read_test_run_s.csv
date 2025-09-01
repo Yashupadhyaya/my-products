@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","CycleName","1.0.0","218708f2-b109-4740-a0bb-eae35034ffaa","items","DE-1",200,"Successful responses: OK"
+400,"abc","not-valid-proj-key","CycleNameNotFound","v1.0.0,"0000f2-b109-4740-a0bb-eae35034fggh","itemsNotFound","not-valid-tc-key",400,"Invalid parameters."
+567,"uvw","not-authorized-proj-key","CycleNameUnauthorized","v2.0.0","0000f2-b109-5770-a0bb-eae35034fgdf","itemsUnauthorized","not-authorized-tc-key",401,"Unauthorized"
+789,"xyz","not-found-proj-key","CycleNameNotFound","v3.0.0","0000f2-b109-7880-a0bb-eae35034fgjk","itemsNotFound","not-found-tc-key",404,"Not Found."
