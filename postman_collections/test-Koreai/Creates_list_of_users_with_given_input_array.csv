@@ -1,0 +1,6 @@
+id,username,firstName,lastName,email,password,phone,userStatus,statusCode,scenario
+1,johnDoe,John,Doe,JohnDoe@example.com,password123,1234567890,Active,500,Server error responses: Internal Server Error
+2,janeDoe,Jane,Doe,JaneDoe@example.com,password456,0987654321,Active,500,Server error responses: Internal Server Error
+3,adamSmith,Adam,Smith,AdamSmith@example.com,password789,5678901234,Inactive,500,Server error responses: Internal Server Error
+4,sarahBrown,Sarah,Brown,SarahBrown@example.com,password012,5432109876,Active,500,Server error responses: Internal Server Error
+5,emmaJohnson,Emma,Johnson,EmmaJohnson@example.com,password345,8765432109,Inactive,500,Server error responses: Internal Server Error

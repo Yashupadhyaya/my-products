@@ -1,0 +1,6 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John Doe,https://example.com/JohnDoe.jpg,1,tag1,Available,405,Client error responses: Method Not Allowed
+Jane Smith,https://example.com/JaneSmith.jpg,2,tag2,Sold,405,Client error responses: Method Not Allowed
+Mark Johnson,https://example.com/MarkJohnson.jpg,3,tag3,Pending,405,Client error responses: Method Not Allowed
+Emma Brown,https://example.com/EmmaBrown.jpg,4,tag4,Available,405,Client error responses: Method Not Allowed
+Ethan Davis,https://example.com/EthanDavis.jpg,5,tag5,Sold,405,Client error responses: Method Not Allowed
