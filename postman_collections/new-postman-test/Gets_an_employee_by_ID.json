@@ -1,0 +1,27 @@
+[
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "id": "p6o5n4m3-l2k1-j0i9-h8g7-f6e5d4c3b2a1",
+    "statusCode": 200,
+    "scenario": "Successful operation"
+  },
+  {
+    "id": "12345678-90ab-cdef-ghij-klmnopqrstuv",
+    "statusCode": 404,
+    "scenario": "Not found"
+  },
+  {
+    "id": "uvwxyz01-23ab-cdef-ghij-klmnopqrstuv",
+    "statusCode": 404,
+    "scenario": "Not found"
+  }
+]
