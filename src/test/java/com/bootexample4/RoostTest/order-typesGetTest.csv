@@ -1,0 +1,11 @@
+X-Trace-Id,channel,username,statusCode
+3fa85f64-5717-4562-b3fc-2c963f66afa6,web,john_doe,200
+b6d767d2-f8ed-4de2-9bbd-6bb9bd380a11,email,jane_doe,400
+d9f0e1f8-4793-4378-bd7f-3458a8cd9f48,app,robert_smith,401
+d7d7183a-6f5c-4c75-a7b7-c3124a344556,web,sarah_johnson,403
+5c3cf59c-6dbe-4b21-80b7-e3e9a0e4b61b,email,james_wilson,404
+f7c6c8f8-6724-4b80-947b-a77ba1c3a456,app,mary_williams,405
+3d2ecd1f-02b2-4e1b-a292-b6e3a3953b8e,web,david_jones,409
+6dcd4ce2-d358-4d99-9b57-4b6a4b5f6f33,email,patricia_brown,500
+a3f1e2d2-434c-4ee9-8d4d-aa7bfa8f55b4,app,jennifer_davis,200
+b5a2c2b2-e3c2-4c89-93c2-b2a2c2b2a2c2,web,charles_miller,400
