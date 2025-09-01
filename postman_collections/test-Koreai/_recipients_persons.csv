@@ -1,0 +1,4 @@
+birthDate,initials,lastName,firstName,middleName,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference,statusCode,scenario
+1974-10-02,JD,Smith,John,Doe,USA,123456789,jsmith@email.com,12345,12,A,01,ref123,201,Successful responses: Created
+1974-10-03,AD,Johnson,Alice,Drew,USA,234567891,ajohnson@email.com,23456,23,B,02,ref124,400,Client error responses: Bad Request
+1974-10-04,BD,Williams,Bob,Dylan,USA,345678912,bwilliams@email.com,34567,34,C,03,ref125,401,Client error responses: Unauthorized
