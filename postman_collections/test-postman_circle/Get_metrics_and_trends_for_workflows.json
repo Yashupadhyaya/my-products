@@ -1,0 +1,42 @@
+[
+  {
+    "all-branches": "true",
+    "branch": "main",
+    "project-slug": "orgX/projectXYZ",
+    "workflow-name": "deploy-app",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "false",
+    "branch": "feature-xyz",
+    "project-slug": "orgY/projectABC",
+    "workflow-name": "run-unit-tests",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  },
+  {
+    "all-branches": "invalid_value",
+    "branch": "",
+    "project-slug": "wrong-format-project-slug",
+    "workflow-name": "unknown-workflow",
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "all-branches": "not-true",
+    "branch": null,
+    "project-slug": "org@invalid-slug",
+    "workflow-name": 1234,
+    "statusCode": 500,
+    "scenario": "Error response."
+  },
+  {
+    "all-branches": "true",
+    "branch": "hotfix/issue123",
+    "project-slug": "orgZ/projectLMN",
+    "workflow-name": "build-artifacts",
+    "statusCode": 200,
+    "scenario": "Metrics and trends for a workflow"
+  }
+]
