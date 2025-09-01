@@ -1,0 +1,21 @@
+baseUrl,id,statusCode,scenario
+http://api.example.com,3e019f91-415a-4b60-b2e4-39e687094723,200,Successful operation
+http://api.service.com,fe3901d7-7c4f-4872-9586-ac639e0d7452,200,Successful operation
+http://api.task.com,b57697c8-5bd5-4fb1-a8dc-b170a058456b,404,Not found
+http://api.usertest.com,be034399-9cc4-4c92-9f24-75ee221a1a4d,200,Successful operation
+http://api.useradmin.com,a476f073-0180-4b37-8be9-b75b60433d8f,200,Successful operation
+http://api.profile.com,7456fbba-9b7c-4ea6-93b1-ea3b3aca9f6a,404,Not found
+http://api.imagelink.com,cf7c08c3-8e26-4c5b-8b10-5b1a005fa4d6,200,Successful operation
+http://api.activitylog.com,9120a530-c749-4980-a88c-5f7c99f500ad,404,Not found
+http://api.settings.com,2b6bc02a-2434-4497-bed7-921984795efc,200,Successful operation
+http://api.payment.com,a915769c-c350-42b3-8875-17bec2fb0944,200,Successful operation
+http://api.orders.com,88ab2f09-74cc-4d8c-9537-b7b91c35ca14,404,Not found
+http://api.shipments.com,aec8b704-ea44-4766-a5a7-73017a443e2d,200,Successful operation
+http://api.subscription.com,a7dcba27-041f-443b-b6c2-9c1f62c2046a,404,Not found
+http://api.catalog.com,f4abf57f-c28b-4e4b-82e2-21aaa92d5c8b,200,Successful operation
+http://api.notifications.com,ce0061b6-1dae-4385-8396-5068b46e9c58,200,Successful operation
+http://api.reviews.com,c98db4ae-d279-4dc6-b7a9-2b0f7a13a897,404,Not found
+http://api.feedback.com,0edc7381-3c8c-4593-8893-2d20733fd37e,200,Successful operation
+http://api.analytics.com,63a063e6-eb19-4ec2-b2f1-333e9f99a4b1,200,Successful operation
+http://api.performance.com,2ab5e714-9d8f-40b3-b696-812d55558f89,404,Not found
+http://api.logs.com,f9a1635d-8cb9-4abf-b5e4-3ec548ef4127,200,Successful operation
