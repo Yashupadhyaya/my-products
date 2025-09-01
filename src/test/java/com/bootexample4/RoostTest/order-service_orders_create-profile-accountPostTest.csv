@@ -1,0 +1,11 @@
+channel^|^AdditionalCSVvaluInfo^|^X-Trace-Id^|^userid^|^username^|^entityId^|^RequestBody^|^statusCode
+web^|^100^|^XT1234^|^U123^|^JohnDoe^|^E123^|^{"method":"POST","url":"/api/v1/users","body":{"name":"JohnDoe"}}^|^201
+mobile^|^100^|^XT2345^|^U456^|^JaneDoe^|^E456^|^{"method":"GET","url":"/api/v1/users/U456"}^|^200
+web^|^100^|^XT3456^|^U789^|^MikeDoe^|^E789^|^{"method":"PUT","url":"/api/v1/users/U789","body":{"name":"MikeDoe"}}^|^204
+mobile^|^100^|^XT4567^|^U321^|^EmmaDoe^|^E321^|^{"method":"DELETE","url":"/api/v1/users/U321"}^|^204
+web^|^100^|^XT5678^|^U654^|^OliverDoe^|^E654^|^{"method":"POST","url":"/api/v1/users","body":{"name":"OliverDoe"}}^|^201
+mobile^|^100^|^XT6789^|^U987^|^SophiaDoe^|^E987^|^{"method":"GET","url":"/api/v1/users/U987"}^|^200
+web^|^100^|^XT7890^|^U135^|^LucasDoe^|^E135^|^{"method":"PUT","url":"/api/v1/users/U135","body":{"name":"LucasDoe"}}^|^204
+mobile^|^100^|^XT8901^|^U246^|^AvaDoe^|^E246^|^{"method":"DELETE","url":"/api/v1/users/U246"}^|^204
+web^|^100^|^XT9012^|^U357^|^LiamDoe^|^E357^|^{"method":"POST","url":"/api/v1/users","body":{"name":"LiamDoe"}}^|^201
+mobile^|^100^|^XT0123^|^U468^|^MiaDoe^|^E468^|^{"method":"GET","url":"/api/v1/users/U468"}^|^200

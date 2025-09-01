@@ -1,0 +1,11 @@
+channel^|^AdditionalCSVvaluInfo^|^X-Trace-Id^|^username^|^RequestBody^|^statusCode
+web^|^crmadmin^|^XTR1234^|^john_doe^|^{"action": "login", "details": {"username": "john_doe", "password": "pass123"}}^|^201
+mobile^|^crmadmin^|^XTR1235^|^jane_doe^|^{"action": "logout", "details": {"username": "jane_doe"}}^|^200
+web^|^crmadmin^|^XTR1236^|^adam_smith^|^{"action": "purchase", "details": {"username": "adam_smith", "item": "book1"}}^|^201
+mobile^|^crmadmin^|^XTR1237^|^emma_jones^|^{"action": "login", "details": {"username": "emma_jones", "password": "pass456"}}^|^201
+web^|^crmadmin^|^XTR1238^|^michael_brown^|^{"action": "logout", "details": {"username": "michael_brown"}}^|^200
+mobile^|^crmadmin^|^XTR1239^|^sarah_white^|^{"action": "purchase", "details": {"username": "sarah_white", "item": "book2"}}^|^201
+web^|^crmadmin^|^XTR1240^|^david_johnson^|^{"action": "login", "details": {"username": "david_johnson", "password": "pass789"}}^|^201
+mobile^|^crmadmin^|^XTR1241^|^lisa_wilson^|^{"action": "logout", "details": {"username": "lisa_wilson"}}^|^200
+web^|^crmadmin^|^XTR1242^|^robert_moore^|^{"action": "purchase", "details": {"username": "robert_moore", "item": "book3"}}^|^201
+mobile^|^crmadmin^|^XTR1243^|^mary_taylor^|^{"action": "login", "details": {"username": "mary_taylor", "password": "pass321"}}^|^201
