@@ -1,0 +1,13 @@
+baseUrl,searchString,statusCode,scenario
+http://api.example.com/users,john,200,'Search results matching the filter criteria'
+http://api.example.com/produts,car,200,'Search results matching the filter criteria'
+http://api.example.com/weather,China,200,'Search results matching the filter criteria'
+http://api.example.com/news,Election,200,'Search results matching the filter criteria'
+http://api.example.com/movies,Avatar,200,'Search results matching the filter criteria'
+http://api.example.com/songs,Adele,200,'Search results matching the filter criteria'
+http://api.example.com/users,jason&,400,'Bad input'
+http://api.example.com/products,%car&,400,'Bad input'
+http://api.example.com/weather,Chin@,400,'Bad input'
+http://api.example.com/news,Electi@n,400,'Bad input'
+http://api.example.com/movies,Avat@r&,400,'Bad input'
+http://api.example.com/songs,Adel@,400,'Bad input'
