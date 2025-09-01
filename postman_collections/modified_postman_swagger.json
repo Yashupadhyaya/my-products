@@ -1,0 +1,175 @@
+{
+  "item": [
+    {
+      "id": "d89d306b-eaa5-474a-a080-9ef8803741e6",
+      "name": "v1",
+      "item": [
+        {
+          "id": "1ce86a8a-d2fc-4458-b867-78ff10ba7bcb",
+          "name": "projects",
+          "item": [
+            null,
+            {
+              "id": "e0af98a9-f6c8-4ca1-a6f5-7e2a0b12cfcd",
+              "name": "{project-key}",
+              "item": [
+                {
+                  "id": "dad008dc-c2b1-4380-a1eb-071e29eec97b",
+                  "name": "folders",
+                  "item": [
+                    null,
+                    null,
+                    null
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "1abf1ddd-6fda-4387-8d72-e815b6fdba0c",
+                  "name": "test-cases",
+                  "item": [
+                    null,
+                    null,
+                    null,
+                    {
+                      "id": "f8a22c0a-3079-4611-86f7-9ec0f7392044",
+                      "name": "{key}",
+                      "item": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                      ],
+                      "event": []
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                null,
+                {
+                  "id": "af08a20a-a432-4997-9f12-85cddd1e92e6",
+                  "name": "test-runs",
+                  "item": [
+                    null,
+                    {
+                      "id": "bbed9ecd-6954-4e91-8137-24e82ccbcbc4",
+                      "name": "{test-run-key}",
+                      "item": [
+                        null,
+                        null,
+                        {
+                          "id": "d4c927db-7f4f-4944-9def-250c89f99b7f",
+                          "name": "attachments",
+                          "item": [
+                            null,
+                            null
+                          ],
+                          "event": []
+                        },
+                        null,
+                        {
+                          "id": "41b6f388-b601-4559-8cc3-bd8bad1125a5",
+                          "name": "defects",
+                          "item": [
+                            null,
+                            null
+                          ],
+                          "event": []
+                        }
+                      ],
+                      "event": []
+                    },
+                    {
+                      "id": "9ef9defe-86e7-4711-ae66-c63c7d7efd12",
+                      "name": "attachments",
+                      "item": [
+                        null,
+                        null
+                      ],
+                      "event": []
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "618f520a-667e-4a13-a65a-88eaf0d68a77",
+                  "name": "cycles",
+                  "item": [
+                    null,
+                    null,
+                    null
+                  ],
+                  "event": []
+                },
+                null
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        },
+        {
+          "id": "e489691e-e7ce-4f2e-8636-6929ba0f808b",
+          "name": "test-cases/search",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        },
+        null,
+        {
+          "id": "711ec6d4-43fb-4268-8385-c5cd323e75bd",
+          "name": "test-runs/scheme/{schemeName}/allowed-values",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.ttm4j.tricentis.com",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "09cd691b-2cff-4b41-8215-ddd82625d291",
+    "name": "TTM for Jira",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Tricentis Test Management for Jira",
+      "type": "text/plain"
+    }
+  }
+}
