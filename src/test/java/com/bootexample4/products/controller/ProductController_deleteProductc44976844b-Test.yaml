@@ -1,0 +1,46 @@
+config:
+  target: "https://example.com/api/products"
+  phases:
+    - duration: 60
+      arrivalRate: 20
+
+scenarios:
+  - name: "Successful API request"
+    flow:
+      - delete:
+          url: "/{{id}}"
+          headers:
+            Content-Type: "application/json"
+          expect:
+            - statusCode: 200
+          # The product should be deleted successfully
+
+  - name: "API request with non-existent ID"
+    flow:
+      - delete:
+          url: "/9999999999"
+          headers:
+            Content-Type: "application/json"
+          expect:
+            - statusCode: 404
+          # The product should not be found and return a 404 status code
+
+  - name: "API request with invalid ID"
+    flow:
+      - delete:
+          url: "/invalid-id"
+          headers:
+            Content-Type: "application/json"
+          expect:
+            - statusCode: 400
+          # The request should fail due to an invalid ID and return a 400 status code
+
+  - name: "API request with edge case - large ID"
+    flow:
+      - delete:
+          url: "/9223372036854775807"
+          headers:
+            Content-Type: "application/json"
+          expect:
+            - statusCode: 404
+          # The product should not be found and return a 404 status code, even with a large ID
