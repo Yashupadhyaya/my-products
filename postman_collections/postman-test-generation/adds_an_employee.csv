@@ -1,0 +1,11 @@
+email,jobTitle,name,id,statusCode,scenario
+john.smith@acme-corp.com,System Analyst,John Smith,d290f1ee-6c54-4b01-90e6-d701748f0851,201,employee created
+random.email@fake.com,Invalid Role,Invalid Name,1234,400,invalid input, object invalid
+john.smith@acme-corp.com,System Analyst,John Smith,d290f1ee-6c54-4b01-90e6-d701748f0851,409,an existing employee already exists
+jbhghd@abc.com,1234,NoName,456789,400,invalid input, object invalid
+mjordan@bulls.com,GOAT,Michael Jordan,7890abcd-6g56-7h89-90i1-jkl2345mn678,201,employee created
+bruce.wayne@wayne.com,Billionaire,Bruce Wayne,hijk1234-lmno5678-pqrs9012-tuvw3456,409,an existing employee already exists
+jdoe@unvalid.com,Machine,John Doe,00112233-4455-6677-8899-aabbccddeeff,400,invalid input, object invalid
+nhendricks@xyz.com,Software Engineer,Nathan Hendricks,ff33dd12-aa44-5566-77ff-ee997788bb99,201,employee created
+jwofford@improper.com,BeyondScope,James William,9876-5432-10lk-ji98-hg76-fe54,400,invalid input, object invalid
+eshellstrop@webmail.com,Ethics Instructor,Eleanor Shellstrop,fghijk12-lmnopq34-rstuv5678-wxyz90ab,409,an existing employee already exists
