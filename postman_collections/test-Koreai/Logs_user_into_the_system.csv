@@ -1,0 +1,6 @@
+username,password,statusCode,scenario
+john123,abc123,200,Successful responses: OK
+emma456,def456,200,Successful responses: OK
+mike789,ghi789,400,Client error responses: Bad Request
+anna101,jkl101,400,Client error responses: Bad Request
+id dolor aliqua do,xyz123,200,Successful responses: OK

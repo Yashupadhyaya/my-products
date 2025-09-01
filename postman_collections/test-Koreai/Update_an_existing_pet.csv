@@ -1,0 +1,4 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John,https://example.com/1,123,cloud,active,400,Client error responses: Bad Request
+Emma,https://example.com/2,124,water,inactive,404,Client error responses: Not Found
+Jake,https://example.com/3,125,earth,active,405,Client error responses: Method Not Allowed
