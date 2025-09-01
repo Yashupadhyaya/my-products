@@ -1,0 +1,9 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,"SwaggerAPI","Folder","462cfeb8-b4e8-4390-8b98-2e8ae80f5d3c","www.sample.com","10","202","The job to create the test cases was successfully scheduled."
+2,"SwaggerAPI","Folder inside parent folder","16b20334-1044-4781-883f-210409df0cbb","www.sample.com","8","202","The job to create the test cases was successfully scheduled."
+3,"SwaggerAPI","Folder","390cfeb8-a3f8-4450-7b59-2e8deb0f5d3y","www.badurl.com","12","400","Invalid parameters."
+4,"SwaggerAPI","Folder inside parent folder","z6b30334-1044-4781-l2gv-2189409df0t4","www.badurl.com","9","400","Invalid parameters."
+5,"SwaggerAPI","Folder","392gfeb8-a3f8-4450-7b59-2e8deb0f5s3r","www.unauthorized.com","7","401","Unauthorized."
+6,"SwaggerAPI","Folder inside parent folder","2gb30334-1044-4781-l2gv-fvj9409df0t4","www.unauthorized.com","11","401","Unauthorized."
+7,"SwaggerAPI","Folder","734gfeb8-n3f8-9k50-7b59-2e8dnb0f5s3r","www.notfound.com","6","404","Not Found."
+8,"SwaggerAPI","Folder inside parent folder","2rf30334-1c44-4781-l2gv-fp79409df0t4","www.notfound.com","5","404","Not Found."

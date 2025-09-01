@@ -1,0 +1,5 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"test_key_1","PRJ1","ISSUE1","1101",200,"Success"
+"test_key_2","PRJ2","ISSUE2","2101",200,"Success"
+"wrong_key_1","PRJ4","ISSUE3","3101",401,"Unauthorized."
+"wrong_key_2","PRJ5","ISSUE4","4101",401,"Unauthorized."

@@ -1,0 +1,5 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+Project1,"My Cycle",Assignee1,2022-06-27T09:40:20.0436401Z,2022-07-28T09:40:20.0436399Z,Bachelor,"1.0.0","My Second Cycle",Assignee2,2025-04-28T09:40:20.0436401Z,2025-04-29T09:40:20.0436399Z,Masters,UNVERSIONED,200,Successful responses: OK
+Project2,"My Third Cycle",Assignee3,2023-01-27T09:40:20.0436401Z,2023-02-28T09:40:20.0436399Z,Ph.D.,UNVERSIONED,"My Fourth Cycle",Assignee4,2025-06-28T09:40:20.0436401Z,2025-07-29T09:40:20.0436399Z,PostDoc,1.1.1,400,"Invalid parameters"
+Project3,"Unofficial Cycle",Assignee5,2024-02-27T09:40:20.0436401Z,2024-03-28T09:40:20.0436399Z,Diploma,"2.0.0","My Fifth Cycle",Assignee6,2025-08-28T09:40:20.0436401Z,2025-09-29T09:40:20.0436399Z,Specialization,1.2.0,401,Unauthorized
+Project4,"Test Cycle",Assignee7,2025-09-27T09:40:20.0436401Z,2025-10-28T09:40:20.0436399Z,"High school","3.0.0","My Sixth Cycle",Assignee8,2026-10-29T09:40:20.0436401Z,2026-11-30T09:40:20.0436399Z,"Undergraduate",1.2.1,404,"Not Found"

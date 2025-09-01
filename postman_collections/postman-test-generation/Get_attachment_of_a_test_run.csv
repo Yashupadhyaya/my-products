@@ -1,0 +1,7 @@
+limit,offset,test-run-key,project-key,statusCode,scenario
+100,20,"TR123456","PR9876543",400,"Invalid parameters."
+200,40,"TR7890123","PR6543210",400,"Invalid parameters."
+50,10,"TR3456789","PR3210987",401,"Unauthorized."
+150,30,"TR9012345","PR0987654",401,"Unauthorized."
+100,20,"TR5678901","PR7654321",404,"Not Found."
+200,40,"TR2345678","PR5432109",404,"Not Found."

@@ -1,0 +1,9 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1","025681c8-b075-4f7f-8684-35efbf183c7b",2,0,"TE",200,"Successfully get folder(s)."
+"Folder inside another folder","90686258-6945-4c6e-b62e-bfcec9215f0d",2,0,"TE",200,"Successfully get folder(s)."
+"RandomName1","BadParentId1",5,1,"ProjectKey1",400,"Invalid parameters."
+"RandomName2","BadParentId2",10,3,"ProjectKey2",400,"Invalid parameters."
+"UnauthorizedName1","UnauthorizedParentId1",7,0,"UnauthorizedProjectKey1",401,"Unauthorized."
+"UnauthorizedName2","UnauthorizedParentId2",8,2,"UnauthorizedProjectKey2",401,"Unauthorized."
+"NotFoundName1","NotFoundParentId1",6,1,"NotFoundProjectKey1",404,"Not Found."
+"NotFoundName2","NotFoundParentId2",9,3,"NotFoundProjectKey2",404,"Not Found."

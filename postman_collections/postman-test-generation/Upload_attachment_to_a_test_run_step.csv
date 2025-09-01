@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+TR1,1,PRKey1,File1.txt,text/plain,600,200,Success
+TR2,2,PRKey2,File2.jpg,image/jpeg,800,200,Success
+TR3,3,PRKey3,File3.xlsx,application/vnd.ms-excel,1000,400,Invalid parameters.
+TR4,4,PRKey4,File4.mp4,video/mp4,1200,400,Invalid parameters.
+TR5,5,PRKey5,File5.pdf,application/pdf,1400,401,Unauthorized.
+TR6,6,PRKey6,File6.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document,1600,401,Unauthorized.
+TR7,7,PRKey7,File7.png,image/png,1800,404,Not Found.
+TR8,8,PRKey8,File8.gif,image/gif,2000,404,Not Found.

@@ -1,0 +1,11 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+v1.0,Cycle1,PROJ001,SuiteA,Login,200,Successful responses: OK
+v1.1,Cycle2,PROJ002,SuiteB,Logout,400,Invalid parameters
+v1.2,Cycle3,PROJ003,SuiteC,UpdateProfile,401,Unauthorized
+v1.3,Cycle4,PROJ004,SuiteD,DeleteProfile,404,Not Found
+v2.0,Cycle1,PROJ005,SuiteE,Register,200,Successful responses: OK
+v2.1,Cycle2,PROJ006,SuiteA,Unregister,400,Invalid parameters
+v2.2,Cycle3,PROJ007,SuiteB,Login,401,Unauthorized
+v2.3,Cycle4,PROJ008,SuiteC,Logout,404,Not Found
+v3.0,Cycle1,PROJ009,SuiteD,UpdateProfile,200,Successful responses: OK
+v3.1,Cycle2,PROJ010,SuiteE,DeleteProfile,400,Invalid parameters
