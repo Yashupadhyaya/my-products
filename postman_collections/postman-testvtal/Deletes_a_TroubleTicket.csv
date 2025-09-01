@@ -1,0 +1,13 @@
+id,statusCode,scenario
+1,200,Success
+2,400,Bad Request
+3,401,Unauthorized
+4,403,Forbidden - Scope Not Permitted
+5,404,Not Found
+6,406,Bad Request
+7,412,Not Acceptable
+8,423,Locked
+9,429,Too Many Requests - Exceeded Quota
+10,500,Internal Server Error
+11,503,Service Unavailable
+12,504,Gateway Timeout
