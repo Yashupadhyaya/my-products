@@ -1,0 +1,4 @@
+email,jobTitle,name,id,statusCode,scenario
+john.smith@acme-corp.com,System Analyst,John Smith,d290f1ee-6c54-4b01-90e6-d701748f0851,201,employee created
+random.email@example.com,Random Job Title,Random Name,abcdefg-1234-hijk-5678-lmnopqr,400,invalid input, object invalid
+another.random.email@example.com,Another Job Title,Another Name,uvwxy-9876-zabc-5432-kdefghi,409,an existing employee already exists
