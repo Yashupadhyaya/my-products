@@ -1,0 +1,5 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+prj123,"API test","Testing payload details",Bug,"Requirement not linked","Requirement Key-2 is not linked",Task,200,Success
+prj456,"API validation","Validating payload",Task,"Requirement linked","Requirement Key-1 has been linked",Bug,200,Success
+prj789,"Random API test","Random test case",Bug,"Unlinked Requirement","Unlinked requirement with random Key-3",Task,401,Unauthorized
+prj321,"Random API validation","Testing with random values",Task,"Linked random requirement","Linked requirement with random Key-4",Bug,401,Unauthorized
