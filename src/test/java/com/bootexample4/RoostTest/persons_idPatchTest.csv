@@ -1,0 +1,11 @@
+initials,firstName,middleName,lastName,birthDate,birthPlace,phone,email,postalCode,houseNumber,houseNumberPostfix,countryCode,reference
+AB,Arthur,Bennett,Kingley,1972-01-12,London,1234567890,arthur.kingley@example.com,AB12,12,A,UK,UUID-1
+CD,Carrie,Doe,Smith,1965-05-25,New York,2345678910,carrie.do@example.com,BC34,45,B,USA,UUID-2
+EF,Edward,Frank,Moore,1985-02-14,Berlin,3456789120,edward.frank@example.com,CD56,78,C,DE,UUID-3
+GH,George,Harry,Adams,1977-03-29,Paris,4567891230,george.adams@example.com,DE78,90,D,FR,UUID-4
+IJ,Irene,Jenner,Brown,1994-04-18,Tokyo,5678912340,irene.jenner@example.com,EF90,12,E,JP,UUID-5
+KL,Katie,Lope,Collins,1988-09-20,Sydney,6789123450,katie.collins@example.com,FG12,34,F,AU,UUID-6
+MN,Michael,Nelson,Jensen,1992-08-07,Beijing,7891234560,michael.jensen@example.com,GH34,56,G,CN,UUID-7
+OP,Oscar,Peters,Wright,1980-07-11,Delhi,8912345670,oscar.wright@example.com,HI56,78,H,IN,UUID-8
+QR,Quincy,Richards,Martin,1975-11-26,Cape Town,9123456780,quincy.martin@example.com,IJ78,90,I,ZA,UUID-9
+ST,Sarah,Taylor,Miller,1962-10-24,Mexico City,1234567891,sarah.miller@example.com,JK90,12,J,MX,UUID-10

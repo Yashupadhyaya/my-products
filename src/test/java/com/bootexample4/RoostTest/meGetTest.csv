@@ -1,0 +1,11 @@
+ID,FirstName,LastName,Email,Age,Gender,Country,DOB,Status,SignUpDate
+1,John,Doe,johndoe1@mail.com,32,Male,USA,1989-06-30,Active,2020-01-15
+2,Mary,Smith,marysmith1@mail.com,41,Female,Canada,1980-11-15,Active,2019-06-25
+3,James,Brown,jamesbrown1@mail.com,26,Male,UK,1995-02-20,Inactive,2017-05-10
+4,Jane,Davis,janedavis1@mail.com,29,Female,Australia,1992-10-12,Active,2018-07-15
+5,Robert,Jones,robertjones1@mail.com,36,Male,USA,1985-04-05,Active,2019-07-20
+6,Linda,Johnson,lindajohnson1@mail.com,34,Female,Canada,1987-07-19,Inactive,2017-04-24
+7,Michael,Miller,michaelmiller1@mail.com,40,Male,UK,1981-12-14,Active,2020-07-12
+8,Patricia,Wilson,patriciawilson1@mail.com,45,Female,Australia,1976-03-27,Active,2019-08-14
+9,John,Taylor,johntaylor1@mail.com,27,Male,USA,1994-09-23,Inactive,2018-01-20
+10,Laura,Moore,lauramoore1@mail.com,30,Female,Canada,1991-05-08,Active,2020-02-28
