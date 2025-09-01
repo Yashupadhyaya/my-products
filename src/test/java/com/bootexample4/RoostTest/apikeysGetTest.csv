@@ -1,0 +1,11 @@
+userID,userName,email,age,country,registrationDate,isActive
+1,JohnDoe,johndoe@gmail.com,35,USA,2022-01-01,true
+2,JaneSmith,janesmith@yahoo.com,28,UK,2021-11-30,true
+3,ChrisBrown,chrisbrown@hotmail.com,40,Australia,2020-02-15,false
+4,AliceJackson,alicejackson@gmail.com,22,USA,2022-01-30,true
+5,RobertJohnson,robertjohnson@yahoo.com,45,Canada,2019-08-20,false
+6,EmilyDavis,emilydavis@gmail.com,32,UK,2022-02-01,true
+7,DavidMiller,davidmiller@hotmail.com,40,USA,2021-01-15,false
+8,AvaWilliams,avawilliams@gmail.com,26,Australia,2022-03-01,true
+9,MichaelBrown,michaelbrown@yahoo.com,38,USA,2022-01-01,false
+10,EmmaWilson,emmawilson@gmail.com,27,UK,2021-11-30,true
