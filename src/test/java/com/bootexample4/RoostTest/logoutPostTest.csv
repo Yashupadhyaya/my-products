@@ -1,0 +1,11 @@
+id,email,username,password,first_name,last_name,gender,age,birthdate,country,phone,is_active
+1,email@example.com,username1,password1,John,Doe,Male,25,1997-03-08,United States,+1234567890,True
+2,email@example.com,username2,password2,Jane,Doe,Female,30,1992-08-15,Canada,+1234567891,True
+3,email@example.com,username3,password3,Michael,Jones,Male,35,1987-12-24,United Kingdom,+1234567892,True
+4,email@example.com,username4,password4,Sarah,Miller,Female,40,1982-06-01,Germany,+1234567893,True
+5,email@example.com,username5,password5,William,Davis,Male,45,1977-09-12,France,+1234567894,True
+6,email@example.com,username6,password6,Jennifer,Wilson,Female,50,1972-03-19,Spain,+1234567895,True
+7,email@example.com,username7,password7,David,Johnson,Male,55,1967-08-26,Italy,+1234567896,True
+8,email@example.com,username8,password8,Elizabeth,Roberts,Female,60,1962-02-03,Netherlands,+1234567897,True
+9,email@example.com,username9,password9,Richard,Brown,Male,65,1957-07-10,Poland,+1234567898,True
+10,email@example.com,username10,password10,Linda,Walker,Female,70,1952-01-17,Australia,+1234567899,True

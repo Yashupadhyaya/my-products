@@ -1,0 +1,11 @@
+user_id,first_name,last_name,gender,age,email,phone_number,subscription_status,last_login_date,plan_type,payment_method
+1,John,Doe,Male,30,johndoe@example.com,+1234567890,Active,2023-03-08 14:32:17,Premium,Credit Card
+2,Jane,Smith,Female,25,janesmith@example.com,+1987654321,Active,2023-03-10 11:45:23,Basic,PayPal
+3,Michael,Jones,Male,45,michaeljones@example.com,+1456789012,Active,2023-03-09 18:21:45,Premium,Debit Card
+4,Sarah,Miller,Female,32,sarahmiller@example.com,+1789012345,Active,2023-03-11 09:58:34,Basic,Credit Card
+5,William,Johnson,Male,28,williamjohnson@example.com,+1654321098,Active,2023-03-08 21:14:07,Premium,PayPal
+6,Elizabeth,Walker,Female,40,elizabethwalker@example.com,+1234567890,Active,2023-03-10 16:23:41,Basic,Debit Card
+7,Matthew,Brown,Male,35,matthewbrown@example.com,+1987654321,Active,2023-03-09 23:34:58,Premium,Credit Card
+8,Emily,Garcia,Female,22,emilygarcia@example.com,+1456789012,Active,2023-03-11 13:06:12,Basic,PayPal
+9,Benjamin,Mitchell,Male,42,benjaminmitchell@example.com,+1789012345,Active,2023-03-08 08:47:29,Premium,Debit Card
+10,Olivia,Davis,Female,29,oliviadavis@example.com,+1654321098,Active,2023-03-10 03:59:16,Basic,Credit Card

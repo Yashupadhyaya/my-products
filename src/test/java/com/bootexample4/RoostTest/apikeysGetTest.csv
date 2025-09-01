@@ -1,0 +1,11 @@
+id,name,age,profession,city,country,gender,date
+1,John Doe,35,Software Engineer,New York,USA,Male,2023-01-01
+2,Jane Smith,28,Marketing Manager,London,UK,Female,2023-01-02
+3,Michael Jones,42,Doctor,Paris,France,Male,2023-01-03
+4,Sarah Miller,30,Teacher,Berlin,Germany,Female,2023-01-04
+5,William Brown,25,Student,Madrid,Spain,Male,2023-01-05
+6,Emily Green,38,Lawyer,Rome,Italy,Female,2023-01-06
+7,Matthew Davis,32,Accountant,Amsterdam,Netherlands,Male,2023-01-07
+8,Olivia Wilson,23,Nurse,Copenhagen,Denmark,Female,2023-01-08
+9,James Anderson,45,Chef,Stockholm,Sweden,Male,2023-01-09
+10,Jessica Taylor,36,Architect,Vienna,Austria,Female,2023-01-10

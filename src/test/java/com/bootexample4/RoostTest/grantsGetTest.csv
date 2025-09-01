@@ -1,0 +1,11 @@
+user_id,name,email,phone_number,date_of_birth,gender,country,city,occupation,salary
+1,John Smith,john@example.com,0123456789,1980-01-01,Male,USA,New York,Software Engineer,100000
+2,Jane Doe,jane@example.com,0123456789,1985-03-08,Female,Canada,Toronto,Doctor,200000
+3,Michael Jones,michael@example.com,0123456789,1990-05-15,Male,UK,London,Teacher,50000
+4,Sarah Miller,sarah@example.com,0123456789,1995-07-22,Female,Germany,Berlin,Student,20000
+5,William Johnson,william@example.com,0123456789,2000-09-29,Male,France,Paris,Chef,70000
+6,Elizabeth Walker,elizabeth@example.com,0123456789,2005-12-06,Female,Australia,Sydney,Nurse,60000
+7,Matthew Brown,matthew@example.com,0123456789,1975-02-13,Male,Japan,Tokyo,Businessman,150000
+8,Emily Green,emily@example.com,0123456789,1980-04-20,Female,China,Beijing,Engineer,90000
+9,Benjamin White,benjamin@example.com,0123456789,1985-06-27,Male,India,Mumbai,Lawyer,120000
+10,Olivia Black,olivia@example.com,0123456789,1990-08-31,Female,Brazil,Rio de Janeiro,Artist,40000
