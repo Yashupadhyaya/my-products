@@ -1,0 +1,9 @@
+channel,traceId,username,responseCode
+"web","1234","john","201"
+"app","5678","doe","400"
+"web","9101","smith","401"
+"app","1121","john","403"
+"web","3141","doe","405"
+"app","5161","smith","409"
+"web","7181","john","422"
+"app","9202","doe","500"
