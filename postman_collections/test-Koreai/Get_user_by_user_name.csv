@@ -1,0 +1,7 @@
+username,statusCode,scenario
+john_doe,200,Successful responses: OK
+max_power,400,Client error responses: Bad request
+lucy_m,404,Client error responses: Not Found
+kate_s,200,Successful responses: OK
+nash_g,400,Client error responses: Bad request
+amy_w,404,Client error responses: Not Found
