@@ -1,0 +1,11 @@
+productId,AdditionalCSVvaluInfo,id,name,description,price,statusCode
+12345,Additional Info1,1,Apple,Description of the product,20,200
+12346,Additional Info2,2,Banana,Description of the product,30,200
+12347,Additional Info3,3,Cherry,Description of the product,40,200
+12348,Additional Info4,4,Date,Description of the product,50,200
+12349,Additional Info5,5,Elderberry,Description of the product,60,200
+12350,Additional Info6,6,Fig,Description of the product,70,200
+12351,Additional Info7,7,Grape,Description of the product,80,200
+12352,Additional Info8,8,Honeydew,Description of the product,90,200
+12353,Additional Info9,9,Ice-cream,Description of the product,100,200
+12354,Additional Info10,10,Jackfruit,Description of the product,110,200

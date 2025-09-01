@@ -1,0 +1,11 @@
+productId,AdditionalCSVvaluInfo,statusCode
+1,SomeValue1,200
+2,SomeValue2,404
+3,SomeValue3,200
+4,SomeValue4,200
+5,SomeValue5,404
+6,SomeValue6,200
+7,SomeValue7,404
+8,SomeValue8,200
+9,SomeValue9,404
+10,SomeValue10,200
