@@ -1,0 +1,9 @@
+orderType,birthDate,familyName,givenName,nationality,title,individualIdentification,contactMedium,gender,middleName,partyCharacteristic,attachments,languageAbility,relatedParty,description,authType,authId,externalId,requestedCompletionDate,requestedStartDate,statusCode,scenario
+Order1,1990-02-12,Smith,John,American,Mr.,123456789,johnsmith@email.com,Male,Doe,Customer,Attachment1,English,Party1,Order created,Auth1,AuthId1,ExtId1,2022-01-01,2022-01-02,201,Created
+Order2,1975-06-24,Doe,Jane,British,Mrs.,987654321,janedoe@email.com,Female,Smith,Customer,Attachment2,English,Party2,Order not created,Auth2,AuthId2,ExtId2,2022-02-01,2022-02-02,400,Bad Request
+Order3,1988-05-30,Johnson,Jim,Canadian,Mr.,741852963,jimjohnson@email.com,Male,Jack,Customer,Attachment3,English,Party3,Unauthorized request,Auth3,AuthId3,ExtId3,2022-03-01,2022-03-02,401,Unauthorized
+Order4,1980-10-12,Williams,Wendy,Australian,Mrs.,369258147,wendywilliams@email.com,Female,White,Customer,Attachment4,English,Party4,Forbidden action,Auth4,AuthId4,ExtId4,2022-04-01,2022-04-02,403,Forbidden
+Order5,1995-11-22,Brown,Billy,South African,Mr.,963852741,billybrown@email.com,Male,Barker,Customer,Attachment5,English,Party5,Invalid request method,Auth5,AuthId5,ExtId5,2022-05-01,2022-05-02,405,Method Not allowed
+Order6,1985-03-25,Taylor,Tina,Indian,Mrs.,456789123,tinataylor@email.com,Female,Turner,Customer,Attachment6,English,Party6,Conflict in the request,Auth6,AuthId6,ExtId6,2022-06-01,2022-06-02,409,Conflict
+Order7,1998-08-08,Miller,Mike,Russian,Mr.,123654789,mikemiller@email.com,Male,Max,Customer,Attachment7,English,Party7,Invalid entity in the request,Auth7,AuthId7,ExtId7,2022-07-01,2022-07-02,422,Unprocessable Entity
+Order8,1977-07-17,Wilson,Wanda,Chinese,Mrs.,951357486,wandawilson@email.com,Female,Wu,Customer,Attachment8,English,Party8,Server error,Auth8,AuthId8,ExtId8,2022-08-01,2022-08-02,500,Internal Server Error
