@@ -1,0 +1,9 @@
+version,cycleName,project-key,testsuite,name,statusCode,scenario
+1.0.0,CycleName,DE-TR-1,TestSuite1,Login,200,OK
+1.0.0,CycleName,DE-TR-1,TestSuite2,Logout,400,Invalid parameters
+1.0.1,CycleTwo,DE-TR-2,TestSuite3,Registration,401,Unauthorized
+2.0.0,CycleThree,DE-TR-3,TestSuite4,Password Reset,404,Not Found
+1.2.0,CycleFour,DE-TR-4,TestSuite5,Profile Update,200,OK
+2.5.0,CycleFive,DE-TR-5,TestSuite6,Delete Account,400,Invalid parameters
+1.8.0,CycleSix,DE-TR-6,TestSuite7,Add Friends,401,Unauthorized
+3.0.0,CycleSeven,DE-TR-7,TestSuite8,Browse,404,Not Found

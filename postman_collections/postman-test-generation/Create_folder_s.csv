@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,Folder 1,NULL,200,Successfully created folder(s).
+TE,Folder inside another folder,87920ee9-a193-447f-93d7-cdbfa809dcf2,200,Successfully created folder(s).
+86d-gbs,InvalidFolder,InvalidParentID,400,Invalid parameters.
+A6W-T45,NoSuchFolder,NULL,401,Unauthorized.
+0RF-WHY,MissingFolder,NULL,404,Not Found.

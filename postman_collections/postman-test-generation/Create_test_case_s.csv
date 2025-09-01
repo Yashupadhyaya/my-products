@@ -1,0 +1,5 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+1,Project001,Folder,0873c7fe-4d9b-414d-b25f-b280f9da5aa4,http://api.callbackurl.com/1,Test001,202,The job to create the test cases was successfully scheduled.
+2,Project002,Folder inside parent folder,fb8771dc-a55f-4368-9156-8e7577a6b979,http://api.callbackurl.com/2,Test002,400,"Invalid parameters.
+3,Project003,Folder,3c9288fe-5j5e-426d-c34c-g273f6b3f548,http://api.callbackurl.com/3,Test003,401,"Unauthorized".
+4,Project004,Folder inside parent folder,9u5682yt-6h6e-526k-c67c-l723j6b1l629,http://api.callbackurl.com/4,Test004,404,"Not Found".
