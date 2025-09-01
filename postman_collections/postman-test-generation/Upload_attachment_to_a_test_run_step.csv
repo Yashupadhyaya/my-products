@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+"TR-123",1,"PR-456","log1.txt","text/plain",200,200,"Success"
+"TR-124",2,"PR-457","log2.txt","text/plain",200,400,"Invalid parameters."
+"TR-125",3,"PR-458","log3.txt","text/plain",200,401,"Unauthorized."
+"TR-126",4,"PR-459","log4.txt","text/plain",200,404,"Not Found."
+"TR-127",5,"PR-460","log5.txt","text/plain",200,200,"Success"
+"TR-128",6,"PR-461","log6.txt","text/plain",200,400,"Invalid parameters."
+"TR-129",7,"PR-462","log7.txt","text/plain",200,401,"Unauthorized."
+"TR-130",8,"PR-463","log8.txt","text/plain",200,404,"Not Found."

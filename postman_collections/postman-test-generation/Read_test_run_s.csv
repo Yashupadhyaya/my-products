@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","CycleName","1.0.0","1d52398e-56aa-4ed3-aad5-5ef6e9017ff5","Folder","DE-1",200,"Successful responses: OK"
+2,0,"XYZ1234","CycleName2","2.0.0","2f51247d-68aa-3ef2-aab5-6efa9office3d6","Folder inside parent folder","XYZ-1",400,"Invalid parameters"
+2,0,"ABCD5678","CycleName3","3.0.0","3g52398e-56ab-4ed4-aada-5ef6e907ccf7","Folder","ABCD-1",401,"Unauthorized"
+2,0,"EFGH9101","CycleName4","4.0.0","4h52398e-56ac-4ed5-aada-5ef6e911ddff","Folder inside parent folder","EFGH-1",404,"Not Found"

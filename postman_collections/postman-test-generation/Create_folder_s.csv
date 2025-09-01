@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder 1", ,200,"Successfully created folder(s)."
+TE,"Folder inside another folder",7267214e-b753-4522-995f-db0cb83f93d7,200,"Successfully created folder(s)."
+z2T3D,"Folder x5n8z3", ,400,"Invalid parameters."
+Ax509b,"Folder z635xj",8922521k-b362-453b-a627-j674ks90,401,"Unauthorized."
+Wr021y,"Folder dsk24f",hjs584j3-b573-458l-943c-k720mn56,404,"Not Found."

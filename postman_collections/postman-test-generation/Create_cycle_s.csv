@@ -1,0 +1,5 @@
+project-key,name,assignee,plannedStartDate,plannedEndDate,fields,version,1.name,1.assignee,1.plannedStartDate,1.plannedEndDate,1.fields,1.version,statusCode,scenario
+ABC123,"My Cycle",JohnDoe,NA,NA,NA,"1.0.0","My Second Cycle",JohnDoe,"2025-04-28T07:21:25.1837478Z","2025-04-29T07:21:25.1837475Z",NA,"UNVERSIONED",200,"Successful responses: OK"
+ABC456,randomname,randomassignee,randomdate,randomdate,randomfields,randomversion,randomname,randomassignee,randomdate,randomdate,randomfields,randomversion,400,"Invalid parameters"
+ABC789,randomname,randomassignee,randomdate,randomdate,randomfields,randomversion,randomname,randomassignee,randomdate,randomdate,randomfields,randomversion,401,Unauthorized
+XYZ321,randomname,randomassignee,randomdate,randomdate,randomfields,randomversion,randomname,randomassignee,randomdate,randomdate,randomfields,randomversion,404,"Not Found"

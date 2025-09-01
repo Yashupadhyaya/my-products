@@ -1,0 +1,7 @@
+stepIndex,test-run-key,project-key,issueKey,1.issueKey,statusCode,scenario
+1,'run-123','proj-456','Key-1','Key-2',200,'Success'
+2,'run-789','proj-012','Key-3','Key-4',401,'Unauthorized'
+3,'run-345','proj-678','Key-5','Key-6',200,'Success'
+4,'run-901','proj-234','random-1','random-2',403,'Unauthorized'
+5,'run-567','proj-890','random-3','random-4',200,'Success'
+6,'run-222','proj-333','random-5','random-6',401,'Unauthorized'

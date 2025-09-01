@@ -1,0 +1,6 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"ID-1"^|"Proj-1"^|"Issue-1"^|"Issue-1.1"^|200^|"Success"
+"ID-2"^|"Proj-2"^|"Issue-2"^|"Issue-2.1"^|200^|"Success"
+"ID-3"^|"Proj-3"^|"Issue-3"^|"Issue-3.1"^|200^|"Success"
+"ID-4"^|"Proj-4"^|"Issue-4"^|"Issue-4.1"^|401^|"Unauthorized"
+"ID-5"^|"Proj-5"^|"Issue-5"^|"Issue-5.1"^|401^|"Unauthorized"

@@ -1,0 +1,5 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+swagger_API_1,"This is a test summary","This is a test description",bug,"Nested summary 1","Nested description 1",improvement,200,Success
+swagger_API_2,"Another test summary","Another test description",story,"Nested summary 2","Nested description 2",bug,401,"Unauthorized"
+swagger_API_3,"Yet another test summary","Yet another test description",task,"Nested summary 3","Nested description 3",story,200,Success
+swagger_API_4,"Final test summary","Final test description",bug,"Nested summary 4","Nested description 4",improvement,401,"Unauthorized"

@@ -1,0 +1,11 @@
+keys,limit,offset,statusCode,scenario
+"PK",1,0,200,"Successful responses: OK"
+"ABCD",100,5,400,"Invalid parameters"
+"EFGH",150,10,401,"Unauthorized"
+"IJKL",200,15,404,"Not Found"
+"MNOP",250,20,200,"Successful responses: OK"
+"QRST",300,25,400,"Invalid parameters"
+"UVWX",350,30,401,"Unauthorized"
+"YZAB",400,35,404,"Not Found"
+"CDEF",450,40,200,"Successful responses: OK"
+"GHIJ",500,45,400,"Invalid parameters"
