@@ -1,0 +1,11 @@
+RequestBody^|^statusCode
+{"id": "3e7c7881-633a-4c99-857c-13fb45968176", "jobTitle": "Software Engineer", "name": "John Doe", "email": "john.doe@example.com"}^|^201
+{"id": "b3b33b5f-6451-4a5e-b625-af6b82b46028", "jobTitle": "Project Manager", "name": "Jane Smith", "email": "jane.smith@example.com"}^|^400
+{"id": "7c4a8d09-ca61-4fae-a89e-20b3477661a7", "jobTitle": "Data Analyst", "name": "Alice Johnson", "email": "alice.johnson@example.com"}^|^409
+{"id": "5f2c3532-1111-2222-3333-444455556666", "jobTitle": "Sales Manager", "name": "Bob Williams", "email": "bob.williams@example.com"}^|^201
+{"id": "6dcd4ce0-df8e-4b70-8e8e-5e8e7e66b6ee", "jobTitle": "HR Specialist", "name": "Charlie Brown", "email": "charlie.brown@example.com"}^|^400
+{"id": "7f8c6e06-e8f8-41ef-9f88-56f88e8f8f8f", "jobTitle": "Marketing Director", "name": "David Davis", "email": "david.davis@example.com"}^|^409
+{"id": "8a9b9c9d-9e9f-9a9b-9c9d-9d9e9f9a9b9c", "jobTitle": "Product Manager", "name": "Emily Evans", "email": "emily.evans@example.com"}^|^201
+{"id": "9b8a7c6d-5e4f-3a2b-1c0d-0e1f2a3b4c5d", "jobTitle": "IT Support", "name": "Frank Foster", "email": "frank.foster@example.com"}^|^400
+{"id": "ac4a8d09-ba61-1fae-c89e-10b3477661a7", "jobTitle": "Accountant", "name": "Grace Green", "email": "grace.green@example.com"}^|^409
+{"id": "bd3b3b5f-c451-2a5e-d625-cf6b82b46028", "jobTitle": "Operations Manager", "name": "Henry Harris", "email": "henry.harris@example.com"}^|^201
