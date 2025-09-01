@@ -1,0 +1,879 @@
+{
+  "name" : "products",
+  "sessioninfo" : {
+    "id" : "Aman-ec05568e",
+    "start" : "1717639833953",
+    "dump" : "1717639834884"
+  },
+  "package" : [ {
+    "name" : "com/bootexample4/products/repository",
+    "class" : {
+      "name" : "com/bootexample4/products/repository/ProductRepository",
+      "sourcefilename" : "ProductRepository.java"
+    },
+    "sourcefile" : {
+      "name" : "ProductRepository.java"
+    }
+  }, {
+    "name" : "com/bootexample4/products",
+    "class" : {
+      "name" : "com/bootexample4/products/ProductsApplication",
+      "sourcefilename" : "ProductsApplication.java",
+      "method" : [ {
+        "name" : "<init>",
+        "desc" : "()V",
+        "line" : "7",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "3",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "main",
+        "desc" : "([Ljava/lang/String;)V",
+        "line" : "10",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "5",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "2",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      } ],
+      "counter" : [ {
+        "type" : "INSTRUCTION",
+        "missed" : "8",
+        "covered" : "0"
+      }, {
+        "type" : "LINE",
+        "missed" : "3",
+        "covered" : "0"
+      }, {
+        "type" : "COMPLEXITY",
+        "missed" : "2",
+        "covered" : "0"
+      }, {
+        "type" : "METHOD",
+        "missed" : "2",
+        "covered" : "0"
+      }, {
+        "type" : "CLASS",
+        "missed" : "1",
+        "covered" : "0"
+      } ]
+    },
+    "sourcefile" : {
+      "name" : "ProductsApplication.java",
+      "line" : [ {
+        "nr" : "7",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "10",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "11",
+        "mi" : "1",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      } ],
+      "counter" : [ {
+        "type" : "INSTRUCTION",
+        "missed" : "8",
+        "covered" : "0"
+      }, {
+        "type" : "LINE",
+        "missed" : "3",
+        "covered" : "0"
+      }, {
+        "type" : "COMPLEXITY",
+        "missed" : "2",
+        "covered" : "0"
+      }, {
+        "type" : "METHOD",
+        "missed" : "2",
+        "covered" : "0"
+      }, {
+        "type" : "CLASS",
+        "missed" : "1",
+        "covered" : "0"
+      } ]
+    },
+    "counter" : [ {
+      "type" : "INSTRUCTION",
+      "missed" : "8",
+      "covered" : "0"
+    }, {
+      "type" : "LINE",
+      "missed" : "3",
+      "covered" : "0"
+    }, {
+      "type" : "COMPLEXITY",
+      "missed" : "2",
+      "covered" : "0"
+    }, {
+      "type" : "METHOD",
+      "missed" : "2",
+      "covered" : "0"
+    }, {
+      "type" : "CLASS",
+      "missed" : "1",
+      "covered" : "0"
+    } ]
+  }, {
+    "name" : "com/bootexample4/products/model",
+    "class" : {
+      "name" : "com/bootexample4/products/model/Product",
+      "sourcefilename" : "Product.java",
+      "method" : [ {
+        "name" : "<init>",
+        "desc" : "()V",
+        "line" : "9",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "0",
+          "covered" : "3"
+        }, {
+          "type" : "LINE",
+          "missed" : "0",
+          "covered" : "1"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "0",
+          "covered" : "1"
+        }, {
+          "type" : "METHOD",
+          "missed" : "0",
+          "covered" : "1"
+        } ]
+      }, {
+        "name" : "getId",
+        "desc" : "()Ljava/lang/Long;",
+        "line" : "22",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "3",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "setId",
+        "desc" : "(Ljava/lang/Long;)V",
+        "line" : "26",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "4",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "2",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "getName",
+        "desc" : "()Ljava/lang/String;",
+        "line" : "30",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "3",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "setName",
+        "desc" : "(Ljava/lang/String;)V",
+        "line" : "34",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "4",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "2",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "getDescription",
+        "desc" : "()Ljava/lang/String;",
+        "line" : "38",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "0",
+          "covered" : "3"
+        }, {
+          "type" : "LINE",
+          "missed" : "0",
+          "covered" : "1"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "0",
+          "covered" : "1"
+        }, {
+          "type" : "METHOD",
+          "missed" : "0",
+          "covered" : "1"
+        } ]
+      }, {
+        "name" : "setDescription",
+        "desc" : "(Ljava/lang/String;)V",
+        "line" : "42",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "0",
+          "covered" : "4"
+        }, {
+          "type" : "LINE",
+          "missed" : "0",
+          "covered" : "2"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "0",
+          "covered" : "1"
+        }, {
+          "type" : "METHOD",
+          "missed" : "0",
+          "covered" : "1"
+        } ]
+      }, {
+        "name" : "getPrice",
+        "desc" : "()D",
+        "line" : "46",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "3",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "setPrice",
+        "desc" : "(D)V",
+        "line" : "50",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "4",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "2",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      } ],
+      "counter" : [ {
+        "type" : "INSTRUCTION",
+        "missed" : "21",
+        "covered" : "10"
+      }, {
+        "type" : "LINE",
+        "missed" : "9",
+        "covered" : "4"
+      }, {
+        "type" : "COMPLEXITY",
+        "missed" : "6",
+        "covered" : "3"
+      }, {
+        "type" : "METHOD",
+        "missed" : "6",
+        "covered" : "3"
+      }, {
+        "type" : "CLASS",
+        "missed" : "0",
+        "covered" : "1"
+      } ]
+    },
+    "sourcefile" : {
+      "name" : "Product.java",
+      "line" : [ {
+        "nr" : "9",
+        "mi" : "0",
+        "ci" : "3",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "22",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "26",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "27",
+        "mi" : "1",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "30",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "34",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "35",
+        "mi" : "1",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "38",
+        "mi" : "0",
+        "ci" : "3",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "42",
+        "mi" : "0",
+        "ci" : "3",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "43",
+        "mi" : "0",
+        "ci" : "1",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "46",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "50",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "51",
+        "mi" : "1",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      } ],
+      "counter" : [ {
+        "type" : "INSTRUCTION",
+        "missed" : "21",
+        "covered" : "10"
+      }, {
+        "type" : "LINE",
+        "missed" : "9",
+        "covered" : "4"
+      }, {
+        "type" : "COMPLEXITY",
+        "missed" : "6",
+        "covered" : "3"
+      }, {
+        "type" : "METHOD",
+        "missed" : "6",
+        "covered" : "3"
+      }, {
+        "type" : "CLASS",
+        "missed" : "0",
+        "covered" : "1"
+      } ]
+    },
+    "counter" : [ {
+      "type" : "INSTRUCTION",
+      "missed" : "21",
+      "covered" : "10"
+    }, {
+      "type" : "LINE",
+      "missed" : "9",
+      "covered" : "4"
+    }, {
+      "type" : "COMPLEXITY",
+      "missed" : "6",
+      "covered" : "3"
+    }, {
+      "type" : "METHOD",
+      "missed" : "6",
+      "covered" : "3"
+    }, {
+      "type" : "CLASS",
+      "missed" : "0",
+      "covered" : "1"
+    } ]
+  }, {
+    "name" : "com/bootexample4/products/controller",
+    "class" : {
+      "name" : "com/bootexample4/products/controller/ProductController",
+      "sourcefilename" : "ProductController.java",
+      "method" : [ {
+        "name" : "<init>",
+        "desc" : "()V",
+        "line" : "14",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "3",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "getAllProducts",
+        "desc" : "()Ljava/util/List;",
+        "line" : "21",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "4",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "createProduct",
+        "desc" : "(Lcom/bootexample4/products/model/Product;)Lcom/bootexample4/products/model/Product;",
+        "line" : "26",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "6",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "getProductById",
+        "desc" : "(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;",
+        "line" : "31",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "11",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "3",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "updateProduct",
+        "desc" : "(Ljava/lang/Long;Lcom/bootexample4/products/model/Product;)Lorg/springframework/http/ResponseEntity;",
+        "line" : "38",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "13",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "2",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "deleteProduct",
+        "desc" : "(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;",
+        "line" : "49",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "12",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "2",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "lambda$deleteProduct$2",
+        "desc" : "(Lcom/bootexample4/products/model/Product;)Lorg/springframework/http/ResponseEntity;",
+        "line" : "50",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "7",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "2",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "lambda$updateProduct$1",
+        "desc" : "(Lcom/bootexample4/products/model/Product;Lcom/bootexample4/products/model/Product;)Lorg/springframework/http/ResponseEntity;",
+        "line" : "39",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "22",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "5",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      }, {
+        "name" : "lambda$getProductById$0",
+        "desc" : "(Lcom/bootexample4/products/model/Product;)Lorg/springframework/http/ResponseEntity;",
+        "line" : "32",
+        "counter" : [ {
+          "type" : "INSTRUCTION",
+          "missed" : "4",
+          "covered" : "0"
+        }, {
+          "type" : "LINE",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "COMPLEXITY",
+          "missed" : "1",
+          "covered" : "0"
+        }, {
+          "type" : "METHOD",
+          "missed" : "1",
+          "covered" : "0"
+        } ]
+      } ],
+      "counter" : [ {
+        "type" : "INSTRUCTION",
+        "missed" : "82",
+        "covered" : "0"
+      }, {
+        "type" : "LINE",
+        "missed" : "17",
+        "covered" : "0"
+      }, {
+        "type" : "COMPLEXITY",
+        "missed" : "9",
+        "covered" : "0"
+      }, {
+        "type" : "METHOD",
+        "missed" : "9",
+        "covered" : "0"
+      }, {
+        "type" : "CLASS",
+        "missed" : "1",
+        "covered" : "0"
+      } ]
+    },
+    "sourcefile" : {
+      "name" : "ProductController.java",
+      "line" : [ {
+        "nr" : "14",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "21",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "26",
+        "mi" : "6",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "31",
+        "mi" : "6",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "32",
+        "mi" : "5",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "33",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "38",
+        "mi" : "9",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "39",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "40",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "41",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "42",
+        "mi" : "6",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "43",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "44",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "49",
+        "mi" : "8",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "50",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "51",
+        "mi" : "3",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      }, {
+        "nr" : "52",
+        "mi" : "4",
+        "ci" : "0",
+        "mb" : "0",
+        "cb" : "0"
+      } ],
+      "counter" : [ {
+        "type" : "INSTRUCTION",
+        "missed" : "82",
+        "covered" : "0"
+      }, {
+        "type" : "LINE",
+        "missed" : "17",
+        "covered" : "0"
+      }, {
+        "type" : "COMPLEXITY",
+        "missed" : "9",
+        "covered" : "0"
+      }, {
+        "type" : "METHOD",
+        "missed" : "9",
+        "covered" : "0"
+      }, {
+        "type" : "CLASS",
+        "missed" : "1",
+        "covered" : "0"
+      } ]
+    },
+    "counter" : [ {
+      "type" : "INSTRUCTION",
+      "missed" : "82",
+      "covered" : "0"
+    }, {
+      "type" : "LINE",
+      "missed" : "17",
+      "covered" : "0"
+    }, {
+      "type" : "COMPLEXITY",
+      "missed" : "9",
+      "covered" : "0"
+    }, {
+      "type" : "METHOD",
+      "missed" : "9",
+      "covered" : "0"
+    }, {
+      "type" : "CLASS",
+      "missed" : "1",
+      "covered" : "0"
+    } ]
+  } ],
+  "counter" : [ {
+    "type" : "INSTRUCTION",
+    "missed" : "111",
+    "covered" : "10"
+  }, {
+    "type" : "LINE",
+    "missed" : "29",
+    "covered" : "4"
+  }, {
+    "type" : "COMPLEXITY",
+    "missed" : "17",
+    "covered" : "3"
+  }, {
+    "type" : "METHOD",
+    "missed" : "17",
+    "covered" : "3"
+  }, {
+    "type" : "CLASS",
+    "missed" : "2",
+    "covered" : "1"
+  } ]
+}
