@@ -1,0 +1,11 @@
+email,statusCode
+JohnDoe@email.com,200
+JaneSmith@email.com,404
+PeterParker@email.com,302
+TonyStark@email.com,500
+ClarkKent@email.com,200
+BruceWayne@email.com,400
+NatashaRomanoff@email.com,404
+JamesBond@email.com,302
+LukeSkywalker@email.com,500
+HanSolo@email.com,200

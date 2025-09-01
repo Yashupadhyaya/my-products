@@ -1,0 +1,11 @@
+id,reference,startDate,endDate,credentialUrl,statusCode
+c10504e3-4bb5-4c4a-9a3b-528833637c6f,FTY1234,2022-03-01,2022-12-31,http://example.com/credential1,200
+a54904a6-3092-4a04-ad72-d769f157560b,GHD5678,2021-06-01,2022-05-30,http://example.com/credential2,200
+6ad97070-56cf-48a5-bc79-2f6e78e37231,POL9087,2022-01-01,2022-12-01,http://example.com/credential3,500
+de209s40-78cf-43a9-bd22-2fa78ea37242,QWZ5672,2021-07-01,2022-06-30,http://example.com/credential4,200
+e209s501-17cf-43a3-bc88-2f678ef37261,XCV1256,2020-08-01,2022-07-31,http://example.com/credential5,400
+ab78s411-12df-32a9-bc19-2r67s8t37292,KLJ9632,2021-02-01,2022-01-31,http://example.com/credential6,200
+ab656511-34rt-23a7-ad18-2d67b8r37271,TYU5453,2022-10-01,2023-09-30,http://example.com/credential7,400
+cd6a9701-56cr-48a1-ba79-2f6e78ea37321,KGB9087,2021-05-01,2022-04-30,http://example.com/credential8,200
+aac20941-89vf-48a3-bd24-2fa78ea37312,WED2348,2020-09-01,2021-08-31,http://example.com/credential9,500
+daa40s20-65cf-69a6-be79-2f6e78ea37391,ZXC9638,2022-04-01,2023-03-31,http://example.com/credential10,200

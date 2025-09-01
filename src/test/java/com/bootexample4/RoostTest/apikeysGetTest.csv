@@ -1,0 +1,11 @@
+User_ID,Name,Email,Phone,Birth_Date,Registration_Date,User_Status
+1001,John Doe,johndoe@mail.com,1234567890,1990-02-02,2018-06-01,Active
+1002,Jane Smith,janesmith@mail.com,1234567891,1995-03-03,2019-07-02,Inactive
+1003,Robert Johnson,rjohnson@mail.com,1234567892,1990-04-04,2018-08-03,Active
+1004,Laura Davis,ldavis@mail.com,1234567893,1995-05-05,2019-09-04,Inactive
+1005,Mike Miller,mmiller@mail.com,1234567894,1990-06-06,2018-10-05,Active
+1006,Sarah Carter,scarter@mail.com,1234567895,1995-07-07,2019-11-06,Inactive
+1007,James Wilson,jwilson@mail.com,1234567896,1990-08-08,2018-12-07,Active
+1008,Jessica Moore,jmoore@mail.com,1234567897,1995-09-09,2020-01-08,Inactive
+1009,Daniel Thomas,dthomas@mail.com,1234567898,1990-10-10,2020-02-09,Active
+1010,Emma Brown,ebrown@mail.com,1234567899,1995-11-11,2020-03-10,Inactive

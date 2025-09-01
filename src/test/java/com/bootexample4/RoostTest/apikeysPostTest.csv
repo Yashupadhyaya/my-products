@@ -1,0 +1,11 @@
+userId,firstName,lastName,email,age,birthday,city,country
+1,John,Doe,johndoe@gmail.com,32,1989-02-12,New York,USA
+2,Mary,Smith,marysmith@hotmail.com,45,1976-05-31,London,UK
+3,James,Brown,jamesbrown@yahoo.com,50,1971-08-15,Sydney,Australia
+4,Linda,Johnson,lindajohnson@mail.com,28,1993-11-09,Toronto,Canada
+5,Robert,Taylor,roberttaylor@gmail.com,20,2001-07-22,Berlin,Germany
+6,Patricia,Jones,patriciajones@aol.com,35,1986-06-05,Moscow,Russia
+7,Michael,Miller,michaelmiller@mail.com,40,1981-03-16,Munich,Germany
+8,Elizabeth,Davis,elizabethdavis@yahoo.com,60,1961-12-02,Paris,France
+9,William,Anderson,williamanderson@hotmail.com,25,1996-09-25,Tokyo,Japan
+10,Jennifer,Thomas,jenniferthomas@gmail.com,29,1992-10-16,Shanghai,China

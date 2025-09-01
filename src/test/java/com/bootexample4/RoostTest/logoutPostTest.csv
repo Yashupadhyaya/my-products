@@ -1,0 +1,11 @@
+userID,firstName,lastName,emailAddress,gender,dateOfBirth,city,state,postalCode,country
+1,John,Doe,johndoe@gmail.com,Male,1990-02-15,New York,New York,10001,USA
+2,Jane,Smith,janesmith@yahoo.com,Female,1985-07-23,Los Angeles,California,90001,USA
+3,Bob,Johnson,bob.johnson@hotmail.com,Male,1988-05-12,Houston,Texas,77001,USA
+4,Alice,Williams,alice.williams@gmail.com,Female,1991-11-30,Chicago,Illinois,60601,USA
+5,Charlie,Brown,charliebrown@yahoo.com,Male,1986-09-07,Phoenix,Arizona,85001,USA
+6,Emily,Davis,emilydavis@hotmail.com,Female,1992-04-18,Philadelphia,Pennsylvania,19019,USA
+7,Michael,Miller,michael.miller@gmail.com,Male,1987-08-14,San Antonio,Texas,78006,USA
+8,Elizabeth,Wilson,elizabethwilson@yahoo.com,Female,1989-12-21,San Diego,California,92037,USA
+9,William,Moore,william.moore@hotmail.com,Male,1990-03-17,Dallas,Texas,75001,USA
+10,Emma,Taylor,emma.taylor@gmail.com,Female,1985-01-31,San Jose,California,95002,USA
