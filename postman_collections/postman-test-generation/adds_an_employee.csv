@@ -1,0 +1,10 @@
+email,jobTitle,name,id,statusCode,scenario
+johndoe@example.com,Software Developer,"John Doe",1,201,"employee created"
+janedoe@example.com,Product Manager,"Jane Doe",2,201,"employee created"
+adamsmith@sample.com,System Analyst,"Adam Smith",3,201,"employee created"
+random@random.com,"Invalid Job","Invalid Name",invalid,400,"invalid input, object invalid"
+dummy@dummy.com,"Dummy Job","Dummy Name",dummy,400,"invalid input, object invalid"
+invalidvalue@invalid.com,"Invalid Value","Invalid Value",invalidvalue,400,"invalid input, object invalid"
+johndoe@example.com,Software Developer,"John Doe",1,409,"an existing employee already exists"
+janedoe@example.com,Product Manager,"Jane Doe",2,409,"an existing employee already exists"
+adamsmith@sample.com,System Analyst,"Adam Smith",3,409,"an existing employee already exists"

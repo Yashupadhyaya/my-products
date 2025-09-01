@@ -1,0 +1,6 @@
+id,statusCode,scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851,200,Successful operation
+9341a22b-7339-4f89-9a97-d6c71132ca2f,404,Not found
+b3291a8c-4b2a-4952-83b8-396e831d14a2,200,Successful operation
+c7345a6c-5f68-4fe0-bd4f-81839452c941,404,Not found
+f560a7f8-68a3-4f2d-9a46-6df789c17c62,200,Successful operation
