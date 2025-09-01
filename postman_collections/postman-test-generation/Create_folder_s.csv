@@ -1,0 +1,6 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder 1","",200,Successfully created folder(s).
+TE,"Folder inside another folder",f1b76f2f-d6b8-434e-bf84-0c43d953c6e2,200,Successfully created folder(s).
+"BAD_DATA","Any name","",400,Invalid parameters.
+"UNAUTHORIZED_DATA","Any name","",401,Unauthorized.
+"NOT_FOUND_DATA","Any name","",404,Not Found.

@@ -1,0 +1,12 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1","5c4a638a-11e7-4c6e-aa17-69169d4a2ed5",2,0,"TE",200,"Successfully get folder(s)."
+"Folder inside another folder","85ef463b-9d18-47f8-8690-cdd68066dbdd",2,0,"TE",200,"Successfully get folder(s)."
+
+"Folder 3","7b3a6e30-4f7e-43fb-91cc-709f0275e782",5,5,"PB",400,"Invalid parameters."
+"Folder 4","22d638da-a3a7-711e-83g5-80128g034fg7",6,2,"SP",400,"Invalid parameters."
+
+"Folder X","a5487a62-1d4c-4a8a-8f90-3c918faba651",3,1,"DL",401,"Unauthorized."
+"Folder Y","eea2fc5b-d8bd-44e2-913c-c6b03a136d11",7,4,"KL",401,"Unauthorized."
+
+"Folder Z1","452a1a52-3fe8-4aa5-8f48-5c338faba625",4,0,"MG",404,"Not Found."
+"Folder Z2","541bdeb1-61e3-4556-92e0-72fc1fc198cb",8,3,"RC",404,"Not Found."
