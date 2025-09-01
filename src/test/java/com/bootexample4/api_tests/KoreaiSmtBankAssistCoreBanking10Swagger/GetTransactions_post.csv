@@ -1,0 +1,2 @@
+botId,accountId,Authorization,koreUserId,X_Auth_token,X_CORRELATION_ID,customerId,accountNumber,category,startDate,endDate,status,transactionAmount
+"bot123","acc456","AUTH_TOKEN","user789","auth123","1234567890","1045300","['1045301']","[{'codeType': 'MCC', 'value': [['5811', '5814']], 'source': 'Internal'}]","2021-04-01","2021-04-30","Posted","{'amount': {'gt': 1000}, 'currency': 'USD'}"
