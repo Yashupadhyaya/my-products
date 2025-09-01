@@ -1,0 +1,6 @@
+stepIndex,test-run-key,project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+1,TR-001,PJ-001,"Issue Summary A","Issue Description A",Bug,"Issue Summary B","Issue Description B",Task,200,"Success"
+2,TR-002,PJ-002,"Issue Summary C","Issue Description C",Bug,"Issue Summary D","Issue Description D",Task,200,"Success"
+3,TR-003,PJ-003,"Issue Summary E","Issue Description E",Bug,"Issue Summary F","Issue Description F",Task,401,"Unauthorized"
+4,TR-004,PJ-004,"Issue Summary G","Issue Description G",Bug,"Issue Summary H","Issue Description H",Task,401,"Unauthorized"
+5,TR-005,PJ-005,"Issue Summary I","Issue Description I",Bug,"Issue Summary J","Issue Description J",Task,200,"Success"

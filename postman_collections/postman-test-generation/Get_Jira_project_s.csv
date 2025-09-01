@@ -1,0 +1,9 @@
+keys,limit,offset,statusCode,scenario
+"PK",1,0,200,"Successful responses: OK"
+"abc",10,50,400,"Invalid parameters"
+"XYZ",5,20,401,"Unauthorized"
+"LMN",3,0,404,"Not Found"
+"SDE",2,10,200,"Successful responses: OK"
+"WER",50,0,400,"Invalid parameters"
+"UJI",7,30,401,"Unauthorized"
+"FRT",10,0,404,"Not Found"

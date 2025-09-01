@@ -1,0 +1,11 @@
+job-id,project-key,statusCode,scenario
+1234,A123,200,Successfully retrieved the test creation job status.
+2345,B234,400,Invalid parameters
+3456,C345,401,Unauthorized
+4567,D456,404,Not Found
+5678,E567,200,Successfully retrieved the test creation job status.
+6789,F678,400,Invalid parameters
+7890,G789,401,Unauthorized
+8901,H890,404,Not Found
+9012,I901,200,Successfully retrieved the test creation job status.
+0123,J012,400,Invalid parameters

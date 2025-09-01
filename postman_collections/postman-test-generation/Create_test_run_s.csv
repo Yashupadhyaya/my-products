@@ -1,0 +1,9 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+DE-TR-1,1.0.0,CycleName,\User\TestFolder,yes,1,200,Successful responses: OK
+DE-TR-2,2.0.0,Cycle2,\User\TestFolder2,no,4,400,Invalid parameters
+XYZ-TR-1,3.1.0,Cycle3,\User\TestFolder3,yes,2,401,Unauthorized
+ABC-TR-1,4.2.0,Cycle4,\Admin\TestFolder,no,5,404,Not Found
+RST-TR-1,5.3.0,Cycle5,\Admin\TestFolder2,yes,3,200,Successful responses: OK
+FGH-TR-1,6.4.0,Cycle6,\User\TestFolder4,no,6,400,Invalid parameters
+LMO-TR-1,7.5.0,Cycle7,\Admin\TestFolder3,yes,7,401,Unauthorized
+PQR-TR-1,8.6.0,Cycle8,\User\TestFolder5,no,8,404,Not Found
