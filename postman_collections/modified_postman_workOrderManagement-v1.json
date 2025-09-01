@@ -1,0 +1,937 @@
+{
+  "item": [
+    {
+      "id": "f96febc6-e96b-4361-9998-79bf8b365f14",
+      "name": "listener",
+      "item": [
+        {
+          "id": "6a6c4f7c-8bba-482f-bf06-4d66a505c716",
+          "name": "Alteração do status da atividade de campo.",
+          "request": {
+            "name": "Alteração do status da atividade de campo.",
+            "description": {},
+            "url": {
+              "path": [
+                "listener",
+                "workOrderStateChangeEvent"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phonenumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "ecaefe50-3755-4a3f-8a47-3e8f9b9de4df",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"S\",\n    \"code\": 200,\n    \"message\": \"Ok\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a3397113-a7a9-4e11-943d-3cb60c13fd4b",
+              "name": "Bad Request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 400,\n    \"message\": \"Bad Request\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "af81b6cf-a021-4da9-b363-5b63ae9a9f47",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 401,\n    \"message\": \"Unauthorized\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8e95be51-5b93-43b1-bb32-2a33e76d19bf",
+              "name": "Forbidden - Scope Not Permitted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 403,\n    \"message\": \"Forbidden - Scope Not Permitted\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fcc75537-f331-4438-a2a8-cdd356a2eed4",
+              "name": "Not Found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 404,\n    \"message\": \"Not Found\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e4528d4b-a2bb-4882-8e94-e4b5a84f5f92",
+              "name": "Too Many Requests - Exceeded Quota",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 429,\n    \"message\": \"Too Many Requests - Exceeded Quota\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "74ff4777-e221-4f28-9c3d-40aa00722ab6",
+              "name": "Internal Server Error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"T\",\n    \"code\": 500,\n    \"message\": \"Internal Server Error\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "04fc8520-9bde-4251-acb8-55e3833d992d",
+              "name": "Service Unavailable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Service Unavailable",
+              "code": 503,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"T\",\n    \"code\": 503,\n    \"message\": \"Service Unavailable\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3179c044-cd98-4c61-b2c1-118b3bb4c196",
+              "name": "Gateway Timeout",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderStateChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Gateway Timeout",
+              "code": 504,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"T\",\n    \"code\": 504,\n    \"message\": \"Gateway Timeout\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-testvtal using AI Type Open AI and AI Model gpt-4o\n\n\nTest generated for /listener/workOrderStateChangeEvent for http method type post in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Success\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n        pm.test('Response has the `control` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`control`)){\n                if(pm.expect(ld.get(pm.response.json(), `control`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `control`, null)).to.equal(\"object\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `control.type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`control.type`)){\n                if(pm.expect(ld.get(pm.response.json(), `control.type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `control.type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('control.type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"control.type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `control.message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`control.message`)){\n                if(pm.expect(ld.get(pm.response.json(), `control.message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `control.message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `control.code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`control.code`)){\n                if(pm.expect(ld.get(pm.response.json(), `control.code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `control.code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 400){\n    pm.test(\"Bad Request\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 401){\n    pm.test(\"Unauthorized\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 403){\n    pm.test(\"Forbidden - Scope Not Permitted\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Forbidden\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 404){\n    pm.test(\"Not Found\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 429){\n    pm.test(\"Too Many Requests - Exceeded Quota\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Too Many Requests\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 500){\n    pm.test(\"Internal Server Error\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Internal Server Error\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 503){\n    pm.test(\"Service Unavailable\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Service Unavailable\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 504){\n    pm.test(\"Gateway Timeout\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Gateway Timeout\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "228e0ab7-e701-4a35-b3b0-0a0ebf9679d7",
+          "name": "Alteração de atributos do agendamento.",
+          "request": {
+            "name": "Alteração de atributos do agendamento.",
+            "description": {},
+            "url": {
+              "path": [
+                "listener",
+                "workOrderAttributeValueChangeEvent"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phonenumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "6c660a7c-8550-4a58-bff5-9fd5c74013f2",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"S\",\n    \"code\": 200,\n    \"message\": \"Ok\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ed0c7ffb-b9ce-4235-857b-d89edc4f8650",
+              "name": "Bad Request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 400,\n    \"message\": \"Bad Request\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "628c3ced-ab29-4f7f-9aad-34c7d82cf60c",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 401,\n    \"message\": \"Unauthorized\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a40c586c-e071-4940-8ed4-f60edcbabbdc",
+              "name": "Forbidden - Scope Not Permitted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 403,\n    \"message\": \"Forbidden - Scope Not Permitted\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "70c8c018-d310-4409-98fa-927d673e8ae0",
+              "name": "Not Found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 404,\n    \"message\": \"Not Found\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "11be9f62-c11f-46c5-91c1-ad75caedbca0",
+              "name": "Too Many Requests - Exceeded Quota",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"E\",\n    \"code\": 429,\n    \"message\": \"Too Many Requests - Exceeded Quota\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a64726b2-52b3-4a99-84f0-22a14086f7a8",
+              "name": "Internal Server Error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"T\",\n    \"code\": 500,\n    \"message\": \"Internal Server Error\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a7d6669d-b2eb-45c7-890b-4a8d15ef7dcb",
+              "name": "Service Unavailable",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Service Unavailable",
+              "code": 503,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"T\",\n    \"code\": 503,\n    \"message\": \"Service Unavailable\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "13619187-e25b-4c59-b2f7-23194611f69e",
+              "name": "Gateway Timeout",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "listener",
+                    "workOrderAttributeValueChangeEvent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"notification\": {\n        \"event\": {\n            \"id\": \"{{id}}\",\n            \"name\": \"{{name}}\",\n            \"timeOccurred\": \"{{timeOccurred}}\",\n            \"timeZoneOccurred\": \"{{timeZoneOccurred}}\"\n        },\n        \"workOrder\": {\n            \"id\": \"{{workOrder.id}}\",\n            \"lifeCycleStatus\": \"{{lifeCycleStatus}}\",\n            \"associatedDocument\": \"{{associatedDocument}}\",\n            \"businessUnit\": \"{{businessUnit}}\",\n            \"operationalPriority\": \"{{operationalPriority}}\",\n            \"readyForTechnicalDispatch\": \"{{readyForTechnicalDispatch}}\",\n            \"task\": {\n                \"activityType\": \"{{activityType}}\",\n                \"category\": \"{{category}}\"\n            },\n            \"appointment\": {\n                \"appointmentStart\": \"{{appointmentStart}}\",\n                \"appointmentFinish\": \"{{appointmentFinish}}\",\n                \"bookingConfirmed\": \"{{bookingConfirmed}}\"\n            },\n            \"technician\": {\n                \"name\": \"{{technician.name}}\"\n            },\n            \"address\": {\n                \"id\": \"{{address.id}}\",\n                \"stateAbbreviation\": \"{{stateAbbreviation}}\",\n                \"city\": \"{{city}}\",\n                \"description\": \"{{description}}\"\n            },\n            \"customer\": {\n                \"name\": \"{{customer.name}}\",\n                \"subscriberId\": \"{{subscriberId}}\",\n                \"phoneNumber\": {\n                    \"phoneNumbers\": [\n                        \"{{phoneNumbers}}\"\n                    ]\n                }\n            }\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Gateway Timeout",
+              "code": 504,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"control\": {\n    \"type\": \"T\",\n    \"code\": 504,\n    \"message\": \"Gateway Timeout\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-testvtal using AI Type Open AI and AI Model gpt-4o\n\n\nTest generated for /listener/workOrderAttributeValueChangeEvent for http method type post in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Success\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n        pm.test('Response has the `control` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`control`)){\n                if(pm.expect(ld.get(pm.response.json(), `control`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `control`, null)).to.equal(\"object\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `control.type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`control.type`)){\n                if(pm.expect(ld.get(pm.response.json(), `control.type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `control.type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('control.type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"control.type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `control.message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`control.message`)){\n                if(pm.expect(ld.get(pm.response.json(), `control.message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `control.message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `control.code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`control.code`)){\n                if(pm.expect(ld.get(pm.response.json(), `control.code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `control.code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 400){\n    pm.test(\"Bad Request\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 401){\n    pm.test(\"Unauthorized\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 403){\n    pm.test(\"Forbidden - Scope Not Permitted\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Forbidden\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 404){\n    pm.test(\"Not Found\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 429){\n    pm.test(\"Too Many Requests - Exceeded Quota\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Too Many Requests\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 500){\n    pm.test(\"Internal Server Error\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Internal Server Error\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 503){\n    pm.test(\"Service Unavailable\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Service Unavailable\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n\nif (pm.response.code == 504){\n    pm.test(\"Gateway Timeout\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Gateway Timeout\");\n        pm.test('Response has the `type` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`type`)){\n                if(pm.expect(ld.get(pm.response.json(), `type`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `type`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n \n        pm.test('type to be one of enum', function(){ \n            pm.expect(ld.get(responseData, \"type\", \"\")).to.include.oneOf([\"S\",\"T\",\"E\"]);\n        })\n\n        pm.test('Response has the `message` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n                if(pm.expect(ld.get(pm.response.json(), `message`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n        pm.test('Response has the `code` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`code`)){\n                if(pm.expect(ld.get(pm.response.json(), `code`, null)).to.exist){\n                  pm.expect(typeof ld.get(pm.response.json(), `code`, null)).to.equal(\"string\");\n                }\n\n            }\n\n        })\n\n    });\n\n}\n"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "2a7aa08d-92c3-428f-81d3-a241eb21072f",
+    "name": "WorkOrderManagement",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
