@@ -1,0 +1,5 @@
+jiraFields,ttmFields,limit,nextPageToken,project-key,statusCode,scenario
+"summary,description,status,priority,labels,id,key,project,testType,customFields,items,limit,nextPageToken"^|"precondition,steps,testCaseKey,testCaseId,description,expectedResult"^|1^|"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"^|"TE"^|200^|"Successfully retrieved test cases information"
+"summary,description,status,priority,labels"^|"precondition,steps"^|"abc123"^|"zxy987654321"^|"ProjectX"^|400^|"Invalid parameters"
+"xyz,abc,123,456,789"^|"{},{}"^|"12345"^|"zxy"^|"TE"^|401^|"Unauthorized"
+"summary,description,status,priority,labels"^|"precondition,steps"^|"NaN"^|"null"^|"NotAProject"^|404^|"Not Found"
