@@ -1,0 +1,27 @@
+[
+  {
+    "sensor_id": "ABC12345",
+    "statusCode": 200,
+    "scenario": "Detailed information for a single Sensor"
+  },
+  {
+    "sensor_id": "DEF67890",
+    "statusCode": 200,
+    "scenario": "Detailed information for a single Sensor"
+  },
+  {
+    "sensor_id": "INVALID_SENSOR",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sensor_id": "123ERROR456",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sensor_id": "XYZ00000",
+    "statusCode": 200,
+    "scenario": "Detailed information for a single Sensor"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "sensor_id": "12345",
+    "statusCode": 200,
+    "scenario": "Available channels for a single Sensor"
+  },
+  {
+    "sensor_id": "67890",
+    "statusCode": 200,
+    "scenario": "Available channels for a single Sensor"
+  },
+  {
+    "sensor_id": "invalid_sensor_id",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sensor_id": "00000",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sensor_id": "!@#$%",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  }
+]

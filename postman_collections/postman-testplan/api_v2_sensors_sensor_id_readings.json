@@ -1,0 +1,37 @@
+[
+  {
+    "start": "2023-10-01T10:00:00Z",
+    "end": "2023-10-01T12:00:00Z",
+    "sensor_id": 1,
+    "statusCode": 200,
+    "scenario": "Readings for a single Sensor"
+  },
+  {
+    "start": "2023-10-01T08:00:00Z",
+    "end": "2023-10-01T09:30:00Z",
+    "sensor_id": 3,
+    "statusCode": 200,
+    "scenario": "Readings for a single Sensor"
+  },
+  {
+    "start": "invalid_start_string",
+    "end": "invalid_end_string",
+    "sensor_id": "invalid_sensor_id",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "start": "2023-10-02T14:00:00Z",
+    "end": "2023-10-02T16:00:00Z",
+    "sensor_id": 7,
+    "statusCode": 200,
+    "scenario": "Readings for a single Sensor"
+  },
+  {
+    "start": "not_a_date",
+    "end": "not_a_date",
+    "sensor_id": -123,
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  }
+]

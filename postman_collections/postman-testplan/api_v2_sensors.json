@@ -1,0 +1,37 @@
+[
+  {
+    "sort": "asc",
+    "page": "1",
+    "per": "20",
+    "statusCode": 200,
+    "scenario": "All Sensors in the system"
+  },
+  {
+    "sort": "desc",
+    "page": "2",
+    "per": "10",
+    "statusCode": 200,
+    "scenario": "All Sensors in the system"
+  },
+  {
+    "sort": "invalid_sort_option",
+    "page": "page-not-valid",
+    "per": "0",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sort": "",
+    "page": "negative_value",
+    "per": "-5",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "sort": "alpha",
+    "page": "3",
+    "per": "15",
+    "statusCode": 200,
+    "scenario": "All Sensors in the system"
+  }
+]

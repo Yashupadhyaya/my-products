@@ -1,0 +1,37 @@
+[
+  {
+    "start": "2023-10-01T08:30:00Z",
+    "end": "2023-10-01T09:30:00Z",
+    "asset_id": 101,
+    "statusCode": 200,
+    "scenario": "Readings for a single Asset"
+  },
+  {
+    "start": "",
+    "end": "invalid-date",
+    "asset_id": "asset_invalid",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "start": "2023-08-15T07:00:00Z",
+    "end": "2023-08-15T08:00:00Z",
+    "asset_id": 256,
+    "statusCode": 200,
+    "scenario": "Readings for a single Asset"
+  },
+  {
+    "start": "not_a_date",
+    "end": null,
+    "asset_id": -505,
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "start": "2023-09-21T14:45:00Z",
+    "end": "2023-09-21T15:45:00Z",
+    "asset_id": 789,
+    "statusCode": 200,
+    "scenario": "Readings for a single Asset"
+  }
+]

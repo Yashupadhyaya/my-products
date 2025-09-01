@@ -1,0 +1,32 @@
+[
+  {
+    "asset_id": "asset_12345",
+    "channel_id": "channel_98765",
+    "statusCode": 200,
+    "scenario": "Detailed channel/input information for a single Asset"
+  },
+  {
+    "asset_id": "asset_67890",
+    "channel_id": "channel_54321",
+    "statusCode": 200,
+    "scenario": "Detailed channel/input information for a single Asset"
+  },
+  {
+    "asset_id": "invalid_asset_id!",
+    "channel_id": "invalid_channel_id!",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "asset_id": "asset_abcdef",
+    "channel_id": "channel_xyz123",
+    "statusCode": 200,
+    "scenario": "Detailed channel/input information for a single Asset"
+  },
+  {
+    "asset_id": "invalid#$%^&",
+    "channel_id": "invalid%&*",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  }
+]

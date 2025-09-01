@@ -1,0 +1,47 @@
+[
+  {
+    "start": "2023-01-01T00:00:00Z",
+    "end": "2023-12-31T23:59:59Z",
+    "sort": "asc",
+    "page": "1",
+    "per": "10",
+    "statusCode": 200,
+    "scenario": "Readings for all Assets in the system with an Active or Disabled status"
+  },
+  {
+    "start": "invalid_date",
+    "end": "2023-12-31T23:59:59Z",
+    "sort": "xyz",
+    "page": "NaN",
+    "per": "0",
+    "statusCode": 400,
+    "scenario": "Invalid start or end parameter provided, or end provided without start"
+  },
+  {
+    "start": "2023-01-01T00:00:00Z",
+    "end": "2023-06-30T23:59:59Z",
+    "sort": "desc",
+    "page": "2",
+    "per": "5",
+    "statusCode": 200,
+    "scenario": "Readings for all Assets in the system with an Active or Disabled status"
+  },
+  {
+    "start": "",
+    "end": "",
+    "sort": "!@#",
+    "page": "-1",
+    "per": "test",
+    "statusCode": 401,
+    "scenario": "No valid API token/key values have been provided with the request"
+  },
+  {
+    "start": "2023-01-01T00:00:00Z",
+    "end": "2023-02-28T23:59:59Z",
+    "sort": "ascending",
+    "page": "3",
+    "per": "20",
+    "statusCode": 200,
+    "scenario": "Readings for all Assets in the system with an Active or Disabled status"
+  }
+]
