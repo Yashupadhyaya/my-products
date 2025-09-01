@@ -1,0 +1,6 @@
+status_code,response_body
+"200","""{ apiVersion: '1.0', status: 'PASS', datetime: '#string', hostInstanceId: '#uuid' }"""
+"200","""{ apiVersion: '1.0', status: 'FAIL', additionalInfo: 'Unavailable due to scheduled maintenance.', datetime: '#string', hostInstanceId: '#uuid' }"""
+"200","""{ apiVersion: '1.0', status: 'WARN', additionalInfo: 'Caching functionality unavailable.', datetime: '#string', hostInstanceId: '#uuid' }"""
+"400","""{ type: '/problem-details/types/client-id-missing', title: 'Client Id missing', status: '400', detail: 'Client Id is missing. Request header not set.', errorDateTime: '#string' }"""
+"500","""{ type: '/problem-details/types/internal-server-error', title: 'Internal Server Error', status: '500', detail: 'Internal Server Error.', errorDateTime: '#string' }"""

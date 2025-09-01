@@ -1,0 +1,6 @@
+form-type,form-instance-id,status_code,status,type,title,detail
+"type1","instance1","200","OK","ErrorType1","ErrorTitle1","ErrorDetail1"
+"type2","instance2","400","Bad Request","ErrorType2","ErrorTitle2","ErrorDetail2"
+"type3","instance3","500","Internal Server Error","ErrorType1","ErrorTitle1","ErrorDetail1"
+"type1","instance1","400","Bad Request","ErrorType2","ErrorTitle2","ErrorDetail2"
+"type2","instance2","500","Internal Server Error","ErrorType1","ErrorTitle1","ErrorDetail1"
