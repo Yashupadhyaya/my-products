@@ -1,0 +1,7 @@
+project-key,name,parentId,statusCode,scenario
+TE,"Folder 1","",200,"Successfully created folder(s)."
+TE,"Folder inside another folder","972d7f22-3e81-44d4-9f05-4d235ae0f6b6",200,"Successfully created folder(s)."
+BX12,"BadFolder"#,"93jd-s8d98-ldj",400,"Invalid parameters."
+ZX34,"BrokenFolder"*,"--no-id--",400,"Invalid parameters."
+KJ98,"IllegalAccess!","111666-abc-xycd232",401,"Unauthorized."
+GH23,"WhereAmI?","unknown-id-0000",404,"Not Found."

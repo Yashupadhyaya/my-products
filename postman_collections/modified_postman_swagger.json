@@ -1,0 +1,887 @@
+{
+  "item": [
+    {
+      "id": "26317760-7d43-46d2-8642-bafa297c3868",
+      "name": "v1",
+      "item": [
+        {
+          "id": "262f9b29-0631-44f7-addc-b9f8111a5df3",
+          "name": "projects",
+          "item": [
+            null,
+            {
+              "id": "8800903b-5a3f-4336-9ece-3a02d25bbcbd",
+              "name": "{project-key}",
+              "item": [
+                {
+                  "id": "1c487359-5645-40c0-b65f-c96d6da1283b",
+                  "name": "folders",
+                  "item": [
+                    {
+                      "id": "6ae397f4-4db8-48cb-9401-c34f2e791d18",
+                      "name": "Get folder(s).",
+                      "request": {
+                        "name": "Get folder(s).",
+                        "description": {
+                          "content": "## Get folders.\r\n            \r\n#### Query parameters to filter by:\r\n            \r\n* **name** : _(optional)_: The folder name.\r\n* **parentId** _(optional)_: The ID of the parent folder where the new folder should be located. (If not provided, only root folders will return).",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "folders"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "key": "name",
+                              "value": "{{name}}",
+                              "description": "name."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "parentId",
+                              "value": "{{parentId}}",
+                              "description": "parentId."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "limit",
+                              "value": "{{limit}}",
+                              "description": "Numeric value that determines that maximum N results will be returned"
+                            },
+                            {
+                              "disabled": false,
+                              "key": "offset",
+                              "value": "{{offset}}",
+                              "description": "Numeric value that determines that the result list will start from result #N (zero based)"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "auth": {
+                          "type": "apikey",
+                          "apikey": [
+                            {
+                              "key": "key",
+                              "value": "Authorization"
+                            },
+                            {
+                              "key": "value",
+                              "value": "{{apiKey}}"
+                            },
+                            {
+                              "key": "in",
+                              "value": "header"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "6590c5e6-3e78-4167-b23c-9a94b2dbe877",
+                          "name": "Successfully get folder(s).",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"offset\": 0,\n  \"limit\": 2,\n  \"totalCount\": 2,\n  \"items\": [\n    {\n      \"id\": \"e8f3344a-d828-481a-baa9-2dda88b68a2e\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T12:01:06.0740753Z\",\n      \"updated\": \"2025-04-29T12:01:06.0740754Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder 1\"\n    },\n    {\n      \"id\": \"e5274efa-e871-4016-91e5-76831833da5d\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T12:01:06.0740777Z\",\n      \"updated\": \"2025-04-29T12:01:06.0740777Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder inside another folder\"\n    }\n  ]\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "01fb2932-70fc-4da7-92bc-64bda102d57a",
+                          "name": "`Invalid parameters`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"bad data\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "c8088e6a-2cdf-4c5d-9e3e-8762304997f9",
+                          "name": "`Unauthorized`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"unauthorized\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "d05f8d05-b497-4221-ad05-3289f40a45b9",
+                          "name": "`Not Found`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"not found\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [
+                        {
+                          "listen": "test",
+                          "script": {
+                            "exec": [
+                              "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                            ],
+                            "type": "text/javascript"
+                          }
+                        }
+                      ],
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      }
+                    },
+                    {
+                      "id": "2ef7e4ca-bd6d-4c2f-87fa-eb72d6b7b359",
+                      "name": "Create folder(s).",
+                      "request": {
+                        "name": "Create folder(s).",
+                        "description": {
+                          "content": "## Create new folders. The body contains a list of folders to create.\r\n            \r\n#### Body fields:\r\n            \r\n* **name** : The folder name.\r\n* **parentId** _(optional)_ : The ID of the parent folder where the new folder should be located.",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "folders"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "POST",
+                        "auth": {
+                          "type": "apikey",
+                          "apikey": [
+                            {
+                              "key": "key",
+                              "value": "Authorization"
+                            },
+                            {
+                              "key": "value",
+                              "value": "{{apiKey}}"
+                            },
+                            {
+                              "key": "in",
+                              "value": "header"
+                            }
+                          ]
+                        },
+                        "body": {
+                          "mode": "raw",
+                          "raw": "[\n    {\n        \"name\": \"{{name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "cde4a88b-6a49-45cf-b977-f764c29ecc58",
+                          "name": "Successfully created folder(s).",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "[\n    {\n        \"name\": \"{{name}}\"\n    },\n    {\n        \"name\": \"{{1.name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"offset\": 0,\n  \"limit\": 2,\n  \"totalCount\": 2,\n  \"items\": [\n    {\n      \"id\": \"972d7f22-3e81-44d4-9f05-4d235ae0f6b6\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T12:01:06.0782544Z\",\n      \"updated\": \"2025-04-29T12:01:06.0782545Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder 1\"\n    },\n    {\n      \"id\": \"7c22ee19-0a44-47e5-8b87-91162aeb9739\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T12:01:06.0782567Z\",\n      \"updated\": \"2025-04-29T12:01:06.0782568Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder inside another folder\"\n    }\n  ]\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "dfcd682b-47d3-4443-9d5d-c0bf39b3b916",
+                          "name": "`Invalid parameters`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "[\n    {\n        \"name\": \"{{name}}\"\n    },\n    {\n        \"name\": \"{{1.name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"bad data\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "2ec21165-9743-472f-8165-48433195941a",
+                          "name": "`Unauthorized`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "[\n    {\n        \"name\": \"{{name}}\"\n    },\n    {\n        \"name\": \"{{1.name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"unauthorized\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "7f4d6beb-1102-460e-94d3-57d685bd8cec",
+                          "name": "`Not Found`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "[\n    {\n        \"name\": \"{{name}}\"\n    },\n    {\n        \"name\": \"{{1.name}}\",\n        \"parentId\": \"{{parentId}}\"\n    }\n]",
+                              "options": {
+                                "raw": {
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"not found\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [
+                        {
+                          "listen": "test",
+                          "script": {
+                            "exec": [
+                              "//Import necessary dependencies\nconst assert = require('chai').assert;\nconst myFunc = require('../src/myFunc.js');\n\n//Existing Test Case\ndescribe('myFunc()', function () {\n  it('should return “Hello, World!” when no parameters are provided', function() {\n    assert.equal(myFunc(), 'Hello, World!');\n  });\n});\n\n//Updated Test Case\ndescribe('myFunc(text)', function () {\n  it('should return text when one parameter is provided', function() {\n    let text = 'Artillery Test';\n    assert.equal(myFunc(text), 'Artillery Test');\n  });\n\n  it('should return “Hello, Artillery!” when the parameter is \"Artillery\"', function() {\n    assert.equal(myFunc('Artillery'), 'Hello, Artillery!');\n  });\n\n  it('should return responded error message for null parameter', function() {\n    assert.throws(() => { myFunc(null); }, Error, 'Invalid input');\n  });\n});\n"
+                            ],
+                            "type": "text/javascript"
+                          }
+                        }
+                      ],
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      }
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "652f5680-e20e-4423-953e-5ea64a9b5fd4",
+                  "name": "test-cases",
+                  "item": [
+                    null,
+                    null,
+                    null,
+                    {
+                      "id": "9a75e7fb-8a6f-498c-845f-5c6dbfd03631",
+                      "name": "{key}",
+                      "item": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                      ],
+                      "event": []
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                null,
+                {
+                  "id": "2ca7e48f-9707-4686-a577-60372fb2f06c",
+                  "name": "test-runs",
+                  "item": [
+                    null,
+                    {
+                      "id": "3207b861-5068-4366-a673-7de526a03bbe",
+                      "name": "{test-run-key}",
+                      "item": [
+                        null,
+                        null,
+                        {
+                          "id": "de2d8cd9-2045-42f7-9466-ad2fdedd5867",
+                          "name": "attachments",
+                          "item": [
+                            null,
+                            null
+                          ],
+                          "event": []
+                        },
+                        null,
+                        {
+                          "id": "4d5014a4-17d6-43e8-aedb-3f35d6a40cc1",
+                          "name": "defects",
+                          "item": [
+                            null,
+                            null
+                          ],
+                          "event": []
+                        }
+                      ],
+                      "event": []
+                    },
+                    {
+                      "id": "02535f4d-ad13-4591-b8c1-9d4b59ef3491",
+                      "name": "attachments",
+                      "item": [
+                        null,
+                        null
+                      ],
+                      "event": []
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "ce571639-4d74-4415-9bdd-e19d6f5d7141",
+                  "name": "cycles",
+                  "item": [
+                    null,
+                    null,
+                    null
+                  ],
+                  "event": []
+                },
+                null
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        },
+        {
+          "id": "7f62aba3-097e-4fdf-ac0d-ff0975522baa",
+          "name": "test-cases/search",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        },
+        null,
+        {
+          "id": "1658394c-b649-4324-a100-bdcd788533df",
+          "name": "test-runs/scheme/{schemeName}/allowed-values",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.ttm4j.tricentis.com",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "0695b839-fdbe-4175-b751-a190c35b5db6",
+    "name": "TTM for Jira",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Tricentis Test Management for Jira",
+      "type": "text/plain"
+    }
+  }
+}
