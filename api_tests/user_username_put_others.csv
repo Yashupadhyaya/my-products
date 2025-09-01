@@ -1,0 +1,11 @@
+username^|^id^|^firstName^|^lastName^|^email^|^password^|^phone^|^userStatus
+user1^|^7234^|^John^|^Doe^|^johndoe@gmail.com^|^abc123^|^1234567890^|^1
+user2^|^7235^|^Jane^|^Smith^|^janesmith@gmail.com^|^def456^|^0987654321^|^0
+user3^|^7236^|^Bob^|^Johnson^|^bobjohnson@gmail.com^|^ghi789^|^1122334455^|^1
+user4^|^7237^|^Alice^|^Williams^|^alicewilliams@gmail.com^|^jkl012^|^2233445566^|^0
+admin5^|^7238^|^Charlie^|^Brown^|^charliebrown@gmail.com^|^mno345^|^3344556677^|^1
+user6^|^na^|^Emma^|^Jones^|^emmajones@gmail.com^|^pqr678^|^4455667788^|^0
+user7^|^7239^|^Oliver^|^Taylor^|^olivertaylor@gmail.com^|^stu901^|^5566778899^|^1
+user8^|^7240^|^Chloe^|^Wilson^|^chloewilson@gmail.com^|^vwx234^|^6677889900^|^0
+user9^|^randomtext^|^Noah^|^Thomas^|^noahthomas@gmail.com^|^yzabcdef^|^7788990011^|^1
+user10^|^7241^|^Sophia^|^Johnson^|^sophiajohnson@gmail.com^|^fedcba^|^8899001122^|^0

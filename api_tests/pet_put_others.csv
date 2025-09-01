@@ -1,0 +1,11 @@
+id^|^category_id^|^category_name^|^name^|^photoUrls^|^tags_id^|^tags_name^|^status
+45^|^7^|^Pets^|^Snowball^|^https://pets.example.com/images/snowball^|^5^|^friendly^|^available
+67^|^7^|^Pets^|^Rex^|^https://pets.example.com/images/rex^|^4^|^aggressive^|^sold
+89^|^7^|^Pets^|^Fluffy^|^https://pets.example.com/images/fluffy^|^2^|^curious^|^available
+45^|^7^|^Pets^|^Max^|^https://pets.example.com/images/max^|^8^|^loyal^|^pending
+10^|^7^|^Pets^|^Fido^|^https://pets.example.com/images/fido^|^9^|^playful^|^available
+12^|^7^|^Pets^|^Buddy^|^https://pets.example.com/images/buddy^|^6^|^noisy^|^sold
+32^|^7^|^Pets^|^Daisy^|^https://pets.example.com/images/daisy^|^3^|^quiet^|^available
+33^|^7^|^Pets^|^Luna^|^https://pets.example.com/images/luna^|^7^|^energetic^|^pending
+1^|^7^|^Pets^|^Milo^|^https://pets.example.com/images/milo^|^10^|^lazy^|^available
+30^|^7^|^Pets^|^Rocky^|^https://pets.example.com/images/rocky^|^1^|^happy^|^sold

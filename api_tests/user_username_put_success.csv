@@ -1,0 +1,11 @@
+id^|^username^|^firstName^|^lastName^|^email^|^password^|^phone^|^userStatus
+1^|^user1^|^John^|^Doe^|^john.doe@sample.com^|^pass123^|^1234567890^|^1
+2^|^user2^|^Jane^|^Doe^|^jane.doe@sample.com^|^pass456^|^0987654321^|^0
+3^|^user3^|^Steve^|^Smith^|^steve.smith@sample.com^|^pass789^|^1122334455^|^1
+4^|^user4^|^Lucy^|^Johnson^|^lucy.johnson@sample.com^|^pass321^|^5566778899^|^0
+5^|^user5^|^Mike^|^Williams^|^mike.williams@sample.com^|^pass654^|^9998887776^|^1
+6^|^user6^|^Emma^|^Brown^|^emma.brown@sample.com^|^pass987^|^8887776665^|^0
+7^|^user7^|^Jake^|^Jones^|^jake.jones@sample.com^|^pass1234^|^7776665554^|^1
+8^|^user8^|^Olivia^|^Miller^|^olivia.miller@sample.com^|^pass4567^|^6665554443^|^0
+9^|^user9^|^Max^|^Davis^|^max.davis@sample.com^|^pass7890^|^5554443332^|^1
+10^|^user10^|^Sophia^|^Garcia^|^sophia.garcia@sample.com^|^pass6543^|^4443332221^|^0

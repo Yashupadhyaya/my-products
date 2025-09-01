@@ -1,0 +1,11 @@
+id^|^category.id^|^category.name^|^name^|^photoUrls^|^tags.id^|^tags.name^|^status^|^petId
+123^|^1^|^dogs^|^Rex^|^http://photos.com/rex1^|http://photos.com/rex2^|^101^|^Playful^|^available^|^1001
+124^|^2^|^cats^|^Misty^|^http://photos.com/misty1^|http://photos.com/misty2^|^102^|^Lazy^|^sold^|^1002
+125^|^3^|^birds^|^Chirpy^|^http://photos.com/chirpy1^|http://photos.com/chirpy2^|^103^|^Friendly^|^available^|^1003
+126^|^4^|^reptiles^|^Sly^|^http://photos.com/sly1^|http://photos.com/sly2^|^104^|^Calm^|^pending^|^1004
+127^|^5^|^fish^|^Bubbles^|^http://photos.com/bubbles1^|http://photos.com/bubbles2^|^105^|^Quiet^|^available^|^1005
+128^|^6^|^rodents^|^Nibbles^|^http://photos.com/nibbles1^|http://photos.com/nibbles2^|^106^|^Active^|^sold^|^1006
+129^|^7^|^horses^|^Thunder^|^http://photos.com/thunder1^|http://photos.com/thunder2^|^107^|^Strong^|^available^|^1007
+130^|^8^|^farmAnimals^|^Moo^|^http://photos.com/moo1^|http://photos.com/moo2^|^108^|^Healthy^|^pending^|^1008
+131^|^1^|^dogs^|^Spot^|^http://photos.com/spot1^|http://photos.com/spot2^|^109^|^Happy^|^available^|^1009
+132^|^2^|^cats^|^Whiskers^|^http://photos.com/whiskers1^|http://photos.com/whiskers2^|^110^|^Cuddly^|^sold^|^1010

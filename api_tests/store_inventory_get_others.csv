@@ -1,0 +1,11 @@
+invalidApiKey^|^statusCode^|^scenario
+1234567890^|^200^|^Account_Creation
+^|^400^|^Payment_attempt
+1112233445^|^200^|^Item_Purchase
+^|^500^|^Load_Items
+abcdef12345^|^404^|^User_signup
+9999999999^|^302^|^Logout
+apple12345^|^^|^Login
+A1B2C3D4E5^|^201^|^Modify_Profile
+^|^304^|^Item_update
+12345abcde^|^^|^Account_Deletion

@@ -1,0 +1,11 @@
+id^|^username^|^firstName^|^lastName^|^email^|^password^|^phone^|^userStatus
+1^|^user_john^|^John^|^Doe^|^johndoe@gmail.com^|^password1^|^1234567890^|^1
+2^|^user_bob^|^Bob^|^Marley^|^bobmarley@gmail.com^|^password2^|^0987654321^|^0
+3^|^user_alex^|^Alex^|^Smith^|^alexsmith@gmail.com^|^password3^|^1122334455^|^1
+4^|^user_jane^|^Jane^|^Doe^|^janedoe@gmail.com^|^password4^|^6677889900^|^0
+5^|^user_emma^|^Emma^|^Watson^|^emmawatson@gmail.com^|^password5^|^4455667788^|^1
+6^|^user_lucas^|^Lucas^|^Brown^|^lucasbrown@gmail.com^|^password6^|^9988776655^|^0
+7^|^user_oliver^|^Oliver^|^Williams^|^oliverwilliams@gmail.com^|^password7^|^2211334455^|^1
+8^|^user_noah^|^Noah^|^Smith^|^noahsmith@gmail.com^|^password8^|^6677990011^|^0
+9^|^user_ethan^|^Ethan^|^Johnson^|^ethanjohnson@gmail.com^|^password9^|^5544332211^|^1
+10^|^user_sophia^|^Sophia^|^Taylor^|^sophiataylor@gmail.com^|^password10^|^9988123456^|^0

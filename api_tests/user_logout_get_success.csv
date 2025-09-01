@@ -1,0 +1,11 @@
+username^|^statusCode^|^scenario
+user1^|^200^|^Login
+user2^|^200^|^Signup
+user3^|^404^|^Profile_View
+user4^|^500^|^Order_Placement
+user5^|^200^|^Checkout
+user6^|^400^|^Password_Reset
+user7^|^404^|^Logout
+user8^|^200^|^Notification_View
+user9^|^500^|^Cart_Update
+user10^|^200^|^Wishlist_View
