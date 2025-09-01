@@ -1,0 +1,2920 @@
+{
+  "item": [
+    {
+      "id": "783132d9-dc9e-4eeb-81dd-c9c657a9ea7d",
+      "name": "v1",
+      "item": [
+        {
+          "id": "6fc430bc-a75b-4fd4-932b-e1b4befb3342",
+          "name": "projects",
+          "item": [
+            {
+              "id": "0cd99024-8f51-4ad8-9f8e-d6b310e73252",
+              "name": "Get Jira project(s).",
+              "request": {
+                "name": "Get Jira project(s).",
+                "description": {
+                  "content": "## Get or retrieve Jira project(s).",
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "v1",
+                    "projects"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "key": "keys",
+                      "value": "{{keys}}",
+                      "description": "keys."
+                    },
+                    {
+                      "disabled": false,
+                      "key": "limit",
+                      "value": "{{limit}}",
+                      "description": "Numeric value that determines that maximum N results will be returned"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "offset",
+                      "value": "{{offset}}",
+                      "description": "Numeric value that determines that the result list will start from result #N (zero based)"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "auth": {
+                  "type": "apikey",
+                  "apikey": [
+                    {
+                      "key": "key",
+                      "value": "Authorization"
+                    },
+                    {
+                      "key": "value",
+                      "value": "{{apiKey}}"
+                    },
+                    {
+                      "key": "in",
+                      "value": "header"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "392031c4-0104-49f3-b38c-2cb5b05e35f5",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "v1",
+                        "projects"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "keys",
+                          "value": "{{keys}}"
+                        },
+                        {
+                          "key": "limit",
+                          "value": "{{limit}}"
+                        },
+                        {
+                          "key": "offset",
+                          "value": "{{offset}}"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: apikey",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"offset\": 0,\n  \"limit\": 1,\n  \"totalCount\": 10,\n  \"items\": [\n    {\n      \"id\": \"10000\",\n      \"key\": \"PK\",\n      \"name\": \"Project Name\",\n      \"simplified\": false,\n      \"self\": \"Project self URL\"\n    }\n  ]\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "e0b6b406-046c-4370-82bb-a1d9e176ba90",
+                  "name": "`Invalid parameters`.",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "v1",
+                        "projects"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "keys",
+                          "value": "{{keys}}"
+                        },
+                        {
+                          "key": "limit",
+                          "value": "{{limit}}"
+                        },
+                        {
+                          "key": "offset",
+                          "value": "{{offset}}"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: apikey",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"message\": \"bad data\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "8c7b106e-84be-421f-8970-6f80aa16a8f4",
+                  "name": "`Unauthorized`.",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "v1",
+                        "projects"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "keys",
+                          "value": "{{keys}}"
+                        },
+                        {
+                          "key": "limit",
+                          "value": "{{limit}}"
+                        },
+                        {
+                          "key": "offset",
+                          "value": "{{offset}}"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: apikey",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Unauthorized",
+                  "code": 401,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"message\": \"unauthorized\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "497aa06e-c053-48fa-815c-41fd221fa7cd",
+                  "name": "`Not Found`.",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "v1",
+                        "projects"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "keys",
+                          "value": "{{keys}}"
+                        },
+                        {
+                          "key": "limit",
+                          "value": "{{limit}}"
+                        },
+                        {
+                          "key": "offset",
+                          "value": "{{offset}}"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: apikey",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"message\": \"not found\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for v1/projects?keys={{keys}}&limit={{limit}}&offset={{offset}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"undefined\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `offset` field',function(){\n            pm.expect(responseData.offset).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `limit` field',function(){\n            pm.expect(responseData.limit).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `totalCount` field',function(){\n            pm.expect(responseData.totalCount).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `items` field',function(){\n            pm.expect(responseData.items).to.exist.and.to.be.a(\"object\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            {
+              "id": "cd0eab21-760d-4368-ad04-795e8c007cdf",
+              "name": "{project-key}",
+              "item": [
+                {
+                  "id": "e819643b-1245-4605-9caa-d0714137ed39",
+                  "name": "folders",
+                  "item": [
+                    {
+                      "id": "1a6f17c7-0353-4d95-a956-65ba5899e0b5",
+                      "name": "Get folder(s).",
+                      "request": {
+                        "name": "Get folder(s).",
+                        "description": {
+                          "content": "## Get folders.\r\n            \r\n#### Query parameters to filter by:\r\n            \r\n* **name** : _(optional)_: The folder name.\r\n* **parentId** _(optional)_: The ID of the parent folder where the new folder should be located. (If not provided, only root folders will return).",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "folders"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "key": "name",
+                              "value": "{{name}}",
+                              "description": "name."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "parentId",
+                              "value": "{{parentId}}",
+                              "description": "parentId."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "limit",
+                              "value": "{{limit}}",
+                              "description": "Numeric value that determines that maximum N results will be returned"
+                            },
+                            {
+                              "disabled": false,
+                              "key": "offset",
+                              "value": "{{offset}}",
+                              "description": "Numeric value that determines that the result list will start from result #N (zero based)"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "auth": {
+                          "type": "apikey",
+                          "apikey": [
+                            {
+                              "key": "key",
+                              "value": "Authorization"
+                            },
+                            {
+                              "key": "value",
+                              "value": "{{apiKey}}"
+                            },
+                            {
+                              "key": "in",
+                              "value": "header"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "70d433a4-97b4-4b34-9f4d-a6e4418c8e42",
+                          "name": "Successfully get folder(s).",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"offset\": 0,\n  \"limit\": 2,\n  \"totalCount\": 2,\n  \"items\": [\n    {\n      \"id\": \"52537f1c-03f4-40dd-9294-f620059d77d6\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T07:21:25.1698115Z\",\n      \"updated\": \"2025-04-29T07:21:25.1698116Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder 1\"\n    },\n    {\n      \"id\": \"0c6a0705-39ab-4454-b256-4b5dd569eab4\",\n      \"projectKey\": \"TE\",\n      \"created\": \"2025-04-29T07:21:25.169814Z\",\n      \"updated\": \"2025-04-29T07:21:25.169814Z\",\n      \"createdBy\": \"User\",\n      \"updatedBy\": \"User\",\n      \"index\": 0,\n      \"name\": \"Folder inside another folder\"\n    }\n  ]\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "59444d24-2b07-48c4-b3d5-94b131d7d8c4",
+                          "name": "`Invalid parameters`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"bad data\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "b73bf297-b680-4cf7-8fc8-40ec17b0319d",
+                          "name": "`Unauthorized`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"unauthorized\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "cddbce17-df86-49dd-ae3e-c61bc6d231a9",
+                          "name": "`Not Found`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "folders"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "parentId",
+                                  "value": "{{parentId}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"not found\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [
+                        {
+                          "listen": "test",
+                          "script": {
+                            "exec": [
+                              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for v1/projects/{{project-key}}/folders?name={{name}}&parentId={{parentId}}&limit={{limit}}&offset={{offset}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Successfully get folder(s).\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `offset` field',function(){\n            pm.expect(responseData.offset).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `limit` field',function(){\n            pm.expect(responseData.limit).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `totalCount` field',function(){\n            pm.expect(responseData.totalCount).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `items` field',function(){\n            pm.expect(responseData.items).to.exist.and.to.be.a(\"object\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n"
+                            ],
+                            "type": "text/javascript"
+                          }
+                        }
+                      ],
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      }
+                    },
+                    null,
+                    null
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "66ba3242-93a3-4cf4-ae68-cdc751259ff7",
+                  "name": "test-cases",
+                  "item": [
+                    {
+                      "id": "052788d3-fa42-4bd7-bb9d-9b8edb73d524",
+                      "name": "Read test case(s).",
+                      "request": {
+                        "name": "Read test case(s).",
+                        "description": {
+                          "content": "Please note that this endpoint is deprecated and will be removed in the future. Use the /test-cases/bulk endpoint instead.\r\n            \r\n## Get or retrieve information from test case(s).\r\n            \r\n#### Body fields:\r\n* **jiraFields**: a comma-separated list of Jira fields to return for each issue. Use this to retrieve a subset of fields.\r\n* **ttmFields**: a comma-separated list of Jira fields to return for each issue. Use this to retrieve a subset of fields.",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "test-cases"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "key": "jiraFields",
+                              "value": "{{jiraFields}}",
+                              "description": "A list of Jira fields to return for each issue, use it to retrieve a subset of fields. Provide a comma-separated list."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "ttmFields",
+                              "value": "{{ttmFields}}",
+                              "description": "A list of TTM fields to return for each issue, use it to retrieve a subset of fields. Provide a comma-separated list."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "limit",
+                              "value": "{{limit}}",
+                              "description": "Numeric value that determines that maximum N results will be returned"
+                            },
+                            {
+                              "disabled": false,
+                              "key": "offset",
+                              "value": "{{offset}}",
+                              "description": "Numeric value that determines that the result list will start from result #N (zero based)"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "auth": {
+                          "type": "apikey",
+                          "apikey": [
+                            {
+                              "key": "key",
+                              "value": "Authorization"
+                            },
+                            {
+                              "key": "value",
+                              "value": "{{apiKey}}"
+                            },
+                            {
+                              "key": "in",
+                              "value": "header"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "49df8503-57e2-4814-87ff-36d413d46408",
+                          "name": "Successfully retrieved test cases information.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-cases"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "jiraFields",
+                                  "value": "{{jiraFields}}"
+                                },
+                                {
+                                  "key": "ttmFields",
+                                  "value": "{{ttmFields}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"offset\": 0,\n  \"limit\": 1,\n  \"totalCount\": 100,\n  \"items\": [\n    {\n      \"id\": \"7129e1f6-1a8e-4968-b785-4f924910443c\",\n      \"key\": \"TE-1\",\n      \"project\": \"TE\",\n      \"testType\": \"Manual\",\n      \"fields\": {\n        \"summary\": \"Test 1 status\",\n        \"description\": \"Test 1 description\",\n        \"status\": \"Backlog\",\n        \"priority\": \"High\",\n        \"labels\": [\n          \"My Label\"\n        ]\n      },\n      \"customFields\": [\n        {\n          \"key\": \"customField_10001\",\n          \"name\": \"A custom field\",\n          \"value\": \"Some value\"\n        }\n      ],\n      \"ttmFields\": {\n        \"precondition\": \"A precondition\",\n        \"steps\": [\n          {\n            \"testCaseKey\": \"TE-2\",\n            \"testCaseId\": \"10000\"\n          },\n          {\n            \"description\": \"Login\",\n            \"expectedResult\": \"Login should work\"\n          },\n          {\n            \"description\": \"Logout\",\n            \"expectedResult\": \"Logout should work\"\n          },\n          {\n            \"testCaseKey\": \"TE-5\",\n            \"testCaseId\": \"10004\",\n            \"deleted\": true\n          }\n        ]\n      },\n      \"requirements\": [\n        \"TE-10\",\n        \"TE-11\"\n      ],\n      \"folder\": \"parent folder/child folder\",\n      \"folderId\": \"5e8821b6-a46b-462c-ad15-83a1cef9a4b6\"\n    },\n    {\n      \"id\": \"be921ee5-5f37-46b0-803c-35db8482ca84\",\n      \"key\": \"TE-2\",\n      \"project\": \"TE\",\n      \"testType\": \"Automated\",\n      \"fields\": {\n        \"summary\": \"An automated test\",\n        \"description\": \"Automated test description\",\n        \"status\": \"Backlog\",\n        \"priority\": \"High\",\n        \"labels\": [\n          \"My Label\"\n        ]\n      },\n      \"requirements\": [\n        \"TE-12\",\n        \"TE-13\"\n      ],\n      \"folder\": \"automated tests/feature1\",\n      \"folderId\": \"49568c6c-9500-4466-badc-ff29f31264ac\"\n    }\n  ]\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "9a0dd49a-5f03-47ed-b40d-c066decda96f",
+                          "name": "`Invalid parameters.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-cases"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "jiraFields",
+                                  "value": "{{jiraFields}}"
+                                },
+                                {
+                                  "key": "ttmFields",
+                                  "value": "{{ttmFields}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"bad data\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "fe99e1ef-5a34-4617-aa13-4996746b0f6b",
+                          "name": "`Unauthorized`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-cases"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "jiraFields",
+                                  "value": "{{jiraFields}}"
+                                },
+                                {
+                                  "key": "ttmFields",
+                                  "value": "{{ttmFields}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"unauthorized\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "5a84831e-e89c-4d22-8975-28a8f682e67b",
+                          "name": "`Not Found`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-cases"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "jiraFields",
+                                  "value": "{{jiraFields}}"
+                                },
+                                {
+                                  "key": "ttmFields",
+                                  "value": "{{ttmFields}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"not found\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [
+                        {
+                          "listen": "test",
+                          "script": {
+                            "exec": [
+                              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for v1/projects/{{project-key}}/test-cases?jiraFields={{jiraFields}}&ttmFields={{ttmFields}}&limit={{limit}}&offset={{offset}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Successfully retrieved test cases information.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `offset` field',function(){\n            pm.expect(responseData.offset).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `limit` field',function(){\n            pm.expect(responseData.limit).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `totalCount` field',function(){\n            pm.expect(responseData.totalCount).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `items` field',function(){\n            pm.expect(responseData.items).to.exist.and.to.be.a(\"object\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n"
+                            ],
+                            "type": "text/javascript"
+                          }
+                        }
+                      ],
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      }
+                    },
+                    null,
+                    null,
+                    {
+                      "id": "e61ec8aa-8a51-4c8d-be47-e739cf3486dd",
+                      "name": "{key}",
+                      "item": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                      ],
+                      "event": []
+                    },
+                    {
+                      "id": "c4055a0c-5a28-4763-bcce-3937d7d9f198",
+                      "name": "Read test case(s).",
+                      "request": {
+                        "name": "Read test case(s).",
+                        "description": {
+                          "content": "## Get or retrieve information from test case(s).\r\n            \r\n#### Body fields:\r\n* **jiraFields**: a comma-separated list of Jira fields to return for each issue. Use this to retrieve a subset of fields.\r\n* **ttmFields**: a comma-separated list of Jira fields to return for each issue. Use this to retrieve a subset of fields.",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "test-cases",
+                            "bulk"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "key": "jiraFields",
+                              "value": "{{jiraFields}}",
+                              "description": "A list of Jira fields to return for each issue, use it to retrieve a subset of fields. Provide a comma-separated list."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "ttmFields",
+                              "value": "{{ttmFields}}",
+                              "description": "A list of TTM fields to return for each issue, use it to retrieve a subset of fields. Provide a comma-separated list."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "limit",
+                              "value": "{{limit}}",
+                              "description": "Numeric value that determines that maximum N results will be returned"
+                            },
+                            {
+                              "disabled": false,
+                              "key": "nextPageToken",
+                              "value": "{{nextPageToken}}",
+                              "description": "The cursor for pagination: To get the next page, pass this parameter; to get the first page, omit this parameter. The parameter is returned from the previous page."
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "auth": {
+                          "type": "apikey",
+                          "apikey": [
+                            {
+                              "key": "key",
+                              "value": "Authorization"
+                            },
+                            {
+                              "key": "value",
+                              "value": "{{apiKey}}"
+                            },
+                            {
+                              "key": "in",
+                              "value": "header"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "a6f0e547-b4ad-4f66-a4f3-2bc45418c882",
+                          "name": "Successfully retrieved test cases information.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-cases",
+                                "bulk"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "jiraFields",
+                                  "value": "{{jiraFields}}"
+                                },
+                                {
+                                  "key": "ttmFields",
+                                  "value": "{{ttmFields}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "nextPageToken",
+                                  "value": "{{nextPageToken}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"limit\": 1,\n  \"nextPageToken\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n  \"items\": [\n    {\n      \"id\": \"2e5b965f-641b-411f-bb49-fb2feb09a75a\",\n      \"key\": \"TE-1\",\n      \"project\": \"TE\",\n      \"testType\": \"Manual\",\n      \"fields\": {\n        \"summary\": \"Test 1 status\",\n        \"description\": \"Test 1 description\",\n        \"status\": \"Backlog\",\n        \"priority\": \"High\",\n        \"labels\": [\n          \"My Label\"\n        ]\n      },\n      \"customFields\": [\n        {\n          \"key\": \"customField_10001\",\n          \"name\": \"A custom field\",\n          \"value\": \"Some value\"\n        }\n      ],\n      \"ttmFields\": {\n        \"precondition\": \"A precondition\",\n        \"steps\": [\n          {\n            \"testCaseKey\": \"TE-2\",\n            \"testCaseId\": \"10000\"\n          },\n          {\n            \"description\": \"Login\",\n            \"expectedResult\": \"Login should work\"\n          },\n          {\n            \"description\": \"Logout\",\n            \"expectedResult\": \"Logout should work\"\n          },\n          {\n            \"testCaseKey\": \"TE-5\",\n            \"testCaseId\": \"10004\",\n            \"deleted\": true\n          }\n        ]\n      },\n      \"requirements\": [\n        \"TE-10\",\n        \"TE-11\"\n      ],\n      \"folder\": \"parent folder/child folder\",\n      \"folderId\": \"757fdff8-df8c-44e8-ad66-80722aec5db1\"\n    },\n    {\n      \"id\": \"3a1b8c66-e023-47dc-96ca-a2f8a50ad113\",\n      \"key\": \"TE-2\",\n      \"project\": \"TE\",\n      \"testType\": \"Automated\",\n      \"fields\": {\n        \"summary\": \"An automated test\",\n        \"description\": \"Automated test description\",\n        \"status\": \"Backlog\",\n        \"priority\": \"High\",\n        \"labels\": [\n          \"My Label\"\n        ]\n      },\n      \"requirements\": [\n        \"TE-12\",\n        \"TE-13\"\n      ],\n      \"folder\": \"automated tests/feature1\",\n      \"folderId\": \"1fe6c23c-c19c-40d7-bb0f-a1255264c063\"\n    }\n  ]\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "32f8c298-58bd-4068-8b65-51f14a81fab4",
+                          "name": "`Invalid parameters.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-cases",
+                                "bulk"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "jiraFields",
+                                  "value": "{{jiraFields}}"
+                                },
+                                {
+                                  "key": "ttmFields",
+                                  "value": "{{ttmFields}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "nextPageToken",
+                                  "value": "{{nextPageToken}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"bad data\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "db2ebe99-c039-43cb-b185-8c13f9cbf4c8",
+                          "name": "`Unauthorized`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-cases",
+                                "bulk"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "jiraFields",
+                                  "value": "{{jiraFields}}"
+                                },
+                                {
+                                  "key": "ttmFields",
+                                  "value": "{{ttmFields}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "nextPageToken",
+                                  "value": "{{nextPageToken}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"unauthorized\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "40082780-8f0a-4062-8b0e-6164d74e29ee",
+                          "name": "`Not Found`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-cases",
+                                "bulk"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "jiraFields",
+                                  "value": "{{jiraFields}}"
+                                },
+                                {
+                                  "key": "ttmFields",
+                                  "value": "{{ttmFields}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "nextPageToken",
+                                  "value": "{{nextPageToken}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"message\": \"not found\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [
+                        {
+                          "listen": "test",
+                          "script": {
+                            "exec": [
+                              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for v1/projects/{{project-key}}/test-cases/bulk?jiraFields={{jiraFields}}&ttmFields={{ttmFields}}&limit={{limit}}&nextPageToken={{nextPageToken}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Successfully retrieved test cases information.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `limit` field',function(){\n            pm.expect(responseData.limit).to.exist.and.to.be.a(\"number\");\n          })\n\n          pm.test('Response has the `nextPageToken` field',function(){\n            pm.expect(responseData.nextPageToken).to.exist.and.to.be.a(\"string\");\n          })\n\n          pm.test('Response has the `items` field',function(){\n            pm.expect(responseData.items).to.exist.and.to.be.a(\"object\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n"
+                            ],
+                            "type": "text/javascript"
+                          }
+                        }
+                      ],
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      }
+                    }
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "0b22ae5d-14ea-4122-b4ce-b97ab043196c",
+                  "name": "Query job status.",
+                  "request": {
+                    "name": "Query job status.",
+                    "description": {
+                      "content": "## Query the status of an asynchronous job to create or import test case(s).",
+                      "type": "text/plain"
+                    },
+                    "url": {
+                      "path": [
+                        "v1",
+                        "projects",
+                        ":project-key",
+                        "jobs",
+                        ":job-id"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{job-id}}",
+                          "key": "job-id",
+                          "description": "(Required) The job ID returned from the import request endpoint."
+                        },
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{project-key}}",
+                          "key": "project-key",
+                          "description": "(Required) "
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "auth": {
+                      "type": "apikey",
+                      "apikey": [
+                        {
+                          "key": "key",
+                          "value": "Authorization"
+                        },
+                        {
+                          "key": "value",
+                          "value": "{{apiKey}}"
+                        },
+                        {
+                          "key": "in",
+                          "value": "header"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "id": "1eac5e9a-67f4-450b-a18a-ca7b542be646",
+                      "name": "Successfully retrieved the test creation job status.",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "jobs",
+                            ":job-id"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{job-id}}",
+                              "key": "job-id",
+                              "description": "(Required) The job ID returned from the import request endpoint."
+                            },
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "{{Authorization}}"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "body": "{\n  \"status\": \"Pending\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "fe4b593b-0bfe-4b51-9a7c-903fe886cf46",
+                      "name": "`Invalid parameters.",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "jobs",
+                            ":job-id"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{job-id}}",
+                              "key": "job-id",
+                              "description": "(Required) The job ID returned from the import request endpoint."
+                            },
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "{{Authorization}}"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "body": "{\n  \"message\": \"bad data\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "8049e3eb-0e13-4a78-85b1-fcae301ffa5c",
+                      "name": "`Unauthorized`.",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "jobs",
+                            ":job-id"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{job-id}}",
+                              "key": "job-id",
+                              "description": "(Required) The job ID returned from the import request endpoint."
+                            },
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "{{Authorization}}"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "Unauthorized",
+                      "code": 401,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "body": "{\n  \"message\": \"unauthorized\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    },
+                    {
+                      "id": "443a87f1-2c90-4b1f-8343-af38b0376d5a",
+                      "name": "`Not Found`.",
+                      "originalRequest": {
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "jobs",
+                            ":job-id"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{job-id}}",
+                              "key": "job-id",
+                              "description": "(Required) The job ID returned from the import request endpoint."
+                            },
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "description": {
+                              "content": "Added as a part of security scheme: apikey",
+                              "type": "text/plain"
+                            },
+                            "key": "Authorization",
+                            "value": "{{Authorization}}"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "body": "{\n  \"message\": \"not found\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [
+                    {
+                      "listen": "test",
+                      "script": {
+                        "exec": [
+                          " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for v1/projects/{{project-key}}/jobs/{{job-id}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"Successfully retrieved the test creation job status.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `status` field',function(){\n            pm.expect(responseData.status).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n"
+                        ],
+                        "type": "text/javascript"
+                      }
+                    }
+                  ],
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  }
+                },
+                {
+                  "id": "9abc3a53-b5da-4936-b12e-ae3f4a4f67b9",
+                  "name": "test-runs",
+                  "item": [
+                    null,
+                    {
+                      "id": "25f9ed8a-93bb-4c64-b2d0-a048ff7d506f",
+                      "name": "{test-run-key}",
+                      "item": [
+                        null,
+                        null,
+                        {
+                          "id": "f80e03d4-aa98-489d-a23c-a1213de28473",
+                          "name": "attachments",
+                          "item": [
+                            {
+                              "id": "2094dc8c-9e7e-41a0-ba0f-9866053cd32a",
+                              "name": "Get attachment of a test run.",
+                              "request": {
+                                "name": "Get attachment of a test run.",
+                                "description": {},
+                                "url": {
+                                  "path": [
+                                    "v1",
+                                    "projects",
+                                    ":project-key",
+                                    "test-runs",
+                                    ":test-run-key",
+                                    "attachments"
+                                  ],
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "query": [
+                                    {
+                                      "disabled": false,
+                                      "key": "limit",
+                                      "value": "{{limit}}",
+                                      "description": "Numeric value that determines that maximum N results will be returned"
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "key": "offset",
+                                      "value": "{{offset}}",
+                                      "description": "Numeric value that determines that the result list will start from result #N (zero based)"
+                                    }
+                                  ],
+                                  "variable": [
+                                    {
+                                      "disabled": false,
+                                      "type": "any",
+                                      "value": "{{test-run-key}}",
+                                      "key": "test-run-key",
+                                      "description": "(Required) Test Run Key."
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "type": "any",
+                                      "value": "{{project-key}}",
+                                      "key": "project-key",
+                                      "description": "(Required) "
+                                    }
+                                  ]
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "auth": {
+                                  "type": "apikey",
+                                  "apikey": [
+                                    {
+                                      "key": "key",
+                                      "value": "Authorization"
+                                    },
+                                    {
+                                      "key": "value",
+                                      "value": "{{apiKey}}"
+                                    },
+                                    {
+                                      "key": "in",
+                                      "value": "header"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": [
+                                {
+                                  "id": "d834690a-03fe-4b3c-b8ac-3186c65c3eba",
+                                  "name": "`Invalid parameters.",
+                                  "originalRequest": {
+                                    "url": {
+                                      "path": [
+                                        "v1",
+                                        "projects",
+                                        ":project-key",
+                                        "test-runs",
+                                        ":test-run-key",
+                                        "attachments"
+                                      ],
+                                      "host": [
+                                        "{{baseUrl}}"
+                                      ],
+                                      "query": [
+                                        {
+                                          "key": "limit",
+                                          "value": "{{limit}}"
+                                        },
+                                        {
+                                          "key": "offset",
+                                          "value": "{{offset}}"
+                                        }
+                                      ],
+                                      "variable": [
+                                        {
+                                          "disabled": false,
+                                          "type": "any",
+                                          "value": "{{test-run-key}}",
+                                          "key": "test-run-key",
+                                          "description": "(Required) Test Run Key."
+                                        },
+                                        {
+                                          "disabled": false,
+                                          "type": "any",
+                                          "value": "{{project-key}}",
+                                          "key": "project-key",
+                                          "description": "(Required) "
+                                        }
+                                      ]
+                                    },
+                                    "header": [
+                                      {
+                                        "description": {
+                                          "content": "Added as a part of security scheme: apikey",
+                                          "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "{{Authorization}}"
+                                      },
+                                      {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                      }
+                                    ],
+                                    "method": "GET",
+                                    "body": {}
+                                  },
+                                  "status": "Bad Request",
+                                  "code": 400,
+                                  "header": [
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "body": "{\n  \"message\": \"bad data\"\n}",
+                                  "cookie": [],
+                                  "_postman_previewlanguage": "json"
+                                },
+                                {
+                                  "id": "9d262fdc-97ee-4c6b-94e8-b9477059332b",
+                                  "name": "`Unauthorized.",
+                                  "originalRequest": {
+                                    "url": {
+                                      "path": [
+                                        "v1",
+                                        "projects",
+                                        ":project-key",
+                                        "test-runs",
+                                        ":test-run-key",
+                                        "attachments"
+                                      ],
+                                      "host": [
+                                        "{{baseUrl}}"
+                                      ],
+                                      "query": [
+                                        {
+                                          "key": "limit",
+                                          "value": "{{limit}}"
+                                        },
+                                        {
+                                          "key": "offset",
+                                          "value": "{{offset}}"
+                                        }
+                                      ],
+                                      "variable": [
+                                        {
+                                          "disabled": false,
+                                          "type": "any",
+                                          "value": "{{test-run-key}}",
+                                          "key": "test-run-key",
+                                          "description": "(Required) Test Run Key."
+                                        },
+                                        {
+                                          "disabled": false,
+                                          "type": "any",
+                                          "value": "{{project-key}}",
+                                          "key": "project-key",
+                                          "description": "(Required) "
+                                        }
+                                      ]
+                                    },
+                                    "header": [
+                                      {
+                                        "description": {
+                                          "content": "Added as a part of security scheme: apikey",
+                                          "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "{{Authorization}}"
+                                      },
+                                      {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                      }
+                                    ],
+                                    "method": "GET",
+                                    "body": {}
+                                  },
+                                  "status": "Unauthorized",
+                                  "code": 401,
+                                  "header": [
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "body": "{\n  \"message\": \"unauthorized\"\n}",
+                                  "cookie": [],
+                                  "_postman_previewlanguage": "json"
+                                },
+                                {
+                                  "id": "dfb764af-6f22-4e4d-8a23-412e144da9d0",
+                                  "name": "`Not Found.",
+                                  "originalRequest": {
+                                    "url": {
+                                      "path": [
+                                        "v1",
+                                        "projects",
+                                        ":project-key",
+                                        "test-runs",
+                                        ":test-run-key",
+                                        "attachments"
+                                      ],
+                                      "host": [
+                                        "{{baseUrl}}"
+                                      ],
+                                      "query": [
+                                        {
+                                          "key": "limit",
+                                          "value": "{{limit}}"
+                                        },
+                                        {
+                                          "key": "offset",
+                                          "value": "{{offset}}"
+                                        }
+                                      ],
+                                      "variable": [
+                                        {
+                                          "disabled": false,
+                                          "type": "any",
+                                          "value": "{{test-run-key}}",
+                                          "key": "test-run-key",
+                                          "description": "(Required) Test Run Key."
+                                        },
+                                        {
+                                          "disabled": false,
+                                          "type": "any",
+                                          "value": "{{project-key}}",
+                                          "key": "project-key",
+                                          "description": "(Required) "
+                                        }
+                                      ]
+                                    },
+                                    "header": [
+                                      {
+                                        "description": {
+                                          "content": "Added as a part of security scheme: apikey",
+                                          "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "{{Authorization}}"
+                                      },
+                                      {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                      }
+                                    ],
+                                    "method": "GET",
+                                    "body": {}
+                                  },
+                                  "status": "Not Found",
+                                  "code": 404,
+                                  "header": [
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "body": "{\n  \"message\": \"not found\"\n}",
+                                  "cookie": [],
+                                  "_postman_previewlanguage": "json"
+                                }
+                              ],
+                              "event": [
+                                {
+                                  "listen": "test",
+                                  "script": {
+                                    "exec": [
+                                      " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for v1/projects/{{project-key}}/test-runs/{{test-run-key}}/attachments?limit={{limit}}&offset={{offset}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n"
+                                    ],
+                                    "type": "text/javascript"
+                                  }
+                                }
+                              ],
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              }
+                            },
+                            null
+                          ],
+                          "event": []
+                        },
+                        null,
+                        {
+                          "id": "b0a2b4f5-0ddc-4b3f-afc6-153b917d7adb",
+                          "name": "defects",
+                          "item": [
+                            null,
+                            null
+                          ],
+                          "event": []
+                        }
+                      ],
+                      "event": []
+                    },
+                    {
+                      "id": "87c92ff3-349a-48fd-9b14-fd7eed25f200",
+                      "name": "attachments",
+                      "item": [
+                        {
+                          "id": "8ebd639b-cf5c-4ccb-807e-8e036309e70c",
+                          "name": "Get attachment link.",
+                          "request": {
+                            "name": "Get attachment link.",
+                            "description": {},
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "test-runs",
+                                "attachments",
+                                ":attachmentId"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{attachmentId}}",
+                                  "key": "attachmentId",
+                                  "description": "(Required) The attachment Id."
+                                },
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "auth": {
+                              "type": "apikey",
+                              "apikey": [
+                                {
+                                  "key": "key",
+                                  "value": "Authorization"
+                                },
+                                {
+                                  "key": "value",
+                                  "value": "{{apiKey}}"
+                                },
+                                {
+                                  "key": "in",
+                                  "value": "header"
+                                }
+                              ]
+                            }
+                          },
+                          "response": [
+                            {
+                              "id": "c6695305-3812-4a0d-8ba0-0f522b93b1b1",
+                              "name": "`Invalid parameters.",
+                              "originalRequest": {
+                                "url": {
+                                  "path": [
+                                    "v1",
+                                    "projects",
+                                    ":project-key",
+                                    "test-runs",
+                                    "attachments",
+                                    ":attachmentId"
+                                  ],
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "query": [],
+                                  "variable": [
+                                    {
+                                      "disabled": false,
+                                      "type": "any",
+                                      "value": "{{attachmentId}}",
+                                      "key": "attachmentId",
+                                      "description": "(Required) The attachment Id."
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "type": "any",
+                                      "value": "{{project-key}}",
+                                      "key": "project-key",
+                                      "description": "(Required) "
+                                    }
+                                  ]
+                                },
+                                "header": [
+                                  {
+                                    "description": {
+                                      "content": "Added as a part of security scheme: apikey",
+                                      "type": "text/plain"
+                                    },
+                                    "key": "Authorization",
+                                    "value": "{{Authorization}}"
+                                  },
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                              },
+                              "status": "Bad Request",
+                              "code": 400,
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "body": "{\n  \"message\": \"bad data\"\n}",
+                              "cookie": [],
+                              "_postman_previewlanguage": "json"
+                            },
+                            {
+                              "id": "4c91a6da-6972-4bc1-bc1f-ddf49982d5e7",
+                              "name": "`Unauthorized.",
+                              "originalRequest": {
+                                "url": {
+                                  "path": [
+                                    "v1",
+                                    "projects",
+                                    ":project-key",
+                                    "test-runs",
+                                    "attachments",
+                                    ":attachmentId"
+                                  ],
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "query": [],
+                                  "variable": [
+                                    {
+                                      "disabled": false,
+                                      "type": "any",
+                                      "value": "{{attachmentId}}",
+                                      "key": "attachmentId",
+                                      "description": "(Required) The attachment Id."
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "type": "any",
+                                      "value": "{{project-key}}",
+                                      "key": "project-key",
+                                      "description": "(Required) "
+                                    }
+                                  ]
+                                },
+                                "header": [
+                                  {
+                                    "description": {
+                                      "content": "Added as a part of security scheme: apikey",
+                                      "type": "text/plain"
+                                    },
+                                    "key": "Authorization",
+                                    "value": "{{Authorization}}"
+                                  },
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                              },
+                              "status": "Unauthorized",
+                              "code": 401,
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "body": "{\n  \"message\": \"unauthorized\"\n}",
+                              "cookie": [],
+                              "_postman_previewlanguage": "json"
+                            },
+                            {
+                              "id": "746cb194-b397-400f-9506-4405530e44e0",
+                              "name": "`Not Found.",
+                              "originalRequest": {
+                                "url": {
+                                  "path": [
+                                    "v1",
+                                    "projects",
+                                    ":project-key",
+                                    "test-runs",
+                                    "attachments",
+                                    ":attachmentId"
+                                  ],
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "query": [],
+                                  "variable": [
+                                    {
+                                      "disabled": false,
+                                      "type": "any",
+                                      "value": "{{attachmentId}}",
+                                      "key": "attachmentId",
+                                      "description": "(Required) The attachment Id."
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "type": "any",
+                                      "value": "{{project-key}}",
+                                      "key": "project-key",
+                                      "description": "(Required) "
+                                    }
+                                  ]
+                                },
+                                "header": [
+                                  {
+                                    "description": {
+                                      "content": "Added as a part of security scheme: apikey",
+                                      "type": "text/plain"
+                                    },
+                                    "key": "Authorization",
+                                    "value": "{{Authorization}}"
+                                  },
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                              },
+                              "status": "Not Found",
+                              "code": 404,
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "body": "{\n  \"message\": \"not found\"\n}",
+                              "cookie": [],
+                              "_postman_previewlanguage": "json"
+                            }
+                          ],
+                          "event": [
+                            {
+                              "listen": "test",
+                              "script": {
+                                "exec": [
+                                  " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for v1/projects/{{project-key}}/test-runs/attachments/{{attachmentId}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 401){\n    pm.test(\"`Unauthorized.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          pm.test('Response has the `message` field',function(){\n            pm.expect(responseData.message).to.exist.and.to.be.a(\"string\");\n          })\n\n          });\n\n        }\n"
+                                ],
+                                "type": "text/javascript"
+                              }
+                            }
+                          ],
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          }
+                        },
+                        null
+                      ],
+                      "event": []
+                    },
+                    null
+                  ],
+                  "event": []
+                },
+                {
+                  "id": "fe4e0cbb-fe84-469a-88ac-bfeb2ed1de44",
+                  "name": "cycles",
+                  "item": [
+                    null,
+                    null,
+                    {
+                      "id": "9816d66a-bb1c-47e7-994b-f9e79a705c2a",
+                      "name": "Get cycles.",
+                      "request": {
+                        "name": "Get cycles.",
+                        "description": {
+                          "content": "## Get cycle(s).\r\n##### Note: Release versions are managed in Jira.\r\n            \r\n#### Query parameter fields:\r\n* **cycle** : Provide the cycle details to filter by:\r\n    * **name** _(optional)_: filter cycles that contains name.\r\n    * **version** _(optional)_: cycle's version (if not provided the default value is 'unversioned').\r\n    * **assignee** _(optional)_: the username or email which the cycle is assigned to.",
+                          "type": "text/plain"
+                        },
+                        "url": {
+                          "path": [
+                            "v1",
+                            "projects",
+                            ":project-key",
+                            "cycles",
+                            "search"
+                          ],
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "key": "name",
+                              "value": "{{name}}",
+                              "description": "name."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "version",
+                              "value": "{{version}}",
+                              "description": "version."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "assignee",
+                              "value": "{{assignee}}",
+                              "description": "assignee."
+                            },
+                            {
+                              "disabled": false,
+                              "key": "limit",
+                              "value": "{{limit}}",
+                              "description": "Numeric value that determines that maximum N results will be returned"
+                            },
+                            {
+                              "disabled": false,
+                              "key": "offset",
+                              "value": "{{offset}}",
+                              "description": "Numeric value that determines that the result list will start from result #N (zero based)"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "disabled": false,
+                              "type": "any",
+                              "value": "{{project-key}}",
+                              "key": "project-key",
+                              "description": "(Required) "
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "method": "GET",
+                        "auth": {
+                          "type": "apikey",
+                          "apikey": [
+                            {
+                              "key": "key",
+                              "value": "Authorization"
+                            },
+                            {
+                              "key": "value",
+                              "value": "{{apiKey}}"
+                            },
+                            {
+                              "key": "in",
+                              "value": "header"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "620e390c-2308-484e-839a-cef47559ad78",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "cycles",
+                                "search"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "version",
+                                  "value": "{{version}}"
+                                },
+                                {
+                                  "key": "assignee",
+                                  "value": "{{assignee}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              },
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "[\n  {\n    \"name\": \"My Cycle\",\n    \"version\": {\n      \"name\": \"1.0.0\"\n    }\n  },\n  {\n    \"name\": \"My Second Cycle\",\n    \"plannedStartDate\": \"2025-04-28T07:21:25.2512936Z\",\n    \"plannedEndDate\": \"2025-04-29T07:21:25.251293Z\",\n    \"version\": {\n      \"name\": \"UNVERSIONED\"\n    }\n  },\n  {\n    \"name\": \"My Third Cycle\",\n    \"version\": {\n      \"name\": \"UNVERSIONED\"\n    },\n    \"fields\": [\n      {\n        \"schemeName\": \"Environments\",\n        \"allowedValueName\": \"Development\"\n      },\n      {\n        \"schemeName\": \"Builds\",\n        \"value\": \"1.9.9\"\n      }\n    ]\n  }\n]",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        },
+                        {
+                          "id": "0f50d5dd-218a-4eff-ae61-cf30edc33b73",
+                          "name": "`Invalid parameters`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "cycles",
+                                "search"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "version",
+                                  "value": "{{version}}"
+                                },
+                                {
+                                  "key": "assignee",
+                                  "value": "{{assignee}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "text/plain"
+                            }
+                          ],
+                          "body": "",
+                          "cookie": [],
+                          "_postman_previewlanguage": "text"
+                        },
+                        {
+                          "id": "91981b33-b643-4b8c-8cfc-4ded1b4c7303",
+                          "name": "Unauthorized",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "cycles",
+                                "search"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "version",
+                                  "value": "{{version}}"
+                                },
+                                {
+                                  "key": "assignee",
+                                  "value": "{{assignee}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Unauthorized",
+                          "code": 401,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "text/plain"
+                            }
+                          ],
+                          "body": "",
+                          "cookie": [],
+                          "_postman_previewlanguage": "text"
+                        },
+                        {
+                          "id": "f4302105-f948-4cc9-a13b-7ba7b1dd3620",
+                          "name": "`Not Found`.",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "v1",
+                                "projects",
+                                ":project-key",
+                                "cycles",
+                                "search"
+                              ],
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "query": [
+                                {
+                                  "key": "name",
+                                  "value": "{{name}}"
+                                },
+                                {
+                                  "key": "version",
+                                  "value": "{{version}}"
+                                },
+                                {
+                                  "key": "assignee",
+                                  "value": "{{assignee}}"
+                                },
+                                {
+                                  "key": "limit",
+                                  "value": "{{limit}}"
+                                },
+                                {
+                                  "key": "offset",
+                                  "value": "{{offset}}"
+                                }
+                              ],
+                              "variable": [
+                                {
+                                  "disabled": false,
+                                  "type": "any",
+                                  "value": "{{project-key}}",
+                                  "key": "project-key",
+                                  "description": "(Required) "
+                                }
+                              ]
+                            },
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "{{Authorization}}"
+                              }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "text/plain"
+                            }
+                          ],
+                          "body": "",
+                          "cookie": [],
+                          "_postman_previewlanguage": "text"
+                        }
+                      ],
+                      "event": [
+                        {
+                          "listen": "test",
+                          "script": {
+                            "exec": [
+                              " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test postman-test-generation using AI Type Azure Open AI and AI Model roostgpt-4-32k\n\n\nTest generated for v1/projects/{{project-key}}/cycles/search?name={{name}}&version={{version}}&assignee={{assignee}}&limit={{limit}}&offset={{offset}} for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\n\nconst ld = require('lodash');\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    var parseString = require('xml2js').parseString;\n    parseString(pm.response.body, function (err,result) {\n      if (err) {\n        console.error('Error parsing XML:', err);\n      } else {\n        responseData = result;  \n      }\n    });\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n    pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"undefined\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"OK\");\n          pm.response.to.have.header(\"Content-Type\");\n\n          });\n\n        }\n\nif (pm.response.code == 400){\n    pm.test(\"`Invalid parameters`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n      });\n\n    }\n\nif (pm.response.code == 401){\n    pm.test(\"Unauthorized\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");\n      });\n\n    }\n\nif (pm.response.code == 404){\n    pm.test(\"`Not Found`.\", function () {\n        pm.expect(pm.response.status).to.be.eql(\"Not Found\");\n      });\n\n    }\n"
+                            ],
+                            "type": "text/javascript"
+                          }
+                        }
+                      ],
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      }
+                    }
+                  ],
+                  "event": []
+                },
+                null
+              ],
+              "event": []
+            }
+          ],
+          "event": []
+        },
+        {
+          "id": "e9872c85-696b-4e0e-b82f-208e73af5884",
+          "name": "test-cases/search",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        },
+        null,
+        {
+          "id": "5309e9f4-8f4d-47f7-baed-68acd32dc9db",
+          "name": "test-runs/scheme/{schemeName}/allowed-values",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.ttm4j.tricentis.com",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "bb06d09d-f256-40fb-ac93-54f633b03850",
+    "name": "TTM for Jira",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Tricentis Test Management for Jira",
+      "type": "text/plain"
+    }
+  }
+}
