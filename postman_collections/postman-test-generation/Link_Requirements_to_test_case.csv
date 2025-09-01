@@ -1,0 +1,11 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+API-001,Project-1,ISSUE-01,ISSUE-REL-01,200,Success
+API-002,Project-2,ISSUE-02,ISSUE-REL-02,200,Success
+API-003,Project-3,ISSUE-03,ISSUE-REL-03,200,Success
+API-004,Project-4,ISSUE-04,ISSUE-REL-04,401,Unauthorized
+API-005,Project-5,ISSUE-05,ISSUE-REL-05,401,Unauthorized
+API-006,Project-6,ISSUE-06,ISSUE-REL-06,401,Unauthorized
+API-007,Project-7,ISSUE-07,ISSUE-REL-07,200,Success
+API-008,Project-8,ISSUE-08,ISSUE-REL-08,200,Success
+API-009,Project-9,ISSUE-09,ISSUE-REL-09,401,Unauthorized
+API-010,Project-10,ISSUE-10,ISSUE-REL-10,401,Unauthorized
