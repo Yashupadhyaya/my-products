@@ -1,0 +1,11 @@
+id^|^jobTitle^|^name^|^email^|^statusCode^|^scenario
+d290f1ee-6c54-4b01-90e6-d701748f0851^|^System Analyst^|^John Smith^|^john.smith@acme-corp.com^|^200^|^POST /employees
+2b5e8c93-8d60-4e87-ae7a-7c269f3e8e0d^|^Software Engineer^|^Doe Jane^|^jane.doe@acme-corp.com^|^201^|^POST /employees
+3c6ee453-62e2-4a6e-8a77-7c269f3e8e1d^|^QA Analyst^|^Robert Johnson^|^robert.johnson@acme-corp.com^|^400^|^POST /employees
+4d7ff365-73e3-4b7e-9a88-7c269f3e8e2e^|^Network Administrator^|^James Brown^|^james.brown@acme-corp.com^|^404^|^POST /employees
+5e8ff476-84f4-4c8f-ab99-7c269f3e8e3f^|^Database Administrator^|^Jennifer Davis^|^jennifer.davis@acme-corp.com^|^500^|^POST /employees
+6f9ee587-95g5-4d9g-bc10-7c269f3e8e4g^|^Web Developer^|^Patricia Wilson^|^patricia.wilson@acme-corp.com^|^502^|^POST /employees
+7gaee698-a6h6-4eah-cd21-7c269f3e8e5h^|^Mobile Developer^|^Michael Miller^|^michael.miller@acme-corp.com^|^503^|^POST /employees
+8hbee709-b7i7-4fbi-de32-7c269f3e8e6i^|^Data Analyst^|^Linda Moore^|^linda.moore@acme-corp.com^|^504^|^POST /employees
+9icff810-c8j8-4g9j-ef43-7c269f3e8e7j^|^UX Designer^|^Elizabeth Taylor^|^elizabeth.taylor@acme-corp.com^|^505^|^POST /employees
+ajdgg921-d9k9-4hak-fg54-7c269f3e8e8k^|^Technical Writer^|^David Anderson^|^david.anderson@acme-corp.com^|^506^|^POST /employees
