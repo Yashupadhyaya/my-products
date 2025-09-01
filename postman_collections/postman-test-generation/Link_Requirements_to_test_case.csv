@@ -1,0 +1,9 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+API-123,Project-1,Key-1,Key-2,200,Success
+API-124,Project-2,Key-3,Key-4,200,Success
+API-125,Project-3,Key-5,Key-6,200,Success
+API-126,Project-4,Key-7,Key-8,200,Success
+API-127,Project-5,Key-9,Key-10,401,"Unauthorized."
+API-128,Project-6,Key-11,Key-12,401,"Unauthorized."
+API-129,Project-7,Key-13,Key-14,401,"Unauthorized."
+API-130,Project-8,Key-15,Key-16,401,"Unauthorized."

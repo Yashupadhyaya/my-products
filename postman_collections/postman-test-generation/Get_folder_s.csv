@@ -1,0 +1,6 @@
+name,parentId,limit,offset,project-key,statusCode,scenario
+"Folder 1",0,2,0,"TE",200,"Successfully get folder(s)."
+"Folder inside another folder",1,2,0,"TE",200,"Successfully get folder(s)."
+"Invalid Folder Name",12,6,0,"DE",400,"Invalid parameters"
+"Unauthorized folder access",34,8,0,"UE",401,"Unauthorized"
+"Non Existent Folder",58,4,0,"SE",404,"Not Found"

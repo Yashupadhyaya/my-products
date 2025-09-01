@@ -1,0 +1,9 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+TR001,XX001,upload1.txt,text/plain,100,200,Success
+TR002,XX002,upload2.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document,500,400,Invalid parameters.
+TR003,XX003,upload3.jpg,image/jpeg,200,401,Unauthorized.
+TR004,XX004,upload4.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,300,404,Not Found.
+TR005,XX005,upload5.png,image/png,150,200,Success
+TR006,XX006,upload6.pdf,application/pdf,250,400,Invalid parameters.
+TR007,XX007,upload7.gif,image/gif,100,401,Unauthorized.
+TR008,XX008,upload8.ppt,application/vnd.ms-powerpoint,350,404,Not Found.

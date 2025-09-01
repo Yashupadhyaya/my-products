@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","17a7d18b-9079-4326-8d17-a6296e5bdf21","ec0685a1-0d91-4663-b922-7448014fd923","ad7b030c-bcc0-44ab-9a57-14cb61120f55","steps","DE-1",200,"Successful responses: OK"
+10,5,"DE-TR-2","435c67d5-bd60-40c1-bccf-57063a7c6c32","b76f5323-82c9-472c-8e75-ac1cdbdc6d71","d8a2ebac-81b5-4e92-aa4c-2ff42a401613","items","DE-2",400,"Invalid parameters"
+7,2,"DE-TR-3","60f8a32d-f948-447f-9059-a55418d6209b","3c3dd726-03f0-4a47-b5ee-4e5a8e1a1db9","f469ce8a-2d8d-427f-a485-274482b2c0ed","items","DE-3",401,"Unauthorized"
+3,1,"DE-TR-4","1f07124c-a348-4cb4-8734-4690db341f04","09a79336-c1db-42b0-8b89-f91ff4cdc1ab","3e4c5b7e-d60e-45d1-b1c5-fc7c99541404","steps","DE-4",404,"Not Found"
