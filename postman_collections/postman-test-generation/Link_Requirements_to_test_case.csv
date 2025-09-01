@@ -1,0 +1,7 @@
+key,project-key,issueKey,1.issueKey,statusCode,scenario
+"swaggerAPI01","projectSwagger","Key-2","Key-1",200,"Success"
+"swaggerAPI02","projectSwagger","Key-3","Key-101",401,"Unauthorized"
+"swaggerAPI03","projectSwagger","InvalidKey-123","Key-200",200,"Success"
+"swaggerAPI04","projectSwagger","InvalidKey-89","Key-1",401,"Unauthorized"
+"swaggerAPI05","projectSwagger","Key-2","Key-4",200,"Success"
+"swaggerAPI06","projectSwagger","InvalidKey-76","InvalidKey-77",401,"Unauthorized"

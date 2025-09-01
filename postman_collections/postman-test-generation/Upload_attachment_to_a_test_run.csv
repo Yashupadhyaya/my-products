@@ -1,0 +1,11 @@
+test-run-key,project-key,fileName,mimeType,size,statusCode,scenario
+tr1,proj1,dataFile.txt,text/plain,500,200,Success
+tr2,proj2,logDetails.txt,text/plain,700,400,Invalid parameters
+tr3,proj3,config.json,application/json,300,401,Unauthorized
+tr4,proj4,image.jpeg,image/jpeg,800,404,Not Found
+tr5,proj5,sample.png,image/png,1200,200,Success
+tr6,proj6,record.mp3,audio/mpeg,1500,400,Invalid parameters
+tr7,proj7,presentation.pptx,application/vnd.ms-powerpoint,2000,401,Unauthorized
+tr8,proj8,report.pdf,application/pdf,2500,404,Not Found
+tr9,proj9,notes.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document,1800,200,Success
+tr10,proj10,video.mp4,video/mp4,3000,400,Invalid parameters

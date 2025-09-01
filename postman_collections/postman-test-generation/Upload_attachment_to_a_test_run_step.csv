@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+"key-1",1,"proj-1","file1.txt","text/plain",50000,200,"Success"
+"key-2",2,"proj-2","file2.jpg","image/jpg",150000,400,"Invalid parameters"
+"key-3",3,"proj-3","file3.pdf","application/pdf",300000,401,"Unauthorized"
+"key-4",4,"proj-4","file4.docx","application/vnd.openxmlformats-officedocument.wordprocessingml.document",80000,404,"Not Found"
+"key-5",5,"proj-5","file5.xlsx","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",200000,200,"Success"
+"key-6",6,"proj-6","file6.png","image/png",100000,400,"Invalid parameters"
+"key-7",7,"proj-7","file7.zip","application/zip",400000,401,"Unauthorized"
+"key-8",8,"proj-8","file8.mp3","audio/mp3",600000,404,"Not Found"

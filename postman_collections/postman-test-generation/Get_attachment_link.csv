@@ -1,0 +1,4 @@
+attachmentId,project-key,statusCode,scenario
+3032a766-dc8a-4231-a43f-a394e82efeca,"ProjectA",400,"Invalid parameters"
+677ccd54-f565-4324-83bf-eba688cd7b35,"ProjectB",401,"Unauthorized"
+6dd81df3-86d9-4063-91f3-cfea2369dc57,"ProjectC",404,"Not Found"

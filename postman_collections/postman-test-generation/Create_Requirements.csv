@@ -1,0 +1,7 @@
+project-key,summary,description,issueType,1.summary,1.description,1.issueType,statusCode,scenario
+PRJ001,API payload,Fetch user details,user,API request,POST /user/details,POST,200,Success
+PRJ002,API Payload,Update user details,user,API request,PUT /user/details,PUT,401,Unauthorized
+PRJ003,API payload,Delete user details,user,API request,DELETE /user/details,DELETE,200,Success
+PRJ004,API payload,Fetch all users,user,API request,GET /users,GET,401,Unauthorized
+PRJ005,API payload,Create new user,user,API request,POST /users,POST,200,Success
+PRJ006,API Payload,Logout user,user,API request,POST /user/logout,POST,401,Unauthorized

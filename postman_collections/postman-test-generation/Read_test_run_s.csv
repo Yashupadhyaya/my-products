@@ -1,0 +1,5 @@
+limit,offset,project-key,cycles,versions,keys,expand,testCasesKeys,statusCode,scenario
+2,0,"DE-TR-1","73f8920a-4325-4fd8-b284-e0126b7c52b8","96dcf1a4-c787-4fcb-a1e8-7d9fb91ee549","78e038b6-7b3a-44cd-b38a-3b4bf893ed05",true,"DE-1",200,"Successful responses: OK"
+4,1,"BO-TS-2","abcdef00-1111-2222-b345-e06789abcd9f","789f12a3-4567-8bcb-a1e8-99fb91ee1234","98efb7ab-7a3a-44cd-a38a-3a4bf893edf3",false,"TS-2",400,"Invalid parameters"
+5,2,"TS-VU-3","abc89687-1234-4567-8329-e0145b987a12","96dec987-x789-4fcb-b1e8-7q9fb91ee222","abcdefab-7b2a-11cd-b38a-3b4bf593ed00",true,"VU-3",401,"Unauthorized"
+6,3,"XY-ZA-4","95739182-7654-8ttr-3348-e0yzxb76c5eg","90pwe987-hkq5-4fcb-v1e8-7d9fb91hh432","90klmnxy-7pqw-67xs-495a-3c4mr482bl65",false,"ZA-4",404,"Not Found"
