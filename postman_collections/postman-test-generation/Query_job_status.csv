@@ -1,0 +1,17 @@
+job-id,project-key,statusCode,scenario
+1,PRJ1,200,Successfully retrieved the test creation job status.
+2,PRJ2,400,Invalid parameters.
+3,PRJ3,401,Unauthorized.
+4,PRJ4,404,Not Found.
+5,PRJ5,200,Successfully retrieved the test creation job status.
+6,PRJ6,400,Invalid parameters.
+7,PRJ7,401,Unauthorized.
+8,PRJ8,404,Not Found.
+9,PRJ9,200,Successfully retrieved the test creation job status.
+10,PRJ10,400,Invalid parameters.
+11,PRJ11,401,Unauthorized.
+12,PRJ12,404,Not Found.
+13,PRJ13,200,Successfully retrieved the test creation job status.
+14,PRJ14,400,Invalid parameters.
+15,PRJ15,401,Unauthorized.
+16,PRJ16,404,Not Found.
