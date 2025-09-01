@@ -1,0 +1,11 @@
+form-type^|^Authorization^|^X-HSBC-Request-Correlation-Id
+Form1^|^Auth1234^|^HSBC001
+Form2^|^Auth5678^|^HSBC002
+Form3^|^Auth9101^|^HSBC003
+Form4^|^Auth1121^|^HSBC004
+Form5^|^Auth3141^|^HSBC005
+Form6^|^Auth5161^|^HSBC006
+Form7^|^Auth7181^|^HSBC007
+Form8^|^Auth9201^|^HSBC008
+Form9^|^Auth1222^|^HSBC009
+Form10^|^Auth3242^|^HSBC010
