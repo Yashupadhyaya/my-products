@@ -1,0 +1,9 @@
+test-run-key,step-number,project-key,fileName,mimeType,size,statusCode,scenario
+TR_001,1,PJ_1,file1.json,application/json,235,200,Success
+TR_002,2,PJ_2,invalid.csv,text/csv,120,400,Invalid parameters
+TR_003,3,PJ_3,illegal.pdf,application/pdf,1000,401,Unauthorized
+TR_004,4,PJ_4,missing.css,text/css,200,404,Not Found
+TR_005,5,PJ_5,file2.json,application/json,250,200,Success
+TR_006,6,PJ_6,corrupt.txt,text/plain,50,400,Invalid parameters
+TR_007,7,PJ_7,private.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document,500,401,Unauthorized
+TR_008,8,PJ_8,unavailable.html,text/html,300,404,Not Found

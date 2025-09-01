@@ -1,0 +1,5 @@
+strictOrder,project-key,folder,folderId,callbackUrl,tests,statusCode,scenario
+true,proj_123,folderA,fId_567,http://callback.com/api/,Test1,202,The job to create the test cases was successfully scheduled.
+false,proj_456,folderB,fId_890,http://callback.com/api/,Test2,400,Invalid parameters
+true,proj_789,folderC,fId_123,http://callback.com/api/,Test3,401,"Unauthorized"
+false,proj_321,folderD,fId_456,http://callback.com/api/,Test4,404,"Not found"

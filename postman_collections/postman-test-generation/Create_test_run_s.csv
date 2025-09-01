@@ -1,0 +1,9 @@
+project-key,version,cycleName,folderPath,includeAttachments,testRuns,statusCode,scenario
+"DEV-1","1.2.3","Cycle-1","/APIs/Endpoint1","No","50",200,"Successful responses: OK"
+"DEV-2","1.0.0","Cycle-2","/APIs/Endpoint2","Yes","30",200,"Successful responses: OK"
+"PROD-1","1.0.1","Cycle-3","/APIs/Endpoint3","No","75",400,"Invalid parameters"
+"PROD-2","1.1.0","Cycle-4","/APIs/Endpoint4","Yes","100",401,"Unauthorized"
+"TEST-1","2.0.0","Cycle-5","/APIs/Endpoint5","No","25",404,"Not Found"
+"TEST-2","2.0.1","Cycle-6","/APIs/Endpoint6","Yes","50",400,"Invalid parameters"
+"DEV-3","1.3.0","Cycle-7","/APIs/Endpoint7","No","60",401,"Unauthorized"
+"PROD-3","1.1.2","Cycle-8","/APIs/Endpoint8","Yes","80",404,"Not Found"
