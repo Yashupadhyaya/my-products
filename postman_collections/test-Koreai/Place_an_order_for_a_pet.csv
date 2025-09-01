@@ -1,0 +1,7 @@
+id,petId,quantity,shipDate,status,complete,statusCode,scenario
+1,3001,10,2022-03-28,placed,true,200,Successful responses: OK
+2,3002,20,2022-03-29,approved,false,200,Successful responses: OK
+3,3003,30,2022-03-30,delivered,true,200,Successful responses: OK
+4,3004,40,2022-03-31,placed,false,400,Client error responses: Bad Request
+5,3005,50,2022-04-01,approved,true,400,Client error responses: Bad Request
+6,3006,60,2022-04-02,delivered,false,400,Client error responses: Bad Request

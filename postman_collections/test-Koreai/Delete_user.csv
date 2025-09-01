@@ -1,0 +1,11 @@
+username,statusCode,scenario
+john_doe,400,Client error responses: Bad Request
+jane_doe,400,Client error responses: Bad Request
+harry_smith,400,Client error responses: Bad Request
+emma_johnson,400,Client error responses: Bad Request
+lucy_brown,400,Client error responses: Bad Request
+michael_davids,404,Client error responses: Not Found
+jessica_wood,404,Client error responses: Not Found
+robert_green,404,Client error responses: Not Found
+jack_thomas,404,Client error responses: Not Found
+sophia_walker,404,Client error responses: Not Found
