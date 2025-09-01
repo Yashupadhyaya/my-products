@@ -1,0 +1,4 @@
+username,statusCode,scenario
+admin1,200,Successful responses: OK
+admin2,400,Client error responses: Bad Request
+admin3,404,Client error responses: Not Found

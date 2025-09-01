@@ -1,0 +1,7 @@
+name,photoUrls,id,tags,status,statusCode,scenario
+John,http://example.com/1,123,tag1,Available,405,Client error responses: Method Not Allowed
+Adam,http://example.com/2,124,tag2,Sold,405,Client error responses: Method Not Allowed
+Marry,http://example.com/3,125,tag3,Pending,405,Client error responses: Method Not Allowed
+Sylvia,http://example.com/4,126,tag4,Sold,405,Client error responses: Method Not Allowed
+Bob,http://example.com/5,128,tag5,Available,405,Client error responses: Method Not Allowed
+Alice,http://example.com/6,129,tag6,Pending,405,Client error responses: Method Not Allowed
